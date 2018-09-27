@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ItemType>ValaProject</ItemType>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D661EF89-7F33-4412-8A53-ABB71DD32855}</ProjectGuid>
+    <compiler>
+      <compiler />
+    </compiler>
+    <Packages>
+      <Packages>
+        <ProjectPackage file="/usr/share/vala-0.18/vapi//glib-2.0.vapi" name="glib-2.0" IsProject="false" />
+        <ProjectPackage file="../../../../Framework/dafcore/bin/Debug/dafcore.vapi" name="dafcore" IsProject="true" />
+        <ProjectPackage file="../../../../Framework/dafui/bin/Debug/dafui.vapi" name="dafui" IsProject="true" />
+        <ProjectPackage file="/usr/share/vala-0.18/vapi/gee-1.0.vapi" name="gee-1.0" IsProject="false" />
+        <ProjectPackage file="/usr/share/vala-0.18/vapi/gtk+-3.0.vapi" name="gtk+-3.0" IsProject="false" />
+      </Packages>
+    </Packages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug</OutputPath>
+    <CodeGeneration>
+      <CodeGeneration WarningLevel="Normal" WarningsAsErrors="false" OptimizationLevel="0" ExtraCompilerArguments=" --Xcc=\\\&quot;-I../../../../Framework/dafcore/bin/Debug\\\&quot; --Xcc=\\\&quot;-L../../../../Framework/dafcore/bin/Debug\\\&quot; --Xcc=\\\&quot;-ldafcore\\\&quot;  --Xcc=\\\&quot;-I../../../../Framework/dafui/bin/Debug\\\&quot; --Xcc=\\\&quot;-L../../../../Framework/dafui/bin/Debug\\\&quot; --Xcc=\\\&quot;-ldafui\\\&quot; " DefineSymbols="MONODEVELOP" EnableMultithreading="false" ctype="ValaCompilationParameters" />
+    </CodeGeneration>
+    <SourceDirectory>.</SourceDirectory>
+    <Output>
+      <Output output="SelectionInListDemo" />
+    </Output>
+    <Build>
+      <Build target="Bin" />
+    </Build>
+    <EnvironmentVariables>
+      <EnvironmentVariables>
+        <Variable name="LD_LIBRARY_PATH" value="../../../../Framework/dafcore/bin/Debug:../../../../Framework/dafui/bin/Debug" />
+      </EnvironmentVariables>
+    </EnvironmentVariables>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release</OutputPath>
+    <CodeGeneration>
+      <CodeGeneration WarningLevel="Normal" WarningsAsErrors="false" OptimizationLevel="3" ExtraCompilerArguments=" --Xcc=\\\&quot;-I../../../../Framework/dafcore/bin/Debug\\\&quot; --Xcc=\\\&quot;-L../../../../Framework/dafcore/bin/Debug\\\&quot; --Xcc=\\\&quot;-ldafcore\\\&quot;  --Xcc=\\\&quot;-I../../../../Framework/dafui/bin/Debug\\\&quot; --Xcc=\\\&quot;-L../../../../Framework/dafui/bin/Debug\\\&quot; --Xcc=\\\&quot;-ldafui\\\&quot; " DefineSymbols="MONODEVELOP" EnableMultithreading="false" ctype="ValaCompilationParameters" />
+    </CodeGeneration>
+    <SourceDirectory>.</SourceDirectory>
+    <Output>
+      <Output output="SelectionInListDemo" />
+    </Output>
+    <Build>
+      <Build target="Bin" />
+    </Build>
+    <EnvironmentVariables>
+      <EnvironmentVariables>
+        <Variable name="LD_LIBRARY_PATH" value="../../../../Framework/dafcore/bin/Debug:../../../../Framework/dafui/bin/Debug" />
+      </EnvironmentVariables>
+    </EnvironmentVariables>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="src\" />
+    <Folder Include="src\View\" />
+    <Folder Include="src\Model\" />
+    <Folder Include="src\ViewModel\" />
+    <Folder Include="src\DataAccess\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="src\Main.vala" />
+    <Compile Include="src\Application.vala" />
+    <Compile Include="src\View\SelectionInListView.vala" />
+    <Compile Include="src\DataAccess\DefaultPersonRepository.vala" />
+    <Compile Include="src\DataAccess\IContactsRepository.vala" />
+    <Compile Include="src\Model\Person.vala" />
+    <Compile Include="src\Model\ContactManagerModel.vala" />
+    <Compile Include="src\Model\ContactsService.vala" />
+    <Compile Include="src\Model\IContactsService.vala" />
+    <Compile Include="src\View\ContactTreeModelAdapter.vala" />
+    <Compile Include="src\ViewModel\ContactManagerPresentation.vala" />
+  </ItemGroup>
+</Project>
