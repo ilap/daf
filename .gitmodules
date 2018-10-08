@@ -1,0 +1,15 @@
+[submodule "dafunit"]
+	path = dafunit
+	url = https://github.com/ilap/dafunit
+[submodule "dafcore"]
+	path = dafcore
+	url = https://github.com/ilap/dafcore
+[submodule "dafvalidation"]
+	path = dafvalidation
+	url = https://github.com/ilap/dafvalidation
+[submodule "dafioc"]
+	path = dafioc
+	url = https://github.com/ilap/dafioc
+[submodule "dafui"]
+	path = dafui
+	url = https://github.com/ilap/dafui
