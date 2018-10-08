@@ -19,6 +19,21 @@ This separation of roles allows the Designers to focus on UX and Design.
  * [IoC (dafioc)](https://github.com/ilap/dafioc): It implements IoC's Dependency Injection (Constructor Injection).
  * [Unit Tests (dafunit)](https://github.com/ilap/dafunit): Unit test module which uses Valadate classes integrated to DaF.
 
+## Installation
+
+Install the required toolchains.
+
+```bash
+$ sudo apt-get install valac cmake gobject-introspection libgtk-2-dev libgee-0.8-dev libglib2.0-dev libgirepository1.0-dev
+$ ./build_all.sh
+```
+
+### Requirements
+
+  - Ubuntu 18.04 or eLementary OS 5.0
+
+## References
+
 [1]: http://en.wikipedia.org/wiki/Object-oriented_design
 [2]: http://en.wikipedia.org/wiki/Common_layers_in_an_information_system_logical_architecture
 [3]: http://martinfowler.com/eaaDev/PresentationModel.html
