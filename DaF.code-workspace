@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "dafunit"
+		},
+		{
+			"path": "dafcore"
+		},
+		{
+			"path": "dafvalidation"
+		},
+		{
+			"path": "dafioc"
+		},
+		{
+			"path": "dfaui"
+		}
+	]
+}
