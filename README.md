@@ -24,7 +24,7 @@ This separation of roles allows the Designers to focus on UX and Design.
 Install the required toolchains.
 
 ```bash
-$ sudo apt-get install valac cmake gobject-introspection libgtk-3-dev libgee-0.8-dev libglib2.0-dev libgirepository1.0-dev
+$ sudo apt-get install valac cmake gobject-introspection libgtk-3-dev libgee-0.8-dev libglib2.0-dev libgirepository1.0-dev meson
 $ ./build_all.sh
 ```
 
