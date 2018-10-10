@@ -228,11 +228,10 @@
                       <placeholder/>
                     </child>
                     <child>
-                      <object class="GraniteWidgetsHintedEntry" id="first_name">
+                      <object class="GtkEntry" id="first_name">
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="invisible_char">•</property>
-                        <property name="hint_string">First Name</property>
                       </object>
                       <packing>
                         <property name="left_attach">2</property>
@@ -242,11 +241,10 @@
                       </packing>
                     </child>
                     <child>
-                      <object class="GraniteWidgetsHintedEntry" id="last_name">
+                      <object class="GtkEntry" id="last_name">
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="invisible_char">•</property>
-                        <property name="hint_string">Last Name</property>
                       </object>
                       <packing>
                         <property name="left_attach">2</property>
@@ -256,11 +254,10 @@
                       </packing>
                     </child>
                     <child>
-                      <object class="GraniteWidgetsHintedEntry" id="age">
+                      <object class="GtkEntry" id="age">
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="invisible_char">•</property>
-                        <property name="hint_string">Age</property>
                       </object>
                       <packing>
                         <property name="left_attach">2</property>

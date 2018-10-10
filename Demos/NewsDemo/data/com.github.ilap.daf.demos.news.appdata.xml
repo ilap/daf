@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2018 Pal Dorogi <pal.dorogi@gmail.com> -->
+<component type="desktop-application">
+    <id>com.github.ilap.daf.demos.news.desktop</id>
+    <metadata_license>CC0-1.0</metadata_license>
+    <project_license>GPL-3.0+</project_license>
+    <name>News Demo</name>
+    <summary>DaF UI's Animation demo</summary>
+    <developer_name>Pal dorogi</developer_name>
+    <provides>
+        <binary>com.github.ilap.daf.demos.news</binary>
+    </provides>
+    <screenshots>
+        <screenshot type="default">
+		<image>https://raw.githubusercontent.com/ilap/daf/master/Demos/NewsDemo/data/images/screenshot.png</image>
+        </screenshot>
+    </screenshots>
+    <description>
+	    <p>DaF UI's Animation demo mimiking Apple's News app Splash screen</p>
+    </description>   
+    <url type="homepage">https://github.com/ilap/daf/</url>
+    <url type="bugtracker">https://github.com/ilap/daf/issues</url>
+    <url type="help">https://github.com/ilap/ilap/issues</url>
+    <update_contact>pal.dorogi@gmail.com</update_contact>
+    <custom>
+        <value key="x-appcenter-color-primary">#546A79</value>
+        <value key="x-appcenter-color-primary-text">#ECF0F1</value>
+        <value key="x-appcenter-suggested-price">1</value>
+    </custom>
+</component>

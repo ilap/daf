@@ -1,0 +1,85 @@
+Build started at 2018-10-10T11:46:36.229546
+Main binary: /usr/bin/python3
+Python system: Linux
+The Meson build system
+Version: 0.46.1
+Source dir: /data/Projects/daf/Demos/VideoConverter
+Build dir: /data/Projects/daf/Demos/VideoConverter/build
+Build type: native build
+Project name: com.github.ilap.daf.demos.animation
+Sanity testing C compiler: cc
+Is cross compiler: False.
+Sanity check compiler command line: cc /data/Projects/daf/Demos/VideoConverter/build/meson-private/sanitycheckc.c -o /data/Projects/daf/Demos/VideoConverter/build/meson-private/sanitycheckc.exe
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /data/Projects/daf/Demos/VideoConverter/build/meson-private/sanitycheckc.exe
+Native C compiler: cc (gcc 7.3.0 "cc (Ubuntu 7.3.0-27ubuntu1~18.04) 7.3.0")
+Running compile:
+Working directory:  /tmp/tmpbqw1ytp6
+Command line:  valac /tmp/tmpbqw1ytp6/testfile.vala -C 
+
+Code:
+ class MesonSanityCheck : Object { }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Native Vala compiler: valac (valac 0.40.10)
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Found pkg-config: /usr/bin/pkg-config (0.29.1)
+Determining dependency 'granite' with pkg-config executable '/usr/bin/pkg-config'
+Native dependency granite found: YES 5.1.0
+Determining dependency 'glib-2.0' with pkg-config executable '/usr/bin/pkg-config'
+Native dependency glib-2.0 found: YES 2.56.2
+Determining dependency 'gtk+-3.0' with pkg-config executable '/usr/bin/pkg-config'
+Native dependency gtk+-3.0 found: YES 3.22.30
+Determining dependency 'gee-0.8' with pkg-config executable '/usr/bin/pkg-config'
+Native dependency gee-0.8 found: YES 0.20.1
+
+
+Executing subproject dafcore.
+
+Project name: dafcore
+Native C compiler: cc (gcc 7.3.0 "cc (Ubuntu 7.3.0-27ubuntu1~18.04) 7.3.0")
+Native Vala compiler: valac (valac 0.40.10)
+Dependency glib-2.0 found: YES (cached)
+Dependency gee-0.8 found: YES (cached)
+
+
+Executing subproject dafunit.
+
+Project name: dafunit
+Native C compiler: cc (gcc 7.3.0 "cc (Ubuntu 7.3.0-27ubuntu1~18.04) 7.3.0")
+Native Vala compiler: valac (valac 0.40.10)
+Dependency glib-2.0 found: YES (cached)
+Determining dependency 'gio-2.0' with pkg-config executable '/usr/bin/pkg-config'
+Native dependency gio-2.0 found: YES 2.56.2
+Build targets in project: 2
+
+Subproject dafunit finished.
+Adding test "dafcore test".
+Build targets in project: 3
+
+Subproject dafcore finished.
+
+
+Executing subproject dafui.
+
+Project name: dafui
+Native C compiler: cc (gcc 7.3.0 "cc (Ubuntu 7.3.0-27ubuntu1~18.04) 7.3.0")
+Native Vala compiler: valac (valac 0.40.10)
+Dependency glib-2.0 found: YES (cached)
+Dependency gtk+-3.0 found: YES (cached)
+Dependency gee-0.8 found: YES (cached)
+Adding test "dafui test".
+Build targets in project: 5
+
+Subproject dafui finished.
+Configuring config.h using configuration
+Build targets in project: 6
+Found ninja-1.8.2 at /usr/bin/ninja

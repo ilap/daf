@@ -1,0 +1,442 @@
+<?xml version="1.0"?>
+<repository version="1.2" xmlns="http://www.gtk.org/introspection/core/1.0" xmlns:c="http://www.gtk.org/introspection/c/1.0" xmlns:glib="http://www.gtk.org/introspection/glib/1.0">
+<include name="GObject" version="2.0"/>
+<include name="DaF.UnitTest" version="1.2"/>
+<include name="GLib" version="2.0"/>
+<include name="Gio" version="2.0"/>
+<package name="dafunit"/>
+<c:include name="dafunit.h"/>
+<namespace name="dafunit" version="0.1" c:prefix="Daf">
+	<enumeration name="AssertError" c:type="DafUnitTestAssertError" glib:error-domain="daf_unit_test_assert_error-quark">
+		<member name="unexpected_value" c:identifier="DAF_UNIT_TEST_ASSERT_ERROR_UNEXPECTED_VALUE" value="0"/>
+		<member name="unexpected_state" c:identifier="DAF_UNIT_TEST_ASSERT_ERROR_UNEXPECTED_STATE" value="1"/>
+	</enumeration>
+	<class name="UnitTestMultiSignalWaiter" c:type="DafUnitTestMultiSignalWaiter" glib:type-name="DafUnitTestMultiSignalWaiter" glib:get-type="daf_unit_test_multi_signal_waiter_get_type" glib:type-struct="UnitTestMultiSignalWaiterClass" parent="GObject.Object">
+		<field name="parent_instance">
+			<type name="GObject.Object" c:type="GObject"/>
+		</field>
+		<field name="priv">
+			<type name="UnitTestMultiSignalWaiterPrivate" c:type="DafUnitTestMultiSignalWaiterPrivate*"/>
+		</field>
+		<method name="add_signal" c:identifier="daf_unit_test_multi_signal_waiter_add_signal">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="emitter" transfer-ownership="none">
+					<type name="GObject.Object" c:type="GObject*"/>
+				</parameter>
+				<parameter name="signame" transfer-ownership="none">
+					<type name="utf8" c:type="const gchar*"/>
+				</parameter>
+				<parameter name="timeout" transfer-ownership="none">
+					<type name="gint" c:type="gint"/>
+				</parameter>
+			</parameters>
+		</method>
+		<method name="run" c:identifier="daf_unit_test_multi_signal_waiter_run">
+			<return-value transfer-ownership="full">
+				<type name="gboolean" c:type="gboolean"/>
+			</return-value>
+			<parameters>
+				<parameter name="block" transfer-ownership="none" closure="1" scope="call">
+					<type name="DaF.UnitTest.Block" c:type="DafUnitTestBlock"/>
+				</parameter>
+				<parameter name="block_target" transfer-ownership="none" allow-none="1">
+					<type name="gpointer" c:type="void*"/>
+				</parameter>
+				<parameter name="timeout" transfer-ownership="none">
+					<type name="gint" c:type="gint"/>
+				</parameter>
+			</parameters>
+		</method>
+		<constructor name="new" c:identifier="daf_unit_test_multi_signal_waiter_new">
+			<return-value transfer-ownership="full">
+				<type name="Daf.DaF.UnitTestMultiSignalWaiter" c:type="DafUnitTestMultiSignalWaiter*"/>
+			</return-value>
+		</constructor>
+	</class>
+	<record name="UnitTestMultiSignalWaiterClass" c:type="DafUnitTestMultiSignalWaiterClass" glib:is-gtype-struct-for="MultiSignalWaiter">
+		<field name="parent_class">
+			<type name="GObject.ObjectClass" c:type="GObjectClass"/>
+		</field>
+	</record>
+	<record name="UnitTestMultiSignalWaiterPrivate" c:type="DafUnitTestMultiSignalWaiterPrivate" disguised="1"/>
+	<class name="UnitTestAbstractTestCase" c:type="DafUnitTestAbstractTestCase" glib:type-name="DafUnitTestAbstractTestCase" glib:get-type="daf_unit_test_abstract_test_case_get_type" glib:type-struct="UnitTestAbstractTestCaseClass" parent="GObject.Object" abstract="1">
+		<field name="parent_instance">
+			<type name="GObject.Object" c:type="GObject"/>
+		</field>
+		<field name="priv">
+			<type name="UnitTestAbstractTestCasePrivate" c:type="DafUnitTestAbstractTestCasePrivate*"/>
+		</field>
+		<method name="add_test" c:identifier="daf_unit_test_abstract_test_case_add_test">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="name" transfer-ownership="none">
+					<type name="utf8" c:type="const gchar*"/>
+				</parameter>
+				<parameter name="test" transfer-ownership="none" closure="2" scope="call">
+					<type name="Daf.DaF.UnitTestAbstractTestCaseTestMethod" c:type="DafUnitTestAbstractTestCaseTestMethod"/>
+				</parameter>
+				<parameter name="test_target" transfer-ownership="none" allow-none="1">
+					<type name="gpointer" c:type="void*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<method name="add_async_test" c:identifier="daf_unit_test_abstract_test_case_add_async_test">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="name" transfer-ownership="none">
+					<type name="utf8" c:type="const gchar*"/>
+				</parameter>
+				<parameter name="async_begin" transfer-ownership="none" closure="2" scope="call">
+					<type name="DaF.UnitTest.AsyncBegin" c:type="DafUnitTestAsyncBegin"/>
+				</parameter>
+				<parameter name="async_begin_target" transfer-ownership="none" allow-none="1">
+					<type name="gpointer" c:type="void*"/>
+				</parameter>
+				<parameter name="async_finish" transfer-ownership="none" closure="4" scope="call">
+					<type name="DaF.UnitTest.AsyncFinish" c:type="DafUnitTestAsyncFinish"/>
+				</parameter>
+				<parameter name="async_finish_target" transfer-ownership="none" allow-none="1">
+					<type name="gpointer" c:type="void*"/>
+				</parameter>
+				<parameter name="timeout" transfer-ownership="none">
+					<type name="gint" c:type="gint"/>
+				</parameter>
+			</parameters>
+		</method>
+		<method name="set_up" c:identifier="daf_unit_test_abstract_test_case_set_up">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+		</method>
+		<virtual-method name="set_up" invoker="set_up">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+		</virtual-method>
+		<method name="tear_down" c:identifier="daf_unit_test_abstract_test_case_tear_down">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+		</method>
+		<virtual-method name="tear_down" invoker="tear_down">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+		</virtual-method>
+		<method name="get_suite" c:identifier="daf_unit_test_abstract_test_case_get_suite">
+			<return-value transfer-ownership="full">
+				<type name="GLib.TestSuite" c:type="GTestSuite*"/>
+			</return-value>
+		</method>
+		<callback name="TestMethod" c:type="DafUnitTestAbstractTestCaseTestMethod">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+		</callback>
+	</class>
+	<record name="UnitTestAbstractTestCaseClass" c:type="DafUnitTestAbstractTestCaseClass" glib:is-gtype-struct-for="AbstractTestCase">
+		<field name="parent_class">
+			<type name="GObject.ObjectClass" c:type="GObjectClass"/>
+		</field>
+		<field name="set_up">
+			<callback name="set_up" c:type="set_up">
+				<return-value transfer-ownership="full">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="DaF.UnitTest.AbstractTestCase" c:type="DafUnitTestAbstractTestCase*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="tear_down">
+			<callback name="tear_down" c:type="tear_down">
+				<return-value transfer-ownership="full">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="DaF.UnitTest.AbstractTestCase" c:type="DafUnitTestAbstractTestCase*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+	</record>
+	<record name="UnitTestAbstractTestCasePrivate" c:type="DafUnitTestAbstractTestCasePrivate" disguised="1"/>
+	<class name="UnitTestAssert" c:type="DafUnitTestAssert" glib:type-name="DafUnitTestAssert" glib:get-type="daf_unit_test_assert_get_type" glib:type-struct="UnitTestAssertClass" parent="GObject.Object">
+		<field name="parent_instance">
+			<type name="GObject.Object" c:type="GObject"/>
+		</field>
+		<field name="priv">
+			<type name="UnitTestAssertPrivate" c:type="DafUnitTestAssertPrivate*"/>
+		</field>
+		<function name="are_equal" c:identifier="daf_unit_test_assert_are_equal" throws="1">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="expected" transfer-ownership="none" allow-none="1">
+					<type name="gpointer" c:type="gpointer"/>
+				</parameter>
+				<parameter name="actual" transfer-ownership="none" allow-none="1">
+					<type name="gpointer" c:type="gpointer"/>
+				</parameter>
+				<parameter name="debug" transfer-ownership="none">
+					<type name="utf8" c:type="const gchar*"/>
+				</parameter>
+			</parameters>
+		</function>
+		<function name="are_not_equal" c:identifier="daf_unit_test_assert_are_not_equal" throws="1">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="not_expected" transfer-ownership="none" allow-none="1">
+					<type name="gpointer" c:type="gpointer"/>
+				</parameter>
+				<parameter name="actual" transfer-ownership="none" allow-none="1">
+					<type name="gpointer" c:type="gpointer"/>
+				</parameter>
+				<parameter name="debug" transfer-ownership="none">
+					<type name="utf8" c:type="const gchar*"/>
+				</parameter>
+			</parameters>
+		</function>
+		<function name="is_true" c:identifier="daf_unit_test_assert_is_true" throws="1">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="actual" transfer-ownership="none">
+					<type name="gboolean" c:type="gboolean"/>
+				</parameter>
+				<parameter name="debug" transfer-ownership="none">
+					<type name="utf8" c:type="const gchar*"/>
+				</parameter>
+			</parameters>
+		</function>
+		<function name="is_false" c:identifier="daf_unit_test_assert_is_false" throws="1">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="actual" transfer-ownership="none">
+					<type name="gboolean" c:type="gboolean"/>
+				</parameter>
+				<parameter name="debug" transfer-ownership="none">
+					<type name="utf8" c:type="const gchar*"/>
+				</parameter>
+			</parameters>
+		</function>
+		<function name="fail" c:identifier="daf_unit_test_assert_fail" throws="1">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="debug" transfer-ownership="none">
+					<type name="utf8" c:type="const gchar*"/>
+				</parameter>
+			</parameters>
+		</function>
+		<function name="should_throw_async" c:identifier="daf_unit_test_assert_should_throw_async" throws="1">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="fbegin" transfer-ownership="none" closure="1" scope="call">
+					<type name="DaF.UnitTest.AsyncBegin" c:type="DafUnitTestAsyncBegin"/>
+				</parameter>
+				<parameter name="fbegin_target" transfer-ownership="none" allow-none="1">
+					<type name="gpointer" c:type="void*"/>
+				</parameter>
+				<parameter name="ffinish" transfer-ownership="none" closure="3" scope="call">
+					<type name="DaF.UnitTest.AsyncFinish" c:type="DafUnitTestAsyncFinish"/>
+				</parameter>
+				<parameter name="ffinish_target" transfer-ownership="none" allow-none="1">
+					<type name="gpointer" c:type="void*"/>
+				</parameter>
+				<parameter name="domain" transfer-ownership="none">
+					<type name="utf8" c:type="const gchar*"/>
+				</parameter>
+				<parameter name="debug" transfer-ownership="none">
+					<type name="utf8" c:type="const gchar*"/>
+				</parameter>
+			</parameters>
+		</function>
+		<constructor name="new" c:identifier="daf_unit_test_assert_new">
+			<return-value transfer-ownership="full">
+				<type name="Daf.DaF.UnitTestAssert" c:type="DafUnitTestAssert*"/>
+			</return-value>
+		</constructor>
+	</class>
+	<record name="UnitTestAssertClass" c:type="DafUnitTestAssertClass" glib:is-gtype-struct-for="Assert">
+		<field name="parent_class">
+			<type name="GObject.ObjectClass" c:type="GObjectClass"/>
+		</field>
+	</record>
+	<record name="UnitTestAssertPrivate" c:type="DafUnitTestAssertPrivate" disguised="1"/>
+	<callback name="Predicate" c:type="DafUnitTestPredicate">
+		<return-value transfer-ownership="full">
+			<type name="gboolean" c:type="gboolean"/>
+		</return-value>
+	</callback>
+	<callback name="Block" c:type="DafUnitTestBlock">
+		<return-value transfer-ownership="full">
+			<type name="none"/>
+		</return-value>
+	</callback>
+	<callback name="AsyncBegin" c:type="DafUnitTestAsyncBegin">
+		<return-value transfer-ownership="full">
+			<type name="none"/>
+		</return-value>
+		<parameters>
+			<parameter name="callback" transfer-ownership="none" closure="1" scope="call">
+				<type name="Gio.AsyncReadyCallback" c:type="GAsyncReadyCallback"/>
+			</parameter>
+			<parameter name="callback_target" transfer-ownership="none" allow-none="1">
+				<type name="gpointer" c:type="void*"/>
+			</parameter>
+			<parameter name="user_data" transfer-ownership="none" closure="2">
+				<type name="gpointer" c:type="void*"/>
+			</parameter>
+		</parameters>
+	</callback>
+	<callback name="CancelableAsyncBegin" c:type="DafUnitTestCancelableAsyncBegin">
+		<return-value transfer-ownership="full">
+			<type name="none"/>
+		</return-value>
+		<parameters>
+			<parameter name="cancel" transfer-ownership="none">
+				<type name="Gio.Cancellable" c:type="GCancellable*"/>
+			</parameter>
+			<parameter name="callback" transfer-ownership="none" closure="2" scope="call">
+				<type name="Gio.AsyncReadyCallback" c:type="GAsyncReadyCallback"/>
+			</parameter>
+			<parameter name="callback_target" transfer-ownership="none" allow-none="1">
+				<type name="gpointer" c:type="void*"/>
+			</parameter>
+			<parameter name="user_data" transfer-ownership="none" closure="3">
+				<type name="gpointer" c:type="void*"/>
+			</parameter>
+		</parameters>
+	</callback>
+	<callback name="AsyncFinish" c:type="DafUnitTestAsyncFinish" throws="1">
+		<return-value transfer-ownership="full">
+			<type name="none"/>
+		</return-value>
+		<parameters>
+			<parameter name="result" transfer-ownership="none">
+				<type name="Gio.AsyncResult" c:type="GAsyncResult*"/>
+			</parameter>
+			<parameter name="user_data" transfer-ownership="none" closure="1">
+				<type name="gpointer" c:type="void*"/>
+			</parameter>
+		</parameters>
+	</callback>
+	<function name="unit_test_wait_for_condition" c:identifier="daf_unit_test_wait_for_condition">
+		<return-value transfer-ownership="full">
+			<type name="gboolean" c:type="gboolean"/>
+		</return-value>
+		<parameters>
+			<parameter name="timeout" transfer-ownership="none">
+				<type name="gint" c:type="gint"/>
+			</parameter>
+			<parameter name="emitter" transfer-ownership="none">
+				<type name="GObject.Object" c:type="GObject*"/>
+			</parameter>
+			<parameter name="signame" transfer-ownership="none">
+				<type name="utf8" c:type="const gchar*"/>
+			</parameter>
+			<parameter name="predicate" transfer-ownership="none" closure="4" scope="notified" destroy="5">
+				<type name="DaF.UnitTest.Predicate" c:type="DafUnitTestPredicate"/>
+			</parameter>
+			<parameter name="predicate_target" transfer-ownership="none" allow-none="1">
+				<type name="gpointer" c:type="void*"/>
+			</parameter>
+			<parameter name="predicate_target_destroy_notify" transfer-ownership="none" scope="call">
+				<type name="GLib.DestroyNotify" c:type="GDestroyNotify"/>
+			</parameter>
+			<parameter name="block" transfer-ownership="none" closure="7" scope="call">
+				<type name="DaF.UnitTest.Block" c:type="DafUnitTestBlock"/>
+			</parameter>
+			<parameter name="block_target" transfer-ownership="none" allow-none="1">
+				<type name="gpointer" c:type="void*"/>
+			</parameter>
+		</parameters>
+	</function>
+	<function name="unit_test_wait_for_signal" c:identifier="daf_unit_test_wait_for_signal">
+		<return-value transfer-ownership="full">
+			<type name="gboolean" c:type="gboolean"/>
+		</return-value>
+		<parameters>
+			<parameter name="timeout" transfer-ownership="none">
+				<type name="gint" c:type="gint"/>
+			</parameter>
+			<parameter name="emitter" transfer-ownership="none">
+				<type name="GObject.Object" c:type="GObject*"/>
+			</parameter>
+			<parameter name="signame" transfer-ownership="none">
+				<type name="utf8" c:type="const gchar*"/>
+			</parameter>
+			<parameter name="block" transfer-ownership="none" closure="4" scope="call">
+				<type name="DaF.UnitTest.Block" c:type="DafUnitTestBlock"/>
+			</parameter>
+			<parameter name="block_target" transfer-ownership="none" allow-none="1">
+				<type name="gpointer" c:type="void*"/>
+			</parameter>
+		</parameters>
+	</function>
+	<function name="unit_test_wait_for_async" c:identifier="daf_unit_test_wait_for_async" throws="1">
+		<return-value transfer-ownership="full">
+			<type name="gboolean" c:type="gboolean"/>
+		</return-value>
+		<parameters>
+			<parameter name="timeout" transfer-ownership="none">
+				<type name="gint" c:type="gint"/>
+			</parameter>
+			<parameter name="async_function" transfer-ownership="none" closure="2" scope="call">
+				<type name="DaF.UnitTest.AsyncBegin" c:type="DafUnitTestAsyncBegin"/>
+			</parameter>
+			<parameter name="async_function_target" transfer-ownership="none" allow-none="1">
+				<type name="gpointer" c:type="void*"/>
+			</parameter>
+			<parameter name="async_finish" transfer-ownership="none" closure="4" scope="call">
+				<type name="DaF.UnitTest.AsyncFinish" c:type="DafUnitTestAsyncFinish"/>
+			</parameter>
+			<parameter name="async_finish_target" transfer-ownership="none" allow-none="1">
+				<type name="gpointer" c:type="void*"/>
+			</parameter>
+		</parameters>
+	</function>
+	<function name="unit_test_wait_for_cancellable_async" c:identifier="daf_unit_test_wait_for_cancellable_async" throws="1">
+		<return-value transfer-ownership="full">
+			<type name="gboolean" c:type="gboolean"/>
+		</return-value>
+		<parameters>
+			<parameter name="timeout" transfer-ownership="none">
+				<type name="gint" c:type="gint"/>
+			</parameter>
+			<parameter name="async_function" transfer-ownership="none" closure="2" scope="call">
+				<type name="DaF.UnitTest.CancelableAsyncBegin" c:type="DafUnitTestCancelableAsyncBegin"/>
+			</parameter>
+			<parameter name="async_function_target" transfer-ownership="none" allow-none="1">
+				<type name="gpointer" c:type="void*"/>
+			</parameter>
+			<parameter name="async_finish" transfer-ownership="none" closure="4" scope="call">
+				<type name="DaF.UnitTest.AsyncFinish" c:type="DafUnitTestAsyncFinish"/>
+			</parameter>
+			<parameter name="async_finish_target" transfer-ownership="none" allow-none="1">
+				<type name="gpointer" c:type="void*"/>
+			</parameter>
+		</parameters>
+	</function>
+</namespace>
+</repository>

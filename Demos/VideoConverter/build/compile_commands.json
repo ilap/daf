@@ -1,0 +1,377 @@
+[
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "valac -C --debug --pkg gee-0.8 --pkg glib-2.0 --color=always --directory subprojects/dafcore/subprojects@dafcore@@dafcore@sha --basedir ../subprojects/dafcore --library dafcore --header subprojects/dafcore/dafcore.h --vapi ../dafcore-0.1.vapi --gir ../dafcore-0.1.gir ../subprojects/dafcore/lib/IListModel.vala ../subprojects/dafcore/lib/SelectionInList.vala ../subprojects/dafcore/lib/ArrayListModel.vala ../subprojects/dafcore/lib/IModelAdapter.vala ../subprojects/dafcore/lib/AspectAdapter.vala ../subprojects/dafcore/lib/Binding/IDirectedAcyclicGraph.vala ../subprojects/dafcore/lib/Binding/BindModelFactory.vala ../subprojects/dafcore/lib/Binding/IBindModelRepository.vala ../subprojects/dafcore/lib/Binding/BindModelService.vala ../subprojects/dafcore/lib/Binding/IBinder.vala ../subprojects/dafcore/lib/Binding/DefaultBindModelRepository.vala ../subprojects/dafcore/lib/Binding/IBindModelService.vala ../subprojects/dafcore/lib/Binding/IBindFrom.vala ../subprojects/dafcore/lib/Binding/BindModel.vala ../subprojects/dafcore/lib/Binding/BindKey.vala ../subprojects/dafcore/lib/Binding/IBindTo.vala ../subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala ../subprojects/dafcore/lib/Binding/IBindModel.vala ../subprojects/dafcore/lib/Binding/IBindModelFactory.vala ../subprojects/dafcore/lib/Binding/Binder.vala ../subprojects/dafcore/lib/IAspectTrigger.vala ../subprojects/dafcore/lib/ModelRegistrar.vala ../subprojects/dafcore/lib/AbstractModelHolder.vala ../subprojects/dafcore/lib/ModelPresenter.vala ../subprojects/dafcore/lib/IModelPresenter.vala ../subprojects/dafcore/lib/IModelHolder.vala ../subprojects/dafcore/lib/AbstractTypeConverter.vala ../subprojects/dafcore/lib/AspectTrigger.vala ../subprojects/dafcore/lib/BufferedValueHolder.vala ../subprojects/dafcore/lib/IValueModel.vala ../subprojects/dafcore/lib/AbstractValueHolder.vala ../subprojects/dafcore/lib/ValueHolder.vala",
+    "file": "../subprojects/dafcore/lib/IListModel.vala"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafcore/subprojects@dafcore@@dafcore@sha -Isubprojects/dafcore -I../subprojects/dafcore -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -fPIC  -MD -MQ 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_IListModel.c.o' -MF 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_IListModel.c.o.d' -o 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_IListModel.c.o' -c 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/IListModel.c'",
+    "file": "subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/IListModel.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafcore/subprojects@dafcore@@dafcore@sha -Isubprojects/dafcore -I../subprojects/dafcore -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -fPIC  -MD -MQ 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_SelectionInList.c.o' -MF 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_SelectionInList.c.o.d' -o 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_SelectionInList.c.o' -c 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/SelectionInList.c'",
+    "file": "subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/SelectionInList.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafcore/subprojects@dafcore@@dafcore@sha -Isubprojects/dafcore -I../subprojects/dafcore -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -fPIC  -MD -MQ 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_ArrayListModel.c.o' -MF 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_ArrayListModel.c.o.d' -o 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_ArrayListModel.c.o' -c 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/ArrayListModel.c'",
+    "file": "subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/ArrayListModel.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafcore/subprojects@dafcore@@dafcore@sha -Isubprojects/dafcore -I../subprojects/dafcore -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -fPIC  -MD -MQ 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_IModelAdapter.c.o' -MF 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_IModelAdapter.c.o.d' -o 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_IModelAdapter.c.o' -c 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/IModelAdapter.c'",
+    "file": "subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/IModelAdapter.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafcore/subprojects@dafcore@@dafcore@sha -Isubprojects/dafcore -I../subprojects/dafcore -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -fPIC  -MD -MQ 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_AspectAdapter.c.o' -MF 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_AspectAdapter.c.o.d' -o 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_AspectAdapter.c.o' -c 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/AspectAdapter.c'",
+    "file": "subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/AspectAdapter.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafcore/subprojects@dafcore@@dafcore@sha -Isubprojects/dafcore -I../subprojects/dafcore -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -fPIC  -MD -MQ 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_Binding_IDirectedAcyclicGraph.c.o' -MF 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_Binding_IDirectedAcyclicGraph.c.o.d' -o 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_Binding_IDirectedAcyclicGraph.c.o' -c 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/Binding/IDirectedAcyclicGraph.c'",
+    "file": "subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/Binding/IDirectedAcyclicGraph.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafcore/subprojects@dafcore@@dafcore@sha -Isubprojects/dafcore -I../subprojects/dafcore -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -fPIC  -MD -MQ 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_Binding_BindModelFactory.c.o' -MF 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_Binding_BindModelFactory.c.o.d' -o 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_Binding_BindModelFactory.c.o' -c 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/Binding/BindModelFactory.c'",
+    "file": "subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/Binding/BindModelFactory.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafcore/subprojects@dafcore@@dafcore@sha -Isubprojects/dafcore -I../subprojects/dafcore -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -fPIC  -MD -MQ 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_Binding_IBindModelRepository.c.o' -MF 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_Binding_IBindModelRepository.c.o.d' -o 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_Binding_IBindModelRepository.c.o' -c 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/Binding/IBindModelRepository.c'",
+    "file": "subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/Binding/IBindModelRepository.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafcore/subprojects@dafcore@@dafcore@sha -Isubprojects/dafcore -I../subprojects/dafcore -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -fPIC  -MD -MQ 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_Binding_BindModelService.c.o' -MF 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_Binding_BindModelService.c.o.d' -o 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_Binding_BindModelService.c.o' -c 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/Binding/BindModelService.c'",
+    "file": "subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/Binding/BindModelService.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafcore/subprojects@dafcore@@dafcore@sha -Isubprojects/dafcore -I../subprojects/dafcore -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -fPIC  -MD -MQ 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_Binding_IBinder.c.o' -MF 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_Binding_IBinder.c.o.d' -o 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_Binding_IBinder.c.o' -c 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/Binding/IBinder.c'",
+    "file": "subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/Binding/IBinder.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafcore/subprojects@dafcore@@dafcore@sha -Isubprojects/dafcore -I../subprojects/dafcore -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -fPIC  -MD -MQ 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_Binding_DefaultBindModelRepository.c.o' -MF 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_Binding_DefaultBindModelRepository.c.o.d' -o 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_Binding_DefaultBindModelRepository.c.o' -c 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/Binding/DefaultBindModelRepository.c'",
+    "file": "subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/Binding/DefaultBindModelRepository.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafcore/subprojects@dafcore@@dafcore@sha -Isubprojects/dafcore -I../subprojects/dafcore -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -fPIC  -MD -MQ 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_Binding_IBindModelService.c.o' -MF 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_Binding_IBindModelService.c.o.d' -o 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_Binding_IBindModelService.c.o' -c 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/Binding/IBindModelService.c'",
+    "file": "subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/Binding/IBindModelService.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafcore/subprojects@dafcore@@dafcore@sha -Isubprojects/dafcore -I../subprojects/dafcore -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -fPIC  -MD -MQ 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_Binding_IBindFrom.c.o' -MF 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_Binding_IBindFrom.c.o.d' -o 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_Binding_IBindFrom.c.o' -c 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/Binding/IBindFrom.c'",
+    "file": "subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/Binding/IBindFrom.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafcore/subprojects@dafcore@@dafcore@sha -Isubprojects/dafcore -I../subprojects/dafcore -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -fPIC  -MD -MQ 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_Binding_BindModel.c.o' -MF 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_Binding_BindModel.c.o.d' -o 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_Binding_BindModel.c.o' -c 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/Binding/BindModel.c'",
+    "file": "subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/Binding/BindModel.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafcore/subprojects@dafcore@@dafcore@sha -Isubprojects/dafcore -I../subprojects/dafcore -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -fPIC  -MD -MQ 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_Binding_BindKey.c.o' -MF 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_Binding_BindKey.c.o.d' -o 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_Binding_BindKey.c.o' -c 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/Binding/BindKey.c'",
+    "file": "subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/Binding/BindKey.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafcore/subprojects@dafcore@@dafcore@sha -Isubprojects/dafcore -I../subprojects/dafcore -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -fPIC  -MD -MQ 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_Binding_IBindTo.c.o' -MF 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_Binding_IBindTo.c.o.d' -o 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_Binding_IBindTo.c.o' -c 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/Binding/IBindTo.c'",
+    "file": "subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/Binding/IBindTo.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafcore/subprojects@dafcore@@dafcore@sha -Isubprojects/dafcore -I../subprojects/dafcore -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -fPIC  -MD -MQ 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_Binding_AbstractAcyclicGraph.c.o' -MF 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_Binding_AbstractAcyclicGraph.c.o.d' -o 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_Binding_AbstractAcyclicGraph.c.o' -c 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/Binding/AbstractAcyclicGraph.c'",
+    "file": "subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/Binding/AbstractAcyclicGraph.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafcore/subprojects@dafcore@@dafcore@sha -Isubprojects/dafcore -I../subprojects/dafcore -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -fPIC  -MD -MQ 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_Binding_IBindModel.c.o' -MF 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_Binding_IBindModel.c.o.d' -o 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_Binding_IBindModel.c.o' -c 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/Binding/IBindModel.c'",
+    "file": "subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/Binding/IBindModel.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafcore/subprojects@dafcore@@dafcore@sha -Isubprojects/dafcore -I../subprojects/dafcore -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -fPIC  -MD -MQ 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_Binding_IBindModelFactory.c.o' -MF 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_Binding_IBindModelFactory.c.o.d' -o 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_Binding_IBindModelFactory.c.o' -c 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/Binding/IBindModelFactory.c'",
+    "file": "subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/Binding/IBindModelFactory.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafcore/subprojects@dafcore@@dafcore@sha -Isubprojects/dafcore -I../subprojects/dafcore -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -fPIC  -MD -MQ 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_Binding_Binder.c.o' -MF 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_Binding_Binder.c.o.d' -o 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_Binding_Binder.c.o' -c 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/Binding/Binder.c'",
+    "file": "subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/Binding/Binder.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafcore/subprojects@dafcore@@dafcore@sha -Isubprojects/dafcore -I../subprojects/dafcore -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -fPIC  -MD -MQ 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_IAspectTrigger.c.o' -MF 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_IAspectTrigger.c.o.d' -o 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_IAspectTrigger.c.o' -c 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/IAspectTrigger.c'",
+    "file": "subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/IAspectTrigger.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafcore/subprojects@dafcore@@dafcore@sha -Isubprojects/dafcore -I../subprojects/dafcore -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -fPIC  -MD -MQ 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_ModelRegistrar.c.o' -MF 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_ModelRegistrar.c.o.d' -o 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_ModelRegistrar.c.o' -c 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/ModelRegistrar.c'",
+    "file": "subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/ModelRegistrar.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafcore/subprojects@dafcore@@dafcore@sha -Isubprojects/dafcore -I../subprojects/dafcore -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -fPIC  -MD -MQ 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_AbstractModelHolder.c.o' -MF 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_AbstractModelHolder.c.o.d' -o 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_AbstractModelHolder.c.o' -c 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/AbstractModelHolder.c'",
+    "file": "subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/AbstractModelHolder.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafcore/subprojects@dafcore@@dafcore@sha -Isubprojects/dafcore -I../subprojects/dafcore -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -fPIC  -MD -MQ 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_ModelPresenter.c.o' -MF 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_ModelPresenter.c.o.d' -o 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_ModelPresenter.c.o' -c 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/ModelPresenter.c'",
+    "file": "subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/ModelPresenter.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafcore/subprojects@dafcore@@dafcore@sha -Isubprojects/dafcore -I../subprojects/dafcore -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -fPIC  -MD -MQ 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_IModelPresenter.c.o' -MF 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_IModelPresenter.c.o.d' -o 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_IModelPresenter.c.o' -c 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/IModelPresenter.c'",
+    "file": "subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/IModelPresenter.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafcore/subprojects@dafcore@@dafcore@sha -Isubprojects/dafcore -I../subprojects/dafcore -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -fPIC  -MD -MQ 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_IModelHolder.c.o' -MF 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_IModelHolder.c.o.d' -o 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_IModelHolder.c.o' -c 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/IModelHolder.c'",
+    "file": "subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/IModelHolder.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafcore/subprojects@dafcore@@dafcore@sha -Isubprojects/dafcore -I../subprojects/dafcore -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -fPIC  -MD -MQ 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_AbstractTypeConverter.c.o' -MF 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_AbstractTypeConverter.c.o.d' -o 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_AbstractTypeConverter.c.o' -c 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/AbstractTypeConverter.c'",
+    "file": "subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/AbstractTypeConverter.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafcore/subprojects@dafcore@@dafcore@sha -Isubprojects/dafcore -I../subprojects/dafcore -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -fPIC  -MD -MQ 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_AspectTrigger.c.o' -MF 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_AspectTrigger.c.o.d' -o 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_AspectTrigger.c.o' -c 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/AspectTrigger.c'",
+    "file": "subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/AspectTrigger.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafcore/subprojects@dafcore@@dafcore@sha -Isubprojects/dafcore -I../subprojects/dafcore -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -fPIC  -MD -MQ 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_BufferedValueHolder.c.o' -MF 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_BufferedValueHolder.c.o.d' -o 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_BufferedValueHolder.c.o' -c 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/BufferedValueHolder.c'",
+    "file": "subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/BufferedValueHolder.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafcore/subprojects@dafcore@@dafcore@sha -Isubprojects/dafcore -I../subprojects/dafcore -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -fPIC  -MD -MQ 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_IValueModel.c.o' -MF 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_IValueModel.c.o.d' -o 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_IValueModel.c.o' -c 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/IValueModel.c'",
+    "file": "subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/IValueModel.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafcore/subprojects@dafcore@@dafcore@sha -Isubprojects/dafcore -I../subprojects/dafcore -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -fPIC  -MD -MQ 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_AbstractValueHolder.c.o' -MF 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_AbstractValueHolder.c.o.d' -o 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_AbstractValueHolder.c.o' -c 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/AbstractValueHolder.c'",
+    "file": "subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/AbstractValueHolder.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafcore/subprojects@dafcore@@dafcore@sha -Isubprojects/dafcore -I../subprojects/dafcore -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -fPIC  -MD -MQ 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_ValueHolder.c.o' -MF 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_ValueHolder.c.o.d' -o 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/meson-generated_lib_ValueHolder.c.o' -c 'subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/ValueHolder.c'",
+    "file": "subprojects/dafcore/subprojects@dafcore@@dafcore@sha/lib/ValueHolder.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "valac -C --debug --pkg gio-2.0 --pkg glib-2.0 --color=always --directory subprojects/dafunit/subprojects@dafunit@@dafunit@sha --basedir ../subprojects/dafunit --library dafunit --header subprojects/dafunit/dafunit.h --vapi ../dafunit-0.1.vapi --gir ../dafunit-0.1.gir ../subprojects/dafunit/lib/SignalWaiter.vala ../subprojects/dafunit/lib/AsyncHelpers.vala ../subprojects/dafunit/lib/AbstractTestCase.vala ../subprojects/dafunit/lib/Assert.vala",
+    "file": "../subprojects/dafunit/lib/SignalWaiter.vala"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafunit/subprojects@dafunit@@dafunit@sha -Isubprojects/dafunit -I../subprojects/dafunit -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -fPIC -pthread  -MD -MQ 'subprojects/dafunit/subprojects@dafunit@@dafunit@sha/meson-generated_lib_SignalWaiter.c.o' -MF 'subprojects/dafunit/subprojects@dafunit@@dafunit@sha/meson-generated_lib_SignalWaiter.c.o.d' -o 'subprojects/dafunit/subprojects@dafunit@@dafunit@sha/meson-generated_lib_SignalWaiter.c.o' -c 'subprojects/dafunit/subprojects@dafunit@@dafunit@sha/lib/SignalWaiter.c'",
+    "file": "subprojects/dafunit/subprojects@dafunit@@dafunit@sha/lib/SignalWaiter.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafunit/subprojects@dafunit@@dafunit@sha -Isubprojects/dafunit -I../subprojects/dafunit -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -fPIC -pthread  -MD -MQ 'subprojects/dafunit/subprojects@dafunit@@dafunit@sha/meson-generated_lib_AsyncHelpers.c.o' -MF 'subprojects/dafunit/subprojects@dafunit@@dafunit@sha/meson-generated_lib_AsyncHelpers.c.o.d' -o 'subprojects/dafunit/subprojects@dafunit@@dafunit@sha/meson-generated_lib_AsyncHelpers.c.o' -c 'subprojects/dafunit/subprojects@dafunit@@dafunit@sha/lib/AsyncHelpers.c'",
+    "file": "subprojects/dafunit/subprojects@dafunit@@dafunit@sha/lib/AsyncHelpers.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafunit/subprojects@dafunit@@dafunit@sha -Isubprojects/dafunit -I../subprojects/dafunit -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -fPIC -pthread  -MD -MQ 'subprojects/dafunit/subprojects@dafunit@@dafunit@sha/meson-generated_lib_AbstractTestCase.c.o' -MF 'subprojects/dafunit/subprojects@dafunit@@dafunit@sha/meson-generated_lib_AbstractTestCase.c.o.d' -o 'subprojects/dafunit/subprojects@dafunit@@dafunit@sha/meson-generated_lib_AbstractTestCase.c.o' -c 'subprojects/dafunit/subprojects@dafunit@@dafunit@sha/lib/AbstractTestCase.c'",
+    "file": "subprojects/dafunit/subprojects@dafunit@@dafunit@sha/lib/AbstractTestCase.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafunit/subprojects@dafunit@@dafunit@sha -Isubprojects/dafunit -I../subprojects/dafunit -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -fPIC -pthread  -MD -MQ 'subprojects/dafunit/subprojects@dafunit@@dafunit@sha/meson-generated_lib_Assert.c.o' -MF 'subprojects/dafunit/subprojects@dafunit@@dafunit@sha/meson-generated_lib_Assert.c.o.d' -o 'subprojects/dafunit/subprojects@dafunit@@dafunit@sha/meson-generated_lib_Assert.c.o' -c 'subprojects/dafunit/subprojects@dafunit@@dafunit@sha/lib/Assert.c'",
+    "file": "subprojects/dafunit/subprojects@dafunit@@dafunit@sha/lib/Assert.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "valac -C --debug --pkg gio-2.0 --pkg glib-2.0 --pkg gee-0.8 --pkg glib-2.0 --color=always --directory subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe --basedir ../subprojects/dafcore ../subprojects/dafcore/test/ValueHolderTest.vala ../subprojects/dafcore/test/TypeConverterTest.vala ../subprojects/dafcore/test/BindingsTest.vala ../subprojects/dafcore/test/AspectAdapterTest.vala ../subprojects/dafcore/test/ModelPresenterTest.vala ../subprojects/dafcore/test/Model/Person.vala ../subprojects/dafcore/test/Model/Address.vala ../subprojects/dafcore/test/Model/Gender.vala ../subprojects/dafcore/test/AspectTriggerTest.vala ../subprojects/dafcore/test/TestMain.vala ../subprojects/dafcore/test/BufferedValueHolderTest.vala subprojects/dafcore/dafcore-0.1.vapi subprojects/dafunit/dafunit-0.1.vapi",
+    "file": "../subprojects/dafcore/test/ValueHolderTest.vala"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe -Isubprojects/dafcore -I../subprojects/dafcore -Isubprojects/dafunit -I../subprojects/dafunit -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -pthread  -MD -MQ 'subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/meson-generated_test_ValueHolderTest.c.o' -MF 'subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/meson-generated_test_ValueHolderTest.c.o.d' -o 'subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/meson-generated_test_ValueHolderTest.c.o' -c 'subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/test/ValueHolderTest.c'",
+    "file": "subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/test/ValueHolderTest.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe -Isubprojects/dafcore -I../subprojects/dafcore -Isubprojects/dafunit -I../subprojects/dafunit -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -pthread  -MD -MQ 'subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/meson-generated_test_TypeConverterTest.c.o' -MF 'subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/meson-generated_test_TypeConverterTest.c.o.d' -o 'subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/meson-generated_test_TypeConverterTest.c.o' -c 'subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/test/TypeConverterTest.c'",
+    "file": "subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/test/TypeConverterTest.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe -Isubprojects/dafcore -I../subprojects/dafcore -Isubprojects/dafunit -I../subprojects/dafunit -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -pthread  -MD -MQ 'subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/meson-generated_test_BindingsTest.c.o' -MF 'subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/meson-generated_test_BindingsTest.c.o.d' -o 'subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/meson-generated_test_BindingsTest.c.o' -c 'subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/test/BindingsTest.c'",
+    "file": "subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/test/BindingsTest.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe -Isubprojects/dafcore -I../subprojects/dafcore -Isubprojects/dafunit -I../subprojects/dafunit -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -pthread  -MD -MQ 'subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/meson-generated_test_AspectAdapterTest.c.o' -MF 'subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/meson-generated_test_AspectAdapterTest.c.o.d' -o 'subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/meson-generated_test_AspectAdapterTest.c.o' -c 'subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/test/AspectAdapterTest.c'",
+    "file": "subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/test/AspectAdapterTest.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe -Isubprojects/dafcore -I../subprojects/dafcore -Isubprojects/dafunit -I../subprojects/dafunit -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -pthread  -MD -MQ 'subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/meson-generated_test_ModelPresenterTest.c.o' -MF 'subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/meson-generated_test_ModelPresenterTest.c.o.d' -o 'subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/meson-generated_test_ModelPresenterTest.c.o' -c 'subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/test/ModelPresenterTest.c'",
+    "file": "subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/test/ModelPresenterTest.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe -Isubprojects/dafcore -I../subprojects/dafcore -Isubprojects/dafunit -I../subprojects/dafunit -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -pthread  -MD -MQ 'subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/meson-generated_test_Model_Person.c.o' -MF 'subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/meson-generated_test_Model_Person.c.o.d' -o 'subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/meson-generated_test_Model_Person.c.o' -c 'subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/test/Model/Person.c'",
+    "file": "subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/test/Model/Person.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe -Isubprojects/dafcore -I../subprojects/dafcore -Isubprojects/dafunit -I../subprojects/dafunit -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -pthread  -MD -MQ 'subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/meson-generated_test_Model_Address.c.o' -MF 'subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/meson-generated_test_Model_Address.c.o.d' -o 'subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/meson-generated_test_Model_Address.c.o' -c 'subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/test/Model/Address.c'",
+    "file": "subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/test/Model/Address.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe -Isubprojects/dafcore -I../subprojects/dafcore -Isubprojects/dafunit -I../subprojects/dafunit -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -pthread  -MD -MQ 'subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/meson-generated_test_Model_Gender.c.o' -MF 'subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/meson-generated_test_Model_Gender.c.o.d' -o 'subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/meson-generated_test_Model_Gender.c.o' -c 'subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/test/Model/Gender.c'",
+    "file": "subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/test/Model/Gender.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe -Isubprojects/dafcore -I../subprojects/dafcore -Isubprojects/dafunit -I../subprojects/dafunit -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -pthread  -MD -MQ 'subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/meson-generated_test_AspectTriggerTest.c.o' -MF 'subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/meson-generated_test_AspectTriggerTest.c.o.d' -o 'subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/meson-generated_test_AspectTriggerTest.c.o' -c 'subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/test/AspectTriggerTest.c'",
+    "file": "subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/test/AspectTriggerTest.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe -Isubprojects/dafcore -I../subprojects/dafcore -Isubprojects/dafunit -I../subprojects/dafunit -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -pthread  -MD -MQ 'subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/meson-generated_test_TestMain.c.o' -MF 'subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/meson-generated_test_TestMain.c.o.d' -o 'subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/meson-generated_test_TestMain.c.o' -c 'subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/test/TestMain.c'",
+    "file": "subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/test/TestMain.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe -Isubprojects/dafcore -I../subprojects/dafcore -Isubprojects/dafunit -I../subprojects/dafunit -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -pthread  -MD -MQ 'subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/meson-generated_test_BufferedValueHolderTest.c.o' -MF 'subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/meson-generated_test_BufferedValueHolderTest.c.o.d' -o 'subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/meson-generated_test_BufferedValueHolderTest.c.o' -c 'subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/test/BufferedValueHolderTest.c'",
+    "file": "subprojects/dafcore/subprojects@dafcore@@dafcore_tst@exe/test/BufferedValueHolderTest.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "valac -C --debug --pkg gee-0.8 --pkg glib-2.0 --pkg gee-0.8 --pkg gtk+-3.0 --pkg glib-2.0 --color=always --directory subprojects/dafui/subprojects@dafui@@dafui@sha --basedir ../subprojects/dafui --library dafui --header subprojects/dafui/dafui.h --vapi ../dafui-0.1.vapi --gir ../dafui-0.1.gir ../subprojects/dafui/lib/Animation/TimeLine.vala ../subprojects/dafui/lib/Animation/IAnimatable.vala ../subprojects/dafui/lib/Animation/AnimationMode.vala ../subprojects/dafui/lib/Animation/PropertyAnimator.vala ../subprojects/dafui/lib/Animation/AnimatableAdapter.vala ../subprojects/dafui/lib/Animation/KeyFrame.vala ../subprojects/dafui/lib/Core/AbstractListModel.vala ../subprojects/dafui/lib/Core/AbstractTreeModel.vala ../subprojects/dafui/lib/Widgets/AnimatedDeckLayout.vala ../subprojects/dafui/lib/Widgets/AnimatedCard.vala ../subprojects/dafui/lib/Widgets/DeckLayout.vala ../subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala ../subprojects/dafui/lib/Widgets/Card.vala ../subprojects/dafui/lib/Widgets/ICard.vala ../subprojects/dafui/lib/Widgets/IDeckLayout.vala subprojects/dafcore/dafcore-0.1.vapi",
+    "file": "../subprojects/dafui/lib/Animation/TimeLine.vala"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafui/subprojects@dafui@@dafui@sha -Isubprojects/dafui -I../subprojects/dafui -Isubprojects/dafcore -I../subprojects/dafcore -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -fPIC -pthread  -MD -MQ 'subprojects/dafui/subprojects@dafui@@dafui@sha/meson-generated_lib_Animation_TimeLine.c.o' -MF 'subprojects/dafui/subprojects@dafui@@dafui@sha/meson-generated_lib_Animation_TimeLine.c.o.d' -o 'subprojects/dafui/subprojects@dafui@@dafui@sha/meson-generated_lib_Animation_TimeLine.c.o' -c 'subprojects/dafui/subprojects@dafui@@dafui@sha/lib/Animation/TimeLine.c'",
+    "file": "subprojects/dafui/subprojects@dafui@@dafui@sha/lib/Animation/TimeLine.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafui/subprojects@dafui@@dafui@sha -Isubprojects/dafui -I../subprojects/dafui -Isubprojects/dafcore -I../subprojects/dafcore -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -fPIC -pthread  -MD -MQ 'subprojects/dafui/subprojects@dafui@@dafui@sha/meson-generated_lib_Animation_IAnimatable.c.o' -MF 'subprojects/dafui/subprojects@dafui@@dafui@sha/meson-generated_lib_Animation_IAnimatable.c.o.d' -o 'subprojects/dafui/subprojects@dafui@@dafui@sha/meson-generated_lib_Animation_IAnimatable.c.o' -c 'subprojects/dafui/subprojects@dafui@@dafui@sha/lib/Animation/IAnimatable.c'",
+    "file": "subprojects/dafui/subprojects@dafui@@dafui@sha/lib/Animation/IAnimatable.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafui/subprojects@dafui@@dafui@sha -Isubprojects/dafui -I../subprojects/dafui -Isubprojects/dafcore -I../subprojects/dafcore -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -fPIC -pthread  -MD -MQ 'subprojects/dafui/subprojects@dafui@@dafui@sha/meson-generated_lib_Animation_AnimationMode.c.o' -MF 'subprojects/dafui/subprojects@dafui@@dafui@sha/meson-generated_lib_Animation_AnimationMode.c.o.d' -o 'subprojects/dafui/subprojects@dafui@@dafui@sha/meson-generated_lib_Animation_AnimationMode.c.o' -c 'subprojects/dafui/subprojects@dafui@@dafui@sha/lib/Animation/AnimationMode.c'",
+    "file": "subprojects/dafui/subprojects@dafui@@dafui@sha/lib/Animation/AnimationMode.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafui/subprojects@dafui@@dafui@sha -Isubprojects/dafui -I../subprojects/dafui -Isubprojects/dafcore -I../subprojects/dafcore -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -fPIC -pthread  -MD -MQ 'subprojects/dafui/subprojects@dafui@@dafui@sha/meson-generated_lib_Animation_PropertyAnimator.c.o' -MF 'subprojects/dafui/subprojects@dafui@@dafui@sha/meson-generated_lib_Animation_PropertyAnimator.c.o.d' -o 'subprojects/dafui/subprojects@dafui@@dafui@sha/meson-generated_lib_Animation_PropertyAnimator.c.o' -c 'subprojects/dafui/subprojects@dafui@@dafui@sha/lib/Animation/PropertyAnimator.c'",
+    "file": "subprojects/dafui/subprojects@dafui@@dafui@sha/lib/Animation/PropertyAnimator.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafui/subprojects@dafui@@dafui@sha -Isubprojects/dafui -I../subprojects/dafui -Isubprojects/dafcore -I../subprojects/dafcore -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -fPIC -pthread  -MD -MQ 'subprojects/dafui/subprojects@dafui@@dafui@sha/meson-generated_lib_Animation_AnimatableAdapter.c.o' -MF 'subprojects/dafui/subprojects@dafui@@dafui@sha/meson-generated_lib_Animation_AnimatableAdapter.c.o.d' -o 'subprojects/dafui/subprojects@dafui@@dafui@sha/meson-generated_lib_Animation_AnimatableAdapter.c.o' -c 'subprojects/dafui/subprojects@dafui@@dafui@sha/lib/Animation/AnimatableAdapter.c'",
+    "file": "subprojects/dafui/subprojects@dafui@@dafui@sha/lib/Animation/AnimatableAdapter.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafui/subprojects@dafui@@dafui@sha -Isubprojects/dafui -I../subprojects/dafui -Isubprojects/dafcore -I../subprojects/dafcore -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -fPIC -pthread  -MD -MQ 'subprojects/dafui/subprojects@dafui@@dafui@sha/meson-generated_lib_Animation_KeyFrame.c.o' -MF 'subprojects/dafui/subprojects@dafui@@dafui@sha/meson-generated_lib_Animation_KeyFrame.c.o.d' -o 'subprojects/dafui/subprojects@dafui@@dafui@sha/meson-generated_lib_Animation_KeyFrame.c.o' -c 'subprojects/dafui/subprojects@dafui@@dafui@sha/lib/Animation/KeyFrame.c'",
+    "file": "subprojects/dafui/subprojects@dafui@@dafui@sha/lib/Animation/KeyFrame.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafui/subprojects@dafui@@dafui@sha -Isubprojects/dafui -I../subprojects/dafui -Isubprojects/dafcore -I../subprojects/dafcore -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -fPIC -pthread  -MD -MQ 'subprojects/dafui/subprojects@dafui@@dafui@sha/meson-generated_lib_Core_AbstractListModel.c.o' -MF 'subprojects/dafui/subprojects@dafui@@dafui@sha/meson-generated_lib_Core_AbstractListModel.c.o.d' -o 'subprojects/dafui/subprojects@dafui@@dafui@sha/meson-generated_lib_Core_AbstractListModel.c.o' -c 'subprojects/dafui/subprojects@dafui@@dafui@sha/lib/Core/AbstractListModel.c'",
+    "file": "subprojects/dafui/subprojects@dafui@@dafui@sha/lib/Core/AbstractListModel.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafui/subprojects@dafui@@dafui@sha -Isubprojects/dafui -I../subprojects/dafui -Isubprojects/dafcore -I../subprojects/dafcore -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -fPIC -pthread  -MD -MQ 'subprojects/dafui/subprojects@dafui@@dafui@sha/meson-generated_lib_Core_AbstractTreeModel.c.o' -MF 'subprojects/dafui/subprojects@dafui@@dafui@sha/meson-generated_lib_Core_AbstractTreeModel.c.o.d' -o 'subprojects/dafui/subprojects@dafui@@dafui@sha/meson-generated_lib_Core_AbstractTreeModel.c.o' -c 'subprojects/dafui/subprojects@dafui@@dafui@sha/lib/Core/AbstractTreeModel.c'",
+    "file": "subprojects/dafui/subprojects@dafui@@dafui@sha/lib/Core/AbstractTreeModel.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafui/subprojects@dafui@@dafui@sha -Isubprojects/dafui -I../subprojects/dafui -Isubprojects/dafcore -I../subprojects/dafcore -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -fPIC -pthread  -MD -MQ 'subprojects/dafui/subprojects@dafui@@dafui@sha/meson-generated_lib_Widgets_AnimatedDeckLayout.c.o' -MF 'subprojects/dafui/subprojects@dafui@@dafui@sha/meson-generated_lib_Widgets_AnimatedDeckLayout.c.o.d' -o 'subprojects/dafui/subprojects@dafui@@dafui@sha/meson-generated_lib_Widgets_AnimatedDeckLayout.c.o' -c 'subprojects/dafui/subprojects@dafui@@dafui@sha/lib/Widgets/AnimatedDeckLayout.c'",
+    "file": "subprojects/dafui/subprojects@dafui@@dafui@sha/lib/Widgets/AnimatedDeckLayout.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafui/subprojects@dafui@@dafui@sha -Isubprojects/dafui -I../subprojects/dafui -Isubprojects/dafcore -I../subprojects/dafcore -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -fPIC -pthread  -MD -MQ 'subprojects/dafui/subprojects@dafui@@dafui@sha/meson-generated_lib_Widgets_AnimatedCard.c.o' -MF 'subprojects/dafui/subprojects@dafui@@dafui@sha/meson-generated_lib_Widgets_AnimatedCard.c.o.d' -o 'subprojects/dafui/subprojects@dafui@@dafui@sha/meson-generated_lib_Widgets_AnimatedCard.c.o' -c 'subprojects/dafui/subprojects@dafui@@dafui@sha/lib/Widgets/AnimatedCard.c'",
+    "file": "subprojects/dafui/subprojects@dafui@@dafui@sha/lib/Widgets/AnimatedCard.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafui/subprojects@dafui@@dafui@sha -Isubprojects/dafui -I../subprojects/dafui -Isubprojects/dafcore -I../subprojects/dafcore -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -fPIC -pthread  -MD -MQ 'subprojects/dafui/subprojects@dafui@@dafui@sha/meson-generated_lib_Widgets_DeckLayout.c.o' -MF 'subprojects/dafui/subprojects@dafui@@dafui@sha/meson-generated_lib_Widgets_DeckLayout.c.o.d' -o 'subprojects/dafui/subprojects@dafui@@dafui@sha/meson-generated_lib_Widgets_DeckLayout.c.o' -c 'subprojects/dafui/subprojects@dafui@@dafui@sha/lib/Widgets/DeckLayout.c'",
+    "file": "subprojects/dafui/subprojects@dafui@@dafui@sha/lib/Widgets/DeckLayout.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafui/subprojects@dafui@@dafui@sha -Isubprojects/dafui -I../subprojects/dafui -Isubprojects/dafcore -I../subprojects/dafcore -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -fPIC -pthread  -MD -MQ 'subprojects/dafui/subprojects@dafui@@dafui@sha/meson-generated_lib_Widgets_AbstractDeckLayout.c.o' -MF 'subprojects/dafui/subprojects@dafui@@dafui@sha/meson-generated_lib_Widgets_AbstractDeckLayout.c.o.d' -o 'subprojects/dafui/subprojects@dafui@@dafui@sha/meson-generated_lib_Widgets_AbstractDeckLayout.c.o' -c 'subprojects/dafui/subprojects@dafui@@dafui@sha/lib/Widgets/AbstractDeckLayout.c'",
+    "file": "subprojects/dafui/subprojects@dafui@@dafui@sha/lib/Widgets/AbstractDeckLayout.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafui/subprojects@dafui@@dafui@sha -Isubprojects/dafui -I../subprojects/dafui -Isubprojects/dafcore -I../subprojects/dafcore -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -fPIC -pthread  -MD -MQ 'subprojects/dafui/subprojects@dafui@@dafui@sha/meson-generated_lib_Widgets_Card.c.o' -MF 'subprojects/dafui/subprojects@dafui@@dafui@sha/meson-generated_lib_Widgets_Card.c.o.d' -o 'subprojects/dafui/subprojects@dafui@@dafui@sha/meson-generated_lib_Widgets_Card.c.o' -c 'subprojects/dafui/subprojects@dafui@@dafui@sha/lib/Widgets/Card.c'",
+    "file": "subprojects/dafui/subprojects@dafui@@dafui@sha/lib/Widgets/Card.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafui/subprojects@dafui@@dafui@sha -Isubprojects/dafui -I../subprojects/dafui -Isubprojects/dafcore -I../subprojects/dafcore -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -fPIC -pthread  -MD -MQ 'subprojects/dafui/subprojects@dafui@@dafui@sha/meson-generated_lib_Widgets_ICard.c.o' -MF 'subprojects/dafui/subprojects@dafui@@dafui@sha/meson-generated_lib_Widgets_ICard.c.o.d' -o 'subprojects/dafui/subprojects@dafui@@dafui@sha/meson-generated_lib_Widgets_ICard.c.o' -c 'subprojects/dafui/subprojects@dafui@@dafui@sha/lib/Widgets/ICard.c'",
+    "file": "subprojects/dafui/subprojects@dafui@@dafui@sha/lib/Widgets/ICard.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafui/subprojects@dafui@@dafui@sha -Isubprojects/dafui -I../subprojects/dafui -Isubprojects/dafcore -I../subprojects/dafcore -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -fPIC -pthread  -MD -MQ 'subprojects/dafui/subprojects@dafui@@dafui@sha/meson-generated_lib_Widgets_IDeckLayout.c.o' -MF 'subprojects/dafui/subprojects@dafui@@dafui@sha/meson-generated_lib_Widgets_IDeckLayout.c.o.d' -o 'subprojects/dafui/subprojects@dafui@@dafui@sha/meson-generated_lib_Widgets_IDeckLayout.c.o' -c 'subprojects/dafui/subprojects@dafui@@dafui@sha/lib/Widgets/IDeckLayout.c'",
+    "file": "subprojects/dafui/subprojects@dafui@@dafui@sha/lib/Widgets/IDeckLayout.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "valac -C --debug --pkg gee-0.8 --pkg glib-2.0 --pkg gio-2.0 --pkg glib-2.0 --pkg gee-0.8 --pkg glib-2.0 --pkg gee-0.8 --pkg gtk+-3.0 --pkg glib-2.0 --color=always --directory subprojects/dafui/subprojects@dafui@@dafui_test@exe --basedir ../subprojects/dafui ../subprojects/dafui/test/Model/Person.vala ../subprojects/dafui/test/Model/Address.vala ../subprojects/dafui/test/Model/Gender.vala ../subprojects/dafui/test/SelectionInListTest.vala ../subprojects/dafui/test/TestMain.vala subprojects/dafui/dafui-0.1.vapi subprojects/dafcore/dafcore-0.1.vapi subprojects/dafunit/dafunit-0.1.vapi",
+    "file": "../subprojects/dafui/test/Model/Person.vala"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafui/subprojects@dafui@@dafui_test@exe -Isubprojects/dafui -I../subprojects/dafui -Isubprojects/dafcore -I../subprojects/dafcore -Isubprojects/dafunit -I../subprojects/dafunit -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -pthread  -MD -MQ 'subprojects/dafui/subprojects@dafui@@dafui_test@exe/meson-generated_test_Model_Person.c.o' -MF 'subprojects/dafui/subprojects@dafui@@dafui_test@exe/meson-generated_test_Model_Person.c.o.d' -o 'subprojects/dafui/subprojects@dafui@@dafui_test@exe/meson-generated_test_Model_Person.c.o' -c 'subprojects/dafui/subprojects@dafui@@dafui_test@exe/test/Model/Person.c'",
+    "file": "subprojects/dafui/subprojects@dafui@@dafui_test@exe/test/Model/Person.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafui/subprojects@dafui@@dafui_test@exe -Isubprojects/dafui -I../subprojects/dafui -Isubprojects/dafcore -I../subprojects/dafcore -Isubprojects/dafunit -I../subprojects/dafunit -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -pthread  -MD -MQ 'subprojects/dafui/subprojects@dafui@@dafui_test@exe/meson-generated_test_Model_Address.c.o' -MF 'subprojects/dafui/subprojects@dafui@@dafui_test@exe/meson-generated_test_Model_Address.c.o.d' -o 'subprojects/dafui/subprojects@dafui@@dafui_test@exe/meson-generated_test_Model_Address.c.o' -c 'subprojects/dafui/subprojects@dafui@@dafui_test@exe/test/Model/Address.c'",
+    "file": "subprojects/dafui/subprojects@dafui@@dafui_test@exe/test/Model/Address.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafui/subprojects@dafui@@dafui_test@exe -Isubprojects/dafui -I../subprojects/dafui -Isubprojects/dafcore -I../subprojects/dafcore -Isubprojects/dafunit -I../subprojects/dafunit -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -pthread  -MD -MQ 'subprojects/dafui/subprojects@dafui@@dafui_test@exe/meson-generated_test_Model_Gender.c.o' -MF 'subprojects/dafui/subprojects@dafui@@dafui_test@exe/meson-generated_test_Model_Gender.c.o.d' -o 'subprojects/dafui/subprojects@dafui@@dafui_test@exe/meson-generated_test_Model_Gender.c.o' -c 'subprojects/dafui/subprojects@dafui@@dafui_test@exe/test/Model/Gender.c'",
+    "file": "subprojects/dafui/subprojects@dafui@@dafui_test@exe/test/Model/Gender.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafui/subprojects@dafui@@dafui_test@exe -Isubprojects/dafui -I../subprojects/dafui -Isubprojects/dafcore -I../subprojects/dafcore -Isubprojects/dafunit -I../subprojects/dafunit -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -pthread  -MD -MQ 'subprojects/dafui/subprojects@dafui@@dafui_test@exe/meson-generated_test_SelectionInListTest.c.o' -MF 'subprojects/dafui/subprojects@dafui@@dafui_test@exe/meson-generated_test_SelectionInListTest.c.o.d' -o 'subprojects/dafui/subprojects@dafui@@dafui_test@exe/meson-generated_test_SelectionInListTest.c.o' -c 'subprojects/dafui/subprojects@dafui@@dafui_test@exe/test/SelectionInListTest.c'",
+    "file": "subprojects/dafui/subprojects@dafui@@dafui_test@exe/test/SelectionInListTest.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Isubprojects/dafui/subprojects@dafui@@dafui_test@exe -Isubprojects/dafui -I../subprojects/dafui -Isubprojects/dafcore -I../subprojects/dafcore -Isubprojects/dafunit -I../subprojects/dafunit -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/gee-0.8 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -pthread  -MD -MQ 'subprojects/dafui/subprojects@dafui@@dafui_test@exe/meson-generated_test_TestMain.c.o' -MF 'subprojects/dafui/subprojects@dafui@@dafui_test@exe/meson-generated_test_TestMain.c.o.d' -o 'subprojects/dafui/subprojects@dafui@@dafui_test@exe/meson-generated_test_TestMain.c.o' -c 'subprojects/dafui/subprojects@dafui@@dafui_test@exe/test/TestMain.c'",
+    "file": "subprojects/dafui/subprojects@dafui@@dafui_test@exe/test/TestMain.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "valac -C --debug --pkg gee-0.8 --pkg gtk+-3.0 --pkg glib-2.0 --pkg granite --pkg gee-0.8 --pkg glib-2.0 --pkg gee-0.8 --pkg gtk+-3.0 --pkg glib-2.0 --pkg gee-0.8 --pkg glib-2.0 --color=always --directory com.github.ilap.daf.demos.animation@exe --basedir ../ ../src/Main.vala ../src/View/VideoConverterView.vala subprojects/dafcore/dafcore-0.1.vapi subprojects/dafui/dafui-0.1.vapi",
+    "file": "../src/Main.vala"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Icom.github.ilap.daf.demos.animation@exe -I. -I.. -Isubprojects/dafcore -I../subprojects/dafcore -Isubprojects/dafui -I../subprojects/dafui -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-0.8 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/granite -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -pthread  -MD -MQ 'com.github.ilap.daf.demos.animation@exe/meson-generated_src_Main.c.o' -MF 'com.github.ilap.daf.demos.animation@exe/meson-generated_src_Main.c.o.d' -o 'com.github.ilap.daf.demos.animation@exe/meson-generated_src_Main.c.o' -c 'com.github.ilap.daf.demos.animation@exe/src/Main.c'",
+    "file": "com.github.ilap.daf.demos.animation@exe/src/Main.c"
+  },
+  {
+    "directory": "/data/Projects/daf/Demos/VideoConverter/build",
+    "command": "cc -Icom.github.ilap.daf.demos.animation@exe -I. -I.. -Isubprojects/dafcore -I../subprojects/dafcore -Isubprojects/dafui -I../subprojects/dafui -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-0.8 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/granite -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -pthread  -MD -MQ 'com.github.ilap.daf.demos.animation@exe/meson-generated_src_View_VideoConverterView.c.o' -MF 'com.github.ilap.daf.demos.animation@exe/meson-generated_src_View_VideoConverterView.c.o.d' -o 'com.github.ilap.daf.demos.animation@exe/meson-generated_src_View_VideoConverterView.c.o' -c 'com.github.ilap.daf.demos.animation@exe/src/View/VideoConverterView.c'",
+    "file": "com.github.ilap.daf.demos.animation@exe/src/View/VideoConverterView.c"
+  }
+]

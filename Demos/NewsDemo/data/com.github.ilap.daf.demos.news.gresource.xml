@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+
+	<gresource prefix="/com.github.ilap.daf.demos.news/css">
+		<file alias="style.css" compressed="true">css/style.css</file>
+	</gresource>
+
+	<gresource prefix="/com.github.ilap.daf.demos.news/images">
+		<file alias="com.github.ilap.daf.demos.news.svg" compressed="true" preprocess="xml-stripblanks">images/com.github.ilap.daf.demos.news.svg</file>
+
+		<file alias="16-com.github.ilap.daf.demos.news.svg" compressed="true" preprocess="xml-stripblanks">images/icons/16/com.github.ilap.daf.demos.news.svg</file>
+
+		<file alias="24-com.github.ilap.daf.demos.news.svg" compressed="true" preprocess="xml-stripblanks">images/icons/24/com.github.ilap.daf.demos.news.svg</file>
+
+		<file alias="32-com.github.ilap.daf.demos.news.svg" compressed="true" preprocess="xml-stripblanks">images/icons/32/com.github.ilap.daf.demos.news.svg</file>
+
+		<file alias="48-com.github.ilap.daf.demos.news.svg" compressed="true" preprocess="xml-stripblanks">images/icons/48/com.github.ilap.daf.demos.news.svg</file>
+	
+		<file alias="64-com.github.ilap.daf.demos.news.svg" compressed="true" preprocess="xml-stripblanks">images/icons/64/com.github.ilap.daf.demos.news.svg</file>
+	
+		<file alias="128-com.github.ilap.daf.demos.news.svg" compressed="true" preprocess="xml-stripblanks">images/icons/128/com.github.ilap.daf.demos.news.svg</file>
+	</gresource>
+  
+</gresources>

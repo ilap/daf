@@ -1,0 +1,10 @@
+Build started at 2018-10-10T16:20:38.505955
+Main binary: /usr/bin/python3
+Python system: Linux
+The Meson build system
+Version: 0.46.1
+Source dir: /data/Projects/DaF/Demos/NewsDemo/data
+Build dir: /data/Projects/DaF/Demos/NewsDemo/data/build
+Build type: native build
+
+ERROR: First statement must be a call to project

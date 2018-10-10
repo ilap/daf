@@ -1,0 +1,1689 @@
+<?xml version="1.0"?>
+<repository version="1.2" xmlns="http://www.gtk.org/introspection/core/1.0" xmlns:c="http://www.gtk.org/introspection/c/1.0" xmlns:glib="http://www.gtk.org/introspection/glib/1.0">
+<include name="GObject" version="2.0"/>
+<include name="Gee" version="0.8"/>
+<package name="dafioc"/>
+<c:include name="dafioc.h"/>
+<namespace name="dafioc" version="0.1" c:prefix="Daf">
+	<class name="IoCAdaptersConstructorInjectionComponentAdapterFactory" c:type="DafIoCAdaptersConstructorInjectionComponentAdapterFactory" glib:type-name="DafIoCAdaptersConstructorInjectionComponentAdapterFactory" glib:get-type="daf_io_c_adapters_constructor_injection_component_adapter_factory_get_type" glib:type-struct="IoCAdaptersConstructorInjectionComponentAdapterFactoryClass" parent="GObject.Object">
+		<implements name="Daf.IoCAdaptersIComponentAdapterFactory"/>
+		<field name="parent_instance">
+			<type name="GObject.Object" c:type="GObject"/>
+		</field>
+		<field name="priv">
+			<type name="IoCAdaptersConstructorInjectionComponentAdapterFactoryPrivate" c:type="DafIoCAdaptersConstructorInjectionComponentAdapterFactoryPrivate*"/>
+		</field>
+		<constructor name="new" c:identifier="daf_io_c_adapters_constructor_injection_component_adapter_factory_new">
+			<return-value transfer-ownership="full">
+				<type name="Daf.IoCAdaptersConstructorInjectionComponentAdapterFactory" c:type="DafIoCAdaptersConstructorInjectionComponentAdapterFactory*"/>
+			</return-value>
+		</constructor>
+	</class>
+	<record name="IoCAdaptersConstructorInjectionComponentAdapterFactoryClass" c:type="DafIoCAdaptersConstructorInjectionComponentAdapterFactoryClass" glib:is-gtype-struct-for="ConstructorInjectionComponentAdapterFactory">
+		<field name="parent_class">
+			<type name="GObject.ObjectClass" c:type="GObjectClass"/>
+		</field>
+	</record>
+	<record name="IoCAdaptersConstructorInjectionComponentAdapterFactoryPrivate" c:type="DafIoCAdaptersConstructorInjectionComponentAdapterFactoryPrivate" disguised="1"/>
+	<class name="IoCAdaptersCachingComponentAdapter" c:type="DafIoCAdaptersCachingComponentAdapter" glib:type-name="DafIoCAdaptersCachingComponentAdapter" glib:get-type="daf_io_c_adapters_caching_component_adapter_get_type" glib:type-struct="IoCAdaptersCachingComponentAdapterClass" parent="Daf.IoCAdaptersDecoratingComponentAdapter">
+		<field name="parent_instance">
+			<type name="Daf.IoCAdaptersDecoratingComponentAdapter" c:type="DafIoCAdaptersDecoratingComponentAdapter"/>
+		</field>
+		<field name="priv">
+			<type name="IoCAdaptersCachingComponentAdapterPrivate" c:type="DafIoCAdaptersCachingComponentAdapterPrivate*"/>
+		</field>
+		<constructor name="new" c:identifier="daf_io_c_adapters_caching_component_adapter_new">
+			<return-value transfer-ownership="full">
+				<type name="Daf.IoCAdaptersCachingComponentAdapter" c:type="DafIoCAdaptersCachingComponentAdapter*"/>
+			</return-value>
+			<parameters>
+				<parameter name="subject" transfer-ownership="none">
+					<type name="Daf.IoCIComponentAdapter" c:type="DafIoCIComponentAdapter*"/>
+				</parameter>
+				<parameter name="cached_instance" transfer-ownership="none" allow-none="1">
+					<type name="GObject.Object" c:type="GObject*"/>
+				</parameter>
+			</parameters>
+		</constructor>
+		<property name="cached-instance" writable="1" construct="1">
+			<type name="GObject.Object" c:type="GObject*"/>
+		</property>
+		<method name="set_cached_instance" c:identifier="daf_io_c_adapters_caching_component_adapter_set_cached_instance">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none" allow-none="1">
+					<type name="GObject.Object" c:type="GObject*"/>
+				</parameter>
+			</parameters>
+		</method>
+	</class>
+	<record name="IoCAdaptersCachingComponentAdapterClass" c:type="DafIoCAdaptersCachingComponentAdapterClass" glib:is-gtype-struct-for="CachingComponentAdapter">
+		<field name="parent_class">
+			<type name="Daf.IoCAdaptersDecoratingComponentAdapterClass" c:type="DafIoCAdaptersDecoratingComponentAdapterClass"/>
+		</field>
+	</record>
+	<record name="IoCAdaptersCachingComponentAdapterPrivate" c:type="DafIoCAdaptersCachingComponentAdapterPrivate" disguised="1"/>
+	<class name="IoCAdaptersConstructorInjectionComponentAdapter" c:type="DafIoCAdaptersConstructorInjectionComponentAdapter" glib:type-name="DafIoCAdaptersConstructorInjectionComponentAdapter" glib:get-type="daf_io_c_adapters_constructor_injection_component_adapter_get_type" glib:type-struct="IoCAdaptersConstructorInjectionComponentAdapterClass" parent="Daf.IoCAdaptersInstantiatingComponentAdapter">
+		<field name="parent_instance">
+			<type name="Daf.IoCAdaptersInstantiatingComponentAdapter" c:type="DafIoCAdaptersInstantiatingComponentAdapter"/>
+		</field>
+		<field name="priv">
+			<type name="IoCAdaptersConstructorInjectionComponentAdapterPrivate" c:type="DafIoCAdaptersConstructorInjectionComponentAdapterPrivate*"/>
+		</field>
+		<field name="instantiating">
+			<type name="gboolean" c:type="gboolean"/>
+		</field>
+		<constructor name="new" c:identifier="daf_io_c_adapters_constructor_injection_component_adapter_new">
+			<return-value transfer-ownership="full">
+				<type name="Daf.IoCAdaptersConstructorInjectionComponentAdapter" c:type="DafIoCAdaptersConstructorInjectionComponentAdapter*"/>
+			</return-value>
+			<parameters>
+				<parameter name="component_key" transfer-ownership="none">
+					<type name="GObject.Value" c:type="GValue"/>
+				</parameter>
+				<parameter name="component_type" transfer-ownership="none">
+					<type name="GType" c:type="GType"/>
+				</parameter>
+				<parameter name="parameters" transfer-ownership="none" allow-none="1">
+					<array length="3">
+						<type name="GObject.Parameter" c:type="GParameter"/>
+					</array>
+				</parameter>
+				<parameter name="parameters_length1" transfer-ownership="none">
+					<type name="gint" c:type="gint"/>
+				</parameter>
+			</parameters>
+		</constructor>
+		<method name="get_construct_properties" c:identifier="daf_io_c_adapters_constructor_injection_component_adapter_get_construct_properties">
+			<return-value transfer-ownership="full" allow-none="1">
+				<array length="0">
+					<type name="GObject.ParamSpec" c:type="GParamSpec*"/>
+				</array>
+			</return-value>
+			<parameters>
+				<parameter name="result_length1" direction="out" transfer-ownership="none">
+					<type name="gint" c:type="gint*"/>
+				</parameter>
+			</parameters>
+		</method>
+	</class>
+	<record name="IoCAdaptersConstructorInjectionComponentAdapterClass" c:type="DafIoCAdaptersConstructorInjectionComponentAdapterClass" glib:is-gtype-struct-for="ConstructorInjectionComponentAdapter">
+		<field name="parent_class">
+			<type name="Daf.IoCAdaptersInstantiatingComponentAdapterClass" c:type="DafIoCAdaptersInstantiatingComponentAdapterClass"/>
+		</field>
+	</record>
+	<record name="IoCAdaptersConstructorInjectionComponentAdapterPrivate" c:type="DafIoCAdaptersConstructorInjectionComponentAdapterPrivate" disguised="1"/>
+	<class name="IoCAdaptersInstantiatingComponentAdapter" c:type="DafIoCAdaptersInstantiatingComponentAdapter" glib:type-name="DafIoCAdaptersInstantiatingComponentAdapter" glib:get-type="daf_io_c_adapters_instantiating_component_adapter_get_type" glib:type-struct="IoCAdaptersInstantiatingComponentAdapterClass" parent="Daf.IoCAdaptersAbstractComponentAdapter" abstract="1">
+		<field name="parent_instance">
+			<type name="Daf.IoCAdaptersAbstractComponentAdapter" c:type="DafIoCAdaptersAbstractComponentAdapter"/>
+		</field>
+		<field name="priv">
+			<type name="IoCAdaptersInstantiatingComponentAdapterPrivate" c:type="DafIoCAdaptersInstantiatingComponentAdapterPrivate*"/>
+		</field>
+		<method name="instantiate" c:identifier="daf_io_c_adapters_instantiating_component_adapter_instantiate" throws="1">
+			<return-value transfer-ownership="full" allow-none="1">
+				<type name="GObject.Object" c:type="GObject*"/>
+			</return-value>
+			<parameters>
+				<parameter name="ordered_list" direction="inout" transfer-ownership="full">
+					<type name="Gee.ArrayList" c:type="GeeArrayList**">
+						<type name="Daf.IoCIComponentAdapter" c:type="DafIoCIComponentAdapter*"/>
+					</type>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="instantiate" invoker="instantiate" throws="1">
+			<return-value transfer-ownership="full" allow-none="1">
+				<type name="GObject.Object" c:type="GObject*"/>
+			</return-value>
+			<parameters>
+				<parameter name="ordered_list" direction="inout" transfer-ownership="full">
+					<type name="Gee.ArrayList" c:type="GeeArrayList**">
+						<type name="Daf.IoCIComponentAdapter" c:type="DafIoCIComponentAdapter*"/>
+					</type>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<property name="parameters" writable="1">
+			<array>
+				<type name="GObject.Parameter" c:type="GParameter"/>
+			</array>
+		</property>
+		<method name="get_parameters" c:identifier="daf_io_c_adapters_instantiating_component_adapter_get_parameters">
+			<return-value transfer-ownership="none" allow-none="1">
+				<array length="0">
+					<type name="GObject.Parameter" c:type="GParameter"/>
+				</array>
+			</return-value>
+			<parameters>
+				<parameter name="result_length1" direction="out" transfer-ownership="none">
+					<type name="gint" c:type="gint*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<method name="set_parameters" c:identifier="daf_io_c_adapters_instantiating_component_adapter_set_parameters">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none" allow-none="1">
+					<array length="1">
+						<type name="GObject.Parameter" c:type="GParameter"/>
+					</array>
+				</parameter>
+				<parameter name="value_length1" transfer-ownership="none">
+					<type name="gint" c:type="gint"/>
+				</parameter>
+			</parameters>
+		</method>
+	</class>
+	<record name="IoCAdaptersInstantiatingComponentAdapterClass" c:type="DafIoCAdaptersInstantiatingComponentAdapterClass" glib:is-gtype-struct-for="InstantiatingComponentAdapter">
+		<field name="parent_class">
+			<type name="Daf.IoCAdaptersAbstractComponentAdapterClass" c:type="DafIoCAdaptersAbstractComponentAdapterClass"/>
+		</field>
+		<field name="instantiate">
+			<callback name="instantiate" c:type="instantiate" throws="1">
+				<return-value transfer-ownership="full" allow-none="1">
+					<type name="GObject.Object" c:type="GObject*"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.IoCAdaptersInstantiatingComponentAdapter" c:type="DafIoCAdaptersInstantiatingComponentAdapter*"/>
+					</parameter>
+					<parameter name="ordered_list" direction="inout" transfer-ownership="full">
+						<type name="Gee.ArrayList" c:type="GeeArrayList**">
+							<type name="Daf.IoCIComponentAdapter" c:type="DafIoCIComponentAdapter*"/>
+						</type>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+	</record>
+	<record name="IoCAdaptersInstantiatingComponentAdapterPrivate" c:type="DafIoCAdaptersInstantiatingComponentAdapterPrivate" disguised="1"/>
+	<class name="IoCAdaptersDecoratingComponentAdapter" c:type="DafIoCAdaptersDecoratingComponentAdapter" glib:type-name="DafIoCAdaptersDecoratingComponentAdapter" glib:get-type="daf_io_c_adapters_decorating_component_adapter_get_type" glib:type-struct="IoCAdaptersDecoratingComponentAdapterClass" parent="GObject.Object" abstract="1">
+		<implements name="Daf.IoCIComponentAdapter"/>
+		<field name="parent_instance">
+			<type name="GObject.Object" c:type="GObject"/>
+		</field>
+		<field name="priv">
+			<type name="IoCAdaptersDecoratingComponentAdapterPrivate" c:type="DafIoCAdaptersDecoratingComponentAdapterPrivate*"/>
+		</field>
+		<method name="resolve_instance" c:identifier="daf_io_c_adapters_decorating_component_adapter_resolve_instance">
+			<return-value transfer-ownership="full" allow-none="1">
+				<type name="GObject.Object" c:type="GObject*"/>
+			</return-value>
+			<parameters>
+				<parameter name="container" transfer-ownership="none" allow-none="1">
+					<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="resolve_instance" invoker="resolve_instance">
+			<return-value transfer-ownership="full" allow-none="1">
+				<type name="GObject.Object" c:type="GObject*"/>
+			</return-value>
+			<parameters>
+				<parameter name="container" transfer-ownership="none" allow-none="1">
+					<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<property name="subject" writable="1" construct="1">
+			<type name="Daf.IoCIComponentAdapter" c:type="DafIoCIComponentAdapter*"/>
+		</property>
+		<method name="set_subject" c:identifier="daf_io_c_adapters_decorating_component_adapter_set_subject">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="Daf.IoCIComponentAdapter" c:type="DafIoCIComponentAdapter*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<property name="component-key" writable="1">
+			<type name="GObject.Value" c:type="GValue"/>
+		</property>
+		<method name="get_component_key" c:identifier="daf_io_c_adapters_decorating_component_adapter_get_component_key">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="result" direction="out" transfer-ownership="none" caller-allocates="1">
+					<type name="GObject.Value" c:type="GValue*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="get_component_key" invoker="get_component_key">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="result" direction="out" transfer-ownership="none" caller-allocates="1">
+					<type name="GObject.Value" c:type="GValue*"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<method name="set_component_key" c:identifier="daf_io_c_adapters_decorating_component_adapter_set_component_key">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="GObject.Value" c:type="GValue"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="set_component_key" invoker="set_component_key">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="GObject.Value" c:type="GValue"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<property name="component-type" writable="1">
+			<type name="GType" c:type="GType"/>
+		</property>
+		<method name="get_component_type" c:identifier="daf_io_c_adapters_decorating_component_adapter_get_component_type">
+			<return-value transfer-ownership="none">
+				<type name="GType" c:type="GType"/>
+			</return-value>
+		</method>
+		<virtual-method name="get_component_type" invoker="get_component_type">
+			<return-value transfer-ownership="none">
+				<type name="GType" c:type="GType"/>
+			</return-value>
+		</virtual-method>
+		<method name="set_component_type" c:identifier="daf_io_c_adapters_decorating_component_adapter_set_component_type">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="GType" c:type="GType"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="set_component_type" invoker="set_component_type">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="GType" c:type="GType"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<property name="container" writable="1">
+			<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+		</property>
+		<method name="get_container" c:identifier="daf_io_c_adapters_decorating_component_adapter_get_container">
+			<return-value transfer-ownership="none">
+				<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+			</return-value>
+		</method>
+		<virtual-method name="get_container" invoker="get_container">
+			<return-value transfer-ownership="none">
+				<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+			</return-value>
+		</virtual-method>
+		<method name="set_container" c:identifier="daf_io_c_adapters_decorating_component_adapter_set_container">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="set_container" invoker="set_container">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+	</class>
+	<record name="IoCAdaptersDecoratingComponentAdapterClass" c:type="DafIoCAdaptersDecoratingComponentAdapterClass" glib:is-gtype-struct-for="DecoratingComponentAdapter">
+		<field name="parent_class">
+			<type name="GObject.ObjectClass" c:type="GObjectClass"/>
+		</field>
+		<field name="resolve_instance">
+			<callback name="resolve_instance" c:type="resolve_instance">
+				<return-value transfer-ownership="full" allow-none="1">
+					<type name="GObject.Object" c:type="GObject*"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.IoCAdaptersDecoratingComponentAdapter" c:type="DafIoCAdaptersDecoratingComponentAdapter*"/>
+					</parameter>
+					<parameter name="container" transfer-ownership="none" allow-none="1">
+						<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+	</record>
+	<record name="IoCAdaptersDecoratingComponentAdapterPrivate" c:type="DafIoCAdaptersDecoratingComponentAdapterPrivate" disguised="1"/>
+	<class name="IoCAdaptersInstanceComponentAdapter" c:type="DafIoCAdaptersInstanceComponentAdapter" glib:type-name="DafIoCAdaptersInstanceComponentAdapter" glib:get-type="daf_io_c_adapters_instance_component_adapter_get_type" glib:type-struct="IoCAdaptersInstanceComponentAdapterClass" parent="Daf.IoCAdaptersAbstractComponentAdapter">
+		<field name="parent_instance">
+			<type name="Daf.IoCAdaptersAbstractComponentAdapter" c:type="DafIoCAdaptersAbstractComponentAdapter"/>
+		</field>
+		<field name="priv">
+			<type name="IoCAdaptersInstanceComponentAdapterPrivate" c:type="DafIoCAdaptersInstanceComponentAdapterPrivate*"/>
+		</field>
+		<constructor name="new" c:identifier="daf_io_c_adapters_instance_component_adapter_new">
+			<return-value transfer-ownership="full">
+				<type name="Daf.IoCAdaptersInstanceComponentAdapter" c:type="DafIoCAdaptersInstanceComponentAdapter*"/>
+			</return-value>
+			<parameters>
+				<parameter name="key" transfer-ownership="none">
+					<type name="GObject.Value" c:type="GValue"/>
+				</parameter>
+				<parameter name="instance" transfer-ownership="none">
+					<type name="GObject.Object" c:type="GObject*"/>
+				</parameter>
+			</parameters>
+		</constructor>
+	</class>
+	<record name="IoCAdaptersInstanceComponentAdapterClass" c:type="DafIoCAdaptersInstanceComponentAdapterClass" glib:is-gtype-struct-for="InstanceComponentAdapter">
+		<field name="parent_class">
+			<type name="Daf.IoCAdaptersAbstractComponentAdapterClass" c:type="DafIoCAdaptersAbstractComponentAdapterClass"/>
+		</field>
+	</record>
+	<record name="IoCAdaptersInstanceComponentAdapterPrivate" c:type="DafIoCAdaptersInstanceComponentAdapterPrivate" disguised="1"/>
+	<class name="IoCAdaptersDefaultComponentAdapterFactory" c:type="DafIoCAdaptersDefaultComponentAdapterFactory" glib:type-name="DafIoCAdaptersDefaultComponentAdapterFactory" glib:get-type="daf_io_c_adapters_default_component_adapter_factory_get_type" glib:type-struct="IoCAdaptersDefaultComponentAdapterFactoryClass" parent="GObject.Object">
+		<implements name="Daf.IoCAdaptersIComponentAdapterFactory"/>
+		<field name="parent_instance">
+			<type name="GObject.Object" c:type="GObject"/>
+		</field>
+		<field name="priv">
+			<type name="IoCAdaptersDefaultComponentAdapterFactoryPrivate" c:type="DafIoCAdaptersDefaultComponentAdapterFactoryPrivate*"/>
+		</field>
+		<constructor name="new" c:identifier="daf_io_c_adapters_default_component_adapter_factory_new">
+			<return-value transfer-ownership="full">
+				<type name="Daf.IoCAdaptersDefaultComponentAdapterFactory" c:type="DafIoCAdaptersDefaultComponentAdapterFactory*"/>
+			</return-value>
+		</constructor>
+	</class>
+	<record name="IoCAdaptersDefaultComponentAdapterFactoryClass" c:type="DafIoCAdaptersDefaultComponentAdapterFactoryClass" glib:is-gtype-struct-for="DefaultComponentAdapterFactory">
+		<field name="parent_class">
+			<type name="GObject.ObjectClass" c:type="GObjectClass"/>
+		</field>
+	</record>
+	<record name="IoCAdaptersDefaultComponentAdapterFactoryPrivate" c:type="DafIoCAdaptersDefaultComponentAdapterFactoryPrivate" disguised="1"/>
+	<class name="IoCAdaptersAbstractComponentAdapter" c:type="DafIoCAdaptersAbstractComponentAdapter" glib:type-name="DafIoCAdaptersAbstractComponentAdapter" glib:get-type="daf_io_c_adapters_abstract_component_adapter_get_type" glib:type-struct="IoCAdaptersAbstractComponentAdapterClass" parent="GObject.Object" abstract="1">
+		<implements name="Daf.IoCIComponentAdapter"/>
+		<field name="parent_instance">
+			<type name="GObject.Object" c:type="GObject"/>
+		</field>
+		<field name="priv">
+			<type name="IoCAdaptersAbstractComponentAdapterPrivate" c:type="DafIoCAdaptersAbstractComponentAdapterPrivate*"/>
+		</field>
+		<method name="resolve_instance" c:identifier="daf_io_c_adapters_abstract_component_adapter_resolve_instance">
+			<return-value transfer-ownership="full" allow-none="1">
+				<type name="GObject.Object" c:type="GObject*"/>
+			</return-value>
+			<parameters>
+				<parameter name="container" transfer-ownership="none" allow-none="1">
+					<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="resolve_instance" invoker="resolve_instance">
+			<return-value transfer-ownership="full" allow-none="1">
+				<type name="GObject.Object" c:type="GObject*"/>
+			</return-value>
+			<parameters>
+				<parameter name="container" transfer-ownership="none" allow-none="1">
+					<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<method name="check_concrete" c:identifier="daf_io_c_adapters_abstract_component_adapter_check_concrete" throws="1">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+		</method>
+		<method name="to_string" c:identifier="daf_io_c_adapters_abstract_component_adapter_to_string">
+			<return-value transfer-ownership="full">
+				<type name="utf8" c:type="gchar*"/>
+			</return-value>
+		</method>
+	</class>
+	<record name="IoCAdaptersAbstractComponentAdapterClass" c:type="DafIoCAdaptersAbstractComponentAdapterClass" glib:is-gtype-struct-for="AbstractComponentAdapter">
+		<field name="parent_class">
+			<type name="GObject.ObjectClass" c:type="GObjectClass"/>
+		</field>
+		<field name="resolve_instance">
+			<callback name="resolve_instance" c:type="resolve_instance">
+				<return-value transfer-ownership="full" allow-none="1">
+					<type name="GObject.Object" c:type="GObject*"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.IoCAdaptersAbstractComponentAdapter" c:type="DafIoCAdaptersAbstractComponentAdapter*"/>
+					</parameter>
+					<parameter name="container" transfer-ownership="none" allow-none="1">
+						<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+	</record>
+	<record name="IoCAdaptersAbstractComponentAdapterPrivate" c:type="DafIoCAdaptersAbstractComponentAdapterPrivate" disguised="1"/>
+	<interface name="IoCAdaptersIComponentAdapterFactory" c:type="DafIoCAdaptersIComponentAdapterFactory" glib:type-name="DafIoCAdaptersIComponentAdapterFactory" glib:get-type="daf_io_c_adapters_icomponent_adapter_factory_get_type" glib:type-struct="IComponentAdapterFactoryIface">
+		<prerequisite name="GObject.Object"/>
+		<method name="create_adapter" c:identifier="daf_io_c_adapters_icomponent_adapter_factory_create_adapter">
+			<return-value transfer-ownership="full">
+				<type name="Daf.IoCIComponentAdapter" c:type="DafIoCIComponentAdapter*"/>
+			</return-value>
+			<parameters>
+				<parameter name="key" transfer-ownership="none">
+					<type name="GObject.Value" c:type="GValue"/>
+				</parameter>
+				<parameter name="type" transfer-ownership="none" allow-none="1">
+					<type name="GType" c:type="GType*"/>
+				</parameter>
+				<parameter name="parameters" transfer-ownership="none" allow-none="1">
+					<array length="3">
+						<type name="GObject.Parameter" c:type="GParameter"/>
+					</array>
+				</parameter>
+				<parameter name="parameters_length1" transfer-ownership="none">
+					<type name="gint" c:type="gint"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="create_adapter" invoker="create_adapter">
+			<return-value transfer-ownership="full">
+				<type name="Daf.IoCIComponentAdapter" c:type="DafIoCIComponentAdapter*"/>
+			</return-value>
+			<parameters>
+				<parameter name="key" transfer-ownership="none">
+					<type name="GObject.Value" c:type="GValue"/>
+				</parameter>
+				<parameter name="type" transfer-ownership="none" allow-none="1">
+					<type name="GType" c:type="GType*"/>
+				</parameter>
+				<parameter name="parameters" transfer-ownership="none" allow-none="1">
+					<array length="3">
+						<type name="GObject.Parameter" c:type="GParameter"/>
+					</array>
+				</parameter>
+				<parameter name="parameters_length1" transfer-ownership="none">
+					<type name="gint" c:type="gint"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+	</interface>
+	<record name="IComponentAdapterFactoryIface" c:type="DafIoCAdaptersIComponentAdapterFactoryIface" glib:is-gtype-struct-for="IComponentAdapterFactory">
+		<field name="parent_iface">
+			<type name="GObject.TypeInterface" c:type="GTypeInterface"/>
+		</field>
+		<field name="create_adapter">
+			<callback name="create_adapter" c:type="create_adapter">
+				<return-value transfer-ownership="full">
+					<type name="Daf.IoCIComponentAdapter" c:type="DafIoCIComponentAdapter*"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.IoCAdaptersIComponentAdapterFactory" c:type="DafIoCAdaptersIComponentAdapterFactory*"/>
+					</parameter>
+					<parameter name="key" transfer-ownership="none">
+						<type name="GObject.Value" c:type="GValue"/>
+					</parameter>
+					<parameter name="type" transfer-ownership="none" allow-none="1">
+						<type name="GType" c:type="GType*"/>
+					</parameter>
+					<parameter name="parameters" transfer-ownership="none" allow-none="1">
+						<array length="4">
+							<type name="GObject.Parameter" c:type="GParameter"/>
+						</array>
+					</parameter>
+					<parameter name="parameters_length1" transfer-ownership="none">
+						<type name="gint" c:type="gint"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+	</record>
+	<class name="IoCContainersCachedContainer" c:type="DafIoCContainersCachedContainer" glib:type-name="DafIoCContainersCachedContainer" glib:get-type="daf_io_c_containers_cached_container_get_type" glib:type-struct="IoCContainersCachedContainerClass" parent="GObject.Object">
+		<implements name="Daf.IoCIContainer"/>
+		<implements name="Daf.IoCIContainerRegistrar"/>
+		<field name="parent_instance">
+			<type name="GObject.Object" c:type="GObject"/>
+		</field>
+		<field name="priv">
+			<type name="IoCContainersCachedContainerPrivate" c:type="DafIoCContainersCachedContainerPrivate*"/>
+		</field>
+		<constructor name="new" c:identifier="daf_io_c_containers_cached_container_new">
+			<return-value transfer-ownership="full">
+				<type name="Daf.IoCContainersCachedContainer" c:type="DafIoCContainersCachedContainer*"/>
+			</return-value>
+			<parameters>
+				<parameter name="adapter_factory" transfer-ownership="none" allow-none="1">
+					<type name="Daf.IoCAdaptersIComponentAdapterFactory" c:type="DafIoCAdaptersIComponentAdapterFactory*"/>
+				</parameter>
+			</parameters>
+		</constructor>
+		<constructor name="with_parent" c:identifier="daf_io_c_containers_cached_container_new_with_parent">
+			<return-value transfer-ownership="full">
+				<type name="Daf.IoCContainersCachedContainer" c:type="DafIoCContainersCachedContainer*"/>
+			</return-value>
+			<parameters>
+				<parameter name="parent" transfer-ownership="none" allow-none="1">
+					<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+				</parameter>
+				<parameter name="adapter_factory" transfer-ownership="none" allow-none="1">
+					<type name="Daf.IoCAdaptersIComponentAdapterFactory" c:type="DafIoCAdaptersIComponentAdapterFactory*"/>
+				</parameter>
+			</parameters>
+		</constructor>
+		<method name="add_child_container" c:identifier="daf_io_c_containers_cached_container_add_child_container">
+			<return-value transfer-ownership="full">
+				<type name="gboolean" c:type="gboolean"/>
+			</return-value>
+			<parameters>
+				<parameter name="child" transfer-ownership="none">
+					<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="add_child_container" invoker="add_child_container">
+			<return-value transfer-ownership="full">
+				<type name="gboolean" c:type="gboolean"/>
+			</return-value>
+			<parameters>
+				<parameter name="child" transfer-ownership="none">
+					<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<method name="remove_child_container" c:identifier="daf_io_c_containers_cached_container_remove_child_container">
+			<return-value transfer-ownership="full">
+				<type name="gboolean" c:type="gboolean"/>
+			</return-value>
+			<parameters>
+				<parameter name="child" transfer-ownership="none">
+					<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="remove_child_container" invoker="remove_child_container">
+			<return-value transfer-ownership="full">
+				<type name="gboolean" c:type="gboolean"/>
+			</return-value>
+			<parameters>
+				<parameter name="child" transfer-ownership="none">
+					<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<function name="order_adapters_with_container_adapters_last" c:identifier="daf_io_c_containers_cached_container_order_adapters_with_container_adapters_last">
+			<return-value transfer-ownership="full">
+				<type name="Gee.ArrayList" c:type="GeeArrayList*"/>
+			</return-value>
+			<parameters>
+				<parameter name="adapters" transfer-ownership="none">
+					<type name="Gee.ArrayList" c:type="GeeArrayList*"/>
+				</parameter>
+			</parameters>
+		</function>
+	</class>
+	<record name="IoCContainersCachedContainerClass" c:type="DafIoCContainersCachedContainerClass" glib:is-gtype-struct-for="CachedContainer">
+		<field name="parent_class">
+			<type name="GObject.ObjectClass" c:type="GObjectClass"/>
+		</field>
+		<field name="add_child_container">
+			<callback name="add_child_container" c:type="add_child_container">
+				<return-value transfer-ownership="full">
+					<type name="gboolean" c:type="gboolean"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.IoCContainersCachedContainer" c:type="DafIoCContainersCachedContainer*"/>
+					</parameter>
+					<parameter name="child" transfer-ownership="none">
+						<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="remove_child_container">
+			<callback name="remove_child_container" c:type="remove_child_container">
+				<return-value transfer-ownership="full">
+					<type name="gboolean" c:type="gboolean"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.IoCContainersCachedContainer" c:type="DafIoCContainersCachedContainer*"/>
+					</parameter>
+					<parameter name="child" transfer-ownership="none">
+						<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+	</record>
+	<record name="IoCContainersCachedContainerPrivate" c:type="DafIoCContainersCachedContainerPrivate" disguised="1"/>
+	<enumeration name="ComponentAdapterError" c:type="DafIoCComponentAdapterError" glib:error-domain="daf_io_c_component_adapter_error-quark">
+		<member name="not_concrete_registration" c:identifier="DAF_IO_C_COMPONENT_ADAPTER_ERROR_NOT_CONCRETE_REGISTRATION" value="0"/>
+		<member name="assignability_registration" c:identifier="DAF_IO_C_COMPONENT_ADAPTER_ERROR_ASSIGNABILITY_REGISTRATION" value="1"/>
+	</enumeration>
+	<enumeration name="RegistrationError" c:type="DafIoCRegistrationError" glib:error-domain="daf_io_c_registration_error-quark">
+		<member name="duplicate_key" c:identifier="DAF_IO_C_REGISTRATION_ERROR_DUPLICATE_KEY" value="0"/>
+		<member name="assignability" c:identifier="DAF_IO_C_REGISTRATION_ERROR_ASSIGNABILITY" value="1"/>
+		<member name="unregistered_type" c:identifier="DAF_IO_C_REGISTRATION_ERROR_UNREGISTERED_TYPE" value="2"/>
+	</enumeration>
+	<enumeration name="DependencyError" c:type="DafIoCDependencyError" glib:error-domain="daf_io_c_dependency_error-quark">
+		<member name="cyclic_dependency" c:identifier="DAF_IO_C_DEPENDENCY_ERROR_CYCLIC_DEPENDENCY" value="0"/>
+		<member name="unsatisfied_dependency" c:identifier="DAF_IO_C_DEPENDENCY_ERROR_UNSATISFIED_DEPENDENCY" value="1"/>
+	</enumeration>
+	<enumeration name="ResolutionError" c:type="DafIoCResolutionError" glib:error-domain="daf_io_c_resolution_error-quark">
+		<member name="ambigous_component" c:identifier="DAF_IO_C_RESOLUTION_ERROR_AMBIGOUS_COMPONENT" value="0"/>
+		<member name="not_valid_key_type" c:identifier="DAF_IO_C_RESOLUTION_ERROR_NOT_VALID_KEY_TYPE" value="1"/>
+	</enumeration>
+	<interface name="IoCIContainer" c:type="DafIoCIContainer" glib:type-name="DafIoCIContainer" glib:get-type="daf_io_c_icontainer_get_type" glib:type-struct="IContainerIface">
+		<prerequisite name="GObject.Object"/>
+		<method name="resolve" c:identifier="daf_io_c_icontainer_resolve">
+			<return-value transfer-ownership="full" allow-none="1">
+				<type name="GObject.Object" c:type="GObject*"/>
+			</return-value>
+			<parameters>
+				<parameter name="key" transfer-ownership="none">
+					<type name="GObject.Value" c:type="GValue"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="resolve" invoker="resolve">
+			<return-value transfer-ownership="full" allow-none="1">
+				<type name="GObject.Object" c:type="GObject*"/>
+			</return-value>
+			<parameters>
+				<parameter name="key" transfer-ownership="none">
+					<type name="GObject.Value" c:type="GValue"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<method name="resolve_of_type" c:identifier="daf_io_c_icontainer_resolve_of_type">
+			<return-value transfer-ownership="full" allow-none="1">
+				<type name="GObject.Object" c:type="GObject*"/>
+			</return-value>
+			<parameters>
+				<parameter name="type" transfer-ownership="none">
+					<type name="GType" c:type="GType"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="resolve_of_type" invoker="resolve_of_type">
+			<return-value transfer-ownership="full" allow-none="1">
+				<type name="GObject.Object" c:type="GObject*"/>
+			</return-value>
+			<parameters>
+				<parameter name="type" transfer-ownership="none">
+					<type name="GType" c:type="GType"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<method name="resolves_of_type" c:identifier="daf_io_c_icontainer_resolves_of_type">
+			<return-value transfer-ownership="full">
+				<type name="Gee.ArrayList" c:type="GeeArrayList*"/>
+			</return-value>
+			<parameters>
+				<parameter name="type" transfer-ownership="none" allow-none="1">
+					<type name="GType" c:type="GType*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="resolves_of_type" invoker="resolves_of_type">
+			<return-value transfer-ownership="full">
+				<type name="Gee.ArrayList" c:type="GeeArrayList*"/>
+			</return-value>
+			<parameters>
+				<parameter name="type" transfer-ownership="none" allow-none="1">
+					<type name="GType" c:type="GType*"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<method name="get_adapter" c:identifier="daf_io_c_icontainer_get_adapter">
+			<return-value transfer-ownership="full" allow-none="1">
+				<type name="Daf.IoCIComponentAdapter" c:type="DafIoCIComponentAdapter*"/>
+			</return-value>
+			<parameters>
+				<parameter name="key" transfer-ownership="none">
+					<type name="GObject.Value" c:type="GValue"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="get_adapter" invoker="get_adapter">
+			<return-value transfer-ownership="full" allow-none="1">
+				<type name="Daf.IoCIComponentAdapter" c:type="DafIoCIComponentAdapter*"/>
+			</return-value>
+			<parameters>
+				<parameter name="key" transfer-ownership="none">
+					<type name="GObject.Value" c:type="GValue"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<method name="get_adapter_of_type" c:identifier="daf_io_c_icontainer_get_adapter_of_type" throws="1">
+			<return-value transfer-ownership="full" allow-none="1">
+				<type name="Daf.IoCIComponentAdapter" c:type="DafIoCIComponentAdapter*"/>
+			</return-value>
+			<parameters>
+				<parameter name="type" transfer-ownership="none">
+					<type name="GType" c:type="GType"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="get_adapter_of_type" invoker="get_adapter_of_type" throws="1">
+			<return-value transfer-ownership="full" allow-none="1">
+				<type name="Daf.IoCIComponentAdapter" c:type="DafIoCIComponentAdapter*"/>
+			</return-value>
+			<parameters>
+				<parameter name="type" transfer-ownership="none">
+					<type name="GType" c:type="GType"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<method name="get_adapters_of_type" c:identifier="daf_io_c_icontainer_get_adapters_of_type">
+			<return-value transfer-ownership="full" allow-none="1">
+				<type name="Gee.ArrayList" c:type="GeeArrayList*"/>
+			</return-value>
+			<parameters>
+				<parameter name="type" transfer-ownership="none">
+					<type name="GType" c:type="GType"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="get_adapters_of_type" invoker="get_adapters_of_type">
+			<return-value transfer-ownership="full" allow-none="1">
+				<type name="Gee.ArrayList" c:type="GeeArrayList*"/>
+			</return-value>
+			<parameters>
+				<parameter name="type" transfer-ownership="none">
+					<type name="GType" c:type="GType"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<method name="add_ordered_adapter" c:identifier="daf_io_c_icontainer_add_ordered_adapter">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="adapter" transfer-ownership="none">
+					<type name="Daf.IoCIComponentAdapter" c:type="DafIoCIComponentAdapter*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="add_ordered_adapter" invoker="add_ordered_adapter">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="adapter" transfer-ownership="none">
+					<type name="Daf.IoCIComponentAdapter" c:type="DafIoCIComponentAdapter*"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<property name="parent" writable="1">
+			<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+		</property>
+		<method name="get_parent" c:identifier="daf_io_c_icontainer_get_parent">
+			<return-value transfer-ownership="none">
+				<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+			</return-value>
+		</method>
+		<virtual-method name="get_parent" invoker="get_parent">
+			<return-value transfer-ownership="none">
+				<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+			</return-value>
+		</virtual-method>
+		<method name="set_parent" c:identifier="daf_io_c_icontainer_set_parent">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="set_parent" invoker="set_parent">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<property name="adapters" writable="1">
+			<type name="Gee.ArrayList" c:type="GeeArrayList*">
+				<type name="Daf.IoCIComponentAdapter" c:type="DafIoCIComponentAdapter*"/>
+			</type>
+		</property>
+		<method name="get_adapters" c:identifier="daf_io_c_icontainer_get_adapters">
+			<return-value transfer-ownership="none">
+				<type name="Gee.ArrayList" c:type="GeeArrayList*">
+					<type name="Daf.IoCIComponentAdapter" c:type="DafIoCIComponentAdapter*"/>
+				</type>
+			</return-value>
+		</method>
+		<virtual-method name="get_adapters" invoker="get_adapters">
+			<return-value transfer-ownership="none">
+				<type name="Gee.ArrayList" c:type="GeeArrayList*">
+					<type name="Daf.IoCIComponentAdapter" c:type="DafIoCIComponentAdapter*"/>
+				</type>
+			</return-value>
+		</virtual-method>
+		<method name="set_adapters" c:identifier="daf_io_c_icontainer_set_adapters">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="Gee.ArrayList" c:type="GeeArrayList*">
+						<type name="Daf.IoCIComponentAdapter" c:type="DafIoCIComponentAdapter*"/>
+					</type>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="set_adapters" invoker="set_adapters">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="Gee.ArrayList" c:type="GeeArrayList*">
+						<type name="Daf.IoCIComponentAdapter" c:type="DafIoCIComponentAdapter*"/>
+					</type>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<property name="instances" writable="1">
+			<type name="Gee.ArrayList" c:type="GeeArrayList*"/>
+		</property>
+		<method name="get_instances" c:identifier="daf_io_c_icontainer_get_instances">
+			<return-value transfer-ownership="full">
+				<type name="Gee.ArrayList" c:type="GeeArrayList*"/>
+			</return-value>
+		</method>
+		<virtual-method name="get_instances" invoker="get_instances">
+			<return-value transfer-ownership="full">
+				<type name="Gee.ArrayList" c:type="GeeArrayList*"/>
+			</return-value>
+		</virtual-method>
+		<method name="set_instances" c:identifier="daf_io_c_icontainer_set_instances">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="Gee.ArrayList" c:type="GeeArrayList*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="set_instances" invoker="set_instances">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="Gee.ArrayList" c:type="GeeArrayList*"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+	</interface>
+	<record name="IContainerIface" c:type="DafIoCIContainerIface" glib:is-gtype-struct-for="IContainer">
+		<field name="parent_iface">
+			<type name="GObject.TypeInterface" c:type="GTypeInterface"/>
+		</field>
+		<field name="resolve">
+			<callback name="resolve" c:type="resolve">
+				<return-value transfer-ownership="full" allow-none="1">
+					<type name="GObject.Object" c:type="GObject*"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+					</parameter>
+					<parameter name="key" transfer-ownership="none">
+						<type name="GObject.Value" c:type="GValue"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="resolve_of_type">
+			<callback name="resolve_of_type" c:type="resolve_of_type">
+				<return-value transfer-ownership="full" allow-none="1">
+					<type name="GObject.Object" c:type="GObject*"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+					</parameter>
+					<parameter name="type" transfer-ownership="none">
+						<type name="GType" c:type="GType"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="resolves_of_type">
+			<callback name="resolves_of_type" c:type="resolves_of_type">
+				<return-value transfer-ownership="full">
+					<type name="Gee.ArrayList" c:type="GeeArrayList*"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+					</parameter>
+					<parameter name="type" transfer-ownership="none" allow-none="1">
+						<type name="GType" c:type="GType*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="get_adapter">
+			<callback name="get_adapter" c:type="get_adapter">
+				<return-value transfer-ownership="full" allow-none="1">
+					<type name="Daf.IoCIComponentAdapter" c:type="DafIoCIComponentAdapter*"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+					</parameter>
+					<parameter name="key" transfer-ownership="none">
+						<type name="GObject.Value" c:type="GValue"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="get_adapter_of_type">
+			<callback name="get_adapter_of_type" c:type="get_adapter_of_type" throws="1">
+				<return-value transfer-ownership="full" allow-none="1">
+					<type name="Daf.IoCIComponentAdapter" c:type="DafIoCIComponentAdapter*"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+					</parameter>
+					<parameter name="type" transfer-ownership="none">
+						<type name="GType" c:type="GType"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="get_adapters_of_type">
+			<callback name="get_adapters_of_type" c:type="get_adapters_of_type">
+				<return-value transfer-ownership="full" allow-none="1">
+					<type name="Gee.ArrayList" c:type="GeeArrayList*"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+					</parameter>
+					<parameter name="type" transfer-ownership="none">
+						<type name="GType" c:type="GType"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="add_ordered_adapter">
+			<callback name="add_ordered_adapter" c:type="add_ordered_adapter">
+				<return-value transfer-ownership="full">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+					</parameter>
+					<parameter name="adapter" transfer-ownership="none">
+						<type name="Daf.IoCIComponentAdapter" c:type="DafIoCIComponentAdapter*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="get_parent">
+			<callback name="get_parent" c:type="get_parent">
+				<return-value transfer-ownership="none">
+					<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="set_parent">
+			<callback name="set_parent" c:type="set_parent">
+				<return-value transfer-ownership="none">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+					</parameter>
+					<parameter name="value" transfer-ownership="none">
+						<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="get_adapters">
+			<callback name="get_adapters" c:type="get_adapters">
+				<return-value transfer-ownership="none">
+					<type name="Gee.ArrayList" c:type="GeeArrayList*">
+						<type name="Daf.IoCIComponentAdapter" c:type="DafIoCIComponentAdapter*"/>
+					</type>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="set_adapters">
+			<callback name="set_adapters" c:type="set_adapters">
+				<return-value transfer-ownership="none">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+					</parameter>
+					<parameter name="value" transfer-ownership="none">
+						<type name="Gee.ArrayList" c:type="GeeArrayList*">
+							<type name="Daf.IoCIComponentAdapter" c:type="DafIoCIComponentAdapter*"/>
+						</type>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="get_instances">
+			<callback name="get_instances" c:type="get_instances">
+				<return-value transfer-ownership="full">
+					<type name="Gee.ArrayList" c:type="GeeArrayList*"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="set_instances">
+			<callback name="set_instances" c:type="set_instances">
+				<return-value transfer-ownership="none">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+					</parameter>
+					<parameter name="value" transfer-ownership="none">
+						<type name="Gee.ArrayList" c:type="GeeArrayList*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+	</record>
+	<interface name="IoCIComponentAdapter" c:type="DafIoCIComponentAdapter" glib:type-name="DafIoCIComponentAdapter" glib:get-type="daf_io_c_icomponent_adapter_get_type" glib:type-struct="IComponentAdapterIface">
+		<prerequisite name="GObject.Object"/>
+		<method name="resolve_instance" c:identifier="daf_io_c_icomponent_adapter_resolve_instance">
+			<return-value transfer-ownership="full" allow-none="1">
+				<type name="GObject.Object" c:type="GObject*"/>
+			</return-value>
+			<parameters>
+				<parameter name="container" transfer-ownership="none" allow-none="1">
+					<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="resolve_instance" invoker="resolve_instance">
+			<return-value transfer-ownership="full" allow-none="1">
+				<type name="GObject.Object" c:type="GObject*"/>
+			</return-value>
+			<parameters>
+				<parameter name="container" transfer-ownership="none" allow-none="1">
+					<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<property name="container" writable="1">
+			<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+		</property>
+		<method name="get_container" c:identifier="daf_io_c_icomponent_adapter_get_container">
+			<return-value transfer-ownership="none">
+				<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+			</return-value>
+		</method>
+		<virtual-method name="get_container" invoker="get_container">
+			<return-value transfer-ownership="none">
+				<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+			</return-value>
+		</virtual-method>
+		<method name="set_container" c:identifier="daf_io_c_icomponent_adapter_set_container">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="set_container" invoker="set_container">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<property name="component-key" writable="1">
+			<type name="GObject.Value" c:type="GValue"/>
+		</property>
+		<method name="get_component_key" c:identifier="daf_io_c_icomponent_adapter_get_component_key">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="result" direction="out" transfer-ownership="none" caller-allocates="1">
+					<type name="GObject.Value" c:type="GValue*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="get_component_key" invoker="get_component_key">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="result" direction="out" transfer-ownership="none" caller-allocates="1">
+					<type name="GObject.Value" c:type="GValue*"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<method name="set_component_key" c:identifier="daf_io_c_icomponent_adapter_set_component_key">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="GObject.Value" c:type="GValue"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="set_component_key" invoker="set_component_key">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="GObject.Value" c:type="GValue"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<property name="component-type" writable="1">
+			<type name="GType" c:type="GType"/>
+		</property>
+		<method name="get_component_type" c:identifier="daf_io_c_icomponent_adapter_get_component_type">
+			<return-value transfer-ownership="none">
+				<type name="GType" c:type="GType"/>
+			</return-value>
+		</method>
+		<virtual-method name="get_component_type" invoker="get_component_type">
+			<return-value transfer-ownership="none">
+				<type name="GType" c:type="GType"/>
+			</return-value>
+		</virtual-method>
+		<method name="set_component_type" c:identifier="daf_io_c_icomponent_adapter_set_component_type">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="GType" c:type="GType"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="set_component_type" invoker="set_component_type">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="GType" c:type="GType"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+	</interface>
+	<record name="IComponentAdapterIface" c:type="DafIoCIComponentAdapterIface" glib:is-gtype-struct-for="IComponentAdapter">
+		<field name="parent_iface">
+			<type name="GObject.TypeInterface" c:type="GTypeInterface"/>
+		</field>
+		<field name="resolve_instance">
+			<callback name="resolve_instance" c:type="resolve_instance">
+				<return-value transfer-ownership="full" allow-none="1">
+					<type name="GObject.Object" c:type="GObject*"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.IoCIComponentAdapter" c:type="DafIoCIComponentAdapter*"/>
+					</parameter>
+					<parameter name="container" transfer-ownership="none" allow-none="1">
+						<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="get_container">
+			<callback name="get_container" c:type="get_container">
+				<return-value transfer-ownership="none">
+					<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.IoCIComponentAdapter" c:type="DafIoCIComponentAdapter*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="set_container">
+			<callback name="set_container" c:type="set_container">
+				<return-value transfer-ownership="none">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.IoCIComponentAdapter" c:type="DafIoCIComponentAdapter*"/>
+					</parameter>
+					<parameter name="value" transfer-ownership="none">
+						<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="get_component_key">
+			<callback name="get_component_key" c:type="get_component_key">
+				<return-value transfer-ownership="none">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.IoCIComponentAdapter" c:type="DafIoCIComponentAdapter*"/>
+					</parameter>
+					<parameter name="result" direction="out" transfer-ownership="none" caller-allocates="1">
+						<type name="GObject.Value" c:type="GValue*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="set_component_key">
+			<callback name="set_component_key" c:type="set_component_key">
+				<return-value transfer-ownership="none">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.IoCIComponentAdapter" c:type="DafIoCIComponentAdapter*"/>
+					</parameter>
+					<parameter name="value" transfer-ownership="none">
+						<type name="GObject.Value" c:type="GValue"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="get_component_type">
+			<callback name="get_component_type" c:type="get_component_type">
+				<return-value transfer-ownership="none">
+					<type name="GType" c:type="GType"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.IoCIComponentAdapter" c:type="DafIoCIComponentAdapter*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="set_component_type">
+			<callback name="set_component_type" c:type="set_component_type">
+				<return-value transfer-ownership="none">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.IoCIComponentAdapter" c:type="DafIoCIComponentAdapter*"/>
+					</parameter>
+					<parameter name="value" transfer-ownership="none">
+						<type name="GType" c:type="GType"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+	</record>
+	<interface name="IoCIContainerRegistrar" c:type="DafIoCIContainerRegistrar" glib:type-name="DafIoCIContainerRegistrar" glib:get-type="daf_io_c_icontainer_registrar_get_type" glib:type-struct="IContainerRegistrarIface">
+		<prerequisite name="GObject.Object"/>
+		<prerequisite name="Daf.IoCIContainer"/>
+		<method name="register_key" c:identifier="daf_io_c_icontainer_registrar_register_key">
+			<return-value transfer-ownership="full">
+				<type name="Daf.IoCIComponentAdapter" c:type="DafIoCIComponentAdapter*"/>
+			</return-value>
+			<parameters>
+				<parameter name="key" transfer-ownership="none">
+					<type name="GObject.Value" c:type="GValue"/>
+				</parameter>
+				<parameter name="type" transfer-ownership="none" allow-none="1">
+					<type name="GType" c:type="GType*"/>
+				</parameter>
+				<parameter name="parameters" transfer-ownership="none" allow-none="1">
+					<array length="3">
+						<type name="GObject.Parameter" c:type="GParameter"/>
+					</array>
+				</parameter>
+				<parameter name="parameters_length1" transfer-ownership="none">
+					<type name="gint" c:type="gint"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="register_key" invoker="register_key">
+			<return-value transfer-ownership="full">
+				<type name="Daf.IoCIComponentAdapter" c:type="DafIoCIComponentAdapter*"/>
+			</return-value>
+			<parameters>
+				<parameter name="key" transfer-ownership="none">
+					<type name="GObject.Value" c:type="GValue"/>
+				</parameter>
+				<parameter name="type" transfer-ownership="none" allow-none="1">
+					<type name="GType" c:type="GType*"/>
+				</parameter>
+				<parameter name="parameters" transfer-ownership="none" allow-none="1">
+					<array length="3">
+						<type name="GObject.Parameter" c:type="GParameter"/>
+					</array>
+				</parameter>
+				<parameter name="parameters_length1" transfer-ownership="none">
+					<type name="gint" c:type="gint"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<method name="register_instance" c:identifier="daf_io_c_icontainer_registrar_register_instance" throws="1">
+			<return-value transfer-ownership="full">
+				<type name="Daf.IoCIComponentAdapter" c:type="DafIoCIComponentAdapter*"/>
+			</return-value>
+			<parameters>
+				<parameter name="instance" transfer-ownership="none">
+					<type name="GObject.Object" c:type="GObject*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="register_instance" invoker="register_instance" throws="1">
+			<return-value transfer-ownership="full">
+				<type name="Daf.IoCIComponentAdapter" c:type="DafIoCIComponentAdapter*"/>
+			</return-value>
+			<parameters>
+				<parameter name="instance" transfer-ownership="none">
+					<type name="GObject.Object" c:type="GObject*"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<method name="register_adapter" c:identifier="daf_io_c_icontainer_registrar_register_adapter" throws="1">
+			<return-value transfer-ownership="full">
+				<type name="Daf.IoCIComponentAdapter" c:type="DafIoCIComponentAdapter*"/>
+			</return-value>
+			<parameters>
+				<parameter name="adapter" transfer-ownership="none">
+					<type name="Daf.IoCIComponentAdapter" c:type="DafIoCIComponentAdapter*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="register_adapter" invoker="register_adapter" throws="1">
+			<return-value transfer-ownership="full">
+				<type name="Daf.IoCIComponentAdapter" c:type="DafIoCIComponentAdapter*"/>
+			</return-value>
+			<parameters>
+				<parameter name="adapter" transfer-ownership="none">
+					<type name="Daf.IoCIComponentAdapter" c:type="DafIoCIComponentAdapter*"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<method name="unregister_key" c:identifier="daf_io_c_icontainer_registrar_unregister_key">
+			<return-value transfer-ownership="full" allow-none="1">
+				<type name="Daf.IoCIComponentAdapter" c:type="DafIoCIComponentAdapter*"/>
+			</return-value>
+			<parameters>
+				<parameter name="key" transfer-ownership="none">
+					<type name="GObject.Value" c:type="GValue"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="unregister_key" invoker="unregister_key">
+			<return-value transfer-ownership="full" allow-none="1">
+				<type name="Daf.IoCIComponentAdapter" c:type="DafIoCIComponentAdapter*"/>
+			</return-value>
+			<parameters>
+				<parameter name="key" transfer-ownership="none">
+					<type name="GObject.Value" c:type="GValue"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<method name="unregister_instance" c:identifier="daf_io_c_icontainer_registrar_unregister_instance">
+			<return-value transfer-ownership="full" allow-none="1">
+				<type name="Daf.IoCIComponentAdapter" c:type="DafIoCIComponentAdapter*"/>
+			</return-value>
+			<parameters>
+				<parameter name="instance" transfer-ownership="none">
+					<type name="GObject.Object" c:type="GObject*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="unregister_instance" invoker="unregister_instance">
+			<return-value transfer-ownership="full" allow-none="1">
+				<type name="Daf.IoCIComponentAdapter" c:type="DafIoCIComponentAdapter*"/>
+			</return-value>
+			<parameters>
+				<parameter name="instance" transfer-ownership="none">
+					<type name="GObject.Object" c:type="GObject*"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<method name="make_child_container" c:identifier="daf_io_c_icontainer_registrar_make_child_container">
+			<return-value transfer-ownership="full">
+				<type name="Daf.IoCIContainerRegistrar" c:type="DafIoCIContainerRegistrar*"/>
+			</return-value>
+		</method>
+		<virtual-method name="make_child_container" invoker="make_child_container">
+			<return-value transfer-ownership="full">
+				<type name="Daf.IoCIContainerRegistrar" c:type="DafIoCIContainerRegistrar*"/>
+			</return-value>
+		</virtual-method>
+		<method name="add_child_container" c:identifier="daf_io_c_icontainer_registrar_add_child_container">
+			<return-value transfer-ownership="full">
+				<type name="gboolean" c:type="gboolean"/>
+			</return-value>
+			<parameters>
+				<parameter name="child" transfer-ownership="none">
+					<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="add_child_container" invoker="add_child_container">
+			<return-value transfer-ownership="full">
+				<type name="gboolean" c:type="gboolean"/>
+			</return-value>
+			<parameters>
+				<parameter name="child" transfer-ownership="none">
+					<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<method name="remove_child_container" c:identifier="daf_io_c_icontainer_registrar_remove_child_container">
+			<return-value transfer-ownership="full">
+				<type name="gboolean" c:type="gboolean"/>
+			</return-value>
+			<parameters>
+				<parameter name="child" transfer-ownership="none">
+					<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="remove_child_container" invoker="remove_child_container">
+			<return-value transfer-ownership="full">
+				<type name="gboolean" c:type="gboolean"/>
+			</return-value>
+			<parameters>
+				<parameter name="child" transfer-ownership="none">
+					<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+	</interface>
+	<record name="IContainerRegistrarIface" c:type="DafIoCIContainerRegistrarIface" glib:is-gtype-struct-for="IContainerRegistrar">
+		<field name="parent_iface">
+			<type name="GObject.TypeInterface" c:type="GTypeInterface"/>
+		</field>
+		<field name="register_key">
+			<callback name="register_key" c:type="register_key">
+				<return-value transfer-ownership="full">
+					<type name="Daf.IoCIComponentAdapter" c:type="DafIoCIComponentAdapter*"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.IoCIContainerRegistrar" c:type="DafIoCIContainerRegistrar*"/>
+					</parameter>
+					<parameter name="key" transfer-ownership="none">
+						<type name="GObject.Value" c:type="GValue"/>
+					</parameter>
+					<parameter name="type" transfer-ownership="none" allow-none="1">
+						<type name="GType" c:type="GType*"/>
+					</parameter>
+					<parameter name="parameters" transfer-ownership="none" allow-none="1">
+						<array length="4">
+							<type name="GObject.Parameter" c:type="GParameter"/>
+						</array>
+					</parameter>
+					<parameter name="parameters_length1" transfer-ownership="none">
+						<type name="gint" c:type="gint"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="register_instance">
+			<callback name="register_instance" c:type="register_instance" throws="1">
+				<return-value transfer-ownership="full">
+					<type name="Daf.IoCIComponentAdapter" c:type="DafIoCIComponentAdapter*"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.IoCIContainerRegistrar" c:type="DafIoCIContainerRegistrar*"/>
+					</parameter>
+					<parameter name="instance" transfer-ownership="none">
+						<type name="GObject.Object" c:type="GObject*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="register_adapter">
+			<callback name="register_adapter" c:type="register_adapter" throws="1">
+				<return-value transfer-ownership="full">
+					<type name="Daf.IoCIComponentAdapter" c:type="DafIoCIComponentAdapter*"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.IoCIContainerRegistrar" c:type="DafIoCIContainerRegistrar*"/>
+					</parameter>
+					<parameter name="adapter" transfer-ownership="none">
+						<type name="Daf.IoCIComponentAdapter" c:type="DafIoCIComponentAdapter*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="unregister_key">
+			<callback name="unregister_key" c:type="unregister_key">
+				<return-value transfer-ownership="full" allow-none="1">
+					<type name="Daf.IoCIComponentAdapter" c:type="DafIoCIComponentAdapter*"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.IoCIContainerRegistrar" c:type="DafIoCIContainerRegistrar*"/>
+					</parameter>
+					<parameter name="key" transfer-ownership="none">
+						<type name="GObject.Value" c:type="GValue"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="unregister_instance">
+			<callback name="unregister_instance" c:type="unregister_instance">
+				<return-value transfer-ownership="full" allow-none="1">
+					<type name="Daf.IoCIComponentAdapter" c:type="DafIoCIComponentAdapter*"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.IoCIContainerRegistrar" c:type="DafIoCIContainerRegistrar*"/>
+					</parameter>
+					<parameter name="instance" transfer-ownership="none">
+						<type name="GObject.Object" c:type="GObject*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="make_child_container">
+			<callback name="make_child_container" c:type="make_child_container">
+				<return-value transfer-ownership="full">
+					<type name="Daf.IoCIContainerRegistrar" c:type="DafIoCIContainerRegistrar*"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.IoCIContainerRegistrar" c:type="DafIoCIContainerRegistrar*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="add_child_container">
+			<callback name="add_child_container" c:type="add_child_container">
+				<return-value transfer-ownership="full">
+					<type name="gboolean" c:type="gboolean"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.IoCIContainerRegistrar" c:type="DafIoCIContainerRegistrar*"/>
+					</parameter>
+					<parameter name="child" transfer-ownership="none">
+						<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="remove_child_container">
+			<callback name="remove_child_container" c:type="remove_child_container">
+				<return-value transfer-ownership="full">
+					<type name="gboolean" c:type="gboolean"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.IoCIContainerRegistrar" c:type="DafIoCIContainerRegistrar*"/>
+					</parameter>
+					<parameter name="child" transfer-ownership="none">
+						<type name="Daf.IoCIContainer" c:type="DafIoCIContainer*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+	</record>
+</namespace>
+</repository>

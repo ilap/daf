@@ -1,0 +1,2029 @@
+<?xml version="1.0"?>
+<repository version="1.2" xmlns="http://www.gtk.org/introspection/core/1.0" xmlns:c="http://www.gtk.org/introspection/c/1.0" xmlns:glib="http://www.gtk.org/introspection/glib/1.0">
+<include name="GObject" version="2.0"/>
+<include name="Gee" version="0.8"/>
+<include name="Gtk" version="3.0"/>
+<include name="Gdk" version="3.0"/>
+<package name="dafui"/>
+<c:include name="dafui.h"/>
+<namespace name="dafui" version="0.1" c:prefix="Daf">
+	<enumeration name="UIAnimationAnimationMode" c:type="DafUIAnimationAnimationMode" glib:type-name="DafUIAnimationAnimationMode" glib:get-type="daf_ui_animation_animation_mode_get_type">
+		<member name="linear" c:identifier="DAF_UI_ANIMATION_ANIMATION_MODE_LINEAR" value="0"/>
+		<member name="ease_in_quad" c:identifier="DAF_UI_ANIMATION_ANIMATION_MODE_EASE_IN_QUAD" value="1"/>
+		<member name="ease_out_quad" c:identifier="DAF_UI_ANIMATION_ANIMATION_MODE_EASE_OUT_QUAD" value="2"/>
+		<member name="ease_in_out_quad" c:identifier="DAF_UI_ANIMATION_ANIMATION_MODE_EASE_IN_OUT_QUAD" value="3"/>
+		<member name="ease_in_cubic" c:identifier="DAF_UI_ANIMATION_ANIMATION_MODE_EASE_IN_CUBIC" value="4"/>
+		<member name="ease_out_cubic" c:identifier="DAF_UI_ANIMATION_ANIMATION_MODE_EASE_OUT_CUBIC" value="5"/>
+		<member name="ease_in_out_cubic" c:identifier="DAF_UI_ANIMATION_ANIMATION_MODE_EASE_IN_OUT_CUBIC" value="6"/>
+		<member name="ease_in_quart" c:identifier="DAF_UI_ANIMATION_ANIMATION_MODE_EASE_IN_QUART" value="7"/>
+		<member name="ease_out_quart" c:identifier="DAF_UI_ANIMATION_ANIMATION_MODE_EASE_OUT_QUART" value="8"/>
+		<member name="ease_in_out_quart" c:identifier="DAF_UI_ANIMATION_ANIMATION_MODE_EASE_IN_OUT_QUART" value="9"/>
+	</enumeration>
+	<function name="ui_animation_animation_mode_easing_func" c:identifier="daf_ui_animation_animation_mode_easing_func">
+		<return-value transfer-ownership="full">
+			<type name="gdouble" c:type="gdouble"/>
+		</return-value>
+		<parameters>
+			<parameter name="elapsed" transfer-ownership="none">
+				<type name="guint64" c:type="guint64"/>
+			</parameter>
+			<parameter name="duration" transfer-ownership="none">
+				<type name="guint64" c:type="guint64"/>
+			</parameter>
+		</parameters>
+	</function>
+	<class name="UIAnimationTimeLine" c:type="DafUIAnimationTimeLine" glib:type-name="DafUIAnimationTimeLine" glib:get-type="daf_ui_animation_time_line_get_type" glib:type-struct="UIAnimationTimeLineClass" parent="GObject.Object">
+		<implements name="Daf.UIAnimationIAnimatable"/>
+		<field name="parent_instance">
+			<type name="GObject.Object" c:type="GObject"/>
+		</field>
+		<field name="priv">
+			<type name="UIAnimationTimeLinePrivate" c:type="DafUIAnimationTimeLinePrivate*"/>
+		</field>
+		<field name="mode">
+			<type name="Daf.UIAnimationAnimationMode" c:type="DafUIAnimationAnimationMode"/>
+		</field>
+		<constructor name="new" c:identifier="daf_ui_animation_time_line_new">
+			<return-value transfer-ownership="full">
+				<type name="Daf.UIAnimationTimeLine" c:type="DafUIAnimationTimeLine*"/>
+			</return-value>
+			<parameters>
+				<parameter name="mode" transfer-ownership="none">
+					<type name="Daf.UIAnimationAnimationMode" c:type="DafUIAnimationAnimationMode"/>
+				</parameter>
+			</parameters>
+		</constructor>
+		<constructor name="full" c:identifier="daf_ui_animation_time_line_new_full">
+			<return-value transfer-ownership="full">
+				<type name="Daf.UIAnimationTimeLine" c:type="DafUIAnimationTimeLine*"/>
+			</return-value>
+			<parameters>
+				<parameter name="mode" transfer-ownership="none">
+					<type name="Daf.UIAnimationAnimationMode" c:type="DafUIAnimationAnimationMode"/>
+				</parameter>
+				<parameter name="duration" transfer-ownership="none">
+					<type name="guint" c:type="guint"/>
+				</parameter>
+				<parameter name="fps" transfer-ownership="none">
+					<type name="guint" c:type="guint"/>
+				</parameter>
+			</parameters>
+		</constructor>
+		<method name="do_frame" c:identifier="daf_ui_animation_time_line_do_frame">
+			<return-value transfer-ownership="full">
+				<type name="gboolean" c:type="gboolean"/>
+			</return-value>
+		</method>
+		<property name="fps" writable="1">
+			<type name="guint" c:type="guint"/>
+		</property>
+		<method name="get_fps" c:identifier="daf_ui_animation_time_line_get_fps">
+			<return-value transfer-ownership="none">
+				<type name="guint" c:type="guint"/>
+			</return-value>
+		</method>
+		<method name="set_fps" c:identifier="daf_ui_animation_time_line_set_fps">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="guint" c:type="guint"/>
+				</parameter>
+			</parameters>
+		</method>
+		<property name="duration" writable="1">
+			<type name="guint64" c:type="guint64"/>
+		</property>
+		<method name="get_duration" c:identifier="daf_ui_animation_time_line_get_duration">
+			<return-value transfer-ownership="none">
+				<type name="guint64" c:type="guint64"/>
+			</return-value>
+		</method>
+		<method name="set_duration" c:identifier="daf_ui_animation_time_line_set_duration">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="guint64" c:type="guint64"/>
+				</parameter>
+			</parameters>
+		</method>
+		<property name="playing" writable="1">
+			<type name="gboolean" c:type="gboolean"/>
+		</property>
+		<method name="get_playing" c:identifier="daf_ui_animation_time_line_get_playing">
+			<return-value transfer-ownership="none">
+				<type name="gboolean" c:type="gboolean"/>
+			</return-value>
+		</method>
+		<glib:signal name="new-frame">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="progress" transfer-ownership="none">
+					<type name="gdouble" c:type="gdouble"/>
+				</parameter>
+			</parameters>
+		</glib:signal>
+		<glib:signal name="started">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+		</glib:signal>
+		<glib:signal name="completed">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+		</glib:signal>
+		<glib:signal name="before-started">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+		</glib:signal>
+	</class>
+	<record name="UIAnimationTimeLineClass" c:type="DafUIAnimationTimeLineClass" glib:is-gtype-struct-for="TimeLine">
+		<field name="parent_class">
+			<type name="GObject.ObjectClass" c:type="GObjectClass"/>
+		</field>
+		<field name="new_frame">
+			<callback name="ui_animation_time_line_new_frame" c:type="ui_animation_time_line_new_frame">
+				<return-value transfer-ownership="full">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="progress" transfer-ownership="none">
+						<type name="gdouble" c:type="gdouble"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="started">
+			<callback name="ui_animation_time_line_started" c:type="ui_animation_time_line_started">
+				<return-value transfer-ownership="full">
+					<type name="none"/>
+				</return-value>
+			</callback>
+		</field>
+		<field name="completed">
+			<callback name="ui_animation_time_line_completed" c:type="ui_animation_time_line_completed">
+				<return-value transfer-ownership="full">
+					<type name="none"/>
+				</return-value>
+			</callback>
+		</field>
+		<field name="before_started">
+			<callback name="ui_animation_time_line_before_started" c:type="ui_animation_time_line_before_started">
+				<return-value transfer-ownership="full">
+					<type name="none"/>
+				</return-value>
+			</callback>
+		</field>
+	</record>
+	<record name="UIAnimationTimeLinePrivate" c:type="DafUIAnimationTimeLinePrivate" disguised="1"/>
+	<class name="UIAnimationPropertyAnimator" c:type="DafUIAnimationPropertyAnimator" glib:type-name="DafUIAnimationPropertyAnimator" glib:get-type="daf_ui_animation_property_animator_get_type" glib:type-struct="UIAnimationPropertyAnimatorClass" parent="GObject.Object">
+		<field name="parent_instance">
+			<type name="GObject.Object" c:type="GObject"/>
+		</field>
+		<field name="priv">
+			<type name="UIAnimationPropertyAnimatorPrivate" c:type="DafUIAnimationPropertyAnimatorPrivate*"/>
+		</field>
+		<field name="properties_map">
+			<type name="Gee.HashMap" c:type="GeeHashMap*">
+				<type name="utf8" c:type="gchar*"/>
+				<type name="Gee.ArrayList" c:type="GeeArrayList*">
+					<type name="Daf.UIAnimationKeyFrame" c:type="DafUIAnimationKeyFrame*"/>
+				</type>
+			</type>
+		</field>
+		<method name="has_proprety" c:identifier="daf_ui_animation_property_animator_has_proprety">
+			<return-value transfer-ownership="full">
+				<type name="gboolean" c:type="gboolean"/>
+			</return-value>
+		</method>
+		<function name="animate" c:identifier="daf_ui_animation_property_animator_animate" introspectable="0">
+			<return-value transfer-ownership="full">
+				<type name="Daf.UIAnimationPropertyAnimator" c:type="DafUIAnimationPropertyAnimator*"/>
+			</return-value>
+			<parameters>
+				<parameter name="object" transfer-ownership="none">
+					<type name="GObject.Object" c:type="GObject*"/>
+				</parameter>
+				<parameter name="mode" transfer-ownership="none">
+					<type name="Daf.UIAnimationAnimationMode" c:type="DafUIAnimationAnimationMode"/>
+				</parameter>
+				<parameter name="duration" transfer-ownership="none">
+					<type name="gint" c:type="gint"/>
+				</parameter>
+				<parameter name="..." transfer-ownership="none">
+					<varargs/>
+				</parameter>
+			</parameters>
+		</function>
+		<function name="animate_with_timeline" c:identifier="daf_ui_animation_property_animator_animate_with_timeline" introspectable="0">
+			<return-value transfer-ownership="full">
+				<type name="Daf.UIAnimationPropertyAnimator" c:type="DafUIAnimationPropertyAnimator*"/>
+			</return-value>
+			<parameters>
+				<parameter name="object" transfer-ownership="none">
+					<type name="GObject.Object" c:type="GObject*"/>
+				</parameter>
+				<parameter name="timeline" transfer-ownership="none">
+					<type name="Daf.UIAnimationTimeLine" c:type="DafUIAnimationTimeLine*"/>
+				</parameter>
+				<parameter name="..." transfer-ownership="none">
+					<varargs/>
+				</parameter>
+			</parameters>
+		</function>
+		<method name="remove_keyframe" c:identifier="daf_ui_animation_property_animator_remove_keyframe">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="key" transfer-ownership="none">
+					<type name="gdouble" c:type="gdouble"/>
+				</parameter>
+				<parameter name="property" transfer-ownership="none">
+					<type name="utf8" c:type="const gchar*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<method name="set_keyframe" c:identifier="daf_ui_animation_property_animator_set_keyframe">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="key" transfer-ownership="none">
+					<type name="gdouble" c:type="gdouble"/>
+				</parameter>
+				<parameter name="property" transfer-ownership="none">
+					<type name="utf8" c:type="const gchar*"/>
+				</parameter>
+				<parameter name="final" transfer-ownership="none">
+					<type name="GObject.Value" c:type="GValue"/>
+				</parameter>
+			</parameters>
+		</method>
+		<method name="on_new_frame" c:identifier="daf_ui_animation_property_animator_on_new_frame">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="progress" transfer-ownership="none">
+					<type name="gdouble" c:type="gdouble"/>
+				</parameter>
+			</parameters>
+		</method>
+		<property name="timeline" writable="1">
+			<type name="Daf.UIAnimationTimeLine" c:type="DafUIAnimationTimeLine*"/>
+		</property>
+		<method name="get_timeline" c:identifier="daf_ui_animation_property_animator_get_timeline">
+			<return-value transfer-ownership="none" allow-none="1">
+				<type name="Daf.UIAnimationTimeLine" c:type="DafUIAnimationTimeLine*"/>
+			</return-value>
+		</method>
+		<method name="set_timeline" c:identifier="daf_ui_animation_property_animator_set_timeline">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none" allow-none="1">
+					<type name="Daf.UIAnimationTimeLine" c:type="DafUIAnimationTimeLine*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<glib:signal name="started">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+		</glib:signal>
+		<glib:signal name="on-keyframe">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="prope_name" transfer-ownership="none">
+					<type name="utf8" c:type="const gchar*"/>
+				</parameter>
+				<parameter name="key" transfer-ownership="none">
+					<type name="gdouble" c:type="gdouble"/>
+				</parameter>
+			</parameters>
+		</glib:signal>
+		<glib:signal name="completed">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+		</glib:signal>
+	</class>
+	<record name="UIAnimationPropertyAnimatorClass" c:type="DafUIAnimationPropertyAnimatorClass" glib:is-gtype-struct-for="PropertyAnimator">
+		<field name="parent_class">
+			<type name="GObject.ObjectClass" c:type="GObjectClass"/>
+		</field>
+	</record>
+	<record name="UIAnimationPropertyAnimatorPrivate" c:type="DafUIAnimationPropertyAnimatorPrivate" disguised="1"/>
+	<class name="UIAnimationAnimatableAdapter" c:type="DafUIAnimationAnimatableAdapter" glib:type-name="DafUIAnimationAnimatableAdapter" glib:get-type="daf_ui_animation_animatable_adapter_get_type" glib:type-struct="UIAnimationAnimatableAdapterClass" parent="Gtk.Container">
+		<field name="parent_instance">
+			<type name="Gtk.Container" c:type="GtkContainer"/>
+		</field>
+		<field name="priv">
+			<type name="UIAnimationAnimatableAdapterPrivate" c:type="DafUIAnimationAnimatableAdapterPrivate*"/>
+		</field>
+		<constructor name="new" c:identifier="daf_ui_animation_animatable_adapter_new">
+			<return-value transfer-ownership="none">
+				<type name="Daf.UIAnimationAnimatableAdapter" c:type="DafUIAnimationAnimatableAdapter*"/>
+			</return-value>
+			<parameters>
+				<parameter name="child" transfer-ownership="none">
+					<type name="Gtk.Widget" c:type="GtkWidget*"/>
+				</parameter>
+			</parameters>
+		</constructor>
+		<method name="on_pick_embedded_child" c:identifier="daf_ui_animation_animatable_adapter_on_pick_embedded_child">
+			<return-value transfer-ownership="none">
+				<type name="Gdk.Window" c:type="GdkWindow*"/>
+			</return-value>
+			<parameters>
+				<parameter name="x" transfer-ownership="none">
+					<type name="gdouble" c:type="gdouble"/>
+				</parameter>
+				<parameter name="y" transfer-ownership="none">
+					<type name="gdouble" c:type="gdouble"/>
+				</parameter>
+			</parameters>
+		</method>
+		<method name="on_embedder_event" c:identifier="daf_ui_animation_animatable_adapter_on_embedder_event">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="x" transfer-ownership="none">
+					<type name="gdouble" c:type="gdouble"/>
+				</parameter>
+				<parameter name="y" transfer-ownership="none">
+					<type name="gdouble" c:type="gdouble"/>
+				</parameter>
+				<parameter name="x1" direction="out" transfer-ownership="full">
+					<type name="gdouble" c:type="gdouble*"/>
+				</parameter>
+				<parameter name="y1" direction="out" transfer-ownership="full">
+					<type name="gdouble" c:type="gdouble*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<method name="print_alloc" c:identifier="daf_ui_animation_animatable_adapter_print_alloc">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="w" transfer-ownership="none">
+					<type name="Gtk.Widget" c:type="GtkWidget*"/>
+				</parameter>
+				<parameter name="msg" transfer-ownership="none">
+					<type name="utf8" c:type="const gchar*"/>
+				</parameter>
+				<parameter name="a" transfer-ownership="none">
+					<type name="Gtk.Allocation" c:type="GtkAllocation"/>
+				</parameter>
+			</parameters>
+		</method>
+		<property name="opacity" writable="1">
+			<type name="gdouble" c:type="gdouble"/>
+		</property>
+		<method name="get_opacity" c:identifier="daf_ui_animation_animatable_adapter_get_opacity">
+			<return-value transfer-ownership="none">
+				<type name="gdouble" c:type="gdouble"/>
+			</return-value>
+		</method>
+		<method name="set_opacity" c:identifier="daf_ui_animation_animatable_adapter_set_opacity">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="gdouble" c:type="gdouble"/>
+				</parameter>
+			</parameters>
+		</method>
+		<property name="offset-x" writable="1">
+			<type name="gint" c:type="gint"/>
+		</property>
+		<method name="get_offset_x" c:identifier="daf_ui_animation_animatable_adapter_get_offset_x">
+			<return-value transfer-ownership="none">
+				<type name="gint" c:type="gint"/>
+			</return-value>
+		</method>
+		<method name="set_offset_x" c:identifier="daf_ui_animation_animatable_adapter_set_offset_x">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="gint" c:type="gint"/>
+				</parameter>
+			</parameters>
+		</method>
+		<property name="offset-y" writable="1">
+			<type name="gint" c:type="gint"/>
+		</property>
+		<method name="get_offset_y" c:identifier="daf_ui_animation_animatable_adapter_get_offset_y">
+			<return-value transfer-ownership="none">
+				<type name="gint" c:type="gint"/>
+			</return-value>
+		</method>
+		<method name="set_offset_y" c:identifier="daf_ui_animation_animatable_adapter_set_offset_y">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="gint" c:type="gint"/>
+				</parameter>
+			</parameters>
+		</method>
+		<property name="child" writable="1">
+			<type name="Gtk.Widget" c:type="GtkWidget*"/>
+		</property>
+		<method name="get_child" c:identifier="daf_ui_animation_animatable_adapter_get_child">
+			<return-value transfer-ownership="none" allow-none="1">
+				<type name="Gtk.Widget" c:type="GtkWidget*"/>
+			</return-value>
+		</method>
+	</class>
+	<record name="UIAnimationAnimatableAdapterClass" c:type="DafUIAnimationAnimatableAdapterClass" glib:is-gtype-struct-for="AnimatableAdapter">
+		<field name="parent_class">
+			<type name="Gtk.ContainerClass" c:type="GtkContainerClass"/>
+		</field>
+	</record>
+	<record name="UIAnimationAnimatableAdapterPrivate" c:type="DafUIAnimationAnimatableAdapterPrivate" disguised="1"/>
+	<record name="UIAnimationKeyFrame">
+		<field name="prev_key">
+			<type name="gdouble" c:type="gdouble"/>
+		</field>
+		<field name="key">
+			<type name="gdouble" c:type="gdouble"/>
+		</field>
+		<field name="type">
+			<type name="GType" c:type="GType"/>
+		</field>
+		<field name="final">
+			<type name="GObject.Value" c:type="GValue"/>
+		</field>
+		<field name="initial">
+			<type name="GObject.Value" c:type="GValue"/>
+		</field>
+		<constructor name="new" c:identifier="daf_ui_animation_key_frame_new">
+			<return-value transfer-ownership="full">
+				<type name="Daf.UIAnimationKeyFrame" c:type="DafUIAnimationKeyFrame*"/>
+			</return-value>
+			<parameters>
+				<parameter name="key" transfer-ownership="none">
+					<type name="gdouble" c:type="gdouble"/>
+				</parameter>
+				<parameter name="prev_key" transfer-ownership="none">
+					<type name="gdouble" c:type="gdouble"/>
+				</parameter>
+				<parameter name="type" transfer-ownership="none">
+					<type name="GType" c:type="GType"/>
+				</parameter>
+				<parameter name="initial" transfer-ownership="none">
+					<type name="GObject.Value" c:type="GValue"/>
+				</parameter>
+				<parameter name="final" transfer-ownership="none">
+					<type name="GObject.Value" c:type="GValue"/>
+				</parameter>
+			</parameters>
+		</constructor>
+	</record>
+	<interface name="UIAnimationIAnimatable" c:type="DafUIAnimationIAnimatable" glib:type-name="DafUIAnimationIAnimatable" glib:get-type="daf_ui_animation_ianimatable_get_type" glib:type-struct="IAnimatableIface">
+		<method name="stop" c:identifier="daf_ui_animation_ianimatable_stop">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+		</method>
+		<virtual-method name="stop" invoker="stop">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+		</virtual-method>
+		<method name="start" c:identifier="daf_ui_animation_ianimatable_start">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+		</method>
+		<virtual-method name="start" invoker="start">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+		</virtual-method>
+	</interface>
+	<record name="IAnimatableIface" c:type="DafUIAnimationIAnimatableIface" glib:is-gtype-struct-for="IAnimatable">
+		<field name="parent_iface">
+			<type name="GObject.TypeInterface" c:type="GTypeInterface"/>
+		</field>
+		<field name="stop">
+			<callback name="stop" c:type="stop">
+				<return-value transfer-ownership="full">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.UIAnimationIAnimatable" c:type="DafUIAnimationIAnimatable*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="start">
+			<callback name="start" c:type="start">
+				<return-value transfer-ownership="full">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.UIAnimationIAnimatable" c:type="DafUIAnimationIAnimatable*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+	</record>
+	<callback name="ProgressFunc" c:type="DafUIAnimationProgressFunc">
+		<return-value transfer-ownership="full">
+			<type name="none"/>
+		</return-value>
+		<parameters>
+			<parameter name="initial" transfer-ownership="none">
+				<type name="GObject.Value" c:type="GValue"/>
+			</parameter>
+			<parameter name="final" transfer-ownership="none">
+				<type name="GObject.Value" c:type="GValue"/>
+			</parameter>
+			<parameter name="progress" transfer-ownership="none">
+				<type name="gdouble" c:type="gdouble"/>
+			</parameter>
+			<parameter name="value" direction="inout" transfer-ownership="full">
+				<type name="GObject.Value" c:type="GValue*"/>
+			</parameter>
+		</parameters>
+	</callback>
+	<class name="UICoreAbstractListModel" c:type="DafUICoreAbstractListModel" glib:type-name="DafUICoreAbstractListModel" glib:get-type="daf_ui_core_abstract_list_model_get_type" glib:type-struct="UICoreAbstractListModelClass" parent="Daf.CoreAbstractValueHolder">
+		<implements name="Gtk.TreeModel"/>
+		<field name="parent_instance">
+			<type name="Daf.CoreAbstractValueHolder" c:type="DafCoreAbstractValueHolder"/>
+		</field>
+		<field name="priv">
+			<type name="UICoreAbstractListModelPrivate" c:type="DafUICoreAbstractListModelPrivate*"/>
+		</field>
+		<field name="num_columns">
+			<type name="gint" c:type="gint"/>
+		</field>
+		<field name="stamp">
+			<type name="gint" c:type="gint"/>
+		</field>
+		<constructor name="new" c:identifier="daf_ui_core_abstract_list_model_new">
+			<return-value transfer-ownership="full">
+				<type name="Daf.UICoreAbstractListModel" c:type="DafUICoreAbstractListModel*"/>
+			</return-value>
+			<parameters>
+				<parameter name="array_list" transfer-ownership="none">
+					<type name="Daf.CoreArrayListModel" c:type="DafCoreArrayListModel*">
+						<type name="gpointer" c:type="gpointer"/>
+					</type>
+				</parameter>
+			</parameters>
+		</constructor>
+		<method name="get_iter_first" c:identifier="daf_ui_core_abstract_list_model_get_iter_first">
+			<return-value transfer-ownership="full">
+				<type name="gboolean" c:type="gboolean"/>
+			</return-value>
+			<parameters>
+				<parameter name="iter" direction="out" transfer-ownership="full">
+					<type name="Gtk.TreeIter" c:type="GtkTreeIter*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<method name="get_iter_from_string" c:identifier="daf_ui_core_abstract_list_model_get_iter_from_string">
+			<return-value transfer-ownership="full">
+				<type name="gboolean" c:type="gboolean"/>
+			</return-value>
+			<parameters>
+				<parameter name="iter" direction="out" transfer-ownership="full">
+					<type name="Gtk.TreeIter" c:type="GtkTreeIter*"/>
+				</parameter>
+				<parameter name="path_string" transfer-ownership="none">
+					<type name="utf8" c:type="const gchar*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<method name="get_string_from_iter" c:identifier="daf_ui_core_abstract_list_model_get_string_from_iter">
+			<return-value transfer-ownership="full">
+				<type name="utf8" c:type="gchar*"/>
+			</return-value>
+			<parameters>
+				<parameter name="iter" transfer-ownership="none">
+					<type name="Gtk.TreeIter" c:type="GtkTreeIter"/>
+				</parameter>
+			</parameters>
+		</method>
+		<method name="iter_previous" c:identifier="daf_ui_core_abstract_list_model_iter_previous">
+			<return-value transfer-ownership="full">
+				<type name="gboolean" c:type="gboolean"/>
+			</return-value>
+			<parameters>
+				<parameter name="iter" direction="inout" transfer-ownership="full">
+					<type name="Gtk.TreeIter" c:type="GtkTreeIter*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="iter_previous" invoker="iter_previous">
+			<return-value transfer-ownership="full">
+				<type name="gboolean" c:type="gboolean"/>
+			</return-value>
+			<parameters>
+				<parameter name="iter" direction="inout" transfer-ownership="full">
+					<type name="Gtk.TreeIter" c:type="GtkTreeIter*"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<method name="ref_node" c:identifier="daf_ui_core_abstract_list_model_ref_node">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="iter" transfer-ownership="none">
+					<type name="Gtk.TreeIter" c:type="GtkTreeIter"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="ref_node" invoker="ref_node">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="iter" transfer-ownership="none">
+					<type name="Gtk.TreeIter" c:type="GtkTreeIter"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<method name="unref_node" c:identifier="daf_ui_core_abstract_list_model_unref_node">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="iter" transfer-ownership="none">
+					<type name="Gtk.TreeIter" c:type="GtkTreeIter"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="unref_node" invoker="unref_node">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="iter" transfer-ownership="none">
+					<type name="Gtk.TreeIter" c:type="GtkTreeIter"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<method name="foreach" c:identifier="daf_ui_core_abstract_list_model_foreach">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="func" transfer-ownership="none" closure="1" scope="call">
+					<type name="Gtk.TreeModelForeachFunc" c:type="GtkTreeModelForeachFunc"/>
+				</parameter>
+				<parameter name="func_target" transfer-ownership="none" allow-none="1">
+					<type name="gpointer" c:type="void*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<method name="get" c:identifier="daf_ui_core_abstract_list_model_get" introspectable="0">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="iter" transfer-ownership="none">
+					<type name="Gtk.TreeIter" c:type="GtkTreeIter"/>
+				</parameter>
+				<parameter name="..." transfer-ownership="none">
+					<varargs/>
+				</parameter>
+			</parameters>
+		</method>
+		<method name="get_valist" c:identifier="daf_ui_core_abstract_list_model_get_valist">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="iter" transfer-ownership="none">
+					<type name="Gtk.TreeIter" c:type="GtkTreeIter"/>
+				</parameter>
+				<parameter name="var_args" transfer-ownership="none" allow-none="1">
+					<type name="gpointer" c:type="void*"/>
+				</parameter>
+			</parameters>
+		</method>
+	</class>
+	<record name="UICoreAbstractListModelClass" c:type="DafUICoreAbstractListModelClass" glib:is-gtype-struct-for="AbstractListModel">
+		<field name="parent_class">
+			<type name="Daf.CoreAbstractValueHolderClass" c:type="DafCoreAbstractValueHolderClass"/>
+		</field>
+		<field name="iter_previous">
+			<callback name="iter_previous" c:type="iter_previous">
+				<return-value transfer-ownership="full">
+					<type name="gboolean" c:type="gboolean"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.UICoreAbstractListModel" c:type="DafUICoreAbstractListModel*"/>
+					</parameter>
+					<parameter name="iter" direction="inout" transfer-ownership="full">
+						<type name="Gtk.TreeIter" c:type="GtkTreeIter*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="ref_node">
+			<callback name="ref_node" c:type="ref_node">
+				<return-value transfer-ownership="full">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.UICoreAbstractListModel" c:type="DafUICoreAbstractListModel*"/>
+					</parameter>
+					<parameter name="iter" transfer-ownership="none">
+						<type name="Gtk.TreeIter" c:type="GtkTreeIter"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="unref_node">
+			<callback name="unref_node" c:type="unref_node">
+				<return-value transfer-ownership="full">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.UICoreAbstractListModel" c:type="DafUICoreAbstractListModel*"/>
+					</parameter>
+					<parameter name="iter" transfer-ownership="none">
+						<type name="Gtk.TreeIter" c:type="GtkTreeIter"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+	</record>
+	<record name="UICoreAbstractListModelPrivate" c:type="DafUICoreAbstractListModelPrivate" disguised="1"/>
+	<class name="UICoreAbstractTreeModel" c:type="DafUICoreAbstractTreeModel" glib:type-name="DafUICoreAbstractTreeModel" glib:get-type="daf_ui_core_abstract_tree_model_get_type" glib:type-struct="UICoreAbstractTreeModelClass" parent="GObject.Object" abstract="1">
+		<implements name="Gtk.TreeModel"/>
+		<field name="parent_instance">
+			<type name="GObject.Object" c:type="GObject"/>
+		</field>
+		<field name="priv">
+			<type name="UICoreAbstractTreeModelPrivate" c:type="DafUICoreAbstractTreeModelPrivate*"/>
+		</field>
+		<field name="list_model">
+			<type name="Daf.CoreIListModel" c:type="DafCoreIListModel*">
+				<type name="gpointer" c:type="gpointer"/>
+			</type>
+		</field>
+		<field name="num_columns">
+			<type name="gint" c:type="gint"/>
+		</field>
+		<field name="stamp">
+			<type name="gint" c:type="gint"/>
+		</field>
+		<method name="check_iter" c:identifier="daf_ui_core_abstract_tree_model_check_iter">
+			<return-value transfer-ownership="full">
+				<type name="gboolean" c:type="gboolean"/>
+			</return-value>
+			<parameters>
+				<parameter name="iter" transfer-ownership="none">
+					<type name="Gtk.TreeIter" c:type="GtkTreeIter"/>
+				</parameter>
+			</parameters>
+		</method>
+		<method name="get_column_type" c:identifier="daf_ui_core_abstract_tree_model_get_column_type">
+			<return-value transfer-ownership="full">
+				<type name="GType" c:type="GType"/>
+			</return-value>
+			<parameters>
+				<parameter name="index" transfer-ownership="none">
+					<type name="gint" c:type="gint"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="get_column_type" invoker="get_column_type">
+			<return-value transfer-ownership="full">
+				<type name="GType" c:type="GType"/>
+			</return-value>
+			<parameters>
+				<parameter name="index" transfer-ownership="none">
+					<type name="gint" c:type="gint"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<method name="get_value" c:identifier="daf_ui_core_abstract_tree_model_get_value">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="iter" transfer-ownership="none">
+					<type name="Gtk.TreeIter" c:type="GtkTreeIter"/>
+				</parameter>
+				<parameter name="column" transfer-ownership="none">
+					<type name="gint" c:type="gint"/>
+				</parameter>
+				<parameter name="val" direction="out" transfer-ownership="full">
+					<type name="GObject.Value" c:type="GValue*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="get_value" invoker="get_value">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="iter" transfer-ownership="none">
+					<type name="Gtk.TreeIter" c:type="GtkTreeIter"/>
+				</parameter>
+				<parameter name="column" transfer-ownership="none">
+					<type name="gint" c:type="gint"/>
+				</parameter>
+				<parameter name="val" direction="out" transfer-ownership="full">
+					<type name="GObject.Value" c:type="GValue*"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<method name="on_tree_selection_changed" c:identifier="daf_ui_core_abstract_tree_model_on_tree_selection_changed">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="selection" transfer-ownership="none">
+					<type name="Gtk.TreeSelection" c:type="GtkTreeSelection*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<method name="on_item_removed" c:identifier="daf_ui_core_abstract_tree_model_on_item_removed">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="index" transfer-ownership="none">
+					<type name="gint" c:type="gint"/>
+				</parameter>
+			</parameters>
+		</method>
+		<method name="on_item_added" c:identifier="daf_ui_core_abstract_tree_model_on_item_added">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="index" transfer-ownership="none">
+					<type name="gint" c:type="gint"/>
+				</parameter>
+			</parameters>
+		</method>
+		<method name="on_list_changed" c:identifier="daf_ui_core_abstract_tree_model_on_list_changed">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="size" transfer-ownership="none">
+					<type name="gint" c:type="gint"/>
+				</parameter>
+			</parameters>
+		</method>
+		<method name="on_item_changed" c:identifier="daf_ui_core_abstract_tree_model_on_item_changed">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="index" transfer-ownership="none">
+					<type name="gint" c:type="gint"/>
+				</parameter>
+				<parameter name="item" transfer-ownership="none" allow-none="1">
+					<type name="gpointer" c:type="gpointer"/>
+				</parameter>
+			</parameters>
+		</method>
+		<method name="on_selection_changed" c:identifier="daf_ui_core_abstract_tree_model_on_selection_changed">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="sender" transfer-ownership="none">
+					<type name="GObject.Object" c:type="GObject*"/>
+				</parameter>
+				<parameter name="param_spec" transfer-ownership="none">
+					<type name="GObject.ParamSpec" c:type="GParamSpec*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<property name="tree-selection" writable="1">
+			<type name="Gtk.TreeSelection" c:type="GtkTreeSelection*"/>
+		</property>
+		<method name="get_tree_selection" c:identifier="daf_ui_core_abstract_tree_model_get_tree_selection">
+			<return-value transfer-ownership="none">
+				<type name="Gtk.TreeSelection" c:type="GtkTreeSelection*"/>
+			</return-value>
+		</method>
+		<method name="set_tree_selection" c:identifier="daf_ui_core_abstract_tree_model_set_tree_selection">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="Gtk.TreeSelection" c:type="GtkTreeSelection*"/>
+				</parameter>
+			</parameters>
+		</method>
+	</class>
+	<record name="UICoreAbstractTreeModelClass" c:type="DafUICoreAbstractTreeModelClass" glib:is-gtype-struct-for="AbstractTreeModel">
+		<field name="parent_class">
+			<type name="GObject.ObjectClass" c:type="GObjectClass"/>
+		</field>
+		<field name="get_column_type">
+			<callback name="get_column_type" c:type="get_column_type">
+				<return-value transfer-ownership="full">
+					<type name="GType" c:type="GType"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.UICoreAbstractTreeModel" c:type="DafUICoreAbstractTreeModel*"/>
+					</parameter>
+					<parameter name="index" transfer-ownership="none">
+						<type name="gint" c:type="gint"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="get_value">
+			<callback name="get_value" c:type="get_value">
+				<return-value transfer-ownership="full">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.UICoreAbstractTreeModel" c:type="DafUICoreAbstractTreeModel*"/>
+					</parameter>
+					<parameter name="iter" transfer-ownership="none">
+						<type name="Gtk.TreeIter" c:type="GtkTreeIter"/>
+					</parameter>
+					<parameter name="column" transfer-ownership="none">
+						<type name="gint" c:type="gint"/>
+					</parameter>
+					<parameter name="val" direction="out" transfer-ownership="full">
+						<type name="GObject.Value" c:type="GValue*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+	</record>
+	<record name="UICoreAbstractTreeModelPrivate" c:type="DafUICoreAbstractTreeModelPrivate" disguised="1"/>
+	<class name="UIWidgetsAnimatedDeckLayout" c:type="DafUIWidgetsAnimatedDeckLayout" glib:type-name="DafUIWidgetsAnimatedDeckLayout" glib:get-type="daf_ui_widgets_animated_deck_layout_get_type" glib:type-struct="UIWidgetsAnimatedDeckLayoutClass" parent="Daf.UIWidgetsAbstractDeckLayout">
+		<field name="parent_instance">
+			<type name="Daf.UIWidgetsAbstractDeckLayout" c:type="DafUIWidgetsAbstractDeckLayout"/>
+		</field>
+		<field name="priv">
+			<type name="UIWidgetsAnimatedDeckLayoutPrivate" c:type="DafUIWidgetsAnimatedDeckLayoutPrivate*"/>
+		</field>
+		<constructor name="new" c:identifier="daf_ui_widgets_animated_deck_layout_new">
+			<return-value transfer-ownership="none">
+				<type name="Daf.UIWidgetsAnimatedDeckLayout" c:type="DafUIWidgetsAnimatedDeckLayout*"/>
+			</return-value>
+		</constructor>
+		<constructor name="with_timeline" c:identifier="daf_ui_widgets_animated_deck_layout_new_with_timeline">
+			<return-value transfer-ownership="none">
+				<type name="Daf.UIWidgetsAnimatedDeckLayout" c:type="DafUIWidgetsAnimatedDeckLayout*"/>
+			</return-value>
+			<parameters>
+				<parameter name="timeline" transfer-ownership="none">
+					<type name="Daf.UIAnimationTimeLine" c:type="DafUIAnimationTimeLine*"/>
+				</parameter>
+			</parameters>
+		</constructor>
+		<method name="on_animation_completed" c:identifier="daf_ui_widgets_animated_deck_layout_on_animation_completed">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="object" transfer-ownership="none">
+					<type name="GObject.Object" c:type="GObject*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<method name="save_state" c:identifier="daf_ui_widgets_animated_deck_layout_save_state">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="card" transfer-ownership="none">
+					<type name="Daf.UIWidgetsICard" c:type="DafUIWidgetsICard*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<method name="get_state" c:identifier="daf_ui_widgets_animated_deck_layout_get_state">
+			<return-value transfer-ownership="full">
+				<type name="gboolean" c:type="gboolean"/>
+			</return-value>
+			<parameters>
+				<parameter name="card" transfer-ownership="none">
+					<type name="Daf.UIWidgetsICard" c:type="DafUIWidgetsICard*"/>
+				</parameter>
+				<parameter name="width" direction="out" transfer-ownership="full">
+					<type name="gint" c:type="gint*"/>
+				</parameter>
+				<parameter name="height" direction="out" transfer-ownership="full">
+					<type name="gint" c:type="gint*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<property name="timeline" writable="1" construct="1">
+			<type name="Daf.UIAnimationTimeLine" c:type="DafUIAnimationTimeLine*"/>
+		</property>
+		<method name="get_timeline" c:identifier="daf_ui_widgets_animated_deck_layout_get_timeline">
+			<return-value transfer-ownership="none">
+				<type name="Daf.UIAnimationTimeLine" c:type="DafUIAnimationTimeLine*"/>
+			</return-value>
+		</method>
+		<method name="set_timeline" c:identifier="daf_ui_widgets_animated_deck_layout_set_timeline">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="Daf.UIAnimationTimeLine" c:type="DafUIAnimationTimeLine*"/>
+				</parameter>
+			</parameters>
+		</method>
+	</class>
+	<record name="UIWidgetsAnimatedDeckLayoutClass" c:type="DafUIWidgetsAnimatedDeckLayoutClass" glib:is-gtype-struct-for="AnimatedDeckLayout">
+		<field name="parent_class">
+			<type name="Daf.UIWidgetsAbstractDeckLayoutClass" c:type="DafUIWidgetsAbstractDeckLayoutClass"/>
+		</field>
+	</record>
+	<record name="UIWidgetsAnimatedDeckLayoutPrivate" c:type="DafUIWidgetsAnimatedDeckLayoutPrivate" disguised="1"/>
+	<class name="UIWidgetsAnimatedCard" c:type="DafUIWidgetsAnimatedCard" glib:type-name="DafUIWidgetsAnimatedCard" glib:get-type="daf_ui_widgets_animated_card_get_type" glib:type-struct="UIWidgetsAnimatedCardClass" parent="GObject.Object">
+		<implements name="Daf.UIWidgetsICard"/>
+		<field name="parent_instance">
+			<type name="GObject.Object" c:type="GObject"/>
+		</field>
+		<field name="priv">
+			<type name="UIWidgetsAnimatedCardPrivate" c:type="DafUIWidgetsAnimatedCardPrivate*"/>
+		</field>
+		<field name="width_request">
+			<type name="gint" c:type="gint"/>
+		</field>
+		<field name="height_request">
+			<type name="gint" c:type="gint"/>
+		</field>
+		<field name="width">
+			<type name="gint" c:type="gint"/>
+		</field>
+		<field name="height">
+			<type name="gint" c:type="gint"/>
+		</field>
+		<field name="opacity">
+			<type name="gdouble" c:type="gdouble"/>
+		</field>
+		<constructor name="new" c:identifier="daf_ui_widgets_animated_card_new">
+			<return-value transfer-ownership="full">
+				<type name="Daf.UIWidgetsAnimatedCard" c:type="DafUIWidgetsAnimatedCard*"/>
+			</return-value>
+			<parameters>
+				<parameter name="widget" transfer-ownership="none">
+					<type name="Gtk.Widget" c:type="GtkWidget*"/>
+				</parameter>
+			</parameters>
+		</constructor>
+		<property name="focus-child" writable="1">
+			<type name="Gtk.Widget" c:type="GtkWidget*"/>
+		</property>
+		<method name="get_focus_child" c:identifier="daf_ui_widgets_animated_card_get_focus_child">
+			<return-value transfer-ownership="none" allow-none="1">
+				<type name="Gtk.Widget" c:type="GtkWidget*"/>
+			</return-value>
+		</method>
+		<method name="set_focus_child" c:identifier="daf_ui_widgets_animated_card_set_focus_child">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none" allow-none="1">
+					<type name="Gtk.Widget" c:type="GtkWidget*"/>
+				</parameter>
+			</parameters>
+		</method>
+	</class>
+	<record name="UIWidgetsAnimatedCardClass" c:type="DafUIWidgetsAnimatedCardClass" glib:is-gtype-struct-for="AnimatedCard">
+		<field name="parent_class">
+			<type name="GObject.ObjectClass" c:type="GObjectClass"/>
+		</field>
+	</record>
+	<record name="UIWidgetsAnimatedCardPrivate" c:type="DafUIWidgetsAnimatedCardPrivate" disguised="1"/>
+	<class name="UIWidgetsDeckLayout" c:type="DafUIWidgetsDeckLayout" glib:type-name="DafUIWidgetsDeckLayout" glib:get-type="daf_ui_widgets_deck_layout_get_type" glib:type-struct="UIWidgetsDeckLayoutClass" parent="Daf.UIWidgetsAbstractDeckLayout">
+		<field name="parent_instance">
+			<type name="Daf.UIWidgetsAbstractDeckLayout" c:type="DafUIWidgetsAbstractDeckLayout"/>
+		</field>
+		<field name="priv">
+			<type name="UIWidgetsDeckLayoutPrivate" c:type="DafUIWidgetsDeckLayoutPrivate*"/>
+		</field>
+		<constructor name="new" c:identifier="daf_ui_widgets_deck_layout_new">
+			<return-value transfer-ownership="none">
+				<type name="Daf.UIWidgetsDeckLayout" c:type="DafUIWidgetsDeckLayout*"/>
+			</return-value>
+		</constructor>
+	</class>
+	<record name="UIWidgetsDeckLayoutClass" c:type="DafUIWidgetsDeckLayoutClass" glib:is-gtype-struct-for="DeckLayout">
+		<field name="parent_class">
+			<type name="Daf.UIWidgetsAbstractDeckLayoutClass" c:type="DafUIWidgetsAbstractDeckLayoutClass"/>
+		</field>
+	</record>
+	<record name="UIWidgetsDeckLayoutPrivate" c:type="DafUIWidgetsDeckLayoutPrivate" disguised="1"/>
+	<class name="UIWidgetsAbstractDeckLayout" c:type="DafUIWidgetsAbstractDeckLayout" glib:type-name="DafUIWidgetsAbstractDeckLayout" glib:get-type="daf_ui_widgets_abstract_deck_layout_get_type" glib:type-struct="UIWidgetsAbstractDeckLayoutClass" parent="Gtk.Container" abstract="1">
+		<implements name="Daf.UIWidgetsIDeckLayout"/>
+		<field name="parent_instance">
+			<type name="Gtk.Container" c:type="GtkContainer"/>
+		</field>
+		<field name="priv">
+			<type name="UIWidgetsAbstractDeckLayoutPrivate" c:type="DafUIWidgetsAbstractDeckLayoutPrivate*"/>
+		</field>
+		<method name="get_card_of_widget" c:identifier="daf_ui_widgets_abstract_deck_layout_get_card_of_widget">
+			<return-value transfer-ownership="full" allow-none="1">
+				<type name="Daf.UIWidgetsICard" c:type="DafUIWidgetsICard*"/>
+			</return-value>
+			<parameters>
+				<parameter name="widget" transfer-ownership="none" allow-none="1">
+					<type name="Gtk.Widget" c:type="GtkWidget*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<method name="switch_next" c:identifier="daf_ui_widgets_abstract_deck_layout_switch_next">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="quiet" transfer-ownership="none">
+					<type name="gboolean" c:type="gboolean"/>
+				</parameter>
+			</parameters>
+		</method>
+		<method name="do_switch" c:identifier="daf_ui_widgets_abstract_deck_layout_do_switch">
+			<return-value transfer-ownership="full">
+				<type name="gboolean" c:type="gboolean"/>
+			</return-value>
+			<parameters>
+				<parameter name="to_card" transfer-ownership="none" allow-none="1">
+					<type name="Daf.UIWidgetsICard" c:type="DafUIWidgetsICard*"/>
+				</parameter>
+				<parameter name="quiet" transfer-ownership="none">
+					<type name="gboolean" c:type="gboolean"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="do_switch" invoker="do_switch">
+			<return-value transfer-ownership="full">
+				<type name="gboolean" c:type="gboolean"/>
+			</return-value>
+			<parameters>
+				<parameter name="to_card" transfer-ownership="none" allow-none="1">
+					<type name="Daf.UIWidgetsICard" c:type="DafUIWidgetsICard*"/>
+				</parameter>
+				<parameter name="quiet" transfer-ownership="none">
+					<type name="gboolean" c:type="gboolean"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<method name="create_card" c:identifier="daf_ui_widgets_abstract_deck_layout_create_card">
+			<return-value transfer-ownership="full">
+				<type name="Daf.UIWidgetsICard" c:type="DafUIWidgetsICard*"/>
+			</return-value>
+			<parameters>
+				<parameter name="widget" transfer-ownership="none">
+					<type name="Gtk.Widget" c:type="GtkWidget*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="create_card" invoker="create_card">
+			<return-value transfer-ownership="full">
+				<type name="Daf.UIWidgetsICard" c:type="DafUIWidgetsICard*"/>
+			</return-value>
+			<parameters>
+				<parameter name="widget" transfer-ownership="none">
+					<type name="Gtk.Widget" c:type="GtkWidget*"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<method name="compute_width" c:identifier="daf_ui_widgets_abstract_deck_layout_compute_width">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="card" transfer-ownership="none">
+					<type name="Daf.UIWidgetsICard" c:type="DafUIWidgetsICard*"/>
+				</parameter>
+				<parameter name="minimum" direction="out" transfer-ownership="full">
+					<type name="gint" c:type="gint*"/>
+				</parameter>
+				<parameter name="natural" direction="out" transfer-ownership="full">
+					<type name="gint" c:type="gint*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="compute_width" invoker="compute_width">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="card" transfer-ownership="none">
+					<type name="Daf.UIWidgetsICard" c:type="DafUIWidgetsICard*"/>
+				</parameter>
+				<parameter name="minimum" direction="out" transfer-ownership="full">
+					<type name="gint" c:type="gint*"/>
+				</parameter>
+				<parameter name="natural" direction="out" transfer-ownership="full">
+					<type name="gint" c:type="gint*"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<method name="compute_height" c:identifier="daf_ui_widgets_abstract_deck_layout_compute_height">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="card" transfer-ownership="none">
+					<type name="Daf.UIWidgetsICard" c:type="DafUIWidgetsICard*"/>
+				</parameter>
+				<parameter name="minimum" direction="out" transfer-ownership="full">
+					<type name="gint" c:type="gint*"/>
+				</parameter>
+				<parameter name="natural" direction="out" transfer-ownership="full">
+					<type name="gint" c:type="gint*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="compute_height" invoker="compute_height">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="card" transfer-ownership="none">
+					<type name="Daf.UIWidgetsICard" c:type="DafUIWidgetsICard*"/>
+				</parameter>
+				<parameter name="minimum" direction="out" transfer-ownership="full">
+					<type name="gint" c:type="gint*"/>
+				</parameter>
+				<parameter name="natural" direction="out" transfer-ownership="full">
+					<type name="gint" c:type="gint*"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<method name="print_alloc" c:identifier="daf_ui_widgets_abstract_deck_layout_print_alloc">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="w" transfer-ownership="none">
+					<type name="Gtk.Widget" c:type="GtkWidget*"/>
+				</parameter>
+				<parameter name="a" transfer-ownership="none">
+					<type name="Gtk.Allocation" c:type="GtkAllocation"/>
+				</parameter>
+			</parameters>
+		</method>
+		<property name="size">
+			<type name="guint" c:type="guint"/>
+		</property>
+		<method name="get_size" c:identifier="daf_ui_widgets_abstract_deck_layout_get_size">
+			<return-value transfer-ownership="none">
+				<type name="guint" c:type="guint"/>
+			</return-value>
+		</method>
+		<property name="active-widget" writable="1">
+			<type name="Gtk.Widget" c:type="GtkWidget*"/>
+		</property>
+		<method name="get_active_widget" c:identifier="daf_ui_widgets_abstract_deck_layout_get_active_widget">
+			<return-value transfer-ownership="none" allow-none="1">
+				<type name="Gtk.Widget" c:type="GtkWidget*"/>
+			</return-value>
+		</method>
+		<property name="active-card" writable="1">
+			<type name="Daf.UIWidgetsICard" c:type="DafUIWidgetsICard*"/>
+		</property>
+		<method name="get_active_card" c:identifier="daf_ui_widgets_abstract_deck_layout_get_active_card">
+			<return-value transfer-ownership="none" allow-none="1">
+				<type name="Daf.UIWidgetsICard" c:type="DafUIWidgetsICard*"/>
+			</return-value>
+		</method>
+		<method name="set_active_card" c:identifier="daf_ui_widgets_abstract_deck_layout_set_active_card">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none" allow-none="1">
+					<type name="Daf.UIWidgetsICard" c:type="DafUIWidgetsICard*"/>
+				</parameter>
+			</parameters>
+		</method>
+	</class>
+	<record name="UIWidgetsAbstractDeckLayoutClass" c:type="DafUIWidgetsAbstractDeckLayoutClass" glib:is-gtype-struct-for="AbstractDeckLayout">
+		<field name="parent_class">
+			<type name="Gtk.ContainerClass" c:type="GtkContainerClass"/>
+		</field>
+		<field name="do_switch">
+			<callback name="do_switch" c:type="do_switch">
+				<return-value transfer-ownership="full">
+					<type name="gboolean" c:type="gboolean"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.UIWidgetsAbstractDeckLayout" c:type="DafUIWidgetsAbstractDeckLayout*"/>
+					</parameter>
+					<parameter name="to_card" transfer-ownership="none" allow-none="1">
+						<type name="Daf.UIWidgetsICard" c:type="DafUIWidgetsICard*"/>
+					</parameter>
+					<parameter name="quiet" transfer-ownership="none">
+						<type name="gboolean" c:type="gboolean"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="create_card">
+			<callback name="create_card" c:type="create_card">
+				<return-value transfer-ownership="full">
+					<type name="Daf.UIWidgetsICard" c:type="DafUIWidgetsICard*"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.UIWidgetsAbstractDeckLayout" c:type="DafUIWidgetsAbstractDeckLayout*"/>
+					</parameter>
+					<parameter name="widget" transfer-ownership="none">
+						<type name="Gtk.Widget" c:type="GtkWidget*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="compute_width">
+			<callback name="compute_width" c:type="compute_width">
+				<return-value transfer-ownership="full">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.UIWidgetsAbstractDeckLayout" c:type="DafUIWidgetsAbstractDeckLayout*"/>
+					</parameter>
+					<parameter name="card" transfer-ownership="none">
+						<type name="Daf.UIWidgetsICard" c:type="DafUIWidgetsICard*"/>
+					</parameter>
+					<parameter name="minimum" direction="out" transfer-ownership="full">
+						<type name="gint" c:type="gint*"/>
+					</parameter>
+					<parameter name="natural" direction="out" transfer-ownership="full">
+						<type name="gint" c:type="gint*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="compute_height">
+			<callback name="compute_height" c:type="compute_height">
+				<return-value transfer-ownership="full">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.UIWidgetsAbstractDeckLayout" c:type="DafUIWidgetsAbstractDeckLayout*"/>
+					</parameter>
+					<parameter name="card" transfer-ownership="none">
+						<type name="Daf.UIWidgetsICard" c:type="DafUIWidgetsICard*"/>
+					</parameter>
+					<parameter name="minimum" direction="out" transfer-ownership="full">
+						<type name="gint" c:type="gint*"/>
+					</parameter>
+					<parameter name="natural" direction="out" transfer-ownership="full">
+						<type name="gint" c:type="gint*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+	</record>
+	<record name="UIWidgetsAbstractDeckLayoutPrivate" c:type="DafUIWidgetsAbstractDeckLayoutPrivate" disguised="1"/>
+	<class name="UIWidgetsCard" c:type="DafUIWidgetsCard" glib:type-name="DafUIWidgetsCard" glib:get-type="daf_ui_widgets_card_get_type" glib:type-struct="UIWidgetsCardClass" parent="GObject.Object">
+		<implements name="Daf.UIWidgetsICard"/>
+		<field name="parent_instance">
+			<type name="GObject.Object" c:type="GObject"/>
+		</field>
+		<field name="priv">
+			<type name="UIWidgetsCardPrivate" c:type="DafUIWidgetsCardPrivate*"/>
+		</field>
+		<constructor name="new" c:identifier="daf_ui_widgets_card_new">
+			<return-value transfer-ownership="full">
+				<type name="Daf.UIWidgetsCard" c:type="DafUIWidgetsCard*"/>
+			</return-value>
+			<parameters>
+				<parameter name="widget" transfer-ownership="none">
+					<type name="Gtk.Widget" c:type="GtkWidget*"/>
+				</parameter>
+			</parameters>
+		</constructor>
+		<property name="focus-child" writable="1">
+			<type name="Gtk.Widget" c:type="GtkWidget*"/>
+		</property>
+		<method name="get_focus_child" c:identifier="daf_ui_widgets_card_get_focus_child">
+			<return-value transfer-ownership="none" allow-none="1">
+				<type name="Gtk.Widget" c:type="GtkWidget*"/>
+			</return-value>
+		</method>
+		<method name="set_focus_child" c:identifier="daf_ui_widgets_card_set_focus_child">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none" allow-none="1">
+					<type name="Gtk.Widget" c:type="GtkWidget*"/>
+				</parameter>
+			</parameters>
+		</method>
+	</class>
+	<record name="UIWidgetsCardClass" c:type="DafUIWidgetsCardClass" glib:is-gtype-struct-for="Card">
+		<field name="parent_class">
+			<type name="GObject.ObjectClass" c:type="GObjectClass"/>
+		</field>
+	</record>
+	<record name="UIWidgetsCardPrivate" c:type="DafUIWidgetsCardPrivate" disguised="1"/>
+	<interface name="UIWidgetsICard" c:type="DafUIWidgetsICard" glib:type-name="DafUIWidgetsICard" glib:get-type="daf_ui_widgets_icard_get_type" glib:type-struct="ICardIface">
+		<prerequisite name="GObject.Object"/>
+		<property name="widget" writable="1">
+			<type name="Gtk.Widget" c:type="GtkWidget*"/>
+		</property>
+		<method name="get_widget" c:identifier="daf_ui_widgets_icard_get_widget">
+			<return-value transfer-ownership="none" allow-none="1">
+				<type name="Gtk.Widget" c:type="GtkWidget*"/>
+			</return-value>
+		</method>
+		<virtual-method name="get_widget" invoker="get_widget">
+			<return-value transfer-ownership="none" allow-none="1">
+				<type name="Gtk.Widget" c:type="GtkWidget*"/>
+			</return-value>
+		</virtual-method>
+		<method name="set_widget" c:identifier="daf_ui_widgets_icard_set_widget">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none" allow-none="1">
+					<type name="Gtk.Widget" c:type="GtkWidget*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="set_widget" invoker="set_widget">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none" allow-none="1">
+					<type name="Gtk.Widget" c:type="GtkWidget*"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<property name="visible" writable="1">
+			<type name="gboolean" c:type="gboolean"/>
+		</property>
+		<method name="get_visible" c:identifier="daf_ui_widgets_icard_get_visible">
+			<return-value transfer-ownership="none">
+				<type name="gboolean" c:type="gboolean"/>
+			</return-value>
+		</method>
+		<virtual-method name="get_visible" invoker="get_visible">
+			<return-value transfer-ownership="none">
+				<type name="gboolean" c:type="gboolean"/>
+			</return-value>
+		</virtual-method>
+		<method name="set_visible" c:identifier="daf_ui_widgets_icard_set_visible">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="gboolean" c:type="gboolean"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="set_visible" invoker="set_visible">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="gboolean" c:type="gboolean"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<property name="halign" writable="1">
+			<type name="Gtk.Align" c:type="GtkAlign"/>
+		</property>
+		<method name="get_halign" c:identifier="daf_ui_widgets_icard_get_halign">
+			<return-value transfer-ownership="none">
+				<type name="Gtk.Align" c:type="GtkAlign"/>
+			</return-value>
+		</method>
+		<virtual-method name="get_halign" invoker="get_halign">
+			<return-value transfer-ownership="none">
+				<type name="Gtk.Align" c:type="GtkAlign"/>
+			</return-value>
+		</virtual-method>
+		<method name="set_halign" c:identifier="daf_ui_widgets_icard_set_halign">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="Gtk.Align" c:type="GtkAlign"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="set_halign" invoker="set_halign">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="Gtk.Align" c:type="GtkAlign"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<property name="valign" writable="1">
+			<type name="Gtk.Align" c:type="GtkAlign"/>
+		</property>
+		<method name="get_valign" c:identifier="daf_ui_widgets_icard_get_valign">
+			<return-value transfer-ownership="none">
+				<type name="Gtk.Align" c:type="GtkAlign"/>
+			</return-value>
+		</method>
+		<virtual-method name="get_valign" invoker="get_valign">
+			<return-value transfer-ownership="none">
+				<type name="Gtk.Align" c:type="GtkAlign"/>
+			</return-value>
+		</virtual-method>
+		<method name="set_valign" c:identifier="daf_ui_widgets_icard_set_valign">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="Gtk.Align" c:type="GtkAlign"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="set_valign" invoker="set_valign">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="Gtk.Align" c:type="GtkAlign"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<property name="hexpand" writable="1">
+			<type name="gboolean" c:type="gboolean"/>
+		</property>
+		<method name="get_hexpand" c:identifier="daf_ui_widgets_icard_get_hexpand">
+			<return-value transfer-ownership="none">
+				<type name="gboolean" c:type="gboolean"/>
+			</return-value>
+		</method>
+		<virtual-method name="get_hexpand" invoker="get_hexpand">
+			<return-value transfer-ownership="none">
+				<type name="gboolean" c:type="gboolean"/>
+			</return-value>
+		</virtual-method>
+		<method name="set_hexpand" c:identifier="daf_ui_widgets_icard_set_hexpand">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="gboolean" c:type="gboolean"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="set_hexpand" invoker="set_hexpand">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="gboolean" c:type="gboolean"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<property name="vexpand" writable="1">
+			<type name="gboolean" c:type="gboolean"/>
+		</property>
+		<method name="get_vexpand" c:identifier="daf_ui_widgets_icard_get_vexpand">
+			<return-value transfer-ownership="none">
+				<type name="gboolean" c:type="gboolean"/>
+			</return-value>
+		</method>
+		<virtual-method name="get_vexpand" invoker="get_vexpand">
+			<return-value transfer-ownership="none">
+				<type name="gboolean" c:type="gboolean"/>
+			</return-value>
+		</virtual-method>
+		<method name="set_vexpand" c:identifier="daf_ui_widgets_icard_set_vexpand">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="gboolean" c:type="gboolean"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="set_vexpand" invoker="set_vexpand">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="gboolean" c:type="gboolean"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+	</interface>
+	<record name="ICardIface" c:type="DafUIWidgetsICardIface" glib:is-gtype-struct-for="ICard">
+		<field name="parent_iface">
+			<type name="GObject.TypeInterface" c:type="GTypeInterface"/>
+		</field>
+		<field name="get_widget">
+			<callback name="get_widget" c:type="get_widget">
+				<return-value transfer-ownership="none" allow-none="1">
+					<type name="Gtk.Widget" c:type="GtkWidget*"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.UIWidgetsICard" c:type="DafUIWidgetsICard*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="set_widget">
+			<callback name="set_widget" c:type="set_widget">
+				<return-value transfer-ownership="none">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.UIWidgetsICard" c:type="DafUIWidgetsICard*"/>
+					</parameter>
+					<parameter name="value" transfer-ownership="none" allow-none="1">
+						<type name="Gtk.Widget" c:type="GtkWidget*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="get_visible">
+			<callback name="get_visible" c:type="get_visible">
+				<return-value transfer-ownership="none">
+					<type name="gboolean" c:type="gboolean"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.UIWidgetsICard" c:type="DafUIWidgetsICard*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="set_visible">
+			<callback name="set_visible" c:type="set_visible">
+				<return-value transfer-ownership="none">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.UIWidgetsICard" c:type="DafUIWidgetsICard*"/>
+					</parameter>
+					<parameter name="value" transfer-ownership="none">
+						<type name="gboolean" c:type="gboolean"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="get_halign">
+			<callback name="get_halign" c:type="get_halign">
+				<return-value transfer-ownership="none">
+					<type name="Gtk.Align" c:type="GtkAlign"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.UIWidgetsICard" c:type="DafUIWidgetsICard*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="set_halign">
+			<callback name="set_halign" c:type="set_halign">
+				<return-value transfer-ownership="none">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.UIWidgetsICard" c:type="DafUIWidgetsICard*"/>
+					</parameter>
+					<parameter name="value" transfer-ownership="none">
+						<type name="Gtk.Align" c:type="GtkAlign"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="get_valign">
+			<callback name="get_valign" c:type="get_valign">
+				<return-value transfer-ownership="none">
+					<type name="Gtk.Align" c:type="GtkAlign"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.UIWidgetsICard" c:type="DafUIWidgetsICard*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="set_valign">
+			<callback name="set_valign" c:type="set_valign">
+				<return-value transfer-ownership="none">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.UIWidgetsICard" c:type="DafUIWidgetsICard*"/>
+					</parameter>
+					<parameter name="value" transfer-ownership="none">
+						<type name="Gtk.Align" c:type="GtkAlign"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="get_hexpand">
+			<callback name="get_hexpand" c:type="get_hexpand">
+				<return-value transfer-ownership="none">
+					<type name="gboolean" c:type="gboolean"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.UIWidgetsICard" c:type="DafUIWidgetsICard*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="set_hexpand">
+			<callback name="set_hexpand" c:type="set_hexpand">
+				<return-value transfer-ownership="none">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.UIWidgetsICard" c:type="DafUIWidgetsICard*"/>
+					</parameter>
+					<parameter name="value" transfer-ownership="none">
+						<type name="gboolean" c:type="gboolean"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="get_vexpand">
+			<callback name="get_vexpand" c:type="get_vexpand">
+				<return-value transfer-ownership="none">
+					<type name="gboolean" c:type="gboolean"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.UIWidgetsICard" c:type="DafUIWidgetsICard*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="set_vexpand">
+			<callback name="set_vexpand" c:type="set_vexpand">
+				<return-value transfer-ownership="none">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.UIWidgetsICard" c:type="DafUIWidgetsICard*"/>
+					</parameter>
+					<parameter name="value" transfer-ownership="none">
+						<type name="gboolean" c:type="gboolean"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+	</record>
+	<interface name="UIWidgetsIDeckLayout" c:type="DafUIWidgetsIDeckLayout" glib:type-name="DafUIWidgetsIDeckLayout" glib:get-type="daf_ui_widgets_ideck_layout_get_type" glib:type-struct="IDeckLayoutIface">
+		<prerequisite name="Gtk.Container"/>
+		<method name="add" c:identifier="daf_ui_widgets_ideck_layout_add">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="widget" transfer-ownership="none">
+					<type name="Gtk.Widget" c:type="GtkWidget*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="add" invoker="add">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="widget" transfer-ownership="none">
+					<type name="Gtk.Widget" c:type="GtkWidget*"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<method name="remove" c:identifier="daf_ui_widgets_ideck_layout_remove">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="widget" transfer-ownership="none">
+					<type name="Gtk.Widget" c:type="GtkWidget*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="remove" invoker="remove">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="widget" transfer-ownership="none">
+					<type name="Gtk.Widget" c:type="GtkWidget*"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<method name="switch_widget" c:identifier="daf_ui_widgets_ideck_layout_switch_widget">
+			<return-value transfer-ownership="full">
+				<type name="gboolean" c:type="gboolean"/>
+			</return-value>
+			<parameters>
+				<parameter name="widget" transfer-ownership="none" allow-none="1">
+					<type name="Gtk.Widget" c:type="GtkWidget*"/>
+				</parameter>
+				<parameter name="quiet" transfer-ownership="none">
+					<type name="gboolean" c:type="gboolean"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="switch_widget" invoker="switch_widget">
+			<return-value transfer-ownership="full">
+				<type name="gboolean" c:type="gboolean"/>
+			</return-value>
+			<parameters>
+				<parameter name="widget" transfer-ownership="none" allow-none="1">
+					<type name="Gtk.Widget" c:type="GtkWidget*"/>
+				</parameter>
+				<parameter name="quiet" transfer-ownership="none">
+					<type name="gboolean" c:type="gboolean"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<method name="do_switch" c:identifier="daf_ui_widgets_ideck_layout_do_switch">
+			<return-value transfer-ownership="full">
+				<type name="gboolean" c:type="gboolean"/>
+			</return-value>
+			<parameters>
+				<parameter name="card" transfer-ownership="none" allow-none="1">
+					<type name="Daf.UIWidgetsICard" c:type="DafUIWidgetsICard*"/>
+				</parameter>
+				<parameter name="quiet" transfer-ownership="none">
+					<type name="gboolean" c:type="gboolean"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="do_switch" invoker="do_switch">
+			<return-value transfer-ownership="full">
+				<type name="gboolean" c:type="gboolean"/>
+			</return-value>
+			<parameters>
+				<parameter name="card" transfer-ownership="none" allow-none="1">
+					<type name="Daf.UIWidgetsICard" c:type="DafUIWidgetsICard*"/>
+				</parameter>
+				<parameter name="quiet" transfer-ownership="none">
+					<type name="gboolean" c:type="gboolean"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<method name="create_card" c:identifier="daf_ui_widgets_ideck_layout_create_card">
+			<return-value transfer-ownership="full">
+				<type name="Daf.UIWidgetsICard" c:type="DafUIWidgetsICard*"/>
+			</return-value>
+			<parameters>
+				<parameter name="widget" transfer-ownership="none">
+					<type name="Gtk.Widget" c:type="GtkWidget*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="create_card" invoker="create_card">
+			<return-value transfer-ownership="full">
+				<type name="Daf.UIWidgetsICard" c:type="DafUIWidgetsICard*"/>
+			</return-value>
+			<parameters>
+				<parameter name="widget" transfer-ownership="none">
+					<type name="Gtk.Widget" c:type="GtkWidget*"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+	</interface>
+	<record name="IDeckLayoutIface" c:type="DafUIWidgetsIDeckLayoutIface" glib:is-gtype-struct-for="IDeckLayout">
+		<field name="parent_iface">
+			<type name="GObject.TypeInterface" c:type="GTypeInterface"/>
+		</field>
+		<field name="add">
+			<callback name="add" c:type="add">
+				<return-value transfer-ownership="full">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.UIWidgetsIDeckLayout" c:type="DafUIWidgetsIDeckLayout*"/>
+					</parameter>
+					<parameter name="widget" transfer-ownership="none">
+						<type name="Gtk.Widget" c:type="GtkWidget*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="remove">
+			<callback name="remove" c:type="remove">
+				<return-value transfer-ownership="full">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.UIWidgetsIDeckLayout" c:type="DafUIWidgetsIDeckLayout*"/>
+					</parameter>
+					<parameter name="widget" transfer-ownership="none">
+						<type name="Gtk.Widget" c:type="GtkWidget*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="switch_widget">
+			<callback name="switch_widget" c:type="switch_widget">
+				<return-value transfer-ownership="full">
+					<type name="gboolean" c:type="gboolean"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.UIWidgetsIDeckLayout" c:type="DafUIWidgetsIDeckLayout*"/>
+					</parameter>
+					<parameter name="widget" transfer-ownership="none" allow-none="1">
+						<type name="Gtk.Widget" c:type="GtkWidget*"/>
+					</parameter>
+					<parameter name="quiet" transfer-ownership="none">
+						<type name="gboolean" c:type="gboolean"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="do_switch">
+			<callback name="do_switch" c:type="do_switch">
+				<return-value transfer-ownership="full">
+					<type name="gboolean" c:type="gboolean"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.UIWidgetsIDeckLayout" c:type="DafUIWidgetsIDeckLayout*"/>
+					</parameter>
+					<parameter name="card" transfer-ownership="none" allow-none="1">
+						<type name="Daf.UIWidgetsICard" c:type="DafUIWidgetsICard*"/>
+					</parameter>
+					<parameter name="quiet" transfer-ownership="none">
+						<type name="gboolean" c:type="gboolean"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="create_card">
+			<callback name="create_card" c:type="create_card">
+				<return-value transfer-ownership="full">
+					<type name="Daf.UIWidgetsICard" c:type="DafUIWidgetsICard*"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.UIWidgetsIDeckLayout" c:type="DafUIWidgetsIDeckLayout*"/>
+					</parameter>
+					<parameter name="widget" transfer-ownership="none">
+						<type name="Gtk.Widget" c:type="GtkWidget*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+	</record>
+</namespace>
+</repository>

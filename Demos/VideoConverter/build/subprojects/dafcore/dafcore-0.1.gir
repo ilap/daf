@@ -1,0 +1,2992 @@
+<?xml version="1.0"?>
+<repository version="1.2" xmlns="http://www.gtk.org/introspection/core/1.0" xmlns:c="http://www.gtk.org/introspection/c/1.0" xmlns:glib="http://www.gtk.org/introspection/glib/1.0">
+<include name="GObject" version="2.0"/>
+<include name="GLib" version="2.0"/>
+<include name="Gee" version="0.8"/>
+<package name="dafcore"/>
+<c:include name="dafcore.h"/>
+<namespace name="dafcore" version="0.1" c:prefix="Daf">
+	<enumeration name="DependencyGraphError" c:type="DafCoreBindingDependencyGraphError" glib:error-domain="daf_core_binding_dependency_graph_error-quark">
+		<member name="cyclic_dependency" c:identifier="DAF_CORE_BINDING_DEPENDENCY_GRAPH_ERROR_CYCLIC_DEPENDENCY" value="0"/>
+	</enumeration>
+	<class name="CoreBindingBindModelFactory" c:type="DafCoreBindingBindModelFactory" glib:type-name="DafCoreBindingBindModelFactory" glib:get-type="daf_core_binding_bind_model_factory_get_type" glib:type-struct="CoreBindingBindModelFactoryClass" parent="GObject.Object">
+		<implements name="Daf.CoreBindingIBindModelFactory"/>
+		<field name="parent_instance">
+			<type name="GObject.Object" c:type="GObject"/>
+		</field>
+		<field name="priv">
+			<type name="CoreBindingBindModelFactoryPrivate" c:type="DafCoreBindingBindModelFactoryPrivate*"/>
+		</field>
+		<constructor name="new" c:identifier="daf_core_binding_bind_model_factory_new">
+			<return-value transfer-ownership="full">
+				<type name="Daf.CoreBindingBindModelFactory" c:type="DafCoreBindingBindModelFactory*"/>
+			</return-value>
+		</constructor>
+	</class>
+	<record name="CoreBindingBindModelFactoryClass" c:type="DafCoreBindingBindModelFactoryClass" glib:is-gtype-struct-for="BindModelFactory">
+		<field name="parent_class">
+			<type name="GObject.ObjectClass" c:type="GObjectClass"/>
+		</field>
+	</record>
+	<record name="CoreBindingBindModelFactoryPrivate" c:type="DafCoreBindingBindModelFactoryPrivate" disguised="1"/>
+	<class name="CoreBindingBindModelService" c:type="DafCoreBindingBindModelService" glib:type-name="DafCoreBindingBindModelService" glib:get-type="daf_core_binding_bind_model_service_get_type" glib:type-struct="CoreBindingBindModelServiceClass" parent="GObject.Object">
+		<implements name="Daf.CoreBindingIBindModelRepository"/>
+		<implements name="Daf.CoreBindingIBindModelService"/>
+		<field name="parent_instance">
+			<type name="GObject.Object" c:type="GObject"/>
+		</field>
+		<field name="priv">
+			<type name="CoreBindingBindModelServicePrivate" c:type="DafCoreBindingBindModelServicePrivate*"/>
+		</field>
+		<constructor name="new" c:identifier="daf_core_binding_bind_model_service_new">
+			<return-value transfer-ownership="full">
+				<type name="Daf.CoreBindingBindModelService" c:type="DafCoreBindingBindModelService*"/>
+			</return-value>
+			<parameters>
+				<parameter name="repository" transfer-ownership="none">
+					<type name="Daf.CoreBindingIBindModelRepository" c:type="DafCoreBindingIBindModelRepository*"/>
+				</parameter>
+				<parameter name="model_factory" transfer-ownership="none">
+					<type name="Daf.CoreBindingIBindModelFactory" c:type="DafCoreBindingIBindModelFactory*"/>
+				</parameter>
+			</parameters>
+		</constructor>
+		<property name="repository" writable="1" construct-only="1">
+			<type name="Daf.CoreBindingIBindModelRepository" c:type="DafCoreBindingIBindModelRepository*"/>
+		</property>
+		<method name="get_repository" c:identifier="daf_core_binding_bind_model_service_get_repository">
+			<return-value transfer-ownership="none">
+				<type name="Daf.CoreBindingIBindModelRepository" c:type="DafCoreBindingIBindModelRepository*"/>
+			</return-value>
+		</method>
+		<property name="model-factory" writable="1" construct-only="1">
+			<type name="Daf.CoreBindingIBindModelFactory" c:type="DafCoreBindingIBindModelFactory*"/>
+		</property>
+		<method name="get_model_factory" c:identifier="daf_core_binding_bind_model_service_get_model_factory">
+			<return-value transfer-ownership="none">
+				<type name="Daf.CoreBindingIBindModelFactory" c:type="DafCoreBindingIBindModelFactory*"/>
+			</return-value>
+		</method>
+	</class>
+	<record name="CoreBindingBindModelServiceClass" c:type="DafCoreBindingBindModelServiceClass" glib:is-gtype-struct-for="BindModelService">
+		<field name="parent_class">
+			<type name="GObject.ObjectClass" c:type="GObjectClass"/>
+		</field>
+	</record>
+	<record name="CoreBindingBindModelServicePrivate" c:type="DafCoreBindingBindModelServicePrivate" disguised="1"/>
+	<class name="CoreBindingDefaultBindModelRepository" c:type="DafCoreBindingDefaultBindModelRepository" glib:type-name="DafCoreBindingDefaultBindModelRepository" glib:get-type="daf_core_binding_default_bind_model_repository_get_type" glib:type-struct="CoreBindingDefaultBindModelRepositoryClass" parent="GObject.Object">
+		<implements name="Daf.CoreBindingIBindModelRepository"/>
+		<field name="parent_instance">
+			<type name="GObject.Object" c:type="GObject"/>
+		</field>
+		<field name="priv">
+			<type name="CoreBindingDefaultBindModelRepositoryPrivate" c:type="DafCoreBindingDefaultBindModelRepositoryPrivate*"/>
+		</field>
+		<method name="DefaultBindModelRepository" c:identifier="daf_core_binding_default_bind_model_repository_DefaultBindModelRepository">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+		</method>
+		<constructor name="new" c:identifier="daf_core_binding_default_bind_model_repository_new">
+			<return-value transfer-ownership="full">
+				<type name="Daf.CoreBindingDefaultBindModelRepository" c:type="DafCoreBindingDefaultBindModelRepository*"/>
+			</return-value>
+		</constructor>
+	</class>
+	<record name="CoreBindingDefaultBindModelRepositoryClass" c:type="DafCoreBindingDefaultBindModelRepositoryClass" glib:is-gtype-struct-for="DefaultBindModelRepository">
+		<field name="parent_class">
+			<type name="GObject.ObjectClass" c:type="GObjectClass"/>
+		</field>
+	</record>
+	<record name="CoreBindingDefaultBindModelRepositoryPrivate" c:type="DafCoreBindingDefaultBindModelRepositoryPrivate" disguised="1"/>
+	<class name="CoreBindingBindModel" c:type="DafCoreBindingBindModel" glib:type-name="DafCoreBindingBindModel" glib:get-type="daf_core_binding_bind_model_get_type" glib:type-struct="CoreBindingBindModelClass" parent="Daf.CoreBindingAbstractAcyclicGraph">
+		<implements name="Daf.CoreBindingIBindModel"/>
+		<implements name="Daf.CoreBindingIBindTo"/>
+		<implements name="Daf.CoreBindingIBindFrom"/>
+		<field name="parent_instance">
+			<type name="Daf.CoreBindingAbstractAcyclicGraph" c:type="DafCoreBindingAbstractAcyclicGraph"/>
+		</field>
+		<field name="priv">
+			<type name="CoreBindingBindModelPrivate" c:type="DafCoreBindingBindModelPrivate*"/>
+		</field>
+		<field name="model_locked">
+			<type name="gboolean" c:type="gboolean"/>
+		</field>
+		<constructor name="new" c:identifier="daf_core_binding_bind_model_new">
+			<return-value transfer-ownership="full">
+				<type name="Daf.CoreBindingBindModel" c:type="DafCoreBindingBindModel*"/>
+			</return-value>
+			<parameters>
+				<parameter name="name" transfer-ownership="none">
+					<type name="utf8" c:type="const gchar*"/>
+				</parameter>
+				<parameter name="service" transfer-ownership="none">
+					<type name="Daf.CoreBindingIBindModelService" c:type="DafCoreBindingIBindModelService*"/>
+				</parameter>
+				<parameter name="model" transfer-ownership="none">
+					<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+				</parameter>
+			</parameters>
+		</constructor>
+		<property name="service" writable="1" construct="1">
+			<type name="Daf.CoreBindingIBindModelService" c:type="DafCoreBindingIBindModelService*"/>
+		</property>
+		<method name="get_service" c:identifier="daf_core_binding_bind_model_get_service">
+			<return-value transfer-ownership="none">
+				<type name="Daf.CoreBindingIBindModelService" c:type="DafCoreBindingIBindModelService*"/>
+			</return-value>
+		</method>
+		<method name="set_service" c:identifier="daf_core_binding_bind_model_set_service">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="Daf.CoreBindingIBindModelService" c:type="DafCoreBindingIBindModelService*"/>
+				</parameter>
+			</parameters>
+		</method>
+	</class>
+	<record name="CoreBindingBindModelClass" c:type="DafCoreBindingBindModelClass" glib:is-gtype-struct-for="BindModel">
+		<field name="parent_class">
+			<type name="Daf.CoreBindingAbstractAcyclicGraphClass" c:type="DafCoreBindingAbstractAcyclicGraphClass"/>
+		</field>
+	</record>
+	<record name="CoreBindingBindModelPrivate" c:type="DafCoreBindingBindModelPrivate" disguised="1"/>
+	<class name="CoreBindingBindKey" c:type="DafCoreBindingBindKey" glib:type-name="DafCoreBindingBindKey" glib:get-type="daf_core_binding_bind_key_get_type" glib:type-struct="CoreBindingBindKeyClass" parent="GObject.Object">
+		<field name="parent_instance">
+			<type name="GObject.Object" c:type="GObject"/>
+		</field>
+		<field name="priv">
+			<type name="CoreBindingBindKeyPrivate" c:type="DafCoreBindingBindKeyPrivate*"/>
+		</field>
+		<field name="property_name">
+			<type name="utf8" c:type="gchar*"/>
+		</field>
+		<constructor name="new" c:identifier="daf_core_binding_bind_key_new">
+			<return-value transfer-ownership="full">
+				<type name="Daf.CoreBindingBindKey" c:type="DafCoreBindingBindKey*"/>
+			</return-value>
+			<parameters>
+				<parameter name="subject" transfer-ownership="none">
+					<type name="GObject.Object" c:type="GObject*"/>
+				</parameter>
+				<parameter name="property_name" transfer-ownership="none">
+					<type name="utf8" c:type="const gchar*"/>
+				</parameter>
+			</parameters>
+		</constructor>
+	</class>
+	<record name="CoreBindingBindKeyClass" c:type="DafCoreBindingBindKeyClass" glib:is-gtype-struct-for="BindKey">
+		<field name="parent_class">
+			<type name="GObject.ObjectClass" c:type="GObjectClass"/>
+		</field>
+	</record>
+	<record name="CoreBindingBindKeyPrivate" c:type="DafCoreBindingBindKeyPrivate" disguised="1"/>
+	<class name="CoreBindingAbstractAcyclicGraph" c:type="DafCoreBindingAbstractAcyclicGraph" glib:type-name="DafCoreBindingAbstractAcyclicGraph" glib:get-type="daf_core_binding_abstract_acyclic_graph_get_type" glib:type-struct="CoreBindingAbstractAcyclicGraphClass" parent="GObject.Object" abstract="1">
+		<implements name="Daf.CoreBindingIDirectedAcyclicGraph"/>
+		<field name="parent_instance">
+			<type name="GObject.Object" c:type="GObject"/>
+		</field>
+		<field name="priv">
+			<type name="CoreBindingAbstractAcyclicGraphPrivate" c:type="DafCoreBindingAbstractAcyclicGraphPrivate*"/>
+		</field>
+		<field name="resolved">
+			<type name="GLib.List" c:type="GList*">
+				<type name="Daf.CoreBindingIDirectedAcyclicGraph" c:type="DafCoreBindingIDirectedAcyclicGraph*"/>
+			</type>
+		</field>
+		<field name="unresolved">
+			<type name="GLib.List" c:type="GList*">
+				<type name="Daf.CoreBindingIDirectedAcyclicGraph" c:type="DafCoreBindingIDirectedAcyclicGraph*"/>
+			</type>
+		</field>
+	</class>
+	<record name="CoreBindingAbstractAcyclicGraphClass" c:type="DafCoreBindingAbstractAcyclicGraphClass" glib:is-gtype-struct-for="AbstractAcyclicGraph">
+		<field name="parent_class">
+			<type name="GObject.ObjectClass" c:type="GObjectClass"/>
+		</field>
+	</record>
+	<record name="CoreBindingAbstractAcyclicGraphPrivate" c:type="DafCoreBindingAbstractAcyclicGraphPrivate" disguised="1"/>
+	<class name="CoreBindingBinder" c:type="DafCoreBindingBinder" glib:type-name="DafCoreBindingBinder" glib:get-type="daf_core_binding_binder_get_type" glib:type-struct="CoreBindingBinderClass" parent="GObject.Object">
+		<implements name="Daf.CoreBindingIBinder"/>
+		<field name="parent_instance">
+			<type name="GObject.Object" c:type="GObject"/>
+		</field>
+		<field name="priv">
+			<type name="CoreBindingBinderPrivate" c:type="DafCoreBindingBinderPrivate*"/>
+		</field>
+		<constructor name="new" c:identifier="daf_core_binding_binder_new">
+			<return-value transfer-ownership="full">
+				<type name="Daf.CoreBindingBinder" c:type="DafCoreBindingBinder*"/>
+			</return-value>
+		</constructor>
+		<property name="repository" writable="1">
+			<type name="Daf.CoreBindingIBindModelRepository" c:type="DafCoreBindingIBindModelRepository*"/>
+		</property>
+		<method name="set_repository" c:identifier="daf_core_binding_binder_set_repository">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="Daf.CoreBindingIBindModelRepository" c:type="DafCoreBindingIBindModelRepository*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<property name="service" writable="1">
+			<type name="Daf.CoreBindingIBindModelService" c:type="DafCoreBindingIBindModelService*"/>
+		</property>
+		<method name="set_service" c:identifier="daf_core_binding_binder_set_service">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="Daf.CoreBindingIBindModelService" c:type="DafCoreBindingIBindModelService*"/>
+				</parameter>
+			</parameters>
+		</method>
+	</class>
+	<record name="CoreBindingBinderClass" c:type="DafCoreBindingBinderClass" glib:is-gtype-struct-for="Binder">
+		<field name="parent_class">
+			<type name="GObject.ObjectClass" c:type="GObjectClass"/>
+		</field>
+	</record>
+	<record name="CoreBindingBinderPrivate" c:type="DafCoreBindingBinderPrivate" disguised="1"/>
+	<interface name="CoreBindingIDirectedAcyclicGraph" c:type="DafCoreBindingIDirectedAcyclicGraph" glib:type-name="DafCoreBindingIDirectedAcyclicGraph" glib:get-type="daf_core_binding_idirected_acyclic_graph_get_type" glib:type-struct="IDirectedAcyclicGraphIface">
+		<prerequisite name="GObject.Object"/>
+		<method name="add_edge" c:identifier="daf_core_binding_idirected_acyclic_graph_add_edge">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="node" transfer-ownership="none">
+					<type name="Daf.CoreBindingIDirectedAcyclicGraph" c:type="DafCoreBindingIDirectedAcyclicGraph*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<method name="remove_edge" c:identifier="daf_core_binding_idirected_acyclic_graph_remove_edge">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="node" transfer-ownership="none">
+					<type name="Daf.CoreBindingIDirectedAcyclicGraph" c:type="DafCoreBindingIDirectedAcyclicGraph*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<method name="resolve_dependency" c:identifier="daf_core_binding_idirected_acyclic_graph_resolve_dependency" throws="1">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="node" transfer-ownership="none">
+					<type name="Daf.CoreBindingIDirectedAcyclicGraph" c:type="DafCoreBindingIDirectedAcyclicGraph*"/>
+				</parameter>
+				<parameter name="resolved" transfer-ownership="none">
+					<type name="GLib.List" c:type="GList*">
+						<type name="Daf.CoreBindingIDirectedAcyclicGraph" c:type="DafCoreBindingIDirectedAcyclicGraph*"/>
+					</type>
+				</parameter>
+				<parameter name="unresolved" transfer-ownership="none">
+					<type name="GLib.List" c:type="GList*">
+						<type name="Daf.CoreBindingIDirectedAcyclicGraph" c:type="DafCoreBindingIDirectedAcyclicGraph*"/>
+					</type>
+				</parameter>
+			</parameters>
+		</method>
+		<method name="resolve" c:identifier="daf_core_binding_idirected_acyclic_graph_resolve" throws="1">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="node" transfer-ownership="none">
+					<type name="Daf.CoreBindingIDirectedAcyclicGraph" c:type="DafCoreBindingIDirectedAcyclicGraph*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="resolve" invoker="resolve" throws="1">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="node" transfer-ownership="none">
+					<type name="Daf.CoreBindingIDirectedAcyclicGraph" c:type="DafCoreBindingIDirectedAcyclicGraph*"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<property name="edges" writable="1" construct="1">
+			<type name="GLib.List" c:type="GList*">
+				<type name="Daf.CoreBindingIDirectedAcyclicGraph" c:type="DafCoreBindingIDirectedAcyclicGraph*"/>
+			</type>
+		</property>
+		<method name="get_edges" c:identifier="daf_core_binding_idirected_acyclic_graph_get_edges">
+			<return-value transfer-ownership="none">
+				<type name="GLib.List" c:type="GList*">
+					<type name="Daf.CoreBindingIDirectedAcyclicGraph" c:type="DafCoreBindingIDirectedAcyclicGraph*"/>
+				</type>
+			</return-value>
+		</method>
+		<virtual-method name="get_edges" invoker="get_edges">
+			<return-value transfer-ownership="none">
+				<type name="GLib.List" c:type="GList*">
+					<type name="Daf.CoreBindingIDirectedAcyclicGraph" c:type="DafCoreBindingIDirectedAcyclicGraph*"/>
+				</type>
+			</return-value>
+		</virtual-method>
+		<method name="set_edges" c:identifier="daf_core_binding_idirected_acyclic_graph_set_edges">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="GLib.List" c:type="GList*">
+						<type name="Daf.CoreBindingIDirectedAcyclicGraph" c:type="DafCoreBindingIDirectedAcyclicGraph*"/>
+					</type>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="set_edges" invoker="set_edges">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="GLib.List" c:type="GList*">
+						<type name="Daf.CoreBindingIDirectedAcyclicGraph" c:type="DafCoreBindingIDirectedAcyclicGraph*"/>
+					</type>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<property name="name" writable="1">
+			<type name="utf8" c:type="gchar*"/>
+		</property>
+		<method name="get_name" c:identifier="daf_core_binding_idirected_acyclic_graph_get_name">
+			<return-value transfer-ownership="none">
+				<type name="utf8" c:type="const gchar*"/>
+			</return-value>
+		</method>
+		<virtual-method name="get_name" invoker="get_name">
+			<return-value transfer-ownership="none">
+				<type name="utf8" c:type="const gchar*"/>
+			</return-value>
+		</virtual-method>
+		<method name="set_name" c:identifier="daf_core_binding_idirected_acyclic_graph_set_name">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="utf8" c:type="const gchar*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="set_name" invoker="set_name">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="utf8" c:type="const gchar*"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+	</interface>
+	<record name="IDirectedAcyclicGraphIface" c:type="DafCoreBindingIDirectedAcyclicGraphIface" glib:is-gtype-struct-for="IDirectedAcyclicGraph">
+		<field name="parent_iface">
+			<type name="GObject.TypeInterface" c:type="GTypeInterface"/>
+		</field>
+		<field name="resolve">
+			<callback name="resolve" c:type="resolve" throws="1">
+				<return-value transfer-ownership="full">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.CoreBindingIDirectedAcyclicGraph" c:type="DafCoreBindingIDirectedAcyclicGraph*"/>
+					</parameter>
+					<parameter name="node" transfer-ownership="none">
+						<type name="Daf.CoreBindingIDirectedAcyclicGraph" c:type="DafCoreBindingIDirectedAcyclicGraph*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="get_edges">
+			<callback name="get_edges" c:type="get_edges">
+				<return-value transfer-ownership="none">
+					<type name="GLib.List" c:type="GList*">
+						<type name="Daf.CoreBindingIDirectedAcyclicGraph" c:type="DafCoreBindingIDirectedAcyclicGraph*"/>
+					</type>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.CoreBindingIDirectedAcyclicGraph" c:type="DafCoreBindingIDirectedAcyclicGraph*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="set_edges">
+			<callback name="set_edges" c:type="set_edges">
+				<return-value transfer-ownership="none">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.CoreBindingIDirectedAcyclicGraph" c:type="DafCoreBindingIDirectedAcyclicGraph*"/>
+					</parameter>
+					<parameter name="value" transfer-ownership="none">
+						<type name="GLib.List" c:type="GList*">
+							<type name="Daf.CoreBindingIDirectedAcyclicGraph" c:type="DafCoreBindingIDirectedAcyclicGraph*"/>
+						</type>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="get_name">
+			<callback name="get_name" c:type="get_name">
+				<return-value transfer-ownership="none">
+					<type name="utf8" c:type="const gchar*"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.CoreBindingIDirectedAcyclicGraph" c:type="DafCoreBindingIDirectedAcyclicGraph*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="set_name">
+			<callback name="set_name" c:type="set_name">
+				<return-value transfer-ownership="none">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.CoreBindingIDirectedAcyclicGraph" c:type="DafCoreBindingIDirectedAcyclicGraph*"/>
+					</parameter>
+					<parameter name="value" transfer-ownership="none">
+						<type name="utf8" c:type="const gchar*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+	</record>
+	<interface name="CoreBindingIBindModelRepository" c:type="DafCoreBindingIBindModelRepository" glib:type-name="DafCoreBindingIBindModelRepository" glib:get-type="daf_core_binding_ibind_model_repository_get_type" glib:type-struct="IBindModelRepositoryIface">
+		<prerequisite name="GObject.Object"/>
+		<property name="bind-models" writable="1" construct="1">
+			<type name="Gee.HashMap" c:type="GeeHashMap*">
+				<type name="gpointer" c:type="gpointer"/>
+				<type name="gpointer" c:type="gpointer"/>
+			</type>
+		</property>
+		<method name="get_bind_models" c:identifier="daf_core_binding_ibind_model_repository_get_bind_models">
+			<return-value transfer-ownership="none">
+				<type name="Gee.HashMap" c:type="GeeHashMap*">
+					<type name="gpointer" c:type="gpointer"/>
+					<type name="gpointer" c:type="gpointer"/>
+				</type>
+			</return-value>
+		</method>
+		<virtual-method name="get_bind_models" invoker="get_bind_models">
+			<return-value transfer-ownership="none">
+				<type name="Gee.HashMap" c:type="GeeHashMap*">
+					<type name="gpointer" c:type="gpointer"/>
+					<type name="gpointer" c:type="gpointer"/>
+				</type>
+			</return-value>
+		</virtual-method>
+		<method name="set_bind_models" c:identifier="daf_core_binding_ibind_model_repository_set_bind_models">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="Gee.HashMap" c:type="GeeHashMap*">
+						<type name="gpointer" c:type="gpointer"/>
+						<type name="gpointer" c:type="gpointer"/>
+					</type>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="set_bind_models" invoker="set_bind_models">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="Gee.HashMap" c:type="GeeHashMap*">
+						<type name="gpointer" c:type="gpointer"/>
+						<type name="gpointer" c:type="gpointer"/>
+					</type>
+				</parameter>
+			</parameters>
+		</virtual-method>
+	</interface>
+	<record name="IBindModelRepositoryIface" c:type="DafCoreBindingIBindModelRepositoryIface" glib:is-gtype-struct-for="IBindModelRepository">
+		<field name="parent_iface">
+			<type name="GObject.TypeInterface" c:type="GTypeInterface"/>
+		</field>
+		<field name="get_bind_models">
+			<callback name="get_bind_models" c:type="get_bind_models">
+				<return-value transfer-ownership="none">
+					<type name="Gee.HashMap" c:type="GeeHashMap*">
+						<type name="gpointer" c:type="gpointer"/>
+						<type name="gpointer" c:type="gpointer"/>
+					</type>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.CoreBindingIBindModelRepository" c:type="DafCoreBindingIBindModelRepository*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="set_bind_models">
+			<callback name="set_bind_models" c:type="set_bind_models">
+				<return-value transfer-ownership="none">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.CoreBindingIBindModelRepository" c:type="DafCoreBindingIBindModelRepository*"/>
+					</parameter>
+					<parameter name="value" transfer-ownership="none">
+						<type name="Gee.HashMap" c:type="GeeHashMap*">
+							<type name="gpointer" c:type="gpointer"/>
+							<type name="gpointer" c:type="gpointer"/>
+						</type>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+	</record>
+	<interface name="CoreBindingIBinder" c:type="DafCoreBindingIBinder" glib:type-name="DafCoreBindingIBinder" glib:get-type="daf_core_binding_ibinder_get_type" glib:type-struct="IBinderIface">
+		<prerequisite name="GObject.Object"/>
+		<method name="bind" c:identifier="daf_core_binding_ibinder_bind">
+			<return-value transfer-ownership="full">
+				<type name="Daf.CoreBindingIBindTo" c:type="DafCoreBindingIBindTo*"/>
+			</return-value>
+			<parameters>
+				<parameter name="source" transfer-ownership="none">
+					<type name="GObject.Object" c:type="GObject*"/>
+				</parameter>
+				<parameter name="property_name" transfer-ownership="none" allow-none="1">
+					<type name="utf8" c:type="const gchar*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="bind" invoker="bind">
+			<return-value transfer-ownership="full">
+				<type name="Daf.CoreBindingIBindTo" c:type="DafCoreBindingIBindTo*"/>
+			</return-value>
+			<parameters>
+				<parameter name="source" transfer-ownership="none">
+					<type name="GObject.Object" c:type="GObject*"/>
+				</parameter>
+				<parameter name="property_name" transfer-ownership="none" allow-none="1">
+					<type name="utf8" c:type="const gchar*"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<method name="unbind" c:identifier="daf_core_binding_ibinder_unbind">
+			<return-value transfer-ownership="full">
+				<type name="Daf.CoreBindingIBindFrom" c:type="DafCoreBindingIBindFrom*"/>
+			</return-value>
+			<parameters>
+				<parameter name="subject" transfer-ownership="none">
+					<type name="GObject.Object" c:type="GObject*"/>
+				</parameter>
+				<parameter name="property_name" transfer-ownership="none" allow-none="1">
+					<type name="utf8" c:type="const gchar*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="unbind" invoker="unbind">
+			<return-value transfer-ownership="full">
+				<type name="Daf.CoreBindingIBindFrom" c:type="DafCoreBindingIBindFrom*"/>
+			</return-value>
+			<parameters>
+				<parameter name="subject" transfer-ownership="none">
+					<type name="GObject.Object" c:type="GObject*"/>
+				</parameter>
+				<parameter name="property_name" transfer-ownership="none" allow-none="1">
+					<type name="utf8" c:type="const gchar*"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+	</interface>
+	<record name="IBinderIface" c:type="DafCoreBindingIBinderIface" glib:is-gtype-struct-for="IBinder">
+		<field name="parent_iface">
+			<type name="GObject.TypeInterface" c:type="GTypeInterface"/>
+		</field>
+		<field name="bind">
+			<callback name="bind" c:type="bind">
+				<return-value transfer-ownership="full">
+					<type name="Daf.CoreBindingIBindTo" c:type="DafCoreBindingIBindTo*"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.CoreBindingIBinder" c:type="DafCoreBindingIBinder*"/>
+					</parameter>
+					<parameter name="source" transfer-ownership="none">
+						<type name="GObject.Object" c:type="GObject*"/>
+					</parameter>
+					<parameter name="property_name" transfer-ownership="none" allow-none="1">
+						<type name="utf8" c:type="const gchar*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="unbind">
+			<callback name="unbind" c:type="unbind">
+				<return-value transfer-ownership="full">
+					<type name="Daf.CoreBindingIBindFrom" c:type="DafCoreBindingIBindFrom*"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.CoreBindingIBinder" c:type="DafCoreBindingIBinder*"/>
+					</parameter>
+					<parameter name="subject" transfer-ownership="none">
+						<type name="GObject.Object" c:type="GObject*"/>
+					</parameter>
+					<parameter name="property_name" transfer-ownership="none" allow-none="1">
+						<type name="utf8" c:type="const gchar*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+	</record>
+	<interface name="CoreBindingIBindModelService" c:type="DafCoreBindingIBindModelService" glib:type-name="DafCoreBindingIBindModelService" glib:get-type="daf_core_binding_ibind_model_service_get_type" glib:type-struct="IBindModelServiceIface">
+		<prerequisite name="GObject.Object"/>
+		<method name="get_bind_model" c:identifier="daf_core_binding_ibind_model_service_get_bind_model">
+			<return-value transfer-ownership="full" allow-none="1">
+				<type name="Daf.CoreBindingIBindModel" c:type="DafCoreBindingIBindModel*"/>
+			</return-value>
+			<parameters>
+				<parameter name="subject" transfer-ownership="none">
+					<type name="GObject.Object" c:type="GObject*"/>
+				</parameter>
+				<parameter name="property_name" transfer-ownership="none" allow-none="1">
+					<type name="utf8" c:type="const gchar*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="get_bind_model" invoker="get_bind_model">
+			<return-value transfer-ownership="full" allow-none="1">
+				<type name="Daf.CoreBindingIBindModel" c:type="DafCoreBindingIBindModel*"/>
+			</return-value>
+			<parameters>
+				<parameter name="subject" transfer-ownership="none">
+					<type name="GObject.Object" c:type="GObject*"/>
+				</parameter>
+				<parameter name="property_name" transfer-ownership="none" allow-none="1">
+					<type name="utf8" c:type="const gchar*"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<method name="create_bind_model" c:identifier="daf_core_binding_ibind_model_service_create_bind_model">
+			<return-value transfer-ownership="full" allow-none="1">
+				<type name="Daf.CoreBindingIBindModel" c:type="DafCoreBindingIBindModel*"/>
+			</return-value>
+			<parameters>
+				<parameter name="subject" transfer-ownership="none">
+					<type name="GObject.Object" c:type="GObject*"/>
+				</parameter>
+				<parameter name="property_name" transfer-ownership="none" allow-none="1">
+					<type name="utf8" c:type="const gchar*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="create_bind_model" invoker="create_bind_model">
+			<return-value transfer-ownership="full" allow-none="1">
+				<type name="Daf.CoreBindingIBindModel" c:type="DafCoreBindingIBindModel*"/>
+			</return-value>
+			<parameters>
+				<parameter name="subject" transfer-ownership="none">
+					<type name="GObject.Object" c:type="GObject*"/>
+				</parameter>
+				<parameter name="property_name" transfer-ownership="none" allow-none="1">
+					<type name="utf8" c:type="const gchar*"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<method name="remove_bind_model" c:identifier="daf_core_binding_ibind_model_service_remove_bind_model">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="subject" transfer-ownership="none">
+					<type name="GObject.Object" c:type="GObject*"/>
+				</parameter>
+				<parameter name="property_name" transfer-ownership="none" allow-none="1">
+					<type name="utf8" c:type="const gchar*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="remove_bind_model" invoker="remove_bind_model">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="subject" transfer-ownership="none">
+					<type name="GObject.Object" c:type="GObject*"/>
+				</parameter>
+				<parameter name="property_name" transfer-ownership="none" allow-none="1">
+					<type name="utf8" c:type="const gchar*"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<method name="get_or_create_bind_model" c:identifier="daf_core_binding_ibind_model_service_get_or_create_bind_model">
+			<return-value transfer-ownership="full">
+				<type name="Daf.CoreBindingIBindModel" c:type="DafCoreBindingIBindModel*"/>
+			</return-value>
+			<parameters>
+				<parameter name="subject" transfer-ownership="none">
+					<type name="GObject.Object" c:type="GObject*"/>
+				</parameter>
+				<parameter name="property_name" transfer-ownership="none" allow-none="1">
+					<type name="utf8" c:type="const gchar*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="get_or_create_bind_model" invoker="get_or_create_bind_model">
+			<return-value transfer-ownership="full">
+				<type name="Daf.CoreBindingIBindModel" c:type="DafCoreBindingIBindModel*"/>
+			</return-value>
+			<parameters>
+				<parameter name="subject" transfer-ownership="none">
+					<type name="GObject.Object" c:type="GObject*"/>
+				</parameter>
+				<parameter name="property_name" transfer-ownership="none" allow-none="1">
+					<type name="utf8" c:type="const gchar*"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+	</interface>
+	<record name="IBindModelServiceIface" c:type="DafCoreBindingIBindModelServiceIface" glib:is-gtype-struct-for="IBindModelService">
+		<field name="parent_iface">
+			<type name="GObject.TypeInterface" c:type="GTypeInterface"/>
+		</field>
+		<field name="get_bind_model">
+			<callback name="get_bind_model" c:type="get_bind_model">
+				<return-value transfer-ownership="full" allow-none="1">
+					<type name="Daf.CoreBindingIBindModel" c:type="DafCoreBindingIBindModel*"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.CoreBindingIBindModelService" c:type="DafCoreBindingIBindModelService*"/>
+					</parameter>
+					<parameter name="subject" transfer-ownership="none">
+						<type name="GObject.Object" c:type="GObject*"/>
+					</parameter>
+					<parameter name="property_name" transfer-ownership="none" allow-none="1">
+						<type name="utf8" c:type="const gchar*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="create_bind_model">
+			<callback name="create_bind_model" c:type="create_bind_model">
+				<return-value transfer-ownership="full" allow-none="1">
+					<type name="Daf.CoreBindingIBindModel" c:type="DafCoreBindingIBindModel*"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.CoreBindingIBindModelService" c:type="DafCoreBindingIBindModelService*"/>
+					</parameter>
+					<parameter name="subject" transfer-ownership="none">
+						<type name="GObject.Object" c:type="GObject*"/>
+					</parameter>
+					<parameter name="property_name" transfer-ownership="none" allow-none="1">
+						<type name="utf8" c:type="const gchar*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="remove_bind_model">
+			<callback name="remove_bind_model" c:type="remove_bind_model">
+				<return-value transfer-ownership="full">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.CoreBindingIBindModelService" c:type="DafCoreBindingIBindModelService*"/>
+					</parameter>
+					<parameter name="subject" transfer-ownership="none">
+						<type name="GObject.Object" c:type="GObject*"/>
+					</parameter>
+					<parameter name="property_name" transfer-ownership="none" allow-none="1">
+						<type name="utf8" c:type="const gchar*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="get_or_create_bind_model">
+			<callback name="get_or_create_bind_model" c:type="get_or_create_bind_model">
+				<return-value transfer-ownership="full">
+					<type name="Daf.CoreBindingIBindModel" c:type="DafCoreBindingIBindModel*"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.CoreBindingIBindModelService" c:type="DafCoreBindingIBindModelService*"/>
+					</parameter>
+					<parameter name="subject" transfer-ownership="none">
+						<type name="GObject.Object" c:type="GObject*"/>
+					</parameter>
+					<parameter name="property_name" transfer-ownership="none" allow-none="1">
+						<type name="utf8" c:type="const gchar*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+	</record>
+	<interface name="CoreBindingIBindFrom" c:type="DafCoreBindingIBindFrom" glib:type-name="DafCoreBindingIBindFrom" glib:get-type="daf_core_binding_ibind_from_get_type" glib:type-struct="IBindFromIface">
+		<prerequisite name="GObject.Object"/>
+		<method name="from" c:identifier="daf_core_binding_ibind_from_from">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="subject" transfer-ownership="none">
+					<type name="GObject.Object" c:type="GObject*"/>
+				</parameter>
+				<parameter name="property_name" transfer-ownership="none" allow-none="1">
+					<type name="utf8" c:type="const gchar*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="from" invoker="from">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="subject" transfer-ownership="none">
+					<type name="GObject.Object" c:type="GObject*"/>
+				</parameter>
+				<parameter name="property_name" transfer-ownership="none" allow-none="1">
+					<type name="utf8" c:type="const gchar*"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+	</interface>
+	<record name="IBindFromIface" c:type="DafCoreBindingIBindFromIface" glib:is-gtype-struct-for="IBindFrom">
+		<field name="parent_iface">
+			<type name="GObject.TypeInterface" c:type="GTypeInterface"/>
+		</field>
+		<field name="from">
+			<callback name="from" c:type="from">
+				<return-value transfer-ownership="full">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.CoreBindingIBindFrom" c:type="DafCoreBindingIBindFrom*"/>
+					</parameter>
+					<parameter name="subject" transfer-ownership="none">
+						<type name="GObject.Object" c:type="GObject*"/>
+					</parameter>
+					<parameter name="property_name" transfer-ownership="none" allow-none="1">
+						<type name="utf8" c:type="const gchar*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+	</record>
+	<interface name="CoreBindingIBindTo" c:type="DafCoreBindingIBindTo" glib:type-name="DafCoreBindingIBindTo" glib:get-type="daf_core_binding_ibind_to_get_type" glib:type-struct="IBindToIface">
+		<prerequisite name="GObject.Object"/>
+		<method name="to" c:identifier="daf_core_binding_ibind_to_to">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="subject" transfer-ownership="none">
+					<type name="GObject.Object" c:type="GObject*"/>
+				</parameter>
+				<parameter name="property_name" transfer-ownership="none" allow-none="1">
+					<type name="utf8" c:type="const gchar*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="to" invoker="to">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="subject" transfer-ownership="none">
+					<type name="GObject.Object" c:type="GObject*"/>
+				</parameter>
+				<parameter name="property_name" transfer-ownership="none" allow-none="1">
+					<type name="utf8" c:type="const gchar*"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+	</interface>
+	<record name="IBindToIface" c:type="DafCoreBindingIBindToIface" glib:is-gtype-struct-for="IBindTo">
+		<field name="parent_iface">
+			<type name="GObject.TypeInterface" c:type="GTypeInterface"/>
+		</field>
+		<field name="to">
+			<callback name="to" c:type="to">
+				<return-value transfer-ownership="full">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.CoreBindingIBindTo" c:type="DafCoreBindingIBindTo*"/>
+					</parameter>
+					<parameter name="subject" transfer-ownership="none">
+						<type name="GObject.Object" c:type="GObject*"/>
+					</parameter>
+					<parameter name="property_name" transfer-ownership="none" allow-none="1">
+						<type name="utf8" c:type="const gchar*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+	</record>
+	<interface name="CoreBindingIBindModel" c:type="DafCoreBindingIBindModel" glib:type-name="DafCoreBindingIBindModel" glib:get-type="daf_core_binding_ibind_model_get_type" glib:type-struct="IBindModelIface">
+		<prerequisite name="GObject.Object"/>
+		<method name="on_model_notify" c:identifier="daf_core_binding_ibind_model_on_model_notify">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="sender" transfer-ownership="none">
+					<type name="GObject.Object" c:type="GObject*"/>
+				</parameter>
+				<parameter name="param_spec" transfer-ownership="none">
+					<type name="GObject.ParamSpec" c:type="GParamSpec*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="on_model_notify" invoker="on_model_notify">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="sender" transfer-ownership="none">
+					<type name="GObject.Object" c:type="GObject*"/>
+				</parameter>
+				<parameter name="param_spec" transfer-ownership="none">
+					<type name="GObject.ParamSpec" c:type="GParamSpec*"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<method name="bind" c:identifier="daf_core_binding_ibind_model_bind">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="bind_target" transfer-ownership="none">
+					<type name="Daf.CoreBindingIBindModel" c:type="DafCoreBindingIBindModel*"/>
+				</parameter>
+				<parameter name="locked" transfer-ownership="none">
+					<type name="gboolean" c:type="gboolean"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="bind" invoker="bind">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="bind_target" transfer-ownership="none">
+					<type name="Daf.CoreBindingIBindModel" c:type="DafCoreBindingIBindModel*"/>
+				</parameter>
+				<parameter name="locked" transfer-ownership="none">
+					<type name="gboolean" c:type="gboolean"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<method name="unbind" c:identifier="daf_core_binding_ibind_model_unbind">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="bind_target" transfer-ownership="none">
+					<type name="Daf.CoreBindingIBindModel" c:type="DafCoreBindingIBindModel*"/>
+				</parameter>
+				<parameter name="locked" transfer-ownership="none">
+					<type name="gboolean" c:type="gboolean"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="unbind" invoker="unbind">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="bind_target" transfer-ownership="none">
+					<type name="Daf.CoreBindingIBindModel" c:type="DafCoreBindingIBindModel*"/>
+				</parameter>
+				<parameter name="locked" transfer-ownership="none">
+					<type name="gboolean" c:type="gboolean"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<property name="model" writable="1" construct="1">
+			<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+		</property>
+		<method name="get_model" c:identifier="daf_core_binding_ibind_model_get_model">
+			<return-value transfer-ownership="none">
+				<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+			</return-value>
+		</method>
+		<virtual-method name="get_model" invoker="get_model">
+			<return-value transfer-ownership="none">
+				<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+			</return-value>
+		</virtual-method>
+		<method name="set_model" c:identifier="daf_core_binding_ibind_model_set_model">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="set_model" invoker="set_model">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+	</interface>
+	<record name="IBindModelIface" c:type="DafCoreBindingIBindModelIface" glib:is-gtype-struct-for="IBindModel">
+		<field name="parent_iface">
+			<type name="GObject.TypeInterface" c:type="GTypeInterface"/>
+		</field>
+		<field name="on_model_notify">
+			<callback name="on_model_notify" c:type="on_model_notify">
+				<return-value transfer-ownership="full">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.CoreBindingIBindModel" c:type="DafCoreBindingIBindModel*"/>
+					</parameter>
+					<parameter name="sender" transfer-ownership="none">
+						<type name="GObject.Object" c:type="GObject*"/>
+					</parameter>
+					<parameter name="param_spec" transfer-ownership="none">
+						<type name="GObject.ParamSpec" c:type="GParamSpec*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="bind">
+			<callback name="bind" c:type="bind">
+				<return-value transfer-ownership="full">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.CoreBindingIBindModel" c:type="DafCoreBindingIBindModel*"/>
+					</parameter>
+					<parameter name="bind_target" transfer-ownership="none">
+						<type name="Daf.CoreBindingIBindModel" c:type="DafCoreBindingIBindModel*"/>
+					</parameter>
+					<parameter name="locked" transfer-ownership="none">
+						<type name="gboolean" c:type="gboolean"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="unbind">
+			<callback name="unbind" c:type="unbind">
+				<return-value transfer-ownership="full">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.CoreBindingIBindModel" c:type="DafCoreBindingIBindModel*"/>
+					</parameter>
+					<parameter name="bind_target" transfer-ownership="none">
+						<type name="Daf.CoreBindingIBindModel" c:type="DafCoreBindingIBindModel*"/>
+					</parameter>
+					<parameter name="locked" transfer-ownership="none">
+						<type name="gboolean" c:type="gboolean"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="get_model">
+			<callback name="get_model" c:type="get_model">
+				<return-value transfer-ownership="none">
+					<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.CoreBindingIBindModel" c:type="DafCoreBindingIBindModel*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="set_model">
+			<callback name="set_model" c:type="set_model">
+				<return-value transfer-ownership="none">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.CoreBindingIBindModel" c:type="DafCoreBindingIBindModel*"/>
+					</parameter>
+					<parameter name="value" transfer-ownership="none">
+						<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+	</record>
+	<interface name="CoreBindingIBindModelFactory" c:type="DafCoreBindingIBindModelFactory" glib:type-name="DafCoreBindingIBindModelFactory" glib:get-type="daf_core_binding_ibind_model_factory_get_type" glib:type-struct="IBindModelFactoryIface">
+		<prerequisite name="GObject.Object"/>
+		<method name="get_instance" c:identifier="daf_core_binding_ibind_model_factory_get_instance">
+			<return-value transfer-ownership="full">
+				<type name="Daf.CoreBindingIBindModel" c:type="DafCoreBindingIBindModel*"/>
+			</return-value>
+			<parameters>
+				<parameter name="name" transfer-ownership="none" allow-none="1">
+					<type name="utf8" c:type="const gchar*"/>
+				</parameter>
+				<parameter name="service" transfer-ownership="none">
+					<type name="Daf.CoreBindingIBindModelService" c:type="DafCoreBindingIBindModelService*"/>
+				</parameter>
+				<parameter name="model" transfer-ownership="none">
+					<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+				</parameter>
+			</parameters>
+		</method>
+	</interface>
+	<record name="IBindModelFactoryIface" c:type="DafCoreBindingIBindModelFactoryIface" glib:is-gtype-struct-for="IBindModelFactory">
+		<field name="parent_iface">
+			<type name="GObject.TypeInterface" c:type="GTypeInterface"/>
+		</field>
+	</record>
+	<class name="CoreSelectionInList" c:type="DafCoreSelectionInList" glib:type-name="DafCoreSelectionInList" glib:get-type="daf_core_selection_in_list_get_type" glib:type-struct="CoreSelectionInListClass" parent="Daf.CoreAbstractValueHolder">
+		<implements name="Daf.CoreIListModel"/>
+		<field name="parent_instance">
+			<type name="Daf.CoreAbstractValueHolder" c:type="DafCoreAbstractValueHolder"/>
+		</field>
+		<field name="priv">
+			<type name="CoreSelectionInListPrivate" c:type="DafCoreSelectionInListPrivate*"/>
+		</field>
+		<constructor name="with_list_model" c:identifier="daf_core_selection_in_list_new_with_list_model">
+			<return-value transfer-ownership="full">
+				<type name="Daf.CoreSelectionInList" c:type="DafCoreSelectionInList*"/>
+			</return-value>
+			<parameters>
+				<parameter name="list_model" transfer-ownership="none">
+					<type name="Daf.CoreIListModel" c:type="DafCoreIListModel*">
+						<type name="gpointer" c:type="gpointer"/>
+					</type>
+				</parameter>
+			</parameters>
+		</constructor>
+		<method name="getit" c:identifier="daf_core_selection_in_list_getit">
+			<return-value transfer-ownership="full" allow-none="1">
+				<type name="GObject.Value" c:type="GValue*"/>
+			</return-value>
+			<parameters>
+				<parameter name="index" transfer-ownership="none">
+					<type name="gint" c:type="gint"/>
+				</parameter>
+			</parameters>
+		</method>
+		<method name="clear_selection" c:identifier="daf_core_selection_in_list_clear_selection">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+		</method>
+		<constructor name="new" c:identifier="daf_core_selection_in_list_new">
+			<return-value transfer-ownership="full">
+				<type name="Daf.CoreSelectionInList" c:type="DafCoreSelectionInList*"/>
+			</return-value>
+		</constructor>
+		<property name="list-holder" writable="1">
+			<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+		</property>
+		<method name="get_list_holder" c:identifier="daf_core_selection_in_list_get_list_holder">
+			<return-value transfer-ownership="none">
+				<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+			</return-value>
+		</method>
+		<method name="set_list_holder" c:identifier="daf_core_selection_in_list_set_list_holder">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<property name="selection-holder" writable="1">
+			<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+		</property>
+		<method name="get_selection_holder" c:identifier="daf_core_selection_in_list_get_selection_holder">
+			<return-value transfer-ownership="none">
+				<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+			</return-value>
+		</method>
+		<method name="set_selection_holder" c:identifier="daf_core_selection_in_list_set_selection_holder">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<property name="selection-index-holder" writable="1">
+			<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+		</property>
+		<method name="get_selection_index_holder" c:identifier="daf_core_selection_in_list_get_selection_index_holder">
+			<return-value transfer-ownership="none">
+				<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+			</return-value>
+		</method>
+		<method name="set_selection_index_holder" c:identifier="daf_core_selection_in_list_set_selection_index_holder">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<property name="selection-index" writable="1">
+			<type name="gint" c:type="gint"/>
+		</property>
+		<method name="get_selection_index" c:identifier="daf_core_selection_in_list_get_selection_index">
+			<return-value transfer-ownership="none">
+				<type name="gint" c:type="gint"/>
+			</return-value>
+		</method>
+		<method name="set_selection_index" c:identifier="daf_core_selection_in_list_set_selection_index">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="gint" c:type="gint"/>
+				</parameter>
+			</parameters>
+		</method>
+		<property name="selection" writable="1">
+			<type name="GObject.Value" c:type="GValue*"/>
+		</property>
+		<method name="get_selection" c:identifier="daf_core_selection_in_list_get_selection">
+			<return-value transfer-ownership="full" allow-none="1">
+				<type name="GObject.Value" c:type="GValue*"/>
+			</return-value>
+		</method>
+		<method name="set_selection" c:identifier="daf_core_selection_in_list_set_selection">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none" allow-none="1">
+					<type name="GObject.Value" c:type="GValue*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<property name="has-selection" writable="1">
+			<type name="gboolean" c:type="gboolean"/>
+		</property>
+		<method name="get_has_selection" c:identifier="daf_core_selection_in_list_get_has_selection">
+			<return-value transfer-ownership="none">
+				<type name="gboolean" c:type="gboolean"/>
+			</return-value>
+		</method>
+		<property name="size">
+			<type name="gint" c:type="gint"/>
+		</property>
+		<method name="get_size" c:identifier="daf_core_selection_in_list_get_size">
+			<return-value transfer-ownership="none">
+				<type name="gint" c:type="gint"/>
+			</return-value>
+		</method>
+	</class>
+	<record name="CoreSelectionInListClass" c:type="DafCoreSelectionInListClass" glib:is-gtype-struct-for="SelectionInList">
+		<field name="parent_class">
+			<type name="Daf.CoreAbstractValueHolderClass" c:type="DafCoreAbstractValueHolderClass"/>
+		</field>
+	</record>
+	<record name="CoreSelectionInListPrivate" c:type="DafCoreSelectionInListPrivate" disguised="1"/>
+	<class name="CoreArrayListModel" c:type="DafCoreArrayListModel" glib:type-name="DafCoreArrayListModel" glib:get-type="daf_core_array_list_model_get_type" glib:type-struct="CoreArrayListModelClass" parent="Gee.ArrayList">
+		<implements name="Daf.CoreIListModel"/>
+		<field name="parent_instance">
+			<type name="Gee.ArrayList" c:type="GeeArrayList"/>
+		</field>
+		<field name="priv">
+			<type name="CoreArrayListModelPrivate" c:type="DafCoreArrayListModelPrivate*"/>
+		</field>
+		<constructor name="new" c:identifier="daf_core_array_list_model_new">
+			<return-value transfer-ownership="full">
+				<type name="Daf.CoreArrayListModel" c:type="DafCoreArrayListModel*"/>
+			</return-value>
+		</constructor>
+	</class>
+	<record name="CoreArrayListModelClass" c:type="DafCoreArrayListModelClass" glib:is-gtype-struct-for="ArrayListModel">
+		<field name="parent_class">
+			<type name="Gee.ArrayListClass" c:type="GeeArrayListClass"/>
+		</field>
+	</record>
+	<record name="CoreArrayListModelPrivate" c:type="DafCoreArrayListModelPrivate" disguised="1"/>
+	<class name="CoreAspectAdapter" c:type="DafCoreAspectAdapter" glib:type-name="DafCoreAspectAdapter" glib:get-type="daf_core_aspect_adapter_get_type" glib:type-struct="CoreAspectAdapterClass" parent="Daf.CoreAbstractValueHolder">
+		<implements name="Daf.CoreIModelHolder"/>
+		<field name="parent_instance">
+			<type name="Daf.CoreAbstractValueHolder" c:type="DafCoreAbstractValueHolder"/>
+		</field>
+		<field name="priv">
+			<type name="CoreAspectAdapterPrivate" c:type="DafCoreAspectAdapterPrivate*"/>
+		</field>
+		<constructor name="new" c:identifier="daf_core_aspect_adapter_new">
+			<return-value transfer-ownership="full">
+				<type name="Daf.CoreAspectAdapter" c:type="DafCoreAspectAdapter*"/>
+			</return-value>
+			<parameters>
+				<parameter name="value_model" transfer-ownership="none" allow-none="1">
+					<type name="GObject.Object" c:type="GObject*"/>
+				</parameter>
+				<parameter name="property_name" transfer-ownership="none">
+					<type name="utf8" c:type="const gchar*"/>
+				</parameter>
+				<parameter name="observe_domain_changes" transfer-ownership="none">
+					<type name="gboolean" c:type="gboolean"/>
+				</parameter>
+			</parameters>
+		</constructor>
+		<method name="before_model_changed" c:identifier="daf_core_aspect_adapter_before_model_changed">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="old_model" transfer-ownership="none" allow-none="1">
+					<type name="GObject.Value" c:type="GValue*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<method name="value_changed" c:identifier="daf_core_aspect_adapter_value_changed">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="sender" transfer-ownership="none">
+					<type name="GObject.Object" c:type="GObject*"/>
+				</parameter>
+				<parameter name="param_spec" transfer-ownership="none">
+					<type name="GObject.ParamSpec" c:type="GParamSpec*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<method name="model_changed" c:identifier="daf_core_aspect_adapter_model_changed">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="sender" transfer-ownership="none">
+					<type name="GObject.Object" c:type="GObject*"/>
+				</parameter>
+				<parameter name="param_spec" transfer-ownership="none">
+					<type name="GObject.ParamSpec" c:type="GParamSpec*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<method name="domain_property_changed" c:identifier="daf_core_aspect_adapter_domain_property_changed">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="sender" transfer-ownership="none">
+					<type name="GObject.Object" c:type="GObject*"/>
+				</parameter>
+				<parameter name="param_spec" transfer-ownership="none">
+					<type name="GObject.ParamSpec" c:type="GParamSpec*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<property name="property-name" writable="1">
+			<type name="utf8" c:type="gchar*"/>
+		</property>
+		<method name="get_property_name" c:identifier="daf_core_aspect_adapter_get_property_name">
+			<return-value transfer-ownership="none">
+				<type name="utf8" c:type="const gchar*"/>
+			</return-value>
+		</method>
+	</class>
+	<record name="CoreAspectAdapterClass" c:type="DafCoreAspectAdapterClass" glib:is-gtype-struct-for="AspectAdapter">
+		<field name="parent_class">
+			<type name="Daf.CoreAbstractValueHolderClass" c:type="DafCoreAbstractValueHolderClass"/>
+		</field>
+	</record>
+	<record name="CoreAspectAdapterPrivate" c:type="DafCoreAspectAdapterPrivate" disguised="1"/>
+	<class name="CoreModelRegistrar" c:type="DafCoreModelRegistrar" glib:type-name="DafCoreModelRegistrar" glib:get-type="daf_core_model_registrar_get_type" glib:type-struct="CoreModelRegistrarClass" parent="GObject.Object">
+		<implements name="Daf.CoreIModelPresenter"/>
+		<field name="parent_instance">
+			<type name="GObject.Object" c:type="GObject"/>
+		</field>
+		<field name="priv">
+			<type name="CoreModelRegistrarPrivate" c:type="DafCoreModelRegistrarPrivate*"/>
+		</field>
+		<constructor name="new" c:identifier="daf_core_model_registrar_new">
+			<return-value transfer-ownership="full">
+				<type name="Daf.CoreModelRegistrar" c:type="DafCoreModelRegistrar*"/>
+			</return-value>
+		</constructor>
+		<method name="add_value_model" c:identifier="daf_core_model_registrar_add_value_model">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="key" transfer-ownership="none">
+					<type name="utf8" c:type="const gchar*"/>
+				</parameter>
+				<parameter name="value" transfer-ownership="none">
+					<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<method name="get_all_models" c:identifier="daf_core_model_registrar_get_all_models">
+			<return-value transfer-ownership="full">
+				<type name="Gee.HashMap" c:type="GeeHashMap*">
+					<type name="utf8" c:type="gchar*"/>
+					<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+				</type>
+			</return-value>
+		</method>
+	</class>
+	<record name="CoreModelRegistrarClass" c:type="DafCoreModelRegistrarClass" glib:is-gtype-struct-for="ModelRegistrar">
+		<field name="parent_class">
+			<type name="GObject.ObjectClass" c:type="GObjectClass"/>
+		</field>
+	</record>
+	<record name="CoreModelRegistrarPrivate" c:type="DafCoreModelRegistrarPrivate" disguised="1"/>
+	<class name="CoreAbstractModelHolder" c:type="DafCoreAbstractModelHolder" glib:type-name="DafCoreAbstractModelHolder" glib:get-type="daf_core_abstract_model_holder_get_type" glib:type-struct="CoreAbstractModelHolderClass" parent="Daf.CoreAbstractValueHolder" abstract="1">
+		<field name="parent_instance">
+			<type name="Daf.CoreAbstractValueHolder" c:type="DafCoreAbstractValueHolder"/>
+		</field>
+		<field name="priv">
+			<type name="CoreAbstractModelHolderPrivate" c:type="DafCoreAbstractModelHolderPrivate*"/>
+		</field>
+		<field name="canonical_property_name">
+			<type name="utf8" c:type="gchar*"/>
+		</field>
+		<method name="setup_notify" c:identifier="daf_core_abstract_model_holder_setup_notify">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+		</method>
+		<virtual-method name="setup_notify" invoker="setup_notify">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+		</virtual-method>
+		<method name="on_model_change" c:identifier="daf_core_abstract_model_holder_on_model_change">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="source" transfer-ownership="none">
+					<type name="GObject.Object" c:type="GObject*"/>
+				</parameter>
+				<parameter name="param_spec" transfer-ownership="none">
+					<type name="GObject.ParamSpec" c:type="GParamSpec*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="on_model_change" invoker="on_model_change">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="source" transfer-ownership="none">
+					<type name="GObject.Object" c:type="GObject*"/>
+				</parameter>
+				<parameter name="param_spec" transfer-ownership="none">
+					<type name="GObject.ParamSpec" c:type="GParamSpec*"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<property name="value-model" writable="1" construct="1">
+			<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+		</property>
+		<method name="get_value_model" c:identifier="daf_core_abstract_model_holder_get_value_model">
+			<return-value transfer-ownership="none" allow-none="1">
+				<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+			</return-value>
+		</method>
+		<method name="set_value_model" c:identifier="daf_core_abstract_model_holder_set_value_model">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none" allow-none="1">
+					<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<property name="property-name" writable="1" construct="1">
+			<type name="utf8" c:type="gchar*"/>
+		</property>
+		<method name="get_property_name" c:identifier="daf_core_abstract_model_holder_get_property_name">
+			<return-value transfer-ownership="none">
+				<type name="utf8" c:type="const gchar*"/>
+			</return-value>
+		</method>
+		<method name="set_property_name" c:identifier="daf_core_abstract_model_holder_set_property_name">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="utf8" c:type="const gchar*"/>
+				</parameter>
+			</parameters>
+		</method>
+	</class>
+	<record name="CoreAbstractModelHolderClass" c:type="DafCoreAbstractModelHolderClass" glib:is-gtype-struct-for="AbstractModelHolder">
+		<field name="parent_class">
+			<type name="Daf.CoreAbstractValueHolderClass" c:type="DafCoreAbstractValueHolderClass"/>
+		</field>
+		<field name="setup_notify">
+			<callback name="setup_notify" c:type="setup_notify">
+				<return-value transfer-ownership="full">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.CoreAbstractModelHolder" c:type="DafCoreAbstractModelHolder*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="on_model_change">
+			<callback name="on_model_change" c:type="on_model_change">
+				<return-value transfer-ownership="full">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.CoreAbstractModelHolder" c:type="DafCoreAbstractModelHolder*"/>
+					</parameter>
+					<parameter name="source" transfer-ownership="none">
+						<type name="GObject.Object" c:type="GObject*"/>
+					</parameter>
+					<parameter name="param_spec" transfer-ownership="none">
+						<type name="GObject.ParamSpec" c:type="GParamSpec*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+	</record>
+	<record name="CoreAbstractModelHolderPrivate" c:type="DafCoreAbstractModelHolderPrivate" disguised="1"/>
+	<class name="CoreModelPresenter" c:type="DafCoreModelPresenter" glib:type-name="DafCoreModelPresenter" glib:get-type="daf_core_model_presenter_get_type" glib:type-struct="CoreModelPresenterClass" parent="Daf.CoreAbstractModelHolder">
+		<implements name="Daf.CoreIModelPresenter"/>
+		<implements name="Daf.CoreIAspectTrigger"/>
+		<field name="parent_instance">
+			<type name="Daf.CoreAbstractModelHolder" c:type="DafCoreAbstractModelHolder"/>
+		</field>
+		<field name="priv">
+			<type name="CoreModelPresenterPrivate" c:type="DafCoreModelPresenterPrivate*"/>
+		</field>
+		<constructor name="new" c:identifier="daf_core_model_presenter_new">
+			<return-value transfer-ownership="full">
+				<type name="Daf.CoreModelPresenter" c:type="DafCoreModelPresenter*"/>
+			</return-value>
+			<parameters>
+				<parameter name="model" transfer-ownership="none">
+					<type name="GObject.Object" c:type="GObject*"/>
+				</parameter>
+				<parameter name="auto_commit" transfer-ownership="none">
+					<type name="gboolean" c:type="gboolean"/>
+				</parameter>
+			</parameters>
+		</constructor>
+		<property name="dirty" writable="1" construct="1">
+			<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+		</property>
+		<method name="get_dirty" c:identifier="daf_core_model_presenter_get_dirty">
+			<return-value transfer-ownership="none">
+				<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+			</return-value>
+		</method>
+		<method name="set_dirty" c:identifier="daf_core_model_presenter_set_dirty">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<property name="auto-commit" writable="1" construct="1">
+			<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+		</property>
+		<method name="get_auto_commit" c:identifier="daf_core_model_presenter_get_auto_commit">
+			<return-value transfer-ownership="none">
+				<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+			</return-value>
+		</method>
+		<method name="set_auto_commit" c:identifier="daf_core_model_presenter_set_auto_commit">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+				</parameter>
+			</parameters>
+		</method>
+	</class>
+	<record name="CoreModelPresenterClass" c:type="DafCoreModelPresenterClass" glib:is-gtype-struct-for="ModelPresenter">
+		<field name="parent_class">
+			<type name="Daf.CoreAbstractModelHolderClass" c:type="DafCoreAbstractModelHolderClass"/>
+		</field>
+	</record>
+	<record name="CoreModelPresenterPrivate" c:type="DafCoreModelPresenterPrivate" disguised="1"/>
+	<class name="CoreAbstractTypeConverter" c:type="DafCoreAbstractTypeConverter" glib:type-name="DafCoreAbstractTypeConverter" glib:get-type="daf_core_abstract_type_converter_get_type" glib:type-struct="CoreAbstractTypeConverterClass" parent="Daf.CoreAbstractValueHolder" abstract="1">
+		<field name="parent_instance">
+			<type name="Daf.CoreAbstractValueHolder" c:type="DafCoreAbstractValueHolder"/>
+		</field>
+		<field name="priv">
+			<type name="CoreAbstractTypeConverterPrivate" c:type="DafCoreAbstractTypeConverterPrivate*"/>
+		</field>
+		<field name="model">
+			<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+		</field>
+		<method name="convert_from_model" c:identifier="daf_core_abstract_type_converter_convert_from_model">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="model_value" transfer-ownership="none" allow-none="1">
+					<type name="GObject.Value" c:type="GValue*"/>
+				</parameter>
+				<parameter name="result" direction="out" transfer-ownership="full" caller-allocates="1">
+					<type name="GObject.Value" c:type="GValue*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="convert_from_model" invoker="convert_from_model">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="model_value" transfer-ownership="none" allow-none="1">
+					<type name="GObject.Value" c:type="GValue*"/>
+				</parameter>
+				<parameter name="result" direction="out" transfer-ownership="full" caller-allocates="1">
+					<type name="GObject.Value" c:type="GValue*"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+	</class>
+	<record name="CoreAbstractTypeConverterClass" c:type="DafCoreAbstractTypeConverterClass" glib:is-gtype-struct-for="AbstractTypeConverter">
+		<field name="parent_class">
+			<type name="Daf.CoreAbstractValueHolderClass" c:type="DafCoreAbstractValueHolderClass"/>
+		</field>
+		<field name="convert_from_model">
+			<callback name="convert_from_model" c:type="convert_from_model">
+				<return-value transfer-ownership="none">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.CoreAbstractTypeConverter" c:type="DafCoreAbstractTypeConverter*"/>
+					</parameter>
+					<parameter name="model_value" transfer-ownership="none" allow-none="1">
+						<type name="GObject.Value" c:type="GValue*"/>
+					</parameter>
+					<parameter name="result" direction="out" transfer-ownership="full" caller-allocates="1">
+						<type name="GObject.Value" c:type="GValue*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+	</record>
+	<record name="CoreAbstractTypeConverterPrivate" c:type="DafCoreAbstractTypeConverterPrivate" disguised="1"/>
+	<class name="CoreAspectTrigger" c:type="DafCoreAspectTrigger" glib:type-name="DafCoreAspectTrigger" glib:get-type="daf_core_aspect_trigger_get_type" glib:type-struct="CoreAspectTriggerClass" parent="Daf.CoreAbstractValueHolder">
+		<implements name="Daf.CoreIAspectTrigger"/>
+		<field name="parent_instance">
+			<type name="Daf.CoreAbstractValueHolder" c:type="DafCoreAbstractValueHolder"/>
+		</field>
+		<field name="priv">
+			<type name="CoreAspectTriggerPrivate" c:type="DafCoreAspectTriggerPrivate*"/>
+		</field>
+		<constant name="COMMIT" c:identifier="DAF_CORE_ASPECT_TRIGGER_COMMIT" value="true">
+			<type name="gboolean" c:type="gboolean"/>
+		</constant>
+		<constant name="DISCARD" c:identifier="DAF_CORE_ASPECT_TRIGGER_DISCARD" value="false">
+			<type name="gboolean" c:type="gboolean"/>
+		</constant>
+		<constructor name="new" c:identifier="daf_core_aspect_trigger_new">
+			<return-value transfer-ownership="full">
+				<type name="Daf.CoreAspectTrigger" c:type="DafCoreAspectTrigger*"/>
+			</return-value>
+		</constructor>
+	</class>
+	<record name="CoreAspectTriggerClass" c:type="DafCoreAspectTriggerClass" glib:is-gtype-struct-for="AspectTrigger">
+		<field name="parent_class">
+			<type name="Daf.CoreAbstractValueHolderClass" c:type="DafCoreAbstractValueHolderClass"/>
+		</field>
+	</record>
+	<record name="CoreAspectTriggerPrivate" c:type="DafCoreAspectTriggerPrivate" disguised="1"/>
+	<class name="CoreBufferedValueHolder" c:type="DafCoreBufferedValueHolder" glib:type-name="DafCoreBufferedValueHolder" glib:get-type="daf_core_buffered_value_holder_get_type" glib:type-struct="CoreBufferedValueHolderClass" parent="Daf.CoreAbstractValueHolder">
+		<implements name="Daf.CoreIAspectTrigger"/>
+		<field name="parent_instance">
+			<type name="Daf.CoreAbstractValueHolder" c:type="DafCoreAbstractValueHolder"/>
+		</field>
+		<field name="priv">
+			<type name="CoreBufferedValueHolderPrivate" c:type="DafCoreBufferedValueHolderPrivate*"/>
+		</field>
+		<constructor name="new" c:identifier="daf_core_buffered_value_holder_new">
+			<return-value transfer-ownership="full">
+				<type name="Daf.CoreBufferedValueHolder" c:type="DafCoreBufferedValueHolder*"/>
+			</return-value>
+			<parameters>
+				<parameter name="subject" transfer-ownership="none">
+					<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+				</parameter>
+				<parameter name="observe_model_changes" transfer-ownership="none">
+					<type name="gboolean" c:type="gboolean"/>
+				</parameter>
+			</parameters>
+		</constructor>
+		<constructor name="with_trigger" c:identifier="daf_core_buffered_value_holder_new_with_trigger">
+			<return-value transfer-ownership="full">
+				<type name="Daf.CoreBufferedValueHolder" c:type="DafCoreBufferedValueHolder*"/>
+			</return-value>
+			<parameters>
+				<parameter name="subject" transfer-ownership="none">
+					<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+				</parameter>
+				<parameter name="trigger" transfer-ownership="none">
+					<type name="Daf.CoreIAspectTrigger" c:type="DafCoreIAspectTrigger*"/>
+				</parameter>
+			</parameters>
+		</constructor>
+		<method name="model_changed" c:identifier="daf_core_buffered_value_holder_model_changed">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+		</method>
+		<method name="value_changed" c:identifier="daf_core_buffered_value_holder_value_changed">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="sender" transfer-ownership="none">
+					<type name="GObject.Object" c:type="GObject*"/>
+				</parameter>
+				<parameter name="spec" transfer-ownership="none">
+					<type name="GObject.ParamSpec" c:type="GParamSpec*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<method name="trigger_emitted_handler" c:identifier="daf_core_buffered_value_holder_trigger_emitted_handler">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="sender" transfer-ownership="none">
+					<type name="GObject.Object" c:type="GObject*"/>
+				</parameter>
+				<parameter name="spec" transfer-ownership="none">
+					<type name="GObject.ParamSpec" c:type="GParamSpec*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<property name="auto-commit" writable="1">
+			<type name="gboolean" c:type="gboolean"/>
+		</property>
+		<method name="get_auto_commit" c:identifier="daf_core_buffered_value_holder_get_auto_commit">
+			<return-value transfer-ownership="none">
+				<type name="gboolean" c:type="gboolean"/>
+			</return-value>
+		</method>
+		<method name="set_auto_commit" c:identifier="daf_core_buffered_value_holder_set_auto_commit">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="gboolean" c:type="gboolean"/>
+				</parameter>
+			</parameters>
+		</method>
+		<property name="dirty" writable="1">
+			<type name="gboolean" c:type="gboolean"/>
+		</property>
+		<method name="get_dirty" c:identifier="daf_core_buffered_value_holder_get_dirty">
+			<return-value transfer-ownership="none">
+				<type name="gboolean" c:type="gboolean"/>
+			</return-value>
+		</method>
+		<method name="set_dirty" c:identifier="daf_core_buffered_value_holder_set_dirty">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="gboolean" c:type="gboolean"/>
+				</parameter>
+			</parameters>
+		</method>
+		<property name="subject" writable="1">
+			<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+		</property>
+		<method name="get_subject" c:identifier="daf_core_buffered_value_holder_get_subject">
+			<return-value transfer-ownership="none" allow-none="1">
+				<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+			</return-value>
+		</method>
+		<method name="set_subject" c:identifier="daf_core_buffered_value_holder_set_subject">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none" allow-none="1">
+					<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<property name="trigger" writable="1">
+			<type name="Daf.CoreIAspectTrigger" c:type="DafCoreIAspectTrigger*"/>
+		</property>
+		<method name="get_trigger" c:identifier="daf_core_buffered_value_holder_get_trigger">
+			<return-value transfer-ownership="none">
+				<type name="Daf.CoreIAspectTrigger" c:type="DafCoreIAspectTrigger*"/>
+			</return-value>
+		</method>
+		<method name="set_trigger" c:identifier="daf_core_buffered_value_holder_set_trigger">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="Daf.CoreIAspectTrigger" c:type="DafCoreIAspectTrigger*"/>
+				</parameter>
+			</parameters>
+		</method>
+	</class>
+	<record name="CoreBufferedValueHolderClass" c:type="DafCoreBufferedValueHolderClass" glib:is-gtype-struct-for="BufferedValueHolder">
+		<field name="parent_class">
+			<type name="Daf.CoreAbstractValueHolderClass" c:type="DafCoreAbstractValueHolderClass"/>
+		</field>
+	</record>
+	<record name="CoreBufferedValueHolderPrivate" c:type="DafCoreBufferedValueHolderPrivate" disguised="1"/>
+	<class name="CoreAbstractValueHolder" c:type="DafCoreAbstractValueHolder" glib:type-name="DafCoreAbstractValueHolder" glib:get-type="daf_core_abstract_value_holder_get_type" glib:type-struct="CoreAbstractValueHolderClass" parent="GObject.Object" abstract="1">
+		<implements name="Daf.CoreIValueModel"/>
+		<field name="parent_instance">
+			<type name="GObject.Object" c:type="GObject"/>
+		</field>
+		<field name="priv">
+			<type name="CoreAbstractValueHolderPrivate" c:type="DafCoreAbstractValueHolderPrivate*"/>
+		</field>
+		<field name="observe_domain_changes">
+			<type name="gboolean" c:type="gboolean"/>
+		</field>
+		<method name="get_val" c:identifier="daf_core_abstract_value_holder_get_val">
+			<return-value transfer-ownership="full" allow-none="1">
+				<type name="GObject.Value" c:type="GValue*"/>
+			</return-value>
+		</method>
+		<virtual-method name="get_val" invoker="get_val">
+			<return-value transfer-ownership="full" allow-none="1">
+				<type name="GObject.Value" c:type="GValue*"/>
+			</return-value>
+		</virtual-method>
+		<method name="set_val" c:identifier="daf_core_abstract_value_holder_set_val">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="new_value" transfer-ownership="none" allow-none="1">
+					<type name="GObject.Value" c:type="GValue*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="set_val" invoker="set_val">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="new_value" transfer-ownership="none" allow-none="1">
+					<type name="GObject.Value" c:type="GValue*"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+	</class>
+	<record name="CoreAbstractValueHolderClass" c:type="DafCoreAbstractValueHolderClass" glib:is-gtype-struct-for="AbstractValueHolder">
+		<field name="parent_class">
+			<type name="GObject.ObjectClass" c:type="GObjectClass"/>
+		</field>
+		<field name="get_val">
+			<callback name="get_val" c:type="get_val">
+				<return-value transfer-ownership="full" allow-none="1">
+					<type name="GObject.Value" c:type="GValue*"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.CoreAbstractValueHolder" c:type="DafCoreAbstractValueHolder*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="set_val">
+			<callback name="set_val" c:type="set_val">
+				<return-value transfer-ownership="full">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.CoreAbstractValueHolder" c:type="DafCoreAbstractValueHolder*"/>
+					</parameter>
+					<parameter name="new_value" transfer-ownership="none" allow-none="1">
+						<type name="GObject.Value" c:type="GValue*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+	</record>
+	<record name="CoreAbstractValueHolderPrivate" c:type="DafCoreAbstractValueHolderPrivate" disguised="1"/>
+	<class name="CoreValueHolder" c:type="DafCoreValueHolder" glib:type-name="DafCoreValueHolder" glib:get-type="daf_core_value_holder_get_type" glib:type-struct="CoreValueHolderClass" parent="Daf.CoreAbstractValueHolder">
+		<field name="parent_instance">
+			<type name="Daf.CoreAbstractValueHolder" c:type="DafCoreAbstractValueHolder"/>
+		</field>
+		<field name="priv">
+			<type name="CoreValueHolderPrivate" c:type="DafCoreValueHolderPrivate*"/>
+		</field>
+		<constructor name="new" c:identifier="daf_core_value_holder_new">
+			<return-value transfer-ownership="full">
+				<type name="Daf.CoreValueHolder" c:type="DafCoreValueHolder*"/>
+			</return-value>
+			<parameters>
+				<parameter name="new_value" transfer-ownership="none" allow-none="1">
+					<type name="GObject.Value" c:type="GValue*"/>
+				</parameter>
+			</parameters>
+		</constructor>
+	</class>
+	<record name="CoreValueHolderClass" c:type="DafCoreValueHolderClass" glib:is-gtype-struct-for="ValueHolder">
+		<field name="parent_class">
+			<type name="Daf.CoreAbstractValueHolderClass" c:type="DafCoreAbstractValueHolderClass"/>
+		</field>
+	</record>
+	<record name="CoreValueHolderPrivate" c:type="DafCoreValueHolderPrivate" disguised="1"/>
+	<interface name="CoreIListModel" c:type="DafCoreIListModel" glib:type-name="DafCoreIListModel" glib:get-type="daf_core_ilist_model_get_type" glib:type-struct="IListModelIface">
+		<prerequisite name="GObject.Object"/>
+		<method name="get_length" c:identifier="daf_core_ilist_model_get_length">
+			<return-value transfer-ownership="full">
+				<type name="gint" c:type="gint"/>
+			</return-value>
+		</method>
+		<virtual-method name="get_length" invoker="get_length">
+			<return-value transfer-ownership="full">
+				<type name="gint" c:type="gint"/>
+			</return-value>
+		</virtual-method>
+		<method name="get_at" c:identifier="daf_core_ilist_model_get_at">
+			<return-value transfer-ownership="full" allow-none="1">
+				<type name="gpointer" c:type="gpointer"/>
+			</return-value>
+			<parameters>
+				<parameter name="index" transfer-ownership="none">
+					<type name="gint" c:type="gint"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="get_at" invoker="get_at">
+			<return-value transfer-ownership="full" allow-none="1">
+				<type name="gpointer" c:type="gpointer"/>
+			</return-value>
+			<parameters>
+				<parameter name="index" transfer-ownership="none">
+					<type name="gint" c:type="gint"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<method name="set_at" c:identifier="daf_core_ilist_model_set_at">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="index" transfer-ownership="none">
+					<type name="gint" c:type="gint"/>
+				</parameter>
+				<parameter name="value" transfer-ownership="none" allow-none="1">
+					<type name="gpointer" c:type="gpointer"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="set_at" invoker="set_at">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="index" transfer-ownership="none">
+					<type name="gint" c:type="gint"/>
+				</parameter>
+				<parameter name="value" transfer-ownership="none" allow-none="1">
+					<type name="gpointer" c:type="gpointer"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<method name="add" c:identifier="daf_core_ilist_model_add">
+			<return-value transfer-ownership="full">
+				<type name="gboolean" c:type="gboolean"/>
+			</return-value>
+			<parameters>
+				<parameter name="item" transfer-ownership="none" allow-none="1">
+					<type name="gpointer" c:type="gpointer"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="add" invoker="add">
+			<return-value transfer-ownership="full">
+				<type name="gboolean" c:type="gboolean"/>
+			</return-value>
+			<parameters>
+				<parameter name="item" transfer-ownership="none" allow-none="1">
+					<type name="gpointer" c:type="gpointer"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<method name="add_all" c:identifier="daf_core_ilist_model_add_all">
+			<return-value transfer-ownership="full">
+				<type name="gboolean" c:type="gboolean"/>
+			</return-value>
+			<parameters>
+				<parameter name="items" transfer-ownership="none">
+					<type name="Gee.Collection" c:type="GeeCollection*">
+						<type name="gpointer" c:type="gpointer"/>
+					</type>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="add_all" invoker="add_all">
+			<return-value transfer-ownership="full">
+				<type name="gboolean" c:type="gboolean"/>
+			</return-value>
+			<parameters>
+				<parameter name="items" transfer-ownership="none">
+					<type name="Gee.Collection" c:type="GeeCollection*">
+						<type name="gpointer" c:type="gpointer"/>
+					</type>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<method name="insert" c:identifier="daf_core_ilist_model_insert">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="index" transfer-ownership="none">
+					<type name="gint" c:type="gint"/>
+				</parameter>
+				<parameter name="item" transfer-ownership="none" allow-none="1">
+					<type name="gpointer" c:type="gpointer"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="insert" invoker="insert">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="index" transfer-ownership="none">
+					<type name="gint" c:type="gint"/>
+				</parameter>
+				<parameter name="item" transfer-ownership="none" allow-none="1">
+					<type name="gpointer" c:type="gpointer"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<method name="remove" c:identifier="daf_core_ilist_model_remove">
+			<return-value transfer-ownership="full">
+				<type name="gboolean" c:type="gboolean"/>
+			</return-value>
+			<parameters>
+				<parameter name="item" transfer-ownership="none" allow-none="1">
+					<type name="gpointer" c:type="gpointer"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="remove" invoker="remove">
+			<return-value transfer-ownership="full">
+				<type name="gboolean" c:type="gboolean"/>
+			</return-value>
+			<parameters>
+				<parameter name="item" transfer-ownership="none" allow-none="1">
+					<type name="gpointer" c:type="gpointer"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<method name="remove_at" c:identifier="daf_core_ilist_model_remove_at">
+			<return-value transfer-ownership="full" allow-none="1">
+				<type name="gpointer" c:type="gpointer"/>
+			</return-value>
+			<parameters>
+				<parameter name="index" transfer-ownership="none">
+					<type name="gint" c:type="gint"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="remove_at" invoker="remove_at">
+			<return-value transfer-ownership="full" allow-none="1">
+				<type name="gpointer" c:type="gpointer"/>
+			</return-value>
+			<parameters>
+				<parameter name="index" transfer-ownership="none">
+					<type name="gint" c:type="gint"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<method name="index_of" c:identifier="daf_core_ilist_model_index_of">
+			<return-value transfer-ownership="full">
+				<type name="gint" c:type="gint"/>
+			</return-value>
+			<parameters>
+				<parameter name="item" transfer-ownership="none" allow-none="1">
+					<type name="gpointer" c:type="gpointer"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="index_of" invoker="index_of">
+			<return-value transfer-ownership="full">
+				<type name="gint" c:type="gint"/>
+			</return-value>
+			<parameters>
+				<parameter name="item" transfer-ownership="none" allow-none="1">
+					<type name="gpointer" c:type="gpointer"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<method name="clear" c:identifier="daf_core_ilist_model_clear">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+		</method>
+		<virtual-method name="clear" invoker="clear">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+		</virtual-method>
+		<glib:signal name="item-removed">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="index" transfer-ownership="none">
+					<type name="gint" c:type="gint"/>
+				</parameter>
+			</parameters>
+		</glib:signal>
+		<glib:signal name="item-added">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="index" transfer-ownership="none">
+					<type name="gint" c:type="gint"/>
+				</parameter>
+			</parameters>
+		</glib:signal>
+		<glib:signal name="list-changed">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="size" transfer-ownership="none">
+					<type name="gint" c:type="gint"/>
+				</parameter>
+			</parameters>
+		</glib:signal>
+		<glib:signal name="item-changed">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="index" transfer-ownership="none">
+					<type name="gint" c:type="gint"/>
+				</parameter>
+				<parameter name="item" transfer-ownership="none" allow-none="1">
+					<type name="gpointer" c:type="gpointer"/>
+				</parameter>
+			</parameters>
+		</glib:signal>
+	</interface>
+	<record name="IListModelIface" c:type="DafCoreIListModelIface" glib:is-gtype-struct-for="IListModel">
+		<field name="parent_iface">
+			<type name="GObject.TypeInterface" c:type="GTypeInterface"/>
+		</field>
+		<field name="get_length">
+			<callback name="get_length" c:type="get_length">
+				<return-value transfer-ownership="full">
+					<type name="gint" c:type="gint"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.CoreIListModel" c:type="DafCoreIListModel*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="get_at">
+			<callback name="get_at" c:type="get_at">
+				<return-value transfer-ownership="full" allow-none="1">
+					<type name="gpointer" c:type="gpointer"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.CoreIListModel" c:type="DafCoreIListModel*"/>
+					</parameter>
+					<parameter name="index" transfer-ownership="none">
+						<type name="gint" c:type="gint"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="set_at">
+			<callback name="set_at" c:type="set_at">
+				<return-value transfer-ownership="full">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.CoreIListModel" c:type="DafCoreIListModel*"/>
+					</parameter>
+					<parameter name="index" transfer-ownership="none">
+						<type name="gint" c:type="gint"/>
+					</parameter>
+					<parameter name="value" transfer-ownership="none" allow-none="1">
+						<type name="gpointer" c:type="gpointer"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="add">
+			<callback name="add" c:type="add">
+				<return-value transfer-ownership="full">
+					<type name="gboolean" c:type="gboolean"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.CoreIListModel" c:type="DafCoreIListModel*"/>
+					</parameter>
+					<parameter name="item" transfer-ownership="none" allow-none="1">
+						<type name="gpointer" c:type="gpointer"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="add_all">
+			<callback name="add_all" c:type="add_all">
+				<return-value transfer-ownership="full">
+					<type name="gboolean" c:type="gboolean"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.CoreIListModel" c:type="DafCoreIListModel*"/>
+					</parameter>
+					<parameter name="items" transfer-ownership="none">
+						<type name="Gee.Collection" c:type="GeeCollection*">
+							<type name="gpointer" c:type="gpointer"/>
+						</type>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="insert">
+			<callback name="insert" c:type="insert">
+				<return-value transfer-ownership="full">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.CoreIListModel" c:type="DafCoreIListModel*"/>
+					</parameter>
+					<parameter name="index" transfer-ownership="none">
+						<type name="gint" c:type="gint"/>
+					</parameter>
+					<parameter name="item" transfer-ownership="none" allow-none="1">
+						<type name="gpointer" c:type="gpointer"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="remove">
+			<callback name="remove" c:type="remove">
+				<return-value transfer-ownership="full">
+					<type name="gboolean" c:type="gboolean"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.CoreIListModel" c:type="DafCoreIListModel*"/>
+					</parameter>
+					<parameter name="item" transfer-ownership="none" allow-none="1">
+						<type name="gpointer" c:type="gpointer"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="remove_at">
+			<callback name="remove_at" c:type="remove_at">
+				<return-value transfer-ownership="full" allow-none="1">
+					<type name="gpointer" c:type="gpointer"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.CoreIListModel" c:type="DafCoreIListModel*"/>
+					</parameter>
+					<parameter name="index" transfer-ownership="none">
+						<type name="gint" c:type="gint"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="index_of">
+			<callback name="index_of" c:type="index_of">
+				<return-value transfer-ownership="full">
+					<type name="gint" c:type="gint"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.CoreIListModel" c:type="DafCoreIListModel*"/>
+					</parameter>
+					<parameter name="item" transfer-ownership="none" allow-none="1">
+						<type name="gpointer" c:type="gpointer"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="clear">
+			<callback name="clear" c:type="clear">
+				<return-value transfer-ownership="full">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.CoreIListModel" c:type="DafCoreIListModel*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+	</record>
+	<interface name="CoreIModelAdapter" c:type="DafCoreIModelAdapter" glib:type-name="DafCoreIModelAdapter" glib:get-type="daf_core_imodel_adapter_get_type" glib:type-struct="IModelAdapterIface">
+		<prerequisite name="GObject.Object"/>
+		<method name="get_model" c:identifier="daf_core_imodel_adapter_get_model">
+			<return-value transfer-ownership="full" allow-none="1">
+				<type name="GObject.Object" c:type="GObject*"/>
+			</return-value>
+		</method>
+		<virtual-method name="get_model" invoker="get_model">
+			<return-value transfer-ownership="full" allow-none="1">
+				<type name="GObject.Object" c:type="GObject*"/>
+			</return-value>
+		</virtual-method>
+		<method name="set_model" c:identifier="daf_core_imodel_adapter_set_model">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="new_model" transfer-ownership="none" allow-none="1">
+					<type name="GObject.Object" c:type="GObject*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="set_model" invoker="set_model">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="new_model" transfer-ownership="none" allow-none="1">
+					<type name="GObject.Object" c:type="GObject*"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<glib:signal name="model-changed">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+		</glib:signal>
+	</interface>
+	<record name="IModelAdapterIface" c:type="DafCoreIModelAdapterIface" glib:is-gtype-struct-for="IModelAdapter">
+		<field name="parent_iface">
+			<type name="GObject.TypeInterface" c:type="GTypeInterface"/>
+		</field>
+		<field name="get_model">
+			<callback name="get_model" c:type="get_model">
+				<return-value transfer-ownership="full" allow-none="1">
+					<type name="GObject.Object" c:type="GObject*"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.CoreIModelAdapter" c:type="DafCoreIModelAdapter*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="set_model">
+			<callback name="set_model" c:type="set_model">
+				<return-value transfer-ownership="full">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.CoreIModelAdapter" c:type="DafCoreIModelAdapter*"/>
+					</parameter>
+					<parameter name="new_model" transfer-ownership="none" allow-none="1">
+						<type name="GObject.Object" c:type="GObject*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+	</record>
+	<interface name="CoreIAspectTrigger" c:type="DafCoreIAspectTrigger" glib:type-name="DafCoreIAspectTrigger" glib:get-type="daf_core_iaspect_trigger_get_type" glib:type-struct="IAspectTriggerIface">
+		<prerequisite name="GObject.Object"/>
+		<method name="commit" c:identifier="daf_core_iaspect_trigger_commit">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+		</method>
+		<virtual-method name="commit" invoker="commit">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+		</virtual-method>
+		<method name="discard" c:identifier="daf_core_iaspect_trigger_discard">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+		</method>
+		<virtual-method name="discard" invoker="discard">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+		</virtual-method>
+	</interface>
+	<record name="IAspectTriggerIface" c:type="DafCoreIAspectTriggerIface" glib:is-gtype-struct-for="IAspectTrigger">
+		<field name="parent_iface">
+			<type name="GObject.TypeInterface" c:type="GTypeInterface"/>
+		</field>
+		<field name="commit">
+			<callback name="commit" c:type="commit">
+				<return-value transfer-ownership="full">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.CoreIAspectTrigger" c:type="DafCoreIAspectTrigger*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="discard">
+			<callback name="discard" c:type="discard">
+				<return-value transfer-ownership="full">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.CoreIAspectTrigger" c:type="DafCoreIAspectTrigger*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+	</record>
+	<interface name="CoreIModelPresenter" c:type="DafCoreIModelPresenter" glib:type-name="DafCoreIModelPresenter" glib:get-type="daf_core_imodel_presenter_get_type" glib:type-struct="IModelPresenterIface">
+		<prerequisite name="GObject.Object"/>
+		<method name="get_value_model" c:identifier="daf_core_imodel_presenter_get_value_model">
+			<return-value transfer-ownership="full" allow-none="1">
+				<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+			</return-value>
+			<parameters>
+				<parameter name="path" transfer-ownership="none">
+					<type name="utf8" c:type="const gchar*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="get_value_model" invoker="get_value_model">
+			<return-value transfer-ownership="full" allow-none="1">
+				<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+			</return-value>
+			<parameters>
+				<parameter name="path" transfer-ownership="none">
+					<type name="utf8" c:type="const gchar*"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+	</interface>
+	<record name="IModelPresenterIface" c:type="DafCoreIModelPresenterIface" glib:is-gtype-struct-for="IModelPresenter">
+		<field name="parent_iface">
+			<type name="GObject.TypeInterface" c:type="GTypeInterface"/>
+		</field>
+		<field name="get_value_model">
+			<callback name="get_value_model" c:type="get_value_model">
+				<return-value transfer-ownership="full" allow-none="1">
+					<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.CoreIModelPresenter" c:type="DafCoreIModelPresenter*"/>
+					</parameter>
+					<parameter name="path" transfer-ownership="none">
+						<type name="utf8" c:type="const gchar*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+	</record>
+	<interface name="CoreIModelHolder" c:type="DafCoreIModelHolder" glib:type-name="DafCoreIModelHolder" glib:get-type="daf_core_imodel_holder_get_type" glib:type-struct="IModelHolderIface">
+		<prerequisite name="GObject.Object"/>
+		<method name="get_model" c:identifier="daf_core_imodel_holder_get_model">
+			<return-value transfer-ownership="full" allow-none="1">
+				<type name="GObject.Object" c:type="GObject*"/>
+			</return-value>
+		</method>
+		<virtual-method name="get_model" invoker="get_model">
+			<return-value transfer-ownership="full" allow-none="1">
+				<type name="GObject.Object" c:type="GObject*"/>
+			</return-value>
+		</virtual-method>
+		<method name="set_model" c:identifier="daf_core_imodel_holder_set_model">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="new_model" transfer-ownership="none" allow-none="1">
+					<type name="GObject.Object" c:type="GObject*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="set_model" invoker="set_model">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="new_model" transfer-ownership="none" allow-none="1">
+					<type name="GObject.Object" c:type="GObject*"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<method name="get_channel" c:identifier="daf_core_imodel_holder_get_channel">
+			<return-value transfer-ownership="full" allow-none="1">
+				<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+			</return-value>
+		</method>
+		<virtual-method name="get_channel" invoker="get_channel">
+			<return-value transfer-ownership="full" allow-none="1">
+				<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+			</return-value>
+		</virtual-method>
+		<method name="set_channel" c:identifier="daf_core_imodel_holder_set_channel">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value_model" transfer-ownership="none" allow-none="1">
+					<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="set_channel" invoker="set_channel">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value_model" transfer-ownership="none" allow-none="1">
+					<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<constant name="PROP_NAME" c:identifier="DAF_CORE_IMODEL_HOLDER_PROP_NAME" value="value-model">
+			<type name="utf8" c:type="const gchar*"/>
+		</constant>
+		<property name="value-model" writable="1">
+			<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+		</property>
+		<method name="get_value_model" c:identifier="daf_core_imodel_holder_get_value_model">
+			<return-value transfer-ownership="none" allow-none="1">
+				<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+			</return-value>
+		</method>
+		<virtual-method name="get_value_model" invoker="get_value_model">
+			<return-value transfer-ownership="none" allow-none="1">
+				<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+			</return-value>
+		</virtual-method>
+		<method name="set_value_model" c:identifier="daf_core_imodel_holder_set_value_model">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none" allow-none="1">
+					<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="set_value_model" invoker="set_value_model">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none" allow-none="1">
+					<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+	</interface>
+	<record name="IModelHolderIface" c:type="DafCoreIModelHolderIface" glib:is-gtype-struct-for="IModelHolder">
+		<field name="parent_iface">
+			<type name="GObject.TypeInterface" c:type="GTypeInterface"/>
+		</field>
+		<field name="get_model">
+			<callback name="get_model" c:type="get_model">
+				<return-value transfer-ownership="full" allow-none="1">
+					<type name="GObject.Object" c:type="GObject*"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.CoreIModelHolder" c:type="DafCoreIModelHolder*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="set_model">
+			<callback name="set_model" c:type="set_model">
+				<return-value transfer-ownership="full">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.CoreIModelHolder" c:type="DafCoreIModelHolder*"/>
+					</parameter>
+					<parameter name="new_model" transfer-ownership="none" allow-none="1">
+						<type name="GObject.Object" c:type="GObject*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="get_channel">
+			<callback name="get_channel" c:type="get_channel">
+				<return-value transfer-ownership="full" allow-none="1">
+					<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.CoreIModelHolder" c:type="DafCoreIModelHolder*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="set_channel">
+			<callback name="set_channel" c:type="set_channel">
+				<return-value transfer-ownership="full">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.CoreIModelHolder" c:type="DafCoreIModelHolder*"/>
+					</parameter>
+					<parameter name="value_model" transfer-ownership="none" allow-none="1">
+						<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="get_value_model">
+			<callback name="get_value_model" c:type="get_value_model">
+				<return-value transfer-ownership="none" allow-none="1">
+					<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.CoreIModelHolder" c:type="DafCoreIModelHolder*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="set_value_model">
+			<callback name="set_value_model" c:type="set_value_model">
+				<return-value transfer-ownership="none">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.CoreIModelHolder" c:type="DafCoreIModelHolder*"/>
+					</parameter>
+					<parameter name="value" transfer-ownership="none" allow-none="1">
+						<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+	</record>
+	<interface name="CoreIValueModel" c:type="DafCoreIValueModel" glib:type-name="DafCoreIValueModel" glib:get-type="daf_core_ivalue_model_get_type" glib:type-struct="IValueModelIface">
+		<prerequisite name="GObject.Object"/>
+		<method name="get_val" c:identifier="daf_core_ivalue_model_get_val">
+			<return-value transfer-ownership="full" allow-none="1">
+				<type name="GObject.Value" c:type="GValue*"/>
+			</return-value>
+		</method>
+		<virtual-method name="get_val" invoker="get_val">
+			<return-value transfer-ownership="full" allow-none="1">
+				<type name="GObject.Value" c:type="GValue*"/>
+			</return-value>
+		</virtual-method>
+		<method name="set_val" c:identifier="daf_core_ivalue_model_set_val">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="new_value" transfer-ownership="none" allow-none="1">
+					<type name="GObject.Value" c:type="GValue*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="set_val" invoker="set_val">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="new_value" transfer-ownership="none" allow-none="1">
+					<type name="GObject.Value" c:type="GValue*"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<method name="do_set_val" c:identifier="daf_core_ivalue_model_do_set_val">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="model_state" direction="inout" transfer-ownership="full" allow-none="1">
+					<type name="GObject.Value" c:type="GValue**"/>
+				</parameter>
+				<parameter name="new_value" transfer-ownership="none" allow-none="1">
+					<type name="GObject.Value" c:type="GValue*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="do_set_val" invoker="do_set_val">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="model_state" direction="inout" transfer-ownership="full" allow-none="1">
+					<type name="GObject.Value" c:type="GValue**"/>
+				</parameter>
+				<parameter name="new_value" transfer-ownership="none" allow-none="1">
+					<type name="GObject.Value" c:type="GValue*"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<constant name="PROP_NAME" c:identifier="DAF_CORE_IVALUE_MODEL_PROP_NAME" value="model-value">
+			<type name="utf8" c:type="const gchar*"/>
+		</constant>
+		<property name="locked" writable="1">
+			<type name="gboolean" c:type="gboolean"/>
+		</property>
+		<method name="get_locked" c:identifier="daf_core_ivalue_model_get_locked">
+			<return-value transfer-ownership="none">
+				<type name="gboolean" c:type="gboolean"/>
+			</return-value>
+		</method>
+		<virtual-method name="get_locked" invoker="get_locked">
+			<return-value transfer-ownership="none">
+				<type name="gboolean" c:type="gboolean"/>
+			</return-value>
+		</virtual-method>
+		<method name="set_locked" c:identifier="daf_core_ivalue_model_set_locked">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="gboolean" c:type="gboolean"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="set_locked" invoker="set_locked">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="gboolean" c:type="gboolean"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<property name="model-value" writable="1">
+			<type name="GObject.Value" c:type="GValue"/>
+		</property>
+		<method name="get_model_value" c:identifier="daf_core_ivalue_model_get_model_value">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="result" direction="out" transfer-ownership="none" caller-allocates="1">
+					<type name="GObject.Value" c:type="GValue*"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="get_model_value" invoker="get_model_value">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="result" direction="out" transfer-ownership="none" caller-allocates="1">
+					<type name="GObject.Value" c:type="GValue*"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<method name="set_model_value" c:identifier="daf_core_ivalue_model_set_model_value">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="GObject.Value" c:type="GValue"/>
+				</parameter>
+			</parameters>
+		</method>
+		<virtual-method name="set_model_value" invoker="set_model_value">
+			<return-value transfer-ownership="none">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="value" transfer-ownership="none">
+					<type name="GObject.Value" c:type="GValue"/>
+				</parameter>
+			</parameters>
+		</virtual-method>
+		<glib:signal name="before-value-changed">
+			<return-value transfer-ownership="full">
+				<type name="none"/>
+			</return-value>
+			<parameters>
+				<parameter name="old_value" transfer-ownership="none" allow-none="1">
+					<type name="GObject.Value" c:type="GValue*"/>
+				</parameter>
+			</parameters>
+		</glib:signal>
+	</interface>
+	<record name="IValueModelIface" c:type="DafCoreIValueModelIface" glib:is-gtype-struct-for="IValueModel">
+		<field name="parent_iface">
+			<type name="GObject.TypeInterface" c:type="GTypeInterface"/>
+		</field>
+		<field name="get_val">
+			<callback name="get_val" c:type="get_val">
+				<return-value transfer-ownership="full" allow-none="1">
+					<type name="GObject.Value" c:type="GValue*"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="set_val">
+			<callback name="set_val" c:type="set_val">
+				<return-value transfer-ownership="full">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+					</parameter>
+					<parameter name="new_value" transfer-ownership="none" allow-none="1">
+						<type name="GObject.Value" c:type="GValue*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="do_set_val">
+			<callback name="do_set_val" c:type="do_set_val">
+				<return-value transfer-ownership="full">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+					</parameter>
+					<parameter name="model_state" direction="inout" transfer-ownership="full" allow-none="1">
+						<type name="GObject.Value" c:type="GValue**"/>
+					</parameter>
+					<parameter name="new_value" transfer-ownership="none" allow-none="1">
+						<type name="GObject.Value" c:type="GValue*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="get_locked">
+			<callback name="get_locked" c:type="get_locked">
+				<return-value transfer-ownership="none">
+					<type name="gboolean" c:type="gboolean"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="set_locked">
+			<callback name="set_locked" c:type="set_locked">
+				<return-value transfer-ownership="none">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+					</parameter>
+					<parameter name="value" transfer-ownership="none">
+						<type name="gboolean" c:type="gboolean"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="get_model_value">
+			<callback name="get_model_value" c:type="get_model_value">
+				<return-value transfer-ownership="none">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+					</parameter>
+					<parameter name="result" direction="out" transfer-ownership="none" caller-allocates="1">
+						<type name="GObject.Value" c:type="GValue*"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+		<field name="set_model_value">
+			<callback name="set_model_value" c:type="set_model_value">
+				<return-value transfer-ownership="none">
+					<type name="none"/>
+				</return-value>
+				<parameters>
+					<parameter name="self" transfer-ownership="none">
+						<type name="Daf.CoreIValueModel" c:type="DafCoreIValueModel*"/>
+					</parameter>
+					<parameter name="value" transfer-ownership="none">
+						<type name="GObject.Value" c:type="GValue"/>
+					</parameter>
+				</parameters>
+			</callback>
+		</field>
+	</record>
+</namespace>
+</repository>

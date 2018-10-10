@@ -104,7 +104,7 @@ namespace VideoConverter.View {
 			//main_window.resizable = false;
             main_window.destroy.connect (Gtk.main_quit);
             
-           // var surface = new Cairo.ImageSurface.from_png ("/home/ilap/Projects//Mockups/DaF/clipboard2.png");
+           // var surface = new Cairo.ImageSurface.from_png ("/tmp/clipboard2.png");
  		   //pattern = new Cairo.Pattern.for_surface (surface);
  		   //pattern = new Cairo.Pattern.rgba (1f, 0f, 0f, 0.5f);
  			
@@ -121,7 +121,7 @@ namespace VideoConverter.View {
             
            // try {
 	        //	style_provider.load_from_data ("GtkWindow {                      
-            //                                      background-image: url('file:///home/ilap/Projects//Mockups/DaF/clipboard2.png');   
+            //                                      background-image: url('file:///tmp/clipboard2.png');   
             //                                   }", -1); 						} catch (Error e) {
 			//	return;
 			//}
@@ -186,7 +186,7 @@ namespace VideoConverter.View {
 			
 			// Content Video Image (Deck #1)
             image = new Image ();			
-            image.set_from_file ("/home/ilap/Projects//Mockups/DaF/multimedia-video-player.svg");
+            image.set_from_file ("/tmp/multimedia-video-player.svg");
             set_widget_layout (image, Align.FILL, Align.CENTER, false, false);
             
 			animated_image = new AnimatableAdapter (image);
@@ -232,21 +232,21 @@ namespace VideoConverter.View {
             ");
             
             var image1 = new Image ();			
-            image1.set_from_file ("/home/ilap/Projects//Mockups/DaF/Show.svg");
+            image1.set_from_file ("/tmp/Show.svg");
             show_button.set_image (image1);
             show_button.image_position = PositionType.TOP;
             show_button.relief = ReliefStyle.NONE;
             show_button.focus_on_click = false;
         
             var image2 = new Image ();
-            image2.set_from_file ("/home/ilap/Projects//Mockups/DaF/Play.svg");
+            image2.set_from_file ("/tmp/Play.svg");
             play_button.set_image (image2);
             play_button.image_position = PositionType.TOP;
             play_button.relief = ReliefStyle.NONE;
             play_button.focus_on_click = false;
                         
             var image3 = new Image ();
-            image3.set_from_file ("/home/ilap/Projects//Mockups/DaF/Info.svg");
+            image3.set_from_file ("/tmp/Info.svg");
             info_button.image = image3;
             info_button.image_position = PositionType.TOP;
 			info_button.relief = ReliefStyle.NONE;
@@ -297,7 +297,7 @@ namespace VideoConverter.View {
             
             // Image setup.  
    			image = new Image ();
-            image.set_from_file ("/home/ilap/Projects//Mockups/DaF/ipod54_33.svg");   
+            image.set_from_file ("/tmp/ipod54_33.svg");   
             set_widget_layout (image, Align.CENTER, Align.CENTER, false, false);
 
             footer_deck = new AnimatedDeckLayout ();
@@ -305,7 +305,7 @@ namespace VideoConverter.View {
      
             // Combobox setup...
             
-            var list_store = new ListStore (1, typeof (string));
+            var list_store = new Gtk.ListStore (1, typeof (string));
             var tree_view = new TreeView.with_model (list_store);
             
             select_device = new ComboBox.with_model (list_store);
