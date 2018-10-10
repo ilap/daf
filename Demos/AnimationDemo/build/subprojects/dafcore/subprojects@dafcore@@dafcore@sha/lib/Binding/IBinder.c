@@ -67,9 +67,9 @@ daf_core_binding_ibinder_bind (DafCoreBindingIBinder* self,
                                GObject* source,
                                const gchar* property_name)
 {
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/IBinder.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/IBinder.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/IBinder.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/IBinder.vala"
 	return DAF_CORE_BINDING_IBINDER_GET_INTERFACE (self)->bind (self, source, property_name);
 #line 75 "IBinder.c"
 }
@@ -80,9 +80,9 @@ daf_core_binding_ibinder_unbind (DafCoreBindingIBinder* self,
                                  GObject* subject,
                                  const gchar* property_name)
 {
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/IBinder.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/IBinder.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/IBinder.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/IBinder.vala"
 	return DAF_CORE_BINDING_IBINDER_GET_INTERFACE (self)->unbind (self, subject, property_name);
 #line 88 "IBinder.c"
 }

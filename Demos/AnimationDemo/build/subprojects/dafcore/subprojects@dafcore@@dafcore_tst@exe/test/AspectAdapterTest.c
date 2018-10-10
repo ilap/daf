@@ -95,7 +95,7 @@ static void daf_core_test_aspect_adapter_test_finalize (GObject * obj);
 static void
 _daf_core_test_aspect_adapter_test_test_adapter_value_is_null_daf_unit_test_abstract_test_case_test_method (gpointer self)
 {
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	daf_core_test_aspect_adapter_test_test_adapter_value_is_null ((DafCoreTestAspectAdapterTest*) self);
 #line 101 "AspectAdapterTest.c"
 }
@@ -104,7 +104,7 @@ _daf_core_test_aspect_adapter_test_test_adapter_value_is_null_daf_unit_test_abst
 static void
 _daf_core_test_aspect_adapter_test_test_adapter_value_is_not_null_daf_unit_test_abstract_test_case_test_method (gpointer self)
 {
-#line 39 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 39 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	daf_core_test_aspect_adapter_test_test_adapter_value_is_not_null ((DafCoreTestAspectAdapterTest*) self);
 #line 110 "AspectAdapterTest.c"
 }
@@ -113,7 +113,7 @@ _daf_core_test_aspect_adapter_test_test_adapter_value_is_not_null_daf_unit_test_
 static void
 _daf_core_test_aspect_adapter_test_test_change_model_daf_unit_test_abstract_test_case_test_method (gpointer self)
 {
-#line 40 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 40 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	daf_core_test_aspect_adapter_test_test_change_model ((DafCoreTestAspectAdapterTest*) self);
 #line 119 "AspectAdapterTest.c"
 }
@@ -122,7 +122,7 @@ _daf_core_test_aspect_adapter_test_test_change_model_daf_unit_test_abstract_test
 static void
 _daf_core_test_aspect_adapter_test_test_direct_access_daf_unit_test_abstract_test_case_test_method (gpointer self)
 {
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	daf_core_test_aspect_adapter_test_test_direct_access ((DafCoreTestAspectAdapterTest*) self);
 #line 128 "AspectAdapterTest.c"
 }
@@ -131,7 +131,7 @@ _daf_core_test_aspect_adapter_test_test_direct_access_daf_unit_test_abstract_tes
 static void
 _daf_core_test_aspect_adapter_test_test_indirect_access_daf_unit_test_abstract_test_case_test_method (gpointer self)
 {
-#line 43 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 43 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	daf_core_test_aspect_adapter_test_test_indirect_access ((DafCoreTestAspectAdapterTest*) self);
 #line 137 "AspectAdapterTest.c"
 }
@@ -141,19 +141,19 @@ DafCoreTestAspectAdapterTest*
 daf_core_test_aspect_adapter_test_construct (GType object_type)
 {
 	DafCoreTestAspectAdapterTest * self = NULL;
-#line 36 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 36 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	self = (DafCoreTestAspectAdapterTest*) daf_unit_test_abstract_test_case_construct (object_type, "AspectAdapterTest");
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	daf_unit_test_abstract_test_case_add_test ((DafUnitTestAbstractTestCase*) self, "test_adapter_value_is_null", _daf_core_test_aspect_adapter_test_test_adapter_value_is_null_daf_unit_test_abstract_test_case_test_method, self);
-#line 39 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 39 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	daf_unit_test_abstract_test_case_add_test ((DafUnitTestAbstractTestCase*) self, "test_adapter_value_is_not_null", _daf_core_test_aspect_adapter_test_test_adapter_value_is_not_null_daf_unit_test_abstract_test_case_test_method, self);
-#line 40 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 40 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	daf_unit_test_abstract_test_case_add_test ((DafUnitTestAbstractTestCase*) self, "test_change_model", _daf_core_test_aspect_adapter_test_test_change_model_daf_unit_test_abstract_test_case_test_method, self);
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	daf_unit_test_abstract_test_case_add_test ((DafUnitTestAbstractTestCase*) self, "test_direct_access", _daf_core_test_aspect_adapter_test_test_direct_access_daf_unit_test_abstract_test_case_test_method, self);
-#line 43 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 43 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	daf_unit_test_abstract_test_case_add_test ((DafUnitTestAbstractTestCase*) self, "test_indirect_access", _daf_core_test_aspect_adapter_test_test_indirect_access_daf_unit_test_abstract_test_case_test_method, self);
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	return self;
 #line 159 "AspectAdapterTest.c"
 }
@@ -162,7 +162,7 @@ daf_core_test_aspect_adapter_test_construct (GType object_type)
 DafCoreTestAspectAdapterTest*
 daf_core_test_aspect_adapter_test_new (void)
 {
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	return daf_core_test_aspect_adapter_test_construct (DAF_CORE_TEST_TYPE_ASPECT_ADAPTER_TEST);
 #line 168 "AspectAdapterTest.c"
 }
@@ -177,33 +177,33 @@ daf_core_test_aspect_adapter_test_real_set_up (DafUnitTestAbstractTestCase* base
 	DafCoreValueHolder* _tmp2_;
 	DafCoreValueHolder* _tmp3_;
 	DafCoreAspectAdapter* _tmp4_;
-#line 47 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 47 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	self = (DafCoreTestAspectAdapterTest*) base;
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp0_ = daf_core_test_model_person_new ("", "");
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_g_object_unref0 (self->priv->person1);
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	self->priv->person1 = _tmp0_;
-#line 52 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 52 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp1_ = daf_core_test_model_person_new ("", "");
-#line 52 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 52 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_g_object_unref0 (self->priv->person2);
-#line 52 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 52 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	self->priv->person2 = _tmp1_;
-#line 55 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 55 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp2_ = daf_core_value_holder_new (NULL);
-#line 55 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 55 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_g_object_unref0 (self->priv->value_holder);
-#line 55 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 55 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	self->priv->value_holder = _tmp2_;
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp3_ = self->priv->value_holder;
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp4_ = daf_core_aspect_adapter_new ((GObject*) _tmp3_, "first_name", TRUE);
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_g_object_unref0 (self->priv->aspect_adapter);
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	self->priv->aspect_adapter = _tmp4_;
 #line 209 "AspectAdapterTest.c"
 }
@@ -213,23 +213,23 @@ static void
 daf_core_test_aspect_adapter_test_real_tear_down (DafUnitTestAbstractTestCase* base)
 {
 	DafCoreTestAspectAdapterTest * self;
-#line 66 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 66 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	self = (DafCoreTestAspectAdapterTest*) base;
-#line 67 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 67 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_g_object_unref0 (self->priv->person1);
-#line 67 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 67 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	self->priv->person1 = NULL;
-#line 68 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 68 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_g_object_unref0 (self->priv->person2);
-#line 68 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 68 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	self->priv->person2 = NULL;
-#line 70 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 70 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_g_object_unref0 (self->priv->value_holder);
-#line 70 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 70 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	self->priv->value_holder = NULL;
-#line 71 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 71 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_g_object_unref0 (self->priv->aspect_adapter);
-#line 71 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 71 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	self->priv->aspect_adapter = NULL;
 #line 235 "AspectAdapterTest.c"
 }
@@ -238,9 +238,9 @@ daf_core_test_aspect_adapter_test_real_tear_down (DafUnitTestAbstractTestCase* b
 static void
 _vala_GValue_free (GValue* self)
 {
-#line 76 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 76 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	g_value_unset (self);
-#line 76 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 76 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	g_free (self);
 #line 246 "AspectAdapterTest.c"
 }
@@ -252,17 +252,17 @@ daf_core_test_aspect_adapter_test_test_adapter_value_is_null (DafCoreTestAspectA
 	DafCoreAspectAdapter* _tmp0_;
 	GValue* _tmp1_;
 	GValue* _tmp2_;
-#line 75 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 75 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	g_return_if_fail (self != NULL);
-#line 76 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 76 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp0_ = self->priv->aspect_adapter;
-#line 76 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 76 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp1_ = daf_core_abstract_value_holder_get_val ((DafCoreAbstractValueHolder*) _tmp0_);
-#line 76 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 76 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp2_ = _tmp1_;
-#line 76 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 76 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_vala_assert (_tmp2_ == NULL, "aspect_adapter.get_val () == null");
-#line 76 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 76 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	__vala_GValue_free0 (_tmp2_);
 #line 268 "AspectAdapterTest.c"
 }
@@ -284,53 +284,53 @@ daf_core_test_aspect_adapter_test_test_adapter_value_is_not_null (DafCoreTestAsp
 	DafCoreAspectAdapter* _tmp10_;
 	GValue* _tmp11_;
 	gchar* _tmp12_;
-#line 79 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 79 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	g_return_if_fail (self != NULL);
-#line 81 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 81 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp0_ = self->priv->aspect_adapter;
-#line 81 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 81 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	daf_core_imodel_holder_set_model ((DafCoreIModelHolder*) _tmp0_, NULL);
-#line 83 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 83 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp1_ = self->priv->aspect_adapter;
-#line 83 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 83 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp2_ = daf_core_imodel_holder_get_model ((DafCoreIModelHolder*) _tmp1_);
-#line 83 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 83 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp3_ = _tmp2_;
-#line 83 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 83 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_vala_assert (_tmp3_ == NULL, "aspect_adapter.get_model () == null");
-#line 83 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 83 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_g_object_unref0 (_tmp3_);
-#line 84 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 84 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp4_ = self->priv->aspect_adapter;
-#line 84 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 84 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp5_ = daf_core_abstract_value_holder_get_val ((DafCoreAbstractValueHolder*) _tmp4_);
-#line 84 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 84 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp6_ = _tmp5_;
-#line 84 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 84 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_vala_assert (_tmp6_ == NULL, "aspect_adapter.get_val () == null");
-#line 84 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 84 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	__vala_GValue_free0 (_tmp6_);
-#line 86 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 86 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp7_ = self->priv->aspect_adapter;
-#line 86 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 86 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp8_ = self->priv->person1;
-#line 86 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 86 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	daf_core_imodel_holder_set_model ((DafCoreIModelHolder*) _tmp7_, (GObject*) _tmp8_);
-#line 88 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 88 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp9_ = self->priv->person1;
-#line 88 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 88 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	daf_core_test_model_person_set_first_name (_tmp9_, "Fred");
-#line 89 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 89 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	g_debug ("AspectAdapterTest.vala:89: Should be fired....");
-#line 90 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 90 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp10_ = self->priv->aspect_adapter;
-#line 90 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 90 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp11_ = daf_core_abstract_value_holder_get_val ((DafCoreAbstractValueHolder*) _tmp10_);
-#line 90 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 90 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp12_ = g_value_get_string (_tmp11_);
-#line 90 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 90 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_vala_assert (g_strcmp0 (_tmp12_, "Fred") == 0, "(string) aspect_adapter.get_val () == \"Fred\"");
-#line 90 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 90 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_g_free0 (_tmp12_);
 #line 336 "AspectAdapterTest.c"
 }
@@ -361,83 +361,83 @@ daf_core_test_aspect_adapter_test_test_change_model (DafCoreTestAspectAdapterTes
 	DafCoreAspectAdapter* _tmp19_;
 	GValue* _tmp20_;
 	gchar* _tmp21_;
-#line 94 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 94 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	g_return_if_fail (self != NULL);
-#line 95 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 95 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp0_ = self->priv->aspect_adapter;
-#line 95 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 95 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp1_ = daf_core_imodel_holder_get_model ((DafCoreIModelHolder*) _tmp0_);
-#line 95 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 95 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp2_ = _tmp1_;
-#line 95 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 95 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_vala_assert (_tmp2_ == NULL, "aspect_adapter.get_model () == null");
-#line 95 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 95 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_g_object_unref0 (_tmp2_);
-#line 96 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 96 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp3_ = self->priv->aspect_adapter;
-#line 96 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 96 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp4_ = daf_core_abstract_value_holder_get_val ((DafCoreAbstractValueHolder*) _tmp3_);
-#line 96 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 96 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp5_ = _tmp4_;
-#line 96 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 96 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_vala_assert (_tmp5_ == NULL, "aspect_adapter.get_val () == null");
-#line 96 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 96 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	__vala_GValue_free0 (_tmp5_);
-#line 98 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 98 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp6_ = self->priv->aspect_adapter;
-#line 98 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 98 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp7_ = self->priv->person1;
-#line 98 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 98 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	daf_core_imodel_holder_set_model ((DafCoreIModelHolder*) _tmp6_, (GObject*) _tmp7_);
-#line 102 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 102 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	g_debug ("AspectAdapterTest.vala:102: OK");
-#line 103 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 103 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp8_ = self->priv->person1;
-#line 103 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 103 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	daf_core_test_model_person_set_first_name (_tmp8_, "Fred");
-#line 104 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 104 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp9_ = self->priv->aspect_adapter;
-#line 104 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 104 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp10_ = daf_core_abstract_value_holder_get_val ((DafCoreAbstractValueHolder*) _tmp9_);
-#line 104 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 104 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp11_ = g_value_get_string (_tmp10_);
-#line 104 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 104 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_vala_assert (g_strcmp0 (_tmp11_, "Fred") == 0, "(string) aspect_adapter.get_val () == \"Fred\"");
-#line 104 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 104 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_g_free0 (_tmp11_);
-#line 106 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 106 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp12_ = self->priv->aspect_adapter;
-#line 106 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 106 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	daf_core_imodel_holder_set_model ((DafCoreIModelHolder*) _tmp12_, NULL);
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp13_ = self->priv->aspect_adapter;
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp14_ = daf_core_abstract_value_holder_get_val ((DafCoreAbstractValueHolder*) _tmp13_);
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp15_ = _tmp14_;
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_vala_assert (_tmp15_ == NULL, "aspect_adapter.get_val () == null");
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	__vala_GValue_free0 (_tmp15_);
-#line 109 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 109 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp16_ = self->priv->aspect_adapter;
-#line 109 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 109 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp17_ = self->priv->person2;
-#line 109 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 109 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	daf_core_imodel_holder_set_model ((DafCoreIModelHolder*) _tmp16_, (GObject*) _tmp17_);
-#line 112 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 112 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp18_ = self->priv->person2;
-#line 112 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 112 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	daf_core_test_model_person_set_first_name (_tmp18_, "Ivan");
-#line 113 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 113 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp19_ = self->priv->aspect_adapter;
-#line 113 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 113 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp20_ = daf_core_abstract_value_holder_get_val ((DafCoreAbstractValueHolder*) _tmp19_);
-#line 113 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 113 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp21_ = g_value_get_string (_tmp20_);
-#line 113 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 113 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_vala_assert (g_strcmp0 (_tmp21_, "Ivan") == 0, "(string) aspect_adapter.get_val () == \"Ivan\"");
-#line 113 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 113 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_g_free0 (_tmp21_);
 #line 443 "AspectAdapterTest.c"
 }
@@ -462,67 +462,67 @@ daf_core_test_aspect_adapter_test_test_direct_access (DafCoreTestAspectAdapterTe
 	const gchar* _tmp12_;
 	GValue* _tmp13_;
 	gchar* _tmp14_;
-#line 116 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 116 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	g_return_if_fail (self != NULL);
-#line 118 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 118 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp0_ = self->priv->person1;
-#line 118 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 118 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp1_ = daf_core_aspect_adapter_new ((GObject*) _tmp0_, "first_name", FALSE);
-#line 118 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 118 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	aspect_adapter = _tmp1_;
-#line 119 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 119 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp2_ = g_new0 (GValue, 1);
-#line 119 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 119 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	g_value_init (_tmp2_, G_TYPE_STRING);
-#line 119 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 119 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	g_value_set_string (_tmp2_, "Ignaz");
-#line 119 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 119 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	daf_core_abstract_value_holder_set_val ((DafCoreAbstractValueHolder*) aspect_adapter, _tmp2_);
-#line 119 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 119 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	__vala_GValue_free0 (_tmp2_);
-#line 120 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 120 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp3_ = self->priv->person1;
-#line 120 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 120 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp4_ = daf_core_test_model_person_get_first_name (_tmp3_);
-#line 120 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 120 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp5_ = _tmp4_;
-#line 120 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 120 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_vala_assert (g_strcmp0 (_tmp5_, "Ignaz") == 0, "person1.first_name == \"Ignaz\"");
-#line 121 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 121 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	g_debug ("AspectAdapterTest.vala:121: AA:");
-#line 122 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 122 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp6_ = daf_core_abstract_value_holder_get_val ((DafCoreAbstractValueHolder*) aspect_adapter);
-#line 122 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 122 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp7_ = g_value_get_string (_tmp6_);
-#line 122 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 122 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_vala_assert (g_strcmp0 (_tmp7_, "Ignaz") == 0, "(string) aspect_adapter.get_val () == \"Ignaz\"");
-#line 122 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 122 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_g_free0 (_tmp7_);
-#line 124 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 124 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp8_ = self->priv->person2;
-#line 124 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 124 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	daf_core_imodel_holder_set_model ((DafCoreIModelHolder*) aspect_adapter, (GObject*) _tmp8_);
-#line 128 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 128 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp9_ = self->priv->person2;
-#line 128 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 128 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	daf_core_test_model_person_set_first_name (_tmp9_, "Humer");
-#line 129 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 129 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp10_ = self->priv->person2;
-#line 129 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 129 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp11_ = daf_core_test_model_person_get_first_name (_tmp10_);
-#line 129 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 129 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp12_ = _tmp11_;
-#line 129 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 129 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_vala_assert (g_strcmp0 ((const gchar*) _tmp12_, "Humer") == 0, "(string) person2.first_name == \"Humer\"");
-#line 130 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 130 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp13_ = daf_core_abstract_value_holder_get_val ((DafCoreAbstractValueHolder*) aspect_adapter);
-#line 130 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 130 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp14_ = g_value_get_string (_tmp13_);
-#line 130 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 130 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_vala_assert (g_strcmp0 (_tmp14_, "Humer") == 0, "(string) aspect_adapter.get_val () == \"Humer\"");
-#line 130 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 130 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_g_free0 (_tmp14_);
-#line 116 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 116 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_g_object_unref0 (aspect_adapter);
 #line 528 "AspectAdapterTest.c"
 }
@@ -557,99 +557,99 @@ daf_core_test_aspect_adapter_test_test_indirect_access (DafCoreTestAspectAdapter
 	DafCoreTestModelPerson* _tmp23_;
 	const gchar* _tmp24_;
 	const gchar* _tmp25_;
-#line 133 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 133 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	g_return_if_fail (self != NULL);
-#line 136 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 136 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp0_ = self->priv->aspect_adapter;
-#line 136 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 136 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp1_ = daf_core_abstract_value_holder_get_val ((DafCoreAbstractValueHolder*) _tmp0_);
-#line 136 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 136 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp2_ = _tmp1_;
-#line 136 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 136 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_vala_assert (_tmp2_ == NULL, "aspect_adapter.get_val () == null");
-#line 136 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 136 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	__vala_GValue_free0 (_tmp2_);
-#line 137 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 137 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp3_ = self->priv->aspect_adapter;
-#line 137 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 137 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp4_ = daf_core_imodel_holder_get_model ((DafCoreIModelHolder*) _tmp3_);
-#line 137 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 137 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp5_ = _tmp4_;
-#line 137 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 137 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_vala_assert (_tmp5_ == NULL, "aspect_adapter.get_model () == null");
-#line 137 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 137 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_g_object_unref0 (_tmp5_);
-#line 139 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 139 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp6_ = self->priv->value_holder;
-#line 139 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 139 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp7_ = self->priv->person1;
-#line 139 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 139 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp8_ = g_new0 (GValue, 1);
-#line 139 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 139 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	g_value_init (_tmp8_, DAF_CORE_TEST_MODEL_TYPE_PERSON);
-#line 139 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 139 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	g_value_set_object (_tmp8_, _tmp7_);
-#line 139 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 139 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	daf_core_abstract_value_holder_set_val ((DafCoreAbstractValueHolder*) _tmp6_, _tmp8_);
-#line 139 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 139 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	__vala_GValue_free0 (_tmp8_);
-#line 143 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 143 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp9_ = self->priv->person1;
-#line 143 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 143 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	daf_core_test_model_person_set_first_name (_tmp9_, "Jules");
-#line 144 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 144 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp10_ = self->priv->aspect_adapter;
-#line 144 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 144 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp11_ = daf_core_abstract_value_holder_get_val ((DafCoreAbstractValueHolder*) _tmp10_);
-#line 144 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 144 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp12_ = g_value_get_string (_tmp11_);
-#line 144 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 144 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_vala_assert (g_strcmp0 (_tmp12_, "Jules") == 0, "(string) aspect_adapter.get_val () == \"Jules\"");
-#line 144 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 144 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_g_free0 (_tmp12_);
-#line 145 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 145 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp13_ = self->priv->person1;
-#line 145 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 145 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp14_ = daf_core_test_model_person_get_first_name (_tmp13_);
-#line 145 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 145 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp15_ = _tmp14_;
-#line 145 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 145 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_vala_assert (g_strcmp0 (_tmp15_, "Jules") == 0, "person1.first_name == \"Jules\"");
-#line 147 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 147 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp16_ = self->priv->value_holder;
-#line 147 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 147 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp17_ = self->priv->person2;
-#line 147 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 147 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp18_ = g_new0 (GValue, 1);
-#line 147 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 147 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	g_value_init (_tmp18_, DAF_CORE_TEST_MODEL_TYPE_PERSON);
-#line 147 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 147 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	g_value_set_object (_tmp18_, _tmp17_);
-#line 147 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 147 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	daf_core_abstract_value_holder_set_val ((DafCoreAbstractValueHolder*) _tmp16_, _tmp18_);
-#line 147 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 147 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	__vala_GValue_free0 (_tmp18_);
-#line 150 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 150 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp19_ = self->priv->person2;
-#line 150 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 150 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	daf_core_test_model_person_set_first_name (_tmp19_, "Humer");
-#line 151 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 151 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp20_ = self->priv->aspect_adapter;
-#line 151 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 151 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp21_ = daf_core_abstract_value_holder_get_val ((DafCoreAbstractValueHolder*) _tmp20_);
-#line 151 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 151 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp22_ = g_value_get_string (_tmp21_);
-#line 151 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 151 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_vala_assert (g_strcmp0 (_tmp22_, "Humer") == 0, "(string) aspect_adapter.get_val () == \"Humer\"");
-#line 151 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 151 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_g_free0 (_tmp22_);
-#line 152 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 152 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp23_ = self->priv->person2;
-#line 152 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 152 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp24_ = daf_core_test_model_person_get_first_name (_tmp23_);
-#line 152 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 152 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_tmp25_ = _tmp24_;
-#line 152 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 152 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_vala_assert (g_strcmp0 (_tmp25_, "Humer") == 0, "person2.first_name == \"Humer\"");
 #line 655 "AspectAdapterTest.c"
 }
@@ -658,15 +658,15 @@ daf_core_test_aspect_adapter_test_test_indirect_access (DafCoreTestAspectAdapter
 static void
 daf_core_test_aspect_adapter_test_class_init (DafCoreTestAspectAdapterTestClass * klass)
 {
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	daf_core_test_aspect_adapter_test_parent_class = g_type_class_peek_parent (klass);
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	g_type_class_add_private (klass, sizeof (DafCoreTestAspectAdapterTestPrivate));
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	((DafUnitTestAbstractTestCaseClass *) klass)->set_up = (void (*) (DafUnitTestAbstractTestCase *)) daf_core_test_aspect_adapter_test_real_set_up;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	((DafUnitTestAbstractTestCaseClass *) klass)->tear_down = (void (*) (DafUnitTestAbstractTestCase *)) daf_core_test_aspect_adapter_test_real_tear_down;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	G_OBJECT_CLASS (klass)->finalize = daf_core_test_aspect_adapter_test_finalize;
 #line 672 "AspectAdapterTest.c"
 }
@@ -675,7 +675,7 @@ daf_core_test_aspect_adapter_test_class_init (DafCoreTestAspectAdapterTestClass 
 static void
 daf_core_test_aspect_adapter_test_instance_init (DafCoreTestAspectAdapterTest * self)
 {
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	self->priv = DAF_CORE_TEST_ASPECT_ADAPTER_TEST_GET_PRIVATE (self);
 #line 681 "AspectAdapterTest.c"
 }
@@ -685,17 +685,17 @@ static void
 daf_core_test_aspect_adapter_test_finalize (GObject * obj)
 {
 	DafCoreTestAspectAdapterTest * self;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	self = G_TYPE_CHECK_INSTANCE_CAST (obj, DAF_CORE_TEST_TYPE_ASPECT_ADAPTER_TEST, DafCoreTestAspectAdapterTest);
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_g_object_unref0 (self->priv->person1);
-#line 30 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 30 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_g_object_unref0 (self->priv->person2);
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_g_object_unref0 (self->priv->aspect_adapter);
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	_g_object_unref0 (self->priv->value_holder);
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/AspectAdapterTest.vala"
 	G_OBJECT_CLASS (daf_core_test_aspect_adapter_test_parent_class)->finalize (obj);
 #line 701 "AspectAdapterTest.c"
 }

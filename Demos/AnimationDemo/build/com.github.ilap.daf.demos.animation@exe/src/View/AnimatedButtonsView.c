@@ -96,7 +96,7 @@ static void
 _gtk_main_quit_gtk_widget_destroy (GtkWidget* _sender,
                                    gpointer self)
 {
-#line 45 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 45 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	gtk_main_quit ();
 #line 102 "AnimatedButtonsView.c"
 }
@@ -114,49 +114,49 @@ daf_animation_test_animated_buttons_view_construct (GType object_type)
 	GtkFixed* _tmp4_;
 	GtkFixed* _tmp5_;
 	GtkWindow* _tmp6_;
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	self = (DafAnimationTestAnimatedButtonsView*) g_type_create_instance (object_type);
-#line 36 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 36 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	_tmp0_ = (GtkWindow*) gtk_window_new (GTK_WINDOW_TOPLEVEL);
-#line 36 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 36 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	g_object_ref_sink (_tmp0_);
-#line 36 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 36 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	_g_object_unref0 (self->priv->window);
-#line 36 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 36 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	self->priv->window = _tmp0_;
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	_tmp1_ = self->priv->window;
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	gtk_widget_set_size_request ((GtkWidget*) _tmp1_, 640, 480);
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	_tmp2_ = (GtkHBox*) gtk_hbox_new (FALSE, 0);
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	g_object_ref_sink (_tmp2_);
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	hbox = _tmp2_;
-#line 40 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 40 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	_tmp3_ = self->priv->window;
-#line 40 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 40 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	gtk_container_add ((GtkContainer*) _tmp3_, (GtkWidget*) hbox);
-#line 41 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 41 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	_tmp4_ = (GtkFixed*) gtk_fixed_new ();
-#line 41 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 41 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	g_object_ref_sink (_tmp4_);
-#line 41 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 41 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	_g_object_unref0 (self->priv->fixed);
-#line 41 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 41 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	self->priv->fixed = _tmp4_;
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	_tmp5_ = self->priv->fixed;
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	gtk_container_add ((GtkContainer*) hbox, (GtkWidget*) _tmp5_);
-#line 45 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 45 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	_tmp6_ = self->priv->window;
-#line 45 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 45 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	g_signal_connect ((GtkWidget*) _tmp6_, "destroy", (GCallback) _gtk_main_quit_gtk_widget_destroy, NULL);
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	_g_object_unref0 (hbox);
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	return self;
 #line 162 "AnimatedButtonsView.c"
 }
@@ -165,7 +165,7 @@ daf_animation_test_animated_buttons_view_construct (GType object_type)
 DafAnimationTestAnimatedButtonsView*
 daf_animation_test_animated_buttons_view_new (void)
 {
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	return daf_animation_test_animated_buttons_view_construct (DAF_ANIMATION_TEST_TYPE_ANIMATED_BUTTONS_VIEW);
 #line 171 "AnimatedButtonsView.c"
 }
@@ -176,7 +176,7 @@ _daf_animation_test_animated_buttons_view_animation_gsource_func (gpointer self)
 {
 	gboolean result;
 	result = daf_animation_test_animated_buttons_view_animation ((DafAnimationTestAnimatedButtonsView*) self);
-#line 49 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 49 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	return result;
 #line 182 "AnimatedButtonsView.c"
 }
@@ -186,13 +186,13 @@ void
 daf_animation_test_animated_buttons_view_show (DafAnimationTestAnimatedButtonsView* self)
 {
 	GtkWindow* _tmp0_;
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	g_return_if_fail (self != NULL);
-#line 49 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 49 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	g_timeout_add_full (G_PRIORITY_DEFAULT, (guint) 1500, _daf_animation_test_animated_buttons_view_animation_gsource_func, daf_animation_test_animated_buttons_view_ref (self), daf_animation_test_animated_buttons_view_unref);
-#line 50 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 50 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	_tmp0_ = self->priv->window;
-#line 50 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 50 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	gtk_widget_show_all ((GtkWidget*) _tmp0_);
 #line 198 "AnimatedButtonsView.c"
 }
@@ -203,18 +203,18 @@ daf_animation_test_animated_buttons_view_animation (DafAnimationTestAnimatedButt
 {
 	gboolean result = FALSE;
 	gint i = 0;
-#line 53 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 53 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	g_return_val_if_fail (self != NULL, FALSE);
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	g_debug ("AnimatedButtonsView.vala:57: KAPDD BE");
 #line 211 "AnimatedButtonsView.c"
 	{
 		gboolean _tmp0_ = FALSE;
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 		i = 0;
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 		_tmp0_ = TRUE;
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 		while (TRUE) {
 #line 220 "AnimatedButtonsView.c"
 			gint _tmp2_;
@@ -232,76 +232,76 @@ daf_animation_test_animated_buttons_view_animation (DafAnimationTestAnimatedButt
 			DafUIAnimationPropertyAnimator* _tmp12_;
 			DafUIAnimationTimeLine* _tmp13_;
 			DafUIAnimationTimeLine* _tmp14_;
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 			if (!_tmp0_) {
 #line 238 "AnimatedButtonsView.c"
 				gint _tmp1_;
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 				_tmp1_ = i;
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 				i = _tmp1_ + 1;
 #line 244 "AnimatedButtonsView.c"
 			}
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 			_tmp0_ = FALSE;
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 			_tmp2_ = i;
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 			if (!(_tmp2_ < 10)) {
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 				break;
 #line 254 "AnimatedButtonsView.c"
 			}
-#line 59 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 59 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 			_tmp3_ = (GtkButton*) gtk_button_new_with_label ("XXXX");
-#line 59 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 59 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 			g_object_ref_sink (_tmp3_);
-#line 59 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 59 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 			l = _tmp3_;
-#line 61 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 61 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 			_tmp4_ = l;
-#line 61 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 61 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 			gtk_widget_set_visible ((GtkWidget*) _tmp4_, TRUE);
-#line 64 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 64 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 			_tmp5_ = self->priv->fixed;
-#line 64 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 64 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 			_tmp6_ = l;
-#line 64 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 64 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 			_tmp7_ = i;
-#line 64 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 64 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 			_tmp8_ = i;
-#line 64 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 64 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 			gtk_fixed_put (G_TYPE_CHECK_INSTANCE_TYPE (_tmp5_, gtk_fixed_get_type ()) ? ((GtkFixed*) _tmp5_) : NULL, (GtkWidget*) _tmp6_, _tmp7_ * 20, _tmp8_ * 25);
-#line 69 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 69 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 			g_debug ("AnimatedButtonsView.vala:69: AAAAAA");
-#line 70 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 70 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 			_tmp9_ = l;
-#line 70 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 70 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 			_tmp10_ = i;
-#line 70 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 70 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 			_tmp11_ = daf_ui_animation_property_animator_animate ((GObject*) _tmp9_, DAF_UI_ANIMATION_ANIMATION_MODE_EASE_IN_OUT_QUAD, 2000, "x", 500, "y", 50 * _tmp10_, NULL);
-#line 70 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 70 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 			anim = _tmp11_;
-#line 73 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 73 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 			g_debug ("AnimatedButtonsView.vala:73: BBBBBBB");
-#line 74 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 74 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 			_tmp12_ = anim;
-#line 74 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 74 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 			_tmp13_ = daf_ui_animation_property_animator_get_timeline (_tmp12_);
-#line 74 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 74 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 			_tmp14_ = _tmp13_;
-#line 74 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 74 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 			daf_ui_animation_ianimatable_start ((DafUIAnimationIAnimatable*) _tmp14_);
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 			_g_object_unref0 (anim);
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 			_g_object_unref0 (l);
 #line 300 "AnimatedButtonsView.c"
 		}
 	}
-#line 77 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 77 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	result = FALSE;
-#line 77 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 77 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	return result;
 #line 307 "AnimatedButtonsView.c"
 }
@@ -310,7 +310,7 @@ daf_animation_test_animated_buttons_view_animation (DafAnimationTestAnimatedButt
 static void
 daf_animation_test_value_animated_buttons_view_init (GValue* value)
 {
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	value->data[0].v_pointer = NULL;
 #line 316 "AnimatedButtonsView.c"
 }
@@ -319,9 +319,9 @@ daf_animation_test_value_animated_buttons_view_init (GValue* value)
 static void
 daf_animation_test_value_animated_buttons_view_free_value (GValue* value)
 {
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	if (value->data[0].v_pointer) {
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 		daf_animation_test_animated_buttons_view_unref (value->data[0].v_pointer);
 #line 327 "AnimatedButtonsView.c"
 	}
@@ -332,13 +332,13 @@ static void
 daf_animation_test_value_animated_buttons_view_copy_value (const GValue* src_value,
                                                            GValue* dest_value)
 {
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	if (src_value->data[0].v_pointer) {
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 		dest_value->data[0].v_pointer = daf_animation_test_animated_buttons_view_ref (src_value->data[0].v_pointer);
 #line 340 "AnimatedButtonsView.c"
 	} else {
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 		dest_value->data[0].v_pointer = NULL;
 #line 344 "AnimatedButtonsView.c"
 	}
@@ -348,7 +348,7 @@ daf_animation_test_value_animated_buttons_view_copy_value (const GValue* src_val
 static gpointer
 daf_animation_test_value_animated_buttons_view_peek_pointer (const GValue* value)
 {
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	return value->data[0].v_pointer;
 #line 354 "AnimatedButtonsView.c"
 }
@@ -360,30 +360,30 @@ daf_animation_test_value_animated_buttons_view_collect_value (GValue* value,
                                                               GTypeCValue* collect_values,
                                                               guint collect_flags)
 {
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	if (collect_values[0].v_pointer) {
 #line 366 "AnimatedButtonsView.c"
 		DafAnimationTestAnimatedButtonsView * object;
 		object = collect_values[0].v_pointer;
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 		if (object->parent_instance.g_class == NULL) {
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 			return g_strconcat ("invalid unclassed object pointer for value type `", G_VALUE_TYPE_NAME (value), "'", NULL);
 #line 373 "AnimatedButtonsView.c"
 		} else if (!g_value_type_compatible (G_TYPE_FROM_INSTANCE (object), G_VALUE_TYPE (value))) {
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 			return g_strconcat ("invalid object type `", g_type_name (G_TYPE_FROM_INSTANCE (object)), "' for value type `", G_VALUE_TYPE_NAME (value), "'", NULL);
 #line 377 "AnimatedButtonsView.c"
 		}
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 		value->data[0].v_pointer = daf_animation_test_animated_buttons_view_ref (object);
 #line 381 "AnimatedButtonsView.c"
 	} else {
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 		value->data[0].v_pointer = NULL;
 #line 385 "AnimatedButtonsView.c"
 	}
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	return NULL;
 #line 389 "AnimatedButtonsView.c"
 }
@@ -397,27 +397,27 @@ daf_animation_test_value_animated_buttons_view_lcopy_value (const GValue* value,
 {
 	DafAnimationTestAnimatedButtonsView ** object_p;
 	object_p = collect_values[0].v_pointer;
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	if (!object_p) {
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 		return g_strdup_printf ("value location for `%s' passed as NULL", G_VALUE_TYPE_NAME (value));
 #line 405 "AnimatedButtonsView.c"
 	}
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	if (!value->data[0].v_pointer) {
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 		*object_p = NULL;
 #line 411 "AnimatedButtonsView.c"
 	} else if (collect_flags & G_VALUE_NOCOPY_CONTENTS) {
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 		*object_p = value->data[0].v_pointer;
 #line 415 "AnimatedButtonsView.c"
 	} else {
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 		*object_p = daf_animation_test_animated_buttons_view_ref (value->data[0].v_pointer);
 #line 419 "AnimatedButtonsView.c"
 	}
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	return NULL;
 #line 423 "AnimatedButtonsView.c"
 }
@@ -431,13 +431,13 @@ daf_animation_test_param_spec_animated_buttons_view (const gchar* name,
                                                      GParamFlags flags)
 {
 	DafAnimationTestParamSpecAnimatedButtonsView* spec;
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	g_return_val_if_fail (g_type_is_a (object_type, DAF_ANIMATION_TEST_TYPE_ANIMATED_BUTTONS_VIEW), NULL);
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	spec = g_param_spec_internal (G_TYPE_PARAM_OBJECT, name, nick, blurb, flags);
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	G_PARAM_SPEC (spec)->value_type = object_type;
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	return G_PARAM_SPEC (spec);
 #line 443 "AnimatedButtonsView.c"
 }
@@ -446,9 +446,9 @@ daf_animation_test_param_spec_animated_buttons_view (const gchar* name,
 gpointer
 daf_animation_test_value_get_animated_buttons_view (const GValue* value)
 {
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	g_return_val_if_fail (G_TYPE_CHECK_VALUE_TYPE (value, DAF_ANIMATION_TEST_TYPE_ANIMATED_BUTTONS_VIEW), NULL);
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	return value->data[0].v_pointer;
 #line 454 "AnimatedButtonsView.c"
 }
@@ -459,29 +459,29 @@ daf_animation_test_value_set_animated_buttons_view (GValue* value,
                                                     gpointer v_object)
 {
 	DafAnimationTestAnimatedButtonsView * old;
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	g_return_if_fail (G_TYPE_CHECK_VALUE_TYPE (value, DAF_ANIMATION_TEST_TYPE_ANIMATED_BUTTONS_VIEW));
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	old = value->data[0].v_pointer;
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	if (v_object) {
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 		g_return_if_fail (G_TYPE_CHECK_INSTANCE_TYPE (v_object, DAF_ANIMATION_TEST_TYPE_ANIMATED_BUTTONS_VIEW));
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 		g_return_if_fail (g_value_type_compatible (G_TYPE_FROM_INSTANCE (v_object), G_VALUE_TYPE (value)));
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 		value->data[0].v_pointer = v_object;
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 		daf_animation_test_animated_buttons_view_ref (value->data[0].v_pointer);
 #line 477 "AnimatedButtonsView.c"
 	} else {
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 		value->data[0].v_pointer = NULL;
 #line 481 "AnimatedButtonsView.c"
 	}
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	if (old) {
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 		daf_animation_test_animated_buttons_view_unref (old);
 #line 487 "AnimatedButtonsView.c"
 	}
@@ -493,27 +493,27 @@ daf_animation_test_value_take_animated_buttons_view (GValue* value,
                                                      gpointer v_object)
 {
 	DafAnimationTestAnimatedButtonsView * old;
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	g_return_if_fail (G_TYPE_CHECK_VALUE_TYPE (value, DAF_ANIMATION_TEST_TYPE_ANIMATED_BUTTONS_VIEW));
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	old = value->data[0].v_pointer;
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	if (v_object) {
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 		g_return_if_fail (G_TYPE_CHECK_INSTANCE_TYPE (v_object, DAF_ANIMATION_TEST_TYPE_ANIMATED_BUTTONS_VIEW));
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 		g_return_if_fail (g_value_type_compatible (G_TYPE_FROM_INSTANCE (v_object), G_VALUE_TYPE (value)));
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 		value->data[0].v_pointer = v_object;
 #line 509 "AnimatedButtonsView.c"
 	} else {
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 		value->data[0].v_pointer = NULL;
 #line 513 "AnimatedButtonsView.c"
 	}
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	if (old) {
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 		daf_animation_test_animated_buttons_view_unref (old);
 #line 519 "AnimatedButtonsView.c"
 	}
@@ -523,11 +523,11 @@ daf_animation_test_value_take_animated_buttons_view (GValue* value,
 static void
 daf_animation_test_animated_buttons_view_class_init (DafAnimationTestAnimatedButtonsViewClass * klass)
 {
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	daf_animation_test_animated_buttons_view_parent_class = g_type_class_peek_parent (klass);
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	((DafAnimationTestAnimatedButtonsViewClass *) klass)->finalize = daf_animation_test_animated_buttons_view_finalize;
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	g_type_class_add_private (klass, sizeof (DafAnimationTestAnimatedButtonsViewPrivate));
 #line 533 "AnimatedButtonsView.c"
 }
@@ -536,9 +536,9 @@ daf_animation_test_animated_buttons_view_class_init (DafAnimationTestAnimatedBut
 static void
 daf_animation_test_animated_buttons_view_instance_init (DafAnimationTestAnimatedButtonsView * self)
 {
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	self->priv = DAF_ANIMATION_TEST_ANIMATED_BUTTONS_VIEW_GET_PRIVATE (self);
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	self->ref_count = 1;
 #line 544 "AnimatedButtonsView.c"
 }
@@ -548,13 +548,13 @@ static void
 daf_animation_test_animated_buttons_view_finalize (DafAnimationTestAnimatedButtonsView * obj)
 {
 	DafAnimationTestAnimatedButtonsView * self;
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	self = G_TYPE_CHECK_INSTANCE_CAST (obj, DAF_ANIMATION_TEST_TYPE_ANIMATED_BUTTONS_VIEW, DafAnimationTestAnimatedButtonsView);
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	g_signal_handlers_destroy (self);
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	_g_object_unref0 (self->priv->window);
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	_g_object_unref0 (self->priv->fixed);
 #line 560 "AnimatedButtonsView.c"
 }
@@ -581,9 +581,9 @@ daf_animation_test_animated_buttons_view_ref (gpointer instance)
 {
 	DafAnimationTestAnimatedButtonsView * self;
 	self = instance;
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	g_atomic_int_inc (&self->ref_count);
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	return instance;
 #line 589 "AnimatedButtonsView.c"
 }
@@ -594,11 +594,11 @@ daf_animation_test_animated_buttons_view_unref (gpointer instance)
 {
 	DafAnimationTestAnimatedButtonsView * self;
 	self = instance;
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 	if (g_atomic_int_dec_and_test (&self->ref_count)) {
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 		DAF_ANIMATION_TEST_ANIMATED_BUTTONS_VIEW_GET_CLASS (self)->finalize (self);
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AnimatedButtonsView.vala"
 		g_type_free_instance ((GTypeInstance *) self);
 #line 604 "AnimatedButtonsView.c"
 	}

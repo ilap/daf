@@ -34,6 +34,8 @@ executable('com.github.ilap.daf.demos.news',
         dependency('granite'),
         dependency('gobject-2.0'),
         dependency('gtk+-3.0'),
+        dependency('dafcore'),
+        dependency('dafui'),
         dependency('glib-2.0')
     ],
     install : true

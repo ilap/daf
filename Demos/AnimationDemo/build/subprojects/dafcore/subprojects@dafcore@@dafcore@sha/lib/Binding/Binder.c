@@ -278,9 +278,9 @@ DafCoreBindingBinder*
 daf_core_binding_binder_construct (GType object_type)
 {
 	DafCoreBindingBinder * self = NULL;
-#line 67 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 67 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	self = (DafCoreBindingBinder*) g_object_new (object_type, NULL);
-#line 67 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 67 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	return self;
 #line 286 "Binder.c"
 }
@@ -289,7 +289,7 @@ daf_core_binding_binder_construct (GType object_type)
 DafCoreBindingBinder*
 daf_core_binding_binder_new (void)
 {
-#line 67 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 67 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	return daf_core_binding_binder_construct (DAF_CORE_BINDING_TYPE_BINDER);
 #line 295 "Binder.c"
 }
@@ -304,17 +304,17 @@ daf_core_binding_binder_real_bind (DafCoreBindingIBinder* base,
 	DafCoreBindingIBindTo* result = NULL;
 	DafCoreBindingIBindModelService* _tmp0_;
 	DafCoreBindingIBindModel* _tmp1_;
-#line 70 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 70 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	self = (DafCoreBindingBinder*) base;
-#line 70 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 70 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	g_return_val_if_fail (subject != NULL, NULL);
-#line 71 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 71 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	_tmp0_ = self->priv->_service;
-#line 71 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 71 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	_tmp1_ = daf_core_binding_ibind_model_service_get_or_create_bind_model (_tmp0_, subject, property_name);
-#line 71 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 71 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	result = G_TYPE_CHECK_INSTANCE_CAST (_tmp1_, DAF_CORE_BINDING_TYPE_IBIND_TO, DafCoreBindingIBindTo);
-#line 71 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 71 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	return result;
 #line 320 "Binder.c"
 }
@@ -329,17 +329,17 @@ daf_core_binding_binder_real_unbind (DafCoreBindingIBinder* base,
 	DafCoreBindingIBindFrom* result = NULL;
 	DafCoreBindingIBindModelService* _tmp0_;
 	DafCoreBindingIBindModel* _tmp1_;
-#line 74 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 74 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	self = (DafCoreBindingBinder*) base;
-#line 74 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 74 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	g_return_val_if_fail (subject != NULL, NULL);
-#line 75 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 75 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	_tmp0_ = self->priv->_service;
-#line 75 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 75 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	_tmp1_ = daf_core_binding_ibind_model_service_get_bind_model (_tmp0_, subject, property_name);
-#line 75 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 75 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	result = G_TYPE_CHECK_INSTANCE_CAST (_tmp1_, DAF_CORE_BINDING_TYPE_IBIND_FROM, DafCoreBindingIBindFrom);
-#line 75 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 75 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	return result;
 #line 345 "Binder.c"
 }
@@ -350,13 +350,13 @@ daf_core_binding_binder_get_repository (DafCoreBindingBinder* self)
 {
 	DafCoreBindingIBindModelRepository* result;
 	DafCoreBindingIBindModelRepository* _tmp0_;
-#line 55 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 55 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 55 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 55 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	_tmp0_ = self->priv->_repository;
-#line 55 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 55 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	result = _tmp0_;
-#line 55 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 55 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	return result;
 #line 362 "Binder.c"
 }
@@ -365,7 +365,7 @@ daf_core_binding_binder_get_repository (DafCoreBindingBinder* self)
 static gpointer
 _g_object_ref0 (gpointer self)
 {
-#line 55 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 55 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	return self ? g_object_ref (self) : NULL;
 #line 371 "Binder.c"
 }
@@ -375,19 +375,19 @@ void
 daf_core_binding_binder_set_repository (DafCoreBindingBinder* self,
                                         DafCoreBindingIBindModelRepository* value)
 {
-#line 55 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 55 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	g_return_if_fail (self != NULL);
-#line 55 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 55 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	if (daf_core_binding_binder_get_repository (self) != value) {
 #line 383 "Binder.c"
 		DafCoreBindingIBindModelRepository* _tmp0_;
-#line 55 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 55 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 		_tmp0_ = _g_object_ref0 (value);
-#line 55 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 55 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 		_g_object_unref0 (self->priv->_repository);
-#line 55 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 55 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 		self->priv->_repository = _tmp0_;
-#line 55 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 55 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 		g_object_notify_by_pspec ((GObject *) self, daf_core_binding_binder_properties[DAF_CORE_BINDING_BINDER_REPOSITORY_PROPERTY]);
 #line 393 "Binder.c"
 	}
@@ -399,13 +399,13 @@ daf_core_binding_binder_get_service (DafCoreBindingBinder* self)
 {
 	DafCoreBindingIBindModelService* result;
 	DafCoreBindingIBindModelService* _tmp0_;
-#line 56 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 56 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 56 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 56 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	_tmp0_ = self->priv->_service;
-#line 56 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 56 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	result = _tmp0_;
-#line 56 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 56 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	return result;
 #line 411 "Binder.c"
 }
@@ -415,19 +415,19 @@ void
 daf_core_binding_binder_set_service (DafCoreBindingBinder* self,
                                      DafCoreBindingIBindModelService* value)
 {
-#line 56 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 56 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	g_return_if_fail (self != NULL);
-#line 56 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 56 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	if (daf_core_binding_binder_get_service (self) != value) {
 #line 423 "Binder.c"
 		DafCoreBindingIBindModelService* _tmp0_;
-#line 56 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 56 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 		_tmp0_ = _g_object_ref0 (value);
-#line 56 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 56 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 		_g_object_unref0 (self->priv->_service);
-#line 56 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 56 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 		self->priv->_service = _tmp0_;
-#line 56 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 56 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 		g_object_notify_by_pspec ((GObject *) self, daf_core_binding_binder_properties[DAF_CORE_BINDING_BINDER_SERVICE_PROPERTY]);
 #line 433 "Binder.c"
 	}
@@ -448,35 +448,35 @@ daf_core_binding_binder_constructor (GType type,
 	DafCoreBindingIBindModelRepository* _tmp2_;
 	DafCoreBindingBindModelFactory* _tmp3_;
 	DafCoreBindingBindModelService* _tmp4_;
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	parent_class = G_OBJECT_CLASS (daf_core_binding_binder_parent_class);
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	obj = parent_class->constructor (type, n_construct_properties, construct_properties);
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	self = G_TYPE_CHECK_INSTANCE_CAST (obj, DAF_CORE_BINDING_TYPE_BINDER, DafCoreBindingBinder);
-#line 59 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 59 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	_tmp0_ = daf_core_binding_default_bind_model_repository_new ();
-#line 59 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 59 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	_g_object_unref0 (self->priv->_repository);
-#line 59 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 59 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	self->priv->_repository = (DafCoreBindingIBindModelRepository*) _tmp0_;
-#line 60 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 60 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	_tmp1_ = daf_core_binding_bind_model_factory_new ();
-#line 60 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 60 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	model_factory = _tmp1_;
-#line 61 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 61 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	_tmp2_ = self->priv->_repository;
-#line 61 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 61 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	_tmp3_ = model_factory;
-#line 61 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 61 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	_tmp4_ = daf_core_binding_bind_model_service_new (DAF_CORE_BINDING_TYPE_BIND_KEY, (GBoxedCopyFunc) g_object_ref, (GDestroyNotify) g_object_unref, DAF_CORE_BINDING_TYPE_IBIND_MODEL, (GBoxedCopyFunc) g_object_ref, (GDestroyNotify) g_object_unref, _tmp2_, (DafCoreBindingIBindModelFactory*) _tmp3_);
-#line 61 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 61 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	_g_object_unref0 (self->priv->_service);
-#line 61 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 61 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	self->priv->_service = (DafCoreBindingIBindModelService*) _tmp4_;
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	_g_object_unref0 (model_factory);
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	return obj;
 #line 482 "Binder.c"
 }
@@ -485,21 +485,21 @@ daf_core_binding_binder_constructor (GType type,
 static void
 daf_core_binding_binder_class_init (DafCoreBindingBinderClass * klass)
 {
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	daf_core_binding_binder_parent_class = g_type_class_peek_parent (klass);
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	g_type_class_add_private (klass, sizeof (DafCoreBindingBinderPrivate));
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	G_OBJECT_CLASS (klass)->get_property = _vala_daf_core_binding_binder_get_property;
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	G_OBJECT_CLASS (klass)->set_property = _vala_daf_core_binding_binder_set_property;
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	G_OBJECT_CLASS (klass)->constructor = daf_core_binding_binder_constructor;
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	G_OBJECT_CLASS (klass)->finalize = daf_core_binding_binder_finalize;
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	g_object_class_install_property (G_OBJECT_CLASS (klass), DAF_CORE_BINDING_BINDER_REPOSITORY_PROPERTY, daf_core_binding_binder_properties[DAF_CORE_BINDING_BINDER_REPOSITORY_PROPERTY] = g_param_spec_object ("repository", "repository", "repository", DAF_CORE_BINDING_TYPE_IBIND_MODEL_REPOSITORY, G_PARAM_STATIC_STRINGS | G_PARAM_WRITABLE));
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	g_object_class_install_property (G_OBJECT_CLASS (klass), DAF_CORE_BINDING_BINDER_SERVICE_PROPERTY, daf_core_binding_binder_properties[DAF_CORE_BINDING_BINDER_SERVICE_PROPERTY] = g_param_spec_object ("service", "service", "service", DAF_CORE_BINDING_TYPE_IBIND_MODEL_SERVICE, G_PARAM_STATIC_STRINGS | G_PARAM_WRITABLE));
 #line 505 "Binder.c"
 }
@@ -508,11 +508,11 @@ daf_core_binding_binder_class_init (DafCoreBindingBinderClass * klass)
 static void
 daf_core_binding_binder_daf_core_binding_ibinder_interface_init (DafCoreBindingIBinderIface * iface)
 {
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	daf_core_binding_binder_daf_core_binding_ibinder_parent_iface = g_type_interface_peek_parent (iface);
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	iface->bind = (DafCoreBindingIBindTo* (*) (DafCoreBindingIBinder *, GObject*, const gchar*)) daf_core_binding_binder_real_bind;
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	iface->unbind = (DafCoreBindingIBindFrom* (*) (DafCoreBindingIBinder *, GObject*, const gchar*)) daf_core_binding_binder_real_unbind;
 #line 518 "Binder.c"
 }
@@ -521,7 +521,7 @@ daf_core_binding_binder_daf_core_binding_ibinder_interface_init (DafCoreBindingI
 static void
 daf_core_binding_binder_instance_init (DafCoreBindingBinder * self)
 {
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	self->priv = DAF_CORE_BINDING_BINDER_GET_PRIVATE (self);
 #line 527 "Binder.c"
 }
@@ -531,13 +531,13 @@ static void
 daf_core_binding_binder_finalize (GObject * obj)
 {
 	DafCoreBindingBinder * self;
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	self = G_TYPE_CHECK_INSTANCE_CAST (obj, DAF_CORE_BINDING_TYPE_BINDER, DafCoreBindingBinder);
-#line 55 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 55 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	_g_object_unref0 (self->priv->_repository);
-#line 56 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 56 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	_g_object_unref0 (self->priv->_service);
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	G_OBJECT_CLASS (daf_core_binding_binder_parent_class)->finalize (obj);
 #line 543 "Binder.c"
 }
@@ -596,25 +596,25 @@ _vala_daf_core_binding_binder_get_property (GObject * object,
 {
 	DafCoreBindingBinder * self;
 	self = G_TYPE_CHECK_INSTANCE_CAST (object, DAF_CORE_BINDING_TYPE_BINDER, DafCoreBindingBinder);
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	switch (property_id) {
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 		case DAF_CORE_BINDING_BINDER_REPOSITORY_PROPERTY:
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 		g_value_set_object (value, daf_core_binding_binder_get_repository (self));
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 		break;
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 		case DAF_CORE_BINDING_BINDER_SERVICE_PROPERTY:
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 		g_value_set_object (value, daf_core_binding_binder_get_service (self));
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 		break;
 #line 614 "Binder.c"
 		default:
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 		G_OBJECT_WARN_INVALID_PROPERTY_ID (object, property_id, pspec);
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 		break;
 #line 620 "Binder.c"
 	}
@@ -629,25 +629,25 @@ _vala_daf_core_binding_binder_set_property (GObject * object,
 {
 	DafCoreBindingBinder * self;
 	self = G_TYPE_CHECK_INSTANCE_CAST (object, DAF_CORE_BINDING_TYPE_BINDER, DafCoreBindingBinder);
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 	switch (property_id) {
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 		case DAF_CORE_BINDING_BINDER_REPOSITORY_PROPERTY:
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 		daf_core_binding_binder_set_repository (self, g_value_get_object (value));
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 		break;
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 		case DAF_CORE_BINDING_BINDER_SERVICE_PROPERTY:
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 		daf_core_binding_binder_set_service (self, g_value_get_object (value));
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 		break;
 #line 647 "Binder.c"
 		default:
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 		G_OBJECT_WARN_INVALID_PROPERTY_ID (object, property_id, pspec);
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/Binder.vala"
 		break;
 #line 653 "Binder.c"
 	}

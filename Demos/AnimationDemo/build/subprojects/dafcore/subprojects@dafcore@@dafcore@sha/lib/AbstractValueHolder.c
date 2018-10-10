@@ -104,9 +104,9 @@ static void _vala_daf_core_abstract_value_holder_set_property (GObject * object,
 static void
 _vala_GValue_free (GValue* self)
 {
-#line 56 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 56 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	g_value_unset (self);
-#line 56 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 56 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	g_free (self);
 #line 112 "AbstractValueHolder.c"
 }
@@ -122,7 +122,7 @@ _vala_GValue_free (GValue* self)
 static GValue*
 _g_value_dup (GValue* self)
 {
-#line 68 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 68 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	return g_boxed_copy (G_TYPE_VALUE, self);
 #line 128 "AbstractValueHolder.c"
 }
@@ -131,7 +131,7 @@ _g_value_dup (GValue* self)
 static gpointer
 __g_value_dup0 (gpointer self)
 {
-#line 68 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 68 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	return self ? _g_value_dup (self) : NULL;
 #line 137 "AbstractValueHolder.c"
 }
@@ -143,13 +143,13 @@ daf_core_abstract_value_holder_real_get_val (DafCoreAbstractValueHolder* self)
 	GValue* result = NULL;
 	GValue* _tmp0_;
 	GValue* _tmp1_;
-#line 68 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 68 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	_tmp0_ = self->priv->model_state;
-#line 68 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 68 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	_tmp1_ = __g_value_dup0 (_tmp0_);
-#line 68 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 68 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	result = _tmp1_;
-#line 68 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 68 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	return result;
 #line 155 "AbstractValueHolder.c"
 }
@@ -158,9 +158,9 @@ daf_core_abstract_value_holder_real_get_val (DafCoreAbstractValueHolder* self)
 GValue*
 daf_core_abstract_value_holder_get_val (DafCoreAbstractValueHolder* self)
 {
-#line 67 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 67 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 67 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 67 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	return DAF_CORE_ABSTRACT_VALUE_HOLDER_GET_CLASS (self)->get_val (self);
 #line 166 "AbstractValueHolder.c"
 }
@@ -173,32 +173,32 @@ daf_core_abstract_value_holder_real_set_val (DafCoreAbstractValueHolder* self,
 	GError * _inner_error_ = NULL;
 	{
 		GValue* _tmp0_;
-#line 72 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 72 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 		_tmp0_ = self->priv->model_state;
-#line 72 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 72 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 		g_rec_mutex_lock (&self->priv->__lock_model_state);
 #line 181 "AbstractValueHolder.c"
 		{
-#line 73 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 73 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 			daf_core_ivalue_model_do_set_val ((DafCoreIValueModel*) self, &self->priv->model_state, new_value);
 #line 185 "AbstractValueHolder.c"
 		}
 		__finally7:
 		{
 			GValue* _tmp1_;
-#line 72 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 72 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 			_tmp1_ = self->priv->model_state;
-#line 72 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 72 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 			g_rec_mutex_unlock (&self->priv->__lock_model_state);
 #line 194 "AbstractValueHolder.c"
 		}
-#line 72 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 72 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 		if (G_UNLIKELY (_inner_error_ != NULL)) {
-#line 72 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 72 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 			g_critical ("file %s: line %d: uncaught error: %s (%s, %d)", __FILE__, __LINE__, _inner_error_->message, g_quark_to_string (_inner_error_->domain), _inner_error_->code);
-#line 72 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 72 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 			g_clear_error (&_inner_error_);
-#line 72 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 72 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 			return;
 #line 204 "AbstractValueHolder.c"
 		}
@@ -210,9 +210,9 @@ void
 daf_core_abstract_value_holder_set_val (DafCoreAbstractValueHolder* self,
                                         GValue* new_value)
 {
-#line 71 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 71 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	g_return_if_fail (self != NULL);
-#line 71 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 71 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	DAF_CORE_ABSTRACT_VALUE_HOLDER_GET_CLASS (self)->set_val (self, new_value);
 #line 218 "AbstractValueHolder.c"
 }
@@ -222,9 +222,9 @@ DafCoreAbstractValueHolder*
 daf_core_abstract_value_holder_construct (GType object_type)
 {
 	DafCoreAbstractValueHolder * self = NULL;
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	self = (DafCoreAbstractValueHolder*) g_object_new (object_type, NULL);
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	return self;
 #line 230 "AbstractValueHolder.c"
 }
@@ -236,13 +236,13 @@ daf_core_abstract_value_holder_real_get_locked (DafCoreIValueModel* base)
 	gboolean result;
 	DafCoreAbstractValueHolder* self;
 	gboolean _tmp0_;
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	self = (DafCoreAbstractValueHolder*) base;
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	_tmp0_ = self->priv->_locked;
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	result = _tmp0_;
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	return result;
 #line 248 "AbstractValueHolder.c"
 }
@@ -253,9 +253,9 @@ daf_core_abstract_value_holder_real_set_locked (DafCoreIValueModel* base,
                                                 gboolean value)
 {
 	DafCoreAbstractValueHolder* self;
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	self = (DafCoreAbstractValueHolder*) base;
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	self->priv->_locked = value;
 #line 261 "AbstractValueHolder.c"
 }
@@ -267,13 +267,13 @@ daf_core_abstract_value_holder_real_get_model_value (DafCoreIValueModel* base,
 {
 	DafCoreAbstractValueHolder* self;
 	GValue _tmp0_;
-#line 45 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 45 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	self = (DafCoreAbstractValueHolder*) base;
-#line 46 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 46 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	_tmp0_ = self->priv->_model_value;
-#line 46 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 46 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	*result = _tmp0_;
-#line 46 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 46 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	return;
 #line 279 "AbstractValueHolder.c"
 }
@@ -289,37 +289,37 @@ daf_core_abstract_value_holder_real_set_model_value (DafCoreIValueModel* base,
 	GValue _tmp2_;
 	GValue _tmp3_;
 	GValue* _tmp4_;
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	self = (DafCoreAbstractValueHolder*) base;
-#line 49 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 49 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	_tmp0_ = *value;
-#line 49 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 49 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	if (G_IS_VALUE (&_tmp0_)) {
-#line 49 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 49 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 		g_value_init (&_tmp1_, G_VALUE_TYPE (&_tmp0_));
-#line 49 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 49 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 		g_value_copy (&_tmp0_, &_tmp1_);
 #line 303 "AbstractValueHolder.c"
 	} else {
-#line 49 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 49 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 		_tmp1_ = _tmp0_;
 #line 307 "AbstractValueHolder.c"
 	}
-#line 49 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 49 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	G_IS_VALUE (&self->priv->_model_value) ? (g_value_unset (&self->priv->_model_value), NULL) : NULL;
-#line 49 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 49 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	self->priv->_model_value = _tmp1_;
-#line 50 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 50 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	_tmp2_ = self->priv->_model_value;
-#line 50 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 50 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	_tmp3_ = _tmp2_;
-#line 50 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 50 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	_tmp4_ = __g_value_dup0 (&_tmp3_);
-#line 50 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 50 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	__vala_GValue_free0 (self->priv->model_state);
-#line 50 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 50 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	self->priv->model_state = _tmp4_;
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	g_object_notify_by_pspec ((GObject *) self, daf_core_abstract_value_holder_properties[DAF_CORE_ABSTRACT_VALUE_HOLDER_MODEL_VALUE_PROPERTY]);
 #line 325 "AbstractValueHolder.c"
 }
@@ -328,23 +328,23 @@ daf_core_abstract_value_holder_real_set_model_value (DafCoreIValueModel* base,
 static void
 daf_core_abstract_value_holder_class_init (DafCoreAbstractValueHolderClass * klass)
 {
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	daf_core_abstract_value_holder_parent_class = g_type_class_peek_parent (klass);
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	g_type_class_add_private (klass, sizeof (DafCoreAbstractValueHolderPrivate));
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	((DafCoreAbstractValueHolderClass *) klass)->get_val = (GValue* (*) (DafCoreAbstractValueHolder *)) daf_core_abstract_value_holder_real_get_val;
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	((DafCoreAbstractValueHolderClass *) klass)->set_val = (void (*) (DafCoreAbstractValueHolder *, GValue*)) daf_core_abstract_value_holder_real_set_val;
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	G_OBJECT_CLASS (klass)->get_property = _vala_daf_core_abstract_value_holder_get_property;
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	G_OBJECT_CLASS (klass)->set_property = _vala_daf_core_abstract_value_holder_set_property;
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	G_OBJECT_CLASS (klass)->finalize = daf_core_abstract_value_holder_finalize;
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	g_object_class_install_property (G_OBJECT_CLASS (klass), DAF_CORE_ABSTRACT_VALUE_HOLDER_LOCKED_PROPERTY, daf_core_abstract_value_holder_properties[DAF_CORE_ABSTRACT_VALUE_HOLDER_LOCKED_PROPERTY] = g_param_spec_boolean ("locked", "locked", "locked", FALSE, G_PARAM_STATIC_STRINGS | G_PARAM_READABLE | G_PARAM_WRITABLE));
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	g_object_class_install_property (G_OBJECT_CLASS (klass), DAF_CORE_ABSTRACT_VALUE_HOLDER_MODEL_VALUE_PROPERTY, daf_core_abstract_value_holder_properties[DAF_CORE_ABSTRACT_VALUE_HOLDER_MODEL_VALUE_PROPERTY] = g_param_spec_boxed ("model-value", "model-value", "model-value", G_TYPE_VALUE, G_PARAM_STATIC_STRINGS | G_PARAM_READABLE | G_PARAM_WRITABLE));
 #line 350 "AbstractValueHolder.c"
 }
@@ -353,19 +353,19 @@ daf_core_abstract_value_holder_class_init (DafCoreAbstractValueHolderClass * kla
 static void
 daf_core_abstract_value_holder_daf_core_ivalue_model_interface_init (DafCoreIValueModelIface * iface)
 {
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	daf_core_abstract_value_holder_daf_core_ivalue_model_parent_iface = g_type_interface_peek_parent (iface);
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	iface->get_val = (GValue* (*) (DafCoreIValueModel *)) daf_core_abstract_value_holder_get_val;
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	iface->set_val = (void (*) (DafCoreIValueModel *, GValue*)) daf_core_abstract_value_holder_set_val;
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	iface->get_locked = daf_core_abstract_value_holder_real_get_locked;
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	iface->set_locked = daf_core_abstract_value_holder_real_set_locked;
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	iface->get_model_value = daf_core_abstract_value_holder_real_get_model_value;
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	iface->set_model_value = daf_core_abstract_value_holder_real_set_model_value;
 #line 371 "AbstractValueHolder.c"
 }
@@ -374,15 +374,15 @@ daf_core_abstract_value_holder_daf_core_ivalue_model_interface_init (DafCoreIVal
 static void
 daf_core_abstract_value_holder_instance_init (DafCoreAbstractValueHolder * self)
 {
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	self->priv = DAF_CORE_ABSTRACT_VALUE_HOLDER_GET_PRIVATE (self);
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	self->priv->_locked = FALSE;
-#line 56 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 56 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	g_rec_mutex_init (&self->priv->__lock_model_state);
-#line 56 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 56 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	self->priv->model_state = NULL;
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	self->observe_domain_changes = FALSE;
 #line 388 "AbstractValueHolder.c"
 }
@@ -392,15 +392,15 @@ static void
 daf_core_abstract_value_holder_finalize (GObject * obj)
 {
 	DafCoreAbstractValueHolder * self;
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	self = G_TYPE_CHECK_INSTANCE_CAST (obj, DAF_CORE_TYPE_ABSTRACT_VALUE_HOLDER, DafCoreAbstractValueHolder);
-#line 43 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 43 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	G_IS_VALUE (&self->priv->_model_value) ? (g_value_unset (&self->priv->_model_value), NULL) : NULL;
-#line 56 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 56 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	g_rec_mutex_clear (&self->priv->__lock_model_state);
-#line 56 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 56 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	__vala_GValue_free0 (self->priv->model_state);
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	G_OBJECT_CLASS (daf_core_abstract_value_holder_parent_class)->finalize (obj);
 #line 406 "AbstractValueHolder.c"
 }
@@ -437,32 +437,32 @@ _vala_daf_core_abstract_value_holder_get_property (GObject * object,
 {
 	DafCoreAbstractValueHolder * self;
 	self = G_TYPE_CHECK_INSTANCE_CAST (object, DAF_CORE_TYPE_ABSTRACT_VALUE_HOLDER, DafCoreAbstractValueHolder);
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	switch (property_id) {
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 		case DAF_CORE_ABSTRACT_VALUE_HOLDER_LOCKED_PROPERTY:
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 		g_value_set_boolean (value, daf_core_ivalue_model_get_locked ((DafCoreIValueModel*) self));
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 		break;
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 		case DAF_CORE_ABSTRACT_VALUE_HOLDER_MODEL_VALUE_PROPERTY:
 #line 451 "AbstractValueHolder.c"
 		{
 			GValue boxed;
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 			daf_core_ivalue_model_get_model_value ((DafCoreIValueModel*) self, &boxed);
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 			g_value_set_boxed (value, &boxed);
 #line 458 "AbstractValueHolder.c"
 		}
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 		break;
 #line 462 "AbstractValueHolder.c"
 		default:
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 		G_OBJECT_WARN_INVALID_PROPERTY_ID (object, property_id, pspec);
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 		break;
 #line 468 "AbstractValueHolder.c"
 	}
@@ -477,25 +477,25 @@ _vala_daf_core_abstract_value_holder_set_property (GObject * object,
 {
 	DafCoreAbstractValueHolder * self;
 	self = G_TYPE_CHECK_INSTANCE_CAST (object, DAF_CORE_TYPE_ABSTRACT_VALUE_HOLDER, DafCoreAbstractValueHolder);
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 	switch (property_id) {
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 		case DAF_CORE_ABSTRACT_VALUE_HOLDER_LOCKED_PROPERTY:
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 		daf_core_ivalue_model_set_locked ((DafCoreIValueModel*) self, g_value_get_boolean (value));
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 		break;
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 		case DAF_CORE_ABSTRACT_VALUE_HOLDER_MODEL_VALUE_PROPERTY:
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 		daf_core_ivalue_model_set_model_value ((DafCoreIValueModel*) self, g_value_get_boxed (value));
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 		break;
 #line 495 "AbstractValueHolder.c"
 		default:
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 		G_OBJECT_WARN_INVALID_PROPERTY_ID (object, property_id, pspec);
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AbstractValueHolder.vala"
 		break;
 #line 501 "AbstractValueHolder.c"
 	}

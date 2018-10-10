@@ -71,9 +71,9 @@ void
 daf_ui_widgets_ideck_layout_add (DafUIWidgetsIDeckLayout* self,
                                  GtkWidget* widget)
 {
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/IDeckLayout.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/IDeckLayout.vala"
 	g_return_if_fail (self != NULL);
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/IDeckLayout.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/IDeckLayout.vala"
 	DAF_UI_WIDGETS_IDECK_LAYOUT_GET_INTERFACE (self)->add (self, widget);
 #line 79 "IDeckLayout.c"
 }
@@ -83,9 +83,9 @@ void
 daf_ui_widgets_ideck_layout_remove (DafUIWidgetsIDeckLayout* self,
                                     GtkWidget* widget)
 {
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/IDeckLayout.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/IDeckLayout.vala"
 	g_return_if_fail (self != NULL);
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/IDeckLayout.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/IDeckLayout.vala"
 	DAF_UI_WIDGETS_IDECK_LAYOUT_GET_INTERFACE (self)->remove (self, widget);
 #line 91 "IDeckLayout.c"
 }
@@ -96,9 +96,9 @@ daf_ui_widgets_ideck_layout_switch_widget (DafUIWidgetsIDeckLayout* self,
                                            GtkWidget* widget,
                                            gboolean quiet)
 {
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/IDeckLayout.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/IDeckLayout.vala"
 	g_return_val_if_fail (self != NULL, FALSE);
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/IDeckLayout.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/IDeckLayout.vala"
 	return DAF_UI_WIDGETS_IDECK_LAYOUT_GET_INTERFACE (self)->switch_widget (self, widget, quiet);
 #line 104 "IDeckLayout.c"
 }
@@ -109,9 +109,9 @@ daf_ui_widgets_ideck_layout_do_switch (DafUIWidgetsIDeckLayout* self,
                                        DafUIWidgetsICard* card,
                                        gboolean quiet)
 {
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/IDeckLayout.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/IDeckLayout.vala"
 	g_return_val_if_fail (self != NULL, FALSE);
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/IDeckLayout.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/IDeckLayout.vala"
 	return DAF_UI_WIDGETS_IDECK_LAYOUT_GET_INTERFACE (self)->do_switch (self, card, quiet);
 #line 117 "IDeckLayout.c"
 }
@@ -121,9 +121,9 @@ DafUIWidgetsICard*
 daf_ui_widgets_ideck_layout_create_card (DafUIWidgetsIDeckLayout* self,
                                          GtkWidget* widget)
 {
-#line 36 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/IDeckLayout.vala"
+#line 36 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/IDeckLayout.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 36 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/IDeckLayout.vala"
+#line 36 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/IDeckLayout.vala"
 	return DAF_UI_WIDGETS_IDECK_LAYOUT_GET_INTERFACE (self)->create_card (self, widget);
 #line 129 "IDeckLayout.c"
 }

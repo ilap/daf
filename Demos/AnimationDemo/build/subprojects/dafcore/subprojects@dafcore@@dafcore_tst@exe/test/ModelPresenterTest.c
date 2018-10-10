@@ -112,7 +112,7 @@ static void daf_core_test_model_presenter_test_finalize (GObject * obj);
 static void
 _daf_core_test_model_presenter_test_change_model_under_presenter_test_daf_unit_test_abstract_test_case_test_method (gpointer self)
 {
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	daf_core_test_model_presenter_test_change_model_under_presenter_test ((DafCoreTestModelPresenterTest*) self);
 #line 118 "ModelPresenterTest.c"
 }
@@ -121,7 +121,7 @@ _daf_core_test_model_presenter_test_change_model_under_presenter_test_daf_unit_t
 static void
 _daf_core_test_model_presenter_test_base_test_daf_unit_test_abstract_test_case_test_method (gpointer self)
 {
-#line 36 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 36 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	daf_core_test_model_presenter_test_base_test ((DafCoreTestModelPresenterTest*) self);
 #line 127 "ModelPresenterTest.c"
 }
@@ -131,13 +131,13 @@ DafCoreTestModelPresenterTest*
 daf_core_test_model_presenter_test_construct (GType object_type)
 {
 	DafCoreTestModelPresenterTest * self = NULL;
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	self = (DafCoreTestModelPresenterTest*) daf_unit_test_abstract_test_case_construct (object_type, "ModelPresenterTest");
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	daf_unit_test_abstract_test_case_add_test ((DafUnitTestAbstractTestCase*) self, "change_model_under_presenter_test", _daf_core_test_model_presenter_test_change_model_under_presenter_test_daf_unit_test_abstract_test_case_test_method, self);
-#line 36 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 36 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	daf_unit_test_abstract_test_case_add_test ((DafUnitTestAbstractTestCase*) self, "base_test", _daf_core_test_model_presenter_test_base_test_daf_unit_test_abstract_test_case_test_method, self);
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	return self;
 #line 143 "ModelPresenterTest.c"
 }
@@ -146,7 +146,7 @@ daf_core_test_model_presenter_test_construct (GType object_type)
 DafCoreTestModelPresenterTest*
 daf_core_test_model_presenter_test_new (void)
 {
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	return daf_core_test_model_presenter_test_construct (DAF_CORE_TEST_TYPE_MODEL_PRESENTER_TEST);
 #line 152 "ModelPresenterTest.c"
 }
@@ -157,13 +157,13 @@ daf_core_test_model_presenter_test_real_set_up (DafUnitTestAbstractTestCase* bas
 {
 	DafCoreTestModelPresenterTest * self;
 	DafCoreValueHolder* _tmp0_;
-#line 40 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 40 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	self = (DafCoreTestModelPresenterTest*) base;
-#line 41 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 41 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp0_ = daf_core_value_holder_new (NULL);
-#line 41 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 41 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_g_object_unref0 (self->priv->value_holder);
-#line 41 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 41 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	self->priv->value_holder = _tmp0_;
 #line 169 "ModelPresenterTest.c"
 }
@@ -173,11 +173,11 @@ static void
 daf_core_test_model_presenter_test_real_tear_down (DafUnitTestAbstractTestCase* base)
 {
 	DafCoreTestModelPresenterTest * self;
-#line 44 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 44 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	self = (DafCoreTestModelPresenterTest*) base;
-#line 45 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 45 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_g_object_unref0 (self->priv->value_holder);
-#line 45 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 45 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	self->priv->value_holder = NULL;
 #line 183 "ModelPresenterTest.c"
 }
@@ -186,9 +186,9 @@ daf_core_test_model_presenter_test_real_tear_down (DafUnitTestAbstractTestCase* 
 static void
 _vala_GValue_free (GValue* self)
 {
-#line 52 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 52 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	g_value_unset (self);
-#line 52 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 52 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	g_free (self);
 #line 194 "ModelPresenterTest.c"
 }
@@ -214,73 +214,73 @@ daf_core_test_model_presenter_test_change_model_under_presenter_test (DafCoreTes
 	GValue* _tmp9_ = NULL;
 	GValue* _tmp10_;
 	gchar* _tmp11_;
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	g_return_if_fail (self != NULL);
-#line 49 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 49 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp0_ = daf_core_test_model_person_new ("Humer", "Troppauer");
-#line 49 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 49 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	person_a = _tmp0_;
-#line 50 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 50 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp1_ = daf_core_test_model_person_new ("Jules", "Manfred Harrincourt");
-#line 50 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 50 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	person_b = _tmp1_;
-#line 52 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 52 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp2_ = g_new0 (GValue, 1);
-#line 52 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 52 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	g_value_init (_tmp2_, DAF_CORE_TEST_MODEL_TYPE_PERSON);
-#line 52 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 52 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	g_value_set_object (_tmp2_, person_a);
-#line 52 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 52 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp3_ = daf_core_value_holder_new (_tmp2_);
-#line 52 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 52 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp4_ = _tmp3_;
-#line 52 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 52 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	__vala_GValue_free0 (_tmp2_);
-#line 52 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 52 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	vh = _tmp4_;
-#line 55 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 55 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp5_ = daf_core_model_presenter_new ((GObject*) vh, FALSE);
-#line 55 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 55 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	presenter = _tmp5_;
-#line 56 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 56 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp6_ = daf_core_imodel_presenter_get_value_model ((DafCoreIModelPresenter*) presenter, "first_name");
-#line 56 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 56 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	first_name = _tmp6_;
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp7_ = daf_core_ivalue_model_get_val (first_name);
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp8_ = g_value_get_string (_tmp7_);
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_vala_assert (g_strcmp0 (_tmp8_, "Humer") == 0, "(string) first_name.get_val () == \"Humer\"");
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_g_free0 (_tmp8_);
-#line 60 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 60 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp9_ = g_new0 (GValue, 1);
-#line 60 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 60 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	g_value_init (_tmp9_, DAF_CORE_TEST_MODEL_TYPE_PERSON);
-#line 60 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 60 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	g_value_set_object (_tmp9_, person_b);
-#line 60 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 60 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	daf_core_abstract_value_holder_set_val ((DafCoreAbstractValueHolder*) vh, _tmp9_);
-#line 60 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 60 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	__vala_GValue_free0 (_tmp9_);
-#line 61 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 61 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp10_ = daf_core_ivalue_model_get_val (first_name);
-#line 61 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 61 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp11_ = g_value_get_string (_tmp10_);
-#line 61 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 61 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_vala_assert (g_strcmp0 (_tmp11_, "Jules") == 0, "(string) first_name.get_val () == \"Jules\"");
-#line 61 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 61 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_g_free0 (_tmp11_);
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_g_object_unref0 (first_name);
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_g_object_unref0 (presenter);
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_g_object_unref0 (vh);
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_g_object_unref0 (person_b);
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_g_object_unref0 (person_a);
 #line 286 "ModelPresenterTest.c"
 }
@@ -370,325 +370,325 @@ daf_core_test_model_presenter_test_base_test (DafCoreTestModelPresenterTest* sel
 	GValue* _tmp66_;
 	gchar* _tmp67_;
 	GValue* _tmp68_;
-#line 64 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 64 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	g_return_if_fail (self != NULL);
-#line 66 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 66 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp0_ = daf_core_test_model_person_new ("Pal", "Dorogi");
-#line 66 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 66 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	pal = _tmp0_;
-#line 67 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 67 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp1_ = daf_core_test_model_address_new ("13", "LDDRD GDNS", 6171, "", "");
-#line 67 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 67 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	pal_address = _tmp1_;
-#line 69 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 69 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp2_ = daf_core_test_model_person_new ("Agnes", "Dorogi");
-#line 69 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 69 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	agnes = _tmp2_;
-#line 70 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 70 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp3_ = daf_core_test_model_address_new ("13", "LDDRD GDNS", 6171, "", "");
-#line 70 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 70 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	agnes_address = _tmp3_;
-#line 72 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 72 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	daf_core_test_model_person_set_address (pal, pal_address);
-#line 73 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 73 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	daf_core_test_model_person_set_address (agnes, agnes_address);
-#line 75 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 75 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp4_ = g_new0 (GValue, 1);
-#line 75 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 75 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	g_value_init (_tmp4_, DAF_CORE_TEST_MODEL_TYPE_PERSON);
-#line 75 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 75 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	g_value_set_object (_tmp4_, pal);
-#line 75 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 75 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp5_ = daf_core_value_holder_new (_tmp4_);
-#line 75 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 75 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp6_ = _tmp5_;
-#line 75 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 75 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	__vala_GValue_free0 (_tmp4_);
-#line 75 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 75 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	vh = _tmp6_;
-#line 78 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 78 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp7_ = daf_core_model_presenter_new ((GObject*) pal, FALSE);
-#line 78 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 78 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	presenter = _tmp7_;
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	daf_core_test_model_person_set_first_name (pal, "Jozska");
-#line 82 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 82 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp8_ = presenter;
-#line 82 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 82 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp9_ = daf_core_imodel_presenter_get_value_model ((DafCoreIModelPresenter*) _tmp8_, "first_name");
-#line 82 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 82 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	first_name = _tmp9_;
-#line 84 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 84 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp10_ = g_new0 (GValue, 1);
-#line 84 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 84 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	g_value_init (_tmp10_, DAF_CORE_TEST_MODEL_TYPE_PERSON);
-#line 84 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 84 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	g_value_set_object (_tmp10_, agnes);
-#line 84 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 84 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	daf_core_abstract_value_holder_set_val ((DafCoreAbstractValueHolder*) vh, _tmp10_);
-#line 84 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 84 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	__vala_GValue_free0 (_tmp10_);
-#line 86 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 86 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp11_ = daf_core_test_model_person_new ("Pal", "Dorogi");
-#line 86 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 86 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	contact = _tmp11_;
-#line 87 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 87 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp12_ = daf_core_test_model_address_new ("13", "LDDRD GDNS", 6171, "", "");
-#line 87 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 87 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	address = _tmp12_;
-#line 88 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 88 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	daf_core_test_model_person_set_address (contact, address);
-#line 91 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 91 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp13_ = daf_core_model_presenter_new ((GObject*) contact, FALSE);
-#line 91 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 91 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_g_object_unref0 (presenter);
-#line 91 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 91 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	presenter = _tmp13_;
-#line 93 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 93 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp14_ = presenter;
-#line 93 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 93 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp15_ = daf_core_imodel_presenter_get_value_model ((DafCoreIModelPresenter*) _tmp14_, "first_name");
-#line 93 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 93 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_g_object_unref0 (first_name);
-#line 93 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 93 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	first_name = _tmp15_;
-#line 94 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 94 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp16_ = presenter;
-#line 94 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 94 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp17_ = daf_core_imodel_presenter_get_value_model ((DafCoreIModelPresenter*) _tmp16_, "first_name");
-#line 94 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 94 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	first_name2 = _tmp17_;
-#line 95 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 95 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp18_ = first_name;
-#line 95 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 95 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_vala_assert (_tmp18_ == first_name2, "first_name == first_name2");
-#line 97 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 97 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp19_ = presenter;
-#line 97 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 97 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp20_ = daf_core_imodel_presenter_get_value_model ((DafCoreIModelPresenter*) _tmp19_, "last_name");
-#line 97 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 97 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	last_name = _tmp20_;
-#line 99 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 99 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp21_ = presenter;
-#line 99 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 99 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp22_ = daf_core_imodel_presenter_get_value_model ((DafCoreIModelPresenter*) _tmp21_, "address.post_code");
-#line 99 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 99 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	post_code = _tmp22_;
-#line 100 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 100 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp23_ = first_name;
-#line 100 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 100 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp24_ = daf_core_ivalue_model_get_val (_tmp23_);
-#line 100 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 100 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp25_ = g_value_get_string (_tmp24_);
-#line 100 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 100 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_vala_assert (g_strcmp0 (_tmp25_, "Pal") == 0, "(string) first_name.get_val () == \"Pal\"");
-#line 100 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 100 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_g_free0 (_tmp25_);
-#line 101 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 101 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp26_ = daf_core_ivalue_model_get_val (last_name);
-#line 101 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 101 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp27_ = g_value_get_string (_tmp26_);
-#line 101 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 101 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_vala_assert (g_strcmp0 (_tmp27_, "Dorogi") == 0, "(string) last_name.get_val () == \"Dorogi\"");
-#line 101 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 101 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_g_free0 (_tmp27_);
-#line 102 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 102 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp28_ = daf_core_ivalue_model_get_val (post_code);
-#line 102 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 102 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_vala_assert (g_value_get_int (_tmp28_) == 6171, "(int) post_code.get_val () == 6171");
-#line 105 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 105 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp29_ = first_name;
-#line 105 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 105 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp30_ = g_new0 (GValue, 1);
-#line 105 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 105 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	g_value_init (_tmp30_, G_TYPE_STRING);
-#line 105 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 105 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	g_value_set_string (_tmp30_, "Agnes");
-#line 105 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 105 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	daf_core_ivalue_model_set_val (_tmp29_, _tmp30_);
-#line 105 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 105 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	__vala_GValue_free0 (_tmp30_);
-#line 106 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 106 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp31_ = g_new0 (GValue, 1);
-#line 106 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 106 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	g_value_init (_tmp31_, G_TYPE_STRING);
-#line 106 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 106 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	g_value_set_string (_tmp31_, "Dorogi-Kaposi");
-#line 106 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 106 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	daf_core_ivalue_model_set_val (last_name, _tmp31_);
-#line 106 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 106 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	__vala_GValue_free0 (_tmp31_);
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp32_ = g_new0 (GValue, 1);
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	g_value_init (_tmp32_, G_TYPE_INT);
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	g_value_set_int (_tmp32_, 9999);
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	daf_core_ivalue_model_set_val (post_code, _tmp32_);
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	__vala_GValue_free0 (_tmp32_);
-#line 109 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 109 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp33_ = daf_core_test_model_person_get_first_name (contact);
-#line 109 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 109 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp34_ = _tmp33_;
-#line 109 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 109 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_vala_assert (g_strcmp0 (_tmp34_, "Pal") == 0, "contact.first_name == \"Pal\"");
-#line 110 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 110 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp35_ = daf_core_test_model_person_get_last_name (contact);
-#line 110 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 110 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp36_ = _tmp35_;
-#line 110 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 110 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_vala_assert (g_strcmp0 (_tmp36_, "Dorogi") == 0, "contact.last_name == \"Dorogi\"");
-#line 111 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 111 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp37_ = daf_core_test_model_address_get_post_code (address);
-#line 111 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 111 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp38_ = _tmp37_;
-#line 111 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 111 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_vala_assert (_tmp38_ == 6171, "address.post_code == 6171");
-#line 113 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 113 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp39_ = presenter;
-#line 113 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 113 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	daf_core_iaspect_trigger_commit ((DafCoreIAspectTrigger*) _tmp39_);
-#line 115 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 115 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp40_ = daf_core_test_model_person_get_first_name (contact);
-#line 115 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 115 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp41_ = _tmp40_;
-#line 115 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 115 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_vala_assert (g_strcmp0 (_tmp41_, "Agnes") == 0, "contact.first_name == \"Agnes\"");
-#line 116 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 116 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp42_ = daf_core_test_model_person_get_last_name (contact);
-#line 116 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 116 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp43_ = _tmp42_;
-#line 116 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 116 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_vala_assert (g_strcmp0 (_tmp43_, "Dorogi-Kaposi") == 0, "contact.last_name == \"Dorogi-Kaposi\"");
-#line 117 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 117 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp44_ = daf_core_test_model_address_get_post_code (address);
-#line 117 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 117 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp45_ = _tmp44_;
-#line 117 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 117 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_vala_assert (_tmp45_ == 9999, "address.post_code == 9999");
-#line 120 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 120 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp46_ = first_name;
-#line 120 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 120 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp47_ = g_new0 (GValue, 1);
-#line 120 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 120 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	g_value_init (_tmp47_, G_TYPE_STRING);
-#line 120 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 120 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	g_value_set_string (_tmp47_, "Agica");
-#line 120 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 120 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	daf_core_ivalue_model_set_val (_tmp46_, _tmp47_);
-#line 120 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 120 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	__vala_GValue_free0 (_tmp47_);
-#line 121 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 121 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp48_ = g_new0 (GValue, 1);
-#line 121 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 121 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	g_value_init (_tmp48_, G_TYPE_STRING);
-#line 121 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 121 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	g_value_set_string (_tmp48_, "Dorogi-Kaposi2");
-#line 121 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 121 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	daf_core_ivalue_model_set_val (last_name, _tmp48_);
-#line 121 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 121 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	__vala_GValue_free0 (_tmp48_);
-#line 122 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 122 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp49_ = g_new0 (GValue, 1);
-#line 122 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 122 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	g_value_init (_tmp49_, G_TYPE_INT);
-#line 122 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 122 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	g_value_set_int (_tmp49_, 7777);
-#line 122 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 122 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	daf_core_ivalue_model_set_val (post_code, _tmp49_);
-#line 122 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 122 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	__vala_GValue_free0 (_tmp49_);
-#line 124 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 124 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp50_ = first_name;
-#line 124 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 124 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp51_ = daf_core_ivalue_model_get_val (_tmp50_);
-#line 124 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 124 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp52_ = g_value_get_string (_tmp51_);
-#line 124 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 124 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_vala_assert (g_strcmp0 (_tmp52_, "Agica") == 0, "(string) first_name.get_val () == \"Agica\"");
-#line 124 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 124 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_g_free0 (_tmp52_);
-#line 125 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 125 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp53_ = daf_core_ivalue_model_get_val (last_name);
-#line 125 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 125 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp54_ = g_value_get_string (_tmp53_);
-#line 125 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 125 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_vala_assert (g_strcmp0 (_tmp54_, "Dorogi-Kaposi2") == 0, "(string) last_name.get_val () == \"Dorogi-Kaposi2\"");
-#line 125 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 125 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_g_free0 (_tmp54_);
-#line 126 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 126 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp55_ = daf_core_ivalue_model_get_val (post_code);
-#line 126 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 126 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_vala_assert (g_value_get_int (_tmp55_) == 7777, "(int) post_code.get_val () == 7777");
-#line 128 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 128 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp56_ = daf_core_test_model_person_get_first_name (contact);
-#line 128 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 128 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp57_ = _tmp56_;
-#line 128 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 128 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_vala_assert (g_strcmp0 (_tmp57_, "Agnes") == 0, "contact.first_name == \"Agnes\"");
-#line 129 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 129 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp58_ = daf_core_test_model_person_get_last_name (contact);
-#line 129 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 129 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp59_ = _tmp58_;
-#line 129 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 129 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_vala_assert (g_strcmp0 (_tmp59_, "Dorogi-Kaposi") == 0, "contact.last_name == \"Dorogi-Kaposi\"");
-#line 130 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 130 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp60_ = daf_core_test_model_address_get_post_code (address);
-#line 130 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 130 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp61_ = _tmp60_;
-#line 130 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 130 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_vala_assert (_tmp61_ == 9999, "address.post_code == 9999");
-#line 132 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 132 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp62_ = presenter;
-#line 132 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 132 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	daf_core_iaspect_trigger_discard ((DafCoreIAspectTrigger*) _tmp62_);
-#line 134 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 134 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp63_ = first_name;
-#line 134 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 134 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp64_ = daf_core_ivalue_model_get_val (_tmp63_);
-#line 134 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 134 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp65_ = g_value_get_string (_tmp64_);
-#line 134 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 134 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_vala_assert (g_strcmp0 (_tmp65_, "Agnes") == 0, "(string) first_name.get_val () == \"Agnes\"");
-#line 134 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 134 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_g_free0 (_tmp65_);
-#line 135 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 135 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp66_ = daf_core_ivalue_model_get_val (last_name);
-#line 135 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 135 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp67_ = g_value_get_string (_tmp66_);
-#line 135 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 135 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_vala_assert (g_strcmp0 (_tmp67_, "Dorogi-Kaposi") == 0, "(string) last_name.get_val () == \"Dorogi-Kaposi\"");
-#line 135 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 135 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_g_free0 (_tmp67_);
-#line 136 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 136 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_tmp68_ = daf_core_ivalue_model_get_val (post_code);
-#line 136 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 136 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_vala_assert (g_value_get_int (_tmp68_) == 9999, "(int) post_code.get_val () == 9999");
-#line 64 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 64 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_g_object_unref0 (post_code);
-#line 64 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 64 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_g_object_unref0 (last_name);
-#line 64 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 64 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_g_object_unref0 (first_name2);
-#line 64 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 64 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_g_object_unref0 (address);
-#line 64 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 64 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_g_object_unref0 (contact);
-#line 64 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 64 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_g_object_unref0 (first_name);
-#line 64 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 64 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_g_object_unref0 (presenter);
-#line 64 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 64 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_g_object_unref0 (vh);
-#line 64 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 64 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_g_object_unref0 (agnes_address);
-#line 64 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 64 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_g_object_unref0 (agnes);
-#line 64 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 64 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_g_object_unref0 (pal_address);
-#line 64 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 64 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_g_object_unref0 (pal);
 #line 694 "ModelPresenterTest.c"
 }
@@ -697,15 +697,15 @@ daf_core_test_model_presenter_test_base_test (DafCoreTestModelPresenterTest* sel
 static void
 daf_core_test_model_presenter_test_class_init (DafCoreTestModelPresenterTestClass * klass)
 {
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	daf_core_test_model_presenter_test_parent_class = g_type_class_peek_parent (klass);
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	g_type_class_add_private (klass, sizeof (DafCoreTestModelPresenterTestPrivate));
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	((DafUnitTestAbstractTestCaseClass *) klass)->set_up = (void (*) (DafUnitTestAbstractTestCase *)) daf_core_test_model_presenter_test_real_set_up;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	((DafUnitTestAbstractTestCaseClass *) klass)->tear_down = (void (*) (DafUnitTestAbstractTestCase *)) daf_core_test_model_presenter_test_real_tear_down;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	G_OBJECT_CLASS (klass)->finalize = daf_core_test_model_presenter_test_finalize;
 #line 711 "ModelPresenterTest.c"
 }
@@ -714,7 +714,7 @@ daf_core_test_model_presenter_test_class_init (DafCoreTestModelPresenterTestClas
 static void
 daf_core_test_model_presenter_test_instance_init (DafCoreTestModelPresenterTest * self)
 {
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	self->priv = DAF_CORE_TEST_MODEL_PRESENTER_TEST_GET_PRIVATE (self);
 #line 720 "ModelPresenterTest.c"
 }
@@ -724,11 +724,11 @@ static void
 daf_core_test_model_presenter_test_finalize (GObject * obj)
 {
 	DafCoreTestModelPresenterTest * self;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	self = G_TYPE_CHECK_INSTANCE_CAST (obj, DAF_CORE_TEST_TYPE_MODEL_PRESENTER_TEST, DafCoreTestModelPresenterTest);
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	_g_object_unref0 (self->priv->value_holder);
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/ModelPresenterTest.vala"
 	G_OBJECT_CLASS (daf_core_test_model_presenter_test_parent_class)->finalize (obj);
 #line 734 "ModelPresenterTest.c"
 }

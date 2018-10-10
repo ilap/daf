@@ -149,11 +149,11 @@ daf_ui_animation_time_line_construct (GType object_type,
                                       DafUIAnimationAnimationMode mode)
 {
 	DafUIAnimationTimeLine * self = NULL;
-#line 70 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 70 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	self = (DafUIAnimationTimeLine*) g_object_new (object_type, NULL);
-#line 71 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 71 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	self->mode = mode;
-#line 70 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 70 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	return self;
 #line 159 "TimeLine.c"
 }
@@ -162,7 +162,7 @@ daf_ui_animation_time_line_construct (GType object_type,
 DafUIAnimationTimeLine*
 daf_ui_animation_time_line_new (DafUIAnimationAnimationMode mode)
 {
-#line 70 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 70 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	return daf_ui_animation_time_line_construct (DAF_UI_ANIMATION_TYPE_TIME_LINE, mode);
 #line 168 "TimeLine.c"
 }
@@ -175,15 +175,15 @@ daf_ui_animation_time_line_construct_full (GType object_type,
                                            guint fps)
 {
 	DafUIAnimationTimeLine * self = NULL;
-#line 74 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 74 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	self = (DafUIAnimationTimeLine*) g_object_new (object_type, NULL);
-#line 75 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 75 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	self->mode = mode;
-#line 76 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 76 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	daf_ui_animation_time_line_set_duration (self, (guint64) duration);
-#line 77 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 77 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	daf_ui_animation_time_line_set_fps (self, fps);
-#line 74 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 74 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	return self;
 #line 189 "TimeLine.c"
 }
@@ -194,7 +194,7 @@ daf_ui_animation_time_line_new_full (DafUIAnimationAnimationMode mode,
                                      guint duration,
                                      guint fps)
 {
-#line 74 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 74 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	return daf_ui_animation_time_line_construct_full (DAF_UI_ANIMATION_TYPE_TIME_LINE, mode, duration, fps);
 #line 200 "TimeLine.c"
 }
@@ -206,21 +206,21 @@ daf_ui_animation_time_line_real_stop (DafUIAnimationIAnimatable* base)
 	DafUIAnimationTimeLine * self;
 	gboolean _tmp0_;
 	gboolean _tmp1_;
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	self = (DafUIAnimationTimeLine*) base;
-#line 81 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 81 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	_tmp0_ = daf_ui_animation_time_line_get_playing (self);
-#line 81 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 81 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	_tmp1_ = _tmp0_;
-#line 81 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 81 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	if (!_tmp1_) {
-#line 82 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 82 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		return;
 #line 220 "TimeLine.c"
 	}
-#line 85 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 85 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	self->priv->delta_time = (guint64) 0;
-#line 86 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 86 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	daf_ui_animation_time_line_set_playing (self, FALSE);
 #line 226 "TimeLine.c"
 }
@@ -232,39 +232,39 @@ daf_ui_animation_time_line_real_start (DafUIAnimationIAnimatable* base)
 	DafUIAnimationTimeLine * self;
 	gboolean _tmp0_ = FALSE;
 	guint64 _tmp1_;
-#line 89 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 89 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	self = (DafUIAnimationTimeLine*) base;
-#line 91 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 91 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	_tmp1_ = self->priv->_duration;
-#line 91 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 91 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	if (_tmp1_ == ((guint64) 0)) {
-#line 91 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 91 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		_tmp0_ = TRUE;
 #line 244 "TimeLine.c"
 	} else {
 		gboolean _tmp2_;
 		gboolean _tmp3_;
-#line 91 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 91 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		_tmp2_ = daf_ui_animation_time_line_get_playing (self);
-#line 91 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 91 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		_tmp3_ = _tmp2_;
-#line 91 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 91 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		_tmp0_ = _tmp3_;
 #line 254 "TimeLine.c"
 	}
-#line 91 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 91 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	if (_tmp0_) {
-#line 92 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 92 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		return;
 #line 260 "TimeLine.c"
 	}
-#line 95 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 95 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	g_signal_emit (self, daf_ui_animation_time_line_signals[DAF_UI_ANIMATION_TIME_LINE_BEFORE_STARTED_SIGNAL], 0);
-#line 96 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 96 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	self->priv->delta_time = (guint64) 0;
-#line 97 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 97 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	daf_ui_animation_time_line_set_playing (self, TRUE);
-#line 99 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 99 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	g_signal_emit (self, daf_ui_animation_time_line_signals[DAF_UI_ANIMATION_TIME_LINE_STARTED_SIGNAL], 0);
 #line 270 "TimeLine.c"
 }
@@ -278,19 +278,19 @@ daf_ui_animation_time_line_tv2ms (GTimeVal* tv)
 	glong _tmp1_;
 	GTimeVal _tmp2_;
 	glong _tmp3_;
-#line 103 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 103 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	g_return_val_if_fail (tv != NULL, 0ULL);
-#line 104 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 104 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	_tmp0_ = *tv;
-#line 104 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 104 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	_tmp1_ = _tmp0_.tv_sec;
-#line 104 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 104 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	_tmp2_ = *tv;
-#line 104 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 104 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	_tmp3_ = _tmp2_.tv_usec;
-#line 104 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 104 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	result = (guint64) ((_tmp1_ * 1000) + (_tmp3_ / 1000));
-#line 104 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 104 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	return result;
 #line 296 "TimeLine.c"
 }
@@ -302,25 +302,25 @@ daf_ui_animation_time_line_next_frame_timer (DafUIAnimationTimeLine* self)
 	gboolean result = FALSE;
 	guint _tmp0_;
 	GTimeVal _tmp1_ = {0};
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	g_return_val_if_fail (self != NULL, FALSE);
-#line 108 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 108 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	_tmp0_ = self->priv->timeout_handler;
-#line 108 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 108 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	if (_tmp0_ == ((guint) 0)) {
-#line 109 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 109 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		result = FALSE;
-#line 109 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 109 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		return result;
 #line 316 "TimeLine.c"
 	}
-#line 114 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 114 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	g_get_current_time (&_tmp1_);
-#line 114 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 114 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	daf_ui_animation_time_line_do_tick (self, daf_ui_animation_time_line_tv2ms (&_tmp1_));
-#line 116 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 116 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	result = TRUE;
-#line 116 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 116 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	return result;
 #line 326 "TimeLine.c"
 }
@@ -335,27 +335,27 @@ daf_ui_animation_time_line_do_tick (DafUIAnimationTimeLine* self,
 	gboolean _tmp2_;
 	guint64 _tmp7_;
 	guint64 _tmp8_;
-#line 119 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 119 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	g_return_if_fail (self != NULL);
-#line 120 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 120 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	_tmp0_ = daf_ui_animation_time_line_get_playing (self);
-#line 120 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 120 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	_tmp1_ = _tmp0_;
-#line 120 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 120 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	if (!_tmp1_) {
-#line 121 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 121 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		return;
 #line 349 "TimeLine.c"
 	}
-#line 124 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 124 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	_tmp2_ = self->priv->is_first_frame;
-#line 124 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 124 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	if (_tmp2_) {
-#line 126 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 126 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		self->priv->frame_time = tick_time;
-#line 127 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 127 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		self->priv->delta_time = (guint64) 0;
-#line 128 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 128 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		self->priv->is_first_frame = FALSE;
 #line 361 "TimeLine.c"
 	} else {
@@ -364,29 +364,29 @@ daf_ui_animation_time_line_do_tick (DafUIAnimationTimeLine* self,
 		guint64 _tmp4_;
 		guint64 _tmp5_;
 		guint64 _tmp6_;
-#line 130 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 130 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		_tmp3_ = self->priv->frame_time;
-#line 130 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 130 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		msecs = tick_time - _tmp3_;
-#line 132 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 132 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		_tmp4_ = self->priv->frame_time;
-#line 132 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 132 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		_tmp5_ = msecs;
-#line 132 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 132 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		self->priv->frame_time = _tmp4_ + _tmp5_;
-#line 133 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 133 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		_tmp6_ = msecs;
-#line 133 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 133 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		self->priv->delta_time = _tmp6_;
 #line 382 "TimeLine.c"
 	}
-#line 136 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 136 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	_tmp7_ = self->priv->delta_time;
-#line 136 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 136 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	_tmp8_ = self->priv->elapsed_time;
-#line 136 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 136 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	g_debug ("TimeLine.vala:136: delta: %d, tick_time: %d", (gint) _tmp7_, (gint) _tmp8_);
-#line 137 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 137 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	daf_ui_animation_time_line_do_frame (self);
 #line 392 "TimeLine.c"
 }
@@ -401,19 +401,19 @@ daf_ui_animation_time_line_do_frame (DafUIAnimationTimeLine* self)
 	gdouble progress = 0.0;
 	guint64 _tmp2_;
 	guint64 _tmp3_;
-#line 140 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 140 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	g_return_val_if_fail (self != NULL, FALSE);
-#line 142 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 142 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	_tmp0_ = self->priv->elapsed_time;
-#line 142 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 142 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	_tmp1_ = self->priv->delta_time;
-#line 142 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 142 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	self->priv->elapsed_time = _tmp0_ + _tmp1_;
-#line 146 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 146 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	_tmp2_ = self->priv->elapsed_time;
-#line 146 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 146 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	_tmp3_ = self->priv->_duration;
-#line 146 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 146 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	if (_tmp2_ < _tmp3_) {
 #line 419 "TimeLine.c"
 		DafUIAnimationAnimationMode _tmp4_;
@@ -423,41 +423,41 @@ daf_ui_animation_time_line_do_frame (DafUIAnimationTimeLine* self)
 		gdouble _tmp8_;
 		gboolean _tmp9_;
 		gboolean _tmp10_;
-#line 147 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 147 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		_tmp4_ = self->mode;
-#line 147 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 147 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		_tmp5_ = self->priv->elapsed_time;
-#line 147 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 147 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		_tmp6_ = self->priv->_duration;
-#line 147 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 147 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		_tmp7_ = self->priv->_duration;
-#line 147 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 147 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		progress = daf_ui_animation_animation_mode_easing_func (_tmp4_, CLAMP (_tmp5_, (guint64) 0, _tmp6_), _tmp7_);
-#line 148 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 148 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		_tmp8_ = progress;
-#line 148 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 148 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		g_signal_emit (self, daf_ui_animation_time_line_signals[DAF_UI_ANIMATION_TIME_LINE_NEW_FRAME_SIGNAL], 0, _tmp8_);
-#line 150 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 150 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		_tmp9_ = daf_ui_animation_time_line_get_playing (self);
-#line 150 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 150 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		_tmp10_ = _tmp9_;
-#line 150 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 150 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		result = _tmp10_;
-#line 150 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 150 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		return result;
 #line 449 "TimeLine.c"
 	} else {
-#line 152 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 152 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		daf_ui_animation_time_line_set_playing (self, FALSE);
-#line 153 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 153 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		g_signal_emit (self, daf_ui_animation_time_line_signals[DAF_UI_ANIMATION_TIME_LINE_NEW_FRAME_SIGNAL], 0, (gdouble) 1.f);
-#line 154 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 154 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		self->priv->elapsed_time = (guint64) 0;
-#line 156 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 156 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		g_signal_emit (self, daf_ui_animation_time_line_signals[DAF_UI_ANIMATION_TIME_LINE_COMPLETED_SIGNAL], 0);
-#line 158 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 158 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		result = TRUE;
-#line 158 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 158 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		return result;
 #line 463 "TimeLine.c"
 	}
@@ -469,13 +469,13 @@ daf_ui_animation_time_line_get_fps (DafUIAnimationTimeLine* self)
 {
 	guint result;
 	guint _tmp0_;
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	g_return_val_if_fail (self != NULL, 0U);
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	_tmp0_ = self->priv->_fps;
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	result = _tmp0_;
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	return result;
 #line 481 "TimeLine.c"
 }
@@ -487,23 +487,23 @@ daf_ui_animation_time_line_set_fps (DafUIAnimationTimeLine* self,
 {
 	guint _tmp0_ = 0U;
 	guint _tmp1_;
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	g_return_if_fail (self != NULL);
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	_tmp1_ = value;
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	if ((((guint) 0) < _tmp1_) && (_tmp1_ <= ((guint) 60))) {
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		_tmp0_ = value;
 #line 499 "TimeLine.c"
 	} else {
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		_tmp0_ = (guint) 25;
 #line 503 "TimeLine.c"
 	}
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	self->priv->_fps = _tmp0_;
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	g_object_notify_by_pspec ((GObject *) self, daf_ui_animation_time_line_properties[DAF_UI_ANIMATION_TIME_LINE_FPS_PROPERTY]);
 #line 509 "TimeLine.c"
 }
@@ -514,13 +514,13 @@ daf_ui_animation_time_line_get_duration (DafUIAnimationTimeLine* self)
 {
 	guint64 result;
 	guint64 _tmp0_;
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	g_return_val_if_fail (self != NULL, 0ULL);
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	_tmp0_ = self->priv->_duration;
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	result = _tmp0_;
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	return result;
 #line 526 "TimeLine.c"
 }
@@ -530,13 +530,13 @@ void
 daf_ui_animation_time_line_set_duration (DafUIAnimationTimeLine* self,
                                          guint64 value)
 {
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	g_return_if_fail (self != NULL);
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	if (daf_ui_animation_time_line_get_duration (self) != value) {
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		self->priv->_duration = value;
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		g_object_notify_by_pspec ((GObject *) self, daf_ui_animation_time_line_properties[DAF_UI_ANIMATION_TIME_LINE_DURATION_PROPERTY]);
 #line 542 "TimeLine.c"
 	}
@@ -548,13 +548,13 @@ daf_ui_animation_time_line_get_playing (DafUIAnimationTimeLine* self)
 {
 	gboolean result;
 	gboolean _tmp0_;
-#line 50 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 50 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	g_return_val_if_fail (self != NULL, FALSE);
-#line 50 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 50 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	_tmp0_ = self->priv->_playing;
-#line 50 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 50 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	result = _tmp0_;
-#line 50 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 50 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	return result;
 #line 560 "TimeLine.c"
 }
@@ -565,7 +565,7 @@ _daf_ui_animation_time_line_next_frame_timer_gsource_func (gpointer self)
 {
 	gboolean result;
 	result = daf_ui_animation_time_line_next_frame_timer ((DafUIAnimationTimeLine*) self);
-#line 61 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 61 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	return result;
 #line 571 "TimeLine.c"
 }
@@ -577,45 +577,45 @@ daf_ui_animation_time_line_set_playing (DafUIAnimationTimeLine* self,
 {
 	gboolean _tmp0_;
 	gboolean _tmp1_;
-#line 51 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 51 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	g_return_if_fail (self != NULL);
-#line 52 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 52 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	_tmp0_ = self->priv->_playing;
-#line 52 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 52 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	if (_tmp0_ == value) {
-#line 53 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 53 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		return;
 #line 589 "TimeLine.c"
 	}
-#line 56 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 56 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	self->priv->_playing = value;
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	_tmp1_ = self->priv->_playing;
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	if (_tmp1_) {
 #line 597 "TimeLine.c"
 		guint _tmp2_;
 		guint _tmp3_;
-#line 59 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 59 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		self->priv->is_first_frame = TRUE;
-#line 61 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 61 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		_tmp2_ = daf_ui_animation_time_line_get_fps (self);
-#line 61 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 61 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		_tmp3_ = _tmp2_;
-#line 61 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 61 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		self->priv->timeout_handler = g_timeout_add_full (G_PRIORITY_DEFAULT, (guint) (1000 / _tmp3_), _daf_ui_animation_time_line_next_frame_timer_gsource_func, g_object_ref (self), g_object_unref);
 #line 608 "TimeLine.c"
 	} else {
 		guint _tmp4_;
-#line 64 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 64 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		_tmp4_ = self->priv->timeout_handler;
-#line 64 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 64 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		g_source_remove (_tmp4_);
-#line 65 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 65 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		self->priv->timeout_handler = (guint) 0;
 #line 617 "TimeLine.c"
 	}
-#line 51 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 51 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	g_object_notify_by_pspec ((GObject *) self, daf_ui_animation_time_line_properties[DAF_UI_ANIMATION_TIME_LINE_PLAYING_PROPERTY]);
 #line 621 "TimeLine.c"
 }
@@ -625,7 +625,7 @@ static void
 daf_ui_animation_time_line_real_new_frame (DafUIAnimationTimeLine* self,
                                            gdouble progress)
 {
-#line 165 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 165 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	g_debug ("TimeLine.vala:165: TimeLine new_frame");
 #line 631 "TimeLine.c"
 }
@@ -634,7 +634,7 @@ daf_ui_animation_time_line_real_new_frame (DafUIAnimationTimeLine* self,
 static void
 daf_ui_animation_time_line_real_started (DafUIAnimationTimeLine* self)
 {
-#line 170 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 170 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	g_debug ("TimeLine.vala:170: TimeLine started");
 #line 640 "TimeLine.c"
 }
@@ -643,7 +643,7 @@ daf_ui_animation_time_line_real_started (DafUIAnimationTimeLine* self)
 static void
 daf_ui_animation_time_line_real_completed (DafUIAnimationTimeLine* self)
 {
-#line 175 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 175 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	g_debug ("TimeLine.vala:175: TimeLine completed");
 #line 649 "TimeLine.c"
 }
@@ -652,7 +652,7 @@ daf_ui_animation_time_line_real_completed (DafUIAnimationTimeLine* self)
 static void
 daf_ui_animation_time_line_real_before_started (DafUIAnimationTimeLine* self)
 {
-#line 180 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 180 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	g_debug ("TimeLine.vala:180: TimeLine before_started");
 #line 658 "TimeLine.c"
 }
@@ -661,37 +661,37 @@ daf_ui_animation_time_line_real_before_started (DafUIAnimationTimeLine* self)
 static void
 daf_ui_animation_time_line_class_init (DafUIAnimationTimeLineClass * klass)
 {
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	daf_ui_animation_time_line_parent_class = g_type_class_peek_parent (klass);
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	g_type_class_add_private (klass, sizeof (DafUIAnimationTimeLinePrivate));
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	((DafUIAnimationTimeLineClass *) klass)->new_frame = daf_ui_animation_time_line_real_new_frame;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	((DafUIAnimationTimeLineClass *) klass)->started = daf_ui_animation_time_line_real_started;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	((DafUIAnimationTimeLineClass *) klass)->completed = daf_ui_animation_time_line_real_completed;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	((DafUIAnimationTimeLineClass *) klass)->before_started = daf_ui_animation_time_line_real_before_started;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	G_OBJECT_CLASS (klass)->get_property = _vala_daf_ui_animation_time_line_get_property;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	G_OBJECT_CLASS (klass)->set_property = _vala_daf_ui_animation_time_line_set_property;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	G_OBJECT_CLASS (klass)->finalize = daf_ui_animation_time_line_finalize;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	g_object_class_install_property (G_OBJECT_CLASS (klass), DAF_UI_ANIMATION_TIME_LINE_FPS_PROPERTY, daf_ui_animation_time_line_properties[DAF_UI_ANIMATION_TIME_LINE_FPS_PROPERTY] = g_param_spec_uint ("fps", "fps", "fps", 0, G_MAXUINT, 0U, G_PARAM_STATIC_STRINGS | G_PARAM_READABLE | G_PARAM_WRITABLE));
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	g_object_class_install_property (G_OBJECT_CLASS (klass), DAF_UI_ANIMATION_TIME_LINE_DURATION_PROPERTY, daf_ui_animation_time_line_properties[DAF_UI_ANIMATION_TIME_LINE_DURATION_PROPERTY] = g_param_spec_uint64 ("duration", "duration", "duration", 0, G_MAXUINT64, (guint64) 1000, G_PARAM_STATIC_STRINGS | G_PARAM_READABLE | G_PARAM_WRITABLE));
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	g_object_class_install_property (G_OBJECT_CLASS (klass), DAF_UI_ANIMATION_TIME_LINE_PLAYING_PROPERTY, daf_ui_animation_time_line_properties[DAF_UI_ANIMATION_TIME_LINE_PLAYING_PROPERTY] = g_param_spec_boolean ("playing", "playing", "playing", FALSE, G_PARAM_STATIC_STRINGS | G_PARAM_READABLE));
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	daf_ui_animation_time_line_signals[DAF_UI_ANIMATION_TIME_LINE_NEW_FRAME_SIGNAL] = g_signal_new ("new-frame", DAF_UI_ANIMATION_TYPE_TIME_LINE, G_SIGNAL_RUN_LAST, G_STRUCT_OFFSET (DafUIAnimationTimeLineClass, new_frame), NULL, NULL, g_cclosure_marshal_VOID__DOUBLE, G_TYPE_NONE, 1, G_TYPE_DOUBLE);
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	daf_ui_animation_time_line_signals[DAF_UI_ANIMATION_TIME_LINE_STARTED_SIGNAL] = g_signal_new ("started", DAF_UI_ANIMATION_TYPE_TIME_LINE, G_SIGNAL_RUN_LAST, G_STRUCT_OFFSET (DafUIAnimationTimeLineClass, started), NULL, NULL, g_cclosure_marshal_VOID__VOID, G_TYPE_NONE, 0);
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	daf_ui_animation_time_line_signals[DAF_UI_ANIMATION_TIME_LINE_COMPLETED_SIGNAL] = g_signal_new ("completed", DAF_UI_ANIMATION_TYPE_TIME_LINE, G_SIGNAL_RUN_LAST, G_STRUCT_OFFSET (DafUIAnimationTimeLineClass, completed), NULL, NULL, g_cclosure_marshal_VOID__VOID, G_TYPE_NONE, 0);
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	daf_ui_animation_time_line_signals[DAF_UI_ANIMATION_TIME_LINE_BEFORE_STARTED_SIGNAL] = g_signal_new ("before-started", DAF_UI_ANIMATION_TYPE_TIME_LINE, G_SIGNAL_RUN_LAST, G_STRUCT_OFFSET (DafUIAnimationTimeLineClass, before_started), NULL, NULL, g_cclosure_marshal_VOID__VOID, G_TYPE_NONE, 0);
 #line 697 "TimeLine.c"
 }
@@ -700,11 +700,11 @@ daf_ui_animation_time_line_class_init (DafUIAnimationTimeLineClass * klass)
 static void
 daf_ui_animation_time_line_daf_ui_animation_ianimatable_interface_init (DafUIAnimationIAnimatableIface * iface)
 {
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	daf_ui_animation_time_line_daf_ui_animation_ianimatable_parent_iface = g_type_interface_peek_parent (iface);
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	iface->stop = (void (*) (DafUIAnimationIAnimatable *)) daf_ui_animation_time_line_real_stop;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	iface->start = (void (*) (DafUIAnimationIAnimatable *)) daf_ui_animation_time_line_real_start;
 #line 710 "TimeLine.c"
 }
@@ -713,17 +713,17 @@ daf_ui_animation_time_line_daf_ui_animation_ianimatable_interface_init (DafUIAni
 static void
 daf_ui_animation_time_line_instance_init (DafUIAnimationTimeLine * self)
 {
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	self->priv = DAF_UI_ANIMATION_TIME_LINE_GET_PRIVATE (self);
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	self->priv->_duration = (guint64) 1000;
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	self->mode = DAF_UI_ANIMATION_ANIMATION_MODE_LINEAR;
-#line 40 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 40 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	self->priv->timeout_handler = (guint) 0;
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	self->priv->is_first_frame = TRUE;
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	self->priv->_playing = FALSE;
 #line 729 "TimeLine.c"
 }
@@ -733,9 +733,9 @@ static void
 daf_ui_animation_time_line_finalize (GObject * obj)
 {
 	DafUIAnimationTimeLine * self;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	self = G_TYPE_CHECK_INSTANCE_CAST (obj, DAF_UI_ANIMATION_TYPE_TIME_LINE, DafUIAnimationTimeLine);
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	G_OBJECT_CLASS (daf_ui_animation_time_line_parent_class)->finalize (obj);
 #line 741 "TimeLine.c"
 }
@@ -768,31 +768,31 @@ _vala_daf_ui_animation_time_line_get_property (GObject * object,
 {
 	DafUIAnimationTimeLine * self;
 	self = G_TYPE_CHECK_INSTANCE_CAST (object, DAF_UI_ANIMATION_TYPE_TIME_LINE, DafUIAnimationTimeLine);
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	switch (property_id) {
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		case DAF_UI_ANIMATION_TIME_LINE_FPS_PROPERTY:
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		g_value_set_uint (value, daf_ui_animation_time_line_get_fps (self));
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		break;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		case DAF_UI_ANIMATION_TIME_LINE_DURATION_PROPERTY:
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		g_value_set_uint64 (value, daf_ui_animation_time_line_get_duration (self));
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		break;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		case DAF_UI_ANIMATION_TIME_LINE_PLAYING_PROPERTY:
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		g_value_set_boolean (value, daf_ui_animation_time_line_get_playing (self));
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		break;
 #line 792 "TimeLine.c"
 		default:
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		G_OBJECT_WARN_INVALID_PROPERTY_ID (object, property_id, pspec);
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		break;
 #line 798 "TimeLine.c"
 	}
@@ -807,31 +807,31 @@ _vala_daf_ui_animation_time_line_set_property (GObject * object,
 {
 	DafUIAnimationTimeLine * self;
 	self = G_TYPE_CHECK_INSTANCE_CAST (object, DAF_UI_ANIMATION_TYPE_TIME_LINE, DafUIAnimationTimeLine);
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 	switch (property_id) {
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		case DAF_UI_ANIMATION_TIME_LINE_FPS_PROPERTY:
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		daf_ui_animation_time_line_set_fps (self, g_value_get_uint (value));
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		break;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		case DAF_UI_ANIMATION_TIME_LINE_DURATION_PROPERTY:
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		daf_ui_animation_time_line_set_duration (self, g_value_get_uint64 (value));
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		break;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		case DAF_UI_ANIMATION_TIME_LINE_PLAYING_PROPERTY:
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		daf_ui_animation_time_line_set_playing (self, g_value_get_boolean (value));
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		break;
 #line 831 "TimeLine.c"
 		default:
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		G_OBJECT_WARN_INVALID_PROPERTY_ID (object, property_id, pspec);
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/TimeLine.vala"
 		break;
 #line 837 "TimeLine.c"
 	}

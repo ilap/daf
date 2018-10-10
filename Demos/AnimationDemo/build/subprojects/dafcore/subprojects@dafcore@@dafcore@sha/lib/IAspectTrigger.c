@@ -31,9 +31,9 @@ void daf_core_iaspect_trigger_discard (DafCoreIAspectTrigger* self);
 void
 daf_core_iaspect_trigger_commit (DafCoreIAspectTrigger* self)
 {
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IAspectTrigger.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IAspectTrigger.vala"
 	g_return_if_fail (self != NULL);
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IAspectTrigger.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IAspectTrigger.vala"
 	DAF_CORE_IASPECT_TRIGGER_GET_INTERFACE (self)->commit (self);
 #line 39 "IAspectTrigger.c"
 }
@@ -42,9 +42,9 @@ daf_core_iaspect_trigger_commit (DafCoreIAspectTrigger* self)
 void
 daf_core_iaspect_trigger_discard (DafCoreIAspectTrigger* self)
 {
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IAspectTrigger.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IAspectTrigger.vala"
 	g_return_if_fail (self != NULL);
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IAspectTrigger.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IAspectTrigger.vala"
 	DAF_CORE_IASPECT_TRIGGER_GET_INTERFACE (self)->discard (self);
 #line 50 "IAspectTrigger.c"
 }

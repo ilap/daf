@@ -39,23 +39,23 @@ daf_ui_test_main (gchar** args,
 	DafUITestSelectionInListTest* _tmp1_;
 	DafUITestSelectionInListTest* _tmp2_;
 	GTestSuite* _tmp3_;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/TestMain.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/TestMain.vala"
 	g_test_init (&args_length1, &args, NULL);
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/TestMain.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/TestMain.vala"
 	_tmp0_ = g_test_get_root ();
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/TestMain.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/TestMain.vala"
 	_tmp1_ = daf_ui_test_selection_in_list_test_new ();
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/TestMain.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/TestMain.vala"
 	_tmp2_ = _tmp1_;
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/TestMain.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/TestMain.vala"
 	_tmp3_ = daf_unit_test_abstract_test_case_get_suite ((DafUnitTestAbstractTestCase*) _tmp2_);
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/TestMain.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/TestMain.vala"
 	g_test_suite_add_suite (_tmp0_, _tmp3_);
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/TestMain.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/TestMain.vala"
 	_g_object_unref0 (_tmp2_);
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/TestMain.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/TestMain.vala"
 	result = g_test_run ();
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/TestMain.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/TestMain.vala"
 	return result;
 #line 61 "TestMain.c"
 }
@@ -65,7 +65,7 @@ int
 main (int argc,
       char ** argv)
 {
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/TestMain.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/TestMain.vala"
 	return daf_ui_test_main (argv, argc);
 #line 71 "TestMain.c"
 }

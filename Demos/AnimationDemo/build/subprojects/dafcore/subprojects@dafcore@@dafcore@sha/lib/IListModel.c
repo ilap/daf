@@ -72,9 +72,9 @@ static void g_cclosure_user_marshal_VOID__INT_POINTER (GClosure * closure,
 gint
 daf_core_ilist_model_get_length (DafCoreIListModel* self)
 {
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
 	g_return_val_if_fail (self != NULL, 0);
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
 	return DAF_CORE_ILIST_MODEL_GET_INTERFACE (self)->get_length (self);
 #line 80 "IListModel.c"
 }
@@ -84,9 +84,9 @@ gpointer
 daf_core_ilist_model_get_at (DafCoreIListModel* self,
                              gint index)
 {
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
 	return DAF_CORE_ILIST_MODEL_GET_INTERFACE (self)->get_at (self, index);
 #line 92 "IListModel.c"
 }
@@ -97,9 +97,9 @@ daf_core_ilist_model_set_at (DafCoreIListModel* self,
                              gint index,
                              gconstpointer value)
 {
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
 	g_return_if_fail (self != NULL);
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
 	DAF_CORE_ILIST_MODEL_GET_INTERFACE (self)->set_at (self, index, value);
 #line 105 "IListModel.c"
 }
@@ -109,9 +109,9 @@ gboolean
 daf_core_ilist_model_add (DafCoreIListModel* self,
                           gconstpointer item)
 {
-#line 36 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
+#line 36 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
 	g_return_val_if_fail (self != NULL, FALSE);
-#line 36 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
+#line 36 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
 	return DAF_CORE_ILIST_MODEL_GET_INTERFACE (self)->add (self, item);
 #line 117 "IListModel.c"
 }
@@ -121,9 +121,9 @@ gboolean
 daf_core_ilist_model_add_all (DafCoreIListModel* self,
                               GeeCollection* items)
 {
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
 	g_return_val_if_fail (self != NULL, FALSE);
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
 	return DAF_CORE_ILIST_MODEL_GET_INTERFACE (self)->add_all (self, items);
 #line 129 "IListModel.c"
 }
@@ -134,9 +134,9 @@ daf_core_ilist_model_insert (DafCoreIListModel* self,
                              gint index,
                              gconstpointer item)
 {
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
 	g_return_if_fail (self != NULL);
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
 	DAF_CORE_ILIST_MODEL_GET_INTERFACE (self)->insert (self, index, item);
 #line 142 "IListModel.c"
 }
@@ -146,9 +146,9 @@ gboolean
 daf_core_ilist_model_remove (DafCoreIListModel* self,
                              gconstpointer item)
 {
-#line 40 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
+#line 40 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
 	g_return_val_if_fail (self != NULL, FALSE);
-#line 40 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
+#line 40 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
 	return DAF_CORE_ILIST_MODEL_GET_INTERFACE (self)->remove (self, item);
 #line 154 "IListModel.c"
 }
@@ -158,9 +158,9 @@ gpointer
 daf_core_ilist_model_remove_at (DafCoreIListModel* self,
                                 gint index)
 {
-#line 41 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
+#line 41 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 41 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
+#line 41 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
 	return DAF_CORE_ILIST_MODEL_GET_INTERFACE (self)->remove_at (self, index);
 #line 166 "IListModel.c"
 }
@@ -170,9 +170,9 @@ gint
 daf_core_ilist_model_index_of (DafCoreIListModel* self,
                                gconstpointer item)
 {
-#line 43 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
+#line 43 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
 	g_return_val_if_fail (self != NULL, 0);
-#line 43 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
+#line 43 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
 	return DAF_CORE_ILIST_MODEL_GET_INTERFACE (self)->index_of (self, item);
 #line 178 "IListModel.c"
 }
@@ -181,9 +181,9 @@ daf_core_ilist_model_index_of (DafCoreIListModel* self,
 void
 daf_core_ilist_model_clear (DafCoreIListModel* self)
 {
-#line 45 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
+#line 45 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
 	g_return_if_fail (self != NULL);
-#line 45 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
+#line 45 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
 	DAF_CORE_ILIST_MODEL_GET_INTERFACE (self)->clear (self);
 #line 189 "IListModel.c"
 }
@@ -203,25 +203,25 @@ g_cclosure_user_marshal_VOID__INT_POINTER (GClosure * closure,
 	register gpointer data1;
 	register gpointer data2;
 	cc = (GCClosure *) closure;
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
 	g_return_if_fail (n_param_values == 3);
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
 	if (G_CCLOSURE_SWAP_DATA (closure)) {
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
 		data1 = closure->data;
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
 		data2 = param_values->data[0].v_pointer;
 #line 215 "IListModel.c"
 	} else {
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
 		data1 = param_values->data[0].v_pointer;
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
 		data2 = closure->data;
 #line 221 "IListModel.c"
 	}
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
 	callback = (GMarshalFunc_VOID__INT_POINTER) (marshal_data ? marshal_data : cc->callback);
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
 	callback (data1, g_value_get_int (param_values + 1), g_value_get_pointer (param_values + 2), data2);
 #line 227 "IListModel.c"
 }
@@ -230,13 +230,13 @@ g_cclosure_user_marshal_VOID__INT_POINTER (GClosure * closure,
 static void
 daf_core_ilist_model_default_init (DafCoreIListModelIface * iface)
 {
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
 	daf_core_ilist_model_signals[DAF_CORE_ILIST_MODEL_ITEM_REMOVED_SIGNAL] = g_signal_new ("item-removed", DAF_CORE_TYPE_ILIST_MODEL, G_SIGNAL_RUN_LAST, 0, NULL, NULL, g_cclosure_marshal_VOID__INT, G_TYPE_NONE, 1, G_TYPE_INT);
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
 	daf_core_ilist_model_signals[DAF_CORE_ILIST_MODEL_ITEM_ADDED_SIGNAL] = g_signal_new ("item-added", DAF_CORE_TYPE_ILIST_MODEL, G_SIGNAL_RUN_LAST, 0, NULL, NULL, g_cclosure_marshal_VOID__INT, G_TYPE_NONE, 1, G_TYPE_INT);
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
 	daf_core_ilist_model_signals[DAF_CORE_ILIST_MODEL_LIST_CHANGED_SIGNAL] = g_signal_new ("list-changed", DAF_CORE_TYPE_ILIST_MODEL, G_SIGNAL_RUN_LAST, 0, NULL, NULL, g_cclosure_marshal_VOID__INT, G_TYPE_NONE, 1, G_TYPE_INT);
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IListModel.vala"
 	daf_core_ilist_model_signals[DAF_CORE_ILIST_MODEL_ITEM_CHANGED_SIGNAL] = g_signal_new ("item-changed", DAF_CORE_TYPE_ILIST_MODEL, G_SIGNAL_RUN_LAST, 0, NULL, NULL, g_cclosure_user_marshal_VOID__INT_POINTER, G_TYPE_NONE, 2, G_TYPE_INT, G_TYPE_POINTER);
 #line 242 "IListModel.c"
 }

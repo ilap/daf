@@ -118,21 +118,21 @@ daf_core_model_registrar_construct (GType object_type)
 	DafCoreModelRegistrar * self = NULL;
 	GeeHashMap* _tmp0_;
 	GeeHashMap* _tmp1_;
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
 	self = (DafCoreModelRegistrar*) g_object_new (object_type, NULL);
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
 	_tmp0_ = gee_hash_map_new (G_TYPE_STRING, (GBoxedCopyFunc) g_strdup, (GDestroyNotify) g_free, DAF_CORE_TYPE_IVALUE_MODEL, (GBoxedCopyFunc) g_object_ref, (GDestroyNotify) g_object_unref, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
 	_g_object_unref0 (self->priv->all_models);
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
 	self->priv->all_models = _tmp0_;
-#line 36 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
+#line 36 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
 	_tmp1_ = gee_hash_map_new (G_TYPE_STRING, (GBoxedCopyFunc) g_strdup, (GDestroyNotify) g_free, DAF_CORE_TYPE_IVALUE_MODEL, (GBoxedCopyFunc) g_object_ref, (GDestroyNotify) g_object_unref, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
-#line 36 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
+#line 36 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
 	_g_object_unref0 (self->priv->value_models);
-#line 36 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
+#line 36 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
 	self->priv->value_models = _tmp1_;
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
 	return self;
 #line 138 "ModelRegistrar.c"
 }
@@ -141,7 +141,7 @@ daf_core_model_registrar_construct (GType object_type)
 DafCoreModelRegistrar*
 daf_core_model_registrar_new (void)
 {
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
 	return daf_core_model_registrar_construct (DAF_CORE_TYPE_MODEL_REGISTRAR);
 #line 147 "ModelRegistrar.c"
 }
@@ -154,19 +154,19 @@ daf_core_model_registrar_add_value_model (DafCoreModelRegistrar* self,
 {
 	GeeHashMap* _tmp0_;
 	GeeHashMap* _tmp1_;
-#line 39 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
+#line 39 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
 	g_return_if_fail (self != NULL);
-#line 39 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
+#line 39 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
 	g_return_if_fail (key != NULL);
-#line 39 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
+#line 39 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
 	g_return_if_fail (value != NULL);
-#line 40 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
+#line 40 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
 	_tmp0_ = self->priv->all_models;
-#line 40 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
+#line 40 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
 	gee_abstract_map_set ((GeeAbstractMap*) _tmp0_, key, value);
-#line 41 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
+#line 41 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
 	_tmp1_ = self->priv->value_models;
-#line 41 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
+#line 41 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
 	gee_abstract_map_set ((GeeAbstractMap*) _tmp1_, key, value);
 #line 172 "ModelRegistrar.c"
 }
@@ -180,17 +180,17 @@ daf_core_model_registrar_real_get_value_model (DafCoreIModelPresenter* base,
 	DafCoreIValueModel* result = NULL;
 	GeeHashMap* _tmp0_;
 	gpointer _tmp1_;
-#line 44 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
+#line 44 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
 	self = (DafCoreModelRegistrar*) base;
-#line 44 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
+#line 44 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
 	g_return_val_if_fail (key != NULL, NULL);
-#line 45 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
+#line 45 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
 	_tmp0_ = self->priv->value_models;
-#line 45 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
+#line 45 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
 	_tmp1_ = gee_abstract_map_get ((GeeAbstractMap*) _tmp0_, key);
-#line 45 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
+#line 45 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
 	result = (DafCoreIValueModel*) _tmp1_;
-#line 45 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
+#line 45 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
 	return result;
 #line 196 "ModelRegistrar.c"
 }
@@ -199,7 +199,7 @@ daf_core_model_registrar_real_get_value_model (DafCoreIModelPresenter* base,
 static gpointer
 _g_object_ref0 (gpointer self)
 {
-#line 49 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
+#line 49 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
 	return self ? g_object_ref (self) : NULL;
 #line 205 "ModelRegistrar.c"
 }
@@ -211,15 +211,15 @@ daf_core_model_registrar_get_all_models (DafCoreModelRegistrar* self)
 	GeeHashMap* result = NULL;
 	GeeHashMap* _tmp0_;
 	GeeHashMap* _tmp1_;
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 49 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
+#line 49 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
 	_tmp0_ = self->priv->all_models;
-#line 49 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
+#line 49 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
 	_tmp1_ = _g_object_ref0 (_tmp0_);
-#line 49 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
+#line 49 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
 	result = _tmp1_;
-#line 49 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
+#line 49 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
 	return result;
 #line 225 "ModelRegistrar.c"
 }
@@ -228,11 +228,11 @@ daf_core_model_registrar_get_all_models (DafCoreModelRegistrar* self)
 static void
 daf_core_model_registrar_class_init (DafCoreModelRegistrarClass * klass)
 {
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
 	daf_core_model_registrar_parent_class = g_type_class_peek_parent (klass);
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
 	g_type_class_add_private (klass, sizeof (DafCoreModelRegistrarPrivate));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
 	G_OBJECT_CLASS (klass)->finalize = daf_core_model_registrar_finalize;
 #line 238 "ModelRegistrar.c"
 }
@@ -241,9 +241,9 @@ daf_core_model_registrar_class_init (DafCoreModelRegistrarClass * klass)
 static void
 daf_core_model_registrar_daf_core_imodel_presenter_interface_init (DafCoreIModelPresenterIface * iface)
 {
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
 	daf_core_model_registrar_daf_core_imodel_presenter_parent_iface = g_type_interface_peek_parent (iface);
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
 	iface->get_value_model = (DafCoreIValueModel* (*) (DafCoreIModelPresenter *, const gchar*)) daf_core_model_registrar_real_get_value_model;
 #line 249 "ModelRegistrar.c"
 }
@@ -252,7 +252,7 @@ daf_core_model_registrar_daf_core_imodel_presenter_interface_init (DafCoreIModel
 static void
 daf_core_model_registrar_instance_init (DafCoreModelRegistrar * self)
 {
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
 	self->priv = DAF_CORE_MODEL_REGISTRAR_GET_PRIVATE (self);
 #line 258 "ModelRegistrar.c"
 }
@@ -262,13 +262,13 @@ static void
 daf_core_model_registrar_finalize (GObject * obj)
 {
 	DafCoreModelRegistrar * self;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
 	self = G_TYPE_CHECK_INSTANCE_CAST (obj, DAF_CORE_TYPE_MODEL_REGISTRAR, DafCoreModelRegistrar);
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
 	_g_object_unref0 (self->priv->all_models);
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
 	_g_object_unref0 (self->priv->value_models);
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelRegistrar.vala"
 	G_OBJECT_CLASS (daf_core_model_registrar_parent_class)->finalize (obj);
 #line 274 "ModelRegistrar.c"
 }

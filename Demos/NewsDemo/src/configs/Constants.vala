@@ -37,7 +37,7 @@ namespace App.Configs {
         public abstract const string TRANSLATE_URL = "https://github.com/ilap/daf";
         public abstract const string TEXT_FOR_ABOUT_DIALOG_WEBSITE = "Website";
         public abstract const string TEXT_FOR_ABOUT_DIALOG_WEBSITE_URL = "https://github.com/ilap/daf";
-        public abstract const string URL_CSS = "com/github/ilap/daf/demos/news/css/style.css";
+        public abstract const string URL_CSS = "com.github.ilap.daf.demos.news/css/style.css";
         public abstract const string [] ABOUT_UTHORS = { "Pal Dorogi <pal.dorogi@gmail.com>" };
         public abstract const Gtk.License ABOUT_LICENSE_TYPE = Gtk.License.GPL_3_0;
     }

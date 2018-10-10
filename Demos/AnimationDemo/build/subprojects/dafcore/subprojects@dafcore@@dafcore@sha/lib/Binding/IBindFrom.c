@@ -35,9 +35,9 @@ daf_core_binding_ibind_from_from (DafCoreBindingIBindFrom* self,
                                   GObject* subject,
                                   const gchar* property_name)
 {
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/IBindFrom.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/IBindFrom.vala"
 	g_return_if_fail (self != NULL);
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/IBindFrom.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/IBindFrom.vala"
 	DAF_CORE_BINDING_IBIND_FROM_GET_INTERFACE (self)->from (self, subject, property_name);
 #line 43 "IBindFrom.c"
 }

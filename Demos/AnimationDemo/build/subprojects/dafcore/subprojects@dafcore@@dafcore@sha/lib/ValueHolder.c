@@ -93,11 +93,11 @@ daf_core_value_holder_construct (GType object_type,
                                  GValue* new_value)
 {
 	DafCoreValueHolder * self = NULL;
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ValueHolder.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ValueHolder.vala"
 	self = (DafCoreValueHolder*) daf_core_abstract_value_holder_construct (object_type);
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ValueHolder.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ValueHolder.vala"
 	daf_core_abstract_value_holder_set_val ((DafCoreAbstractValueHolder*) self, new_value);
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ValueHolder.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ValueHolder.vala"
 	return self;
 #line 103 "ValueHolder.c"
 }
@@ -106,7 +106,7 @@ daf_core_value_holder_construct (GType object_type,
 DafCoreValueHolder*
 daf_core_value_holder_new (GValue* new_value)
 {
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ValueHolder.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ValueHolder.vala"
 	return daf_core_value_holder_construct (DAF_CORE_TYPE_VALUE_HOLDER, new_value);
 #line 112 "ValueHolder.c"
 }
@@ -115,7 +115,7 @@ daf_core_value_holder_new (GValue* new_value)
 static void
 daf_core_value_holder_class_init (DafCoreValueHolderClass * klass)
 {
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ValueHolder.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ValueHolder.vala"
 	daf_core_value_holder_parent_class = g_type_class_peek_parent (klass);
 #line 121 "ValueHolder.c"
 }

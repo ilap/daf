@@ -119,23 +119,23 @@ daf_ui_test_model_address_construct (GType object_type,
                                      const gchar* city)
 {
 	DafUITestModelAddress * self = NULL;
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	g_return_val_if_fail (street_number != NULL, NULL);
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	g_return_val_if_fail (street_name != NULL, NULL);
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	g_return_val_if_fail (suburb != NULL, NULL);
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	g_return_val_if_fail (city != NULL, NULL);
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	self = (DafUITestModelAddress*) g_object_new (object_type, NULL);
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	daf_ui_test_model_address_set_street_number (self, street_number);
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	daf_ui_test_model_address_set_street_name (self, street_name);
-#line 39 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 39 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	daf_ui_test_model_address_set_post_code (self, post_code);
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	return self;
 #line 141 "Address.c"
 }
@@ -148,7 +148,7 @@ daf_ui_test_model_address_new (const gchar* street_number,
                                const gchar* suburb,
                                const gchar* city)
 {
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	return daf_ui_test_model_address_construct (DAF_UI_TEST_MODEL_TYPE_ADDRESS, street_number, street_name, post_code, suburb, city);
 #line 154 "Address.c"
 }
@@ -159,13 +159,13 @@ daf_ui_test_model_address_get_street_number (DafUITestModelAddress* self)
 {
 	const gchar* result;
 	const gchar* _tmp0_;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	_tmp0_ = self->priv->_street_number;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	result = _tmp0_;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	return result;
 #line 171 "Address.c"
 }
@@ -175,19 +175,19 @@ void
 daf_ui_test_model_address_set_street_number (DafUITestModelAddress* self,
                                              const gchar* value)
 {
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	g_return_if_fail (self != NULL);
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	if (g_strcmp0 (value, daf_ui_test_model_address_get_street_number (self)) != 0) {
 #line 183 "Address.c"
 		gchar* _tmp0_;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 		_tmp0_ = g_strdup (value);
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 		_g_free0 (self->priv->_street_number);
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 		self->priv->_street_number = _tmp0_;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 		g_object_notify_by_pspec ((GObject *) self, daf_ui_test_model_address_properties[DAF_UI_TEST_MODEL_ADDRESS_STREET_NUMBER_PROPERTY]);
 #line 193 "Address.c"
 	}
@@ -199,13 +199,13 @@ daf_ui_test_model_address_get_street_name (DafUITestModelAddress* self)
 {
 	const gchar* result;
 	const gchar* _tmp0_;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	_tmp0_ = self->priv->_street_name;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	result = _tmp0_;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	return result;
 #line 211 "Address.c"
 }
@@ -215,19 +215,19 @@ void
 daf_ui_test_model_address_set_street_name (DafUITestModelAddress* self,
                                            const gchar* value)
 {
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	g_return_if_fail (self != NULL);
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	if (g_strcmp0 (value, daf_ui_test_model_address_get_street_name (self)) != 0) {
 #line 223 "Address.c"
 		gchar* _tmp0_;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 		_tmp0_ = g_strdup (value);
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 		_g_free0 (self->priv->_street_name);
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 		self->priv->_street_name = _tmp0_;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 		g_object_notify_by_pspec ((GObject *) self, daf_ui_test_model_address_properties[DAF_UI_TEST_MODEL_ADDRESS_STREET_NAME_PROPERTY]);
 #line 233 "Address.c"
 	}
@@ -239,13 +239,13 @@ daf_ui_test_model_address_get_post_code (DafUITestModelAddress* self)
 {
 	gint result;
 	gint _tmp0_;
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	g_return_val_if_fail (self != NULL, 0);
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	_tmp0_ = self->priv->_post_code;
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	result = _tmp0_;
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	return result;
 #line 251 "Address.c"
 }
@@ -255,13 +255,13 @@ void
 daf_ui_test_model_address_set_post_code (DafUITestModelAddress* self,
                                          gint value)
 {
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	g_return_if_fail (self != NULL);
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	if (daf_ui_test_model_address_get_post_code (self) != value) {
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 		self->priv->_post_code = value;
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 		g_object_notify_by_pspec ((GObject *) self, daf_ui_test_model_address_properties[DAF_UI_TEST_MODEL_ADDRESS_POST_CODE_PROPERTY]);
 #line 267 "Address.c"
 	}
@@ -273,13 +273,13 @@ daf_ui_test_model_address_get_suburb (DafUITestModelAddress* self)
 {
 	const gchar* result;
 	const gchar* _tmp0_;
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	_tmp0_ = self->priv->_suburb;
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	result = _tmp0_;
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	return result;
 #line 285 "Address.c"
 }
@@ -289,19 +289,19 @@ void
 daf_ui_test_model_address_set_suburb (DafUITestModelAddress* self,
                                       const gchar* value)
 {
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	g_return_if_fail (self != NULL);
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	if (g_strcmp0 (value, daf_ui_test_model_address_get_suburb (self)) != 0) {
 #line 297 "Address.c"
 		gchar* _tmp0_;
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 		_tmp0_ = g_strdup (value);
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 		_g_free0 (self->priv->_suburb);
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 		self->priv->_suburb = _tmp0_;
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 		g_object_notify_by_pspec ((GObject *) self, daf_ui_test_model_address_properties[DAF_UI_TEST_MODEL_ADDRESS_SUBURB_PROPERTY]);
 #line 307 "Address.c"
 	}
@@ -313,13 +313,13 @@ daf_ui_test_model_address_get_city (DafUITestModelAddress* self)
 {
 	const gchar* result;
 	const gchar* _tmp0_;
-#line 30 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 30 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 30 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 30 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	_tmp0_ = self->priv->_city;
-#line 30 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 30 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	result = _tmp0_;
-#line 30 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 30 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	return result;
 #line 325 "Address.c"
 }
@@ -329,19 +329,19 @@ void
 daf_ui_test_model_address_set_city (DafUITestModelAddress* self,
                                     const gchar* value)
 {
-#line 30 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 30 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	g_return_if_fail (self != NULL);
-#line 30 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 30 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	if (g_strcmp0 (value, daf_ui_test_model_address_get_city (self)) != 0) {
 #line 337 "Address.c"
 		gchar* _tmp0_;
-#line 30 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 30 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 		_tmp0_ = g_strdup (value);
-#line 30 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 30 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 		_g_free0 (self->priv->_city);
-#line 30 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 30 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 		self->priv->_city = _tmp0_;
-#line 30 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 30 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 		g_object_notify_by_pspec ((GObject *) self, daf_ui_test_model_address_properties[DAF_UI_TEST_MODEL_ADDRESS_CITY_PROPERTY]);
 #line 347 "Address.c"
 	}
@@ -351,25 +351,25 @@ daf_ui_test_model_address_set_city (DafUITestModelAddress* self,
 static void
 daf_ui_test_model_address_class_init (DafUITestModelAddressClass * klass)
 {
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	daf_ui_test_model_address_parent_class = g_type_class_peek_parent (klass);
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	g_type_class_add_private (klass, sizeof (DafUITestModelAddressPrivate));
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	G_OBJECT_CLASS (klass)->get_property = _vala_daf_ui_test_model_address_get_property;
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	G_OBJECT_CLASS (klass)->set_property = _vala_daf_ui_test_model_address_set_property;
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	G_OBJECT_CLASS (klass)->finalize = daf_ui_test_model_address_finalize;
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	g_object_class_install_property (G_OBJECT_CLASS (klass), DAF_UI_TEST_MODEL_ADDRESS_STREET_NUMBER_PROPERTY, daf_ui_test_model_address_properties[DAF_UI_TEST_MODEL_ADDRESS_STREET_NUMBER_PROPERTY] = g_param_spec_string ("street-number", "street-number", "street-number", NULL, G_PARAM_STATIC_STRINGS | G_PARAM_READABLE | G_PARAM_WRITABLE));
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	g_object_class_install_property (G_OBJECT_CLASS (klass), DAF_UI_TEST_MODEL_ADDRESS_STREET_NAME_PROPERTY, daf_ui_test_model_address_properties[DAF_UI_TEST_MODEL_ADDRESS_STREET_NAME_PROPERTY] = g_param_spec_string ("street-name", "street-name", "street-name", NULL, G_PARAM_STATIC_STRINGS | G_PARAM_READABLE | G_PARAM_WRITABLE));
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	g_object_class_install_property (G_OBJECT_CLASS (klass), DAF_UI_TEST_MODEL_ADDRESS_POST_CODE_PROPERTY, daf_ui_test_model_address_properties[DAF_UI_TEST_MODEL_ADDRESS_POST_CODE_PROPERTY] = g_param_spec_int ("post-code", "post-code", "post-code", G_MININT, G_MAXINT, 0, G_PARAM_STATIC_STRINGS | G_PARAM_READABLE | G_PARAM_WRITABLE));
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	g_object_class_install_property (G_OBJECT_CLASS (klass), DAF_UI_TEST_MODEL_ADDRESS_SUBURB_PROPERTY, daf_ui_test_model_address_properties[DAF_UI_TEST_MODEL_ADDRESS_SUBURB_PROPERTY] = g_param_spec_string ("suburb", "suburb", "suburb", NULL, G_PARAM_STATIC_STRINGS | G_PARAM_READABLE | G_PARAM_WRITABLE));
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	g_object_class_install_property (G_OBJECT_CLASS (klass), DAF_UI_TEST_MODEL_ADDRESS_CITY_PROPERTY, daf_ui_test_model_address_properties[DAF_UI_TEST_MODEL_ADDRESS_CITY_PROPERTY] = g_param_spec_string ("city", "city", "city", NULL, G_PARAM_STATIC_STRINGS | G_PARAM_READABLE | G_PARAM_WRITABLE));
 #line 375 "Address.c"
 }
@@ -378,7 +378,7 @@ daf_ui_test_model_address_class_init (DafUITestModelAddressClass * klass)
 static void
 daf_ui_test_model_address_instance_init (DafUITestModelAddress * self)
 {
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	self->priv = DAF_UI_TEST_MODEL_ADDRESS_GET_PRIVATE (self);
 #line 384 "Address.c"
 }
@@ -388,17 +388,17 @@ static void
 daf_ui_test_model_address_finalize (GObject * obj)
 {
 	DafUITestModelAddress * self;
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	self = G_TYPE_CHECK_INSTANCE_CAST (obj, DAF_UI_TEST_MODEL_TYPE_ADDRESS, DafUITestModelAddress);
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	_g_free0 (self->priv->_street_number);
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	_g_free0 (self->priv->_street_name);
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	_g_free0 (self->priv->_suburb);
-#line 30 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 30 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	_g_free0 (self->priv->_city);
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	G_OBJECT_CLASS (daf_ui_test_model_address_parent_class)->finalize (obj);
 #line 404 "Address.c"
 }
@@ -426,43 +426,43 @@ _vala_daf_ui_test_model_address_get_property (GObject * object,
 {
 	DafUITestModelAddress * self;
 	self = G_TYPE_CHECK_INSTANCE_CAST (object, DAF_UI_TEST_MODEL_TYPE_ADDRESS, DafUITestModelAddress);
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	switch (property_id) {
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 		case DAF_UI_TEST_MODEL_ADDRESS_STREET_NUMBER_PROPERTY:
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 		g_value_set_string (value, daf_ui_test_model_address_get_street_number (self));
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 		break;
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 		case DAF_UI_TEST_MODEL_ADDRESS_STREET_NAME_PROPERTY:
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 		g_value_set_string (value, daf_ui_test_model_address_get_street_name (self));
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 		break;
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 		case DAF_UI_TEST_MODEL_ADDRESS_POST_CODE_PROPERTY:
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 		g_value_set_int (value, daf_ui_test_model_address_get_post_code (self));
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 		break;
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 		case DAF_UI_TEST_MODEL_ADDRESS_SUBURB_PROPERTY:
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 		g_value_set_string (value, daf_ui_test_model_address_get_suburb (self));
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 		break;
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 		case DAF_UI_TEST_MODEL_ADDRESS_CITY_PROPERTY:
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 		g_value_set_string (value, daf_ui_test_model_address_get_city (self));
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 		break;
 #line 462 "Address.c"
 		default:
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 		G_OBJECT_WARN_INVALID_PROPERTY_ID (object, property_id, pspec);
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 		break;
 #line 468 "Address.c"
 	}
@@ -477,43 +477,43 @@ _vala_daf_ui_test_model_address_set_property (GObject * object,
 {
 	DafUITestModelAddress * self;
 	self = G_TYPE_CHECK_INSTANCE_CAST (object, DAF_UI_TEST_MODEL_TYPE_ADDRESS, DafUITestModelAddress);
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 	switch (property_id) {
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 		case DAF_UI_TEST_MODEL_ADDRESS_STREET_NUMBER_PROPERTY:
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 		daf_ui_test_model_address_set_street_number (self, g_value_get_string (value));
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 		break;
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 		case DAF_UI_TEST_MODEL_ADDRESS_STREET_NAME_PROPERTY:
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 		daf_ui_test_model_address_set_street_name (self, g_value_get_string (value));
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 		break;
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 		case DAF_UI_TEST_MODEL_ADDRESS_POST_CODE_PROPERTY:
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 		daf_ui_test_model_address_set_post_code (self, g_value_get_int (value));
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 		break;
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 		case DAF_UI_TEST_MODEL_ADDRESS_SUBURB_PROPERTY:
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 		daf_ui_test_model_address_set_suburb (self, g_value_get_string (value));
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 		break;
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 		case DAF_UI_TEST_MODEL_ADDRESS_CITY_PROPERTY:
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 		daf_ui_test_model_address_set_city (self, g_value_get_string (value));
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 		break;
 #line 513 "Address.c"
 		default:
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 		G_OBJECT_WARN_INVALID_PROPERTY_ID (object, property_id, pspec);
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/Model/Address.vala"
 		break;
 #line 519 "Address.c"
 	}

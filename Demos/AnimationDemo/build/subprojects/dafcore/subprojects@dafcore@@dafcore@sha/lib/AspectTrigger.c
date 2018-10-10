@@ -112,9 +112,9 @@ DafCoreAbstractValueHolder* daf_core_abstract_value_holder_construct (GType obje
 static void
 _vala_GValue_free (GValue* self)
 {
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectTrigger.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectTrigger.vala"
 	g_value_unset (self);
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectTrigger.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectTrigger.vala"
 	g_free (self);
 #line 120 "AspectTrigger.c"
 }
@@ -125,17 +125,17 @@ daf_core_aspect_trigger_real_commit (DafCoreIAspectTrigger* base)
 {
 	DafCoreAspectTrigger * self;
 	GValue* _tmp0_ = NULL;
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectTrigger.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectTrigger.vala"
 	self = (DafCoreAspectTrigger*) base;
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectTrigger.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectTrigger.vala"
 	_tmp0_ = g_new0 (GValue, 1);
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectTrigger.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectTrigger.vala"
 	g_value_init (_tmp0_, G_TYPE_BOOLEAN);
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectTrigger.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectTrigger.vala"
 	g_value_set_boolean (_tmp0_, DAF_CORE_ASPECT_TRIGGER_COMMIT);
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectTrigger.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectTrigger.vala"
 	daf_core_abstract_value_holder_set_val ((DafCoreAbstractValueHolder*) self, _tmp0_);
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectTrigger.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectTrigger.vala"
 	__vala_GValue_free0 (_tmp0_);
 #line 141 "AspectTrigger.c"
 }
@@ -146,17 +146,17 @@ daf_core_aspect_trigger_real_discard (DafCoreIAspectTrigger* base)
 {
 	DafCoreAspectTrigger * self;
 	GValue* _tmp0_ = NULL;
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectTrigger.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectTrigger.vala"
 	self = (DafCoreAspectTrigger*) base;
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectTrigger.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectTrigger.vala"
 	_tmp0_ = g_new0 (GValue, 1);
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectTrigger.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectTrigger.vala"
 	g_value_init (_tmp0_, G_TYPE_BOOLEAN);
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectTrigger.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectTrigger.vala"
 	g_value_set_boolean (_tmp0_, DAF_CORE_ASPECT_TRIGGER_DISCARD);
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectTrigger.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectTrigger.vala"
 	daf_core_abstract_value_holder_set_val ((DafCoreAbstractValueHolder*) self, _tmp0_);
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectTrigger.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectTrigger.vala"
 	__vala_GValue_free0 (_tmp0_);
 #line 162 "AspectTrigger.c"
 }
@@ -166,9 +166,9 @@ DafCoreAspectTrigger*
 daf_core_aspect_trigger_construct (GType object_type)
 {
 	DafCoreAspectTrigger * self = NULL;
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectTrigger.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectTrigger.vala"
 	self = (DafCoreAspectTrigger*) daf_core_abstract_value_holder_construct (object_type);
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectTrigger.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectTrigger.vala"
 	return self;
 #line 174 "AspectTrigger.c"
 }
@@ -177,7 +177,7 @@ daf_core_aspect_trigger_construct (GType object_type)
 DafCoreAspectTrigger*
 daf_core_aspect_trigger_new (void)
 {
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectTrigger.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectTrigger.vala"
 	return daf_core_aspect_trigger_construct (DAF_CORE_TYPE_ASPECT_TRIGGER);
 #line 183 "AspectTrigger.c"
 }
@@ -186,7 +186,7 @@ daf_core_aspect_trigger_new (void)
 static void
 daf_core_aspect_trigger_class_init (DafCoreAspectTriggerClass * klass)
 {
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectTrigger.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectTrigger.vala"
 	daf_core_aspect_trigger_parent_class = g_type_class_peek_parent (klass);
 #line 192 "AspectTrigger.c"
 }
@@ -195,11 +195,11 @@ daf_core_aspect_trigger_class_init (DafCoreAspectTriggerClass * klass)
 static void
 daf_core_aspect_trigger_daf_core_iaspect_trigger_interface_init (DafCoreIAspectTriggerIface * iface)
 {
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectTrigger.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectTrigger.vala"
 	daf_core_aspect_trigger_daf_core_iaspect_trigger_parent_iface = g_type_interface_peek_parent (iface);
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectTrigger.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectTrigger.vala"
 	iface->commit = (void (*) (DafCoreIAspectTrigger *)) daf_core_aspect_trigger_real_commit;
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectTrigger.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectTrigger.vala"
 	iface->discard = (void (*) (DafCoreIAspectTrigger *)) daf_core_aspect_trigger_real_discard;
 #line 205 "AspectTrigger.c"
 }

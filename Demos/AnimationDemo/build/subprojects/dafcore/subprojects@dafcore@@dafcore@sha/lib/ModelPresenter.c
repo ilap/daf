@@ -343,11 +343,11 @@ daf_core_model_presenter_construct (GType object_type,
                                     gboolean auto_commit)
 {
 	DafCoreModelPresenter * self = NULL;
-#line 40 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 40 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	g_return_val_if_fail (model != NULL, NULL);
-#line 41 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 41 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	self = (DafCoreModelPresenter*) daf_core_abstract_model_holder_construct (object_type, model, NULL);
-#line 40 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 40 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	return self;
 #line 353 "ModelPresenter.c"
 }
@@ -357,7 +357,7 @@ DafCoreModelPresenter*
 daf_core_model_presenter_new (GObject* model,
                               gboolean auto_commit)
 {
-#line 40 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 40 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	return daf_core_model_presenter_construct (DAF_CORE_TYPE_MODEL_PRESENTER, model, auto_commit);
 #line 363 "ModelPresenter.c"
 }
@@ -368,7 +368,7 @@ _daf_core_abstract_model_holder_on_model_change_g_object_notify (GObject* _sende
                                                                  GParamSpec* pspec,
                                                                  gpointer self)
 {
-#line 46 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 46 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	daf_core_abstract_model_holder_on_model_change ((DafCoreAbstractModelHolder*) self, _sender, pspec);
 #line 374 "ModelPresenter.c"
 }
@@ -383,23 +383,23 @@ daf_core_model_presenter_real_setup_notify (DafCoreAbstractModelHolder* base)
 	gchar* _tmp2_;
 	DafCoreIValueModel* _tmp3_;
 	DafCoreIValueModel* _tmp4_;
-#line 44 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 44 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	self = (DafCoreModelPresenter*) base;
-#line 46 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 46 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	_tmp0_ = daf_core_abstract_model_holder_get_value_model ((DafCoreAbstractModelHolder*) self);
-#line 46 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 46 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	_tmp1_ = _tmp0_;
-#line 46 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 46 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	_tmp2_ = g_strconcat ("notify::", DAF_CORE_IVALUE_MODEL_PROP_NAME, NULL);
-#line 46 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 46 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	g_signal_connect_object ((GObject*) _tmp1_, _tmp2_, (GCallback) _daf_core_abstract_model_holder_on_model_change_g_object_notify, (DafCoreAbstractModelHolder*) self, 0);
-#line 46 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 46 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	_g_free0 (_tmp2_);
-#line 47 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 47 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	_tmp3_ = daf_core_abstract_model_holder_get_value_model ((DafCoreAbstractModelHolder*) self);
-#line 47 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 47 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	_tmp4_ = _tmp3_;
-#line 47 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 47 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	g_object_notify ((GObject*) _tmp4_, DAF_CORE_IVALUE_MODEL_PROP_NAME);
 #line 405 "ModelPresenter.c"
 }
@@ -408,9 +408,9 @@ daf_core_model_presenter_real_setup_notify (DafCoreAbstractModelHolder* base)
 static void
 _vala_GValue_free (GValue* self)
 {
-#line 52 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 52 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	g_value_unset (self);
-#line 52 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 52 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	g_free (self);
 #line 416 "ModelPresenter.c"
 }
@@ -422,21 +422,21 @@ daf_core_model_presenter_real_commit (DafCoreIAspectTrigger* base)
 	DafCoreModelPresenter * self;
 	DafCoreAspectTrigger* _tmp0_;
 	GValue* _tmp1_ = NULL;
-#line 50 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 50 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	self = (DafCoreModelPresenter*) base;
-#line 51 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 51 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	g_debug ("ModelPresenter.vala:51: Commit's called\n");
-#line 52 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 52 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	_tmp0_ = self->priv->trigger;
-#line 52 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 52 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	_tmp1_ = g_new0 (GValue, 1);
-#line 52 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 52 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	g_value_init (_tmp1_, G_TYPE_BOOLEAN);
-#line 52 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 52 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	g_value_set_boolean (_tmp1_, DAF_CORE_ASPECT_TRIGGER_COMMIT);
-#line 52 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 52 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	daf_core_abstract_value_holder_set_val ((DafCoreAbstractValueHolder*) _tmp0_, _tmp1_);
-#line 52 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 52 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	__vala_GValue_free0 (_tmp1_);
 #line 442 "ModelPresenter.c"
 }
@@ -448,21 +448,21 @@ daf_core_model_presenter_real_discard (DafCoreIAspectTrigger* base)
 	DafCoreModelPresenter * self;
 	DafCoreAspectTrigger* _tmp0_;
 	GValue* _tmp1_ = NULL;
-#line 55 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 55 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	self = (DafCoreModelPresenter*) base;
-#line 56 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 56 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	g_debug ("ModelPresenter.vala:56: Discard's called\n");
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	_tmp0_ = self->priv->trigger;
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	_tmp1_ = g_new0 (GValue, 1);
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	g_value_init (_tmp1_, G_TYPE_BOOLEAN);
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	g_value_set_boolean (_tmp1_, DAF_CORE_ASPECT_TRIGGER_DISCARD);
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	daf_core_abstract_value_holder_set_val ((DafCoreAbstractValueHolder*) _tmp0_, _tmp1_);
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	__vala_GValue_free0 (_tmp1_);
 #line 468 "ModelPresenter.c"
 }
@@ -501,7 +501,7 @@ _daf_core_model_presenter_on_dirty_change_g_object_notify (GObject* _sender,
                                                            GParamSpec* pspec,
                                                            gpointer self)
 {
-#line 84 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 84 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	daf_core_model_presenter_on_dirty_change ((DafCoreModelPresenter*) self, _sender, pspec);
 #line 507 "ModelPresenter.c"
 }
@@ -520,30 +520,30 @@ daf_core_model_presenter_real_get_value_model (DafCoreIModelPresenter* base,
 	gchar* _tmp3_;
 	gchar* _tmp4_;
 	DafCoreIValueModel* _tmp5_;
-#line 60 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 60 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	self = (DafCoreModelPresenter*) base;
-#line 60 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 60 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	g_return_val_if_fail (path != NULL, NULL);
-#line 74 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 74 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	_tmp0_ = self->priv->registrar;
-#line 74 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 74 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	_tmp1_ = daf_core_imodel_presenter_get_value_model ((DafCoreIModelPresenter*) _tmp0_, path);
-#line 74 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 74 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	model = _tmp1_;
-#line 75 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 75 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	_tmp2_ = model;
-#line 75 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 75 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	_tmp3_ = bool_to_string (_tmp2_ == NULL);
-#line 75 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 75 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	_tmp4_ = _tmp3_;
-#line 75 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 75 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	g_debug ("ModelPresenter.vala:75: Is Value model null? : %s need to register one" \
 ": %s", _tmp4_, path);
-#line 75 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 75 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	_g_free0 (_tmp4_);
-#line 77 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 77 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	_tmp5_ = model;
-#line 77 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 77 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	if (_tmp5_ == NULL) {
 #line 548 "ModelPresenter.c"
 		DafCoreIValueModel* aspect_adapter = NULL;
@@ -554,43 +554,43 @@ daf_core_model_presenter_real_get_value_model (DafCoreIModelPresenter* base,
 		DafCoreIValueModel* _tmp10_;
 		DafCoreModelRegistrar* _tmp11_;
 		DafCoreIValueModel* _tmp12_;
-#line 79 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 79 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		g_debug ("ModelPresenter.vala:79: Before Wrap aspect: %s", path);
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		_tmp6_ = daf_core_model_presenter_compute_aspect_model (self, path);
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		aspect_adapter = G_TYPE_CHECK_INSTANCE_CAST (_tmp6_, DAF_CORE_TYPE_IVALUE_MODEL, DafCoreIValueModel);
-#line 81 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 81 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		g_debug ("ModelPresenter.vala:81: Wrap aspect: %s\n", path);
-#line 82 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 82 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		_tmp7_ = aspect_adapter;
-#line 82 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 82 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		_tmp8_ = self->priv->trigger;
-#line 82 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 82 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		_tmp9_ = daf_core_buffered_value_holder_new_with_trigger (_tmp7_, (DafCoreIAspectTrigger*) _tmp8_);
-#line 82 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 82 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		_g_object_unref0 (model);
-#line 82 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 82 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		model = (DafCoreIValueModel*) _tmp9_;
-#line 83 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 83 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		g_debug ("ModelPresenter.vala:83: Wrapped aspect: %s", path);
-#line 84 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 84 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		_tmp10_ = model;
-#line 84 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 84 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		g_signal_connect_object ((GObject*) _tmp10_, "notify::dirty", (GCallback) _daf_core_model_presenter_on_dirty_change_g_object_notify, self, 0);
-#line 85 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 85 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		_tmp11_ = self->priv->registrar;
-#line 85 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 85 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		_tmp12_ = model;
-#line 85 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 85 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		daf_core_model_registrar_add_value_model (_tmp11_, path, _tmp12_);
-#line 77 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 77 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		_g_object_unref0 (aspect_adapter);
 #line 589 "ModelPresenter.c"
 	}
-#line 87 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 87 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	result = model;
-#line 87 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 87 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	return result;
 #line 595 "ModelPresenter.c"
 }
@@ -608,37 +608,37 @@ daf_core_model_presenter_on_dirty_change (DafCoreModelPresenter* self,
 	gchar* _tmp3_;
 	DafCoreIValueModel* _tmp4_;
 	GValue* _tmp5_ = NULL;
-#line 91 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 91 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	g_return_if_fail (self != NULL);
-#line 91 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 91 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	g_return_if_fail (source != NULL);
-#line 91 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 91 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	g_return_if_fail (param_spec != NULL);
-#line 92 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 92 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	_tmp0_ = daf_core_buffered_value_holder_get_dirty (G_TYPE_CHECK_INSTANCE_CAST (source, DAF_CORE_TYPE_BUFFERED_VALUE_HOLDER, DafCoreBufferedValueHolder));
-#line 92 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 92 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	_tmp1_ = _tmp0_;
-#line 92 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 92 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	d = _tmp1_;
-#line 93 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 93 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	_tmp2_ = bool_to_string (d);
-#line 93 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 93 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	_tmp3_ = _tmp2_;
-#line 93 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 93 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	g_debug ("ModelPresenter.vala:93: on_dirty_change: %s\n", _tmp3_);
-#line 93 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 93 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	_g_free0 (_tmp3_);
-#line 94 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 94 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	_tmp4_ = self->priv->_dirty;
-#line 94 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 94 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	_tmp5_ = g_new0 (GValue, 1);
-#line 94 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 94 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	g_value_init (_tmp5_, G_TYPE_BOOLEAN);
-#line 94 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 94 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	g_value_set_boolean (_tmp5_, d);
-#line 94 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 94 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	daf_core_ivalue_model_set_val (_tmp4_, _tmp5_);
-#line 94 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 94 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	__vala_GValue_free0 (_tmp5_);
 #line 643 "ModelPresenter.c"
 }
@@ -647,7 +647,7 @@ daf_core_model_presenter_on_dirty_change (DafCoreModelPresenter* self,
 static gpointer
 _g_object_ref0 (gpointer self)
 {
-#line 109 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 109 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	return self ? g_object_ref (self) : NULL;
 #line 652 "ModelPresenter.c"
 }
@@ -663,33 +663,33 @@ daf_core_model_presenter_real_on_model_change (DafCoreAbstractModelHolder* base,
 	DafCoreIValueModel* _tmp1_;
 	DafCoreIValueModel* _tmp2_;
 	const gchar* _tmp30_;
-#line 100 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 100 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	self = (DafCoreModelPresenter*) base;
-#line 100 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 100 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	g_return_if_fail (sender != NULL);
-#line 100 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 100 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	g_return_if_fail (param_spec != NULL);
-#line 101 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 101 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	g_debug ("ModelPresenter.vala:101: On Model change");
-#line 102 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 102 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	_tmp0_ = g_type_name (G_TYPE_FROM_INSTANCE (sender));
-#line 102 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 102 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	g_debug ("ModelPresenter.vala:102: print OBJECT %s\n", _tmp0_);
-#line 104 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 104 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	_tmp1_ = daf_core_abstract_model_holder_get_value_model ((DafCoreAbstractModelHolder*) self);
-#line 104 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 104 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	_tmp2_ = _tmp1_;
-#line 104 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 104 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	if (sender == _tmp2_) {
 #line 684 "ModelPresenter.c"
 		GeeHashMap* map = NULL;
 		DafCoreModelRegistrar* _tmp3_;
 		GeeHashMap* _tmp4_;
-#line 105 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 105 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		_tmp3_ = self->priv->registrar;
-#line 105 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 105 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		_tmp4_ = daf_core_model_registrar_get_all_models (_tmp3_);
-#line 105 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 105 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		map = _tmp4_;
 #line 694 "ModelPresenter.c"
 		{
@@ -700,23 +700,23 @@ daf_core_model_presenter_real_on_model_change (DafCoreAbstractModelHolder* base,
 			GeeSet* _tmp8_;
 			GeeIterator* _tmp9_;
 			GeeIterator* _tmp10_;
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 			_tmp5_ = map;
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 			_tmp6_ = gee_abstract_map_get_entries ((GeeAbstractMap*) _tmp5_);
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 			_tmp7_ = _tmp6_;
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 			_tmp8_ = _tmp7_;
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 			_tmp9_ = gee_iterable_iterator ((GeeIterable*) _tmp8_);
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 			_tmp10_ = _tmp9_;
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 			_g_object_unref0 (_tmp8_);
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 			_entry_it = _tmp10_;
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 			while (TRUE) {
 #line 721 "ModelPresenter.c"
 				GeeIterator* _tmp11_;
@@ -739,95 +739,95 @@ daf_core_model_presenter_real_on_model_change (DafCoreAbstractModelHolder* base,
 				DafCoreIValueModel* _tmp24_;
 				GValue* _tmp25_;
 				GValue* _tmp26_;
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 				_tmp11_ = _entry_it;
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 				if (!gee_iterator_next (_tmp11_)) {
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 					break;
 #line 748 "ModelPresenter.c"
 				}
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 				_tmp12_ = _entry_it;
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 				_tmp13_ = gee_iterator_get (_tmp12_);
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 				entry = (GeeMapEntry*) _tmp13_;
-#line 109 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 109 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 				_tmp14_ = entry;
-#line 109 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 109 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 				_tmp15_ = gee_map_entry_get_value (_tmp14_);
-#line 109 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 109 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 				_tmp16_ = _tmp15_;
-#line 109 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 109 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 				_tmp17_ = (DafCoreIValueModel*) _tmp16_;
-#line 109 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 109 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 				_tmp18_ = _g_object_ref0 (G_TYPE_CHECK_INSTANCE_TYPE (_tmp17_, DAF_CORE_TYPE_BUFFERED_VALUE_HOLDER) ? ((DafCoreBufferedValueHolder*) _tmp17_) : NULL);
-#line 109 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 109 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 				ivm = _tmp18_;
-#line 119 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 119 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 				_tmp19_ = ivm;
-#line 119 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 119 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 				_tmp20_ = daf_core_buffered_value_holder_get_subject (_tmp19_);
-#line 119 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 119 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 				_tmp21_ = _tmp20_;
-#line 119 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 119 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 				_tmp22_ = _g_object_ref0 (G_TYPE_CHECK_INSTANCE_TYPE (_tmp21_, DAF_CORE_TYPE_IMODEL_HOLDER) ? ((DafCoreIModelHolder*) _tmp21_) : NULL);
-#line 119 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 119 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 				ima = _tmp22_;
-#line 122 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 122 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 				_tmp23_ = daf_core_abstract_model_holder_get_value_model ((DafCoreAbstractModelHolder*) self);
-#line 122 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 122 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 				_tmp24_ = _tmp23_;
-#line 122 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 122 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 				_tmp25_ = daf_core_ivalue_model_get_val (_tmp24_);
-#line 122 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 122 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 				object = _tmp25_;
-#line 123 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 123 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 				_tmp26_ = object;
-#line 123 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 123 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 				if (_tmp26_ != NULL) {
 #line 790 "ModelPresenter.c"
 					DafCoreIModelHolder* _tmp27_;
 					GValue* _tmp28_;
-#line 124 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 124 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 					_tmp27_ = ima;
-#line 124 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 124 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 					_tmp28_ = object;
-#line 124 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 124 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 					daf_core_imodel_holder_set_model (_tmp27_, g_value_get_object (_tmp28_));
 #line 799 "ModelPresenter.c"
 				} else {
 					DafCoreIModelHolder* _tmp29_;
-#line 126 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 126 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 					_tmp29_ = ima;
-#line 126 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 126 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 					daf_core_imodel_holder_set_model (_tmp29_, NULL);
 #line 806 "ModelPresenter.c"
 				}
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 				__vala_GValue_free0 (object);
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 				_g_object_unref0 (ima);
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 				_g_object_unref0 (ivm);
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 				_g_object_unref0 (entry);
 #line 816 "ModelPresenter.c"
 			}
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 			_g_object_unref0 (_entry_it);
 #line 820 "ModelPresenter.c"
 		}
-#line 129 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 129 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		daf_core_iaspect_trigger_discard ((DafCoreIAspectTrigger*) self);
-#line 104 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 104 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		_g_object_unref0 (map);
 #line 826 "ModelPresenter.c"
 	}
-#line 136 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 136 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	_tmp30_ = param_spec->name;
-#line 136 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 136 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	g_debug ("ModelPresenter.vala:136: Channel has.changed....%s", _tmp30_);
 #line 832 "ModelPresenter.c"
 }
@@ -1023,49 +1023,49 @@ daf_core_model_presenter_compute_path (DafCoreModelPresenter* self,
 	DafCoreIValueModel* _tmp0_;
 	DafCoreIValueModel* _tmp1_;
 	GValue* _tmp2_;
-#line 146 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 146 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 146 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 146 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	g_return_val_if_fail (*path != NULL, NULL);
-#line 148 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 148 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	g_debug ("ModelPresenter.vala:148: BBBBBBB");
-#line 151 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 151 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	_tmp0_ = daf_core_abstract_model_holder_get_value_model ((DafCoreAbstractModelHolder*) self);
-#line 151 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 151 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	_tmp1_ = _tmp0_;
-#line 151 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 151 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	_tmp2_ = daf_core_ivalue_model_get_val (_tmp1_);
-#line 151 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 151 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	a = _tmp2_;
-#line 152 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 152 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	if (a != NULL) {
 #line 1042 "ModelPresenter.c"
 		DafCoreIValueModel* _tmp3_;
 		DafCoreIValueModel* _tmp4_;
 		GValue* _tmp5_;
-#line 153 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 153 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		_tmp3_ = daf_core_abstract_model_holder_get_value_model ((DafCoreAbstractModelHolder*) self);
-#line 153 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 153 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		_tmp4_ = _tmp3_;
-#line 153 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 153 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		_tmp5_ = daf_core_ivalue_model_get_val (_tmp4_);
-#line 153 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 153 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		_g_object_unref0 (object);
-#line 153 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 153 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		object = g_value_get_object (_tmp5_);
 #line 1056 "ModelPresenter.c"
 	} else {
-#line 155 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 155 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		result = NULL;
-#line 155 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 155 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		__vala_GValue_free0 (a);
-#line 155 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 155 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		_g_object_unref0 (object);
-#line 155 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 155 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		return result;
 #line 1066 "ModelPresenter.c"
 	}
-#line 160 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 160 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	if (string_contains (*path, ".")) {
 #line 1070 "ModelPresenter.c"
 		gint last_dot = 0;
@@ -1080,51 +1080,51 @@ daf_core_model_presenter_compute_path (DafCoreModelPresenter* self,
 		const gchar* _tmp12_;
 		GObject* _tmp13_;
 		GObject* _tmp14_;
-#line 162 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 162 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		last_dot = string_last_index_of_char (*path, (gunichar) '.', 0);
-#line 163 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 163 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		_tmp6_ = last_dot;
-#line 163 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 163 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		_tmp7_ = string_substring (*path, (glong) 0, (glong) _tmp6_);
-#line 163 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 163 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		obj_name = _tmp7_;
-#line 165 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 165 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		_tmp8_ = last_dot;
-#line 165 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 165 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		_tmp9_ = string_substring (*path, (glong) (_tmp8_ + 1), (glong) -1);
-#line 165 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 165 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		_g_free0 (*path);
-#line 165 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 165 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		*path = _tmp9_;
-#line 167 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 167 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		g_value_init (&_tmp10_, G_TYPE_OBJECT);
-#line 167 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 167 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		obj_value = _tmp10_;
-#line 169 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 169 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		_tmp11_ = object;
-#line 169 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 169 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		_tmp12_ = obj_name;
-#line 169 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 169 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		g_object_get_property (_tmp11_, _tmp12_, &obj_value);
-#line 171 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 171 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		_tmp13_ = g_value_get_object (&obj_value);
-#line 171 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 171 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		_tmp14_ = _g_object_ref0 (_tmp13_);
-#line 171 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 171 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		_g_object_unref0 (object);
-#line 171 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 171 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		object = _tmp14_;
-#line 160 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 160 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		G_IS_VALUE (&obj_value) ? (g_value_unset (&obj_value), NULL) : NULL;
-#line 160 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 160 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		_g_free0 (obj_name);
 #line 1121 "ModelPresenter.c"
 	}
-#line 174 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 174 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	result = object;
-#line 174 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 174 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	__vala_GValue_free0 (a);
-#line 174 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 174 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	return result;
 #line 1129 "ModelPresenter.c"
 }
@@ -1142,31 +1142,31 @@ daf_core_model_presenter_compute_aspect_model (DafCoreModelPresenter* self,
 	DafCoreAspectAdapter* aspect_adapter = NULL;
 	const gchar* _tmp2_;
 	DafCoreAspectAdapter* _tmp3_;
-#line 177 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 177 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 177 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 177 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	g_return_val_if_fail (path != NULL, NULL);
-#line 178 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 178 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	_tmp0_ = g_strdup (path);
-#line 178 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 178 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	property_path = _tmp0_;
-#line 179 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 179 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	_tmp1_ = daf_core_model_presenter_compute_path (self, &property_path);
-#line 179 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 179 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	object = _tmp1_;
-#line 180 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 180 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	_tmp2_ = property_path;
-#line 180 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 180 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	_tmp3_ = daf_core_aspect_adapter_new (object, _tmp2_, FALSE);
-#line 180 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 180 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	aspect_adapter = _tmp3_;
-#line 182 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 182 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	result = (DafCoreIValueModel*) aspect_adapter;
-#line 182 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 182 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	_g_object_unref0 (object);
-#line 182 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 182 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	_g_free0 (property_path);
-#line 182 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 182 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	return result;
 #line 1171 "ModelPresenter.c"
 }
@@ -1177,13 +1177,13 @@ daf_core_model_presenter_get_dirty (DafCoreModelPresenter* self)
 {
 	DafCoreIValueModel* result;
 	DafCoreIValueModel* _tmp0_;
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	_tmp0_ = self->priv->_dirty;
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	result = _tmp0_;
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	return result;
 #line 1188 "ModelPresenter.c"
 }
@@ -1193,19 +1193,19 @@ void
 daf_core_model_presenter_set_dirty (DafCoreModelPresenter* self,
                                     DafCoreIValueModel* value)
 {
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	g_return_if_fail (self != NULL);
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	if (daf_core_model_presenter_get_dirty (self) != value) {
 #line 1200 "ModelPresenter.c"
 		DafCoreIValueModel* _tmp0_;
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		_tmp0_ = _g_object_ref0 (value);
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		_g_object_unref0 (self->priv->_dirty);
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		self->priv->_dirty = _tmp0_;
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		g_object_notify_by_pspec ((GObject *) self, daf_core_model_presenter_properties[DAF_CORE_MODEL_PRESENTER_DIRTY_PROPERTY]);
 #line 1210 "ModelPresenter.c"
 	}
@@ -1217,13 +1217,13 @@ daf_core_model_presenter_get_auto_commit (DafCoreModelPresenter* self)
 {
 	DafCoreIValueModel* result;
 	DafCoreIValueModel* _tmp0_;
-#line 30 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 30 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 30 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 30 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	_tmp0_ = self->priv->_auto_commit;
-#line 30 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 30 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	result = _tmp0_;
-#line 30 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 30 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	return result;
 #line 1228 "ModelPresenter.c"
 }
@@ -1233,19 +1233,19 @@ void
 daf_core_model_presenter_set_auto_commit (DafCoreModelPresenter* self,
                                           DafCoreIValueModel* value)
 {
-#line 30 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 30 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	g_return_if_fail (self != NULL);
-#line 30 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 30 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	if (daf_core_model_presenter_get_auto_commit (self) != value) {
 #line 1240 "ModelPresenter.c"
 		DafCoreIValueModel* _tmp0_;
-#line 30 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 30 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		_tmp0_ = _g_object_ref0 (value);
-#line 30 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 30 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		_g_object_unref0 (self->priv->_auto_commit);
-#line 30 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 30 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		self->priv->_auto_commit = _tmp0_;
-#line 30 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 30 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		g_object_notify_by_pspec ((GObject *) self, daf_core_model_presenter_properties[DAF_CORE_MODEL_PRESENTER_AUTO_COMMIT_PROPERTY]);
 #line 1250 "ModelPresenter.c"
 	}
@@ -1264,33 +1264,33 @@ daf_core_model_presenter_constructor (GType type,
 	DafCoreValueHolder* _tmp1_;
 	DafCoreModelRegistrar* _tmp2_;
 	DafCoreAspectTrigger* _tmp3_;
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	parent_class = G_OBJECT_CLASS (daf_core_model_presenter_parent_class);
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	obj = parent_class->constructor (type, n_construct_properties, construct_properties);
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	self = G_TYPE_CHECK_INSTANCE_CAST (obj, DAF_CORE_TYPE_MODEL_PRESENTER, DafCoreModelPresenter);
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	_tmp0_ = daf_core_value_holder_new (NULL);
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	_tmp1_ = _tmp0_;
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	daf_core_model_presenter_set_dirty (self, (DafCoreIValueModel*) _tmp1_);
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	_g_object_unref0 (_tmp1_);
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	_tmp2_ = daf_core_model_registrar_new ();
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	_g_object_unref0 (self->priv->registrar);
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	self->priv->registrar = _tmp2_;
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	_tmp3_ = daf_core_aspect_trigger_new ();
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	_g_object_unref0 (self->priv->trigger);
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	self->priv->trigger = _tmp3_;
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	return obj;
 #line 1295 "ModelPresenter.c"
 }
@@ -1299,25 +1299,25 @@ daf_core_model_presenter_constructor (GType type,
 static void
 daf_core_model_presenter_class_init (DafCoreModelPresenterClass * klass)
 {
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	daf_core_model_presenter_parent_class = g_type_class_peek_parent (klass);
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	g_type_class_add_private (klass, sizeof (DafCoreModelPresenterPrivate));
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	((DafCoreAbstractModelHolderClass *) klass)->setup_notify = (void (*) (DafCoreAbstractModelHolder *)) daf_core_model_presenter_real_setup_notify;
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	((DafCoreAbstractModelHolderClass *) klass)->on_model_change = (void (*) (DafCoreAbstractModelHolder *, GObject*, GParamSpec*)) daf_core_model_presenter_real_on_model_change;
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	G_OBJECT_CLASS (klass)->get_property = _vala_daf_core_model_presenter_get_property;
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	G_OBJECT_CLASS (klass)->set_property = _vala_daf_core_model_presenter_set_property;
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	G_OBJECT_CLASS (klass)->constructor = daf_core_model_presenter_constructor;
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	G_OBJECT_CLASS (klass)->finalize = daf_core_model_presenter_finalize;
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	g_object_class_install_property (G_OBJECT_CLASS (klass), DAF_CORE_MODEL_PRESENTER_DIRTY_PROPERTY, daf_core_model_presenter_properties[DAF_CORE_MODEL_PRESENTER_DIRTY_PROPERTY] = g_param_spec_object ("dirty", "dirty", "dirty", DAF_CORE_TYPE_IVALUE_MODEL, G_PARAM_STATIC_STRINGS | G_PARAM_READABLE | G_PARAM_WRITABLE | G_PARAM_CONSTRUCT));
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	g_object_class_install_property (G_OBJECT_CLASS (klass), DAF_CORE_MODEL_PRESENTER_AUTO_COMMIT_PROPERTY, daf_core_model_presenter_properties[DAF_CORE_MODEL_PRESENTER_AUTO_COMMIT_PROPERTY] = g_param_spec_object ("auto-commit", "auto-commit", "auto-commit", DAF_CORE_TYPE_IVALUE_MODEL, G_PARAM_STATIC_STRINGS | G_PARAM_READABLE | G_PARAM_WRITABLE | G_PARAM_CONSTRUCT));
 #line 1322 "ModelPresenter.c"
 }
@@ -1326,9 +1326,9 @@ daf_core_model_presenter_class_init (DafCoreModelPresenterClass * klass)
 static void
 daf_core_model_presenter_daf_core_imodel_presenter_interface_init (DafCoreIModelPresenterIface * iface)
 {
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	daf_core_model_presenter_daf_core_imodel_presenter_parent_iface = g_type_interface_peek_parent (iface);
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	iface->get_value_model = (DafCoreIValueModel* (*) (DafCoreIModelPresenter *, const gchar*)) daf_core_model_presenter_real_get_value_model;
 #line 1333 "ModelPresenter.c"
 }
@@ -1337,11 +1337,11 @@ daf_core_model_presenter_daf_core_imodel_presenter_interface_init (DafCoreIModel
 static void
 daf_core_model_presenter_daf_core_iaspect_trigger_interface_init (DafCoreIAspectTriggerIface * iface)
 {
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	daf_core_model_presenter_daf_core_iaspect_trigger_parent_iface = g_type_interface_peek_parent (iface);
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	iface->commit = (void (*) (DafCoreIAspectTrigger *)) daf_core_model_presenter_real_commit;
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	iface->discard = (void (*) (DafCoreIAspectTrigger *)) daf_core_model_presenter_real_discard;
 #line 1346 "ModelPresenter.c"
 }
@@ -1350,7 +1350,7 @@ daf_core_model_presenter_daf_core_iaspect_trigger_interface_init (DafCoreIAspect
 static void
 daf_core_model_presenter_instance_init (DafCoreModelPresenter * self)
 {
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	self->priv = DAF_CORE_MODEL_PRESENTER_GET_PRIVATE (self);
 #line 1355 "ModelPresenter.c"
 }
@@ -1360,17 +1360,17 @@ static void
 daf_core_model_presenter_finalize (GObject * obj)
 {
 	DafCoreModelPresenter * self;
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	self = G_TYPE_CHECK_INSTANCE_CAST (obj, DAF_CORE_TYPE_MODEL_PRESENTER, DafCoreModelPresenter);
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	_g_object_unref0 (self->priv->registrar);
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	_g_object_unref0 (self->priv->trigger);
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	_g_object_unref0 (self->priv->_dirty);
-#line 30 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 30 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	_g_object_unref0 (self->priv->_auto_commit);
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	G_OBJECT_CLASS (daf_core_model_presenter_parent_class)->finalize (obj);
 #line 1375 "ModelPresenter.c"
 }
@@ -1402,25 +1402,25 @@ _vala_daf_core_model_presenter_get_property (GObject * object,
 {
 	DafCoreModelPresenter * self;
 	self = G_TYPE_CHECK_INSTANCE_CAST (object, DAF_CORE_TYPE_MODEL_PRESENTER, DafCoreModelPresenter);
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	switch (property_id) {
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		case DAF_CORE_MODEL_PRESENTER_DIRTY_PROPERTY:
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		g_value_set_object (value, daf_core_model_presenter_get_dirty (self));
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		break;
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		case DAF_CORE_MODEL_PRESENTER_AUTO_COMMIT_PROPERTY:
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		g_value_set_object (value, daf_core_model_presenter_get_auto_commit (self));
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		break;
 #line 1419 "ModelPresenter.c"
 		default:
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		G_OBJECT_WARN_INVALID_PROPERTY_ID (object, property_id, pspec);
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		break;
 #line 1425 "ModelPresenter.c"
 	}
@@ -1435,25 +1435,25 @@ _vala_daf_core_model_presenter_set_property (GObject * object,
 {
 	DafCoreModelPresenter * self;
 	self = G_TYPE_CHECK_INSTANCE_CAST (object, DAF_CORE_TYPE_MODEL_PRESENTER, DafCoreModelPresenter);
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 	switch (property_id) {
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		case DAF_CORE_MODEL_PRESENTER_DIRTY_PROPERTY:
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		daf_core_model_presenter_set_dirty (self, g_value_get_object (value));
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		break;
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		case DAF_CORE_MODEL_PRESENTER_AUTO_COMMIT_PROPERTY:
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		daf_core_model_presenter_set_auto_commit (self, g_value_get_object (value));
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		break;
 #line 1452 "ModelPresenter.c"
 		default:
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		G_OBJECT_WARN_INVALID_PROPERTY_ID (object, property_id, pspec);
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/ModelPresenter.vala"
 		break;
 #line 1458 "ModelPresenter.c"
 	}

@@ -147,7 +147,7 @@ static void _vala_daf_ui_animation_animatable_adapter_set_property (GObject * ob
 static gpointer
 _g_object_ref0 (gpointer self)
 {
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	return self ? g_object_ref (self) : NULL;
 #line 153 "AnimatableAdapter.c"
 }
@@ -156,9 +156,9 @@ _g_object_ref0 (gpointer self)
 static Block1Data*
 block1_data_ref (Block1Data* _data1_)
 {
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	g_atomic_int_inc (&_data1_->_ref_count_);
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	return _data1_;
 #line 164 "AnimatableAdapter.c"
 }
@@ -169,17 +169,17 @@ block1_data_unref (void * _userdata_)
 {
 	Block1Data* _data1_;
 	_data1_ = (Block1Data*) _userdata_;
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	if (g_atomic_int_dec_and_test (&_data1_->_ref_count_)) {
 #line 175 "AnimatableAdapter.c"
 		DafUIAnimationAnimatableAdapter* self;
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		self = _data1_->self;
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		_g_object_unref0 (_data1_->child);
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		_g_object_unref0 (self);
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		g_slice_free (Block1Data, _data1_);
 #line 185 "AnimatableAdapter.c"
 	}
@@ -191,28 +191,28 @@ __lambda13_ (Block1Data* _data1_)
 {
 	DafUIAnimationAnimatableAdapter* self;
 	gboolean _tmp0_ = FALSE;
-#line 65 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 65 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	self = _data1_->self;
-#line 66 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 66 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	if (_data1_->child != NULL) {
 #line 199 "AnimatableAdapter.c"
 		gboolean _tmp1_;
 		gboolean _tmp2_;
-#line 66 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 66 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		_tmp1_ = gtk_widget_get_visible (_data1_->child);
-#line 66 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 66 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		_tmp2_ = _tmp1_;
-#line 66 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 66 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		_tmp0_ = _tmp2_;
 #line 208 "AnimatableAdapter.c"
 	} else {
-#line 66 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 66 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		_tmp0_ = FALSE;
 #line 212 "AnimatableAdapter.c"
 	}
-#line 66 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 66 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	if (_tmp0_) {
-#line 67 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 67 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		gtk_widget_queue_draw (_data1_->child);
 #line 218 "AnimatableAdapter.c"
 	}
@@ -224,7 +224,7 @@ ___lambda13__g_object_notify (GObject* _sender,
                               GParamSpec* pspec,
                               gpointer self)
 {
-#line 65 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 65 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	__lambda13_ (self);
 #line 230 "AnimatableAdapter.c"
 }
@@ -240,43 +240,43 @@ daf_ui_animation_animatable_adapter_construct (GType object_type,
 	GtkWidget* _tmp1_;
 	GdkWindow* _tmp2_;
 	GtkWidget* _tmp3_;
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	g_return_val_if_fail (child != NULL, NULL);
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_data1_ = g_slice_new0 (Block1Data);
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_data1_->_ref_count_ = 1;
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp0_ = _g_object_ref0 (child);
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_g_object_unref0 (_data1_->child);
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_data1_->child = _tmp0_;
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	self = (DafUIAnimationAnimatableAdapter*) g_object_new (object_type, NULL);
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_data1_->self = g_object_ref (self);
-#line 59 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 59 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	gtk_widget_set_has_window ((GtkWidget*) self, TRUE);
-#line 61 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 61 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	daf_ui_animation_animatable_adapter_set_child (self, _data1_->child);
-#line 62 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 62 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp1_ = self->priv->_child;
-#line 62 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 62 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp2_ = self->priv->off_win;
-#line 62 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 62 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	gtk_widget_set_parent_window (_tmp1_, _tmp2_);
-#line 63 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 63 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp3_ = self->priv->_child;
-#line 63 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 63 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	gtk_widget_set_parent (_tmp3_, (GtkWidget*) ((GtkContainer*) self));
-#line 65 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 65 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	g_signal_connect_data ((GObject*) self, "notify", (GCallback) ___lambda13__g_object_notify, block1_data_ref (_data1_), (GClosureNotify) block1_data_unref, 0);
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	block1_data_unref (_data1_);
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_data1_ = NULL;
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	return self;
 #line 282 "AnimatableAdapter.c"
 }
@@ -285,7 +285,7 @@ daf_ui_animation_animatable_adapter_construct (GType object_type,
 DafUIAnimationAnimatableAdapter*
 daf_ui_animation_animatable_adapter_new (GtkWidget* child)
 {
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	return daf_ui_animation_animatable_adapter_construct (DAF_UI_ANIMATION_TYPE_ANIMATABLE_ADAPTER, child);
 #line 291 "AnimatableAdapter.c"
 }
@@ -298,13 +298,13 @@ daf_ui_animation_animatable_adapter_on_pick_embedded_child (DafUIAnimationAnimat
 {
 	GdkWindow* result = NULL;
 	GdkWindow* _tmp0_;
-#line 72 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 72 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 73 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 73 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp0_ = self->priv->off_win;
-#line 73 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 73 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	result = _tmp0_;
-#line 73 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 73 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	return result;
 #line 310 "AnimatableAdapter.c"
 }
@@ -313,7 +313,7 @@ daf_ui_animation_animatable_adapter_on_pick_embedded_child (DafUIAnimationAnimat
 static gpointer
 _cairo_surface_reference0 (gpointer self)
 {
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	return self ? cairo_surface_reference (self) : NULL;
 #line 319 "AnimatableAdapter.c"
 }
@@ -329,33 +329,33 @@ daf_ui_animation_animatable_adapter_real_draw (GtkWidget* base,
 	GdkWindow* _tmp1_;
 	GtkAllocation alloc = {0};
 	GtkWidget* _tmp17_;
-#line 76 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 76 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	self = (DafUIAnimationAnimatableAdapter*) base;
-#line 76 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 76 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	g_return_val_if_fail (cr != NULL, FALSE);
-#line 78 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 78 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp1_ = gtk_widget_get_window ((GtkWidget*) self);
-#line 78 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 78 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	if (gtk_cairo_should_draw_window (cr, _tmp1_)) {
 #line 341 "AnimatableAdapter.c"
 		GtkWidget* _tmp2_;
 		gboolean _tmp3_;
 		gboolean _tmp4_;
-#line 78 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 78 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		_tmp2_ = self->priv->_child;
-#line 78 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 78 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		_tmp3_ = gtk_widget_get_visible (_tmp2_);
-#line 78 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 78 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		_tmp4_ = _tmp3_;
-#line 78 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 78 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		_tmp0_ = _tmp4_;
 #line 353 "AnimatableAdapter.c"
 	} else {
-#line 78 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 78 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		_tmp0_ = FALSE;
 #line 357 "AnimatableAdapter.c"
 	}
-#line 78 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 78 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	if (_tmp0_) {
 #line 361 "AnimatableAdapter.c"
 		cairo_surface_t* surface = NULL;
@@ -367,89 +367,89 @@ daf_ui_animation_animatable_adapter_real_draw (GtkWidget* base,
 		cairo_surface_t* _tmp10_;
 		gdouble _tmp11_;
 		gdouble _tmp12_;
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		_tmp5_ = self->priv->off_win;
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		_tmp6_ = gdk_offscreen_window_get_surface (_tmp5_);
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		_tmp7_ = _cairo_surface_reference0 (_tmp6_);
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		surface = _tmp7_;
-#line 81 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 81 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		_tmp8_ = self->priv->_offset_x;
-#line 81 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 81 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		_tmp9_ = self->priv->_offset_y;
-#line 81 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 81 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		cairo_translate (cr, (gdouble) _tmp8_, (gdouble) _tmp9_);
-#line 82 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 82 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		_tmp10_ = surface;
-#line 82 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 82 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		cairo_set_source_surface (cr, _tmp10_, (gdouble) 0, (gdouble) 0);
-#line 83 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 83 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		_tmp11_ = daf_ui_animation_animatable_adapter_get_opacity (self);
-#line 83 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 83 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		_tmp12_ = _tmp11_;
-#line 83 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 83 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		if (_tmp12_ != ((gdouble) 1.f)) {
 #line 395 "AnimatableAdapter.c"
 			gdouble _tmp13_;
 			gdouble _tmp14_;
-#line 84 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 84 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 			_tmp13_ = daf_ui_animation_animatable_adapter_get_opacity (self);
-#line 84 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 84 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 			_tmp14_ = _tmp13_;
-#line 84 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 84 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 			cairo_paint_with_alpha (cr, _tmp14_);
 #line 404 "AnimatableAdapter.c"
 		} else {
-#line 86 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 86 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 			cairo_paint (cr);
 #line 408 "AnimatableAdapter.c"
 		}
-#line 78 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 78 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		_cairo_surface_destroy0 (surface);
 #line 412 "AnimatableAdapter.c"
 	} else {
 		GdkWindow* _tmp15_;
-#line 88 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 88 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		_tmp15_ = self->priv->off_win;
-#line 88 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 88 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		if (gtk_cairo_should_draw_window (cr, _tmp15_)) {
 #line 419 "AnimatableAdapter.c"
 			GtkWidget* _tmp16_;
-#line 89 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 89 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 			_tmp16_ = self->priv->_child;
-#line 89 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 89 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 			gtk_container_propagate_draw ((GtkContainer*) self, _tmp16_, cr);
 #line 425 "AnimatableAdapter.c"
 		}
 	}
-#line 94 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 94 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp17_ = self->priv->_child;
-#line 94 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 94 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	if (_tmp17_ != NULL) {
 #line 432 "AnimatableAdapter.c"
 		GtkWidget* _tmp18_;
 		GtkAllocation _tmp19_ = {0};
 		GtkWidget* _tmp20_;
 		GtkAllocation _tmp21_;
-#line 95 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 95 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		_tmp18_ = self->priv->_child;
-#line 95 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 95 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		gtk_widget_get_allocation (_tmp18_, &_tmp19_);
-#line 95 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 95 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		alloc = _tmp19_;
-#line 96 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 96 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		_tmp20_ = self->priv->_child;
-#line 96 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 96 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		_tmp21_ = alloc;
-#line 96 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 96 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		daf_ui_animation_animatable_adapter_print_alloc (self, _tmp20_, "Child", &_tmp21_);
 #line 449 "AnimatableAdapter.c"
 	}
-#line 98 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 98 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	result = TRUE;
-#line 98 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 98 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	return result;
 #line 455 "AnimatableAdapter.c"
 }
@@ -460,11 +460,11 @@ daf_ui_animation_animatable_adapter_real_add (GtkContainer* base,
                                               GtkWidget* widget)
 {
 	DafUIAnimationAnimatableAdapter * self;
-#line 101 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 101 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	self = (DafUIAnimationAnimatableAdapter*) base;
-#line 101 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 101 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	g_return_if_fail (widget != NULL);
-#line 102 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 102 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	g_error ("AnimatableAdapter.vala:102: This container widget cannot have more tha" \
 "n one child.");
 #line 470 "AnimatableAdapter.c"
@@ -476,11 +476,11 @@ daf_ui_animation_animatable_adapter_real_remove (GtkContainer* base,
                                                  GtkWidget* widget)
 {
 	DafUIAnimationAnimatableAdapter * self;
-#line 105 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 105 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	self = (DafUIAnimationAnimatableAdapter*) base;
-#line 105 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 105 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	g_return_if_fail (widget != NULL);
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	return;
 #line 485 "AnimatableAdapter.c"
 }
@@ -496,35 +496,35 @@ daf_ui_animation_animatable_adapter_real_damage_event (GtkWidget* base,
 	GdkWindow* _tmp0_;
 	GdkWindow* _tmp1_;
 	GdkWindow* _tmp2_;
-#line 110 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 110 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	self = (DafUIAnimationAnimatableAdapter*) base;
-#line 110 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 110 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	g_return_val_if_fail (expose != NULL, FALSE);
-#line 113 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 113 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp0_ = gtk_widget_get_window ((GtkWidget*) self);
-#line 113 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 113 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp1_ = _g_object_ref0 (_tmp0_);
-#line 113 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 113 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_g_object_unref0 (window);
-#line 113 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 113 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	window = _tmp1_;
-#line 113 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 113 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp2_ = window;
-#line 113 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 113 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	if (_tmp2_ != NULL) {
 #line 515 "AnimatableAdapter.c"
 		GdkWindow* _tmp3_;
-#line 114 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 114 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		_tmp3_ = window;
-#line 114 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 114 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		gdk_window_invalidate_rect (_tmp3_, NULL, FALSE);
 #line 521 "AnimatableAdapter.c"
 	}
-#line 116 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 116 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	result = TRUE;
-#line 116 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 116 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_g_object_unref0 (window);
-#line 116 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 116 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	return result;
 #line 529 "AnimatableAdapter.c"
 }
@@ -538,17 +538,17 @@ daf_ui_animation_animatable_adapter_real_forall_internal (GtkContainer* base,
 {
 	DafUIAnimationAnimatableAdapter * self;
 	GtkWidget* _tmp0_;
-#line 119 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 119 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	self = (DafUIAnimationAnimatableAdapter*) base;
-#line 120 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 120 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp0_ = self->priv->_child;
-#line 120 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 120 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	if (_tmp0_ != NULL) {
 #line 547 "AnimatableAdapter.c"
 		GtkWidget* _tmp1_;
-#line 121 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 121 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		_tmp1_ = self->priv->_child;
-#line 121 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 121 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		callback (_tmp1_, callback_target);
 #line 553 "AnimatableAdapter.c"
 	}
@@ -563,7 +563,7 @@ _daf_ui_animation_animatable_adapter_on_pick_embedded_child_gdk_window_pick_embe
 {
 	GdkWindow* result;
 	result = daf_ui_animation_animatable_adapter_on_pick_embedded_child ((DafUIAnimationAnimatableAdapter*) self, x, y);
-#line 154 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 154 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	return result;
 #line 568 "AnimatableAdapter.c"
 }
@@ -577,7 +577,7 @@ _daf_ui_animation_animatable_adapter_on_embedder_event_gdk_window_to_embedder (G
                                                                                gdouble* embedder_y,
                                                                                gpointer self)
 {
-#line 174 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 174 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	daf_ui_animation_animatable_adapter_on_embedder_event ((DafUIAnimationAnimatableAdapter*) self, offscreen_x, offscreen_y, embedder_x, embedder_y);
 #line 582 "AnimatableAdapter.c"
 }
@@ -591,7 +591,7 @@ _daf_ui_animation_animatable_adapter_on_embedder_event_gdk_window_from_embedder 
                                                                                  gdouble* offscreen_y,
                                                                                  gpointer self)
 {
-#line 175 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 175 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	daf_ui_animation_animatable_adapter_on_embedder_event ((DafUIAnimationAnimatableAdapter*) self, embedder_x, embedder_y, offscreen_x, offscreen_y);
 #line 596 "AnimatableAdapter.c"
 }
@@ -642,97 +642,97 @@ daf_ui_animation_animatable_adapter_real_realize (GtkWidget* base)
 	GdkWindow* _tmp41_;
 	GdkWindow* _tmp42_;
 	GdkWindow* _tmp43_;
-#line 125 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 125 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	self = (DafUIAnimationAnimatableAdapter*) base;
-#line 127 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 127 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	attr_mask = (GDK_WA_X | GDK_WA_Y) | GDK_WA_VISUAL;
-#line 131 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 131 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	memset (&alloc, 0, sizeof (GtkAllocation));
-#line 132 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 132 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	gtk_widget_get_allocation ((GtkWidget*) self, &_tmp0_);
-#line 132 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 132 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	alloc = _tmp0_;
-#line 134 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 134 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	border_width = (gint) gtk_container_get_border_width ((GtkContainer*) self);
-#line 136 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 136 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	gtk_widget_set_realized ((GtkWidget*) self, TRUE);
-#line 138 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 138 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	memset (&attr, 0, sizeof (GdkWindowAttr));
-#line 140 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 140 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp1_ = alloc;
-#line 140 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 140 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp2_ = _tmp1_.x;
-#line 140 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 140 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp3_ = border_width;
-#line 140 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 140 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	attr.x = _tmp2_ + _tmp3_;
-#line 141 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 141 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp4_ = alloc;
-#line 141 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 141 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp5_ = _tmp4_.y;
-#line 141 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 141 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp6_ = border_width;
-#line 141 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 141 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	attr.y = _tmp5_ + _tmp6_;
-#line 142 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 142 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp7_ = alloc;
-#line 142 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 142 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp8_ = _tmp7_.width;
-#line 142 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 142 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp9_ = border_width;
-#line 142 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 142 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	attr.width = _tmp8_ + (2 * _tmp9_);
-#line 143 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 143 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp10_ = alloc;
-#line 143 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 143 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp11_ = _tmp10_.width;
-#line 143 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 143 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp12_ = border_width;
-#line 143 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 143 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	attr.width = _tmp11_ + (2 * _tmp12_);
-#line 144 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 144 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	attr.event_mask = gtk_widget_get_events ((GtkWidget*) self) | GDK_ALL_EVENTS_MASK;
-#line 146 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 146 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp13_ = gtk_widget_get_visual ((GtkWidget*) self);
-#line 146 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 146 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	attr.visual = _tmp13_;
-#line 147 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 147 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	attr.wclass = GDK_INPUT_OUTPUT;
-#line 149 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 149 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	attr.window_type = GDK_WINDOW_CHILD;
-#line 151 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 151 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp14_ = gtk_widget_get_parent_window ((GtkWidget*) self);
-#line 151 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 151 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp15_ = attr;
-#line 151 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 151 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp16_ = attr_mask;
-#line 151 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 151 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp17_ = gdk_window_new (_tmp14_, &_tmp15_, _tmp16_);
-#line 151 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 151 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	window = _tmp17_;
-#line 152 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 152 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp18_ = window;
-#line 152 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 152 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp19_ = _g_object_ref0 (_tmp18_);
-#line 152 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 152 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	gtk_widget_set_window ((GtkWidget*) self, _tmp19_);
-#line 153 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 153 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp20_ = window;
-#line 153 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 153 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	gdk_window_set_user_data (_tmp20_, (GObject*) self);
-#line 154 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 154 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp21_ = window;
-#line 154 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 154 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	g_signal_connect_object (_tmp21_, "pick-embedded-child", (GCallback) _daf_ui_animation_animatable_adapter_on_pick_embedded_child_gdk_window_pick_embedded_child, self, 0);
-#line 156 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 156 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	attr.window_type = GDK_WINDOW_OFFSCREEN;
-#line 158 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 158 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp22_ = self->priv->_child;
-#line 158 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 158 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp23_ = gtk_widget_get_visible (_tmp22_);
-#line 158 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 158 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp24_ = _tmp23_;
-#line 158 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 158 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	if (_tmp24_) {
 #line 737 "AnimatableAdapter.c"
 		GtkWidget* _tmp25_;
@@ -741,76 +741,76 @@ daf_ui_animation_animatable_adapter_real_realize (GtkWidget* base)
 		gint _tmp28_;
 		GtkAllocation _tmp29_;
 		gint _tmp30_;
-#line 159 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 159 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		_tmp25_ = self->priv->_child;
-#line 159 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 159 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		gtk_widget_get_allocation (_tmp25_, &_tmp26_);
-#line 159 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 159 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		alloc = _tmp26_;
-#line 160 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 160 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		_tmp27_ = alloc;
-#line 160 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 160 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		_tmp28_ = _tmp27_.width;
-#line 160 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 160 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		attr.width = _tmp28_;
-#line 161 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 161 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		_tmp29_ = alloc;
-#line 161 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 161 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		_tmp30_ = _tmp29_.height;
-#line 161 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 161 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		attr.height = _tmp30_;
 #line 762 "AnimatableAdapter.c"
 	}
-#line 164 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 164 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp31_ = gtk_widget_get_root_window ((GtkWidget*) self);
-#line 164 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 164 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp32_ = attr;
-#line 164 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 164 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp33_ = attr_mask;
-#line 164 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 164 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp34_ = gdk_window_new (_tmp31_, &_tmp32_, _tmp33_);
-#line 164 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 164 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_g_object_unref0 (self->priv->off_win);
-#line 164 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 164 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	self->priv->off_win = _tmp34_;
-#line 165 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 165 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp35_ = self->priv->off_win;
-#line 165 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 165 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	gdk_window_set_user_data (_tmp35_, (GObject*) self);
-#line 167 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 167 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp36_ = self->priv->_child;
-#line 167 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 167 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	if (_tmp36_ != NULL) {
 #line 784 "AnimatableAdapter.c"
 		GtkWidget* _tmp37_;
 		GdkWindow* _tmp38_;
-#line 168 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 168 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		_tmp37_ = self->priv->_child;
-#line 168 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 168 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		_tmp38_ = self->priv->off_win;
-#line 168 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 168 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		gtk_widget_set_parent_window (_tmp37_, _tmp38_);
 #line 793 "AnimatableAdapter.c"
 	}
-#line 171 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 171 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp39_ = self->priv->off_win;
-#line 171 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 171 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp40_ = window;
-#line 171 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 171 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	gdk_offscreen_window_set_embedder (_tmp39_, _tmp40_);
-#line 174 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 174 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp41_ = self->priv->off_win;
-#line 174 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 174 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	g_signal_connect_object (_tmp41_, "to-embedder", (GCallback) _daf_ui_animation_animatable_adapter_on_embedder_event_gdk_window_to_embedder, self, 0);
-#line 175 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 175 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp42_ = self->priv->off_win;
-#line 175 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 175 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	g_signal_connect_object (_tmp42_, "from-embedder", (GCallback) _daf_ui_animation_animatable_adapter_on_embedder_event_gdk_window_from_embedder, self, 0);
-#line 177 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 177 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp43_ = self->priv->off_win;
-#line 177 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 177 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	gdk_window_show (_tmp43_);
-#line 125 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 125 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_g_object_unref0 (window);
 #line 815 "AnimatableAdapter.c"
 }
@@ -825,21 +825,21 @@ daf_ui_animation_animatable_adapter_on_embedder_event (DafUIAnimationAnimatableA
 {
 	gdouble _vala_x1 = 0.0;
 	gdouble _vala_y1 = 0.0;
-#line 180 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 180 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	g_return_if_fail (self != NULL);
-#line 181 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 181 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_vala_x1 = x;
-#line 182 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 182 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_vala_y1 = y;
-#line 180 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 180 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	if (x1) {
-#line 180 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 180 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		*x1 = _vala_x1;
 #line 838 "AnimatableAdapter.c"
 	}
-#line 180 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 180 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	if (y1) {
-#line 180 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 180 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		*y1 = _vala_y1;
 #line 844 "AnimatableAdapter.c"
 	}
@@ -854,37 +854,37 @@ daf_ui_animation_animatable_adapter_real_unrealize (GtkWidget* base)
 	GdkWindow* _tmp1_;
 	GdkWindow* _tmp2_;
 	GtkWidget* _tmp3_;
-#line 185 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 185 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	self = (DafUIAnimationAnimatableAdapter*) base;
-#line 187 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 187 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp0_ = self->priv->off_win;
-#line 187 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 187 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	gdk_window_set_user_data (_tmp0_, NULL);
-#line 188 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 188 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp1_ = self->priv->off_win;
-#line 188 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 188 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp2_ = _g_object_ref0 (_tmp1_);
-#line 188 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 188 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	gdk_window_destroy (_tmp2_);
-#line 189 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 189 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_g_object_unref0 (self->priv->off_win);
-#line 189 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 189 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	self->priv->off_win = NULL;
-#line 191 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 191 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp3_ = self->priv->_child;
-#line 191 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 191 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	if (_tmp3_ != NULL) {
 #line 877 "AnimatableAdapter.c"
 		GtkWidget* _tmp4_;
-#line 192 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 192 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		_tmp4_ = self->priv->_child;
-#line 192 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 192 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		gtk_widget_unparent (_tmp4_);
-#line 193 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 193 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		daf_ui_animation_animatable_adapter_set_child (self, NULL);
 #line 885 "AnimatableAdapter.c"
 	}
-#line 196 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 196 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	GTK_WIDGET_CLASS (daf_ui_animation_animatable_adapter_parent_class)->unrealize ((GtkWidget*) G_TYPE_CHECK_INSTANCE_CAST (self, gtk_container_get_type (), GtkContainer));
 #line 889 "AnimatableAdapter.c"
 }
@@ -922,57 +922,57 @@ daf_ui_animation_animatable_adapter_real_size_allocate (GtkWidget* base,
 	GtkAllocation _tmp29_;
 	GtkWidget* _tmp30_;
 	GtkAllocation _tmp31_;
-#line 199 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 199 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	self = (DafUIAnimationAnimatableAdapter*) base;
-#line 199 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 199 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	g_return_if_fail (alloc != NULL);
-#line 201 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 201 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp0_ = *alloc;
-#line 201 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 201 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	daf_ui_animation_animatable_adapter_print_alloc (self, (GtkWidget*) self, "AnimatableAdapter size_allocate1", &_tmp0_);
-#line 202 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 202 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp1_ = *alloc;
-#line 202 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 202 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	gtk_widget_set_allocation ((GtkWidget*) self, &_tmp1_);
-#line 204 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 204 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	border_width = (gint) gtk_container_get_border_width ((GtkContainer*) self);
-#line 206 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 206 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp2_ = *alloc;
-#line 206 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 206 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp3_ = _tmp2_.x;
-#line 206 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 206 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp4_ = border_width;
-#line 206 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 206 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	x = _tmp3_ + _tmp4_;
-#line 207 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 207 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp5_ = *alloc;
-#line 207 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 207 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp6_ = _tmp5_.y;
-#line 207 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 207 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp7_ = border_width;
-#line 207 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 207 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	y = _tmp6_ + _tmp7_;
-#line 209 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 209 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp8_ = *alloc;
-#line 209 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 209 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp9_ = _tmp8_.width;
-#line 209 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 209 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp10_ = border_width;
-#line 209 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 209 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	w = MAX (1, _tmp9_ - (2 * _tmp10_));
-#line 210 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 210 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp11_ = *alloc;
-#line 210 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 210 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp12_ = _tmp11_.height;
-#line 210 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 210 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp13_ = border_width;
-#line 210 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 210 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	h = MAX (1, _tmp12_ - (2 * _tmp13_));
-#line 212 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 212 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp14_ = *alloc;
-#line 212 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 212 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	daf_ui_animation_animatable_adapter_print_alloc (self, (GtkWidget*) self, "AnimatableAdapter size_allocate 2", &_tmp14_);
-#line 215 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 215 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	if (gtk_widget_get_realized ((GtkWidget*) self)) {
 #line 977 "AnimatableAdapter.c"
 		GdkWindow* _tmp15_;
@@ -985,57 +985,57 @@ daf_ui_animation_animatable_adapter_real_size_allocate (GtkWidget* base,
 		gint _tmp22_;
 		gint _tmp23_;
 		gint _tmp24_;
-#line 216 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 216 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		_tmp15_ = gtk_widget_get_window ((GtkWidget*) self);
-#line 216 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 216 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		_tmp16_ = x;
-#line 216 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 216 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		_tmp17_ = y;
-#line 216 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 216 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		_tmp18_ = w;
-#line 216 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 216 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		_tmp19_ = h;
-#line 216 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 216 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		gdk_window_move_resize (_tmp15_, _tmp16_, _tmp17_, _tmp18_, _tmp19_);
-#line 217 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 217 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		_tmp20_ = self->priv->off_win;
-#line 217 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 217 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		_tmp21_ = x;
-#line 217 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 217 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		_tmp22_ = y;
-#line 217 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 217 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		_tmp23_ = w;
-#line 217 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 217 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		_tmp24_ = h;
-#line 217 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 217 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		gdk_window_move_resize (_tmp20_, _tmp21_, _tmp22_, _tmp23_, _tmp24_);
 #line 1012 "AnimatableAdapter.c"
 	}
-#line 220 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 220 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	(*alloc).y = 0;
-#line 220 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 220 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp25_ = (*alloc).y;
-#line 220 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 220 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	(*alloc).x = _tmp25_;
-#line 221 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 221 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp26_ = w;
-#line 221 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 221 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	(*alloc).width = _tmp26_;
-#line 222 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 222 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp27_ = h;
-#line 222 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 222 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	(*alloc).height = _tmp27_;
-#line 225 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 225 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp28_ = self->priv->_child;
-#line 225 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 225 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp29_ = *alloc;
-#line 225 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 225 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	daf_ui_animation_animatable_adapter_print_alloc (self, _tmp28_, "Alloc....", &_tmp29_);
-#line 226 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 226 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp30_ = self->priv->_child;
-#line 226 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 226 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp31_ = *alloc;
-#line 226 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 226 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	gtk_widget_size_allocate (_tmp30_, &_tmp31_);
 #line 1040 "AnimatableAdapter.c"
 }
@@ -1057,35 +1057,35 @@ daf_ui_animation_animatable_adapter_print_alloc (DafUIAnimationAnimatableAdapter
 	gint _tmp7_;
 	GtkAllocation _tmp8_;
 	gint _tmp9_;
-#line 229 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 229 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	g_return_if_fail (self != NULL);
-#line 229 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 229 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	g_return_if_fail (w != NULL);
-#line 229 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 229 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	g_return_if_fail (msg != NULL);
-#line 229 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 229 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	g_return_if_fail (a != NULL);
-#line 230 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 230 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp0_ = gtk_widget_get_name (w);
-#line 230 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 230 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp1_ = _tmp0_;
-#line 230 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 230 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp2_ = *a;
-#line 230 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 230 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp3_ = _tmp2_.x;
-#line 230 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 230 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp4_ = *a;
-#line 230 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 230 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp5_ = _tmp4_.y;
-#line 230 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 230 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp6_ = *a;
-#line 230 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 230 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp7_ = _tmp6_.width;
-#line 230 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 230 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp8_ = *a;
-#line 230 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 230 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp9_ = _tmp8_.height;
-#line 230 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 230 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	g_debug ("AnimatableAdapter.vala:230: Allocation for Widget: %s (%s): x: %d, y: " \
 "%d, w: %d, h: %d", _tmp1_, msg, _tmp3_, _tmp5_, _tmp7_, _tmp9_);
 #line 1090 "AnimatableAdapter.c"
@@ -1097,13 +1097,13 @@ daf_ui_animation_animatable_adapter_get_opacity (DafUIAnimationAnimatableAdapter
 {
 	gdouble result;
 	gdouble _tmp0_;
-#line 36 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 36 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	g_return_val_if_fail (self != NULL, 0.0);
-#line 36 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 36 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp0_ = self->priv->_opacity;
-#line 36 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 36 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	result = _tmp0_;
-#line 36 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 36 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	return result;
 #line 1107 "AnimatableAdapter.c"
 }
@@ -1114,32 +1114,32 @@ daf_ui_animation_animatable_adapter_set_opacity (DafUIAnimationAnimatableAdapter
                                                  gdouble value)
 {
 	gdouble _tmp0_ = 0.0;
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	g_return_if_fail (self != NULL);
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	if (value < ((gdouble) 0.f)) {
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		_tmp0_ = (gdouble) 0.f;
 #line 1122 "AnimatableAdapter.c"
 	} else {
 		gdouble _tmp1_ = 0.0;
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		if (value > ((gdouble) 1.f)) {
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 			_tmp1_ = (gdouble) 1;
 #line 1129 "AnimatableAdapter.c"
 		} else {
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 			_tmp1_ = value;
 #line 1133 "AnimatableAdapter.c"
 		}
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		_tmp0_ = _tmp1_;
 #line 1137 "AnimatableAdapter.c"
 	}
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	self->priv->_opacity = _tmp0_;
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	g_object_notify_by_pspec ((GObject *) self, daf_ui_animation_animatable_adapter_properties[DAF_UI_ANIMATION_ANIMATABLE_ADAPTER_OPACITY_PROPERTY]);
 #line 1143 "AnimatableAdapter.c"
 }
@@ -1150,13 +1150,13 @@ daf_ui_animation_animatable_adapter_get_offset_x (DafUIAnimationAnimatableAdapte
 {
 	gint result;
 	gint _tmp0_;
-#line 45 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 45 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	g_return_val_if_fail (self != NULL, 0);
-#line 45 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 45 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp0_ = self->priv->_offset_x;
-#line 45 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 45 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	result = _tmp0_;
-#line 45 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 45 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	return result;
 #line 1160 "AnimatableAdapter.c"
 }
@@ -1166,13 +1166,13 @@ void
 daf_ui_animation_animatable_adapter_set_offset_x (DafUIAnimationAnimatableAdapter* self,
                                                   gint value)
 {
-#line 45 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 45 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	g_return_if_fail (self != NULL);
-#line 45 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 45 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	if (daf_ui_animation_animatable_adapter_get_offset_x (self) != value) {
-#line 45 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 45 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		self->priv->_offset_x = value;
-#line 45 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 45 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		g_object_notify_by_pspec ((GObject *) self, daf_ui_animation_animatable_adapter_properties[DAF_UI_ANIMATION_ANIMATABLE_ADAPTER_OFFSET_X_PROPERTY]);
 #line 1176 "AnimatableAdapter.c"
 	}
@@ -1184,13 +1184,13 @@ daf_ui_animation_animatable_adapter_get_offset_y (DafUIAnimationAnimatableAdapte
 {
 	gint result;
 	gint _tmp0_;
-#line 46 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 46 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	g_return_val_if_fail (self != NULL, 0);
-#line 46 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 46 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp0_ = self->priv->_offset_y;
-#line 46 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 46 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	result = _tmp0_;
-#line 46 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 46 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	return result;
 #line 1194 "AnimatableAdapter.c"
 }
@@ -1200,13 +1200,13 @@ void
 daf_ui_animation_animatable_adapter_set_offset_y (DafUIAnimationAnimatableAdapter* self,
                                                   gint value)
 {
-#line 46 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 46 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	g_return_if_fail (self != NULL);
-#line 46 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 46 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	if (daf_ui_animation_animatable_adapter_get_offset_y (self) != value) {
-#line 46 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 46 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		self->priv->_offset_y = value;
-#line 46 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 46 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		g_object_notify_by_pspec ((GObject *) self, daf_ui_animation_animatable_adapter_properties[DAF_UI_ANIMATION_ANIMATABLE_ADAPTER_OFFSET_Y_PROPERTY]);
 #line 1210 "AnimatableAdapter.c"
 	}
@@ -1218,13 +1218,13 @@ daf_ui_animation_animatable_adapter_get_child (DafUIAnimationAnimatableAdapter* 
 {
 	GtkWidget* result;
 	GtkWidget* _tmp0_;
-#line 50 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 50 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 50 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 50 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp0_ = self->priv->_child;
-#line 50 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 50 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	result = _tmp0_;
-#line 50 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 50 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	return result;
 #line 1228 "AnimatableAdapter.c"
 }
@@ -1234,19 +1234,19 @@ static void
 daf_ui_animation_animatable_adapter_set_child (DafUIAnimationAnimatableAdapter* self,
                                                GtkWidget* value)
 {
-#line 50 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 50 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	g_return_if_fail (self != NULL);
-#line 50 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 50 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	if (daf_ui_animation_animatable_adapter_get_child (self) != value) {
 #line 1240 "AnimatableAdapter.c"
 		GtkWidget* _tmp0_;
-#line 50 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 50 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		_tmp0_ = _g_object_ref0 (value);
-#line 50 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 50 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		_g_object_unref0 (self->priv->_child);
-#line 50 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 50 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		self->priv->_child = _tmp0_;
-#line 50 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 50 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		g_object_notify_by_pspec ((GObject *) self, daf_ui_animation_animatable_adapter_properties[DAF_UI_ANIMATION_ANIMATABLE_ADAPTER_CHILD_PROPERTY]);
 #line 1250 "AnimatableAdapter.c"
 	}
@@ -1262,23 +1262,23 @@ daf_ui_animation_animatable_adapter_constructor (GType type,
 	GObjectClass * parent_class;
 	DafUIAnimationAnimatableAdapter * self;
 	GdkRGBA _tmp0_ = {0};
-#line 52 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 52 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	parent_class = G_OBJECT_CLASS (daf_ui_animation_animatable_adapter_parent_class);
-#line 52 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 52 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	obj = parent_class->constructor (type, n_construct_properties, construct_properties);
-#line 52 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 52 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	self = G_TYPE_CHECK_INSTANCE_CAST (obj, DAF_UI_ANIMATION_TYPE_ANIMATABLE_ADAPTER, DafUIAnimationAnimatableAdapter);
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp0_.red = (gdouble) 0.f;
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp0_.green = (gdouble) 0.f;
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp0_.blue = (gdouble) 0.f;
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_tmp0_.alpha = (gdouble) 0.f;
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	gtk_widget_override_background_color ((GtkWidget*) self, GTK_STATE_FLAG_NORMAL, &_tmp0_);
-#line 52 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 52 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	return obj;
 #line 1282 "AnimatableAdapter.c"
 }
@@ -1287,41 +1287,41 @@ daf_ui_animation_animatable_adapter_constructor (GType type,
 static void
 daf_ui_animation_animatable_adapter_class_init (DafUIAnimationAnimatableAdapterClass * klass)
 {
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	daf_ui_animation_animatable_adapter_parent_class = g_type_class_peek_parent (klass);
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	g_type_class_add_private (klass, sizeof (DafUIAnimationAnimatableAdapterPrivate));
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	((GtkWidgetClass *) klass)->draw = (gboolean (*) (GtkWidget *, cairo_t*)) daf_ui_animation_animatable_adapter_real_draw;
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	((GtkContainerClass *) klass)->add = (void (*) (GtkContainer *, GtkWidget*)) daf_ui_animation_animatable_adapter_real_add;
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	((GtkContainerClass *) klass)->remove = (void (*) (GtkContainer *, GtkWidget*)) daf_ui_animation_animatable_adapter_real_remove;
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	((GtkWidgetClass *) klass)->damage_event = (gboolean (*) (GtkWidget *, GdkEventExpose*)) daf_ui_animation_animatable_adapter_real_damage_event;
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	((GtkContainerClass *) klass)->forall = (void (*) (GtkContainer *, gboolean, GtkCallback, gpointer)) daf_ui_animation_animatable_adapter_real_forall_internal;
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	((GtkWidgetClass *) klass)->realize = (void (*) (GtkWidget *)) daf_ui_animation_animatable_adapter_real_realize;
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	((GtkWidgetClass *) klass)->unrealize = (void (*) (GtkWidget *)) daf_ui_animation_animatable_adapter_real_unrealize;
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	((GtkWidgetClass *) klass)->size_allocate = (void (*) (GtkWidget *, GtkAllocation*)) daf_ui_animation_animatable_adapter_real_size_allocate;
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	G_OBJECT_CLASS (klass)->get_property = _vala_daf_ui_animation_animatable_adapter_get_property;
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	G_OBJECT_CLASS (klass)->set_property = _vala_daf_ui_animation_animatable_adapter_set_property;
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	G_OBJECT_CLASS (klass)->constructor = daf_ui_animation_animatable_adapter_constructor;
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	G_OBJECT_CLASS (klass)->finalize = daf_ui_animation_animatable_adapter_finalize;
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	g_object_class_install_property (G_OBJECT_CLASS (klass), DAF_UI_ANIMATION_ANIMATABLE_ADAPTER_OPACITY_PROPERTY, daf_ui_animation_animatable_adapter_properties[DAF_UI_ANIMATION_ANIMATABLE_ADAPTER_OPACITY_PROPERTY] = g_param_spec_double ("opacity", "opacity", "opacity", -G_MAXDOUBLE, G_MAXDOUBLE, 0.0, G_PARAM_STATIC_STRINGS | G_PARAM_READABLE | G_PARAM_WRITABLE));
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	g_object_class_install_property (G_OBJECT_CLASS (klass), DAF_UI_ANIMATION_ANIMATABLE_ADAPTER_OFFSET_X_PROPERTY, daf_ui_animation_animatable_adapter_properties[DAF_UI_ANIMATION_ANIMATABLE_ADAPTER_OFFSET_X_PROPERTY] = g_param_spec_int ("offset-x", "offset-x", "offset-x", G_MININT, G_MAXINT, 0, G_PARAM_STATIC_STRINGS | G_PARAM_READABLE | G_PARAM_WRITABLE));
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	g_object_class_install_property (G_OBJECT_CLASS (klass), DAF_UI_ANIMATION_ANIMATABLE_ADAPTER_OFFSET_Y_PROPERTY, daf_ui_animation_animatable_adapter_properties[DAF_UI_ANIMATION_ANIMATABLE_ADAPTER_OFFSET_Y_PROPERTY] = g_param_spec_int ("offset-y", "offset-y", "offset-y", G_MININT, G_MAXINT, 0, G_PARAM_STATIC_STRINGS | G_PARAM_READABLE | G_PARAM_WRITABLE));
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	g_object_class_install_property (G_OBJECT_CLASS (klass), DAF_UI_ANIMATION_ANIMATABLE_ADAPTER_CHILD_PROPERTY, daf_ui_animation_animatable_adapter_properties[DAF_UI_ANIMATION_ANIMATABLE_ADAPTER_CHILD_PROPERTY] = g_param_spec_object ("child", "child", "child", gtk_widget_get_type (), G_PARAM_STATIC_STRINGS | G_PARAM_READABLE));
 #line 1325 "AnimatableAdapter.c"
 }
@@ -1330,17 +1330,17 @@ daf_ui_animation_animatable_adapter_class_init (DafUIAnimationAnimatableAdapterC
 static void
 daf_ui_animation_animatable_adapter_instance_init (DafUIAnimationAnimatableAdapter * self)
 {
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	self->priv = DAF_UI_ANIMATION_ANIMATABLE_ADAPTER_GET_PRIVATE (self);
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	self->priv->_opacity = (gdouble) 1.f;
-#line 45 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 45 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	self->priv->_offset_x = 0;
-#line 46 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 46 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	self->priv->_offset_y = 0;
-#line 49 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 49 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	self->priv->off_win = NULL;
-#line 50 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 50 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	self->priv->_child = NULL;
 #line 1344 "AnimatableAdapter.c"
 }
@@ -1350,13 +1350,13 @@ static void
 daf_ui_animation_animatable_adapter_finalize (GObject * obj)
 {
 	DafUIAnimationAnimatableAdapter * self;
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	self = G_TYPE_CHECK_INSTANCE_CAST (obj, DAF_UI_ANIMATION_TYPE_ANIMATABLE_ADAPTER, DafUIAnimationAnimatableAdapter);
-#line 49 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 49 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_g_object_unref0 (self->priv->off_win);
-#line 50 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 50 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	_g_object_unref0 (self->priv->_child);
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	G_OBJECT_CLASS (daf_ui_animation_animatable_adapter_parent_class)->finalize (obj);
 #line 1360 "AnimatableAdapter.c"
 }
@@ -1387,37 +1387,37 @@ _vala_daf_ui_animation_animatable_adapter_get_property (GObject * object,
 {
 	DafUIAnimationAnimatableAdapter * self;
 	self = G_TYPE_CHECK_INSTANCE_CAST (object, DAF_UI_ANIMATION_TYPE_ANIMATABLE_ADAPTER, DafUIAnimationAnimatableAdapter);
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	switch (property_id) {
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		case DAF_UI_ANIMATION_ANIMATABLE_ADAPTER_OPACITY_PROPERTY:
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		g_value_set_double (value, daf_ui_animation_animatable_adapter_get_opacity (self));
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		break;
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		case DAF_UI_ANIMATION_ANIMATABLE_ADAPTER_OFFSET_X_PROPERTY:
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		g_value_set_int (value, daf_ui_animation_animatable_adapter_get_offset_x (self));
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		break;
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		case DAF_UI_ANIMATION_ANIMATABLE_ADAPTER_OFFSET_Y_PROPERTY:
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		g_value_set_int (value, daf_ui_animation_animatable_adapter_get_offset_y (self));
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		break;
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		case DAF_UI_ANIMATION_ANIMATABLE_ADAPTER_CHILD_PROPERTY:
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		g_value_set_object (value, daf_ui_animation_animatable_adapter_get_child (self));
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		break;
 #line 1415 "AnimatableAdapter.c"
 		default:
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		G_OBJECT_WARN_INVALID_PROPERTY_ID (object, property_id, pspec);
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		break;
 #line 1421 "AnimatableAdapter.c"
 	}
@@ -1432,37 +1432,37 @@ _vala_daf_ui_animation_animatable_adapter_set_property (GObject * object,
 {
 	DafUIAnimationAnimatableAdapter * self;
 	self = G_TYPE_CHECK_INSTANCE_CAST (object, DAF_UI_ANIMATION_TYPE_ANIMATABLE_ADAPTER, DafUIAnimationAnimatableAdapter);
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 	switch (property_id) {
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		case DAF_UI_ANIMATION_ANIMATABLE_ADAPTER_OPACITY_PROPERTY:
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		daf_ui_animation_animatable_adapter_set_opacity (self, g_value_get_double (value));
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		break;
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		case DAF_UI_ANIMATION_ANIMATABLE_ADAPTER_OFFSET_X_PROPERTY:
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		daf_ui_animation_animatable_adapter_set_offset_x (self, g_value_get_int (value));
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		break;
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		case DAF_UI_ANIMATION_ANIMATABLE_ADAPTER_OFFSET_Y_PROPERTY:
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		daf_ui_animation_animatable_adapter_set_offset_y (self, g_value_get_int (value));
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		break;
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		case DAF_UI_ANIMATION_ANIMATABLE_ADAPTER_CHILD_PROPERTY:
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		daf_ui_animation_animatable_adapter_set_child (self, g_value_get_object (value));
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		break;
 #line 1460 "AnimatableAdapter.c"
 		default:
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		G_OBJECT_WARN_INVALID_PROPERTY_ID (object, property_id, pspec);
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/AnimatableAdapter.vala"
 		break;
 #line 1466 "AnimatableAdapter.c"
 	}

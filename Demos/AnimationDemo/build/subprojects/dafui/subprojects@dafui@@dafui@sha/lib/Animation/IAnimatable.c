@@ -31,9 +31,9 @@ void daf_ui_animation_ianimatable_start (DafUIAnimationIAnimatable* self);
 void
 daf_ui_animation_ianimatable_stop (DafUIAnimationIAnimatable* self)
 {
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/IAnimatable.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/IAnimatable.vala"
 	g_return_if_fail (self != NULL);
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/IAnimatable.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/IAnimatable.vala"
 	DAF_UI_ANIMATION_IANIMATABLE_GET_INTERFACE (self)->stop (self);
 #line 39 "IAnimatable.c"
 }
@@ -42,9 +42,9 @@ daf_ui_animation_ianimatable_stop (DafUIAnimationIAnimatable* self)
 void
 daf_ui_animation_ianimatable_start (DafUIAnimationIAnimatable* self)
 {
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/IAnimatable.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/IAnimatable.vala"
 	g_return_if_fail (self != NULL);
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/IAnimatable.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/IAnimatable.vala"
 	DAF_UI_ANIMATION_IANIMATABLE_GET_INTERFACE (self)->start (self);
 #line 50 "IAnimatable.c"
 }

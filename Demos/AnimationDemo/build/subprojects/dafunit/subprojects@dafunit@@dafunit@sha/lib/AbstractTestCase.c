@@ -225,15 +225,15 @@ daf_unit_test_abstract_test_case_construct (GType object_type,
 {
 	DafUnitTestAbstractTestCase * self = NULL;
 	GTestSuite* _tmp0_;
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	g_return_val_if_fail (name != NULL, NULL);
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	self = (DafUnitTestAbstractTestCase*) g_object_new (object_type, NULL);
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	_tmp0_ = g_test_create_suite (name);
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	self->priv->test_suite = _tmp0_;
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	return self;
 #line 239 "AbstractTestCase.c"
 }
@@ -242,7 +242,7 @@ daf_unit_test_abstract_test_case_construct (GType object_type,
 static gpointer
 _daf_unit_test_abstract_test_case_adaptor_ref0 (gpointer self)
 {
-#line 39 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 39 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	return self ? daf_unit_test_abstract_test_case_adaptor_ref (self) : NULL;
 #line 248 "AbstractTestCase.c"
 }
@@ -254,17 +254,17 @@ _vala_array_add1 (DafUnitTestAbstractTestCaseAdaptor** * array,
                   int* size,
                   DafUnitTestAbstractTestCaseAdaptor* value)
 {
-#line 39 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 39 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	if ((*length) == (*size)) {
-#line 39 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 39 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 		*size = (*size) ? (2 * (*size)) : 4;
-#line 39 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 39 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 		*array = g_renew (DafUnitTestAbstractTestCaseAdaptor*, *array, (*size) + 1);
 #line 264 "AbstractTestCase.c"
 	}
-#line 39 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 39 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	(*array)[(*length)++] = value;
-#line 39 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 39 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	(*array)[*length] = NULL;
 #line 270 "AbstractTestCase.c"
 }
@@ -274,7 +274,7 @@ static void
 _daf_unit_test_abstract_test_case_adaptor_set_up_gtest_fixture_func (void* fixture,
                                                                      gpointer self)
 {
-#line 41 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 41 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	daf_unit_test_abstract_test_case_adaptor_set_up ((DafUnitTestAbstractTestCaseAdaptor*) self, fixture);
 #line 280 "AbstractTestCase.c"
 }
@@ -284,7 +284,7 @@ static void
 _daf_unit_test_abstract_test_case_adaptor_run_gtest_fixture_func (void* fixture,
                                                                   gpointer self)
 {
-#line 41 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 41 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	daf_unit_test_abstract_test_case_adaptor_run ((DafUnitTestAbstractTestCaseAdaptor*) self, fixture);
 #line 290 "AbstractTestCase.c"
 }
@@ -294,7 +294,7 @@ static void
 _daf_unit_test_abstract_test_case_adaptor_tear_down_gtest_fixture_func (void* fixture,
                                                                         gpointer self)
 {
-#line 41 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 41 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	daf_unit_test_abstract_test_case_adaptor_tear_down ((DafUnitTestAbstractTestCaseAdaptor*) self, fixture);
 #line 300 "AbstractTestCase.c"
 }
@@ -315,33 +315,33 @@ daf_unit_test_abstract_test_case_add_test (DafUnitTestAbstractTestCase* self,
 	const gchar* _tmp4_;
 	const gchar* _tmp5_;
 	GTestCase* _tmp6_;
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	g_return_if_fail (self != NULL);
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	g_return_if_fail (name != NULL);
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	_tmp0_ = daf_unit_test_abstract_test_case_adaptor_new (name, test, test_target, self);
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	adaptor = _tmp0_;
-#line 39 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 39 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	_tmp1_ = self->priv->adaptors;
-#line 39 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 39 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	_tmp1__length1 = self->priv->adaptors_length1;
-#line 39 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 39 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	_tmp2_ = _daf_unit_test_abstract_test_case_adaptor_ref0 (adaptor);
-#line 39 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 39 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	_vala_array_add1 (&self->priv->adaptors, &self->priv->adaptors_length1, &self->priv->_adaptors_size_, _tmp2_);
-#line 41 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 41 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	_tmp3_ = self->priv->test_suite;
-#line 41 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 41 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	_tmp4_ = daf_unit_test_abstract_test_case_adaptor_get_name (adaptor);
-#line 41 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 41 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	_tmp5_ = _tmp4_;
-#line 41 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 41 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	_tmp6_ = g_test_create_case (_tmp5_, (gsize) sizeof (DafUnitTestAbstractTestCaseAdaptor*), adaptor, _daf_unit_test_abstract_test_case_adaptor_set_up_gtest_fixture_func, _daf_unit_test_abstract_test_case_adaptor_run_gtest_fixture_func, _daf_unit_test_abstract_test_case_adaptor_tear_down_gtest_fixture_func);
-#line 41 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 41 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	g_test_suite_add (_tmp3_, _tmp6_);
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	_daf_unit_test_abstract_test_case_adaptor_unref0 (adaptor);
 #line 347 "AbstractTestCase.c"
 }
@@ -356,7 +356,7 @@ __lambda12_ (DafUnitTestAbstractTestCase* self)
 static void
 ___lambda12__daf_unit_test_abstract_test_case_test_method (gpointer self)
 {
-#line 52 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 52 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	__lambda12_ ((DafUnitTestAbstractTestCase*) self);
 #line 362 "AbstractTestCase.c"
 }
@@ -368,17 +368,17 @@ _vala_array_add2 (DafUnitTestAbstractTestCaseAdaptor** * array,
                   int* size,
                   DafUnitTestAbstractTestCaseAdaptor* value)
 {
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	if ((*length) == (*size)) {
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 		*size = (*size) ? (2 * (*size)) : 4;
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 		*array = g_renew (DafUnitTestAbstractTestCaseAdaptor*, *array, (*size) + 1);
 #line 378 "AbstractTestCase.c"
 	}
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	(*array)[(*length)++] = value;
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	(*array)[*length] = NULL;
 #line 384 "AbstractTestCase.c"
 }
@@ -402,45 +402,45 @@ daf_unit_test_abstract_test_case_add_async_test (DafUnitTestAbstractTestCase* se
 	const gchar* _tmp4_;
 	const gchar* _tmp5_;
 	GTestCase* _tmp6_;
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	g_return_if_fail (self != NULL);
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	g_return_if_fail (name != NULL);
-#line 52 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 52 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	_tmp0_ = daf_unit_test_abstract_test_case_adaptor_new (name, ___lambda12__daf_unit_test_abstract_test_case_test_method, self, self);
-#line 52 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 52 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	adaptor = _tmp0_;
-#line 53 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 53 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	adaptor->is_async = TRUE;
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	adaptor->async_begin = async_begin;
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	adaptor->async_begin_target = async_begin_target;
-#line 55 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 55 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	adaptor->async_finish = async_finish;
-#line 55 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 55 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	adaptor->async_finish_target = async_finish_target;
-#line 56 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 56 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	daf_unit_test_abstract_test_case_adaptor_set_async_timeout (adaptor, timeout);
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	_tmp1_ = self->priv->adaptors;
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	_tmp1__length1 = self->priv->adaptors_length1;
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	_tmp2_ = _daf_unit_test_abstract_test_case_adaptor_ref0 (adaptor);
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	_vala_array_add2 (&self->priv->adaptors, &self->priv->adaptors_length1, &self->priv->_adaptors_size_, _tmp2_);
-#line 59 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 59 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	_tmp3_ = self->priv->test_suite;
-#line 59 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 59 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	_tmp4_ = daf_unit_test_abstract_test_case_adaptor_get_name (adaptor);
-#line 59 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 59 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	_tmp5_ = _tmp4_;
-#line 59 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 59 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	_tmp6_ = g_test_create_case (_tmp5_, (gsize) sizeof (DafUnitTestAbstractTestCaseAdaptor*), adaptor, _daf_unit_test_abstract_test_case_adaptor_set_up_gtest_fixture_func, _daf_unit_test_abstract_test_case_adaptor_run_gtest_fixture_func, _daf_unit_test_abstract_test_case_adaptor_tear_down_gtest_fixture_func);
-#line 59 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 59 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	g_test_suite_add (_tmp3_, _tmp6_);
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	_daf_unit_test_abstract_test_case_adaptor_unref0 (adaptor);
 #line 446 "AbstractTestCase.c"
 }
@@ -459,9 +459,9 @@ daf_unit_test_abstract_test_case_real_set_up (DafUnitTestAbstractTestCase* self)
 void
 daf_unit_test_abstract_test_case_set_up (DafUnitTestAbstractTestCase* self)
 {
-#line 70 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 70 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	g_return_if_fail (self != NULL);
-#line 70 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 70 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	DAF_UNIT_TEST_ABSTRACT_TEST_CASE_GET_CLASS (self)->set_up (self);
 #line 467 "AbstractTestCase.c"
 }
@@ -476,9 +476,9 @@ daf_unit_test_abstract_test_case_real_tear_down (DafUnitTestAbstractTestCase* se
 void
 daf_unit_test_abstract_test_case_tear_down (DafUnitTestAbstractTestCase* self)
 {
-#line 73 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 73 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	g_return_if_fail (self != NULL);
-#line 73 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 73 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	DAF_UNIT_TEST_ABSTRACT_TEST_CASE_GET_CLASS (self)->tear_down (self);
 #line 484 "AbstractTestCase.c"
 }
@@ -489,13 +489,13 @@ daf_unit_test_abstract_test_case_get_suite (DafUnitTestAbstractTestCase* self)
 {
 	GTestSuite* result = NULL;
 	GTestSuite* _tmp0_;
-#line 76 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 76 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 77 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 77 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	_tmp0_ = self->priv->test_suite;
-#line 77 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 77 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	result = _tmp0_;
-#line 77 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 77 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	return result;
 #line 501 "AbstractTestCase.c"
 }
@@ -504,7 +504,7 @@ daf_unit_test_abstract_test_case_get_suite (DafUnitTestAbstractTestCase* self)
 static gpointer
 _g_object_ref0 (gpointer self)
 {
-#line 94 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 94 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	return self ? g_object_ref (self) : NULL;
 #line 510 "AbstractTestCase.c"
 }
@@ -519,25 +519,25 @@ daf_unit_test_abstract_test_case_adaptor_construct (GType object_type,
 {
 	DafUnitTestAbstractTestCaseAdaptor* self = NULL;
 	DafUnitTestAbstractTestCase* _tmp0_;
-#line 91 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 91 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	g_return_val_if_fail (name != NULL, NULL);
-#line 91 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 91 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	g_return_val_if_fail (test_case != NULL, NULL);
-#line 91 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 91 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	self = (DafUnitTestAbstractTestCaseAdaptor*) g_type_create_instance (object_type);
-#line 92 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 92 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	daf_unit_test_abstract_test_case_adaptor_set_name (self, name);
-#line 93 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 93 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	self->priv->test = test;
-#line 93 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 93 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	self->priv->test_target = test_target;
-#line 94 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 94 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	_tmp0_ = _g_object_ref0 (test_case);
-#line 94 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 94 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	_g_object_unref0 (self->priv->test_case);
-#line 94 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 94 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	self->priv->test_case = _tmp0_;
-#line 91 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 91 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	return self;
 #line 543 "AbstractTestCase.c"
 }
@@ -549,7 +549,7 @@ daf_unit_test_abstract_test_case_adaptor_new (const gchar* name,
                                               gpointer test_target,
                                               DafUnitTestAbstractTestCase* test_case)
 {
-#line 91 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 91 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	return daf_unit_test_abstract_test_case_adaptor_construct (DAF_UNIT_TEST_ABSTRACT_TEST_CASE_TYPE_ADAPTOR, name, test, test_target, test_case);
 #line 555 "AbstractTestCase.c"
 }
@@ -558,7 +558,7 @@ daf_unit_test_abstract_test_case_adaptor_new (const gchar* name,
 static void
 _daf_unit_test_abstract_test_case_adaptor_printerr_func_stack_trace_gprint_func (const gchar* text)
 {
-#line 98 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 98 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	daf_unit_test_abstract_test_case_adaptor_printerr_func_stack_trace (text);
 #line 564 "AbstractTestCase.c"
 }
@@ -570,7 +570,7 @@ _daf_unit_test_abstract_test_case_adaptor_log_func_stack_trace_glog_func (const 
                                                                           const gchar* message,
                                                                           gpointer self)
 {
-#line 99 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 99 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	daf_unit_test_abstract_test_case_adaptor_log_func_stack_trace ((DafUnitTestAbstractTestCaseAdaptor*) self, log_domain, log_levels, message);
 #line 576 "AbstractTestCase.c"
 }
@@ -581,15 +581,15 @@ daf_unit_test_abstract_test_case_adaptor_set_up (DafUnitTestAbstractTestCaseAdap
                                                  void* fixture)
 {
 	DafUnitTestAbstractTestCase* _tmp0_;
-#line 97 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 97 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	g_return_if_fail (self != NULL);
-#line 98 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 98 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	g_set_printerr_handler (_daf_unit_test_abstract_test_case_adaptor_printerr_func_stack_trace_gprint_func);
-#line 99 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 99 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	g_log_set_default_handler (_daf_unit_test_abstract_test_case_adaptor_log_func_stack_trace_glog_func, self);
-#line 100 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 100 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	_tmp0_ = self->priv->test_case;
-#line 100 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 100 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	daf_unit_test_abstract_test_case_set_up (_tmp0_);
 #line 595 "AbstractTestCase.c"
 }
@@ -600,30 +600,30 @@ daf_unit_test_abstract_test_case_adaptor_printerr_func_stack_trace (const gchar*
 {
 	gboolean _tmp0_ = FALSE;
 	FILE* _tmp2_;
-#line 104 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 104 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	if (text == NULL) {
-#line 104 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 104 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 		_tmp0_ = TRUE;
 #line 608 "AbstractTestCase.c"
 	} else {
 		GEqualFunc _tmp1_;
-#line 104 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 104 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 		_tmp1_ = g_str_equal;
-#line 104 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 104 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 		_tmp0_ = _tmp1_ (text, "");
 #line 615 "AbstractTestCase.c"
 	}
-#line 104 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 104 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	if (_tmp0_) {
-#line 105 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 105 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 		return;
 #line 621 "AbstractTestCase.c"
 	}
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	_tmp2_ = stderr;
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	fprintf (_tmp2_, "%s", text);
-#line 110 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 110 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	g_on_error_stack_trace ("libtool --mode=execute gdb");
 #line 629 "AbstractTestCase.c"
 }
@@ -637,19 +637,19 @@ daf_unit_test_abstract_test_case_adaptor_log_func_stack_trace (DafUnitTestAbstra
 {
 	GLogFunc _tmp0_;
 	void* _tmp0__target;
-#line 113 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 113 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	g_return_if_fail (self != NULL);
-#line 113 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 113 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	g_return_if_fail (message != NULL);
-#line 116 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 116 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	_tmp0_ = g_log_default_handler;
-#line 116 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 116 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	_tmp0__target = NULL;
-#line 116 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 116 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	_tmp0_ (log_domain, log_levels, message, _tmp0__target);
-#line 121 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 121 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	if ((log_levels & ((G_LOG_LEVEL_WARNING | G_LOG_LEVEL_ERROR) | G_LOG_LEVEL_CRITICAL)) != 0) {
-#line 124 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 124 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 		g_on_error_stack_trace ("libtool --mode=execute gdb");
 #line 655 "AbstractTestCase.c"
 	}
@@ -676,11 +676,11 @@ daf_unit_test_abstract_test_case_adaptor_run (DafUnitTestAbstractTestCaseAdaptor
 {
 	gboolean _tmp0_;
 	GError * _inner_error_ = NULL;
-#line 128 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 128 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	g_return_if_fail (self != NULL);
-#line 129 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 129 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	_tmp0_ = self->is_async;
-#line 129 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 129 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	if (_tmp0_) {
 #line 686 "AbstractTestCase.c"
 		{
@@ -690,24 +690,24 @@ daf_unit_test_abstract_test_case_adaptor_run (DafUnitTestAbstractTestCaseAdaptor
 			void* _tmp3__target;
 			DafUnitTestAsyncFinish _tmp4_;
 			void* _tmp4__target;
-#line 131 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 131 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 			_tmp2_ = self->priv->_async_timeout;
-#line 131 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 131 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 			_tmp3_ = self->async_begin;
-#line 131 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 131 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 			_tmp3__target = self->async_begin_target;
-#line 131 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 131 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 			_tmp4_ = self->async_finish;
-#line 131 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 131 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 			_tmp4__target = self->async_finish_target;
-#line 131 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 131 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 			_tmp1_ = daf_unit_test_wait_for_async (_tmp2_, _tmp3_, _tmp3__target, _tmp4_, _tmp4__target, &_inner_error_);
-#line 131 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 131 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 			if (G_UNLIKELY (_inner_error_ != NULL)) {
 #line 708 "AbstractTestCase.c"
 				goto __catch0_g_error;
 			}
-#line 131 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 131 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 			_vala_assert (_tmp1_, "wait_for_async (async_timeout, this.async_begin, this.async_finish)");
 #line 713 "AbstractTestCase.c"
 		}
@@ -720,49 +720,49 @@ daf_unit_test_abstract_test_case_adaptor_run (DafUnitTestAbstractTestCaseAdaptor
 			const gchar* _tmp7_;
 			gchar* _tmp8_;
 			gchar* _tmp9_;
-#line 130 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 130 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 			err = _inner_error_;
-#line 130 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 130 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 			_inner_error_ = NULL;
-#line 133 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 133 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 			_tmp5_ = err;
-#line 133 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 133 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 			_tmp6_ = _tmp5_->message;
-#line 133 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 133 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 			_tmp7_ = string_to_string (_tmp6_);
-#line 133 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 133 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 			_tmp8_ = g_strconcat ("Got exception while excuting asynchronous test: ", _tmp7_, NULL);
-#line 133 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 133 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 			_tmp9_ = _tmp8_;
-#line 133 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 133 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 			g_message ("AbstractTestCase.vala:133: %s", _tmp9_);
-#line 133 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 133 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 			_g_free0 (_tmp9_);
-#line 134 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 134 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 			g_test_fail ();
-#line 130 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 130 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 			_g_error_free0 (err);
 #line 746 "AbstractTestCase.c"
 		}
 		__finally0:
-#line 130 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 130 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 		if (G_UNLIKELY (_inner_error_ != NULL)) {
-#line 130 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 130 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 			g_critical ("file %s: line %d: uncaught error: %s (%s, %d)", __FILE__, __LINE__, _inner_error_->message, g_quark_to_string (_inner_error_->domain), _inner_error_->code);
-#line 130 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 130 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 			g_clear_error (&_inner_error_);
-#line 130 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 130 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 			return;
 #line 757 "AbstractTestCase.c"
 		}
 	} else {
 		DafUnitTestAbstractTestCaseTestMethod _tmp10_;
 		void* _tmp10__target;
-#line 137 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 137 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 		_tmp10_ = self->priv->test;
-#line 137 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 137 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 		_tmp10__target = self->priv->test_target;
-#line 137 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 137 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 		_tmp10_ (_tmp10__target);
 #line 768 "AbstractTestCase.c"
 	}
@@ -774,11 +774,11 @@ daf_unit_test_abstract_test_case_adaptor_tear_down (DafUnitTestAbstractTestCaseA
                                                     void* fixture)
 {
 	DafUnitTestAbstractTestCase* _tmp0_;
-#line 141 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 141 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	g_return_if_fail (self != NULL);
-#line 142 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 142 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	_tmp0_ = self->priv->test_case;
-#line 142 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 142 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	daf_unit_test_abstract_test_case_tear_down (_tmp0_);
 #line 784 "AbstractTestCase.c"
 }
@@ -789,13 +789,13 @@ daf_unit_test_abstract_test_case_adaptor_get_name (DafUnitTestAbstractTestCaseAd
 {
 	const gchar* result;
 	const gchar* _tmp0_;
-#line 81 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 81 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 81 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 81 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	_tmp0_ = self->priv->_name;
-#line 81 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 81 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	result = _tmp0_;
-#line 81 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 81 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	return result;
 #line 801 "AbstractTestCase.c"
 }
@@ -806,13 +806,13 @@ daf_unit_test_abstract_test_case_adaptor_set_name (DafUnitTestAbstractTestCaseAd
                                                    const gchar* value)
 {
 	gchar* _tmp0_;
-#line 81 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 81 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	g_return_if_fail (self != NULL);
-#line 81 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 81 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	_tmp0_ = g_strdup (value);
-#line 81 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 81 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	_g_free0 (self->priv->_name);
-#line 81 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 81 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	self->priv->_name = _tmp0_;
 #line 818 "AbstractTestCase.c"
 }
@@ -823,13 +823,13 @@ daf_unit_test_abstract_test_case_adaptor_get_async_timeout (DafUnitTestAbstractT
 {
 	gint result;
 	gint _tmp0_;
-#line 82 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 82 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	g_return_val_if_fail (self != NULL, 0);
-#line 82 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 82 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	_tmp0_ = self->priv->_async_timeout;
-#line 82 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 82 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	result = _tmp0_;
-#line 82 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 82 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	return result;
 #line 835 "AbstractTestCase.c"
 }
@@ -839,9 +839,9 @@ static void
 daf_unit_test_abstract_test_case_adaptor_set_async_timeout (DafUnitTestAbstractTestCaseAdaptor* self,
                                                             gint value)
 {
-#line 82 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 82 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	g_return_if_fail (self != NULL);
-#line 82 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 82 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	self->priv->_async_timeout = value;
 #line 847 "AbstractTestCase.c"
 }
@@ -850,7 +850,7 @@ daf_unit_test_abstract_test_case_adaptor_set_async_timeout (DafUnitTestAbstractT
 static void
 daf_unit_test_abstract_test_case_value_adaptor_init (GValue* value)
 {
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	value->data[0].v_pointer = NULL;
 #line 856 "AbstractTestCase.c"
 }
@@ -859,9 +859,9 @@ daf_unit_test_abstract_test_case_value_adaptor_init (GValue* value)
 static void
 daf_unit_test_abstract_test_case_value_adaptor_free_value (GValue* value)
 {
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	if (value->data[0].v_pointer) {
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 		daf_unit_test_abstract_test_case_adaptor_unref (value->data[0].v_pointer);
 #line 867 "AbstractTestCase.c"
 	}
@@ -872,13 +872,13 @@ static void
 daf_unit_test_abstract_test_case_value_adaptor_copy_value (const GValue* src_value,
                                                            GValue* dest_value)
 {
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	if (src_value->data[0].v_pointer) {
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 		dest_value->data[0].v_pointer = daf_unit_test_abstract_test_case_adaptor_ref (src_value->data[0].v_pointer);
 #line 880 "AbstractTestCase.c"
 	} else {
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 		dest_value->data[0].v_pointer = NULL;
 #line 884 "AbstractTestCase.c"
 	}
@@ -888,7 +888,7 @@ daf_unit_test_abstract_test_case_value_adaptor_copy_value (const GValue* src_val
 static gpointer
 daf_unit_test_abstract_test_case_value_adaptor_peek_pointer (const GValue* value)
 {
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	return value->data[0].v_pointer;
 #line 894 "AbstractTestCase.c"
 }
@@ -900,30 +900,30 @@ daf_unit_test_abstract_test_case_value_adaptor_collect_value (GValue* value,
                                                               GTypeCValue* collect_values,
                                                               guint collect_flags)
 {
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	if (collect_values[0].v_pointer) {
 #line 906 "AbstractTestCase.c"
 		DafUnitTestAbstractTestCaseAdaptor * object;
 		object = collect_values[0].v_pointer;
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 		if (object->parent_instance.g_class == NULL) {
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 			return g_strconcat ("invalid unclassed object pointer for value type `", G_VALUE_TYPE_NAME (value), "'", NULL);
 #line 913 "AbstractTestCase.c"
 		} else if (!g_value_type_compatible (G_TYPE_FROM_INSTANCE (object), G_VALUE_TYPE (value))) {
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 			return g_strconcat ("invalid object type `", g_type_name (G_TYPE_FROM_INSTANCE (object)), "' for value type `", G_VALUE_TYPE_NAME (value), "'", NULL);
 #line 917 "AbstractTestCase.c"
 		}
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 		value->data[0].v_pointer = daf_unit_test_abstract_test_case_adaptor_ref (object);
 #line 921 "AbstractTestCase.c"
 	} else {
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 		value->data[0].v_pointer = NULL;
 #line 925 "AbstractTestCase.c"
 	}
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	return NULL;
 #line 929 "AbstractTestCase.c"
 }
@@ -937,27 +937,27 @@ daf_unit_test_abstract_test_case_value_adaptor_lcopy_value (const GValue* value,
 {
 	DafUnitTestAbstractTestCaseAdaptor ** object_p;
 	object_p = collect_values[0].v_pointer;
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	if (!object_p) {
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 		return g_strdup_printf ("value location for `%s' passed as NULL", G_VALUE_TYPE_NAME (value));
 #line 945 "AbstractTestCase.c"
 	}
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	if (!value->data[0].v_pointer) {
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 		*object_p = NULL;
 #line 951 "AbstractTestCase.c"
 	} else if (collect_flags & G_VALUE_NOCOPY_CONTENTS) {
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 		*object_p = value->data[0].v_pointer;
 #line 955 "AbstractTestCase.c"
 	} else {
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 		*object_p = daf_unit_test_abstract_test_case_adaptor_ref (value->data[0].v_pointer);
 #line 959 "AbstractTestCase.c"
 	}
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	return NULL;
 #line 963 "AbstractTestCase.c"
 }
@@ -971,13 +971,13 @@ daf_unit_test_abstract_test_case_param_spec_adaptor (const gchar* name,
                                                      GParamFlags flags)
 {
 	DafUnitTestAbstractTestCaseParamSpecAdaptor* spec;
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	g_return_val_if_fail (g_type_is_a (object_type, DAF_UNIT_TEST_ABSTRACT_TEST_CASE_TYPE_ADAPTOR), NULL);
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	spec = g_param_spec_internal (G_TYPE_PARAM_OBJECT, name, nick, blurb, flags);
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	G_PARAM_SPEC (spec)->value_type = object_type;
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	return G_PARAM_SPEC (spec);
 #line 983 "AbstractTestCase.c"
 }
@@ -986,9 +986,9 @@ daf_unit_test_abstract_test_case_param_spec_adaptor (const gchar* name,
 static gpointer
 daf_unit_test_abstract_test_case_value_get_adaptor (const GValue* value)
 {
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	g_return_val_if_fail (G_TYPE_CHECK_VALUE_TYPE (value, DAF_UNIT_TEST_ABSTRACT_TEST_CASE_TYPE_ADAPTOR), NULL);
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	return value->data[0].v_pointer;
 #line 994 "AbstractTestCase.c"
 }
@@ -999,29 +999,29 @@ daf_unit_test_abstract_test_case_value_set_adaptor (GValue* value,
                                                     gpointer v_object)
 {
 	DafUnitTestAbstractTestCaseAdaptor * old;
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	g_return_if_fail (G_TYPE_CHECK_VALUE_TYPE (value, DAF_UNIT_TEST_ABSTRACT_TEST_CASE_TYPE_ADAPTOR));
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	old = value->data[0].v_pointer;
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	if (v_object) {
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 		g_return_if_fail (G_TYPE_CHECK_INSTANCE_TYPE (v_object, DAF_UNIT_TEST_ABSTRACT_TEST_CASE_TYPE_ADAPTOR));
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 		g_return_if_fail (g_value_type_compatible (G_TYPE_FROM_INSTANCE (v_object), G_VALUE_TYPE (value)));
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 		value->data[0].v_pointer = v_object;
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 		daf_unit_test_abstract_test_case_adaptor_ref (value->data[0].v_pointer);
 #line 1017 "AbstractTestCase.c"
 	} else {
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 		value->data[0].v_pointer = NULL;
 #line 1021 "AbstractTestCase.c"
 	}
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	if (old) {
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 		daf_unit_test_abstract_test_case_adaptor_unref (old);
 #line 1027 "AbstractTestCase.c"
 	}
@@ -1033,27 +1033,27 @@ daf_unit_test_abstract_test_case_value_take_adaptor (GValue* value,
                                                      gpointer v_object)
 {
 	DafUnitTestAbstractTestCaseAdaptor * old;
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	g_return_if_fail (G_TYPE_CHECK_VALUE_TYPE (value, DAF_UNIT_TEST_ABSTRACT_TEST_CASE_TYPE_ADAPTOR));
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	old = value->data[0].v_pointer;
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	if (v_object) {
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 		g_return_if_fail (G_TYPE_CHECK_INSTANCE_TYPE (v_object, DAF_UNIT_TEST_ABSTRACT_TEST_CASE_TYPE_ADAPTOR));
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 		g_return_if_fail (g_value_type_compatible (G_TYPE_FROM_INSTANCE (v_object), G_VALUE_TYPE (value)));
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 		value->data[0].v_pointer = v_object;
 #line 1049 "AbstractTestCase.c"
 	} else {
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 		value->data[0].v_pointer = NULL;
 #line 1053 "AbstractTestCase.c"
 	}
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	if (old) {
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 		daf_unit_test_abstract_test_case_adaptor_unref (old);
 #line 1059 "AbstractTestCase.c"
 	}
@@ -1063,11 +1063,11 @@ daf_unit_test_abstract_test_case_value_take_adaptor (GValue* value,
 static void
 daf_unit_test_abstract_test_case_adaptor_class_init (DafUnitTestAbstractTestCaseAdaptorClass * klass)
 {
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	daf_unit_test_abstract_test_case_adaptor_parent_class = g_type_class_peek_parent (klass);
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	((DafUnitTestAbstractTestCaseAdaptorClass *) klass)->finalize = daf_unit_test_abstract_test_case_adaptor_finalize;
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	g_type_class_add_private (klass, sizeof (DafUnitTestAbstractTestCaseAdaptorPrivate));
 #line 1073 "AbstractTestCase.c"
 }
@@ -1076,11 +1076,11 @@ daf_unit_test_abstract_test_case_adaptor_class_init (DafUnitTestAbstractTestCase
 static void
 daf_unit_test_abstract_test_case_adaptor_instance_init (DafUnitTestAbstractTestCaseAdaptor * self)
 {
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	self->priv = DAF_UNIT_TEST_ABSTRACT_TEST_CASE_ADAPTOR_GET_PRIVATE (self);
-#line 87 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 87 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	self->is_async = FALSE;
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	self->ref_count = 1;
 #line 1086 "AbstractTestCase.c"
 }
@@ -1090,13 +1090,13 @@ static void
 daf_unit_test_abstract_test_case_adaptor_finalize (DafUnitTestAbstractTestCaseAdaptor * obj)
 {
 	DafUnitTestAbstractTestCaseAdaptor * self;
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	self = G_TYPE_CHECK_INSTANCE_CAST (obj, DAF_UNIT_TEST_ABSTRACT_TEST_CASE_TYPE_ADAPTOR, DafUnitTestAbstractTestCaseAdaptor);
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	g_signal_handlers_destroy (self);
-#line 81 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 81 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	_g_free0 (self->priv->_name);
-#line 85 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 85 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	_g_object_unref0 (self->priv->test_case);
 #line 1102 "AbstractTestCase.c"
 }
@@ -1123,9 +1123,9 @@ daf_unit_test_abstract_test_case_adaptor_ref (gpointer instance)
 {
 	DafUnitTestAbstractTestCaseAdaptor * self;
 	self = instance;
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	g_atomic_int_inc (&self->ref_count);
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	return instance;
 #line 1131 "AbstractTestCase.c"
 }
@@ -1136,11 +1136,11 @@ daf_unit_test_abstract_test_case_adaptor_unref (gpointer instance)
 {
 	DafUnitTestAbstractTestCaseAdaptor * self;
 	self = instance;
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	if (g_atomic_int_dec_and_test (&self->ref_count)) {
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 		DAF_UNIT_TEST_ABSTRACT_TEST_CASE_ADAPTOR_GET_CLASS (self)->finalize (self);
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 		g_type_free_instance ((GTypeInstance *) self);
 #line 1146 "AbstractTestCase.c"
 	}
@@ -1150,15 +1150,15 @@ daf_unit_test_abstract_test_case_adaptor_unref (gpointer instance)
 static void
 daf_unit_test_abstract_test_case_class_init (DafUnitTestAbstractTestCaseClass * klass)
 {
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	daf_unit_test_abstract_test_case_parent_class = g_type_class_peek_parent (klass);
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	g_type_class_add_private (klass, sizeof (DafUnitTestAbstractTestCasePrivate));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	((DafUnitTestAbstractTestCaseClass *) klass)->set_up = (void (*) (DafUnitTestAbstractTestCase *)) daf_unit_test_abstract_test_case_real_set_up;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	((DafUnitTestAbstractTestCaseClass *) klass)->tear_down = (void (*) (DafUnitTestAbstractTestCase *)) daf_unit_test_abstract_test_case_real_tear_down;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	G_OBJECT_CLASS (klass)->finalize = daf_unit_test_abstract_test_case_finalize;
 #line 1164 "AbstractTestCase.c"
 }
@@ -1168,15 +1168,15 @@ static void
 daf_unit_test_abstract_test_case_instance_init (DafUnitTestAbstractTestCase * self)
 {
 	DafUnitTestAbstractTestCaseAdaptor** _tmp0_;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	self->priv = DAF_UNIT_TEST_ABSTRACT_TEST_CASE_GET_PRIVATE (self);
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	_tmp0_ = g_new0 (DafUnitTestAbstractTestCaseAdaptor*, 0 + 1);
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	self->priv->adaptors = _tmp0_;
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	self->priv->adaptors_length1 = 0;
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	self->priv->_adaptors_size_ = self->priv->adaptors_length1;
 #line 1182 "AbstractTestCase.c"
 }
@@ -1186,11 +1186,11 @@ static void
 daf_unit_test_abstract_test_case_finalize (GObject * obj)
 {
 	DafUnitTestAbstractTestCase * self;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	self = G_TYPE_CHECK_INSTANCE_CAST (obj, DAF_UNIT_TEST_TYPE_ABSTRACT_TEST_CASE, DafUnitTestAbstractTestCase);
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	self->priv->adaptors = (_vala_array_free (self->priv->adaptors, self->priv->adaptors_length1, (GDestroyNotify) daf_unit_test_abstract_test_case_adaptor_unref), NULL);
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AbstractTestCase.vala"
 	G_OBJECT_CLASS (daf_unit_test_abstract_test_case_parent_class)->finalize (obj);
 #line 1196 "AbstractTestCase.c"
 }

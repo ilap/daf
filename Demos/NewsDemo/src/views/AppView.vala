@@ -17,6 +17,9 @@
 using App.Widgets;
 using App.Configs;
 
+using Daf.UI.Widgets;
+using Daf.UI.Animation;
+
 namespace App.Views {
 
     /**
@@ -28,6 +31,12 @@ namespace App.Views {
 
         private Gtk.ApplicationWindow app;
         public HeaderBar headerbar;
+
+        private AnimatableAdapter oa1;
+        private AnimatableAdapter oa2;
+        private AnimatableAdapter oa3;
+
+        private AnimatedDeckLayout deck;
 
         /**
          * Constructs a new {@code AppView} object.
@@ -42,12 +51,38 @@ namespace App.Views {
             this.headerbar = new HeaderBar ();
             this.app.set_titlebar (this.headerbar);
 
-            var welcome = new Granite.Widgets.Welcome (
-              Properties.WELCOME,
-              Properties.THIS_APP_JUST_TEMPLATE
-            );
 
-            this.add (welcome);
+            setup_widgets();
+
+        }
+
+        private void setup_widgets() {
+            // Splash Grid
+            var splash_grid = new Gtk.Grid();
+            var main_grid = new Gtk.Grid ();
+            splash_grid.orientation = Gtk.Orientation.VERTICAL;
+            splash_grid.row_spacing = 6;
+            main_grid.orientation = Gtk.Orientation.VERTICAL;
+            main_grid.row_spacing = 6;
+
+            var button1 = new Gtk.Button.with_label ("Splash...");
+            splash_grid.add(button1);
+
+            var button2 = new Gtk.Button.with_label ("Main...");
+            main_grid.add(button2);
+
+
+            var deck = new AnimatedDeckLayout ();
+            deck.border_width = 10;
+
+            deck.add(splash_grid);
+            deck.add(main_grid);
+            
+            this.add (deck);
+
+            var box = new Gtk.Box (Gtk.Orientation.VERTICAL, 10);
+            var box1 = new Gtk.Box (Gtk.Orientation.VERTICAL, 10);
+
         }
     }
 }

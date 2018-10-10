@@ -146,19 +146,19 @@ daf_core_test_model_person_construct (GType object_type,
                                       const gchar* last_name)
 {
 	DafCoreTestModelPerson * self = NULL;
-#line 41 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 41 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	g_return_val_if_fail (first_name != NULL, NULL);
-#line 41 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 41 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	g_return_val_if_fail (last_name != NULL, NULL);
-#line 41 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 41 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	self = (DafCoreTestModelPerson*) g_object_new (object_type, NULL);
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	daf_core_test_model_person_set_first_name (self, first_name);
-#line 43 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 43 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	daf_core_test_model_person_set_last_name (self, last_name);
-#line 44 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 44 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	daf_core_test_model_person_set_sex (self, DAF_CORE_TEST_MODEL_GENDER_FEMALE);
-#line 41 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 41 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	return self;
 #line 164 "Person.c"
 }
@@ -168,7 +168,7 @@ DafCoreTestModelPerson*
 daf_core_test_model_person_new (const gchar* first_name,
                                 const gchar* last_name)
 {
-#line 41 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 41 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	return daf_core_test_model_person_construct (DAF_CORE_TEST_MODEL_TYPE_PERSON, first_name, last_name);
 #line 174 "Person.c"
 }
@@ -179,13 +179,13 @@ daf_core_test_model_person_get_first_name (DafCoreTestModelPerson* self)
 {
 	const gchar* result;
 	const gchar* _tmp0_;
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	_tmp0_ = self->priv->_first_name;
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	result = _tmp0_;
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	return result;
 #line 191 "Person.c"
 }
@@ -195,19 +195,19 @@ void
 daf_core_test_model_person_set_first_name (DafCoreTestModelPerson* self,
                                            const gchar* value)
 {
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	g_return_if_fail (self != NULL);
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	if (g_strcmp0 (value, daf_core_test_model_person_get_first_name (self)) != 0) {
 #line 203 "Person.c"
 		gchar* _tmp0_;
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		_tmp0_ = g_strdup (value);
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		_g_free0 (self->priv->_first_name);
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		self->priv->_first_name = _tmp0_;
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		g_object_notify_by_pspec ((GObject *) self, daf_core_test_model_person_properties[DAF_CORE_TEST_MODEL_PERSON_FIRST_NAME_PROPERTY]);
 #line 213 "Person.c"
 	}
@@ -219,13 +219,13 @@ daf_core_test_model_person_get_last_name (DafCoreTestModelPerson* self)
 {
 	const gchar* result;
 	const gchar* _tmp0_;
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	_tmp0_ = self->priv->_last_name;
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	result = _tmp0_;
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	return result;
 #line 231 "Person.c"
 }
@@ -235,19 +235,19 @@ void
 daf_core_test_model_person_set_last_name (DafCoreTestModelPerson* self,
                                           const gchar* value)
 {
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	g_return_if_fail (self != NULL);
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	if (g_strcmp0 (value, daf_core_test_model_person_get_last_name (self)) != 0) {
 #line 243 "Person.c"
 		gchar* _tmp0_;
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		_tmp0_ = g_strdup (value);
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		_g_free0 (self->priv->_last_name);
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		self->priv->_last_name = _tmp0_;
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		g_object_notify_by_pspec ((GObject *) self, daf_core_test_model_person_properties[DAF_CORE_TEST_MODEL_PERSON_LAST_NAME_PROPERTY]);
 #line 253 "Person.c"
 	}
@@ -259,13 +259,13 @@ daf_core_test_model_person_get_email (DafCoreTestModelPerson* self)
 {
 	const gchar* result;
 	const gchar* _tmp0_;
-#line 30 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 30 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 30 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 30 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	_tmp0_ = self->priv->_email;
-#line 30 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 30 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	result = _tmp0_;
-#line 30 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 30 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	return result;
 #line 271 "Person.c"
 }
@@ -275,19 +275,19 @@ void
 daf_core_test_model_person_set_email (DafCoreTestModelPerson* self,
                                       const gchar* value)
 {
-#line 30 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 30 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	g_return_if_fail (self != NULL);
-#line 30 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 30 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	if (g_strcmp0 (value, daf_core_test_model_person_get_email (self)) != 0) {
 #line 283 "Person.c"
 		gchar* _tmp0_;
-#line 30 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 30 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		_tmp0_ = g_strdup (value);
-#line 30 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 30 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		_g_free0 (self->priv->_email);
-#line 30 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 30 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		self->priv->_email = _tmp0_;
-#line 30 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 30 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		g_object_notify_by_pspec ((GObject *) self, daf_core_test_model_person_properties[DAF_CORE_TEST_MODEL_PERSON_EMAIL_PROPERTY]);
 #line 293 "Person.c"
 	}
@@ -299,13 +299,13 @@ daf_core_test_model_person_get_age (DafCoreTestModelPerson* self)
 {
 	gint result;
 	gint _tmp0_;
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	g_return_val_if_fail (self != NULL, 0);
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	_tmp0_ = self->priv->_age;
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	result = _tmp0_;
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	return result;
 #line 311 "Person.c"
 }
@@ -315,13 +315,13 @@ void
 daf_core_test_model_person_set_age (DafCoreTestModelPerson* self,
                                     gint value)
 {
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	g_return_if_fail (self != NULL);
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	if (daf_core_test_model_person_get_age (self) != value) {
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		self->priv->_age = value;
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		g_object_notify_by_pspec ((GObject *) self, daf_core_test_model_person_properties[DAF_CORE_TEST_MODEL_PERSON_AGE_PROPERTY]);
 #line 327 "Person.c"
 	}
@@ -333,13 +333,13 @@ daf_core_test_model_person_get_sex (DafCoreTestModelPerson* self)
 {
 	DafCoreTestModelGender result;
 	DafCoreTestModelGender _tmp0_;
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	g_return_val_if_fail (self != NULL, 0);
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	_tmp0_ = self->priv->_sex;
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	result = _tmp0_;
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	return result;
 #line 345 "Person.c"
 }
@@ -349,13 +349,13 @@ void
 daf_core_test_model_person_set_sex (DafCoreTestModelPerson* self,
                                     DafCoreTestModelGender value)
 {
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	g_return_if_fail (self != NULL);
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	if (daf_core_test_model_person_get_sex (self) != value) {
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		self->priv->_sex = value;
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		g_object_notify_by_pspec ((GObject *) self, daf_core_test_model_person_properties[DAF_CORE_TEST_MODEL_PERSON_SEX_PROPERTY]);
 #line 361 "Person.c"
 	}
@@ -367,13 +367,13 @@ daf_core_test_model_person_get_spouse (DafCoreTestModelPerson* self)
 {
 	DafCoreTestModelPerson* result;
 	DafCoreTestModelPerson* _tmp0_;
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	_tmp0_ = self->priv->_spouse;
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	result = _tmp0_;
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	return result;
 #line 379 "Person.c"
 }
@@ -382,7 +382,7 @@ daf_core_test_model_person_get_spouse (DafCoreTestModelPerson* self)
 static gpointer
 _g_object_ref0 (gpointer self)
 {
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	return self ? g_object_ref (self) : NULL;
 #line 388 "Person.c"
 }
@@ -392,19 +392,19 @@ void
 daf_core_test_model_person_set_spouse (DafCoreTestModelPerson* self,
                                        DafCoreTestModelPerson* value)
 {
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	g_return_if_fail (self != NULL);
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	if (daf_core_test_model_person_get_spouse (self) != value) {
 #line 400 "Person.c"
 		DafCoreTestModelPerson* _tmp0_;
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		_tmp0_ = _g_object_ref0 (value);
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		_g_object_unref0 (self->priv->_spouse);
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		self->priv->_spouse = _tmp0_;
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		g_object_notify_by_pspec ((GObject *) self, daf_core_test_model_person_properties[DAF_CORE_TEST_MODEL_PERSON_SPOUSE_PROPERTY]);
 #line 410 "Person.c"
 	}
@@ -416,13 +416,13 @@ daf_core_test_model_person_get_friends (DafCoreTestModelPerson* self)
 {
 	GeeArrayList* result;
 	GeeArrayList* _tmp0_;
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	_tmp0_ = self->priv->_friends;
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	result = _tmp0_;
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	return result;
 #line 428 "Person.c"
 }
@@ -432,19 +432,19 @@ void
 daf_core_test_model_person_set_friends (DafCoreTestModelPerson* self,
                                         GeeArrayList* value)
 {
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	g_return_if_fail (self != NULL);
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	if (daf_core_test_model_person_get_friends (self) != value) {
 #line 440 "Person.c"
 		GeeArrayList* _tmp0_;
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		_tmp0_ = _g_object_ref0 (value);
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		_g_object_unref0 (self->priv->_friends);
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		self->priv->_friends = _tmp0_;
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		g_object_notify_by_pspec ((GObject *) self, daf_core_test_model_person_properties[DAF_CORE_TEST_MODEL_PERSON_FRIENDS_PROPERTY]);
 #line 450 "Person.c"
 	}
@@ -456,13 +456,13 @@ daf_core_test_model_person_get_address (DafCoreTestModelPerson* self)
 {
 	DafCoreTestModelAddress* result;
 	DafCoreTestModelAddress* _tmp0_;
-#line 39 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 39 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 39 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 39 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	_tmp0_ = self->priv->_address;
-#line 39 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 39 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	result = _tmp0_;
-#line 39 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 39 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	return result;
 #line 468 "Person.c"
 }
@@ -472,19 +472,19 @@ void
 daf_core_test_model_person_set_address (DafCoreTestModelPerson* self,
                                         DafCoreTestModelAddress* value)
 {
-#line 39 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 39 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	g_return_if_fail (self != NULL);
-#line 39 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 39 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	if (daf_core_test_model_person_get_address (self) != value) {
 #line 480 "Person.c"
 		DafCoreTestModelAddress* _tmp0_;
-#line 39 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 39 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		_tmp0_ = _g_object_ref0 (value);
-#line 39 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 39 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		_g_object_unref0 (self->priv->_address);
-#line 39 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 39 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		self->priv->_address = _tmp0_;
-#line 39 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 39 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		g_object_notify_by_pspec ((GObject *) self, daf_core_test_model_person_properties[DAF_CORE_TEST_MODEL_PERSON_ADDRESS_PROPERTY]);
 #line 490 "Person.c"
 	}
@@ -494,31 +494,31 @@ daf_core_test_model_person_set_address (DafCoreTestModelPerson* self,
 static void
 daf_core_test_model_person_class_init (DafCoreTestModelPersonClass * klass)
 {
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	daf_core_test_model_person_parent_class = g_type_class_peek_parent (klass);
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	g_type_class_add_private (klass, sizeof (DafCoreTestModelPersonPrivate));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	G_OBJECT_CLASS (klass)->get_property = _vala_daf_core_test_model_person_get_property;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	G_OBJECT_CLASS (klass)->set_property = _vala_daf_core_test_model_person_set_property;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	G_OBJECT_CLASS (klass)->finalize = daf_core_test_model_person_finalize;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	g_object_class_install_property (G_OBJECT_CLASS (klass), DAF_CORE_TEST_MODEL_PERSON_FIRST_NAME_PROPERTY, daf_core_test_model_person_properties[DAF_CORE_TEST_MODEL_PERSON_FIRST_NAME_PROPERTY] = g_param_spec_string ("first-name", "first-name", "first-name", NULL, G_PARAM_STATIC_STRINGS | G_PARAM_READABLE | G_PARAM_WRITABLE));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	g_object_class_install_property (G_OBJECT_CLASS (klass), DAF_CORE_TEST_MODEL_PERSON_LAST_NAME_PROPERTY, daf_core_test_model_person_properties[DAF_CORE_TEST_MODEL_PERSON_LAST_NAME_PROPERTY] = g_param_spec_string ("last-name", "last-name", "last-name", NULL, G_PARAM_STATIC_STRINGS | G_PARAM_READABLE | G_PARAM_WRITABLE));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	g_object_class_install_property (G_OBJECT_CLASS (klass), DAF_CORE_TEST_MODEL_PERSON_EMAIL_PROPERTY, daf_core_test_model_person_properties[DAF_CORE_TEST_MODEL_PERSON_EMAIL_PROPERTY] = g_param_spec_string ("email", "email", "email", NULL, G_PARAM_STATIC_STRINGS | G_PARAM_READABLE | G_PARAM_WRITABLE));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	g_object_class_install_property (G_OBJECT_CLASS (klass), DAF_CORE_TEST_MODEL_PERSON_AGE_PROPERTY, daf_core_test_model_person_properties[DAF_CORE_TEST_MODEL_PERSON_AGE_PROPERTY] = g_param_spec_int ("age", "age", "age", G_MININT, G_MAXINT, 0, G_PARAM_STATIC_STRINGS | G_PARAM_READABLE | G_PARAM_WRITABLE));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	g_object_class_install_property (G_OBJECT_CLASS (klass), DAF_CORE_TEST_MODEL_PERSON_SEX_PROPERTY, daf_core_test_model_person_properties[DAF_CORE_TEST_MODEL_PERSON_SEX_PROPERTY] = g_param_spec_enum ("sex", "sex", "sex", DAF_CORE_TEST_MODEL_TYPE_GENDER, 0, G_PARAM_STATIC_STRINGS | G_PARAM_READABLE | G_PARAM_WRITABLE));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	g_object_class_install_property (G_OBJECT_CLASS (klass), DAF_CORE_TEST_MODEL_PERSON_SPOUSE_PROPERTY, daf_core_test_model_person_properties[DAF_CORE_TEST_MODEL_PERSON_SPOUSE_PROPERTY] = g_param_spec_object ("spouse", "spouse", "spouse", DAF_CORE_TEST_MODEL_TYPE_PERSON, G_PARAM_STATIC_STRINGS | G_PARAM_READABLE | G_PARAM_WRITABLE));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	g_object_class_install_property (G_OBJECT_CLASS (klass), DAF_CORE_TEST_MODEL_PERSON_FRIENDS_PROPERTY, daf_core_test_model_person_properties[DAF_CORE_TEST_MODEL_PERSON_FRIENDS_PROPERTY] = g_param_spec_object ("friends", "friends", "friends", GEE_TYPE_ARRAY_LIST, G_PARAM_STATIC_STRINGS | G_PARAM_READABLE | G_PARAM_WRITABLE));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	g_object_class_install_property (G_OBJECT_CLASS (klass), DAF_CORE_TEST_MODEL_PERSON_ADDRESS_PROPERTY, daf_core_test_model_person_properties[DAF_CORE_TEST_MODEL_PERSON_ADDRESS_PROPERTY] = g_param_spec_object ("address", "address", "address", DAF_CORE_TEST_MODEL_TYPE_ADDRESS, G_PARAM_STATIC_STRINGS | G_PARAM_READABLE | G_PARAM_WRITABLE));
 #line 524 "Person.c"
 }
@@ -527,7 +527,7 @@ daf_core_test_model_person_class_init (DafCoreTestModelPersonClass * klass)
 static void
 daf_core_test_model_person_instance_init (DafCoreTestModelPerson * self)
 {
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	self->priv = DAF_CORE_TEST_MODEL_PERSON_GET_PRIVATE (self);
 #line 533 "Person.c"
 }
@@ -537,21 +537,21 @@ static void
 daf_core_test_model_person_finalize (GObject * obj)
 {
 	DafCoreTestModelPerson * self;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	self = G_TYPE_CHECK_INSTANCE_CAST (obj, DAF_CORE_TEST_MODEL_TYPE_PERSON, DafCoreTestModelPerson);
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	_g_free0 (self->priv->_first_name);
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	_g_free0 (self->priv->_last_name);
-#line 30 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 30 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	_g_free0 (self->priv->_email);
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	_g_object_unref0 (self->priv->_spouse);
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	_g_object_unref0 (self->priv->_friends);
-#line 39 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 39 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	_g_object_unref0 (self->priv->_address);
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	G_OBJECT_CLASS (daf_core_test_model_person_parent_class)->finalize (obj);
 #line 557 "Person.c"
 }
@@ -579,61 +579,61 @@ _vala_daf_core_test_model_person_get_property (GObject * object,
 {
 	DafCoreTestModelPerson * self;
 	self = G_TYPE_CHECK_INSTANCE_CAST (object, DAF_CORE_TEST_MODEL_TYPE_PERSON, DafCoreTestModelPerson);
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	switch (property_id) {
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		case DAF_CORE_TEST_MODEL_PERSON_FIRST_NAME_PROPERTY:
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		g_value_set_string (value, daf_core_test_model_person_get_first_name (self));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		break;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		case DAF_CORE_TEST_MODEL_PERSON_LAST_NAME_PROPERTY:
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		g_value_set_string (value, daf_core_test_model_person_get_last_name (self));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		break;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		case DAF_CORE_TEST_MODEL_PERSON_EMAIL_PROPERTY:
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		g_value_set_string (value, daf_core_test_model_person_get_email (self));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		break;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		case DAF_CORE_TEST_MODEL_PERSON_AGE_PROPERTY:
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		g_value_set_int (value, daf_core_test_model_person_get_age (self));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		break;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		case DAF_CORE_TEST_MODEL_PERSON_SEX_PROPERTY:
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		g_value_set_enum (value, daf_core_test_model_person_get_sex (self));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		break;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		case DAF_CORE_TEST_MODEL_PERSON_SPOUSE_PROPERTY:
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		g_value_set_object (value, daf_core_test_model_person_get_spouse (self));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		break;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		case DAF_CORE_TEST_MODEL_PERSON_FRIENDS_PROPERTY:
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		g_value_set_object (value, daf_core_test_model_person_get_friends (self));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		break;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		case DAF_CORE_TEST_MODEL_PERSON_ADDRESS_PROPERTY:
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		g_value_set_object (value, daf_core_test_model_person_get_address (self));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		break;
 #line 633 "Person.c"
 		default:
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		G_OBJECT_WARN_INVALID_PROPERTY_ID (object, property_id, pspec);
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		break;
 #line 639 "Person.c"
 	}
@@ -648,61 +648,61 @@ _vala_daf_core_test_model_person_set_property (GObject * object,
 {
 	DafCoreTestModelPerson * self;
 	self = G_TYPE_CHECK_INSTANCE_CAST (object, DAF_CORE_TEST_MODEL_TYPE_PERSON, DafCoreTestModelPerson);
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 	switch (property_id) {
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		case DAF_CORE_TEST_MODEL_PERSON_FIRST_NAME_PROPERTY:
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		daf_core_test_model_person_set_first_name (self, g_value_get_string (value));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		break;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		case DAF_CORE_TEST_MODEL_PERSON_LAST_NAME_PROPERTY:
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		daf_core_test_model_person_set_last_name (self, g_value_get_string (value));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		break;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		case DAF_CORE_TEST_MODEL_PERSON_EMAIL_PROPERTY:
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		daf_core_test_model_person_set_email (self, g_value_get_string (value));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		break;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		case DAF_CORE_TEST_MODEL_PERSON_AGE_PROPERTY:
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		daf_core_test_model_person_set_age (self, g_value_get_int (value));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		break;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		case DAF_CORE_TEST_MODEL_PERSON_SEX_PROPERTY:
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		daf_core_test_model_person_set_sex (self, g_value_get_enum (value));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		break;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		case DAF_CORE_TEST_MODEL_PERSON_SPOUSE_PROPERTY:
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		daf_core_test_model_person_set_spouse (self, g_value_get_object (value));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		break;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		case DAF_CORE_TEST_MODEL_PERSON_FRIENDS_PROPERTY:
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		daf_core_test_model_person_set_friends (self, g_value_get_object (value));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		break;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		case DAF_CORE_TEST_MODEL_PERSON_ADDRESS_PROPERTY:
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		daf_core_test_model_person_set_address (self, g_value_get_object (value));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		break;
 #line 702 "Person.c"
 		default:
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		G_OBJECT_WARN_INVALID_PROPERTY_ID (object, property_id, pspec);
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/Model/Person.vala"
 		break;
 #line 708 "Person.c"
 	}

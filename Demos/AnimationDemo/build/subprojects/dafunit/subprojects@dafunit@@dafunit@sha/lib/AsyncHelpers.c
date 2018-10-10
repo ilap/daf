@@ -169,17 +169,17 @@ daf_unit_test_signal_wrapper_callback (DafUnitTestSignalWrapper* self)
 {
 	gint result = 0;
 	gint _tmp0_;
-#line 30 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 30 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	g_return_val_if_fail (self != NULL, 0);
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	_tmp0_ = self->priv->_catch_count;
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	daf_unit_test_signal_wrapper_set_catch_count (self, _tmp0_ + 1);
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	g_signal_emit (self, daf_unit_test_signal_wrapper_signals[DAF_UNIT_TEST_SIGNAL_WRAPPER_TRIGGERED_SIGNAL], 0);
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	result = 0;
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	return result;
 #line 185 "AsyncHelpers.c"
 }
@@ -190,15 +190,15 @@ daf_unit_test_signal_wrapper_setup (DafUnitTestSignalWrapper* self)
 {
 	GObject* _tmp0_;
 	const gchar* _tmp1_;
-#line 36 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 36 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	g_return_if_fail (self != NULL);
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	_tmp0_ = self->priv->_emitter;
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	_tmp1_ = self->priv->_signame;
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	daf_unit_test_signal_wrapper_set_id (self, g_signal_connect_swapped (_tmp0_, _tmp1_, (GCallback) daf_unit_test_signal_wrapper_callback, self));
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	daf_unit_test_signal_wrapper_set_catch_count (self, 0);
 #line 204 "AsyncHelpers.c"
 }
@@ -209,13 +209,13 @@ daf_unit_test_signal_wrapper_release (DafUnitTestSignalWrapper* self)
 {
 	GObject* _tmp0_;
 	gulong _tmp1_;
-#line 41 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 41 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	g_return_if_fail (self != NULL);
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	_tmp0_ = self->priv->_emitter;
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	_tmp1_ = self->priv->_id;
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	g_signal_handler_disconnect (_tmp0_, _tmp1_);
 #line 221 "AsyncHelpers.c"
 }
@@ -225,9 +225,9 @@ DafUnitTestSignalWrapper*
 daf_unit_test_signal_wrapper_construct (GType object_type)
 {
 	DafUnitTestSignalWrapper* self = NULL;
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	self = (DafUnitTestSignalWrapper*) g_type_create_instance (object_type);
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	return self;
 #line 233 "AsyncHelpers.c"
 }
@@ -236,7 +236,7 @@ daf_unit_test_signal_wrapper_construct (GType object_type)
 DafUnitTestSignalWrapper*
 daf_unit_test_signal_wrapper_new (void)
 {
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	return daf_unit_test_signal_wrapper_construct (DAF_UNIT_TEST_TYPE_SIGNAL_WRAPPER);
 #line 242 "AsyncHelpers.c"
 }
@@ -247,13 +247,13 @@ daf_unit_test_signal_wrapper_get_emitter (DafUnitTestSignalWrapper* self)
 {
 	GObject* result;
 	GObject* _tmp0_;
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	_tmp0_ = self->priv->_emitter;
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	result = _tmp0_;
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	return result;
 #line 259 "AsyncHelpers.c"
 }
@@ -262,7 +262,7 @@ daf_unit_test_signal_wrapper_get_emitter (DafUnitTestSignalWrapper* self)
 static gpointer
 _g_object_ref0 (gpointer self)
 {
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	return self ? g_object_ref (self) : NULL;
 #line 268 "AsyncHelpers.c"
 }
@@ -273,13 +273,13 @@ daf_unit_test_signal_wrapper_set_emitter (DafUnitTestSignalWrapper* self,
                                           GObject* value)
 {
 	GObject* _tmp0_;
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	g_return_if_fail (self != NULL);
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	_tmp0_ = _g_object_ref0 (value);
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	_g_object_unref0 (self->priv->_emitter);
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	self->priv->_emitter = _tmp0_;
 #line 285 "AsyncHelpers.c"
 }
@@ -290,13 +290,13 @@ daf_unit_test_signal_wrapper_get_signame (DafUnitTestSignalWrapper* self)
 {
 	const gchar* result;
 	const gchar* _tmp0_;
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	_tmp0_ = self->priv->_signame;
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	result = _tmp0_;
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	return result;
 #line 302 "AsyncHelpers.c"
 }
@@ -307,13 +307,13 @@ daf_unit_test_signal_wrapper_set_signame (DafUnitTestSignalWrapper* self,
                                           const gchar* value)
 {
 	gchar* _tmp0_;
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	g_return_if_fail (self != NULL);
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	_tmp0_ = g_strdup (value);
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	_g_free0 (self->priv->_signame);
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	self->priv->_signame = _tmp0_;
 #line 319 "AsyncHelpers.c"
 }
@@ -324,13 +324,13 @@ daf_unit_test_signal_wrapper_get_id (DafUnitTestSignalWrapper* self)
 {
 	gulong result;
 	gulong _tmp0_;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	g_return_val_if_fail (self != NULL, 0UL);
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	_tmp0_ = self->priv->_id;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	result = _tmp0_;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	return result;
 #line 336 "AsyncHelpers.c"
 }
@@ -340,9 +340,9 @@ void
 daf_unit_test_signal_wrapper_set_id (DafUnitTestSignalWrapper* self,
                                      gulong value)
 {
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	g_return_if_fail (self != NULL);
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	self->priv->_id = value;
 #line 348 "AsyncHelpers.c"
 }
@@ -353,13 +353,13 @@ daf_unit_test_signal_wrapper_get_timeout (DafUnitTestSignalWrapper* self)
 {
 	gint result;
 	gint _tmp0_;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	g_return_val_if_fail (self != NULL, 0);
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	_tmp0_ = self->priv->_timeout;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	result = _tmp0_;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	return result;
 #line 365 "AsyncHelpers.c"
 }
@@ -369,9 +369,9 @@ void
 daf_unit_test_signal_wrapper_set_timeout (DafUnitTestSignalWrapper* self,
                                           gint value)
 {
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	g_return_if_fail (self != NULL);
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	self->priv->_timeout = value;
 #line 377 "AsyncHelpers.c"
 }
@@ -382,13 +382,13 @@ daf_unit_test_signal_wrapper_get_catch_count (DafUnitTestSignalWrapper* self)
 {
 	gint result;
 	gint _tmp0_;
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	g_return_val_if_fail (self != NULL, 0);
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	_tmp0_ = self->priv->_catch_count;
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	result = _tmp0_;
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	return result;
 #line 394 "AsyncHelpers.c"
 }
@@ -398,9 +398,9 @@ void
 daf_unit_test_signal_wrapper_set_catch_count (DafUnitTestSignalWrapper* self,
                                               gint value)
 {
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	g_return_if_fail (self != NULL);
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	self->priv->_catch_count = value;
 #line 406 "AsyncHelpers.c"
 }
@@ -409,7 +409,7 @@ daf_unit_test_signal_wrapper_set_catch_count (DafUnitTestSignalWrapper* self,
 static void
 daf_unit_test_value_signal_wrapper_init (GValue* value)
 {
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	value->data[0].v_pointer = NULL;
 #line 415 "AsyncHelpers.c"
 }
@@ -418,9 +418,9 @@ daf_unit_test_value_signal_wrapper_init (GValue* value)
 static void
 daf_unit_test_value_signal_wrapper_free_value (GValue* value)
 {
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	if (value->data[0].v_pointer) {
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 		daf_unit_test_signal_wrapper_unref (value->data[0].v_pointer);
 #line 426 "AsyncHelpers.c"
 	}
@@ -431,13 +431,13 @@ static void
 daf_unit_test_value_signal_wrapper_copy_value (const GValue* src_value,
                                                GValue* dest_value)
 {
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	if (src_value->data[0].v_pointer) {
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 		dest_value->data[0].v_pointer = daf_unit_test_signal_wrapper_ref (src_value->data[0].v_pointer);
 #line 439 "AsyncHelpers.c"
 	} else {
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 		dest_value->data[0].v_pointer = NULL;
 #line 443 "AsyncHelpers.c"
 	}
@@ -447,7 +447,7 @@ daf_unit_test_value_signal_wrapper_copy_value (const GValue* src_value,
 static gpointer
 daf_unit_test_value_signal_wrapper_peek_pointer (const GValue* value)
 {
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	return value->data[0].v_pointer;
 #line 453 "AsyncHelpers.c"
 }
@@ -459,30 +459,30 @@ daf_unit_test_value_signal_wrapper_collect_value (GValue* value,
                                                   GTypeCValue* collect_values,
                                                   guint collect_flags)
 {
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	if (collect_values[0].v_pointer) {
 #line 465 "AsyncHelpers.c"
 		DafUnitTestSignalWrapper * object;
 		object = collect_values[0].v_pointer;
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 		if (object->parent_instance.g_class == NULL) {
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 			return g_strconcat ("invalid unclassed object pointer for value type `", G_VALUE_TYPE_NAME (value), "'", NULL);
 #line 472 "AsyncHelpers.c"
 		} else if (!g_value_type_compatible (G_TYPE_FROM_INSTANCE (object), G_VALUE_TYPE (value))) {
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 			return g_strconcat ("invalid object type `", g_type_name (G_TYPE_FROM_INSTANCE (object)), "' for value type `", G_VALUE_TYPE_NAME (value), "'", NULL);
 #line 476 "AsyncHelpers.c"
 		}
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 		value->data[0].v_pointer = daf_unit_test_signal_wrapper_ref (object);
 #line 480 "AsyncHelpers.c"
 	} else {
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 		value->data[0].v_pointer = NULL;
 #line 484 "AsyncHelpers.c"
 	}
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	return NULL;
 #line 488 "AsyncHelpers.c"
 }
@@ -496,27 +496,27 @@ daf_unit_test_value_signal_wrapper_lcopy_value (const GValue* value,
 {
 	DafUnitTestSignalWrapper ** object_p;
 	object_p = collect_values[0].v_pointer;
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	if (!object_p) {
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 		return g_strdup_printf ("value location for `%s' passed as NULL", G_VALUE_TYPE_NAME (value));
 #line 504 "AsyncHelpers.c"
 	}
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	if (!value->data[0].v_pointer) {
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 		*object_p = NULL;
 #line 510 "AsyncHelpers.c"
 	} else if (collect_flags & G_VALUE_NOCOPY_CONTENTS) {
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 		*object_p = value->data[0].v_pointer;
 #line 514 "AsyncHelpers.c"
 	} else {
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 		*object_p = daf_unit_test_signal_wrapper_ref (value->data[0].v_pointer);
 #line 518 "AsyncHelpers.c"
 	}
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	return NULL;
 #line 522 "AsyncHelpers.c"
 }
@@ -530,13 +530,13 @@ daf_unit_test_param_spec_signal_wrapper (const gchar* name,
                                          GParamFlags flags)
 {
 	DafUnitTestParamSpecSignalWrapper* spec;
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	g_return_val_if_fail (g_type_is_a (object_type, DAF_UNIT_TEST_TYPE_SIGNAL_WRAPPER), NULL);
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	spec = g_param_spec_internal (G_TYPE_PARAM_OBJECT, name, nick, blurb, flags);
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	G_PARAM_SPEC (spec)->value_type = object_type;
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	return G_PARAM_SPEC (spec);
 #line 542 "AsyncHelpers.c"
 }
@@ -545,9 +545,9 @@ daf_unit_test_param_spec_signal_wrapper (const gchar* name,
 gpointer
 daf_unit_test_value_get_signal_wrapper (const GValue* value)
 {
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	g_return_val_if_fail (G_TYPE_CHECK_VALUE_TYPE (value, DAF_UNIT_TEST_TYPE_SIGNAL_WRAPPER), NULL);
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	return value->data[0].v_pointer;
 #line 553 "AsyncHelpers.c"
 }
@@ -558,29 +558,29 @@ daf_unit_test_value_set_signal_wrapper (GValue* value,
                                         gpointer v_object)
 {
 	DafUnitTestSignalWrapper * old;
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	g_return_if_fail (G_TYPE_CHECK_VALUE_TYPE (value, DAF_UNIT_TEST_TYPE_SIGNAL_WRAPPER));
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	old = value->data[0].v_pointer;
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	if (v_object) {
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 		g_return_if_fail (G_TYPE_CHECK_INSTANCE_TYPE (v_object, DAF_UNIT_TEST_TYPE_SIGNAL_WRAPPER));
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 		g_return_if_fail (g_value_type_compatible (G_TYPE_FROM_INSTANCE (v_object), G_VALUE_TYPE (value)));
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 		value->data[0].v_pointer = v_object;
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 		daf_unit_test_signal_wrapper_ref (value->data[0].v_pointer);
 #line 576 "AsyncHelpers.c"
 	} else {
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 		value->data[0].v_pointer = NULL;
 #line 580 "AsyncHelpers.c"
 	}
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	if (old) {
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 		daf_unit_test_signal_wrapper_unref (old);
 #line 586 "AsyncHelpers.c"
 	}
@@ -592,27 +592,27 @@ daf_unit_test_value_take_signal_wrapper (GValue* value,
                                          gpointer v_object)
 {
 	DafUnitTestSignalWrapper * old;
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	g_return_if_fail (G_TYPE_CHECK_VALUE_TYPE (value, DAF_UNIT_TEST_TYPE_SIGNAL_WRAPPER));
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	old = value->data[0].v_pointer;
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	if (v_object) {
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 		g_return_if_fail (G_TYPE_CHECK_INSTANCE_TYPE (v_object, DAF_UNIT_TEST_TYPE_SIGNAL_WRAPPER));
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 		g_return_if_fail (g_value_type_compatible (G_TYPE_FROM_INSTANCE (v_object), G_VALUE_TYPE (value)));
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 		value->data[0].v_pointer = v_object;
 #line 608 "AsyncHelpers.c"
 	} else {
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 		value->data[0].v_pointer = NULL;
 #line 612 "AsyncHelpers.c"
 	}
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	if (old) {
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 		daf_unit_test_signal_wrapper_unref (old);
 #line 618 "AsyncHelpers.c"
 	}
@@ -622,13 +622,13 @@ daf_unit_test_value_take_signal_wrapper (GValue* value,
 static void
 daf_unit_test_signal_wrapper_class_init (DafUnitTestSignalWrapperClass * klass)
 {
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	daf_unit_test_signal_wrapper_parent_class = g_type_class_peek_parent (klass);
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	((DafUnitTestSignalWrapperClass *) klass)->finalize = daf_unit_test_signal_wrapper_finalize;
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	g_type_class_add_private (klass, sizeof (DafUnitTestSignalWrapperPrivate));
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	daf_unit_test_signal_wrapper_signals[DAF_UNIT_TEST_SIGNAL_WRAPPER_TRIGGERED_SIGNAL] = g_signal_new ("triggered", DAF_UNIT_TEST_TYPE_SIGNAL_WRAPPER, G_SIGNAL_RUN_LAST, 0, NULL, NULL, g_cclosure_marshal_VOID__VOID, G_TYPE_NONE, 0);
 #line 634 "AsyncHelpers.c"
 }
@@ -638,13 +638,13 @@ static void
 daf_unit_test_signal_wrapper_instance_init (DafUnitTestSignalWrapper * self)
 {
 	gchar* _tmp0_;
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	self->priv = DAF_UNIT_TEST_SIGNAL_WRAPPER_GET_PRIVATE (self);
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	_tmp0_ = g_strdup ("");
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	self->priv->_signame = _tmp0_;
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	self->ref_count = 1;
 #line 650 "AsyncHelpers.c"
 }
@@ -654,13 +654,13 @@ static void
 daf_unit_test_signal_wrapper_finalize (DafUnitTestSignalWrapper * obj)
 {
 	DafUnitTestSignalWrapper * self;
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	self = G_TYPE_CHECK_INSTANCE_CAST (obj, DAF_UNIT_TEST_TYPE_SIGNAL_WRAPPER, DafUnitTestSignalWrapper);
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	g_signal_handlers_destroy (self);
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	_g_object_unref0 (self->priv->_emitter);
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	_g_free0 (self->priv->_signame);
 #line 666 "AsyncHelpers.c"
 }
@@ -687,9 +687,9 @@ daf_unit_test_signal_wrapper_ref (gpointer instance)
 {
 	DafUnitTestSignalWrapper * self;
 	self = instance;
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	g_atomic_int_inc (&self->ref_count);
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	return instance;
 #line 695 "AsyncHelpers.c"
 }
@@ -700,11 +700,11 @@ daf_unit_test_signal_wrapper_unref (gpointer instance)
 {
 	DafUnitTestSignalWrapper * self;
 	self = instance;
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	if (g_atomic_int_dec_and_test (&self->ref_count)) {
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 		DAF_UNIT_TEST_SIGNAL_WRAPPER_GET_CLASS (self)->finalize (self);
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 		g_type_free_instance ((GTypeInstance *) self);
 #line 710 "AsyncHelpers.c"
 	}
@@ -714,7 +714,7 @@ daf_unit_test_signal_wrapper_unref (gpointer instance)
 static void
 _daf_unit_test_signal_wrapper_unref0_ (gpointer var)
 {
-#line 60 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 60 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	(var == NULL) ? NULL : (var = (daf_unit_test_signal_wrapper_unref (var), NULL));
 #line 720 "AsyncHelpers.c"
 }
@@ -723,7 +723,7 @@ _daf_unit_test_signal_wrapper_unref0_ (gpointer var)
 static inline void
 _g_list_free__daf_unit_test_signal_wrapper_unref0_ (GList* self)
 {
-#line 60 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 60 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	g_list_free_full (self, (GDestroyNotify) _daf_unit_test_signal_wrapper_unref0_);
 #line 729 "AsyncHelpers.c"
 }
@@ -744,21 +744,21 @@ __lambda10_ (DafUnitTestMultiSignalWaiter* self)
 	guint _tmp0_;
 	guint _tmp1_;
 	GList* _tmp2_;
-#line 76 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 76 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	_tmp0_ = self->priv->succeeded_count;
-#line 76 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 76 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	self->priv->succeeded_count = _tmp0_ + 1;
-#line 77 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 77 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	_tmp1_ = self->priv->succeeded_count;
-#line 77 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 77 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	_tmp2_ = self->priv->signals;
-#line 77 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 77 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	if (_tmp1_ == g_list_length (_tmp2_)) {
 #line 758 "AsyncHelpers.c"
 		GMainLoop* _tmp3_;
-#line 78 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 78 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 		_tmp3_ = self->priv->mainloop;
-#line 78 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 78 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 		g_main_loop_quit (_tmp3_);
 #line 764 "AsyncHelpers.c"
 	}
@@ -769,7 +769,7 @@ static void
 ___lambda10__daf_unit_test_signal_wrapper_triggered (DafUnitTestSignalWrapper* _sender,
                                                      gpointer self)
 {
-#line 75 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 75 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	__lambda10_ ((DafUnitTestMultiSignalWaiter*) self);
 #line 775 "AsyncHelpers.c"
 }
@@ -778,7 +778,7 @@ ___lambda10__daf_unit_test_signal_wrapper_triggered (DafUnitTestSignalWrapper* _
 static gpointer
 _daf_unit_test_signal_wrapper_ref0 (gpointer self)
 {
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	return self ? daf_unit_test_signal_wrapper_ref (self) : NULL;
 #line 784 "AsyncHelpers.c"
 }
@@ -795,37 +795,37 @@ daf_unit_test_multi_signal_waiter_add_signal (DafUnitTestMultiSignalWaiter* self
 	gchar* _tmp1_;
 	DafUnitTestSignalWrapper* _tmp2_ = NULL;
 	DafUnitTestSignalWrapper* _tmp3_;
-#line 73 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 73 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	g_return_if_fail (self != NULL);
-#line 73 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 73 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	g_return_if_fail (emitter != NULL);
-#line 73 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 73 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	g_return_if_fail (signame != NULL);
-#line 74 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 74 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	_tmp0_ = _g_object_ref0 (emitter);
-#line 74 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 74 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	_tmp1_ = g_strdup (signame);
-#line 74 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 74 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	_tmp2_ = daf_unit_test_signal_wrapper_new ();
-#line 74 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 74 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	daf_unit_test_signal_wrapper_set_emitter (_tmp2_, _tmp0_);
-#line 74 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 74 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	_g_object_unref0 (_tmp0_);
-#line 74 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 74 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	daf_unit_test_signal_wrapper_set_signame (_tmp2_, _tmp1_);
-#line 74 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 74 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	_g_free0 (_tmp1_);
-#line 74 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 74 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	daf_unit_test_signal_wrapper_set_timeout (_tmp2_, timeout);
-#line 74 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 74 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	s = _tmp2_;
-#line 75 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 75 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	g_signal_connect_object (s, "triggered", (GCallback) ___lambda10__daf_unit_test_signal_wrapper_triggered, self, 0);
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	_tmp3_ = _daf_unit_test_signal_wrapper_ref0 (s);
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	self->priv->signals = g_list_append (self->priv->signals, _tmp3_);
-#line 73 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 73 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	_daf_unit_test_signal_wrapper_unref0 (s);
 #line 831 "AsyncHelpers.c"
 }
@@ -846,13 +846,13 @@ __lambda11_ (DafUnitTestMultiSignalWaiter* self)
 {
 	gboolean result = FALSE;
 	GMainLoop* _tmp0_;
-#line 103 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 103 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	_tmp0_ = self->priv->mainloop;
-#line 103 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 103 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	g_main_loop_quit (_tmp0_);
-#line 104 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 104 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	result = FALSE;
-#line 104 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 104 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	return result;
 #line 858 "AsyncHelpers.c"
 }
@@ -863,7 +863,7 @@ ___lambda11__gsource_func (gpointer self)
 {
 	gboolean result;
 	result = __lambda11_ ((DafUnitTestMultiSignalWaiter*) self);
-#line 102 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 102 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	return result;
 #line 869 "AsyncHelpers.c"
 }
@@ -883,89 +883,89 @@ daf_unit_test_multi_signal_waiter_run (DafUnitTestMultiSignalWaiter* self,
 	gboolean succeeded = FALSE;
 	GList* _tmp7_;
 	guint _tmp13_;
-#line 93 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 93 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	g_return_val_if_fail (self != NULL, FALSE);
-#line 95 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 95 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	_tmp0_ = g_main_context_default ();
-#line 95 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 95 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	_tmp1_ = g_main_loop_new (_tmp0_, TRUE);
-#line 95 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 95 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	_g_main_loop_unref0 (self->priv->mainloop);
-#line 95 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 95 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	self->priv->mainloop = _tmp1_;
-#line 96 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 96 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	self->priv->succeeded_count = (guint) 0;
-#line 98 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 98 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	_tmp2_ = self->priv->signals;
 #line 901 "AsyncHelpers.c"
 	{
 		GList* s_collection = NULL;
 		GList* s_it = NULL;
-#line 98 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 98 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 		s_collection = _tmp2_;
-#line 98 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 98 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 		for (s_it = s_collection; s_it != NULL; s_it = s_it->next) {
 #line 909 "AsyncHelpers.c"
 			DafUnitTestSignalWrapper* _tmp3_;
 			DafUnitTestSignalWrapper* s = NULL;
-#line 98 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 98 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 			_tmp3_ = _daf_unit_test_signal_wrapper_ref0 ((DafUnitTestSignalWrapper*) s_it->data);
-#line 98 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 98 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 			s = _tmp3_;
 #line 916 "AsyncHelpers.c"
 			{
 				DafUnitTestSignalWrapper* _tmp4_;
-#line 99 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 99 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 				_tmp4_ = s;
-#line 99 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 99 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 				daf_unit_test_signal_wrapper_setup (_tmp4_);
-#line 98 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 98 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 				_daf_unit_test_signal_wrapper_unref0 (s);
 #line 925 "AsyncHelpers.c"
 			}
 		}
 	}
-#line 101 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 101 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	block (block_target);
-#line 102 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 102 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	t1 = g_timeout_add_full (G_PRIORITY_DEFAULT, (guint) timeout, ___lambda11__gsource_func, g_object_ref (self), g_object_unref);
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	while (TRUE) {
 #line 935 "AsyncHelpers.c"
 		GMainLoop* _tmp5_;
 		GMainLoop* _tmp6_;
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 		_tmp5_ = self->priv->mainloop;
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 		if (!g_main_loop_is_running (_tmp5_)) {
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 			break;
 #line 944 "AsyncHelpers.c"
 		}
-#line 108 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 108 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 		_tmp6_ = self->priv->mainloop;
-#line 108 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 108 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 		g_main_loop_run (_tmp6_);
 #line 950 "AsyncHelpers.c"
 	}
-#line 110 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 110 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	succeeded = TRUE;
-#line 111 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 111 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	_tmp7_ = self->priv->signals;
 #line 956 "AsyncHelpers.c"
 	{
 		GList* s_collection = NULL;
 		GList* s_it = NULL;
-#line 111 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 111 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 		s_collection = _tmp7_;
-#line 111 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 111 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 		for (s_it = s_collection; s_it != NULL; s_it = s_it->next) {
 #line 964 "AsyncHelpers.c"
 			DafUnitTestSignalWrapper* _tmp8_;
 			DafUnitTestSignalWrapper* s = NULL;
-#line 111 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 111 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 			_tmp8_ = _daf_unit_test_signal_wrapper_ref0 ((DafUnitTestSignalWrapper*) s_it->data);
-#line 111 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 111 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 			s = _tmp8_;
 #line 971 "AsyncHelpers.c"
 			{
@@ -973,35 +973,35 @@ daf_unit_test_multi_signal_waiter_run (DafUnitTestMultiSignalWaiter* self,
 				DafUnitTestSignalWrapper* _tmp10_;
 				gint _tmp11_;
 				gint _tmp12_;
-#line 113 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 113 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 				_tmp9_ = s;
-#line 113 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 113 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 				daf_unit_test_signal_wrapper_release (_tmp9_);
-#line 114 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 114 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 				_tmp10_ = s;
-#line 114 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 114 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 				_tmp11_ = daf_unit_test_signal_wrapper_get_catch_count (_tmp10_);
-#line 114 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 114 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 				_tmp12_ = _tmp11_;
-#line 114 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 114 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 				if (_tmp12_ == 0) {
-#line 115 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 115 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 					succeeded = FALSE;
 #line 991 "AsyncHelpers.c"
 				}
-#line 111 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 111 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 				_daf_unit_test_signal_wrapper_unref0 (s);
 #line 995 "AsyncHelpers.c"
 			}
 		}
 	}
-#line 118 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 118 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	_tmp13_ = t1;
-#line 118 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 118 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	g_source_remove (_tmp13_);
-#line 119 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 119 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	result = succeeded;
-#line 119 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 119 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	return result;
 #line 1007 "AsyncHelpers.c"
 }
@@ -1011,9 +1011,9 @@ DafUnitTestMultiSignalWaiter*
 daf_unit_test_multi_signal_waiter_construct (GType object_type)
 {
 	DafUnitTestMultiSignalWaiter * self = NULL;
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	self = (DafUnitTestMultiSignalWaiter*) g_object_new (object_type, NULL);
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	return self;
 #line 1019 "AsyncHelpers.c"
 }
@@ -1022,7 +1022,7 @@ daf_unit_test_multi_signal_waiter_construct (GType object_type)
 DafUnitTestMultiSignalWaiter*
 daf_unit_test_multi_signal_waiter_new (void)
 {
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	return daf_unit_test_multi_signal_waiter_construct (DAF_UNIT_TEST_TYPE_MULTI_SIGNAL_WAITER);
 #line 1028 "AsyncHelpers.c"
 }
@@ -1031,11 +1031,11 @@ daf_unit_test_multi_signal_waiter_new (void)
 static void
 daf_unit_test_multi_signal_waiter_class_init (DafUnitTestMultiSignalWaiterClass * klass)
 {
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	daf_unit_test_multi_signal_waiter_parent_class = g_type_class_peek_parent (klass);
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	g_type_class_add_private (klass, sizeof (DafUnitTestMultiSignalWaiterPrivate));
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	G_OBJECT_CLASS (klass)->finalize = daf_unit_test_multi_signal_waiter_finalize;
 #line 1041 "AsyncHelpers.c"
 }
@@ -1044,11 +1044,11 @@ daf_unit_test_multi_signal_waiter_class_init (DafUnitTestMultiSignalWaiterClass 
 static void
 daf_unit_test_multi_signal_waiter_instance_init (DafUnitTestMultiSignalWaiter * self)
 {
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	self->priv = DAF_UNIT_TEST_MULTI_SIGNAL_WAITER_GET_PRIVATE (self);
-#line 60 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 60 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	self->priv->signals = NULL;
-#line 61 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 61 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	self->priv->succeeded_count = (guint) 0;
 #line 1054 "AsyncHelpers.c"
 }
@@ -1058,13 +1058,13 @@ static void
 daf_unit_test_multi_signal_waiter_finalize (GObject * obj)
 {
 	DafUnitTestMultiSignalWaiter * self;
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	self = G_TYPE_CHECK_INSTANCE_CAST (obj, DAF_UNIT_TEST_TYPE_MULTI_SIGNAL_WAITER, DafUnitTestMultiSignalWaiter);
-#line 60 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 60 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	(self->priv->signals == NULL) ? NULL : (self->priv->signals = (_g_list_free__daf_unit_test_signal_wrapper_unref0_ (self->priv->signals), NULL));
-#line 62 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 62 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	_g_main_loop_unref0 (self->priv->mainloop);
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/AsyncHelpers.vala"
 	G_OBJECT_CLASS (daf_unit_test_multi_signal_waiter_parent_class)->finalize (obj);
 #line 1070 "AsyncHelpers.c"
 }

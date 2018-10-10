@@ -99,7 +99,7 @@ static void daf_core_test_buffered_value_holder_test_finalize (GObject * obj);
 static void
 _daf_core_test_buffered_value_holder_test_value_changes_test_daf_unit_test_abstract_test_case_test_method (gpointer self)
 {
-#line 73 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 73 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_test_buffered_value_holder_test_value_changes_test ((DafCoreTestBufferedValueHolderTest*) self);
 #line 105 "BufferedValueHolderTest.c"
 }
@@ -108,7 +108,7 @@ _daf_core_test_buffered_value_holder_test_value_changes_test_daf_unit_test_abstr
 static void
 _daf_core_test_buffered_value_holder_test_commit_test_daf_unit_test_abstract_test_case_test_method (gpointer self)
 {
-#line 75 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 75 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_test_buffered_value_holder_test_commit_test ((DafCoreTestBufferedValueHolderTest*) self);
 #line 114 "BufferedValueHolderTest.c"
 }
@@ -117,7 +117,7 @@ _daf_core_test_buffered_value_holder_test_commit_test_daf_unit_test_abstract_tes
 static void
 _daf_core_test_buffered_value_holder_test_discard_test_daf_unit_test_abstract_test_case_test_method (gpointer self)
 {
-#line 77 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 77 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_test_buffered_value_holder_test_discard_test ((DafCoreTestBufferedValueHolderTest*) self);
 #line 123 "BufferedValueHolderTest.c"
 }
@@ -126,7 +126,7 @@ _daf_core_test_buffered_value_holder_test_discard_test_daf_unit_test_abstract_te
 static void
 _daf_core_test_buffered_value_holder_test_dirty_test_daf_unit_test_abstract_test_case_test_method (gpointer self)
 {
-#line 79 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 79 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_test_buffered_value_holder_test_dirty_test ((DafCoreTestBufferedValueHolderTest*) self);
 #line 132 "BufferedValueHolderTest.c"
 }
@@ -135,7 +135,7 @@ _daf_core_test_buffered_value_holder_test_dirty_test_daf_unit_test_abstract_test
 static void
 _daf_core_test_buffered_value_holder_test_change_wrapped_model_test_daf_unit_test_abstract_test_case_test_method (gpointer self)
 {
-#line 81 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 81 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_test_buffered_value_holder_test_change_wrapped_model_test ((DafCoreTestBufferedValueHolderTest*) self);
 #line 141 "BufferedValueHolderTest.c"
 }
@@ -144,7 +144,7 @@ _daf_core_test_buffered_value_holder_test_change_wrapped_model_test_daf_unit_tes
 static void
 _daf_core_test_buffered_value_holder_test_random_test_daf_unit_test_abstract_test_case_test_method (gpointer self)
 {
-#line 83 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 83 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_test_buffered_value_holder_test_random_test ((DafCoreTestBufferedValueHolderTest*) self);
 #line 150 "BufferedValueHolderTest.c"
 }
@@ -154,21 +154,21 @@ DafCoreTestBufferedValueHolderTest*
 daf_core_test_buffered_value_holder_test_construct (GType object_type)
 {
 	DafCoreTestBufferedValueHolderTest * self = NULL;
-#line 71 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 71 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	self = (DafCoreTestBufferedValueHolderTest*) daf_unit_test_abstract_test_case_construct (object_type, "BufferedValueHolderTest");
-#line 73 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 73 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_unit_test_abstract_test_case_add_test ((DafUnitTestAbstractTestCase*) self, "value_changes_test", _daf_core_test_buffered_value_holder_test_value_changes_test_daf_unit_test_abstract_test_case_test_method, self);
-#line 75 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 75 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_unit_test_abstract_test_case_add_test ((DafUnitTestAbstractTestCase*) self, "commit_test", _daf_core_test_buffered_value_holder_test_commit_test_daf_unit_test_abstract_test_case_test_method, self);
-#line 77 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 77 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_unit_test_abstract_test_case_add_test ((DafUnitTestAbstractTestCase*) self, "discard_test", _daf_core_test_buffered_value_holder_test_discard_test_daf_unit_test_abstract_test_case_test_method, self);
-#line 79 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 79 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_unit_test_abstract_test_case_add_test ((DafUnitTestAbstractTestCase*) self, "dirty_test", _daf_core_test_buffered_value_holder_test_dirty_test_daf_unit_test_abstract_test_case_test_method, self);
-#line 81 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 81 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_unit_test_abstract_test_case_add_test ((DafUnitTestAbstractTestCase*) self, "change_wrapped_model_test", _daf_core_test_buffered_value_holder_test_change_wrapped_model_test_daf_unit_test_abstract_test_case_test_method, self);
-#line 83 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 83 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_unit_test_abstract_test_case_add_test ((DafUnitTestAbstractTestCase*) self, "random_test", _daf_core_test_buffered_value_holder_test_random_test_daf_unit_test_abstract_test_case_test_method, self);
-#line 70 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 70 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	return self;
 #line 174 "BufferedValueHolderTest.c"
 }
@@ -177,7 +177,7 @@ daf_core_test_buffered_value_holder_test_construct (GType object_type)
 DafCoreTestBufferedValueHolderTest*
 daf_core_test_buffered_value_holder_test_new (void)
 {
-#line 70 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 70 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	return daf_core_test_buffered_value_holder_test_construct (DAF_CORE_TEST_TYPE_BUFFERED_VALUE_HOLDER_TEST);
 #line 183 "BufferedValueHolderTest.c"
 }
@@ -192,33 +192,33 @@ daf_core_test_buffered_value_holder_test_real_set_up (DafUnitTestAbstractTestCas
 	DafCoreBufferedValueHolder* _tmp2_;
 	DafCoreTestModelPerson* _tmp3_;
 	DafCoreTestModelPerson* _tmp4_;
-#line 88 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 88 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	self = (DafCoreTestBufferedValueHolderTest*) base;
-#line 89 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 89 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp0_ = daf_core_value_holder_new (NULL);
-#line 89 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 89 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_object_unref0 (self->priv->value_holder);
-#line 89 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 89 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	self->priv->value_holder = (DafCoreIValueModel*) _tmp0_;
-#line 90 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 90 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp1_ = self->priv->value_holder;
-#line 90 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 90 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp2_ = daf_core_buffered_value_holder_new (_tmp1_, FALSE);
-#line 90 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 90 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_object_unref0 (self->priv->buffered_model);
-#line 90 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 90 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	self->priv->buffered_model = _tmp2_;
-#line 92 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 92 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp3_ = daf_core_test_model_person_new ("", "");
-#line 92 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 92 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_object_unref0 (self->priv->person_a);
-#line 92 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 92 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	self->priv->person_a = _tmp3_;
-#line 93 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 93 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp4_ = daf_core_test_model_person_new ("", "");
-#line 93 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 93 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_object_unref0 (self->priv->person_b);
-#line 93 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 93 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	self->priv->person_b = _tmp4_;
 #line 224 "BufferedValueHolderTest.c"
 }
@@ -228,23 +228,23 @@ static void
 daf_core_test_buffered_value_holder_test_real_tear_down (DafUnitTestAbstractTestCase* base)
 {
 	DafCoreTestBufferedValueHolderTest * self;
-#line 96 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 96 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	self = (DafCoreTestBufferedValueHolderTest*) base;
-#line 97 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 97 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_object_unref0 (self->priv->value_holder);
-#line 97 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 97 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	self->priv->value_holder = NULL;
-#line 98 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 98 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_object_unref0 (self->priv->buffered_model);
-#line 98 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 98 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	self->priv->buffered_model = NULL;
-#line 100 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 100 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_object_unref0 (self->priv->person_a);
-#line 100 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 100 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	self->priv->person_a = NULL;
-#line 101 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 101 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_object_unref0 (self->priv->person_b);
-#line 101 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 101 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	self->priv->person_b = NULL;
 #line 250 "BufferedValueHolderTest.c"
 }
@@ -253,9 +253,9 @@ daf_core_test_buffered_value_holder_test_real_tear_down (DafUnitTestAbstractTest
 static void
 _vala_GValue_free (GValue* self)
 {
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_unset (self);
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_free (self);
 #line 261 "BufferedValueHolderTest.c"
 }
@@ -265,25 +265,25 @@ static gboolean
 _g_value_equal (const GValue * s1,
                 const GValue * s2)
 {
-#line 108 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 108 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	if (s1 == s2) {
-#line 108 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 108 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 		return TRUE;
 #line 273 "BufferedValueHolderTest.c"
 	}
-#line 108 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 108 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	if (s1 == NULL) {
-#line 108 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 108 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 		return FALSE;
 #line 279 "BufferedValueHolderTest.c"
 	}
-#line 108 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 108 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	if (s2 == NULL) {
-#line 108 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 108 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 		return FALSE;
 #line 285 "BufferedValueHolderTest.c"
 	}
-#line 108 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 108 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	return FALSE;
 #line 289 "BufferedValueHolderTest.c"
 }
@@ -322,119 +322,119 @@ daf_core_test_buffered_value_holder_test_value_changes_test (DafCoreTestBuffered
 	DafCoreIValueModel* _tmp27_;
 	GValue* _tmp28_;
 	gchar* _tmp29_;
-#line 104 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 104 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_return_if_fail (self != NULL);
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp0_ = self->priv->value_holder;
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp1_ = daf_core_ivalue_model_get_val (_tmp0_);
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp2_ = _tmp1_;
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (_tmp2_ == NULL, "value_holder.get_val () == null");
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	__vala_GValue_free0 (_tmp2_);
-#line 108 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 108 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp3_ = self->priv->buffered_model;
-#line 108 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 108 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp4_ = daf_core_abstract_value_holder_get_val ((DafCoreAbstractValueHolder*) _tmp3_);
-#line 108 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 108 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp5_ = _tmp4_;
-#line 108 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 108 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp6_ = self->priv->value_holder;
-#line 108 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 108 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp7_ = daf_core_ivalue_model_get_val (_tmp6_);
-#line 108 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 108 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp8_ = _tmp7_;
-#line 108 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 108 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (_g_value_equal (_tmp5_, _tmp8_) == TRUE, "buffered_model.get_val () == value_holder.get_val ()");
-#line 108 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 108 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	__vala_GValue_free0 (_tmp8_);
-#line 108 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 108 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	__vala_GValue_free0 (_tmp5_);
-#line 112 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 112 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp9_ = self->priv->value_holder;
-#line 112 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 112 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp10_ = g_new0 (GValue, 1);
-#line 112 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 112 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_init (_tmp10_, G_TYPE_STRING);
-#line 112 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 112 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_set_string (_tmp10_, "initial");
-#line 112 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 112 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_ivalue_model_set_val (_tmp9_, _tmp10_);
-#line 112 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 112 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	__vala_GValue_free0 (_tmp10_);
-#line 113 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 113 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp11_ = self->priv->value_holder;
-#line 113 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 113 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp12_ = daf_core_ivalue_model_get_val (_tmp11_);
-#line 113 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 113 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp13_ = g_value_get_string (_tmp12_);
-#line 113 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 113 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (g_strcmp0 (_tmp13_, "initial") == 0, "(string) value_holder.get_val () == \"initial\"");
-#line 113 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 113 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_free0 (_tmp13_);
-#line 115 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 115 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp14_ = self->priv->buffered_model;
-#line 115 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 115 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp15_ = daf_core_abstract_value_holder_get_val ((DafCoreAbstractValueHolder*) _tmp14_);
-#line 115 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 115 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp16_ = g_value_get_string (_tmp15_);
-#line 115 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 115 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp17_ = self->priv->value_holder;
-#line 115 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 115 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp18_ = daf_core_ivalue_model_get_val (_tmp17_);
-#line 115 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 115 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp19_ = g_value_get_string (_tmp18_);
-#line 115 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 115 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (g_strcmp0 (_tmp16_, _tmp19_) == 0, "(string) buffered_model.get_val () == (string) value_holder.get_val ()");
-#line 115 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 115 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_free0 (_tmp19_);
-#line 115 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 115 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_free0 (_tmp16_);
-#line 119 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 119 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp20_ = self->priv->buffered_model;
-#line 119 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 119 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp21_ = g_new0 (GValue, 1);
-#line 119 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 119 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_init (_tmp21_, G_TYPE_STRING);
-#line 119 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 119 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_set_string (_tmp21_, "dirty");
-#line 119 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 119 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_abstract_value_holder_set_val ((DafCoreAbstractValueHolder*) _tmp20_, _tmp21_);
-#line 119 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 119 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	__vala_GValue_free0 (_tmp21_);
-#line 122 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 122 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp22_ = self->priv->value_holder;
-#line 122 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 122 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp23_ = g_new0 (GValue, 1);
-#line 122 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 122 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_init (_tmp23_, G_TYPE_STRING);
-#line 122 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 122 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_set_string (_tmp23_, "try to overwrite");
-#line 122 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 122 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_ivalue_model_set_val (_tmp22_, _tmp23_);
-#line 122 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 122 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	__vala_GValue_free0 (_tmp23_);
-#line 126 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 126 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp24_ = self->priv->buffered_model;
-#line 126 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 126 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp25_ = daf_core_abstract_value_holder_get_val ((DafCoreAbstractValueHolder*) _tmp24_);
-#line 126 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 126 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp26_ = g_value_get_string (_tmp25_);
-#line 126 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 126 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (g_strcmp0 (_tmp26_, "dirty") == 0, "(string) buffered_model.get_val () == \"dirty\"");
-#line 126 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 126 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_free0 (_tmp26_);
-#line 127 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 127 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp27_ = self->priv->value_holder;
-#line 127 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 127 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp28_ = daf_core_ivalue_model_get_val (_tmp27_);
-#line 127 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 127 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp29_ = g_value_get_string (_tmp28_);
-#line 127 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 127 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (g_strcmp0 (_tmp29_, "try to overwrite") == 0, "(string) value_holder.get_val () == \"try to overwrite\"");
-#line 127 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 127 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_free0 (_tmp29_);
 #line 440 "BufferedValueHolderTest.c"
 }
@@ -469,103 +469,103 @@ daf_core_test_buffered_value_holder_test_commit_test (DafCoreTestBufferedValueHo
 	DafCoreBufferedValueHolder* _tmp23_;
 	GValue* _tmp24_;
 	gchar* _tmp25_;
-#line 130 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 130 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_return_if_fail (self != NULL);
-#line 132 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 132 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp0_ = self->priv->value_holder;
-#line 132 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 132 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp1_ = g_new0 (GValue, 1);
-#line 132 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 132 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_init (_tmp1_, G_TYPE_STRING);
-#line 132 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 132 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_set_string (_tmp1_, "initial");
-#line 132 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 132 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_ivalue_model_set_val (_tmp0_, _tmp1_);
-#line 132 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 132 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	__vala_GValue_free0 (_tmp1_);
-#line 134 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 134 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp2_ = self->priv->value_holder;
-#line 134 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 134 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp3_ = daf_core_ivalue_model_get_val (_tmp2_);
-#line 134 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 134 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp4_ = g_value_get_string (_tmp3_);
-#line 134 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 134 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (g_strcmp0 (_tmp4_, "initial") == 0, "(string) value_holder.get_val () == \"initial\"");
-#line 134 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 134 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_free0 (_tmp4_);
-#line 135 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 135 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp5_ = self->priv->value_holder;
-#line 135 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 135 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp6_ = daf_core_ivalue_model_get_val (_tmp5_);
-#line 135 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 135 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp7_ = g_value_get_string (_tmp6_);
-#line 135 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 135 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp8_ = self->priv->buffered_model;
-#line 135 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 135 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp9_ = daf_core_abstract_value_holder_get_val ((DafCoreAbstractValueHolder*) _tmp8_);
-#line 135 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 135 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp10_ = g_value_get_string (_tmp9_);
-#line 135 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 135 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (g_strcmp0 (_tmp7_, _tmp10_) == 0, "(string) value_holder.get_val () == (string) buffered_model.get_val ()");
-#line 135 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 135 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_free0 (_tmp10_);
-#line 135 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 135 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_free0 (_tmp7_);
-#line 137 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 137 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp11_ = self->priv->buffered_model;
-#line 137 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 137 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp12_ = g_new0 (GValue, 1);
-#line 137 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 137 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_init (_tmp12_, G_TYPE_STRING);
-#line 137 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 137 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_set_string (_tmp12_, "changed");
-#line 137 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 137 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_abstract_value_holder_set_val ((DafCoreAbstractValueHolder*) _tmp11_, _tmp12_);
-#line 137 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 137 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	__vala_GValue_free0 (_tmp12_);
-#line 139 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 139 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp13_ = self->priv->value_holder;
-#line 139 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 139 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp14_ = daf_core_ivalue_model_get_val (_tmp13_);
-#line 139 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 139 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp15_ = g_value_get_string (_tmp14_);
-#line 139 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 139 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (g_strcmp0 (_tmp15_, "initial") == 0, "(string) value_holder.get_val () == \"initial\"");
-#line 139 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 139 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_free0 (_tmp15_);
-#line 140 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 140 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp16_ = self->priv->buffered_model;
-#line 140 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 140 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp17_ = daf_core_abstract_value_holder_get_val ((DafCoreAbstractValueHolder*) _tmp16_);
-#line 140 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 140 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp18_ = g_value_get_string (_tmp17_);
-#line 140 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 140 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (g_strcmp0 (_tmp18_, "changed") == 0, "(string) buffered_model.get_val () == \"changed\"");
-#line 140 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 140 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_free0 (_tmp18_);
-#line 142 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 142 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp19_ = self->priv->buffered_model;
-#line 142 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 142 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_iaspect_trigger_commit ((DafCoreIAspectTrigger*) _tmp19_);
-#line 144 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 144 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp20_ = self->priv->value_holder;
-#line 144 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 144 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp21_ = daf_core_ivalue_model_get_val (_tmp20_);
-#line 144 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 144 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp22_ = g_value_get_string (_tmp21_);
-#line 144 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 144 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (g_strcmp0 (_tmp22_, "changed") == 0, "(string) value_holder.get_val () == \"changed\"");
-#line 144 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 144 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_free0 (_tmp22_);
-#line 145 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 145 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp23_ = self->priv->buffered_model;
-#line 145 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 145 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp24_ = daf_core_abstract_value_holder_get_val ((DafCoreAbstractValueHolder*) _tmp23_);
-#line 145 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 145 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp25_ = g_value_get_string (_tmp24_);
-#line 145 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 145 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (g_strcmp0 (_tmp25_, "changed") == 0, "(string) buffered_model.get_val () == \"changed\"");
-#line 145 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 145 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_free0 (_tmp25_);
 #line 571 "BufferedValueHolderTest.c"
 }
@@ -600,103 +600,103 @@ daf_core_test_buffered_value_holder_test_discard_test (DafCoreTestBufferedValueH
 	DafCoreBufferedValueHolder* _tmp23_;
 	GValue* _tmp24_;
 	gchar* _tmp25_;
-#line 148 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 148 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_return_if_fail (self != NULL);
-#line 150 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 150 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp0_ = self->priv->value_holder;
-#line 150 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 150 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp1_ = g_new0 (GValue, 1);
-#line 150 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 150 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_init (_tmp1_, G_TYPE_STRING);
-#line 150 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 150 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_set_string (_tmp1_, "initial");
-#line 150 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 150 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_ivalue_model_set_val (_tmp0_, _tmp1_);
-#line 150 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 150 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	__vala_GValue_free0 (_tmp1_);
-#line 152 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 152 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp2_ = self->priv->value_holder;
-#line 152 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 152 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp3_ = daf_core_ivalue_model_get_val (_tmp2_);
-#line 152 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 152 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp4_ = g_value_get_string (_tmp3_);
-#line 152 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 152 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (g_strcmp0 (_tmp4_, "initial") == 0, "(string) value_holder.get_val () == \"initial\"");
-#line 152 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 152 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_free0 (_tmp4_);
-#line 153 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 153 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp5_ = self->priv->value_holder;
-#line 153 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 153 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp6_ = daf_core_ivalue_model_get_val (_tmp5_);
-#line 153 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 153 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp7_ = g_value_get_string (_tmp6_);
-#line 153 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 153 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp8_ = self->priv->buffered_model;
-#line 153 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 153 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp9_ = daf_core_abstract_value_holder_get_val ((DafCoreAbstractValueHolder*) _tmp8_);
-#line 153 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 153 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp10_ = g_value_get_string (_tmp9_);
-#line 153 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 153 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (g_strcmp0 (_tmp7_, _tmp10_) == 0, "(string) value_holder.get_val () == (string) buffered_model.get_val ()");
-#line 153 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 153 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_free0 (_tmp10_);
-#line 153 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 153 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_free0 (_tmp7_);
-#line 155 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 155 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp11_ = self->priv->buffered_model;
-#line 155 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 155 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp12_ = g_new0 (GValue, 1);
-#line 155 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 155 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_init (_tmp12_, G_TYPE_STRING);
-#line 155 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 155 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_set_string (_tmp12_, "changed");
-#line 155 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 155 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_abstract_value_holder_set_val ((DafCoreAbstractValueHolder*) _tmp11_, _tmp12_);
-#line 155 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 155 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	__vala_GValue_free0 (_tmp12_);
-#line 157 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 157 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp13_ = self->priv->value_holder;
-#line 157 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 157 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp14_ = daf_core_ivalue_model_get_val (_tmp13_);
-#line 157 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 157 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp15_ = g_value_get_string (_tmp14_);
-#line 157 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 157 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (g_strcmp0 (_tmp15_, "initial") == 0, "(string) value_holder.get_val () == \"initial\"");
-#line 157 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 157 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_free0 (_tmp15_);
-#line 158 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 158 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp16_ = self->priv->buffered_model;
-#line 158 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 158 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp17_ = daf_core_abstract_value_holder_get_val ((DafCoreAbstractValueHolder*) _tmp16_);
-#line 158 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 158 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp18_ = g_value_get_string (_tmp17_);
-#line 158 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 158 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (g_strcmp0 (_tmp18_, "changed") == 0, "(string) buffered_model.get_val () == \"changed\"");
-#line 158 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 158 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_free0 (_tmp18_);
-#line 160 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 160 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp19_ = self->priv->buffered_model;
-#line 160 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 160 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_iaspect_trigger_discard ((DafCoreIAspectTrigger*) _tmp19_);
-#line 162 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 162 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp20_ = self->priv->value_holder;
-#line 162 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 162 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp21_ = daf_core_ivalue_model_get_val (_tmp20_);
-#line 162 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 162 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp22_ = g_value_get_string (_tmp21_);
-#line 162 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 162 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (g_strcmp0 (_tmp22_, "initial") == 0, "(string) value_holder.get_val () == \"initial\"");
-#line 162 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 162 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_free0 (_tmp22_);
-#line 163 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 163 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp23_ = self->priv->buffered_model;
-#line 163 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 163 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp24_ = daf_core_abstract_value_holder_get_val ((DafCoreAbstractValueHolder*) _tmp23_);
-#line 163 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 163 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp25_ = g_value_get_string (_tmp24_);
-#line 163 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 163 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (g_strcmp0 (_tmp25_, "initial") == 0, "(string) buffered_model.get_val () == \"initial\"");
-#line 163 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 163 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_free0 (_tmp25_);
 #line 702 "BufferedValueHolderTest.c"
 }
@@ -725,77 +725,77 @@ daf_core_test_buffered_value_holder_test_dirty_test (DafCoreTestBufferedValueHol
 	DafCoreBufferedValueHolder* _tmp17_;
 	GValue* _tmp18_;
 	gchar* _tmp19_;
-#line 167 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 167 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_return_if_fail (self != NULL);
-#line 170 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 170 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp0_ = self->priv->buffered_model;
-#line 170 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 170 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp1_ = daf_core_buffered_value_holder_get_dirty (_tmp0_);
-#line 170 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 170 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp2_ = _tmp1_;
-#line 170 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 170 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (_tmp2_ == FALSE, "buffered_model.dirty == false");
-#line 172 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 172 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp3_ = self->priv->value_holder;
-#line 172 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 172 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp4_ = g_new0 (GValue, 1);
-#line 172 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 172 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_init (_tmp4_, G_TYPE_STRING);
-#line 172 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 172 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_set_string (_tmp4_, "initial");
-#line 172 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 172 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_ivalue_model_set_val (_tmp3_, _tmp4_);
-#line 172 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 172 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	__vala_GValue_free0 (_tmp4_);
-#line 176 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 176 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp5_ = self->priv->buffered_model;
-#line 176 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 176 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp6_ = daf_core_buffered_value_holder_get_dirty (_tmp5_);
-#line 176 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 176 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp7_ = _tmp6_;
-#line 176 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 176 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (_tmp7_ == FALSE, "buffered_model.dirty == false");
-#line 178 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 178 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp8_ = self->priv->buffered_model;
-#line 178 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 178 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp9_ = g_new0 (GValue, 1);
-#line 178 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 178 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_init (_tmp9_, G_TYPE_INT);
-#line 178 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 178 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_set_int (_tmp9_, 1234567);
-#line 178 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 178 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_abstract_value_holder_set_val ((DafCoreAbstractValueHolder*) _tmp8_, _tmp9_);
-#line 178 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 178 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	__vala_GValue_free0 (_tmp9_);
-#line 180 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 180 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp10_ = self->priv->buffered_model;
-#line 180 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 180 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp11_ = daf_core_buffered_value_holder_get_dirty (_tmp10_);
-#line 180 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 180 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp12_ = _tmp11_;
-#line 180 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 180 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (_tmp12_ == TRUE, "buffered_model.dirty == true");
-#line 182 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 182 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp13_ = self->priv->buffered_model;
-#line 182 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 182 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_iaspect_trigger_discard ((DafCoreIAspectTrigger*) _tmp13_);
-#line 185 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 185 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp14_ = self->priv->buffered_model;
-#line 185 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 185 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp15_ = daf_core_buffered_value_holder_get_dirty (_tmp14_);
-#line 185 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 185 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp16_ = _tmp15_;
-#line 185 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 185 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (_tmp16_ == FALSE, "buffered_model.dirty == false");
-#line 186 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 186 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp17_ = self->priv->buffered_model;
-#line 186 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 186 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp18_ = daf_core_abstract_value_holder_get_val ((DafCoreAbstractValueHolder*) _tmp17_);
-#line 186 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 186 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp19_ = g_value_get_string (_tmp18_);
-#line 186 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 186 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (g_strcmp0 (_tmp19_, "initial") == 0, "(string) buffered_model.get_val () == \"initial\"");
-#line 186 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 186 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_free0 (_tmp19_);
 #line 801 "BufferedValueHolderTest.c"
 }
@@ -863,251 +863,251 @@ daf_core_test_buffered_value_holder_test_change_wrapped_model_test (DafCoreTestB
 	DafCoreTestModelPerson* _tmp54_;
 	const gchar* _tmp55_;
 	const gchar* _tmp56_;
-#line 189 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 189 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_return_if_fail (self != NULL);
-#line 192 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 192 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp0_ = self->priv->person_a;
-#line 192 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 192 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp1_ = daf_core_aspect_adapter_new ((GObject*) _tmp0_, "first_name", FALSE);
-#line 192 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 192 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	aspect_adapter = _tmp1_;
-#line 193 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 193 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp2_ = daf_core_buffered_value_holder_new ((DafCoreIValueModel*) aspect_adapter, TRUE);
-#line 193 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 193 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	buffered_model = _tmp2_;
-#line 200 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 200 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp3_ = g_new0 (GValue, 1);
-#line 200 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 200 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_init (_tmp3_, G_TYPE_STRING);
-#line 200 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 200 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_set_string (_tmp3_, "Levin");
-#line 200 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 200 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_abstract_value_holder_set_val ((DafCoreAbstractValueHolder*) buffered_model, _tmp3_);
-#line 200 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 200 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	__vala_GValue_free0 (_tmp3_);
-#line 202 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 202 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp4_ = daf_core_buffered_value_holder_get_dirty (buffered_model);
-#line 202 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 202 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp5_ = _tmp4_;
-#line 202 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 202 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (_tmp5_ == TRUE, "buffered_model.dirty == true");
-#line 207 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 207 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp6_ = self->priv->person_b;
-#line 207 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 207 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_imodel_holder_set_model ((DafCoreIModelHolder*) aspect_adapter, (GObject*) _tmp6_);
-#line 210 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 210 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp7_ = daf_core_buffered_value_holder_get_dirty (buffered_model);
-#line 210 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 210 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp8_ = _tmp7_;
-#line 210 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 210 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (_tmp8_ != TRUE, "buffered_model.dirty != true");
-#line 216 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 216 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp9_ = self->priv->person_a;
-#line 216 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 216 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_test_model_person_set_first_name (_tmp9_, "Ignaz");
-#line 217 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 217 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp10_ = self->priv->person_b;
-#line 217 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 217 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_test_model_person_set_first_name (_tmp10_, "Humer");
-#line 219 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 219 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_imodel_holder_set_model ((DafCoreIModelHolder*) aspect_adapter, NULL);
-#line 221 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 221 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp11_ = daf_core_buffered_value_holder_get_dirty (buffered_model);
-#line 221 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 221 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp12_ = _tmp11_;
-#line 221 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 221 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (_tmp12_ != TRUE, "buffered_model.dirty != true");
-#line 222 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 222 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp13_ = daf_core_abstract_value_holder_get_val ((DafCoreAbstractValueHolder*) aspect_adapter);
-#line 222 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 222 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp14_ = _tmp13_;
-#line 222 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 222 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (_tmp14_ == NULL, "aspect_adapter.get_val () == null");
-#line 222 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 222 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	__vala_GValue_free0 (_tmp14_);
-#line 223 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 223 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp15_ = daf_core_abstract_value_holder_get_val ((DafCoreAbstractValueHolder*) buffered_model);
-#line 223 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 223 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp16_ = _tmp15_;
-#line 223 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 223 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (_tmp16_ == NULL, "buffered_model.get_val () == null");
-#line 223 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 223 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	__vala_GValue_free0 (_tmp16_);
-#line 226 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 226 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp17_ = self->priv->person_b;
-#line 226 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 226 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_imodel_holder_set_model ((DafCoreIModelHolder*) aspect_adapter, (GObject*) _tmp17_);
-#line 227 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 227 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp18_ = daf_core_abstract_value_holder_get_val ((DafCoreAbstractValueHolder*) aspect_adapter);
-#line 227 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 227 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp19_ = g_value_get_string (_tmp18_);
-#line 227 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 227 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (g_strcmp0 (_tmp19_, "Humer") == 0, "(string) aspect_adapter.get_val () == \"Humer\"");
-#line 227 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 227 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_free0 (_tmp19_);
-#line 228 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 228 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp20_ = daf_core_abstract_value_holder_get_val ((DafCoreAbstractValueHolder*) buffered_model);
-#line 228 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 228 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp21_ = g_value_get_string (_tmp20_);
-#line 228 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 228 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (g_strcmp0 (_tmp21_, "Humer") == 0, "(string) buffered_model.get_val () == \"Humer\"");
-#line 228 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 228 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_free0 (_tmp21_);
-#line 230 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 230 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp22_ = g_new0 (GValue, 1);
-#line 230 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 230 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_init (_tmp22_, G_TYPE_STRING);
-#line 230 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 230 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_set_string (_tmp22_, "Levin");
-#line 230 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 230 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_abstract_value_holder_set_val ((DafCoreAbstractValueHolder*) buffered_model, _tmp22_);
-#line 230 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 230 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	__vala_GValue_free0 (_tmp22_);
-#line 232 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 232 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp23_ = daf_core_buffered_value_holder_get_dirty (buffered_model);
-#line 232 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 232 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp24_ = _tmp23_;
-#line 232 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 232 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (_tmp24_ == TRUE, "buffered_model.dirty == true");
-#line 233 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 233 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp25_ = daf_core_abstract_value_holder_get_val ((DafCoreAbstractValueHolder*) aspect_adapter);
-#line 233 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 233 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp26_ = g_value_get_string (_tmp25_);
-#line 233 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 233 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (g_strcmp0 (_tmp26_, "Humer") == 0, "(string) aspect_adapter.get_val () == \"Humer\"");
-#line 233 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 233 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_free0 (_tmp26_);
-#line 236 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 236 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp27_ = self->priv->person_a;
-#line 236 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 236 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_imodel_holder_set_model ((DafCoreIModelHolder*) aspect_adapter, (GObject*) _tmp27_);
-#line 239 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 239 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp28_ = daf_core_buffered_value_holder_get_dirty (buffered_model);
-#line 239 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 239 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp29_ = _tmp28_;
-#line 239 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 239 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (_tmp29_ != TRUE, "buffered_model.dirty != true");
-#line 242 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 242 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp30_ = daf_core_abstract_value_holder_get_val ((DafCoreAbstractValueHolder*) aspect_adapter);
-#line 242 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 242 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp31_ = g_value_get_string (_tmp30_);
-#line 242 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 242 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (g_strcmp0 (_tmp31_, "Ignaz") == 0, "(string) aspect_adapter.get_val () == \"Ignaz\"");
-#line 242 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 242 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_free0 (_tmp31_);
-#line 244 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 244 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp32_ = daf_core_abstract_value_holder_get_val ((DafCoreAbstractValueHolder*) buffered_model);
-#line 244 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 244 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp33_ = g_value_get_string (_tmp32_);
-#line 244 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 244 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (g_strcmp0 (_tmp33_, "Ignaz") == 0, "(string) buffered_model.get_val () == \"Ignaz\"");
-#line 244 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 244 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_free0 (_tmp33_);
-#line 246 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 246 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_iaspect_trigger_discard ((DafCoreIAspectTrigger*) buffered_model);
-#line 248 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 248 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp34_ = daf_core_abstract_value_holder_get_val ((DafCoreAbstractValueHolder*) buffered_model);
-#line 248 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 248 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp35_ = g_value_get_string (_tmp34_);
-#line 248 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 248 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (g_strcmp0 (_tmp35_, "Ignaz") == 0, "(string) buffered_model.get_val () == \"Ignaz\"");
-#line 248 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 248 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_free0 (_tmp35_);
-#line 252 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 252 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp36_ = self->priv->person_a;
-#line 252 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 252 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_imodel_holder_set_model ((DafCoreIModelHolder*) aspect_adapter, (GObject*) _tmp36_);
-#line 253 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 253 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp37_ = daf_core_abstract_value_holder_get_val ((DafCoreAbstractValueHolder*) aspect_adapter);
-#line 253 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 253 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp38_ = g_value_get_string (_tmp37_);
-#line 253 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 253 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (g_strcmp0 (_tmp38_, "Ignaz") == 0, "(string) aspect_adapter.get_val () == \"Ignaz\"");
-#line 253 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 253 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_free0 (_tmp38_);
-#line 256 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 256 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp39_ = daf_core_abstract_value_holder_get_val ((DafCoreAbstractValueHolder*) buffered_model);
-#line 256 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 256 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp40_ = g_value_get_string (_tmp39_);
-#line 256 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 256 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (g_strcmp0 (_tmp40_, "Ignaz") == 0, "(string) buffered_model.get_val () == \"Ignaz\"");
-#line 256 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 256 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_free0 (_tmp40_);
-#line 263 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 263 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp41_ = g_new0 (GValue, 1);
-#line 263 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 263 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_init (_tmp41_, G_TYPE_STRING);
-#line 263 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 263 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_set_string (_tmp41_, "Levin");
-#line 263 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 263 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_abstract_value_holder_set_val ((DafCoreAbstractValueHolder*) buffered_model, _tmp41_);
-#line 263 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 263 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	__vala_GValue_free0 (_tmp41_);
-#line 266 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 266 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp42_ = daf_core_buffered_value_holder_get_dirty (buffered_model);
-#line 266 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 266 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp43_ = _tmp42_;
-#line 266 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 266 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (_tmp43_ == TRUE, "buffered_model.dirty == true");
-#line 267 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 267 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp44_ = daf_core_abstract_value_holder_get_val ((DafCoreAbstractValueHolder*) aspect_adapter);
-#line 267 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 267 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp45_ = g_value_get_string (_tmp44_);
-#line 267 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 267 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (g_strcmp0 (_tmp45_, "Ignaz") == 0, "(string) aspect_adapter.get_val () == \"Ignaz\"");
-#line 267 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 267 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_free0 (_tmp45_);
-#line 269 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 269 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp46_ = self->priv->person_b;
-#line 269 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 269 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_imodel_holder_set_model ((DafCoreIModelHolder*) aspect_adapter, (GObject*) _tmp46_);
-#line 270 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 270 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp47_ = daf_core_abstract_value_holder_get_val ((DafCoreAbstractValueHolder*) aspect_adapter);
-#line 270 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 270 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp48_ = g_value_get_string (_tmp47_);
-#line 270 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 270 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (g_strcmp0 (_tmp48_, "Humer") == 0, "(string) aspect_adapter.get_val () == \"Humer\"");
-#line 270 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 270 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_free0 (_tmp48_);
-#line 273 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 273 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp49_ = daf_core_abstract_value_holder_get_val ((DafCoreAbstractValueHolder*) buffered_model);
-#line 273 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 273 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp50_ = g_value_get_string (_tmp49_);
-#line 273 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 273 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (g_strcmp0 (_tmp50_, "Humer") == 0, "(string) buffered_model.get_val () == \"Humer\"");
-#line 273 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 273 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_free0 (_tmp50_);
-#line 275 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 275 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp51_ = g_new0 (GValue, 1);
-#line 275 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 275 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_init (_tmp51_, G_TYPE_STRING);
-#line 275 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 275 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_set_string (_tmp51_, "Levin");
-#line 275 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 275 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_abstract_value_holder_set_val ((DafCoreAbstractValueHolder*) buffered_model, _tmp51_);
-#line 275 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 275 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	__vala_GValue_free0 (_tmp51_);
-#line 276 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 276 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_iaspect_trigger_commit ((DafCoreIAspectTrigger*) buffered_model);
-#line 279 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 279 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp52_ = daf_core_abstract_value_holder_get_val ((DafCoreAbstractValueHolder*) aspect_adapter);
-#line 279 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 279 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp53_ = g_value_get_string (_tmp52_);
-#line 279 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 279 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (g_strcmp0 (_tmp53_, "Levin") == 0, "(string) aspect_adapter.get_val () == \"Levin\"");
-#line 279 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 279 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_free0 (_tmp53_);
-#line 280 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 280 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp54_ = self->priv->person_b;
-#line 280 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 280 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp55_ = daf_core_test_model_person_get_first_name (_tmp54_);
-#line 280 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 280 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp56_ = _tmp55_;
-#line 280 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 280 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (g_strcmp0 ((const gchar*) _tmp56_, "Levin") == 0, "(string) person_b.first_name == \"Levin\"");
-#line 189 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 189 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_object_unref0 (buffered_model);
-#line 189 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 189 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_object_unref0 (aspect_adapter);
 #line 1113 "BufferedValueHolderTest.c"
 }
@@ -1290,617 +1290,617 @@ daf_core_test_buffered_value_holder_test_random_test (DafCoreTestBufferedValueHo
 	DafCoreBufferedValueHolder* _tmp168_;
 	gboolean _tmp169_;
 	gboolean _tmp170_;
-#line 283 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 283 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_return_if_fail (self != NULL);
-#line 285 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 285 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp0_ = self->priv->buffered_model;
-#line 285 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 285 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_iaspect_trigger_discard ((DafCoreIAspectTrigger*) _tmp0_);
-#line 286 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 286 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp1_ = self->priv->value_holder;
-#line 286 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 286 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp2_ = daf_core_ivalue_model_get_val (_tmp1_);
-#line 286 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 286 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp3_ = _tmp2_;
-#line 286 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 286 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp4_ = self->priv->buffered_model;
-#line 286 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 286 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp5_ = daf_core_abstract_value_holder_get_val ((DafCoreAbstractValueHolder*) _tmp4_);
-#line 286 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 286 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp6_ = _tmp5_;
-#line 286 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 286 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (_g_value_equal (_tmp3_, _tmp6_) == TRUE, "value_holder.get_val () == buffered_model.get_val ()");
-#line 286 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 286 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	__vala_GValue_free0 (_tmp6_);
-#line 286 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 286 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	__vala_GValue_free0 (_tmp3_);
-#line 288 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 288 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp7_ = self->priv->value_holder;
-#line 288 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 288 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp8_ = g_new0 (GValue, 1);
-#line 288 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 288 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_init (_tmp8_, G_TYPE_STRING);
-#line 288 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 288 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_set_string (_tmp8_, "changed now");
-#line 288 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 288 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_ivalue_model_set_val (_tmp7_, _tmp8_);
-#line 288 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 288 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	__vala_GValue_free0 (_tmp8_);
-#line 289 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 289 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp9_ = self->priv->value_holder;
-#line 289 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 289 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp10_ = daf_core_ivalue_model_get_val (_tmp9_);
-#line 289 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 289 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp11_ = g_value_get_string (_tmp10_);
-#line 289 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 289 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp12_ = self->priv->buffered_model;
-#line 289 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 289 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp13_ = daf_core_abstract_value_holder_get_val ((DafCoreAbstractValueHolder*) _tmp12_);
-#line 289 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 289 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp14_ = g_value_get_string (_tmp13_);
-#line 289 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 289 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (g_strcmp0 (_tmp11_, _tmp14_) == 0, "(string) value_holder.get_val () == (string) buffered_model.get_val ()");
-#line 289 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 289 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_free0 (_tmp14_);
-#line 289 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 289 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_free0 (_tmp11_);
-#line 291 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 291 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp15_ = self->priv->value_holder;
-#line 291 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 291 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp16_ = g_new0 (GValue, 1);
-#line 291 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 291 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_init (_tmp16_, G_TYPE_STRING);
-#line 291 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 291 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_set_string (_tmp16_, "changed again");
-#line 291 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 291 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_ivalue_model_set_val (_tmp15_, _tmp16_);
-#line 291 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 291 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	__vala_GValue_free0 (_tmp16_);
-#line 292 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 292 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp17_ = self->priv->buffered_model;
-#line 292 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 292 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_iaspect_trigger_discard ((DafCoreIAspectTrigger*) _tmp17_);
-#line 293 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 293 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp18_ = self->priv->value_holder;
-#line 293 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 293 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp19_ = daf_core_ivalue_model_get_val (_tmp18_);
-#line 293 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 293 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp20_ = g_value_get_string (_tmp19_);
-#line 293 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 293 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp21_ = self->priv->buffered_model;
-#line 293 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 293 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp22_ = daf_core_abstract_value_holder_get_val ((DafCoreAbstractValueHolder*) _tmp21_);
-#line 293 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 293 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp23_ = g_value_get_string (_tmp22_);
-#line 293 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 293 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (g_strcmp0 (_tmp20_, _tmp23_) == 0, "(string) value_holder.get_val () == (string) buffered_model.get_val ()");
-#line 293 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 293 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_free0 (_tmp23_);
-#line 293 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 293 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_free0 (_tmp20_);
-#line 296 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 296 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp24_ = self->priv->value_holder;
-#line 296 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 296 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp25_ = daf_core_ivalue_model_get_val (_tmp24_);
-#line 296 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 296 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	old_value = _tmp25_;
-#line 297 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 297 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp26_ = self->priv->buffered_model;
-#line 297 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 297 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp27_ = g_new0 (GValue, 1);
-#line 297 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 297 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_init (_tmp27_, G_TYPE_STRING);
-#line 297 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 297 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_set_string (_tmp27_, "12345");
-#line 297 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 297 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_abstract_value_holder_set_val ((DafCoreAbstractValueHolder*) _tmp26_, _tmp27_);
-#line 297 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 297 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	__vala_GValue_free0 (_tmp27_);
-#line 298 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 298 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp28_ = self->priv->value_holder;
-#line 298 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 298 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp29_ = daf_core_ivalue_model_get_val (_tmp28_);
-#line 298 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 298 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp30_ = g_value_get_string (_tmp29_);
-#line 298 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 298 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp31_ = old_value;
-#line 298 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 298 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (g_strcmp0 (_tmp30_, g_value_get_string (_tmp31_)) == 0, "(string)value_holder.get_val () == (string) old_value");
-#line 298 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 298 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_free0 (_tmp30_);
-#line 300 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 300 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp32_ = self->priv->buffered_model;
-#line 300 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 300 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_abstract_value_holder_set_val ((DafCoreAbstractValueHolder*) _tmp32_, NULL);
-#line 301 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 301 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp33_ = self->priv->value_holder;
-#line 301 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 301 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp34_ = daf_core_ivalue_model_get_val (_tmp33_);
-#line 301 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 301 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp35_ = g_value_get_string (_tmp34_);
-#line 301 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 301 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp36_ = old_value;
-#line 301 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 301 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (g_strcmp0 (_tmp35_, g_value_get_string (_tmp36_)) == 0, "(string)value_holder.get_val () == (string) old_value");
-#line 301 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 301 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_free0 (_tmp35_);
-#line 303 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 303 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp37_ = self->priv->buffered_model;
-#line 303 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 303 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp38_ = old_value;
-#line 303 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 303 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_abstract_value_holder_set_val ((DafCoreAbstractValueHolder*) _tmp37_, _tmp38_);
-#line 304 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 304 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp39_ = self->priv->value_holder;
-#line 304 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 304 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp40_ = daf_core_ivalue_model_get_val (_tmp39_);
-#line 304 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 304 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp41_ = g_value_get_string (_tmp40_);
-#line 304 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 304 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp42_ = old_value;
-#line 304 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 304 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (g_strcmp0 (_tmp41_, g_value_get_string (_tmp42_)) == 0, "(string)value_holder.get_val () == (string) old_value");
-#line 304 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 304 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_free0 (_tmp41_);
-#line 306 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 306 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp43_ = self->priv->buffered_model;
-#line 306 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 306 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp44_ = g_new0 (GValue, 1);
-#line 306 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 306 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_init (_tmp44_, G_TYPE_STRING);
-#line 306 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 306 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_set_string (_tmp44_, "54321");
-#line 306 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 306 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_abstract_value_holder_set_val ((DafCoreAbstractValueHolder*) _tmp43_, _tmp44_);
-#line 306 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 306 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	__vala_GValue_free0 (_tmp44_);
-#line 307 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 307 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp45_ = self->priv->value_holder;
-#line 307 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 307 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp46_ = daf_core_ivalue_model_get_val (_tmp45_);
-#line 307 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 307 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp47_ = g_value_get_string (_tmp46_);
-#line 307 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 307 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp48_ = old_value;
-#line 307 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 307 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (g_strcmp0 (_tmp47_, g_value_get_string (_tmp48_)) == 0, "(string)value_holder.get_val () == (string) old_value");
-#line 307 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 307 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_free0 (_tmp47_);
-#line 310 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 310 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_init (&_tmp49_, G_TYPE_STRING);
-#line 310 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 310 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_set_string (&_tmp49_, "new_value");
-#line 310 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 310 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	new_value = _tmp49_;
-#line 311 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 311 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp50_ = self->priv->value_holder;
-#line 311 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 311 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp51_ = g_new0 (GValue, 1);
-#line 311 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 311 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_init (_tmp51_, G_TYPE_STRING);
-#line 311 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 311 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_set_string (_tmp51_, "initial_value");
-#line 311 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 311 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_ivalue_model_set_val (_tmp50_, _tmp51_);
-#line 311 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 311 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	__vala_GValue_free0 (_tmp51_);
-#line 312 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 312 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp52_ = self->priv->value_holder;
-#line 312 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 312 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp53_ = daf_core_ivalue_model_get_val (_tmp52_);
-#line 312 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 312 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	__vala_GValue_free0 (old_value);
-#line 312 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 312 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	old_value = _tmp53_;
-#line 313 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 313 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_init (&_tmp54_, G_TYPE_STRING);
-#line 313 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 313 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_set_string (&_tmp54_, "new value");
-#line 313 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 313 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	G_IS_VALUE (&new_value) ? (g_value_unset (&new_value), NULL) : NULL;
-#line 313 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 313 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	new_value = _tmp54_;
-#line 314 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 314 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp55_ = self->priv->buffered_model;
-#line 314 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 314 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp56_ = new_value;
-#line 314 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 314 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_abstract_value_holder_set_val ((DafCoreAbstractValueHolder*) _tmp55_, &_tmp56_);
-#line 315 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 315 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp57_ = self->priv->value_holder;
-#line 315 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 315 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp58_ = daf_core_ivalue_model_get_val (_tmp57_);
-#line 315 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 315 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp59_ = g_value_get_string (_tmp58_);
-#line 315 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 315 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp60_ = old_value;
-#line 315 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 315 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (g_strcmp0 (_tmp59_, g_value_get_string (_tmp60_)) == 0, "(string) value_holder.get_val () == (string) old_value");
-#line 315 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 315 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_free0 (_tmp59_);
-#line 317 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 317 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp61_ = self->priv->buffered_model;
-#line 317 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 317 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_iaspect_trigger_commit ((DafCoreIAspectTrigger*) _tmp61_);
-#line 318 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 318 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp62_ = self->priv->value_holder;
-#line 318 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 318 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp63_ = daf_core_ivalue_model_get_val (_tmp62_);
-#line 318 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 318 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp64_ = g_value_get_string (_tmp63_);
-#line 318 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 318 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp65_ = new_value;
-#line 318 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 318 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (g_strcmp0 (_tmp64_, g_value_get_string (&_tmp65_)) == 0, "(string)value_holder.get_val () == (string) new_value");
-#line 318 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 318 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_free0 (_tmp64_);
-#line 320 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 320 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp66_ = self->priv->value_holder;
-#line 320 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 320 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp67_ = daf_core_ivalue_model_get_val (_tmp66_);
-#line 320 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 320 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	new_value1 = _tmp67_;
-#line 321 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 321 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp68_ = self->priv->buffered_model;
-#line 321 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 321 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp69_ = new_value1;
-#line 321 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 321 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_abstract_value_holder_set_val ((DafCoreAbstractValueHolder*) _tmp68_, _tmp69_);
-#line 322 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 322 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp70_ = self->priv->buffered_model;
-#line 322 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 322 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_iaspect_trigger_commit ((DafCoreIAspectTrigger*) _tmp70_);
-#line 323 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 323 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp71_ = self->priv->value_holder;
-#line 323 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 323 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp72_ = daf_core_ivalue_model_get_val (_tmp71_);
-#line 323 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 323 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp73_ = g_value_get_string (_tmp72_);
-#line 323 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 323 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp74_ = new_value1;
-#line 323 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 323 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (g_strcmp0 (_tmp73_, g_value_get_string (_tmp74_)) == 0, "(string)value_holder.get_val () == (string) new_value1");
-#line 323 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 323 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_free0 (_tmp73_);
-#line 326 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 326 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp75_ = self->priv->value_holder;
-#line 326 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 326 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp76_ = g_new0 (GValue, 1);
-#line 326 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 326 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_init (_tmp76_, G_TYPE_STRING);
-#line 326 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 326 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_set_string (_tmp76_, "initial_value");
-#line 326 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 326 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_ivalue_model_set_val (_tmp75_, _tmp76_);
-#line 326 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 326 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	__vala_GValue_free0 (_tmp76_);
-#line 327 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 327 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_init (&_tmp77_, G_TYPE_STRING);
-#line 327 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 327 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_set_string (&_tmp77_, "new value");
-#line 327 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 327 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	G_IS_VALUE (&new_value) ? (g_value_unset (&new_value), NULL) : NULL;
-#line 327 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 327 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	new_value = _tmp77_;
-#line 329 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 329 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp78_ = self->priv->buffered_model;
-#line 329 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 329 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp79_ = new_value;
-#line 329 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 329 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_abstract_value_holder_set_val ((DafCoreAbstractValueHolder*) _tmp78_, &_tmp79_);
-#line 330 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 330 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp80_ = self->priv->buffered_model;
-#line 330 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 330 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp81_ = daf_core_abstract_value_holder_get_val ((DafCoreAbstractValueHolder*) _tmp80_);
-#line 330 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 330 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp82_ = g_value_get_string (_tmp81_);
-#line 330 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 330 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp83_ = new_value1;
-#line 330 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 330 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (g_strcmp0 (_tmp82_, g_value_get_string (_tmp83_)) == 0, "(string) buffered_model.get_val () == (string) new_value1");
-#line 330 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 330 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_free0 (_tmp82_);
-#line 332 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 332 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp84_ = self->priv->buffered_model;
-#line 332 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 332 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_iaspect_trigger_discard ((DafCoreIAspectTrigger*) _tmp84_);
-#line 333 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 333 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp85_ = self->priv->buffered_model;
-#line 333 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 333 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp86_ = daf_core_abstract_value_holder_get_val ((DafCoreAbstractValueHolder*) _tmp85_);
-#line 333 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 333 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp87_ = g_value_get_string (_tmp86_);
-#line 333 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 333 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp88_ = self->priv->value_holder;
-#line 333 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 333 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp89_ = daf_core_ivalue_model_get_val (_tmp88_);
-#line 333 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 333 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp90_ = g_value_get_string (_tmp89_);
-#line 333 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 333 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (g_strcmp0 (_tmp87_, _tmp90_) == 0, "(string) buffered_model.get_val () == (string) value_holder.get_val ()");
-#line 333 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 333 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_free0 (_tmp90_);
-#line 333 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 333 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_free0 (_tmp87_);
-#line 335 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 335 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp91_ = self->priv->value_holder;
-#line 335 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 335 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp92_ = daf_core_ivalue_model_get_val (_tmp91_);
-#line 335 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 335 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	__vala_GValue_free0 (new_value1);
-#line 335 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 335 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	new_value1 = _tmp92_;
-#line 336 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 336 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp93_ = self->priv->buffered_model;
-#line 336 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 336 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp94_ = new_value1;
-#line 336 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 336 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_abstract_value_holder_set_val ((DafCoreAbstractValueHolder*) _tmp93_, _tmp94_);
-#line 338 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 338 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp95_ = self->priv->buffered_model;
-#line 338 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 338 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp96_ = daf_core_abstract_value_holder_get_val ((DafCoreAbstractValueHolder*) _tmp95_);
-#line 338 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 338 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp97_ = g_value_get_string (_tmp96_);
-#line 338 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 338 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp98_ = new_value1;
-#line 338 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 338 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (g_strcmp0 (_tmp97_, g_value_get_string (_tmp98_)) == 0, "(string) buffered_model.get_val () == (string) new_value1");
-#line 338 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 338 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_free0 (_tmp97_);
-#line 340 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 340 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp99_ = self->priv->buffered_model;
-#line 340 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 340 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_iaspect_trigger_discard ((DafCoreIAspectTrigger*) _tmp99_);
-#line 341 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 341 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp100_ = self->priv->buffered_model;
-#line 341 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 341 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp101_ = daf_core_abstract_value_holder_get_val ((DafCoreAbstractValueHolder*) _tmp100_);
-#line 341 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 341 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp102_ = g_value_get_string (_tmp101_);
-#line 341 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 341 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp103_ = self->priv->value_holder;
-#line 341 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 341 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp104_ = daf_core_ivalue_model_get_val (_tmp103_);
-#line 341 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 341 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp105_ = g_value_get_string (_tmp104_);
-#line 341 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 341 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (g_strcmp0 (_tmp102_, _tmp105_) == 0, "(string) buffered_model.get_val () == (string) value_holder.get_val ()");
-#line 341 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 341 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_free0 (_tmp105_);
-#line 341 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 341 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_free0 (_tmp102_);
-#line 344 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 344 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_init (&_tmp106_, G_TYPE_STRING);
-#line 344 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 344 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_set_string (&_tmp106_, "1324");
-#line 344 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 344 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	G_IS_VALUE (&new_value) ? (g_value_unset (&new_value), NULL) : NULL;
-#line 344 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 344 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	new_value = _tmp106_;
-#line 345 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 345 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp107_ = self->priv->value_holder;
-#line 345 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 345 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp108_ = new_value;
-#line 345 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 345 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_ivalue_model_set_val (_tmp107_, &_tmp108_);
-#line 347 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 347 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp109_ = self->priv->buffered_model;
-#line 347 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 347 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_iaspect_trigger_discard ((DafCoreIAspectTrigger*) _tmp109_);
-#line 348 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 348 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp110_ = self->priv->buffered_model;
-#line 348 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 348 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp111_ = daf_core_buffered_value_holder_get_dirty (_tmp110_);
-#line 348 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 348 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp112_ = _tmp111_;
-#line 348 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 348 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (_tmp112_ == FALSE, "buffered_model.dirty == false");
-#line 350 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 350 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp113_ = self->priv->value_holder;
-#line 350 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 350 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp114_ = new_value;
-#line 350 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 350 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_ivalue_model_set_val (_tmp113_, &_tmp114_);
-#line 351 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 351 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp115_ = self->priv->buffered_model;
-#line 351 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 351 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp116_ = daf_core_buffered_value_holder_get_dirty (_tmp115_);
-#line 351 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 351 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp117_ = _tmp116_;
-#line 351 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 351 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (_tmp117_ == FALSE, "buffered_model.dirty == false");
-#line 353 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 353 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp118_ = self->priv->value_holder;
-#line 353 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 353 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp119_ = new_value;
-#line 353 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 353 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_ivalue_model_set_val (_tmp118_, &_tmp119_);
-#line 354 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 354 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp120_ = self->priv->buffered_model;
-#line 354 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 354 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp121_ = daf_core_buffered_value_holder_get_dirty (_tmp120_);
-#line 354 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 354 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp122_ = _tmp121_;
-#line 354 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 354 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (_tmp122_ == FALSE, "buffered_model.dirty == false");
-#line 356 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 356 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp123_ = self->priv->buffered_model;
-#line 356 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 356 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp124_ = g_new0 (GValue, 1);
-#line 356 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 356 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_init (_tmp124_, G_TYPE_STRING);
-#line 356 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 356 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_set_string (_tmp124_, "0987");
-#line 356 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 356 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_abstract_value_holder_set_val ((DafCoreAbstractValueHolder*) _tmp123_, _tmp124_);
-#line 356 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 356 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	__vala_GValue_free0 (_tmp124_);
-#line 357 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 357 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp125_ = self->priv->buffered_model;
-#line 357 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 357 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp126_ = daf_core_buffered_value_holder_get_dirty (_tmp125_);
-#line 357 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 357 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp127_ = _tmp126_;
-#line 357 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 357 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (_tmp127_ == TRUE, "buffered_model.dirty == true");
-#line 359 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 359 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp128_ = self->priv->buffered_model;
-#line 359 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 359 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp129_ = g_new0 (GValue, 1);
-#line 359 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 359 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_init (_tmp129_, G_TYPE_STRING);
-#line 359 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 359 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_set_string (_tmp129_, "1987");
-#line 359 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 359 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_abstract_value_holder_set_val ((DafCoreAbstractValueHolder*) _tmp128_, _tmp129_);
-#line 359 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 359 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	__vala_GValue_free0 (_tmp129_);
-#line 360 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 360 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp130_ = self->priv->buffered_model;
-#line 360 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 360 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp131_ = daf_core_buffered_value_holder_get_dirty (_tmp130_);
-#line 360 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 360 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp132_ = _tmp131_;
-#line 360 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 360 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (_tmp132_ == TRUE, "buffered_model.dirty == true");
-#line 362 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 362 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp133_ = self->priv->buffered_model;
-#line 362 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 362 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp134_ = g_new0 (GValue, 1);
-#line 362 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 362 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_init (_tmp134_, G_TYPE_STRING);
-#line 362 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 362 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_set_string (_tmp134_, "2987");
-#line 362 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 362 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_abstract_value_holder_set_val ((DafCoreAbstractValueHolder*) _tmp133_, _tmp134_);
-#line 362 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 362 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	__vala_GValue_free0 (_tmp134_);
-#line 363 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 363 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp135_ = self->priv->buffered_model;
-#line 363 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 363 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp136_ = daf_core_buffered_value_holder_get_dirty (_tmp135_);
-#line 363 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 363 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp137_ = _tmp136_;
-#line 363 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 363 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (_tmp137_ == TRUE, "buffered_model.dirty == true");
-#line 365 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 365 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp138_ = self->priv->buffered_model;
-#line 365 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 365 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_iaspect_trigger_commit ((DafCoreIAspectTrigger*) _tmp138_);
-#line 366 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 366 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp139_ = self->priv->buffered_model;
-#line 366 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 366 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp140_ = daf_core_buffered_value_holder_get_dirty (_tmp139_);
-#line 366 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 366 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp141_ = _tmp140_;
-#line 366 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 366 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (_tmp141_ == FALSE, "buffered_model.dirty == false");
-#line 368 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 368 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_init (&_tmp142_, G_TYPE_STRING);
-#line 368 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 368 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_set_string (&_tmp142_, "changed again");
-#line 368 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 368 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	G_IS_VALUE (&new_value) ? (g_value_unset (&new_value), NULL) : NULL;
-#line 368 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 368 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	new_value = _tmp142_;
-#line 369 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 369 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp143_ = self->priv->value_holder;
-#line 369 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 369 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp144_ = new_value;
-#line 369 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 369 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_ivalue_model_set_val (_tmp143_, &_tmp144_);
-#line 370 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 370 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp145_ = self->priv->buffered_model;
-#line 370 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 370 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp146_ = daf_core_buffered_value_holder_get_dirty (_tmp145_);
-#line 370 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 370 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp147_ = _tmp146_;
-#line 370 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 370 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (_tmp147_ == FALSE, "buffered_model.dirty == false");
-#line 372 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 372 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp148_ = self->priv->value_holder;
-#line 372 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 372 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_ivalue_model_set_val (_tmp148_, NULL);
-#line 373 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 373 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp149_ = self->priv->buffered_model;
-#line 373 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 373 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp150_ = daf_core_buffered_value_holder_get_dirty (_tmp149_);
-#line 373 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 373 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp151_ = _tmp150_;
-#line 373 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 373 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (_tmp151_ == FALSE, "buffered_model.dirty == false");
-#line 375 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 375 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp152_ = self->priv->buffered_model;
-#line 375 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 375 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp153_ = g_new0 (GValue, 1);
-#line 375 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 375 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_init (_tmp153_, G_TYPE_STRING);
-#line 375 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 375 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_set_string (_tmp153_, "452312");
-#line 375 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 375 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_abstract_value_holder_set_val ((DafCoreAbstractValueHolder*) _tmp152_, _tmp153_);
-#line 375 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 375 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	__vala_GValue_free0 (_tmp153_);
-#line 376 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 376 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp154_ = self->priv->buffered_model;
-#line 376 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 376 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp155_ = daf_core_buffered_value_holder_get_dirty (_tmp154_);
-#line 376 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 376 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp156_ = _tmp155_;
-#line 376 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 376 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (_tmp156_ == TRUE, "buffered_model.dirty == true");
-#line 378 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 378 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp157_ = self->priv->buffered_model;
-#line 378 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 378 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_iaspect_trigger_discard ((DafCoreIAspectTrigger*) _tmp157_);
-#line 379 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 379 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp158_ = self->priv->buffered_model;
-#line 379 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 379 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp159_ = daf_core_buffered_value_holder_get_dirty (_tmp158_);
-#line 379 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 379 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp160_ = _tmp159_;
-#line 379 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 379 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (_tmp160_ == FALSE, "buffered_model.dirty == false");
-#line 381 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 381 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_init (&_tmp161_, G_TYPE_STRING);
-#line 381 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 381 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_value_set_string (&_tmp161_, "changed again");
-#line 381 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 381 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	G_IS_VALUE (&new_value) ? (g_value_unset (&new_value), NULL) : NULL;
-#line 381 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 381 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	new_value = _tmp161_;
-#line 382 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 382 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp162_ = self->priv->value_holder;
-#line 382 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 382 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp163_ = new_value;
-#line 382 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 382 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_ivalue_model_set_val (_tmp162_, &_tmp163_);
-#line 383 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 383 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp164_ = self->priv->buffered_model;
-#line 383 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 383 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp165_ = daf_core_buffered_value_holder_get_dirty (_tmp164_);
-#line 383 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 383 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp166_ = _tmp165_;
-#line 383 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 383 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (_tmp166_ == FALSE, "buffered_model.dirty == false");
-#line 385 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 385 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp167_ = self->priv->value_holder;
-#line 385 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 385 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_ivalue_model_set_val (_tmp167_, NULL);
-#line 386 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 386 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp168_ = self->priv->buffered_model;
-#line 386 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 386 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp169_ = daf_core_buffered_value_holder_get_dirty (_tmp168_);
-#line 386 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 386 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_tmp170_ = _tmp169_;
-#line 386 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 386 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_vala_assert (_tmp170_ == FALSE, "buffered_model.dirty == false");
-#line 283 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 283 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	__vala_GValue_free0 (new_value1);
-#line 283 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 283 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	G_IS_VALUE (&new_value) ? (g_value_unset (&new_value), NULL) : NULL;
-#line 283 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 283 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	__vala_GValue_free0 (old_value);
 #line 1906 "BufferedValueHolderTest.c"
 }
@@ -1909,15 +1909,15 @@ daf_core_test_buffered_value_holder_test_random_test (DafCoreTestBufferedValueHo
 static void
 daf_core_test_buffered_value_holder_test_class_init (DafCoreTestBufferedValueHolderTestClass * klass)
 {
-#line 62 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 62 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	daf_core_test_buffered_value_holder_test_parent_class = g_type_class_peek_parent (klass);
-#line 62 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 62 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	g_type_class_add_private (klass, sizeof (DafCoreTestBufferedValueHolderTestPrivate));
-#line 62 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 62 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	((DafUnitTestAbstractTestCaseClass *) klass)->set_up = (void (*) (DafUnitTestAbstractTestCase *)) daf_core_test_buffered_value_holder_test_real_set_up;
-#line 62 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 62 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	((DafUnitTestAbstractTestCaseClass *) klass)->tear_down = (void (*) (DafUnitTestAbstractTestCase *)) daf_core_test_buffered_value_holder_test_real_tear_down;
-#line 62 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 62 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	G_OBJECT_CLASS (klass)->finalize = daf_core_test_buffered_value_holder_test_finalize;
 #line 1923 "BufferedValueHolderTest.c"
 }
@@ -1926,7 +1926,7 @@ daf_core_test_buffered_value_holder_test_class_init (DafCoreTestBufferedValueHol
 static void
 daf_core_test_buffered_value_holder_test_instance_init (DafCoreTestBufferedValueHolderTest * self)
 {
-#line 62 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 62 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	self->priv = DAF_CORE_TEST_BUFFERED_VALUE_HOLDER_TEST_GET_PRIVATE (self);
 #line 1932 "BufferedValueHolderTest.c"
 }
@@ -1936,17 +1936,17 @@ static void
 daf_core_test_buffered_value_holder_test_finalize (GObject * obj)
 {
 	DafCoreTestBufferedValueHolderTest * self;
-#line 62 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 62 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	self = G_TYPE_CHECK_INSTANCE_CAST (obj, DAF_CORE_TEST_TYPE_BUFFERED_VALUE_HOLDER_TEST, DafCoreTestBufferedValueHolderTest);
-#line 64 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 64 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_object_unref0 (self->priv->person_a);
-#line 65 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 65 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_object_unref0 (self->priv->person_b);
-#line 67 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 67 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_object_unref0 (self->priv->value_holder);
-#line 68 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 68 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	_g_object_unref0 (self->priv->buffered_model);
-#line 62 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
+#line 62 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/test/BufferedValueHolderTest.vala"
 	G_OBJECT_CLASS (daf_core_test_buffered_value_holder_test_parent_class)->finalize (obj);
 #line 1952 "BufferedValueHolderTest.c"
 }

@@ -1,26 +1,26 @@
-Build started at 2018-10-10T11:33:09.019803
+Build started at 2018-10-10T17:56:38.924147
 Main binary: /usr/bin/python3
 Python system: Linux
 The Meson build system
 Version: 0.46.1
-Source dir: /data/Projects/daf/Demos/AnimationDemo
-Build dir: /data/Projects/daf/Demos/AnimationDemo/build
+Source dir: /data/Projects/DaF/Demos/AnimationDemo
+Build dir: /data/Projects/DaF/Demos/AnimationDemo/build
 Build type: native build
 Project name: com.github.ilap.daf.demos.animation
 Sanity testing C compiler: cc
 Is cross compiler: False.
-Sanity check compiler command line: cc /data/Projects/daf/Demos/AnimationDemo/build/meson-private/sanitycheckc.c -o /data/Projects/daf/Demos/AnimationDemo/build/meson-private/sanitycheckc.exe
+Sanity check compiler command line: cc /data/Projects/DaF/Demos/AnimationDemo/build/meson-private/sanitycheckc.c -o /data/Projects/DaF/Demos/AnimationDemo/build/meson-private/sanitycheckc.exe
 Sanity check compile stdout:
 
 -----
 Sanity check compile stderr:
 
 -----
-Running test binary command: /data/Projects/daf/Demos/AnimationDemo/build/meson-private/sanitycheckc.exe
+Running test binary command: /data/Projects/DaF/Demos/AnimationDemo/build/meson-private/sanitycheckc.exe
 Native C compiler: cc (gcc 7.3.0 "cc (Ubuntu 7.3.0-27ubuntu1~18.04) 7.3.0")
 Running compile:
-Working directory:  /tmp/tmpun91mjec
-Command line:  valac /tmp/tmpun91mjec/testfile.vala -C 
+Working directory:  /tmp/tmphqgc_j53
+Command line:  valac /tmp/tmphqgc_j53/testfile.vala -C 
 
 Code:
  class MesonSanityCheck : Object { }

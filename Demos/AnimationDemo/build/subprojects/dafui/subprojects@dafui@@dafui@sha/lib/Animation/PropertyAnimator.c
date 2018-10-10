@@ -308,7 +308,7 @@ static void _vala_daf_ui_animation_property_animator_set_property (GObject * obj
 static gpointer
 _g_object_ref0 (gpointer self)
 {
-#line 49 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 49 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	return self ? g_object_ref (self) : NULL;
 #line 314 "PropertyAnimator.c"
 }
@@ -319,7 +319,7 @@ _daf_ui_animation_property_animator_on_new_frame_daf_ui_animation_time_line_new_
                                                                                        gdouble progress,
                                                                                        gpointer self)
 {
-#line 56 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 56 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	daf_ui_animation_property_animator_on_new_frame ((DafUIAnimationPropertyAnimator*) self, progress);
 #line 325 "PropertyAnimator.c"
 }
@@ -329,7 +329,7 @@ static void
 _daf_ui_animation_property_animator_on_started_daf_ui_animation_time_line_started (DafUIAnimationTimeLine* _sender,
                                                                                    gpointer self)
 {
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	daf_ui_animation_property_animator_on_started ((DafUIAnimationPropertyAnimator*) self);
 #line 335 "PropertyAnimator.c"
 }
@@ -339,7 +339,7 @@ static void
 _daf_ui_animation_property_animator_on_completed_daf_ui_animation_time_line_completed (DafUIAnimationTimeLine* _sender,
                                                                                        gpointer self)
 {
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	daf_ui_animation_property_animator_on_completed ((DafUIAnimationPropertyAnimator*) self);
 #line 345 "PropertyAnimator.c"
 }
@@ -355,33 +355,33 @@ daf_ui_animation_property_animator_construct (GType object_type,
 	DafUIAnimationTimeLine* _tmp1_;
 	DafUIAnimationTimeLine* _tmp2_;
 	DafUIAnimationTimeLine* _tmp3_;
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_return_val_if_fail (object != NULL, NULL);
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_return_val_if_fail (timeline != NULL, NULL);
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	self = (DafUIAnimationPropertyAnimator*) g_object_new (object_type, NULL);
-#line 39 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 39 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp0_ = _g_object_ref0 (object);
-#line 39 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 39 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_g_object_unref0 (self->priv->object);
-#line 39 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 39 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	self->priv->object = _tmp0_;
-#line 40 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 40 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	daf_ui_animation_property_animator_set_timeline (self, timeline);
-#line 41 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 41 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp1_ = self->priv->_timeline;
-#line 41 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 41 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_signal_connect_object (_tmp1_, "new-frame", (GCallback) _daf_ui_animation_property_animator_on_new_frame_daf_ui_animation_time_line_new_frame, self, 0);
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp2_ = self->priv->_timeline;
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_signal_connect_object (_tmp2_, "started", (GCallback) _daf_ui_animation_property_animator_on_started_daf_ui_animation_time_line_started, self, 0);
-#line 43 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 43 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp3_ = self->priv->_timeline;
-#line 43 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 43 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_signal_connect_object (_tmp3_, "completed", (GCallback) _daf_ui_animation_property_animator_on_completed_daf_ui_animation_time_line_completed, self, 0);
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	return self;
 #line 387 "PropertyAnimator.c"
 }
@@ -391,7 +391,7 @@ static DafUIAnimationPropertyAnimator*
 daf_ui_animation_property_animator_new (GObject* object,
                                         DafUIAnimationTimeLine* timeline)
 {
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	return daf_ui_animation_property_animator_construct (DAF_UI_ANIMATION_TYPE_PROPERTY_ANIMATOR, object, timeline);
 #line 397 "PropertyAnimator.c"
 }
@@ -401,11 +401,11 @@ gboolean
 daf_ui_animation_property_animator_has_proprety (DafUIAnimationPropertyAnimator* self)
 {
 	gboolean result = FALSE;
-#line 90 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 90 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_return_val_if_fail (self != NULL, FALSE);
-#line 91 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 91 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	result = TRUE;
-#line 91 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 91 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	return result;
 #line 411 "PropertyAnimator.c"
 }
@@ -424,29 +424,29 @@ daf_ui_animation_property_animator_animate (GObject* object,
 	DafUIAnimationTimeLine* _tmp1_;
 	DafUIAnimationPropertyAnimator* _tmp2_;
 	DafUIAnimationPropertyAnimator* _tmp3_;
-#line 99 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 99 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_return_val_if_fail (object != NULL, NULL);
-#line 100 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 100 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	va_start (args, duration);
-#line 104 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 104 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp0_ = daf_ui_animation_time_line_new_full (mode, (guint) duration, (guint) 25);
-#line 104 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 104 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp1_ = _tmp0_;
-#line 104 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 104 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp2_ = daf_ui_animation_property_animator_new (object, _tmp1_);
-#line 104 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 104 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp3_ = _tmp2_;
-#line 104 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 104 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_g_object_unref0 (_tmp1_);
-#line 104 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 104 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_result_ = _tmp3_;
-#line 105 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 105 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	daf_ui_animation_property_animator_initialize_properties (_result_, object, args);
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	result = _result_;
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	va_end (args);
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	return result;
 #line 452 "PropertyAnimator.c"
 }
@@ -461,23 +461,23 @@ daf_ui_animation_property_animator_animate_with_timeline (GObject* object,
 	va_list args = {0};
 	DafUIAnimationPropertyAnimator* _result_ = NULL;
 	DafUIAnimationPropertyAnimator* _tmp0_;
-#line 110 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 110 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_return_val_if_fail (object != NULL, NULL);
-#line 110 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 110 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_return_val_if_fail (timeline != NULL, NULL);
-#line 111 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 111 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	va_start (args, timeline);
-#line 113 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 113 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp0_ = daf_ui_animation_property_animator_new (object, timeline);
-#line 113 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 113 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_result_ = _tmp0_;
-#line 114 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 114 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	daf_ui_animation_property_animator_initialize_properties (_result_, object, args);
-#line 116 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 116 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	result = _result_;
-#line 116 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 116 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	va_end (args);
-#line 116 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 116 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	return result;
 #line 483 "PropertyAnimator.c"
 }
@@ -489,7 +489,7 @@ daf_ui_animation_property_animator_compute_initial_values (DafUIAnimationPropert
 	gchar* prop_name = NULL;
 	DafUIAnimationKeyFrame* keyframe = NULL;
 	GeeList* keyframes = NULL;
-#line 119 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 119 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_return_if_fail (self != NULL);
 #line 495 "PropertyAnimator.c"
 	{
@@ -500,23 +500,23 @@ daf_ui_animation_property_animator_compute_initial_values (DafUIAnimationPropert
 		GeeSet* _tmp3_;
 		GeeIterator* _tmp4_;
 		GeeIterator* _tmp5_;
-#line 124 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 124 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_tmp0_ = self->properties_map;
-#line 124 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 124 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_tmp1_ = gee_abstract_map_get_entries ((GeeAbstractMap*) _tmp0_);
-#line 124 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 124 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_tmp2_ = _tmp1_;
-#line 124 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 124 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_tmp3_ = _tmp2_;
-#line 124 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 124 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_tmp4_ = gee_iterable_iterator ((GeeIterable*) _tmp3_);
-#line 124 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 124 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_tmp5_ = _tmp4_;
-#line 124 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 124 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_g_object_unref0 (_tmp3_);
-#line 124 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 124 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_prop_map_it = _tmp5_;
-#line 124 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 124 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		while (TRUE) {
 #line 522 "PropertyAnimator.c"
 			GeeIterator* _tmp6_;
@@ -536,73 +536,73 @@ daf_ui_animation_property_animator_compute_initial_values (DafUIAnimationPropert
 			GObject* _tmp19_;
 			const gchar* _tmp20_;
 			DafUIAnimationKeyFrame* _tmp21_;
-#line 124 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 124 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp6_ = _prop_map_it;
-#line 124 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 124 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			if (!gee_iterator_next (_tmp6_)) {
-#line 124 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 124 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				break;
 #line 546 "PropertyAnimator.c"
 			}
-#line 124 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 124 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp7_ = _prop_map_it;
-#line 124 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 124 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp8_ = gee_iterator_get (_tmp7_);
-#line 124 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 124 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			prop_map = (GeeMapEntry*) _tmp8_;
-#line 125 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 125 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp9_ = prop_map;
-#line 125 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 125 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp10_ = gee_map_entry_get_key (_tmp9_);
-#line 125 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 125 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp11_ = _tmp10_;
-#line 125 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 125 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp12_ = g_strdup ((const gchar*) _tmp11_);
-#line 125 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 125 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_g_free0 (prop_name);
-#line 125 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 125 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			prop_name = _tmp12_;
-#line 126 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 126 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp13_ = prop_map;
-#line 126 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 126 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp14_ = gee_map_entry_get_value (_tmp13_);
-#line 126 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 126 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp15_ = _tmp14_;
-#line 126 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 126 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp16_ = _g_object_ref0 ((GeeList*) ((GeeArrayList*) _tmp15_));
-#line 126 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 126 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_g_object_unref0 (keyframes);
-#line 126 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 126 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			keyframes = _tmp16_;
-#line 127 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 127 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp17_ = keyframes;
-#line 127 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 127 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp18_ = daf_ui_animation_property_animator_get_act_keyframe (self, _tmp17_, (gdouble) 0.f);
-#line 127 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 127 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_daf_ui_animation_key_frame_unref0 (keyframe);
-#line 127 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 127 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			keyframe = _tmp18_;
-#line 129 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 129 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp19_ = self->priv->object;
-#line 129 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 129 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp20_ = prop_name;
-#line 129 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 129 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp21_ = keyframe;
-#line 129 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 129 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			g_object_get_property (_tmp19_, _tmp20_, &_tmp21_->initial);
-#line 124 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 124 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_g_object_unref0 (prop_map);
 #line 596 "PropertyAnimator.c"
 		}
-#line 124 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 124 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_g_object_unref0 (_prop_map_it);
 #line 600 "PropertyAnimator.c"
 	}
-#line 119 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 119 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_g_object_unref0 (keyframes);
-#line 119 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 119 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_daf_ui_animation_key_frame_unref0 (keyframe);
-#line 119 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 119 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_g_free0 (prop_name);
 #line 608 "PropertyAnimator.c"
 }
@@ -615,29 +615,29 @@ daf_ui_animation_property_animator_remove_keyframe (DafUIAnimationPropertyAnimat
 {
 	gdouble _tmp0_;
 	GeeHashMap* _tmp1_;
-#line 133 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 133 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_return_if_fail (self != NULL);
-#line 133 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 133 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_return_if_fail (property != NULL);
-#line 133 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 133 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp0_ = key;
-#line 133 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 133 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_vala_return_if_fail ((((gdouble) 0.f) < _tmp0_) && (_tmp0_ < ((gdouble) 1.f)), "0f < key < 1f");
-#line 136 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 136 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_debug ("PropertyAnimator.vala:136: key: %f, property: %s", key, property);
-#line 138 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 138 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp1_ = self->properties_map;
-#line 138 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 138 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	if (gee_abstract_map_has_key ((GeeAbstractMap*) _tmp1_, property)) {
 #line 633 "PropertyAnimator.c"
 		GeeList* keyframes = NULL;
 		GeeHashMap* _tmp2_;
 		gpointer _tmp3_;
-#line 140 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 140 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_tmp2_ = self->properties_map;
-#line 140 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 140 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_tmp3_ = gee_abstract_map_get ((GeeAbstractMap*) _tmp2_, property);
-#line 140 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 140 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		keyframes = (GeeList*) ((GeeArrayList*) _tmp3_);
 #line 643 "PropertyAnimator.c"
 		{
@@ -649,23 +649,23 @@ daf_ui_animation_property_animator_remove_keyframe (DafUIAnimationPropertyAnimat
 			gint _tmp7_;
 			gint _tmp8_;
 			gint _keyframe_index = 0;
-#line 144 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 144 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp4_ = keyframes;
-#line 144 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 144 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp5_ = _g_object_ref0 (_tmp4_);
-#line 144 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 144 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_keyframe_list = _tmp5_;
-#line 144 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 144 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp6_ = _keyframe_list;
-#line 144 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 144 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp7_ = gee_collection_get_size ((GeeCollection*) _tmp6_);
-#line 144 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 144 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp8_ = _tmp7_;
-#line 144 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 144 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_keyframe_size = _tmp8_;
-#line 144 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 144 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_keyframe_index = -1;
-#line 144 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 144 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			while (TRUE) {
 #line 671 "PropertyAnimator.c"
 				gint _tmp9_;
@@ -677,58 +677,58 @@ daf_ui_animation_property_animator_remove_keyframe (DafUIAnimationPropertyAnimat
 				gpointer _tmp14_;
 				DafUIAnimationKeyFrame* _tmp15_;
 				gdouble _tmp16_;
-#line 144 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 144 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_tmp9_ = _keyframe_index;
-#line 144 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 144 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_keyframe_index = _tmp9_ + 1;
-#line 144 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 144 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_tmp10_ = _keyframe_index;
-#line 144 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 144 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_tmp11_ = _keyframe_size;
-#line 144 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 144 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				if (!(_tmp10_ < _tmp11_)) {
-#line 144 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 144 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 					break;
 #line 693 "PropertyAnimator.c"
 				}
-#line 144 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 144 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_tmp12_ = _keyframe_list;
-#line 144 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 144 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_tmp13_ = _keyframe_index;
-#line 144 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 144 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_tmp14_ = gee_list_get (_tmp12_, _tmp13_);
-#line 144 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 144 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				keyframe = (DafUIAnimationKeyFrame*) _tmp14_;
-#line 146 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 146 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_tmp15_ = keyframe;
-#line 146 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 146 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_tmp16_ = _tmp15_->key;
-#line 146 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 146 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				if (key == _tmp16_) {
 #line 709 "PropertyAnimator.c"
 					GeeList* _tmp17_;
 					DafUIAnimationKeyFrame* _tmp18_;
-#line 147 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 147 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 					_tmp17_ = keyframes;
-#line 147 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 147 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 					_tmp18_ = keyframe;
-#line 147 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 147 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 					gee_collection_remove ((GeeCollection*) _tmp17_, _tmp18_);
-#line 148 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 148 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 					_daf_ui_animation_key_frame_unref0 (keyframe);
-#line 148 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 148 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 					break;
 #line 722 "PropertyAnimator.c"
 				}
-#line 144 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 144 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_daf_ui_animation_key_frame_unref0 (keyframe);
 #line 726 "PropertyAnimator.c"
 			}
-#line 144 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 144 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_g_object_unref0 (_keyframe_list);
 #line 730 "PropertyAnimator.c"
 		}
-#line 138 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 138 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_g_object_unref0 (keyframes);
 #line 734 "PropertyAnimator.c"
 	}
@@ -743,29 +743,29 @@ daf_ui_animation_property_animator_set_keyframe (DafUIAnimationPropertyAnimator*
 {
 	gdouble _tmp0_;
 	GeeHashMap* _tmp1_;
-#line 155 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 155 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_return_if_fail (self != NULL);
-#line 155 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 155 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_return_if_fail (property != NULL);
-#line 155 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 155 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_return_if_fail (final != NULL);
-#line 155 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 155 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp0_ = key;
-#line 155 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 155 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_vala_return_if_fail ((((gdouble) 0.f) <= _tmp0_) && (_tmp0_ <= ((gdouble) 1.f)), "0f <= key <= 1f");
-#line 159 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 159 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp1_ = self->properties_map;
-#line 159 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 159 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	if (gee_abstract_map_has_key ((GeeAbstractMap*) _tmp1_, property)) {
 #line 761 "PropertyAnimator.c"
 		GeeList* keyframes = NULL;
 		GeeHashMap* _tmp2_;
 		gpointer _tmp3_;
-#line 161 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 161 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_tmp2_ = self->properties_map;
-#line 161 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 161 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_tmp3_ = gee_abstract_map_get ((GeeAbstractMap*) _tmp2_, property);
-#line 161 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 161 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		keyframes = (GeeList*) ((GeeArrayList*) _tmp3_);
 #line 771 "PropertyAnimator.c"
 		{
@@ -777,23 +777,23 @@ daf_ui_animation_property_animator_set_keyframe (DafUIAnimationPropertyAnimator*
 			gint _tmp7_;
 			gint _tmp8_;
 			gint _keyframe_index = 0;
-#line 163 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 163 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp4_ = keyframes;
-#line 163 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 163 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp5_ = _g_object_ref0 (_tmp4_);
-#line 163 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 163 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_keyframe_list = _tmp5_;
-#line 163 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 163 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp6_ = _keyframe_list;
-#line 163 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 163 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp7_ = gee_collection_get_size ((GeeCollection*) _tmp6_);
-#line 163 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 163 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp8_ = _tmp7_;
-#line 163 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 163 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_keyframe_size = _tmp8_;
-#line 163 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 163 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_keyframe_index = -1;
-#line 163 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 163 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			while (TRUE) {
 #line 799 "PropertyAnimator.c"
 				gint _tmp9_;
@@ -805,33 +805,33 @@ daf_ui_animation_property_animator_set_keyframe (DafUIAnimationPropertyAnimator*
 				gpointer _tmp14_;
 				DafUIAnimationKeyFrame* _tmp15_;
 				gdouble _tmp16_;
-#line 163 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 163 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_tmp9_ = _keyframe_index;
-#line 163 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 163 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_keyframe_index = _tmp9_ + 1;
-#line 163 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 163 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_tmp10_ = _keyframe_index;
-#line 163 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 163 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_tmp11_ = _keyframe_size;
-#line 163 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 163 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				if (!(_tmp10_ < _tmp11_)) {
-#line 163 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 163 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 					break;
 #line 821 "PropertyAnimator.c"
 				}
-#line 163 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 163 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_tmp12_ = _keyframe_list;
-#line 163 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 163 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_tmp13_ = _keyframe_index;
-#line 163 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 163 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_tmp14_ = gee_list_get (_tmp12_, _tmp13_);
-#line 163 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 163 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				keyframe = (DafUIAnimationKeyFrame*) _tmp14_;
-#line 165 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 165 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_tmp15_ = keyframe;
-#line 165 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 165 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_tmp16_ = _tmp15_->key;
-#line 165 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 165 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				if (key <= _tmp16_) {
 #line 837 "PropertyAnimator.c"
 					GValue initial = {0};
@@ -848,85 +848,85 @@ daf_ui_animation_property_animator_set_keyframe (DafUIAnimationPropertyAnimator*
 					gboolean _tmp26_ = FALSE;
 					DafUIAnimationKeyFrame* _tmp29_;
 					gdouble _tmp30_;
-#line 170 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 170 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 					_tmp17_ = keyframe;
-#line 170 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 170 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 					_tmp18_ = _tmp17_->type;
-#line 170 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 170 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 					g_value_init (&_tmp19_, _tmp18_);
-#line 170 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 170 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 					initial = _tmp19_;
-#line 171 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 171 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 					_tmp20_ = keyframe;
-#line 171 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 171 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 					_tmp21_ = _tmp20_->initial;
-#line 171 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 171 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 					if (G_IS_VALUE (&_tmp21_)) {
-#line 171 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 171 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 						g_value_init (&_tmp22_, G_VALUE_TYPE (&_tmp21_));
-#line 171 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 171 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 						g_value_copy (&_tmp21_, &_tmp22_);
 #line 870 "PropertyAnimator.c"
 					} else {
-#line 171 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 171 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 						_tmp22_ = _tmp21_;
 #line 874 "PropertyAnimator.c"
 					}
-#line 171 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 171 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 					G_IS_VALUE (&initial) ? (g_value_unset (&initial), NULL) : NULL;
-#line 171 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 171 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 					initial = _tmp22_;
-#line 173 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 173 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 					_tmp23_ = keyframe;
-#line 173 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 173 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 					_tmp24_ = _tmp23_->type;
-#line 173 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 173 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 					g_value_init (&_tmp25_, _tmp24_);
-#line 173 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 173 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 					reset_final = _tmp25_;
-#line 175 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 175 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 					if (G_VALUE_TYPE (final) != G_VALUE_TYPE (&reset_final)) {
-#line 176 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 176 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 						_tmp26_ = g_value_type_transformable (G_VALUE_TYPE (final), G_VALUE_TYPE (&reset_final));
 #line 892 "PropertyAnimator.c"
 					} else {
-#line 175 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 175 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 						_tmp26_ = FALSE;
 #line 896 "PropertyAnimator.c"
 					}
-#line 175 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 175 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 					if (_tmp26_) {
-#line 178 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 178 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 						g_value_transform (final, &reset_final);
 #line 902 "PropertyAnimator.c"
 					} else {
 						GValue _tmp27_;
 						GValue _tmp28_ = {0};
-#line 181 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 181 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 						_tmp27_ = *final;
-#line 181 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 181 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 						if (G_IS_VALUE (&_tmp27_)) {
-#line 181 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 181 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 							g_value_init (&_tmp28_, G_VALUE_TYPE (&_tmp27_));
-#line 181 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 181 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 							g_value_copy (&_tmp27_, &_tmp28_);
 #line 914 "PropertyAnimator.c"
 						} else {
-#line 181 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 181 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 							_tmp28_ = _tmp27_;
 #line 918 "PropertyAnimator.c"
 						}
-#line 181 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 181 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 						G_IS_VALUE (&reset_final) ? (g_value_unset (&reset_final), NULL) : NULL;
-#line 181 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 181 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 						reset_final = _tmp28_;
 #line 924 "PropertyAnimator.c"
 					}
-#line 185 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 185 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 					_tmp29_ = keyframe;
-#line 185 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 185 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 					_tmp30_ = _tmp29_->key;
-#line 185 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 185 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 					if (key < _tmp30_) {
 #line 932 "PropertyAnimator.c"
 						DafUIAnimationKeyFrame* new_keyframe = NULL;
@@ -948,110 +948,110 @@ daf_ui_animation_property_animator_set_keyframe (DafUIAnimationPropertyAnimator*
 						GeeList* _tmp45_;
 						gint _tmp46_;
 						DafUIAnimationKeyFrame* _tmp47_;
-#line 186 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 186 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 						_tmp31_ = keyframe;
-#line 186 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 186 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 						_tmp32_ = _tmp31_->prev_key;
-#line 186 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 186 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 						_tmp33_ = keyframe;
-#line 186 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 186 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 						_tmp34_ = _tmp33_->type;
-#line 186 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 186 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 						_tmp35_ = keyframe;
-#line 186 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 186 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 						_tmp36_ = _tmp35_->initial;
-#line 186 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 186 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 						_tmp37_ = reset_final;
-#line 186 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 186 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 						_tmp38_ = daf_ui_animation_key_frame_new (key, _tmp32_, _tmp34_, &_tmp36_, &_tmp37_);
-#line 186 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 186 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 						new_keyframe = _tmp38_;
-#line 188 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 188 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 						_tmp39_ = keyframe;
-#line 188 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 188 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 						_tmp40_ = reset_final;
-#line 188 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 188 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 						if (G_IS_VALUE (&_tmp40_)) {
-#line 188 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 188 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 							g_value_init (&_tmp41_, G_VALUE_TYPE (&_tmp40_));
-#line 188 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 188 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 							g_value_copy (&_tmp40_, &_tmp41_);
 #line 980 "PropertyAnimator.c"
 						} else {
-#line 188 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 188 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 							_tmp41_ = _tmp40_;
 #line 984 "PropertyAnimator.c"
 						}
-#line 188 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 188 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 						G_IS_VALUE (&_tmp39_->initial) ? (g_value_unset (&_tmp39_->initial), NULL) : NULL;
-#line 188 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 188 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 						_tmp39_->initial = _tmp41_;
-#line 189 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 189 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 						_tmp42_ = keyframe;
-#line 189 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 189 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 						_tmp42_->prev_key = key;
-#line 191 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 191 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 						_tmp43_ = keyframes;
-#line 191 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 191 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 						_tmp44_ = keyframe;
-#line 191 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 191 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 						index = gee_list_index_of (_tmp43_, _tmp44_);
-#line 192 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 192 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 						_tmp45_ = keyframes;
-#line 192 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 192 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 						_tmp46_ = index;
-#line 192 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 192 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 						_tmp47_ = new_keyframe;
-#line 192 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 192 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 						gee_list_insert (_tmp45_, _tmp46_, _tmp47_);
-#line 185 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 185 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 						_daf_ui_animation_key_frame_unref0 (new_keyframe);
 #line 1010 "PropertyAnimator.c"
 					} else {
 						DafUIAnimationKeyFrame* _tmp48_;
 						GValue _tmp49_;
 						GValue _tmp50_ = {0};
-#line 197 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 197 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 						_tmp48_ = keyframe;
-#line 197 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 197 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 						_tmp49_ = reset_final;
-#line 197 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 197 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 						if (G_IS_VALUE (&_tmp49_)) {
-#line 197 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 197 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 							g_value_init (&_tmp50_, G_VALUE_TYPE (&_tmp49_));
-#line 197 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 197 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 							g_value_copy (&_tmp49_, &_tmp50_);
 #line 1025 "PropertyAnimator.c"
 						} else {
-#line 197 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 197 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 							_tmp50_ = _tmp49_;
 #line 1029 "PropertyAnimator.c"
 						}
-#line 197 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 197 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 						G_IS_VALUE (&_tmp48_->final) ? (g_value_unset (&_tmp48_->final), NULL) : NULL;
-#line 197 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 197 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 						_tmp48_->final = _tmp50_;
 #line 1035 "PropertyAnimator.c"
 					}
-#line 199 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 199 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 					G_IS_VALUE (&reset_final) ? (g_value_unset (&reset_final), NULL) : NULL;
-#line 199 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 199 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 					G_IS_VALUE (&initial) ? (g_value_unset (&initial), NULL) : NULL;
-#line 199 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 199 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 					_daf_ui_animation_key_frame_unref0 (keyframe);
-#line 199 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 199 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 					break;
 #line 1045 "PropertyAnimator.c"
 				}
-#line 163 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 163 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_daf_ui_animation_key_frame_unref0 (keyframe);
 #line 1049 "PropertyAnimator.c"
 			}
-#line 163 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 163 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_g_object_unref0 (_keyframe_list);
 #line 1053 "PropertyAnimator.c"
 		}
-#line 159 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 159 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_g_object_unref0 (keyframes);
 #line 1057 "PropertyAnimator.c"
 	}
@@ -1061,7 +1061,7 @@ daf_ui_animation_property_animator_set_keyframe (DafUIAnimationPropertyAnimator*
 static gpointer
 _daf_ui_animation_key_frame_ref0 (gpointer self)
 {
-#line 213 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 213 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	return self ? daf_ui_animation_key_frame_ref (self) : NULL;
 #line 1067 "PropertyAnimator.c"
 }
@@ -1076,19 +1076,19 @@ daf_ui_animation_property_animator_get_act_keyframe (DafUIAnimationPropertyAnima
 	gdouble _tmp0_;
 	DafUIAnimationKeyFrame* _result_ = NULL;
 	gpointer _tmp1_;
-#line 205 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 205 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 205 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 205 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_return_val_if_fail (keyframes != NULL, NULL);
-#line 205 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 205 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp0_ = progress;
-#line 205 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 205 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_vala_return_val_if_fail ((((gdouble) 0.f) <= _tmp0_) && (_tmp0_ <= ((gdouble) 1.f)), "0f <= progress <= 1f", NULL);
-#line 208 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 208 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_debug ("PropertyAnimator.vala:208: get_act_keyframe");
-#line 209 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 209 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp1_ = gee_list_last (keyframes);
-#line 209 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 209 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_result_ = (DafUIAnimationKeyFrame*) _tmp1_;
 #line 1094 "PropertyAnimator.c"
 	{
@@ -1099,21 +1099,21 @@ daf_ui_animation_property_animator_get_act_keyframe (DafUIAnimationPropertyAnima
 		gint _tmp4_;
 		gint _tmp5_;
 		gint _keyframe_index = 0;
-#line 211 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 211 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_tmp2_ = _g_object_ref0 (keyframes);
-#line 211 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 211 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_keyframe_list = _tmp2_;
-#line 211 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 211 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_tmp3_ = _keyframe_list;
-#line 211 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 211 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_tmp4_ = gee_collection_get_size ((GeeCollection*) _tmp3_);
-#line 211 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 211 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_tmp5_ = _tmp4_;
-#line 211 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 211 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_keyframe_size = _tmp5_;
-#line 211 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 211 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_keyframe_index = -1;
-#line 211 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 211 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		while (TRUE) {
 #line 1119 "PropertyAnimator.c"
 			gint _tmp6_;
@@ -1125,62 +1125,62 @@ daf_ui_animation_property_animator_get_act_keyframe (DafUIAnimationPropertyAnima
 			gpointer _tmp11_;
 			DafUIAnimationKeyFrame* _tmp12_;
 			gdouble _tmp13_;
-#line 211 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 211 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp6_ = _keyframe_index;
-#line 211 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 211 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_keyframe_index = _tmp6_ + 1;
-#line 211 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 211 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp7_ = _keyframe_index;
-#line 211 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 211 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp8_ = _keyframe_size;
-#line 211 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 211 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			if (!(_tmp7_ < _tmp8_)) {
-#line 211 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 211 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				break;
 #line 1141 "PropertyAnimator.c"
 			}
-#line 211 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 211 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp9_ = _keyframe_list;
-#line 211 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 211 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp10_ = _keyframe_index;
-#line 211 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 211 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp11_ = gee_list_get (_tmp9_, _tmp10_);
-#line 211 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 211 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			keyframe = (DafUIAnimationKeyFrame*) _tmp11_;
-#line 212 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 212 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp12_ = keyframe;
-#line 212 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 212 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp13_ = _tmp12_->key;
-#line 212 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 212 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			if (progress < _tmp13_) {
 #line 1157 "PropertyAnimator.c"
 				DafUIAnimationKeyFrame* _tmp14_;
 				DafUIAnimationKeyFrame* _tmp15_;
-#line 213 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 213 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_tmp14_ = keyframe;
-#line 213 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 213 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_tmp15_ = _daf_ui_animation_key_frame_ref0 (_tmp14_);
-#line 213 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 213 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_daf_ui_animation_key_frame_unref0 (_result_);
-#line 213 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 213 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_result_ = _tmp15_;
-#line 215 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 215 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_daf_ui_animation_key_frame_unref0 (keyframe);
-#line 215 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 215 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				break;
 #line 1172 "PropertyAnimator.c"
 			}
-#line 211 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 211 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_daf_ui_animation_key_frame_unref0 (keyframe);
 #line 1176 "PropertyAnimator.c"
 		}
-#line 211 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 211 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_g_object_unref0 (_keyframe_list);
 #line 1180 "PropertyAnimator.c"
 	}
-#line 218 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 218 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	result = _result_;
-#line 218 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 218 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	return result;
 #line 1186 "PropertyAnimator.c"
 }
@@ -1189,7 +1189,7 @@ daf_ui_animation_property_animator_get_act_keyframe (DafUIAnimationPropertyAnima
 static gpointer
 _g_param_spec_ref0 (gpointer self)
 {
-#line 243 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 243 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	return self ? g_param_spec_ref (self) : NULL;
 #line 1195 "PropertyAnimator.c"
 }
@@ -1209,33 +1209,33 @@ daf_ui_animation_property_animator_initialize_properties (DafUIAnimationProperty
 	GObjectClass* oc = NULL;
 	GType _tmp2_;
 	GTypeClass* _tmp3_;
-#line 221 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 221 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_return_if_fail (self != NULL);
-#line 221 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 221 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_return_if_fail (object_ref != NULL);
-#line 222 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 222 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_debug ("PropertyAnimator.vala:222: Initialize properties");
-#line 224 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 224 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp0_ = self->priv->object;
-#line 224 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 224 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	if (_tmp0_ != object_ref) {
-#line 225 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 225 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		return;
 #line 1225 "PropertyAnimator.c"
 	}
-#line 229 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 229 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	pspec = NULL;
-#line 232 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 232 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp1_ = self->priv->object;
-#line 232 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 232 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	obj_type = G_TYPE_FROM_INSTANCE (_tmp1_);
-#line 233 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 233 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp2_ = obj_type;
-#line 233 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 233 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp3_ = g_type_class_ref (_tmp2_);
-#line 233 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 233 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	oc = (GObjectClass*) _tmp3_;
-#line 241 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 241 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	while (TRUE) {
 #line 1241 "PropertyAnimator.c"
 		const gchar* _tmp4_;
@@ -1246,37 +1246,37 @@ daf_ui_animation_property_animator_initialize_properties (DafUIAnimationProperty
 		GParamSpec* _tmp9_;
 		GParamSpec* _tmp10_;
 		GParamSpec* _tmp11_;
-#line 241 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 241 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_tmp4_ = va_arg (args, gchar*);
-#line 241 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 241 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_tmp5_ = g_strdup (_tmp4_);
-#line 241 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 241 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_g_free0 (prop_name);
-#line 241 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 241 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		prop_name = _tmp5_;
-#line 241 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 241 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_tmp6_ = prop_name;
-#line 241 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 241 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		if (!(_tmp6_ != NULL)) {
-#line 241 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 241 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			break;
 #line 1264 "PropertyAnimator.c"
 		}
-#line 243 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 243 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_tmp7_ = oc;
-#line 243 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 243 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_tmp8_ = prop_name;
-#line 243 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 243 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_tmp9_ = g_object_class_find_property (_tmp7_, _tmp8_);
-#line 243 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 243 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_tmp10_ = _g_param_spec_ref0 (_tmp9_);
-#line 243 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 243 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_g_param_spec_unref0 (pspec);
-#line 243 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 243 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		pspec = _tmp10_;
-#line 245 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 245 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_tmp11_ = pspec;
-#line 245 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 245 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		if (_tmp11_ != NULL) {
 #line 1282 "PropertyAnimator.c"
 			GParamSpec* _tmp12_;
@@ -1285,21 +1285,21 @@ daf_ui_animation_property_animator_initialize_properties (DafUIAnimationProperty
 			GType _tmp14_;
 			GValue _tmp15_ = {0};
 			gboolean _tmp16_;
-#line 246 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 246 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp12_ = pspec;
-#line 246 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 246 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp13_ = _tmp12_->value_type;
-#line 246 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 246 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			prop_type = _tmp13_;
-#line 247 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 247 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp14_ = prop_type;
-#line 247 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 247 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			g_value_init (&_tmp15_, _tmp14_);
-#line 247 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 247 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			final_value = _tmp15_;
-#line 255 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 255 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp16_ = daf_ui_animation_property_animator_parse_value (self, &final_value, args);
-#line 255 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 255 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			if (_tmp16_) {
 #line 1305 "PropertyAnimator.c"
 				GValue initial_value = {0};
@@ -1317,90 +1317,90 @@ daf_ui_animation_property_animator_initialize_properties (DafUIAnimationProperty
 				GeeHashMap* _tmp26_;
 				const gchar* _tmp27_;
 				GeeArrayList* _tmp28_;
-#line 256 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 256 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_tmp17_ = prop_type;
-#line 256 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 256 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				g_value_init (&_tmp18_, _tmp17_);
-#line 256 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 256 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				initial_value = _tmp18_;
-#line 257 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 257 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				g_value_reset (&initial_value);
-#line 260 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 260 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_tmp19_ = prop_type;
-#line 260 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 260 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_tmp20_ = initial_value;
-#line 260 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 260 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_tmp21_ = final_value;
-#line 260 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 260 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_tmp22_ = daf_ui_animation_key_frame_new ((gdouble) 1.f, (gdouble) 0.f, _tmp19_, &_tmp20_, &_tmp21_);
-#line 260 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 260 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				keyframe = _tmp22_;
-#line 262 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 262 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_tmp23_ = gee_array_list_new (DAF_UI_ANIMATION_TYPE_KEY_FRAME, (GBoxedCopyFunc) daf_ui_animation_key_frame_ref, (GDestroyNotify) daf_ui_animation_key_frame_unref, NULL, NULL, NULL);
-#line 262 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 262 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				keyframes = _tmp23_;
-#line 264 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 264 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_tmp24_ = keyframes;
-#line 264 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 264 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_tmp25_ = keyframe;
-#line 264 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 264 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				gee_abstract_list_insert ((GeeAbstractList*) _tmp24_, 0, _tmp25_);
-#line 265 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 265 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_tmp26_ = self->properties_map;
-#line 265 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 265 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_tmp27_ = prop_name;
-#line 265 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 265 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_tmp28_ = keyframes;
-#line 265 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 265 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				gee_abstract_map_set ((GeeAbstractMap*) _tmp26_, _tmp27_, _tmp28_);
-#line 255 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 255 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_g_object_unref0 (keyframes);
-#line 255 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 255 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_daf_ui_animation_key_frame_unref0 (keyframe);
-#line 255 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 255 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				G_IS_VALUE (&initial_value) ? (g_value_unset (&initial_value), NULL) : NULL;
 #line 1363 "PropertyAnimator.c"
 			} else {
-#line 268 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 268 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				g_critical ("PropertyAnimator.vala:268: Error on initialize properties");
-#line 269 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 269 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				G_IS_VALUE (&final_value) ? (g_value_unset (&final_value), NULL) : NULL;
-#line 269 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 269 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_g_type_class_unref0 (oc);
-#line 269 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 269 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_g_param_spec_unref0 (pspec);
-#line 269 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 269 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_g_free0 (prop_name);
-#line 269 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 269 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				return;
 #line 1377 "PropertyAnimator.c"
 			}
-#line 245 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 245 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			G_IS_VALUE (&final_value) ? (g_value_unset (&final_value), NULL) : NULL;
 #line 1381 "PropertyAnimator.c"
 		} else {
 			const gchar* _tmp29_;
-#line 276 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 276 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp29_ = prop_name;
-#line 276 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 276 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			g_critical ("PropertyAnimator.vala:276: Error on initialize properties, PropertyAni" \
 "mator name: %s", _tmp29_);
-#line 277 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 277 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_g_type_class_unref0 (oc);
-#line 277 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 277 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_g_param_spec_unref0 (pspec);
-#line 277 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 277 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_g_free0 (prop_name);
-#line 277 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 277 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			return;
 #line 1396 "PropertyAnimator.c"
 		}
 	}
-#line 221 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 221 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_g_type_class_unref0 (oc);
-#line 221 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 221 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_g_param_spec_unref0 (pspec);
-#line 221 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 221 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_g_free0 (prop_name);
 #line 1405 "PropertyAnimator.c"
 }
@@ -1415,167 +1415,167 @@ daf_ui_animation_property_animator_parse_value (DafUIAnimationPropertyAnimator* 
 	GType type = 0UL;
 	gboolean _result_ = FALSE;
 	GType _tmp0_;
-#line 286 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 286 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_return_val_if_fail (self != NULL, FALSE);
-#line 286 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 286 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_return_val_if_fail (val != NULL, FALSE);
-#line 288 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 288 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	type = G_VALUE_TYPE (val);
-#line 289 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 289 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_result_ = TRUE;
-#line 291 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 291 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp0_ = type;
-#line 291 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 291 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	if (_tmp0_ == G_TYPE_BOOLEAN) {
 #line 1430 "PropertyAnimator.c"
 		GValue _tmp1_ = {0};
-#line 292 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 292 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		g_value_init (&_tmp1_, G_TYPE_BOOLEAN);
-#line 292 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 292 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		g_value_set_boolean (&_tmp1_, va_arg (args, gboolean));
-#line 292 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 292 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		G_IS_VALUE (val) ? (g_value_unset (val), NULL) : NULL;
-#line 292 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 292 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		*val = _tmp1_;
 #line 1440 "PropertyAnimator.c"
 	} else {
 		GType _tmp2_;
-#line 293 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 293 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_tmp2_ = type;
-#line 293 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 293 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		if (_tmp2_ == G_TYPE_INT) {
 #line 1447 "PropertyAnimator.c"
 			GValue _tmp3_ = {0};
-#line 294 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 294 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			g_value_init (&_tmp3_, G_TYPE_INT);
-#line 294 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 294 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			g_value_set_int (&_tmp3_, va_arg (args, gint));
-#line 294 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 294 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			G_IS_VALUE (val) ? (g_value_unset (val), NULL) : NULL;
-#line 294 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 294 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			*val = _tmp3_;
 #line 1457 "PropertyAnimator.c"
 		} else {
 			GType _tmp4_;
-#line 295 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 295 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp4_ = type;
-#line 295 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 295 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			if (_tmp4_ == G_TYPE_UINT) {
 #line 1464 "PropertyAnimator.c"
 				GValue _tmp5_ = {0};
-#line 296 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 296 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				g_value_init (&_tmp5_, G_TYPE_UINT);
-#line 296 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 296 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				g_value_set_uint (&_tmp5_, va_arg (args, guint));
-#line 296 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 296 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				G_IS_VALUE (val) ? (g_value_unset (val), NULL) : NULL;
-#line 296 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 296 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				*val = _tmp5_;
 #line 1474 "PropertyAnimator.c"
 			} else {
 				GType _tmp6_;
-#line 297 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 297 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_tmp6_ = type;
-#line 297 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 297 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				if (_tmp6_ == G_TYPE_INT64) {
 #line 1481 "PropertyAnimator.c"
 					GValue _tmp7_ = {0};
-#line 298 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 298 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 					g_value_init (&_tmp7_, G_TYPE_INT64);
-#line 298 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 298 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 					g_value_set_int64 (&_tmp7_, va_arg (args, gint64));
-#line 298 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 298 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 					G_IS_VALUE (val) ? (g_value_unset (val), NULL) : NULL;
-#line 298 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 298 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 					*val = _tmp7_;
 #line 1491 "PropertyAnimator.c"
 				} else {
 					GType _tmp8_;
-#line 299 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 299 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 					_tmp8_ = type;
-#line 299 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 299 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 					if (_tmp8_ == G_TYPE_UINT64) {
 #line 1498 "PropertyAnimator.c"
 						GValue _tmp9_ = {0};
-#line 300 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 300 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 						g_value_init (&_tmp9_, G_TYPE_UINT64);
-#line 300 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 300 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 						g_value_set_uint64 (&_tmp9_, va_arg (args, guint64));
-#line 300 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 300 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 						G_IS_VALUE (val) ? (g_value_unset (val), NULL) : NULL;
-#line 300 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 300 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 						*val = _tmp9_;
 #line 1508 "PropertyAnimator.c"
 					} else {
 						GType _tmp10_;
-#line 301 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 301 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 						_tmp10_ = type;
-#line 301 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 301 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 						if (_tmp10_ == G_TYPE_LONG) {
 #line 1515 "PropertyAnimator.c"
 							GValue _tmp11_ = {0};
-#line 302 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 302 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 							g_value_init (&_tmp11_, G_TYPE_LONG);
-#line 302 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 302 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 							g_value_set_long (&_tmp11_, va_arg (args, glong));
-#line 302 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 302 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 							G_IS_VALUE (val) ? (g_value_unset (val), NULL) : NULL;
-#line 302 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 302 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 							*val = _tmp11_;
 #line 1525 "PropertyAnimator.c"
 						} else {
 							GType _tmp12_;
-#line 303 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 303 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 							_tmp12_ = type;
-#line 303 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 303 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 							if (_tmp12_ == G_TYPE_ULONG) {
 #line 1532 "PropertyAnimator.c"
 								GValue _tmp13_ = {0};
-#line 304 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 304 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 								g_value_init (&_tmp13_, G_TYPE_ULONG);
-#line 304 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 304 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 								g_value_set_ulong (&_tmp13_, va_arg (args, gulong));
-#line 304 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 304 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 								G_IS_VALUE (val) ? (g_value_unset (val), NULL) : NULL;
-#line 304 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 304 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 								*val = _tmp13_;
 #line 1542 "PropertyAnimator.c"
 							} else {
 								GType _tmp14_;
-#line 305 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 305 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 								_tmp14_ = type;
-#line 305 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 305 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 								if (_tmp14_ == G_TYPE_FLOAT) {
 #line 1549 "PropertyAnimator.c"
 									GValue _tmp15_ = {0};
-#line 306 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 306 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 									g_value_init (&_tmp15_, G_TYPE_FLOAT);
-#line 306 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 306 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 									g_value_set_float (&_tmp15_, va_arg (args, gfloat));
-#line 306 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 306 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 									G_IS_VALUE (val) ? (g_value_unset (val), NULL) : NULL;
-#line 306 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 306 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 									*val = _tmp15_;
 #line 1559 "PropertyAnimator.c"
 								} else {
 									GType _tmp16_;
-#line 307 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 307 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 									_tmp16_ = type;
-#line 307 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 307 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 									if (_tmp16_ == G_TYPE_DOUBLE) {
 #line 1566 "PropertyAnimator.c"
 										GValue _tmp17_ = {0};
-#line 308 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 308 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 										g_value_init (&_tmp17_, G_TYPE_DOUBLE);
-#line 308 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 308 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 										g_value_set_double (&_tmp17_, va_arg (args, gdouble));
-#line 308 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 308 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 										G_IS_VALUE (val) ? (g_value_unset (val), NULL) : NULL;
-#line 308 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 308 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 										*val = _tmp17_;
 #line 1576 "PropertyAnimator.c"
 									} else {
-#line 311 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 311 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 										_result_ = FALSE;
 #line 1580 "PropertyAnimator.c"
 									}
@@ -1587,9 +1587,9 @@ daf_ui_animation_property_animator_parse_value (DafUIAnimationPropertyAnimator* 
 			}
 		}
 	}
-#line 314 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 314 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	result = _result_;
-#line 314 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 314 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	return result;
 #line 1594 "PropertyAnimator.c"
 }
@@ -1602,13 +1602,13 @@ daf_ui_animation_property_animator_on_new_frame (DafUIAnimationPropertyAnimator*
 	DafUIAnimationTimeLine* _tmp0_;
 	gchar* prop_name = NULL;
 	DafUIAnimationTimeLine* _tmp47_;
-#line 317 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 317 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_return_if_fail (self != NULL);
-#line 318 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 318 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_debug ("PropertyAnimator.vala:318: progress: %f, (uint) progress * 100: %u", progress, (guint) (progress * 100));
-#line 320 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 320 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp0_ = self->priv->_timeline;
-#line 320 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 320 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_object_freeze_notify ((GObject*) _tmp0_);
 #line 1613 "PropertyAnimator.c"
 	{
@@ -1619,23 +1619,23 @@ daf_ui_animation_property_animator_on_new_frame (DafUIAnimationPropertyAnimator*
 		GeeSet* _tmp4_;
 		GeeIterator* _tmp5_;
 		GeeIterator* _tmp6_;
-#line 324 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 324 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_tmp1_ = self->properties_map;
-#line 324 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 324 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_tmp2_ = gee_abstract_map_get_entries ((GeeAbstractMap*) _tmp1_);
-#line 324 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 324 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_tmp3_ = _tmp2_;
-#line 324 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 324 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_tmp4_ = _tmp3_;
-#line 324 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 324 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_tmp5_ = gee_iterable_iterator ((GeeIterable*) _tmp4_);
-#line 324 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 324 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_tmp6_ = _tmp5_;
-#line 324 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 324 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_g_object_unref0 (_tmp4_);
-#line 324 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 324 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_property_it = _tmp6_;
-#line 324 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 324 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		while (TRUE) {
 #line 1640 "PropertyAnimator.c"
 			GeeIterator* _tmp7_;
@@ -1662,65 +1662,65 @@ daf_ui_animation_property_animator_on_new_frame (DafUIAnimationPropertyAnimator*
 			GeeHashMap* _tmp24_;
 			DafUIAnimationKeyFrame* _tmp25_;
 			GType _tmp26_;
-#line 324 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 324 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp7_ = _property_it;
-#line 324 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 324 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			if (!gee_iterator_next (_tmp7_)) {
-#line 324 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 324 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				break;
 #line 1671 "PropertyAnimator.c"
 			}
-#line 324 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 324 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp8_ = _property_it;
-#line 324 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 324 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp9_ = gee_iterator_get (_tmp8_);
-#line 324 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 324 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			property = (GeeMapEntry*) _tmp9_;
-#line 325 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 325 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp10_ = property;
-#line 325 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 325 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp11_ = gee_map_entry_get_key (_tmp10_);
-#line 325 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 325 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp12_ = _tmp11_;
-#line 325 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 325 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp13_ = g_strdup ((const gchar*) _tmp12_);
-#line 325 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 325 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_g_free0 (prop_name);
-#line 325 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 325 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			prop_name = _tmp13_;
-#line 326 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 326 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp14_ = property;
-#line 326 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 326 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp15_ = gee_map_entry_get_value (_tmp14_);
-#line 326 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 326 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp16_ = _tmp15_;
-#line 326 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 326 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp17_ = _g_object_ref0 ((GeeList*) ((GeeArrayList*) _tmp16_));
-#line 326 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 326 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			keyframes = _tmp17_;
-#line 328 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 328 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp18_ = keyframes;
-#line 328 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 328 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp19_ = daf_ui_animation_property_animator_get_act_keyframe (self, _tmp18_, progress);
-#line 328 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 328 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			keyframe = _tmp19_;
-#line 329 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 329 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp20_ = keyframe;
-#line 329 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 329 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp21_ = _tmp20_->type;
-#line 329 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 329 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			g_value_init (&_tmp22_, _tmp21_);
-#line 329 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 329 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			value = _tmp22_;
-#line 331 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 331 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp23_ = daf_ui_animation_property_animator_get_progress_funcs ();
-#line 331 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 331 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp24_ = _tmp23_;
-#line 331 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 331 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp25_ = keyframe;
-#line 331 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 331 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp26_ = _tmp25_->type;
-#line 331 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 331 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			if (gee_abstract_map_has_key ((GeeAbstractMap*) _tmp24_, (gpointer) ((gintptr) _tmp26_))) {
 #line 1725 "PropertyAnimator.c"
 				DafUIAnimationProgressFunc progress_func = NULL;
@@ -1745,76 +1745,76 @@ daf_ui_animation_property_animator_on_new_frame (DafUIAnimationPropertyAnimator*
 				GObject* _tmp44_;
 				const gchar* _tmp45_;
 				GValue _tmp46_;
-#line 333 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 333 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_tmp27_ = daf_ui_animation_property_animator_get_progress_funcs ();
-#line 333 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 333 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_tmp28_ = _tmp27_;
-#line 333 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 333 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_tmp29_ = keyframe;
-#line 333 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 333 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_tmp30_ = _tmp29_->type;
-#line 333 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 333 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_tmp31_ = gee_abstract_map_get ((GeeAbstractMap*) _tmp28_, (gpointer) ((gintptr) _tmp30_));
-#line 333 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 333 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				progress_func = _tmp31_;
-#line 337 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 337 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_tmp32_ = keyframe;
-#line 337 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 337 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_tmp33_ = _tmp32_->prev_key;
-#line 337 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 337 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_tmp34_ = keyframe;
-#line 337 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 337 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_tmp35_ = _tmp34_->key;
-#line 337 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 337 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_tmp36_ = keyframe;
-#line 337 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 337 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_tmp37_ = _tmp36_->prev_key;
-#line 337 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 337 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				frame_progress = (progress - _tmp33_) / (_tmp35_ - _tmp37_);
-#line 340 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 340 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_tmp38_ = progress_func;
-#line 340 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 340 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_tmp39_ = keyframe;
-#line 340 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 340 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_tmp40_ = _tmp39_->initial;
-#line 340 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 340 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_tmp41_ = keyframe;
-#line 340 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 340 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_tmp42_ = _tmp41_->final;
-#line 340 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 340 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_tmp43_ = frame_progress;
-#line 340 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 340 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_tmp38_ (&_tmp40_, &_tmp42_, _tmp43_, &value);
-#line 341 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 341 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_tmp44_ = self->priv->object;
-#line 341 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 341 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_tmp45_ = prop_name;
-#line 341 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 341 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				_tmp46_ = value;
-#line 341 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 341 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				g_object_set_property (_tmp44_, _tmp45_, &_tmp46_);
 #line 1796 "PropertyAnimator.c"
 			} else {
 			}
-#line 324 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 324 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			G_IS_VALUE (&value) ? (g_value_unset (&value), NULL) : NULL;
-#line 324 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 324 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_daf_ui_animation_key_frame_unref0 (keyframe);
-#line 324 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 324 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_g_object_unref0 (keyframes);
-#line 324 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 324 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_g_object_unref0 (property);
 #line 1807 "PropertyAnimator.c"
 		}
-#line 324 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 324 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_g_object_unref0 (_property_it);
 #line 1811 "PropertyAnimator.c"
 	}
-#line 350 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 350 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp47_ = self->priv->_timeline;
-#line 350 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 350 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_object_thaw_notify ((GObject*) _tmp47_);
-#line 317 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 317 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_g_free0 (prop_name);
 #line 1819 "PropertyAnimator.c"
 }
@@ -1826,23 +1826,23 @@ daf_ui_animation_property_animator_on_started (DafUIAnimationPropertyAnimator* s
 	DafUIAnimationTimeLine* _tmp0_;
 	DafUIAnimationTimeLine* _tmp1_;
 	DafUIAnimationTimeLine* _tmp2_;
-#line 353 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 353 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_return_if_fail (self != NULL);
-#line 354 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 354 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp0_ = self->priv->_timeline;
-#line 354 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 354 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_signal_emit_by_name (_tmp0_, "before-started");
-#line 355 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 355 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp1_ = self->priv->_timeline;
-#line 355 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 355 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_object_freeze_notify ((GObject*) _tmp1_);
-#line 356 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 356 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_debug ("PropertyAnimator.vala:356: PropertyAnimator on_started");
-#line 357 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 357 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	daf_ui_animation_property_animator_compute_initial_values (self);
-#line 358 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 358 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp2_ = self->priv->_timeline;
-#line 358 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 358 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_object_thaw_notify ((GObject*) _tmp2_);
 #line 1847 "PropertyAnimator.c"
 }
@@ -1851,9 +1851,9 @@ daf_ui_animation_property_animator_on_started (DafUIAnimationPropertyAnimator* s
 static void
 daf_ui_animation_property_animator_on_completed (DafUIAnimationPropertyAnimator* self)
 {
-#line 361 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 361 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_return_if_fail (self != NULL);
-#line 362 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 362 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_debug ("PropertyAnimator.vala:362: PropertyAnimator on_completed");
 #line 1858 "PropertyAnimator.c"
 }
@@ -1864,13 +1864,13 @@ daf_ui_animation_property_animator_get_timeline (DafUIAnimationPropertyAnimator*
 {
 	DafUIAnimationTimeLine* result;
 	DafUIAnimationTimeLine* _tmp0_;
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp0_ = self->priv->_timeline;
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	result = _tmp0_;
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	return result;
 #line 1875 "PropertyAnimator.c"
 }
@@ -1880,19 +1880,19 @@ void
 daf_ui_animation_property_animator_set_timeline (DafUIAnimationPropertyAnimator* self,
                                                  DafUIAnimationTimeLine* value)
 {
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_return_if_fail (self != NULL);
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	if (daf_ui_animation_property_animator_get_timeline (self) != value) {
 #line 1887 "PropertyAnimator.c"
 		DafUIAnimationTimeLine* _tmp0_;
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_tmp0_ = _g_object_ref0 (value);
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_g_object_unref0 (self->priv->_timeline);
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		self->priv->_timeline = _tmp0_;
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		g_object_notify_by_pspec ((GObject *) self, daf_ui_animation_property_animator_properties[DAF_UI_ANIMATION_PROPERTY_ANIMATOR_TIMELINE_PROPERTY]);
 #line 1897 "PropertyAnimator.c"
 	}
@@ -1904,11 +1904,11 @@ daf_ui_animation_property_animator_get_progress_funcs (void)
 {
 	GeeHashMap* result;
 	GeeHashMap* _tmp0_;
-#line 66 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 66 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp0_ = daf_ui_animation_property_animator__progress_funcs;
-#line 66 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 66 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	result = _tmp0_;
-#line 66 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 66 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	return result;
 #line 1913 "PropertyAnimator.c"
 }
@@ -1918,11 +1918,11 @@ static void
 daf_ui_animation_property_animator_set_progress_funcs (GeeHashMap* value)
 {
 	GeeHashMap* _tmp0_;
-#line 66 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 66 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp0_ = _g_object_ref0 (value);
-#line 66 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 66 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_g_object_unref0 (daf_ui_animation_property_animator__progress_funcs);
-#line 66 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 66 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	daf_ui_animation_property_animator__progress_funcs = _tmp0_;
 #line 1927 "PropertyAnimator.c"
 }
@@ -1942,25 +1942,25 @@ g_cclosure_user_marshal_VOID__STRING_DOUBLE (GClosure * closure,
 	register gpointer data1;
 	register gpointer data2;
 	cc = (GCClosure *) closure;
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_return_if_fail (n_param_values == 3);
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	if (G_CCLOSURE_SWAP_DATA (closure)) {
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		data1 = closure->data;
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		data2 = param_values->data[0].v_pointer;
 #line 1953 "PropertyAnimator.c"
 	} else {
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		data1 = param_values->data[0].v_pointer;
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		data2 = closure->data;
 #line 1959 "PropertyAnimator.c"
 	}
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	callback = (GMarshalFunc_VOID__STRING_DOUBLE) (marshal_data ? marshal_data : cc->callback);
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	callback (data1, g_value_get_string (param_values + 1), g_value_get_double (param_values + 2), data2);
 #line 1965 "PropertyAnimator.c"
 }
@@ -1983,47 +1983,47 @@ _daf_ui_animation_property_animator___lambda4_ (GValue* i,
 	gboolean _tmp5_ = FALSE;
 	gdouble _tmp6_;
 	GValue _tmp7_ = {0};
-#line 73 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 73 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_return_if_fail (i != NULL);
-#line 73 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 73 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_return_if_fail (f != NULL);
-#line 73 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 73 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_return_if_fail (v != NULL);
-#line 74 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 74 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp0_ = *i;
-#line 74 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 74 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	i1 = (gint) g_value_get_boolean (&_tmp0_);
-#line 75 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 75 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp1_ = *f;
-#line 75 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 75 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	f1 = (gint) g_value_get_boolean (&_tmp1_);
-#line 77 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 77 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp2_ = f1;
-#line 77 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 77 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp3_ = i1;
-#line 77 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 77 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp4_ = i1;
-#line 77 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 77 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	tmp_val = (gdouble) ((p * (_tmp2_ - _tmp3_)) + _tmp4_);
-#line 78 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 78 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp6_ = tmp_val;
-#line 78 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 78 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	if (_tmp6_ < 0.5) {
-#line 78 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 78 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_tmp5_ = FALSE;
 #line 2014 "PropertyAnimator.c"
 	} else {
-#line 78 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 78 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_tmp5_ = TRUE;
 #line 2018 "PropertyAnimator.c"
 	}
-#line 78 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 78 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_value_init (&_tmp7_, G_TYPE_BOOLEAN);
-#line 78 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 78 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_value_set_boolean (&_tmp7_, _tmp5_);
-#line 78 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 78 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	G_IS_VALUE (v) ? (g_value_unset (v), NULL) : NULL;
-#line 78 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 78 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	*v = _tmp7_;
 #line 2028 "PropertyAnimator.c"
 }
@@ -2035,7 +2035,7 @@ __daf_ui_animation_property_animator___lambda4__daf_ui_animation_progress_func (
                                                                                 gdouble progress,
                                                                                 GValue* value)
 {
-#line 73 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 73 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_daf_ui_animation_property_animator___lambda4_ (initial, final, progress, value);
 #line 2040 "PropertyAnimator.c"
 }
@@ -2051,25 +2051,25 @@ _daf_ui_animation_property_animator___lambda5_ (GValue* i,
 	GValue _tmp1_;
 	GValue _tmp2_;
 	GValue _tmp3_ = {0};
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_return_if_fail (i != NULL);
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_return_if_fail (f != NULL);
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_return_if_fail (v != NULL);
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp0_ = *f;
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp1_ = *i;
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp2_ = *i;
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_value_init (&_tmp3_, G_TYPE_INT);
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_value_set_int (&_tmp3_, (gint) ((p * (g_value_get_int (&_tmp0_) - g_value_get_int (&_tmp1_))) + g_value_get_int (&_tmp2_)));
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	G_IS_VALUE (v) ? (g_value_unset (v), NULL) : NULL;
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	*v = _tmp3_;
 #line 2074 "PropertyAnimator.c"
 }
@@ -2081,7 +2081,7 @@ __daf_ui_animation_property_animator___lambda5__daf_ui_animation_progress_func (
                                                                                 gdouble progress,
                                                                                 GValue* value)
 {
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_daf_ui_animation_property_animator___lambda5_ (initial, final, progress, value);
 #line 2086 "PropertyAnimator.c"
 }
@@ -2097,25 +2097,25 @@ _daf_ui_animation_property_animator___lambda6_ (GValue* i,
 	GValue _tmp1_;
 	GValue _tmp2_;
 	GValue _tmp3_ = {0};
-#line 81 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 81 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_return_if_fail (i != NULL);
-#line 81 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 81 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_return_if_fail (f != NULL);
-#line 81 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 81 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_return_if_fail (v != NULL);
-#line 81 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 81 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp0_ = *f;
-#line 81 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 81 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp1_ = *i;
-#line 81 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 81 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp2_ = *i;
-#line 81 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 81 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_value_init (&_tmp3_, G_TYPE_UINT);
-#line 81 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 81 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_value_set_uint (&_tmp3_, (guint) ((p * (g_value_get_uint (&_tmp0_) - g_value_get_uint (&_tmp1_))) + g_value_get_uint (&_tmp2_)));
-#line 81 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 81 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	G_IS_VALUE (v) ? (g_value_unset (v), NULL) : NULL;
-#line 81 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 81 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	*v = _tmp3_;
 #line 2120 "PropertyAnimator.c"
 }
@@ -2127,7 +2127,7 @@ __daf_ui_animation_property_animator___lambda6__daf_ui_animation_progress_func (
                                                                                 gdouble progress,
                                                                                 GValue* value)
 {
-#line 81 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 81 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_daf_ui_animation_property_animator___lambda6_ (initial, final, progress, value);
 #line 2132 "PropertyAnimator.c"
 }
@@ -2143,25 +2143,25 @@ _daf_ui_animation_property_animator___lambda7_ (GValue* i,
 	GValue _tmp1_;
 	GValue _tmp2_;
 	GValue _tmp3_ = {0};
-#line 82 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 82 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_return_if_fail (i != NULL);
-#line 82 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 82 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_return_if_fail (f != NULL);
-#line 82 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 82 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_return_if_fail (v != NULL);
-#line 82 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 82 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp0_ = *f;
-#line 82 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 82 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp1_ = *i;
-#line 82 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 82 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp2_ = *i;
-#line 82 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 82 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_value_init (&_tmp3_, G_TYPE_INT64);
-#line 82 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 82 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_value_set_int64 (&_tmp3_, (gint64) ((p * (g_value_get_int64 (&_tmp0_) - g_value_get_int64 (&_tmp1_))) + g_value_get_int64 (&_tmp2_)));
-#line 82 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 82 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	G_IS_VALUE (v) ? (g_value_unset (v), NULL) : NULL;
-#line 82 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 82 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	*v = _tmp3_;
 #line 2166 "PropertyAnimator.c"
 }
@@ -2173,7 +2173,7 @@ __daf_ui_animation_property_animator___lambda7__daf_ui_animation_progress_func (
                                                                                 gdouble progress,
                                                                                 GValue* value)
 {
-#line 82 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 82 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_daf_ui_animation_property_animator___lambda7_ (initial, final, progress, value);
 #line 2178 "PropertyAnimator.c"
 }
@@ -2189,25 +2189,25 @@ _daf_ui_animation_property_animator___lambda8_ (GValue* i,
 	GValue _tmp1_;
 	GValue _tmp2_;
 	GValue _tmp3_ = {0};
-#line 83 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 83 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_return_if_fail (i != NULL);
-#line 83 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 83 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_return_if_fail (f != NULL);
-#line 83 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 83 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_return_if_fail (v != NULL);
-#line 83 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 83 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp0_ = *f;
-#line 83 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 83 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp1_ = *i;
-#line 83 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 83 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp2_ = *i;
-#line 83 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 83 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_value_init (&_tmp3_, G_TYPE_UINT64);
-#line 83 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 83 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_value_set_uint64 (&_tmp3_, (guint64) ((p * (g_value_get_uint64 (&_tmp0_) - g_value_get_uint64 (&_tmp1_))) + g_value_get_uint64 (&_tmp2_)));
-#line 83 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 83 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	G_IS_VALUE (v) ? (g_value_unset (v), NULL) : NULL;
-#line 83 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 83 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	*v = _tmp3_;
 #line 2212 "PropertyAnimator.c"
 }
@@ -2219,7 +2219,7 @@ __daf_ui_animation_property_animator___lambda8__daf_ui_animation_progress_func (
                                                                                 gdouble progress,
                                                                                 GValue* value)
 {
-#line 83 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 83 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_daf_ui_animation_property_animator___lambda8_ (initial, final, progress, value);
 #line 2224 "PropertyAnimator.c"
 }
@@ -2235,25 +2235,25 @@ _daf_ui_animation_property_animator___lambda9_ (GValue* i,
 	GValue _tmp1_;
 	GValue _tmp2_;
 	GValue _tmp3_ = {0};
-#line 84 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 84 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_return_if_fail (i != NULL);
-#line 84 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 84 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_return_if_fail (f != NULL);
-#line 84 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 84 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_return_if_fail (v != NULL);
-#line 84 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 84 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp0_ = *f;
-#line 84 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 84 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp1_ = *i;
-#line 84 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 84 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp2_ = *i;
-#line 84 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 84 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_value_init (&_tmp3_, G_TYPE_LONG);
-#line 84 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 84 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_value_set_long (&_tmp3_, (glong) ((p * (g_value_get_long (&_tmp0_) - g_value_get_long (&_tmp1_))) + g_value_get_long (&_tmp2_)));
-#line 84 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 84 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	G_IS_VALUE (v) ? (g_value_unset (v), NULL) : NULL;
-#line 84 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 84 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	*v = _tmp3_;
 #line 2258 "PropertyAnimator.c"
 }
@@ -2265,7 +2265,7 @@ __daf_ui_animation_property_animator___lambda9__daf_ui_animation_progress_func (
                                                                                 gdouble progress,
                                                                                 GValue* value)
 {
-#line 84 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 84 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_daf_ui_animation_property_animator___lambda9_ (initial, final, progress, value);
 #line 2270 "PropertyAnimator.c"
 }
@@ -2281,25 +2281,25 @@ _daf_ui_animation_property_animator___lambda10_ (GValue* i,
 	GValue _tmp1_;
 	GValue _tmp2_;
 	GValue _tmp3_ = {0};
-#line 85 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 85 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_return_if_fail (i != NULL);
-#line 85 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 85 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_return_if_fail (f != NULL);
-#line 85 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 85 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_return_if_fail (v != NULL);
-#line 85 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 85 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp0_ = *f;
-#line 85 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 85 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp1_ = *i;
-#line 85 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 85 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp2_ = *i;
-#line 85 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 85 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_value_init (&_tmp3_, G_TYPE_ULONG);
-#line 85 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 85 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_value_set_ulong (&_tmp3_, (gulong) ((p * (g_value_get_ulong (&_tmp0_) - g_value_get_ulong (&_tmp1_))) + g_value_get_ulong (&_tmp2_)));
-#line 85 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 85 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	G_IS_VALUE (v) ? (g_value_unset (v), NULL) : NULL;
-#line 85 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 85 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	*v = _tmp3_;
 #line 2304 "PropertyAnimator.c"
 }
@@ -2311,7 +2311,7 @@ __daf_ui_animation_property_animator___lambda10__daf_ui_animation_progress_func 
                                                                                  gdouble progress,
                                                                                  GValue* value)
 {
-#line 85 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 85 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_daf_ui_animation_property_animator___lambda10_ (initial, final, progress, value);
 #line 2316 "PropertyAnimator.c"
 }
@@ -2327,25 +2327,25 @@ _daf_ui_animation_property_animator___lambda11_ (GValue* i,
 	GValue _tmp1_;
 	GValue _tmp2_;
 	GValue _tmp3_ = {0};
-#line 86 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 86 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_return_if_fail (i != NULL);
-#line 86 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 86 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_return_if_fail (f != NULL);
-#line 86 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 86 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_return_if_fail (v != NULL);
-#line 86 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 86 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp0_ = *f;
-#line 86 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 86 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp1_ = *i;
-#line 86 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 86 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp2_ = *i;
-#line 86 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 86 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_value_init (&_tmp3_, G_TYPE_FLOAT);
-#line 86 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 86 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_value_set_float (&_tmp3_, (gfloat) ((p * (g_value_get_float (&_tmp0_) - g_value_get_float (&_tmp1_))) + g_value_get_float (&_tmp2_)));
-#line 86 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 86 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	G_IS_VALUE (v) ? (g_value_unset (v), NULL) : NULL;
-#line 86 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 86 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	*v = _tmp3_;
 #line 2350 "PropertyAnimator.c"
 }
@@ -2357,7 +2357,7 @@ __daf_ui_animation_property_animator___lambda11__daf_ui_animation_progress_func 
                                                                                  gdouble progress,
                                                                                  GValue* value)
 {
-#line 86 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 86 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_daf_ui_animation_property_animator___lambda11_ (initial, final, progress, value);
 #line 2362 "PropertyAnimator.c"
 }
@@ -2373,25 +2373,25 @@ _daf_ui_animation_property_animator___lambda12_ (GValue* i,
 	GValue _tmp1_;
 	GValue _tmp2_;
 	GValue _tmp3_ = {0};
-#line 87 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 87 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_return_if_fail (i != NULL);
-#line 87 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 87 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_return_if_fail (f != NULL);
-#line 87 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 87 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_return_if_fail (v != NULL);
-#line 87 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 87 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp0_ = *f;
-#line 87 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 87 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp1_ = *i;
-#line 87 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 87 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp2_ = *i;
-#line 87 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 87 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_value_init (&_tmp3_, G_TYPE_DOUBLE);
-#line 87 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 87 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_value_set_double (&_tmp3_, (gdouble) ((p * (g_value_get_double (&_tmp0_) - g_value_get_double (&_tmp1_))) + g_value_get_double (&_tmp2_)));
-#line 87 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 87 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	G_IS_VALUE (v) ? (g_value_unset (v), NULL) : NULL;
-#line 87 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 87 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	*v = _tmp3_;
 #line 2396 "PropertyAnimator.c"
 }
@@ -2403,7 +2403,7 @@ __daf_ui_animation_property_animator___lambda12__daf_ui_animation_progress_func 
                                                                                  gdouble progress,
                                                                                  GValue* value)
 {
-#line 87 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 87 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_daf_ui_animation_property_animator___lambda12_ (initial, final, progress, value);
 #line 2408 "PropertyAnimator.c"
 }
@@ -2434,89 +2434,89 @@ daf_ui_animation_property_animator_class_init (DafUIAnimationPropertyAnimatorCla
 	GeeHashMap* _tmp19_;
 	GeeHashMap* _tmp20_;
 	GeeHashMap* _tmp21_;
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	daf_ui_animation_property_animator_parent_class = g_type_class_peek_parent (klass);
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_type_class_add_private (klass, sizeof (DafUIAnimationPropertyAnimatorPrivate));
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	G_OBJECT_CLASS (klass)->get_property = _vala_daf_ui_animation_property_animator_get_property;
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	G_OBJECT_CLASS (klass)->set_property = _vala_daf_ui_animation_property_animator_set_property;
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	G_OBJECT_CLASS (klass)->finalize = daf_ui_animation_property_animator_finalize;
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	g_object_class_install_property (G_OBJECT_CLASS (klass), DAF_UI_ANIMATION_PROPERTY_ANIMATOR_TIMELINE_PROPERTY, daf_ui_animation_property_animator_properties[DAF_UI_ANIMATION_PROPERTY_ANIMATOR_TIMELINE_PROPERTY] = g_param_spec_object ("timeline", "timeline", "timeline", DAF_UI_ANIMATION_TYPE_TIME_LINE, G_PARAM_STATIC_STRINGS | G_PARAM_READABLE | G_PARAM_WRITABLE));
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	daf_ui_animation_property_animator_signals[DAF_UI_ANIMATION_PROPERTY_ANIMATOR_STARTED_SIGNAL] = g_signal_new ("started", DAF_UI_ANIMATION_TYPE_PROPERTY_ANIMATOR, G_SIGNAL_RUN_LAST, 0, NULL, NULL, g_cclosure_marshal_VOID__VOID, G_TYPE_NONE, 0);
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	daf_ui_animation_property_animator_signals[DAF_UI_ANIMATION_PROPERTY_ANIMATOR_ON_KEYFRAME_SIGNAL] = g_signal_new ("on-keyframe", DAF_UI_ANIMATION_TYPE_PROPERTY_ANIMATOR, G_SIGNAL_RUN_LAST, 0, NULL, NULL, g_cclosure_user_marshal_VOID__STRING_DOUBLE, G_TYPE_NONE, 2, G_TYPE_STRING, G_TYPE_DOUBLE);
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	daf_ui_animation_property_animator_signals[DAF_UI_ANIMATION_PROPERTY_ANIMATOR_COMPLETED_SIGNAL] = g_signal_new ("completed", DAF_UI_ANIMATION_TYPE_PROPERTY_ANIMATOR, G_SIGNAL_RUN_LAST, 0, NULL, NULL, g_cclosure_marshal_VOID__VOID, G_TYPE_NONE, 0);
-#line 70 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 70 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp0_ = daf_ui_animation_property_animator_get_progress_funcs ();
-#line 70 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 70 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp1_ = _tmp0_;
-#line 70 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 70 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp2_ = gee_hash_map_new (G_TYPE_GTYPE, NULL, NULL, G_TYPE_POINTER, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
-#line 70 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 70 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp3_ = _tmp2_;
-#line 70 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 70 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	daf_ui_animation_property_animator_set_progress_funcs (_tmp3_);
-#line 70 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 70 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_g_object_unref0 (_tmp3_);
-#line 73 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 73 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp4_ = daf_ui_animation_property_animator_get_progress_funcs ();
-#line 73 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 73 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp5_ = _tmp4_;
-#line 73 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 73 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	gee_abstract_map_set ((GeeAbstractMap*) _tmp5_, (gpointer) ((gintptr) G_TYPE_BOOLEAN), __daf_ui_animation_property_animator___lambda4__daf_ui_animation_progress_func);
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp6_ = daf_ui_animation_property_animator_get_progress_funcs ();
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp7_ = _tmp6_;
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	gee_abstract_map_set ((GeeAbstractMap*) _tmp7_, (gpointer) ((gintptr) G_TYPE_INT), __daf_ui_animation_property_animator___lambda5__daf_ui_animation_progress_func);
-#line 81 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 81 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp8_ = daf_ui_animation_property_animator_get_progress_funcs ();
-#line 81 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 81 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp9_ = _tmp8_;
-#line 81 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 81 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	gee_abstract_map_set ((GeeAbstractMap*) _tmp9_, (gpointer) ((gintptr) G_TYPE_UINT), __daf_ui_animation_property_animator___lambda6__daf_ui_animation_progress_func);
-#line 82 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 82 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp10_ = daf_ui_animation_property_animator_get_progress_funcs ();
-#line 82 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 82 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp11_ = _tmp10_;
-#line 82 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 82 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	gee_abstract_map_set ((GeeAbstractMap*) _tmp11_, (gpointer) ((gintptr) G_TYPE_INT64), __daf_ui_animation_property_animator___lambda7__daf_ui_animation_progress_func);
-#line 83 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 83 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp12_ = daf_ui_animation_property_animator_get_progress_funcs ();
-#line 83 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 83 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp13_ = _tmp12_;
-#line 83 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 83 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	gee_abstract_map_set ((GeeAbstractMap*) _tmp13_, (gpointer) ((gintptr) G_TYPE_UINT64), __daf_ui_animation_property_animator___lambda8__daf_ui_animation_progress_func);
-#line 84 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 84 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp14_ = daf_ui_animation_property_animator_get_progress_funcs ();
-#line 84 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 84 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp15_ = _tmp14_;
-#line 84 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 84 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	gee_abstract_map_set ((GeeAbstractMap*) _tmp15_, (gpointer) ((gintptr) G_TYPE_LONG), __daf_ui_animation_property_animator___lambda9__daf_ui_animation_progress_func);
-#line 85 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 85 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp16_ = daf_ui_animation_property_animator_get_progress_funcs ();
-#line 85 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 85 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp17_ = _tmp16_;
-#line 85 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 85 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	gee_abstract_map_set ((GeeAbstractMap*) _tmp17_, (gpointer) ((gintptr) G_TYPE_ULONG), __daf_ui_animation_property_animator___lambda10__daf_ui_animation_progress_func);
-#line 86 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 86 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp18_ = daf_ui_animation_property_animator_get_progress_funcs ();
-#line 86 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 86 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp19_ = _tmp18_;
-#line 86 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 86 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	gee_abstract_map_set ((GeeAbstractMap*) _tmp19_, (gpointer) ((gintptr) G_TYPE_FLOAT), __daf_ui_animation_property_animator___lambda11__daf_ui_animation_progress_func);
-#line 87 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 87 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp20_ = daf_ui_animation_property_animator_get_progress_funcs ();
-#line 87 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 87 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp21_ = _tmp20_;
-#line 87 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 87 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	gee_abstract_map_set ((GeeAbstractMap*) _tmp21_, (gpointer) ((gintptr) G_TYPE_DOUBLE), __daf_ui_animation_property_animator___lambda12__daf_ui_animation_progress_func);
 #line 2521 "PropertyAnimator.c"
 }
@@ -2526,11 +2526,11 @@ static void
 daf_ui_animation_property_animator_instance_init (DafUIAnimationPropertyAnimator * self)
 {
 	GeeHashMap* _tmp0_;
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	self->priv = DAF_UI_ANIMATION_PROPERTY_ANIMATOR_GET_PRIVATE (self);
-#line 36 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 36 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp0_ = gee_hash_map_new (G_TYPE_STRING, (GBoxedCopyFunc) g_strdup, (GDestroyNotify) g_free, GEE_TYPE_ARRAY_LIST, (GBoxedCopyFunc) g_object_ref, (GDestroyNotify) g_object_unref, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
-#line 36 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 36 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	self->properties_map = _tmp0_;
 #line 2535 "PropertyAnimator.c"
 }
@@ -2542,7 +2542,7 @@ daf_ui_animation_property_animator_finalize (GObject * obj)
 	DafUIAnimationPropertyAnimator * self;
 	DafUIAnimationTimeLine* _tmp14_;
 	GObject* _tmp22_;
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	self = G_TYPE_CHECK_INSTANCE_CAST (obj, DAF_UI_ANIMATION_TYPE_PROPERTY_ANIMATOR, DafUIAnimationPropertyAnimator);
 #line 2547 "PropertyAnimator.c"
 	{
@@ -2553,23 +2553,23 @@ daf_ui_animation_property_animator_finalize (GObject * obj)
 		GeeSet* _tmp3_;
 		GeeIterator* _tmp4_;
 		GeeIterator* _tmp5_;
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_tmp0_ = self->properties_map;
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_tmp1_ = gee_abstract_map_get_entries ((GeeAbstractMap*) _tmp0_);
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_tmp2_ = _tmp1_;
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_tmp3_ = _tmp2_;
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_tmp4_ = gee_iterable_iterator ((GeeIterable*) _tmp3_);
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_tmp5_ = _tmp4_;
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_g_object_unref0 (_tmp3_);
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_property_it = _tmp5_;
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		while (TRUE) {
 #line 2574 "PropertyAnimator.c"
 			GeeIterator* _tmp6_;
@@ -2582,47 +2582,47 @@ daf_ui_animation_property_animator_finalize (GObject * obj)
 			GeeArrayList* _tmp11_;
 			GeeList* _tmp12_;
 			GeeList* _tmp13_;
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp6_ = _property_it;
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			if (!gee_iterator_next (_tmp6_)) {
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 				break;
 #line 2591 "PropertyAnimator.c"
 			}
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp7_ = _property_it;
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp8_ = gee_iterator_get (_tmp7_);
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			property = (GeeMapEntry*) _tmp8_;
-#line 49 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 49 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp9_ = property;
-#line 49 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 49 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp10_ = gee_map_entry_get_value (_tmp9_);
-#line 49 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 49 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp11_ = _tmp10_;
-#line 49 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 49 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp12_ = _g_object_ref0 ((GeeList*) ((GeeArrayList*) _tmp11_));
-#line 49 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 49 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			keyframes = _tmp12_;
-#line 51 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 51 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_tmp13_ = keyframes;
-#line 51 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 51 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			gee_collection_clear ((GeeCollection*) _tmp13_);
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_g_object_unref0 (keyframes);
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 			_g_object_unref0 (property);
 #line 2617 "PropertyAnimator.c"
 		}
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_g_object_unref0 (_property_it);
 #line 2621 "PropertyAnimator.c"
 	}
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp14_ = self->priv->_timeline;
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	if (_tmp14_ != NULL) {
 #line 2627 "PropertyAnimator.c"
 		DafUIAnimationTimeLine* _tmp15_;
@@ -2632,47 +2632,47 @@ daf_ui_animation_property_animator_finalize (GObject * obj)
 		guint _tmp19_;
 		DafUIAnimationTimeLine* _tmp20_;
 		guint _tmp21_;
-#line 55 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 55 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_tmp15_ = self->priv->_timeline;
-#line 55 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 55 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		daf_ui_animation_ianimatable_stop ((DafUIAnimationIAnimatable*) _tmp15_);
-#line 56 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 56 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_tmp16_ = self->priv->_timeline;
-#line 56 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 56 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		g_signal_parse_name ("new-frame", DAF_UI_ANIMATION_TYPE_TIME_LINE, &_tmp17_, NULL, FALSE);
-#line 56 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 56 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		g_signal_handlers_disconnect_matched (_tmp16_, G_SIGNAL_MATCH_ID | G_SIGNAL_MATCH_FUNC | G_SIGNAL_MATCH_DATA, _tmp17_, 0, NULL, (GCallback) _daf_ui_animation_property_animator_on_new_frame_daf_ui_animation_time_line_new_frame, self);
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_tmp18_ = self->priv->_timeline;
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		g_signal_parse_name ("started", DAF_UI_ANIMATION_TYPE_TIME_LINE, &_tmp19_, NULL, FALSE);
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		g_signal_handlers_disconnect_matched (_tmp18_, G_SIGNAL_MATCH_ID | G_SIGNAL_MATCH_FUNC | G_SIGNAL_MATCH_DATA, _tmp19_, 0, NULL, (GCallback) _daf_ui_animation_property_animator_on_started_daf_ui_animation_time_line_started, self);
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_tmp20_ = self->priv->_timeline;
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		g_signal_parse_name ("completed", DAF_UI_ANIMATION_TYPE_TIME_LINE, &_tmp21_, NULL, FALSE);
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		g_signal_handlers_disconnect_matched (_tmp20_, G_SIGNAL_MATCH_ID | G_SIGNAL_MATCH_FUNC | G_SIGNAL_MATCH_DATA, _tmp21_, 0, NULL, (GCallback) _daf_ui_animation_property_animator_on_completed_daf_ui_animation_time_line_completed, self);
 #line 2657 "PropertyAnimator.c"
 	}
-#line 61 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 61 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_tmp22_ = self->priv->object;
-#line 61 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 61 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	if (_tmp22_ != NULL) {
-#line 62 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 62 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		_g_object_unref0 (self->priv->object);
-#line 62 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 62 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		self->priv->object = NULL;
 #line 2667 "PropertyAnimator.c"
 	}
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_g_object_unref0 (self->priv->object);
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_g_object_unref0 (self->priv->_timeline);
-#line 36 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 36 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	_g_object_unref0 (self->properties_map);
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	G_OBJECT_CLASS (daf_ui_animation_property_animator_parent_class)->finalize (obj);
 #line 2677 "PropertyAnimator.c"
 }
@@ -2703,19 +2703,19 @@ _vala_daf_ui_animation_property_animator_get_property (GObject * object,
 {
 	DafUIAnimationPropertyAnimator * self;
 	self = G_TYPE_CHECK_INSTANCE_CAST (object, DAF_UI_ANIMATION_TYPE_PROPERTY_ANIMATOR, DafUIAnimationPropertyAnimator);
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	switch (property_id) {
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		case DAF_UI_ANIMATION_PROPERTY_ANIMATOR_TIMELINE_PROPERTY:
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		g_value_set_object (value, daf_ui_animation_property_animator_get_timeline (self));
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		break;
 #line 2714 "PropertyAnimator.c"
 		default:
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		G_OBJECT_WARN_INVALID_PROPERTY_ID (object, property_id, pspec);
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		break;
 #line 2720 "PropertyAnimator.c"
 	}
@@ -2730,19 +2730,19 @@ _vala_daf_ui_animation_property_animator_set_property (GObject * object,
 {
 	DafUIAnimationPropertyAnimator * self;
 	self = G_TYPE_CHECK_INSTANCE_CAST (object, DAF_UI_ANIMATION_TYPE_PROPERTY_ANIMATOR, DafUIAnimationPropertyAnimator);
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 	switch (property_id) {
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		case DAF_UI_ANIMATION_PROPERTY_ANIMATOR_TIMELINE_PROPERTY:
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		daf_ui_animation_property_animator_set_timeline (self, g_value_get_object (value));
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		break;
 #line 2741 "PropertyAnimator.c"
 		default:
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		G_OBJECT_WARN_INVALID_PROPERTY_ID (object, property_id, pspec);
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Animation/PropertyAnimator.vala"
 		break;
 #line 2747 "PropertyAnimator.c"
 	}

@@ -126,11 +126,11 @@ DafAnimationTestDeckLayoutDemo*
 daf_animation_test_deck_layout_demo_construct (GType object_type)
 {
 	DafAnimationTestDeckLayoutDemo * self = NULL;
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	self = (DafAnimationTestDeckLayoutDemo*) g_object_new (object_type, NULL);
-#line 39 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 39 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	daf_animation_test_deck_layout_demo_setup_widgets (self);
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	return self;
 #line 136 "DeckLayoutDemo.c"
 }
@@ -139,7 +139,7 @@ daf_animation_test_deck_layout_demo_construct (GType object_type)
 DafAnimationTestDeckLayoutDemo*
 daf_animation_test_deck_layout_demo_new (void)
 {
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	return daf_animation_test_deck_layout_demo_construct (DAF_ANIMATION_TEST_TYPE_DECK_LAYOUT_DEMO);
 #line 145 "DeckLayoutDemo.c"
 }
@@ -148,9 +148,9 @@ daf_animation_test_deck_layout_demo_new (void)
 static Block1Data*
 block1_data_ref (Block1Data* _data1_)
 {
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	g_atomic_int_inc (&_data1_->_ref_count_);
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	return _data1_;
 #line 156 "DeckLayoutDemo.c"
 }
@@ -161,29 +161,29 @@ block1_data_unref (void * _userdata_)
 {
 	Block1Data* _data1_;
 	_data1_ = (Block1Data*) _userdata_;
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	if (g_atomic_int_dec_and_test (&_data1_->_ref_count_)) {
 #line 167 "DeckLayoutDemo.c"
 		DafAnimationTestDeckLayoutDemo* self;
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 		self = _data1_->self;
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 		_g_object_unref0 (_data1_->oa2);
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 		_g_object_unref0 (_data1_->oa1);
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 		_g_object_unref0 (_data1_->oa8);
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 		_g_object_unref0 (_data1_->oa7);
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 		_g_object_unref0 (_data1_->oa6);
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 		_g_object_unref0 (_data1_->oa5);
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 		_g_object_unref0 (_data1_->deck);
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 		_g_object_unref0 (self);
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 		g_slice_free (Block1Data, _data1_);
 #line 189 "DeckLayoutDemo.c"
 	}
@@ -196,30 +196,30 @@ __lambda10_ (Block1Data* _data1_)
 	DafAnimationTestDeckLayoutDemo* self;
 	DafUIWidgetsICard* _tmp0_;
 	DafUIWidgetsICard* _tmp1_;
-#line 114 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 114 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	self = _data1_->self;
-#line 115 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 115 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	g_debug ("DeckLayoutDemo.vala:115: Clicked OA1...");
-#line 116 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 116 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_tmp0_ = daf_ui_widgets_abstract_deck_layout_get_active_card ((DafUIWidgetsAbstractDeckLayout*) _data1_->deck);
-#line 116 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 116 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_tmp1_ = _tmp0_;
-#line 116 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 116 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	if (_tmp1_ != NULL) {
 #line 210 "DeckLayoutDemo.c"
 		DafUIWidgetsICard* _tmp2_;
 		DafUIWidgetsICard* _tmp3_;
 		GtkWidget* _tmp4_;
 		GtkWidget* _tmp5_;
-#line 117 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 117 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 		_tmp2_ = daf_ui_widgets_abstract_deck_layout_get_active_card ((DafUIWidgetsAbstractDeckLayout*) _data1_->deck);
-#line 117 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 117 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 		_tmp3_ = _tmp2_;
-#line 117 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 117 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 		_tmp4_ = daf_ui_widgets_icard_get_widget (_tmp3_);
-#line 117 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 117 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 		_tmp5_ = _tmp4_;
-#line 117 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 117 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 		daf_ui_widgets_ideck_layout_remove ((DafUIWidgetsIDeckLayout*) _data1_->deck, _tmp5_);
 #line 225 "DeckLayoutDemo.c"
 	}
@@ -230,7 +230,7 @@ static void
 ___lambda10__gtk_button_clicked (GtkButton* _sender,
                                  gpointer self)
 {
-#line 114 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 114 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	__lambda10_ (self);
 #line 236 "DeckLayoutDemo.c"
 }
@@ -240,11 +240,11 @@ static void
 __lambda11_ (Block1Data* _data1_)
 {
 	DafAnimationTestDeckLayoutDemo* self;
-#line 122 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 122 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	self = _data1_->self;
-#line 123 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 123 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	g_debug ("DeckLayoutDemo.vala:123: Clicked OA1...");
-#line 124 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 124 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	daf_ui_widgets_ideck_layout_switch_widget ((DafUIWidgetsIDeckLayout*) _data1_->deck, (GtkWidget*) _data1_->oa2, FALSE);
 #line 250 "DeckLayoutDemo.c"
 }
@@ -254,7 +254,7 @@ static void
 ___lambda11__gtk_button_clicked (GtkButton* _sender,
                                  gpointer self)
 {
-#line 122 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 122 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	__lambda11_ (self);
 #line 260 "DeckLayoutDemo.c"
 }
@@ -264,11 +264,11 @@ static void
 __lambda12_ (Block1Data* _data1_)
 {
 	DafAnimationTestDeckLayoutDemo* self;
-#line 127 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 127 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	self = _data1_->self;
-#line 128 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 128 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	g_debug ("DeckLayoutDemo.vala:128: Clicked OA2...");
-#line 130 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 130 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	daf_ui_widgets_ideck_layout_switch_widget ((DafUIWidgetsIDeckLayout*) _data1_->deck, (GtkWidget*) _data1_->oa1, FALSE);
 #line 274 "DeckLayoutDemo.c"
 }
@@ -278,7 +278,7 @@ static void
 ___lambda12__gtk_button_clicked (GtkButton* _sender,
                                  gpointer self)
 {
-#line 127 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 127 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	__lambda12_ (self);
 #line 284 "DeckLayoutDemo.c"
 }
@@ -288,11 +288,11 @@ static void
 __lambda13_ (Block1Data* _data1_)
 {
 	DafAnimationTestDeckLayoutDemo* self;
-#line 133 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 133 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	self = _data1_->self;
-#line 134 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 134 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	g_debug ("DeckLayoutDemo.vala:134: Clicked OA3...");
-#line 136 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 136 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	daf_ui_widgets_ideck_layout_switch_widget ((DafUIWidgetsIDeckLayout*) _data1_->deck, (GtkWidget*) _data1_->oa1, FALSE);
 #line 298 "DeckLayoutDemo.c"
 }
@@ -302,7 +302,7 @@ static void
 ___lambda13__gtk_button_clicked (GtkButton* _sender,
                                  gpointer self)
 {
-#line 133 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 133 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	__lambda13_ (self);
 #line 308 "DeckLayoutDemo.c"
 }
@@ -312,11 +312,11 @@ static void
 __lambda14_ (Block1Data* _data1_)
 {
 	DafAnimationTestDeckLayoutDemo* self;
-#line 139 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 139 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	self = _data1_->self;
-#line 140 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 140 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	g_debug ("DeckLayoutDemo.vala:140: Clicked OA4...");
-#line 142 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 142 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	daf_ui_widgets_ideck_layout_switch_widget ((DafUIWidgetsIDeckLayout*) _data1_->deck, (GtkWidget*) _data1_->oa5, FALSE);
 #line 322 "DeckLayoutDemo.c"
 }
@@ -326,7 +326,7 @@ static void
 ___lambda14__gtk_button_clicked (GtkButton* _sender,
                                  gpointer self)
 {
-#line 139 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 139 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	__lambda14_ (self);
 #line 332 "DeckLayoutDemo.c"
 }
@@ -336,11 +336,11 @@ static void
 __lambda15_ (Block1Data* _data1_)
 {
 	DafAnimationTestDeckLayoutDemo* self;
-#line 145 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 145 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	self = _data1_->self;
-#line 146 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 146 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	g_debug ("DeckLayoutDemo.vala:146: Clicked OA5...");
-#line 148 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 148 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	daf_ui_widgets_ideck_layout_switch_widget ((DafUIWidgetsIDeckLayout*) _data1_->deck, (GtkWidget*) _data1_->oa6, FALSE);
 #line 346 "DeckLayoutDemo.c"
 }
@@ -350,7 +350,7 @@ static void
 ___lambda15__gtk_button_clicked (GtkButton* _sender,
                                  gpointer self)
 {
-#line 145 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 145 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	__lambda15_ (self);
 #line 356 "DeckLayoutDemo.c"
 }
@@ -360,11 +360,11 @@ static void
 __lambda16_ (Block1Data* _data1_)
 {
 	DafAnimationTestDeckLayoutDemo* self;
-#line 151 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 151 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	self = _data1_->self;
-#line 152 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 152 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	g_debug ("DeckLayoutDemo.vala:152: Clicked OA6...");
-#line 154 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 154 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	daf_ui_widgets_ideck_layout_switch_widget ((DafUIWidgetsIDeckLayout*) _data1_->deck, (GtkWidget*) _data1_->oa7, FALSE);
 #line 370 "DeckLayoutDemo.c"
 }
@@ -374,7 +374,7 @@ static void
 ___lambda16__gtk_button_clicked (GtkButton* _sender,
                                  gpointer self)
 {
-#line 151 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 151 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	__lambda16_ (self);
 #line 380 "DeckLayoutDemo.c"
 }
@@ -384,11 +384,11 @@ static void
 __lambda17_ (Block1Data* _data1_)
 {
 	DafAnimationTestDeckLayoutDemo* self;
-#line 157 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 157 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	self = _data1_->self;
-#line 158 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 158 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	g_debug ("DeckLayoutDemo.vala:158: Clicked OA7...");
-#line 160 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 160 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	daf_ui_widgets_ideck_layout_switch_widget ((DafUIWidgetsIDeckLayout*) _data1_->deck, (GtkWidget*) _data1_->oa8, FALSE);
 #line 394 "DeckLayoutDemo.c"
 }
@@ -398,7 +398,7 @@ static void
 ___lambda17__gtk_button_clicked (GtkButton* _sender,
                                  gpointer self)
 {
-#line 157 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 157 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	__lambda17_ (self);
 #line 404 "DeckLayoutDemo.c"
 }
@@ -412,19 +412,19 @@ __lambda18_ (Block1Data* _data1_)
 	DafUIWidgetsICard* _tmp1_;
 	GtkWidget* _tmp2_;
 	GtkWidget* _tmp3_;
-#line 163 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 163 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	self = _data1_->self;
-#line 164 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 164 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	g_debug ("DeckLayoutDemo.vala:164: Clicked OA8...");
-#line 165 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 165 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_tmp0_ = daf_ui_widgets_abstract_deck_layout_get_active_card ((DafUIWidgetsAbstractDeckLayout*) _data1_->deck);
-#line 165 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 165 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_tmp1_ = _tmp0_;
-#line 165 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 165 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_tmp2_ = daf_ui_widgets_icard_get_widget (_tmp1_);
-#line 165 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 165 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_tmp3_ = _tmp2_;
-#line 165 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 165 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	daf_ui_widgets_ideck_layout_remove ((DafUIWidgetsIDeckLayout*) _data1_->deck, _tmp3_);
 #line 430 "DeckLayoutDemo.c"
 }
@@ -434,7 +434,7 @@ static void
 ___lambda18__gtk_button_clicked (GtkButton* _sender,
                                  gpointer self)
 {
-#line 163 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 163 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	__lambda18_ (self);
 #line 440 "DeckLayoutDemo.c"
 }
@@ -444,7 +444,7 @@ static void
 _gtk_main_quit_gtk_widget_destroy (GtkWidget* _sender,
                                    gpointer self)
 {
-#line 175 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 175 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	gtk_main_quit ();
 #line 450 "DeckLayoutDemo.c"
 }
@@ -495,271 +495,271 @@ daf_animation_test_deck_layout_demo_setup_widgets (DafAnimationTestDeckLayoutDem
 	DafUIAnimationAnimatableAdapter* _tmp25_;
 	GtkWindow* _tmp26_;
 	GtkWindow* _tmp27_;
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	g_return_if_fail (self != NULL);
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_data1_ = g_slice_new0 (Block1Data);
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_data1_->_ref_count_ = 1;
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_data1_->self = g_object_ref (self);
-#line 44 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 44 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_tmp0_ = (GtkWindow*) gtk_window_new (GTK_WINDOW_TOPLEVEL);
-#line 44 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 44 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	g_object_ref_sink (_tmp0_);
-#line 44 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 44 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_g_object_unref0 (self->priv->window);
-#line 44 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 44 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	self->priv->window = _tmp0_;
-#line 45 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 45 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_tmp1_ = self->priv->window;
-#line 45 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 45 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	gtk_window_set_resizable (_tmp1_, TRUE);
-#line 46 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 46 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_tmp2_ = self->priv->window;
-#line 46 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 46 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	g_object_set (_tmp2_, "window-position", GTK_WIN_POS_CENTER_ON_PARENT, NULL);
-#line 47 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 47 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_tmp3_ = self->priv->window;
-#line 47 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 47 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	gtk_widget_show_all ((GtkWidget*) _tmp3_);
-#line 50 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 50 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	gdk_color_parse ("red", &_tmp4_);
-#line 50 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 50 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	red = _tmp4_;
-#line 51 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 51 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_tmp5_ = self->priv->window;
-#line 51 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 51 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_tmp6_ = red;
-#line 51 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 51 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	gtk_widget_modify_bg ((GtkWidget*) _tmp5_, GTK_STATE_NORMAL, &_tmp6_);
-#line 53 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 53 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_tmp7_ = daf_ui_widgets_deck_layout_new ();
-#line 53 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 53 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	g_object_ref_sink (_tmp7_);
-#line 53 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 53 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_data1_->deck = _tmp7_;
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	gtk_container_set_border_width ((GtkContainer*) _data1_->deck, (guint) 10);
-#line 56 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 56 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_tmp8_ = (GtkButton*) gtk_button_new_with_label ("Delete");
-#line 56 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 56 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	g_object_ref_sink (_tmp8_);
-#line 56 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 56 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	button = _tmp8_;
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_tmp9_ = (GtkButton*) gtk_button_new_with_label ("First");
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	g_object_ref_sink (_tmp9_);
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	button1 = _tmp9_;
-#line 59 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 59 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_tmp10_ = (GtkButton*) gtk_button_new_with_label ("Second");
-#line 59 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 59 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	g_object_ref_sink (_tmp10_);
-#line 59 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 59 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	button2 = _tmp10_;
-#line 60 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 60 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_tmp11_ = (GtkButton*) gtk_button_new_with_label ("Third");
-#line 60 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 60 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	g_object_ref_sink (_tmp11_);
-#line 60 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 60 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	button3 = _tmp11_;
-#line 61 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 61 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_tmp12_ = (GtkButton*) gtk_button_new_with_label ("Fourth");
-#line 61 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 61 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	g_object_ref_sink (_tmp12_);
-#line 61 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 61 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	button4 = _tmp12_;
-#line 63 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 63 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_tmp13_ = (GtkBox*) gtk_box_new (GTK_ORIENTATION_VERTICAL, 10);
-#line 63 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 63 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	g_object_ref_sink (_tmp13_);
-#line 63 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 63 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	box = _tmp13_;
-#line 64 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 64 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_tmp14_ = (GtkBox*) gtk_box_new (GTK_ORIENTATION_VERTICAL, 10);
-#line 64 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 64 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	g_object_ref_sink (_tmp14_);
-#line 64 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 64 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	box1 = _tmp14_;
-#line 65 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 65 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_tmp15_ = (GtkBox*) gtk_box_new (GTK_ORIENTATION_VERTICAL, 10);
-#line 65 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 65 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	g_object_ref_sink (_tmp15_);
-#line 65 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 65 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	box2 = _tmp15_;
-#line 67 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 67 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	gtk_container_add ((GtkContainer*) box1, (GtkWidget*) button1);
-#line 68 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 68 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	gtk_container_add ((GtkContainer*) box1, (GtkWidget*) button3);
-#line 69 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 69 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	gtk_container_add ((GtkContainer*) box2, (GtkWidget*) button2);
-#line 70 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 70 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	gtk_container_add ((GtkContainer*) box2, (GtkWidget*) button4);
-#line 72 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 72 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	gtk_widget_set_name ((GtkWidget*) button1, "Button1");
-#line 73 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 73 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	gtk_widget_set_name ((GtkWidget*) button2, "Button2");
-#line 74 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 74 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	gtk_widget_set_name ((GtkWidget*) button3, "Button3");
-#line 75 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 75 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	gtk_widget_set_name ((GtkWidget*) button4, "Button4");
-#line 78 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 78 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_tmp16_ = (GtkButton*) gtk_button_new_with_label ("Fifth");
-#line 78 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 78 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	g_object_ref_sink (_tmp16_);
-#line 78 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 78 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	button5 = _tmp16_;
-#line 79 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 79 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_tmp17_ = (GtkButton*) gtk_button_new_with_label ("Sixth");
-#line 79 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 79 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	g_object_ref_sink (_tmp17_);
-#line 79 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 79 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	button6 = _tmp17_;
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_tmp18_ = (GtkButton*) gtk_button_new_with_label ("Seventh");
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	g_object_ref_sink (_tmp18_);
-#line 80 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 80 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	button7 = _tmp18_;
-#line 81 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 81 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_tmp19_ = (GtkButton*) gtk_button_new_with_label ("Eigth");
-#line 81 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 81 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	g_object_ref_sink (_tmp19_);
-#line 81 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 81 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	button8 = _tmp19_;
-#line 83 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 83 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_tmp20_ = daf_ui_animation_animatable_adapter_new ((GtkWidget*) button5);
-#line 83 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 83 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	g_object_ref_sink (_tmp20_);
-#line 83 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 83 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_data1_->oa5 = _tmp20_;
-#line 84 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 84 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_tmp21_ = daf_ui_animation_animatable_adapter_new ((GtkWidget*) button6);
-#line 84 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 84 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	g_object_ref_sink (_tmp21_);
-#line 84 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 84 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_data1_->oa6 = _tmp21_;
-#line 85 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 85 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_tmp22_ = daf_ui_animation_animatable_adapter_new ((GtkWidget*) button7);
-#line 85 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 85 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	g_object_ref_sink (_tmp22_);
-#line 85 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 85 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_data1_->oa7 = _tmp22_;
-#line 86 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 86 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_tmp23_ = daf_ui_animation_animatable_adapter_new ((GtkWidget*) button8);
-#line 86 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 86 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	g_object_ref_sink (_tmp23_);
-#line 86 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 86 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_data1_->oa8 = _tmp23_;
-#line 88 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 88 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	gtk_widget_set_name ((GtkWidget*) button5, "Button5");
-#line 89 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 89 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	gtk_widget_set_name ((GtkWidget*) button6, "Button6");
-#line 90 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 90 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	gtk_widget_set_name ((GtkWidget*) button7, "Button7");
-#line 91 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 91 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	gtk_widget_set_name ((GtkWidget*) button8, "Button8");
-#line 93 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 93 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	daf_ui_animation_animatable_adapter_set_opacity (_data1_->oa5, 0.5);
-#line 94 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 94 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	daf_ui_animation_animatable_adapter_set_opacity (_data1_->oa6, 0.5);
-#line 95 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 95 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	daf_ui_animation_animatable_adapter_set_opacity (_data1_->oa7, 0.5);
-#line 96 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 96 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	daf_ui_animation_animatable_adapter_set_opacity (_data1_->oa8, 0.5);
-#line 98 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 98 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_tmp24_ = daf_ui_animation_animatable_adapter_new ((GtkWidget*) box1);
-#line 98 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 98 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	g_object_ref_sink (_tmp24_);
-#line 98 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 98 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_data1_->oa1 = _tmp24_;
-#line 99 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 99 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	daf_ui_animation_animatable_adapter_set_opacity (_data1_->oa1, 0.5);
-#line 101 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 101 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_tmp25_ = daf_ui_animation_animatable_adapter_new ((GtkWidget*) box2);
-#line 101 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 101 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	g_object_ref_sink (_tmp25_);
-#line 101 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 101 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_data1_->oa2 = _tmp25_;
-#line 102 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 102 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	daf_ui_animation_animatable_adapter_set_opacity (_data1_->oa2, 0.5);
-#line 104 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 104 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	daf_ui_widgets_ideck_layout_add ((DafUIWidgetsIDeckLayout*) _data1_->deck, (GtkWidget*) _data1_->oa1);
-#line 105 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 105 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	gtk_widget_set_name ((GtkWidget*) _data1_->oa1, "OA1");
-#line 106 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 106 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	daf_ui_widgets_ideck_layout_add ((DafUIWidgetsIDeckLayout*) _data1_->deck, (GtkWidget*) _data1_->oa2);
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	gtk_widget_set_name ((GtkWidget*) _data1_->oa2, "OA2");
-#line 109 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 109 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	daf_ui_widgets_ideck_layout_add ((DafUIWidgetsIDeckLayout*) _data1_->deck, (GtkWidget*) _data1_->oa5);
-#line 110 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 110 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	daf_ui_widgets_ideck_layout_add ((DafUIWidgetsIDeckLayout*) _data1_->deck, (GtkWidget*) _data1_->oa6);
-#line 111 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 111 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	daf_ui_widgets_ideck_layout_add ((DafUIWidgetsIDeckLayout*) _data1_->deck, (GtkWidget*) _data1_->oa7);
-#line 112 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 112 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	daf_ui_widgets_ideck_layout_add ((DafUIWidgetsIDeckLayout*) _data1_->deck, (GtkWidget*) _data1_->oa8);
-#line 114 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 114 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	g_signal_connect_data (button, "clicked", (GCallback) ___lambda10__gtk_button_clicked, block1_data_ref (_data1_), (GClosureNotify) block1_data_unref, 0);
-#line 122 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 122 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	g_signal_connect_data (button1, "clicked", (GCallback) ___lambda11__gtk_button_clicked, block1_data_ref (_data1_), (GClosureNotify) block1_data_unref, 0);
-#line 127 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 127 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	g_signal_connect_data (button2, "clicked", (GCallback) ___lambda12__gtk_button_clicked, block1_data_ref (_data1_), (GClosureNotify) block1_data_unref, 0);
-#line 133 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 133 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	g_signal_connect_data (button3, "clicked", (GCallback) ___lambda13__gtk_button_clicked, block1_data_ref (_data1_), (GClosureNotify) block1_data_unref, 0);
-#line 139 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 139 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	g_signal_connect_data (button4, "clicked", (GCallback) ___lambda14__gtk_button_clicked, block1_data_ref (_data1_), (GClosureNotify) block1_data_unref, 0);
-#line 145 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 145 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	g_signal_connect_data (button5, "clicked", (GCallback) ___lambda15__gtk_button_clicked, block1_data_ref (_data1_), (GClosureNotify) block1_data_unref, 0);
-#line 151 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 151 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	g_signal_connect_data (button6, "clicked", (GCallback) ___lambda16__gtk_button_clicked, block1_data_ref (_data1_), (GClosureNotify) block1_data_unref, 0);
-#line 157 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 157 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	g_signal_connect_data (button7, "clicked", (GCallback) ___lambda17__gtk_button_clicked, block1_data_ref (_data1_), (GClosureNotify) block1_data_unref, 0);
-#line 163 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 163 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	g_signal_connect_data (button8, "clicked", (GCallback) ___lambda18__gtk_button_clicked, block1_data_ref (_data1_), (GClosureNotify) block1_data_unref, 0);
-#line 170 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 170 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	g_object_set ((GtkWidget*) _data1_->deck, "expand", TRUE, NULL);
-#line 171 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 171 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	gtk_container_add ((GtkContainer*) box, (GtkWidget*) button);
-#line 172 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 172 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	gtk_container_add ((GtkContainer*) box, (GtkWidget*) _data1_->deck);
-#line 173 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 173 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_tmp26_ = self->priv->window;
-#line 173 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 173 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	gtk_container_add ((GtkContainer*) _tmp26_, (GtkWidget*) box);
-#line 175 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 175 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_tmp27_ = self->priv->window;
-#line 175 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 175 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	g_signal_connect ((GtkWidget*) _tmp27_, "destroy", (GCallback) _gtk_main_quit_gtk_widget_destroy, NULL);
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_g_object_unref0 (button8);
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_g_object_unref0 (button7);
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_g_object_unref0 (button6);
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_g_object_unref0 (button5);
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_g_object_unref0 (box2);
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_g_object_unref0 (box1);
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_g_object_unref0 (box);
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_g_object_unref0 (button4);
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_g_object_unref0 (button3);
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_g_object_unref0 (button2);
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_g_object_unref0 (button1);
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_g_object_unref0 (button);
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	block1_data_unref (_data1_);
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_data1_ = NULL;
 #line 765 "DeckLayoutDemo.c"
 }
@@ -769,11 +769,11 @@ void
 daf_animation_test_deck_layout_demo_show (DafAnimationTestDeckLayoutDemo* self)
 {
 	GtkWindow* _tmp0_;
-#line 178 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 178 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	g_return_if_fail (self != NULL);
-#line 179 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 179 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_tmp0_ = self->priv->window;
-#line 179 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 179 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	gtk_widget_show_all ((GtkWidget*) _tmp0_);
 #line 779 "DeckLayoutDemo.c"
 }
@@ -782,11 +782,11 @@ daf_animation_test_deck_layout_demo_show (DafAnimationTestDeckLayoutDemo* self)
 static void
 daf_animation_test_deck_layout_demo_class_init (DafAnimationTestDeckLayoutDemoClass * klass)
 {
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	daf_animation_test_deck_layout_demo_parent_class = g_type_class_peek_parent (klass);
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	g_type_class_add_private (klass, sizeof (DafAnimationTestDeckLayoutDemoPrivate));
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	G_OBJECT_CLASS (klass)->finalize = daf_animation_test_deck_layout_demo_finalize;
 #line 792 "DeckLayoutDemo.c"
 }
@@ -796,13 +796,13 @@ static void
 daf_animation_test_deck_layout_demo_instance_init (DafAnimationTestDeckLayoutDemo * self)
 {
 	GtkImage* _tmp0_;
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	self->priv = DAF_ANIMATION_TEST_DECK_LAYOUT_DEMO_GET_PRIVATE (self);
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_tmp0_ = (GtkImage*) gtk_image_new_from_file ("/usr/share/icons/gnome/256x256/emotes/face-angel.png");
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	g_object_ref_sink (_tmp0_);
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	self->priv->image1 = _tmp0_;
 #line 808 "DeckLayoutDemo.c"
 }
@@ -812,19 +812,19 @@ static void
 daf_animation_test_deck_layout_demo_finalize (GObject * obj)
 {
 	DafAnimationTestDeckLayoutDemo * self;
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	self = G_TYPE_CHECK_INSTANCE_CAST (obj, DAF_ANIMATION_TEST_TYPE_DECK_LAYOUT_DEMO, DafAnimationTestDeckLayoutDemo);
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_g_object_unref0 (self->priv->window);
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_g_object_unref0 (self->priv->box1);
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_g_object_unref0 (self->priv->image1);
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_g_object_unref0 (self->priv->adapt_opacity1);
-#line 36 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 36 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	_g_object_unref0 (self->priv->adapt_opacity2);
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/src/View/DeckLayoutDemo.vala"
 	G_OBJECT_CLASS (daf_animation_test_deck_layout_demo_parent_class)->finalize (obj);
 #line 830 "DeckLayoutDemo.c"
 }

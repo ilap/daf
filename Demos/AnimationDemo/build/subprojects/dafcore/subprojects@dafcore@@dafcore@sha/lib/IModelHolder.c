@@ -68,9 +68,9 @@ void daf_core_imodel_holder_set_value_model (DafCoreIModelHolder* self,
 GObject*
 daf_core_imodel_holder_get_model (DafCoreIModelHolder* self)
 {
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IModelHolder.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IModelHolder.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IModelHolder.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IModelHolder.vala"
 	return DAF_CORE_IMODEL_HOLDER_GET_INTERFACE (self)->get_model (self);
 #line 76 "IModelHolder.c"
 }
@@ -80,9 +80,9 @@ void
 daf_core_imodel_holder_set_model (DafCoreIModelHolder* self,
                                   GObject* new_model)
 {
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IModelHolder.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IModelHolder.vala"
 	g_return_if_fail (self != NULL);
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IModelHolder.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IModelHolder.vala"
 	DAF_CORE_IMODEL_HOLDER_GET_INTERFACE (self)->set_model (self, new_model);
 #line 88 "IModelHolder.c"
 }
@@ -91,7 +91,7 @@ daf_core_imodel_holder_set_model (DafCoreIModelHolder* self,
 static gpointer
 _g_object_ref0 (gpointer self)
 {
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IModelHolder.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IModelHolder.vala"
 	return self ? g_object_ref (self) : NULL;
 #line 97 "IModelHolder.c"
 }
@@ -104,15 +104,15 @@ daf_core_imodel_holder_real_get_channel (DafCoreIModelHolder* self)
 	DafCoreIValueModel* _tmp0_;
 	DafCoreIValueModel* _tmp1_;
 	DafCoreIValueModel* _tmp2_;
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IModelHolder.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IModelHolder.vala"
 	_tmp0_ = daf_core_imodel_holder_get_value_model (self);
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IModelHolder.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IModelHolder.vala"
 	_tmp1_ = _tmp0_;
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IModelHolder.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IModelHolder.vala"
 	_tmp2_ = _g_object_ref0 (_tmp1_);
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IModelHolder.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IModelHolder.vala"
 	result = _tmp2_;
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IModelHolder.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IModelHolder.vala"
 	return result;
 #line 118 "IModelHolder.c"
 }
@@ -121,9 +121,9 @@ daf_core_imodel_holder_real_get_channel (DafCoreIModelHolder* self)
 DafCoreIValueModel*
 daf_core_imodel_holder_get_channel (DafCoreIModelHolder* self)
 {
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IModelHolder.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IModelHolder.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IModelHolder.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IModelHolder.vala"
 	return DAF_CORE_IMODEL_HOLDER_GET_INTERFACE (self)->get_channel (self);
 #line 129 "IModelHolder.c"
 }
@@ -133,7 +133,7 @@ static void
 daf_core_imodel_holder_real_set_channel (DafCoreIModelHolder* self,
                                          DafCoreIValueModel* value_model)
 {
-#line 39 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IModelHolder.vala"
+#line 39 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IModelHolder.vala"
 	daf_core_imodel_holder_set_value_model (self, value_model);
 #line 139 "IModelHolder.c"
 }
@@ -143,9 +143,9 @@ void
 daf_core_imodel_holder_set_channel (DafCoreIModelHolder* self,
                                     DafCoreIValueModel* value_model)
 {
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IModelHolder.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IModelHolder.vala"
 	g_return_if_fail (self != NULL);
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IModelHolder.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IModelHolder.vala"
 	DAF_CORE_IMODEL_HOLDER_GET_INTERFACE (self)->set_channel (self, value_model);
 #line 151 "IModelHolder.c"
 }
@@ -154,9 +154,9 @@ daf_core_imodel_holder_set_channel (DafCoreIModelHolder* self,
 DafCoreIValueModel*
 daf_core_imodel_holder_get_value_model (DafCoreIModelHolder* self)
 {
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IModelHolder.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IModelHolder.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IModelHolder.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IModelHolder.vala"
 	return DAF_CORE_IMODEL_HOLDER_GET_INTERFACE (self)->get_value_model (self);
 #line 162 "IModelHolder.c"
 }
@@ -166,9 +166,9 @@ void
 daf_core_imodel_holder_set_value_model (DafCoreIModelHolder* self,
                                         DafCoreIValueModel* value)
 {
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IModelHolder.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IModelHolder.vala"
 	g_return_if_fail (self != NULL);
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IModelHolder.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IModelHolder.vala"
 	DAF_CORE_IMODEL_HOLDER_GET_INTERFACE (self)->set_value_model (self, value);
 #line 174 "IModelHolder.c"
 }
@@ -177,11 +177,11 @@ daf_core_imodel_holder_set_value_model (DafCoreIModelHolder* self,
 static void
 daf_core_imodel_holder_default_init (DafCoreIModelHolderIface * iface)
 {
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IModelHolder.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IModelHolder.vala"
 	g_object_interface_install_property (iface, g_param_spec_object ("value-model", "value-model", "value-model", DAF_CORE_TYPE_IVALUE_MODEL, G_PARAM_STATIC_STRINGS | G_PARAM_READABLE | G_PARAM_WRITABLE));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IModelHolder.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IModelHolder.vala"
 	iface->get_channel = daf_core_imodel_holder_real_get_channel;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IModelHolder.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IModelHolder.vala"
 	iface->set_channel = daf_core_imodel_holder_real_set_channel;
 #line 187 "IModelHolder.c"
 }

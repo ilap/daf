@@ -297,15 +297,15 @@ daf_core_selection_in_list_real_get_val (DafCoreAbstractValueHolder* base)
 	GValue* result = NULL;
 	GValue* _tmp0_;
 	GValue* _tmp1_;
-#line 73 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 73 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	self = (DafCoreSelectionInList*) base;
-#line 74 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 74 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp0_ = daf_core_selection_in_list_get_selection (self);
-#line 74 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 74 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp1_ = _tmp0_;
-#line 74 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 74 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	result = _tmp1_;
-#line 74 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 74 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	return result;
 #line 311 "SelectionInList.c"
 }
@@ -316,9 +316,9 @@ daf_core_selection_in_list_real_set_val (DafCoreAbstractValueHolder* base,
                                          GValue* new_value)
 {
 	DafCoreSelectionInList * self;
-#line 77 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 77 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	self = (DafCoreSelectionInList*) base;
-#line 78 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 78 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	daf_core_selection_in_list_set_selection (self, new_value);
 #line 324 "SelectionInList.c"
 }
@@ -328,7 +328,7 @@ daf_core_selection_in_list_real_set_val (DafCoreAbstractValueHolder* base,
 static gpointer
 _g_object_ref0 (gpointer self)
 {
-#line 84 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 84 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	return self ? g_object_ref (self) : NULL;
 #line 334 "SelectionInList.c"
 }
@@ -342,24 +342,24 @@ __lambda4_ (DafCoreSelectionInList* self,
 	gint _tmp1_;
 	gint _tmp2_;
 	gint _tmp3_;
-#line 86 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 86 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp0_ = daf_core_selection_in_list_get_selection_index (self);
-#line 86 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 86 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp1_ = _tmp0_;
-#line 86 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 86 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_debug ("SelectionInList.vala:86: list_changed.... selection index %d size %d g" \
 "et_length () %d", _tmp1_, size, daf_core_ilist_model_get_length ((DafCoreIListModel*) self));
-#line 87 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 87 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp2_ = daf_core_selection_in_list_get_selection_index (self);
-#line 87 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 87 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp3_ = _tmp2_;
-#line 87 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 87 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	if (_tmp3_ >= size) {
-#line 88 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 88 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		daf_core_selection_in_list_set_selection_index (self, size - 1);
 #line 360 "SelectionInList.c"
 	}
-#line 90 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 90 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_signal_emit_by_name ((DafCoreIListModel*) self, "list-changed", size);
 #line 364 "SelectionInList.c"
 }
@@ -370,7 +370,7 @@ ___lambda4__daf_core_ilist_model_list_changed (DafCoreIListModel* _sender,
                                                gint size,
                                                gpointer self)
 {
-#line 85 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 85 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	__lambda4_ ((DafCoreSelectionInList*) self, size);
 #line 375 "SelectionInList.c"
 }
@@ -381,9 +381,9 @@ __lambda5_ (DafCoreSelectionInList* self,
             gint index,
             gconstpointer item)
 {
-#line 93 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 93 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_debug ("SelectionInList.vala:93: item_changed....");
-#line 94 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 94 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_signal_emit_by_name ((DafCoreIListModel*) self, "item-changed", index, item);
 #line 388 "SelectionInList.c"
 }
@@ -395,7 +395,7 @@ ___lambda5__daf_core_ilist_model_item_changed (DafCoreIListModel* _sender,
                                                gconstpointer item,
                                                gpointer self)
 {
-#line 92 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 92 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	__lambda5_ ((DafCoreSelectionInList*) self, index, item);
 #line 400 "SelectionInList.c"
 }
@@ -405,9 +405,9 @@ static void
 __lambda6_ (DafCoreSelectionInList* self,
             gint item)
 {
-#line 97 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 97 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_debug ("SelectionInList.vala:97: Item added....");
-#line 98 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 98 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_signal_emit_by_name ((DafCoreIListModel*) self, "item-added", item);
 #line 412 "SelectionInList.c"
 }
@@ -418,7 +418,7 @@ ___lambda6__daf_core_ilist_model_item_added (DafCoreIListModel* _sender,
                                              gint index,
                                              gpointer self)
 {
-#line 96 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 96 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	__lambda6_ ((DafCoreSelectionInList*) self, index);
 #line 423 "SelectionInList.c"
 }
@@ -428,9 +428,9 @@ static void
 __lambda7_ (DafCoreSelectionInList* self,
             gint item)
 {
-#line 102 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 102 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_debug ("SelectionInList.vala:102: Item removed....");
-#line 103 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 103 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_signal_emit_by_name ((DafCoreIListModel*) self, "item-removed", item);
 #line 435 "SelectionInList.c"
 }
@@ -441,7 +441,7 @@ ___lambda7__daf_core_ilist_model_item_removed (DafCoreIListModel* _sender,
                                                gint index,
                                                gpointer self)
 {
-#line 101 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 101 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	__lambda7_ ((DafCoreSelectionInList*) self, index);
 #line 446 "SelectionInList.c"
 }
@@ -450,9 +450,9 @@ ___lambda7__daf_core_ilist_model_item_removed (DafCoreIListModel* _sender,
 static void
 _vala_GValue_free (GValue* self)
 {
-#line 108 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 108 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_value_unset (self);
-#line 108 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 108 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_free (self);
 #line 457 "SelectionInList.c"
 }
@@ -461,9 +461,9 @@ _vala_GValue_free (GValue* self)
 static void
 __lambda8_ (DafCoreSelectionInList* self)
 {
-#line 110 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 110 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_debug ("SelectionInList.vala:110: selection is.changed");
-#line 111 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 111 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	daf_core_selection_in_list_set_selection (self, NULL);
 #line 468 "SelectionInList.c"
 }
@@ -474,7 +474,7 @@ ___lambda8__g_object_notify (GObject* _sender,
                              GParamSpec* pspec,
                              gpointer self)
 {
-#line 109 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 109 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	__lambda8_ ((DafCoreSelectionInList*) self);
 #line 479 "SelectionInList.c"
 }
@@ -485,13 +485,13 @@ __lambda9_ (DafCoreSelectionInList* self)
 {
 	DafCoreIValueModel* _tmp0_;
 	GValue* _tmp1_;
-#line 118 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 118 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp0_ = self->priv->_selection_index_holder;
-#line 118 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 118 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp1_ = daf_core_ivalue_model_get_val (_tmp0_);
-#line 118 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 118 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	self->priv->_selection_index = g_value_get_int (_tmp1_);
-#line 119 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 119 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_object_notify ((GObject*) self, DAF_CORE_IVALUE_MODEL_PROP_NAME);
 #line 496 "SelectionInList.c"
 }
@@ -502,7 +502,7 @@ ___lambda9__g_object_notify (GObject* _sender,
                              GParamSpec* pspec,
                              gpointer self)
 {
-#line 117 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 117 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	__lambda9_ ((DafCoreSelectionInList*) self);
 #line 507 "SelectionInList.c"
 }
@@ -536,105 +536,105 @@ daf_core_selection_in_list_construct_with_list_model (GType object_type,
 	DafCoreValueHolder* _tmp17_;
 	DafCoreIValueModel* _tmp18_;
 	gchar* _tmp19_;
-#line 82 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 82 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_return_val_if_fail (list_model != NULL, NULL);
-#line 82 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 82 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	self = (DafCoreSelectionInList*) daf_core_abstract_value_holder_construct (object_type);
-#line 82 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 82 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	self->priv->g_type = g_type;
-#line 82 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 82 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	self->priv->g_dup_func = g_dup_func;
-#line 82 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 82 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	self->priv->g_destroy_func = g_destroy_func;
-#line 84 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 84 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp0_ = _g_object_ref0 (list_model);
-#line 84 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 84 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_g_object_unref0 (self->priv->list_model);
-#line 84 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 84 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	self->priv->list_model = _tmp0_;
-#line 85 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 85 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp1_ = self->priv->list_model;
-#line 85 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 85 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_signal_connect_object (_tmp1_, "list-changed", (GCallback) ___lambda4__daf_core_ilist_model_list_changed, self, 0);
-#line 92 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 92 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp2_ = self->priv->list_model;
-#line 92 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 92 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_signal_connect_object (_tmp2_, "item-changed", (GCallback) ___lambda5__daf_core_ilist_model_item_changed, self, 0);
-#line 96 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 96 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp3_ = self->priv->list_model;
-#line 96 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 96 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_signal_connect_object (_tmp3_, "item-added", (GCallback) ___lambda6__daf_core_ilist_model_item_added, self, 0);
-#line 101 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 101 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp4_ = self->priv->list_model;
-#line 101 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 101 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_signal_connect_object (_tmp4_, "item-removed", (GCallback) ___lambda7__daf_core_ilist_model_item_removed, self, 0);
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp5_ = daf_core_value_holder_new (NULL);
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp6_ = _tmp5_;
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	daf_core_selection_in_list_set_list_holder (self, (DafCoreIValueModel*) _tmp6_);
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_g_object_unref0 (_tmp6_);
-#line 108 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 108 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp7_ = self->priv->_list_holder;
-#line 108 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 108 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp8_ = g_new0 (GValue, 1);
-#line 108 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 108 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_value_init (_tmp8_, DAF_CORE_TYPE_ILIST_MODEL);
-#line 108 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 108 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_value_set_object (_tmp8_, list_model);
-#line 108 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 108 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	daf_core_ivalue_model_set_val (_tmp7_, _tmp8_);
-#line 108 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 108 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	__vala_GValue_free0 (_tmp8_);
-#line 109 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 109 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp9_ = self->priv->_list_holder;
-#line 109 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 109 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp10_ = g_strconcat ("notify::", DAF_CORE_IVALUE_MODEL_PROP_NAME, NULL);
-#line 109 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 109 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_signal_connect_object ((GObject*) _tmp9_, _tmp10_, (GCallback) ___lambda8__g_object_notify, self, 0);
-#line 109 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 109 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_g_free0 (_tmp10_);
-#line 114 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 114 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp11_ = daf_core_value_holder_new (NULL);
-#line 114 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 114 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp12_ = _tmp11_;
-#line 114 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 114 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	daf_core_selection_in_list_set_selection_holder (self, (DafCoreIValueModel*) _tmp12_);
-#line 114 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 114 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_g_object_unref0 (_tmp12_);
-#line 116 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 116 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp13_ = daf_core_selection_in_list_get_selection_index (self);
-#line 116 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 116 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp14_ = _tmp13_;
-#line 116 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 116 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp15_ = g_new0 (GValue, 1);
-#line 116 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 116 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_value_init (_tmp15_, G_TYPE_INT);
-#line 116 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 116 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_value_set_int (_tmp15_, _tmp14_);
-#line 116 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 116 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp16_ = daf_core_value_holder_new (_tmp15_);
-#line 116 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 116 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp17_ = _tmp16_;
-#line 116 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 116 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	daf_core_selection_in_list_set_selection_index_holder (self, (DafCoreIValueModel*) _tmp17_);
-#line 116 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 116 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_g_object_unref0 (_tmp17_);
-#line 116 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 116 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	__vala_GValue_free0 (_tmp15_);
-#line 117 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 117 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp18_ = self->priv->_selection_index_holder;
-#line 117 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 117 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp19_ = g_strconcat ("notify::", DAF_CORE_IVALUE_MODEL_PROP_NAME, NULL);
-#line 117 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 117 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_signal_connect_object ((GObject*) _tmp18_, _tmp19_, (GCallback) ___lambda9__g_object_notify, self, 0);
-#line 117 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 117 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_g_free0 (_tmp19_);
-#line 122 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 122 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	daf_core_selection_in_list_set_selection_index (self, DAF_CORE_SELECTION_IN_LIST_NO_SELECTION);
-#line 82 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 82 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	return self;
 #line 639 "SelectionInList.c"
 }
@@ -646,7 +646,7 @@ daf_core_selection_in_list_new_with_list_model (GType g_type,
                                                 GDestroyNotify g_destroy_func,
                                                 DafCoreIListModel* list_model)
 {
-#line 82 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 82 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	return daf_core_selection_in_list_construct_with_list_model (DAF_CORE_TYPE_SELECTION_IN_LIST, g_type, g_dup_func, g_destroy_func, list_model);
 #line 651 "SelectionInList.c"
 }
@@ -655,7 +655,7 @@ daf_core_selection_in_list_new_with_list_model (GType g_type,
 static GValue*
 _g_value_dup (GValue* self)
 {
-#line 146 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 146 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	return g_boxed_copy (G_TYPE_VALUE, self);
 #line 660 "SelectionInList.c"
 }
@@ -664,7 +664,7 @@ _g_value_dup (GValue* self)
 static gpointer
 __g_value_dup0 (gpointer self)
 {
-#line 146 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 146 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	return self ? _g_value_dup (self) : NULL;
 #line 669 "SelectionInList.c"
 }
@@ -681,41 +681,41 @@ daf_core_selection_in_list_get_generic_selection_value (DafCoreSelectionInList* 
 	GValue* _result_ = NULL;
 	GType _tmp3_;
 	GValue* _tmp32_;
-#line 130 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 130 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 132 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 132 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	type = self->priv->g_type;
-#line 133 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 133 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp0_ = self->priv->list_model;
-#line 133 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 133 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_debug ("SelectionInList.vala:133: sin: get_generic_selection_value: %d, and si" \
 "ze: %d", selection_index, daf_core_ilist_model_get_length (_tmp0_));
-#line 135 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 135 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	if (selection_index == DAF_CORE_SELECTION_IN_LIST_NO_SELECTION) {
-#line 135 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 135 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		_tmp1_ = TRUE;
 #line 696 "SelectionInList.c"
 	} else {
 		DafCoreIListModel* _tmp2_;
-#line 135 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 135 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		_tmp2_ = self->priv->list_model;
-#line 135 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 135 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		_tmp1_ = daf_core_ilist_model_get_length (_tmp2_) == 0;
 #line 703 "SelectionInList.c"
 	}
-#line 135 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 135 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	if (_tmp1_) {
-#line 136 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 136 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		result = NULL;
-#line 136 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 136 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		return result;
 #line 711 "SelectionInList.c"
 	}
-#line 140 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 140 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_result_ = NULL;
-#line 142 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 142 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp3_ = type;
-#line 142 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 142 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	if (G_TYPE_IS_OBJECT (_tmp3_)) {
 #line 719 "SelectionInList.c"
 		GValue* retval = NULL;
@@ -728,41 +728,41 @@ daf_core_selection_in_list_get_generic_selection_value (DafCoreSelectionInList* 
 		GValue* _tmp10_ = NULL;
 		GValue* _tmp11_;
 		GValue* _tmp12_;
-#line 146 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 146 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		g_value_init (&_tmp4_, G_TYPE_OBJECT);
-#line 146 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 146 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		_tmp5_ = _tmp4_;
-#line 146 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 146 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		_tmp6_ = __g_value_dup0 (&_tmp5_);
-#line 146 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 146 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		_tmp7_ = _tmp6_;
-#line 146 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 146 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		G_IS_VALUE (&_tmp5_) ? (g_value_unset (&_tmp5_), NULL) : NULL;
-#line 146 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 146 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		retval = _tmp7_;
-#line 147 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 147 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		_tmp8_ = self->priv->list_model;
-#line 147 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 147 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		_tmp9_ = daf_core_ilist_model_get_at (G_TYPE_CHECK_INSTANCE_CAST (_tmp8_, DAF_CORE_TYPE_ILIST_MODEL, DafCoreIListModel), selection_index);
-#line 147 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 147 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		_tmp10_ = g_new0 (GValue, 1);
-#line 147 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 147 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		g_value_init (_tmp10_, G_TYPE_OBJECT);
-#line 147 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 147 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		g_value_take_object (_tmp10_, (GObject*) _tmp9_);
-#line 147 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 147 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		__vala_GValue_free0 (retval);
-#line 147 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 147 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		retval = _tmp10_;
-#line 148 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 148 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		_tmp11_ = retval;
-#line 148 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 148 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		_tmp12_ = __g_value_dup0 (_tmp11_);
-#line 148 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 148 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		__vala_GValue_free0 (_result_);
-#line 148 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 148 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		_result_ = _tmp12_;
-#line 142 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 142 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		__vala_GValue_free0 (retval);
 #line 766 "SelectionInList.c"
 	} else {
@@ -770,23 +770,23 @@ daf_core_selection_in_list_get_generic_selection_value (DafCoreSelectionInList* 
 		const gchar* _tmp14_;
 		const gchar* _tmp15_;
 		GQuark _tmp17_ = 0U;
-#line 150 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 150 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		static GQuark _tmp16_label0 = 0;
-#line 150 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 150 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		static GQuark _tmp16_label1 = 0;
-#line 150 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 150 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		static GQuark _tmp16_label2 = 0;
-#line 150 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 150 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		_tmp13_ = type;
-#line 150 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 150 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		_tmp14_ = g_type_name (_tmp13_);
-#line 150 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 150 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		_tmp15_ = _tmp14_;
-#line 150 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 150 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		_tmp17_ = (NULL == _tmp15_) ? 0 : g_quark_from_string (_tmp15_);
-#line 150 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 150 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		if (_tmp17_ == ((0 != _tmp16_label0) ? _tmp16_label0 : (_tmp16_label0 = g_quark_from_static_string ("gint")))) {
-#line 150 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 150 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 			switch (0) {
 #line 790 "SelectionInList.c"
 				default:
@@ -794,27 +794,27 @@ daf_core_selection_in_list_get_generic_selection_value (DafCoreSelectionInList* 
 					DafCoreIListModel* _tmp18_;
 					gpointer _tmp19_;
 					GValue* _tmp20_ = NULL;
-#line 152 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 152 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 					_tmp18_ = self->priv->list_model;
-#line 152 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 152 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 					_tmp19_ = daf_core_ilist_model_get_at (G_TYPE_CHECK_INSTANCE_CAST (_tmp18_, DAF_CORE_TYPE_ILIST_MODEL, DafCoreIListModel), selection_index);
-#line 152 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 152 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 					_tmp20_ = g_new0 (GValue, 1);
-#line 152 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 152 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 					g_value_init (_tmp20_, G_TYPE_INT);
-#line 152 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 152 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 					g_value_set_int (_tmp20_, (gint) ((gintptr) _tmp19_));
-#line 152 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 152 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 					__vala_GValue_free0 (_result_);
-#line 152 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 152 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 					_result_ = _tmp20_;
-#line 153 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 153 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 					break;
 #line 812 "SelectionInList.c"
 				}
 			}
 		} else if (_tmp17_ == ((0 != _tmp16_label1) ? _tmp16_label1 : (_tmp16_label1 = g_quark_from_static_string ("guint")))) {
-#line 150 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 150 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 			switch (0) {
 #line 818 "SelectionInList.c"
 				default:
@@ -822,27 +822,27 @@ daf_core_selection_in_list_get_generic_selection_value (DafCoreSelectionInList* 
 					DafCoreIListModel* _tmp21_;
 					gpointer _tmp22_;
 					GValue* _tmp23_ = NULL;
-#line 155 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 155 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 					_tmp21_ = self->priv->list_model;
-#line 155 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 155 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 					_tmp22_ = daf_core_ilist_model_get_at (G_TYPE_CHECK_INSTANCE_CAST (_tmp21_, DAF_CORE_TYPE_ILIST_MODEL, DafCoreIListModel), selection_index);
-#line 155 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 155 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 					_tmp23_ = g_new0 (GValue, 1);
-#line 155 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 155 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 					g_value_init (_tmp23_, G_TYPE_UINT);
-#line 155 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 155 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 					g_value_set_uint (_tmp23_, (guint) ((guintptr) _tmp22_));
-#line 155 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 155 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 					__vala_GValue_free0 (_result_);
-#line 155 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 155 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 					_result_ = _tmp23_;
-#line 156 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 156 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 					break;
 #line 840 "SelectionInList.c"
 				}
 			}
 		} else if (_tmp17_ == ((0 != _tmp16_label2) ? _tmp16_label2 : (_tmp16_label2 = g_quark_from_static_string ("gchararray")))) {
-#line 150 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 150 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 			switch (0) {
 #line 846 "SelectionInList.c"
 				default:
@@ -853,46 +853,46 @@ daf_core_selection_in_list_get_generic_selection_value (DafCoreSelectionInList* 
 					FILE* _tmp27_;
 					GValue* _tmp28_;
 					const gchar* _tmp29_;
-#line 158 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 158 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 					_tmp24_ = self->priv->list_model;
-#line 158 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 158 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 					_tmp25_ = daf_core_ilist_model_get_at (G_TYPE_CHECK_INSTANCE_CAST (_tmp24_, DAF_CORE_TYPE_ILIST_MODEL, DafCoreIListModel), selection_index);
-#line 158 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 158 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 					_tmp26_ = g_new0 (GValue, 1);
-#line 158 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 158 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 					g_value_init (_tmp26_, G_TYPE_STRING);
-#line 158 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 158 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 					g_value_take_string (_tmp26_, (gchar*) _tmp25_);
-#line 158 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 158 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 					__vala_GValue_free0 (_result_);
-#line 158 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 158 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 					_result_ = _tmp26_;
-#line 159 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 159 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 					_tmp27_ = stdout;
-#line 159 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 159 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 					_tmp28_ = _result_;
-#line 159 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 159 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 					_tmp29_ = g_value_get_string (_tmp28_);
-#line 159 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 159 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 					fprintf (_tmp27_, "Gchararray Index: \"%s\"\n", _tmp29_);
-#line 160 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 160 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 					break;
 #line 879 "SelectionInList.c"
 				}
 			}
 		} else {
-#line 150 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 150 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 			switch (0) {
 #line 885 "SelectionInList.c"
 				default:
 				{
 					GType _tmp30_;
 					const gchar* _tmp31_;
-#line 162 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 162 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 					_tmp30_ = type;
-#line 162 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 162 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 					_tmp31_ = g_type_name (_tmp30_);
-#line 162 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 162 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 					g_error ("SelectionInList.vala:162: Value type \"%s\" is currently not supported" \
 "\n", _tmp31_);
 #line 896 "SelectionInList.c"
@@ -900,13 +900,13 @@ daf_core_selection_in_list_get_generic_selection_value (DafCoreSelectionInList* 
 			}
 		}
 	}
-#line 165 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 165 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp32_ = _result_;
-#line 165 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 165 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_signal_emit_by_name ((DafCoreIListModel*) self, "item-changed", selection_index, _tmp32_);
-#line 166 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 166 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	result = _result_;
-#line 166 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 166 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	return result;
 #line 909 "SelectionInList.c"
 }
@@ -920,48 +920,48 @@ daf_core_selection_in_list_get_generic_selection_index (DafCoreSelectionInList* 
 	gint _result_ = 0;
 	GType type = 0UL;
 	GType _tmp0_;
-#line 169 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 169 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_return_val_if_fail (self != NULL, 0);
-#line 171 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 171 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_result_ = DAF_CORE_SELECTION_IN_LIST_NO_SELECTION;
-#line 173 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 173 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	if (value == NULL) {
-#line 174 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 174 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		result = _result_;
-#line 174 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 174 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		return result;
 #line 931 "SelectionInList.c"
 	}
-#line 177 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 177 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	type = self->priv->g_type;
-#line 179 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 179 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp0_ = type;
-#line 179 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 179 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	if (G_TYPE_IS_OBJECT (_tmp0_)) {
 #line 939 "SelectionInList.c"
 		GObject* object = NULL;
 		GObject* _tmp1_;
 		GObject* _tmp2_;
-#line 180 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 180 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		_tmp1_ = _g_object_ref0 (g_value_get_object (value));
-#line 180 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 180 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		object = _tmp1_;
-#line 181 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 181 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		_tmp2_ = object;
-#line 181 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 181 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		if (_tmp2_ != NULL) {
 #line 951 "SelectionInList.c"
 			DafCoreIListModel* _tmp3_;
 			GObject* _tmp4_;
-#line 182 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 182 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 			_tmp3_ = self->priv->list_model;
-#line 182 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 182 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 			_tmp4_ = object;
-#line 182 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 182 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 			_result_ = daf_core_ilist_model_index_of (G_TYPE_CHECK_INSTANCE_CAST (_tmp3_, DAF_CORE_TYPE_ILIST_MODEL, DafCoreIListModel), _tmp4_);
 #line 960 "SelectionInList.c"
 		}
-#line 179 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 179 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		_g_object_unref0 (object);
 #line 964 "SelectionInList.c"
 	} else {
@@ -969,85 +969,85 @@ daf_core_selection_in_list_get_generic_selection_index (DafCoreSelectionInList* 
 		const gchar* _tmp6_;
 		const gchar* _tmp7_;
 		GQuark _tmp9_ = 0U;
-#line 186 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 186 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		static GQuark _tmp8_label0 = 0;
-#line 186 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 186 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		static GQuark _tmp8_label1 = 0;
-#line 186 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 186 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		static GQuark _tmp8_label2 = 0;
-#line 186 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 186 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		_tmp5_ = type;
-#line 186 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 186 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		_tmp6_ = g_type_name (_tmp5_);
-#line 186 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 186 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		_tmp7_ = _tmp6_;
-#line 186 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 186 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		_tmp9_ = (NULL == _tmp7_) ? 0 : g_quark_from_string (_tmp7_);
-#line 186 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 186 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		if (_tmp9_ == ((0 != _tmp8_label0) ? _tmp8_label0 : (_tmp8_label0 = g_quark_from_static_string ("gint")))) {
-#line 186 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 186 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 			switch (0) {
 #line 988 "SelectionInList.c"
 				default:
 				{
 					DafCoreIListModel* _tmp10_;
-#line 188 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 188 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 					_tmp10_ = self->priv->list_model;
-#line 188 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 188 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 					_result_ = daf_core_ilist_model_index_of (G_TYPE_CHECK_INSTANCE_CAST (_tmp10_, DAF_CORE_TYPE_ILIST_MODEL, DafCoreIListModel), g_value_get_int (value));
-#line 189 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 189 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 					break;
 #line 998 "SelectionInList.c"
 				}
 			}
 		} else if (_tmp9_ == ((0 != _tmp8_label1) ? _tmp8_label1 : (_tmp8_label1 = g_quark_from_static_string ("guint")))) {
-#line 186 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 186 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 			switch (0) {
 #line 1004 "SelectionInList.c"
 				default:
 				{
 					DafCoreIListModel* _tmp11_;
-#line 191 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 191 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 					_tmp11_ = self->priv->list_model;
-#line 191 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 191 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 					_result_ = daf_core_ilist_model_index_of (G_TYPE_CHECK_INSTANCE_CAST (_tmp11_, DAF_CORE_TYPE_ILIST_MODEL, DafCoreIListModel), g_value_get_uint (value));
-#line 192 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 192 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 					break;
 #line 1014 "SelectionInList.c"
 				}
 			}
 		} else if (_tmp9_ == ((0 != _tmp8_label2) ? _tmp8_label2 : (_tmp8_label2 = g_quark_from_static_string ("gchararray")))) {
-#line 186 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 186 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 			switch (0) {
 #line 1020 "SelectionInList.c"
 				default:
 				{
 					DafCoreIListModel* _tmp12_;
-#line 194 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 194 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 					_tmp12_ = self->priv->list_model;
-#line 194 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 194 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 					_result_ = daf_core_ilist_model_index_of (G_TYPE_CHECK_INSTANCE_CAST (_tmp12_, DAF_CORE_TYPE_ILIST_MODEL, DafCoreIListModel), g_value_get_string (value));
-#line 195 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 195 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 					break;
 #line 1030 "SelectionInList.c"
 				}
 			}
 		} else {
-#line 186 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 186 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 			switch (0) {
 #line 1036 "SelectionInList.c"
 				default:
 				{
-#line 197 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 197 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 					break;
 #line 1041 "SelectionInList.c"
 				}
 			}
 		}
 	}
-#line 200 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 200 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	result = _result_;
-#line 200 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 200 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	return result;
 #line 1050 "SelectionInList.c"
 }
@@ -1058,11 +1058,11 @@ daf_core_selection_in_list_get_list_model_size (DafCoreSelectionInList* self,
                                                 gconstpointer list_model)
 {
 	gint result = 0;
-#line 207 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 207 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_return_val_if_fail (self != NULL, 0);
-#line 208 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 208 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	result = daf_core_ilist_model_get_length (G_TYPE_CHECK_INSTANCE_CAST (list_model, DAF_CORE_TYPE_ILIST_MODEL, DafCoreIListModel));
-#line 208 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 208 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	return result;
 #line 1065 "SelectionInList.c"
 }
@@ -1075,13 +1075,13 @@ daf_core_selection_in_list_real_index_of (DafCoreIListModel* base,
 	DafCoreSelectionInList * self;
 	gint result = 0;
 	DafCoreIListModel* _tmp0_;
-#line 211 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 211 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	self = (DafCoreSelectionInList*) base;
-#line 212 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 212 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp0_ = self->priv->list_model;
-#line 212 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 212 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	result = daf_core_ilist_model_index_of (_tmp0_, item);
-#line 212 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 212 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	return result;
 #line 1084 "SelectionInList.c"
 }
@@ -1093,13 +1093,13 @@ daf_core_selection_in_list_getit (DafCoreSelectionInList* self,
 {
 	GValue* result = NULL;
 	GValue* _tmp0_;
-#line 215 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 215 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 216 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 216 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp0_ = daf_core_selection_in_list_get_generic_selection_value (self, index);
-#line 216 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 216 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	result = _tmp0_;
-#line 216 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 216 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	return result;
 #line 1102 "SelectionInList.c"
 }
@@ -1108,9 +1108,9 @@ daf_core_selection_in_list_getit (DafCoreSelectionInList* self,
 void
 daf_core_selection_in_list_clear_selection (DafCoreSelectionInList* self)
 {
-#line 219 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 219 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_return_if_fail (self != NULL);
-#line 220 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 220 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	daf_core_selection_in_list_set_selection_index (self, DAF_CORE_SELECTION_IN_LIST_NO_SELECTION);
 #line 1113 "SelectionInList.c"
 }
@@ -1124,15 +1124,15 @@ daf_core_selection_in_list_real_get_at (DafCoreIListModel* base,
 	gpointer result = NULL;
 	DafCoreIListModel* _tmp0_;
 	gpointer _tmp1_;
-#line 223 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 223 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	self = (DafCoreSelectionInList*) base;
-#line 224 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 224 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp0_ = self->priv->list_model;
-#line 224 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 224 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp1_ = daf_core_ilist_model_get_at (_tmp0_, index);
-#line 224 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 224 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	result = _tmp1_;
-#line 224 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 224 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	return result;
 #line 1135 "SelectionInList.c"
 }
@@ -1149,34 +1149,34 @@ daf_core_selection_in_list_real_set_at (DafCoreIListModel* base,
 	gpointer _tmp2_;
 	gpointer _tmp3_;
 	gboolean _tmp4_;
-#line 228 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 228 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	self = (DafCoreSelectionInList*) base;
-#line 228 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 228 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp0_ = daf_core_selection_in_list_get_size (self);
-#line 228 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 228 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp1_ = _tmp0_;
-#line 228 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 228 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_vala_return_if_fail ((index >= 0) && (index < _tmp1_), "index >= 0 && index < size");
-#line 231 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 231 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp2_ = daf_core_ilist_model_get_at ((DafCoreIListModel*) self, index);
-#line 231 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 231 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp3_ = _tmp2_;
-#line 231 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 231 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp4_ = _tmp3_ != value;
-#line 231 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 231 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	((_tmp3_ == NULL) || (self->priv->g_destroy_func == NULL)) ? NULL : (_tmp3_ = (self->priv->g_destroy_func (_tmp3_), NULL));
-#line 231 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 231 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	if (_tmp4_) {
 #line 1168 "SelectionInList.c"
 		DafCoreIListModel* _tmp5_;
 		DafCoreIListModel* _tmp6_;
-#line 232 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 232 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		_tmp5_ = self->priv->list_model;
-#line 232 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 232 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		daf_core_ilist_model_set_at (_tmp5_, index, value);
-#line 233 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 233 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		_tmp6_ = self->priv->list_model;
-#line 233 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 233 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		g_signal_emit_by_name (_tmp6_, "item-changed", index, value);
 #line 1179 "SelectionInList.c"
 	}
@@ -1192,30 +1192,30 @@ daf_core_selection_in_list_real_add (DafCoreIListModel* base,
 	gboolean _result_ = FALSE;
 	DafCoreIListModel* _tmp0_;
 	gboolean _tmp1_;
-#line 237 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 237 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	self = (DafCoreSelectionInList*) base;
-#line 239 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 239 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp0_ = self->priv->list_model;
-#line 239 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 239 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_result_ = daf_core_ilist_model_add (_tmp0_, item);
-#line 241 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 241 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp1_ = _result_;
-#line 241 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 241 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	if (_tmp1_ == TRUE) {
 #line 1203 "SelectionInList.c"
 		DafCoreIListModel* _tmp2_;
 		DafCoreIListModel* _tmp3_;
-#line 242 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 242 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		_tmp2_ = self->priv->list_model;
-#line 242 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 242 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		_tmp3_ = self->priv->list_model;
-#line 242 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 242 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		g_signal_emit_by_name (_tmp2_, "item-added", daf_core_ilist_model_get_length (_tmp3_));
 #line 1212 "SelectionInList.c"
 	}
-#line 244 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 244 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	result = _result_;
-#line 244 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 244 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	return result;
 #line 1218 "SelectionInList.c"
 }
@@ -1230,27 +1230,27 @@ daf_core_selection_in_list_real_add_all (DafCoreIListModel* base,
 	gboolean _result_ = FALSE;
 	DafCoreIListModel* _tmp0_;
 	gboolean _tmp1_;
-#line 247 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 247 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	self = (DafCoreSelectionInList*) base;
-#line 247 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 247 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_return_val_if_fail (items != NULL, FALSE);
-#line 248 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 248 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp0_ = self->priv->list_model;
-#line 248 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 248 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_result_ = daf_core_ilist_model_add_all (_tmp0_, items);
-#line 249 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 249 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp1_ = _result_;
-#line 249 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 249 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	if (_tmp1_ == TRUE) {
 #line 1243 "SelectionInList.c"
 		{
 			GeeIterator* _item_it = NULL;
 			GeeIterator* _tmp2_;
-#line 250 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 250 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 			_tmp2_ = gee_iterable_iterator ((GeeIterable*) items);
-#line 250 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 250 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 			_item_it = _tmp2_;
-#line 250 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 250 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 			while (TRUE) {
 #line 1253 "SelectionInList.c"
 				GeeIterator* _tmp3_;
@@ -1260,40 +1260,40 @@ daf_core_selection_in_list_real_add_all (DafCoreIListModel* base,
 				DafCoreIListModel* _tmp6_;
 				DafCoreIListModel* _tmp7_;
 				gconstpointer _tmp8_;
-#line 250 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 250 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 				_tmp3_ = _item_it;
-#line 250 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 250 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 				if (!gee_iterator_next (_tmp3_)) {
-#line 250 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 250 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 					break;
 #line 1267 "SelectionInList.c"
 				}
-#line 250 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 250 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 				_tmp4_ = _item_it;
-#line 250 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 250 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 				_tmp5_ = gee_iterator_get (_tmp4_);
-#line 250 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 250 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 				item = _tmp5_;
-#line 251 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 251 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 				_tmp6_ = self->priv->list_model;
-#line 251 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 251 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 				_tmp7_ = self->priv->list_model;
-#line 251 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 251 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 				_tmp8_ = item;
-#line 251 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 251 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 				g_signal_emit_by_name (_tmp6_, "item-added", daf_core_ilist_model_index_of (_tmp7_, _tmp8_));
-#line 250 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 250 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 				((item == NULL) || (self->priv->g_destroy_func == NULL)) ? NULL : (item = (self->priv->g_destroy_func (item), NULL));
 #line 1285 "SelectionInList.c"
 			}
-#line 250 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 250 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 			_g_object_unref0 (_item_it);
 #line 1289 "SelectionInList.c"
 		}
 	}
-#line 254 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 254 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	result = _result_;
-#line 254 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 254 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	return result;
 #line 1296 "SelectionInList.c"
 }
@@ -1306,11 +1306,11 @@ daf_core_selection_in_list_real_insert (DafCoreIListModel* base,
 {
 	DafCoreSelectionInList * self;
 	DafCoreIListModel* _tmp0_;
-#line 258 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 258 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	self = (DafCoreSelectionInList*) base;
-#line 259 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 259 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp0_ = self->priv->list_model;
-#line 259 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 259 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	daf_core_ilist_model_insert (_tmp0_, index, item);
 #line 1313 "SelectionInList.c"
 }
@@ -1327,25 +1327,25 @@ daf_core_selection_in_list_real_remove (DafCoreIListModel* base,
 	gboolean _result_ = FALSE;
 	DafCoreIListModel* _tmp1_;
 	gboolean _tmp2_;
-#line 263 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 263 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	self = (DafCoreSelectionInList*) base;
-#line 265 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 265 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp0_ = self->priv->list_model;
-#line 265 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 265 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	index = daf_core_ilist_model_index_of (_tmp0_, item);
-#line 266 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 266 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp1_ = self->priv->list_model;
-#line 266 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 266 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_result_ = daf_core_ilist_model_remove (_tmp1_, item);
-#line 269 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 269 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp2_ = _result_;
-#line 269 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 269 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	if (_tmp2_ == TRUE) {
 #line 1342 "SelectionInList.c"
 	}
-#line 272 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 272 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	result = _result_;
-#line 272 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 272 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	return result;
 #line 1348 "SelectionInList.c"
 }
@@ -1358,28 +1358,28 @@ daf_core_selection_in_list_real_remove_at (DafCoreIListModel* base,
 	DafCoreSelectionInList * self;
 	gpointer result = NULL;
 	gint _tmp0_;
-#line 275 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 275 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	self = (DafCoreSelectionInList*) base;
-#line 276 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 276 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp0_ = index;
-#line 276 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 276 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	if ((DAF_CORE_SELECTION_IN_LIST_NO_SELECTION < _tmp0_) && (_tmp0_ < daf_core_ilist_model_get_length ((DafCoreIListModel*) self))) {
 #line 1365 "SelectionInList.c"
 		DafCoreIListModel* _tmp1_;
 		gpointer _tmp2_;
-#line 277 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 277 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		_tmp1_ = self->priv->list_model;
-#line 277 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 277 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		_tmp2_ = daf_core_ilist_model_remove_at (_tmp1_, index);
-#line 277 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 277 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		result = _tmp2_;
-#line 277 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 277 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		return result;
 #line 1376 "SelectionInList.c"
 	} else {
-#line 279 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 279 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		result = NULL;
-#line 279 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 279 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		return result;
 #line 1382 "SelectionInList.c"
 	}
@@ -1391,11 +1391,11 @@ daf_core_selection_in_list_real_clear (DafCoreIListModel* base)
 {
 	DafCoreSelectionInList * self;
 	DafCoreIListModel* _tmp0_;
-#line 284 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 284 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	self = (DafCoreSelectionInList*) base;
-#line 289 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 289 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp0_ = self->priv->list_model;
-#line 289 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 289 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	daf_core_ilist_model_clear (_tmp0_);
 #line 1398 "SelectionInList.c"
 }
@@ -1407,13 +1407,13 @@ daf_core_selection_in_list_real_get_length (DafCoreIListModel* base)
 	DafCoreSelectionInList * self;
 	gint result = 0;
 	DafCoreIListModel* _tmp0_;
-#line 292 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 292 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	self = (DafCoreSelectionInList*) base;
-#line 293 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 293 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp0_ = self->priv->list_model;
-#line 293 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 293 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	result = daf_core_ilist_model_get_length (_tmp0_);
-#line 293 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 293 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	return result;
 #line 1416 "SelectionInList.c"
 }
@@ -1426,15 +1426,15 @@ daf_core_selection_in_list_construct (GType object_type,
                                       GDestroyNotify g_destroy_func)
 {
 	DafCoreSelectionInList * self = NULL;
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	self = (DafCoreSelectionInList*) daf_core_abstract_value_holder_construct (object_type);
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	self->priv->g_type = g_type;
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	self->priv->g_dup_func = g_dup_func;
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	self->priv->g_destroy_func = g_destroy_func;
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	return self;
 #line 1437 "SelectionInList.c"
 }
@@ -1445,7 +1445,7 @@ daf_core_selection_in_list_new (GType g_type,
                                 GBoxedCopyFunc g_dup_func,
                                 GDestroyNotify g_destroy_func)
 {
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	return daf_core_selection_in_list_construct (DAF_CORE_TYPE_SELECTION_IN_LIST, g_type, g_dup_func, g_destroy_func);
 #line 1448 "SelectionInList.c"
 }
@@ -1456,13 +1456,13 @@ daf_core_selection_in_list_get_list_holder (DafCoreSelectionInList* self)
 {
 	DafCoreIValueModel* result;
 	DafCoreIValueModel* _tmp0_;
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp0_ = self->priv->_list_holder;
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	result = _tmp0_;
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	return result;
 #line 1465 "SelectionInList.c"
 }
@@ -1472,19 +1472,19 @@ void
 daf_core_selection_in_list_set_list_holder (DafCoreSelectionInList* self,
                                             DafCoreIValueModel* value)
 {
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_return_if_fail (self != NULL);
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	if (daf_core_selection_in_list_get_list_holder (self) != value) {
 #line 1477 "SelectionInList.c"
 		DafCoreIValueModel* _tmp0_;
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		_tmp0_ = _g_object_ref0 (value);
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		_g_object_unref0 (self->priv->_list_holder);
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		self->priv->_list_holder = _tmp0_;
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		g_object_notify_by_pspec ((GObject *) self, daf_core_selection_in_list_properties[DAF_CORE_SELECTION_IN_LIST_LIST_HOLDER_PROPERTY]);
 #line 1487 "SelectionInList.c"
 	}
@@ -1496,13 +1496,13 @@ daf_core_selection_in_list_get_selection_holder (DafCoreSelectionInList* self)
 {
 	DafCoreIValueModel* result;
 	DafCoreIValueModel* _tmp0_;
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp0_ = self->priv->_selection_holder;
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	result = _tmp0_;
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	return result;
 #line 1505 "SelectionInList.c"
 }
@@ -1512,19 +1512,19 @@ void
 daf_core_selection_in_list_set_selection_holder (DafCoreSelectionInList* self,
                                                  DafCoreIValueModel* value)
 {
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_return_if_fail (self != NULL);
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	if (daf_core_selection_in_list_get_selection_holder (self) != value) {
 #line 1517 "SelectionInList.c"
 		DafCoreIValueModel* _tmp0_;
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		_tmp0_ = _g_object_ref0 (value);
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		_g_object_unref0 (self->priv->_selection_holder);
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		self->priv->_selection_holder = _tmp0_;
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		g_object_notify_by_pspec ((GObject *) self, daf_core_selection_in_list_properties[DAF_CORE_SELECTION_IN_LIST_SELECTION_HOLDER_PROPERTY]);
 #line 1527 "SelectionInList.c"
 	}
@@ -1536,13 +1536,13 @@ daf_core_selection_in_list_get_selection_index_holder (DafCoreSelectionInList* s
 {
 	DafCoreIValueModel* result;
 	DafCoreIValueModel* _tmp0_;
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp0_ = self->priv->_selection_index_holder;
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	result = _tmp0_;
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	return result;
 #line 1545 "SelectionInList.c"
 }
@@ -1552,19 +1552,19 @@ void
 daf_core_selection_in_list_set_selection_index_holder (DafCoreSelectionInList* self,
                                                        DafCoreIValueModel* value)
 {
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_return_if_fail (self != NULL);
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	if (daf_core_selection_in_list_get_selection_index_holder (self) != value) {
 #line 1557 "SelectionInList.c"
 		DafCoreIValueModel* _tmp0_;
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		_tmp0_ = _g_object_ref0 (value);
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		_g_object_unref0 (self->priv->_selection_index_holder);
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		self->priv->_selection_index_holder = _tmp0_;
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		g_object_notify_by_pspec ((GObject *) self, daf_core_selection_in_list_properties[DAF_CORE_SELECTION_IN_LIST_SELECTION_INDEX_HOLDER_PROPERTY]);
 #line 1567 "SelectionInList.c"
 	}
@@ -1576,13 +1576,13 @@ daf_core_selection_in_list_get_selection_index (DafCoreSelectionInList* self)
 {
 	gint result;
 	gint _tmp0_;
-#line 39 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 39 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_return_val_if_fail (self != NULL, 0);
-#line 40 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 40 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp0_ = self->priv->_selection_index;
-#line 40 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 40 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	result = _tmp0_;
-#line 40 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 40 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	return result;
 #line 1585 "SelectionInList.c"
 }
@@ -1599,45 +1599,45 @@ daf_core_selection_in_list_set_selection_index (DafCoreSelectionInList* self,
 	DafCoreIValueModel* _tmp4_;
 	gint _tmp5_;
 	GValue* _tmp6_ = NULL;
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_return_if_fail (self != NULL);
-#line 43 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 43 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp0_ = daf_core_selection_in_list_get_size (self);
-#line 43 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 43 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp1_ = _tmp0_;
-#line 43 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 43 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp2_ = value;
-#line 43 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 43 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	if ((DAF_CORE_SELECTION_IN_LIST_NO_SELECTION <= _tmp2_) && (_tmp2_ <= _tmp1_)) {
-#line 44 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 44 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		self->priv->_selection_index = value;
 #line 1612 "SelectionInList.c"
 	} else {
-#line 46 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 46 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		self->priv->_selection_index = DAF_CORE_SELECTION_IN_LIST_NO_SELECTION;
 #line 1616 "SelectionInList.c"
 	}
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp3_ = self->priv->_selection_index;
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_debug ("SelectionInList.vala:48: Selection index is Set to %d", _tmp3_);
-#line 49 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 49 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp4_ = self->priv->_selection_index_holder;
-#line 49 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 49 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp5_ = self->priv->_selection_index;
-#line 49 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 49 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp6_ = g_new0 (GValue, 1);
-#line 49 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 49 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_value_init (_tmp6_, G_TYPE_INT);
-#line 49 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 49 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_value_set_int (_tmp6_, _tmp5_);
-#line 49 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 49 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	daf_core_ivalue_model_set_val (_tmp4_, _tmp6_);
-#line 49 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 49 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	__vala_GValue_free0 (_tmp6_);
-#line 50 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 50 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_object_notify ((GObject*) self, DAF_CORE_IVALUE_MODEL_PROP_NAME);
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_object_notify_by_pspec ((GObject *) self, daf_core_selection_in_list_properties[DAF_CORE_SELECTION_IN_LIST_SELECTION_INDEX_PROPERTY]);
 #line 1640 "SelectionInList.c"
 }
@@ -1648,17 +1648,17 @@ daf_core_selection_in_list_get_selection (DafCoreSelectionInList* self)
 {
 	GValue* result;
 	GError * _inner_error_ = NULL;
-#line 55 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 55 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_return_val_if_fail (self != NULL, NULL);
 #line 1651 "SelectionInList.c"
 	{
 		gint _tmp0_;
 		gint _tmp1_;
-#line 56 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 56 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		_tmp0_ = daf_core_selection_in_list_get_selection_index (self);
-#line 56 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 56 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		_tmp1_ = _tmp0_;
-#line 56 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 56 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		g_rec_mutex_lock (&self->priv->__lock_DafCoreSelectionInListselection_index);
 #line 1661 "SelectionInList.c"
 		{
@@ -1671,45 +1671,45 @@ daf_core_selection_in_list_get_selection (DafCoreSelectionInList* self)
 			GValue* _tmp8_;
 			DafCoreIValueModel* _tmp9_;
 			GValue* _tmp10_;
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 			_tmp2_ = daf_core_selection_in_list_get_selection_index (self);
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 			_tmp3_ = _tmp2_;
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 			g_debug ("SelectionInList.vala:57: selection: index_of: %d", _tmp3_);
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 			_tmp4_ = self->priv->_selection_holder;
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 			_tmp5_ = daf_core_selection_in_list_get_selection_index (self);
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 			_tmp6_ = _tmp5_;
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 			_tmp7_ = daf_core_selection_in_list_getit (self, _tmp6_);
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 			_tmp8_ = _tmp7_;
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 			daf_core_ivalue_model_set_val (_tmp4_, _tmp8_);
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 			__vala_GValue_free0 (_tmp8_);
-#line 59 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 59 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 			_tmp9_ = self->priv->_selection_holder;
-#line 59 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 59 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 			_tmp10_ = daf_core_ivalue_model_get_val (_tmp9_);
-#line 59 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 59 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 			result = _tmp10_;
 #line 1698 "SelectionInList.c"
 			{
 				gint _tmp11_;
 				gint _tmp12_;
-#line 56 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 56 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 				_tmp11_ = daf_core_selection_in_list_get_selection_index (self);
-#line 56 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 56 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 				_tmp12_ = _tmp11_;
-#line 56 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 56 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 				g_rec_mutex_unlock (&self->priv->__lock_DafCoreSelectionInListselection_index);
 #line 1708 "SelectionInList.c"
 			}
-#line 59 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 59 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 			return result;
 #line 1712 "SelectionInList.c"
 		}
@@ -1717,19 +1717,19 @@ daf_core_selection_in_list_get_selection (DafCoreSelectionInList* self)
 		{
 			gint _tmp13_;
 			gint _tmp14_;
-#line 56 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 56 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 			_tmp13_ = daf_core_selection_in_list_get_selection_index (self);
-#line 56 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 56 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 			_tmp14_ = _tmp13_;
-#line 56 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 56 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 			g_rec_mutex_unlock (&self->priv->__lock_DafCoreSelectionInListselection_index);
 #line 1724 "SelectionInList.c"
 		}
-#line 56 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 56 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		g_critical ("file %s: line %d: uncaught error: %s (%s, %d)", __FILE__, __LINE__, _inner_error_->message, g_quark_to_string (_inner_error_->domain), _inner_error_->code);
-#line 56 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 56 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		g_clear_error (&_inner_error_);
-#line 56 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 56 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		return NULL;
 #line 1732 "SelectionInList.c"
 	}
@@ -1741,31 +1741,31 @@ daf_core_selection_in_list_set_selection (DafCoreSelectionInList* self,
                                           GValue* value)
 {
 	GError * _inner_error_ = NULL;
-#line 62 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 62 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_return_if_fail (self != NULL);
 #line 1744 "SelectionInList.c"
 	{
 		gint _tmp0_;
 		gint _tmp1_;
-#line 63 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 63 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		_tmp0_ = daf_core_selection_in_list_get_selection_index (self);
-#line 63 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 63 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		_tmp1_ = _tmp0_;
-#line 63 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 63 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		g_rec_mutex_lock (&self->priv->__lock_DafCoreSelectionInListselection_index);
 #line 1754 "SelectionInList.c"
 		{
 			gint _tmp2_;
 			gint _tmp3_;
-#line 65 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 65 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 			daf_core_selection_in_list_set_selection_index (self, daf_core_selection_in_list_get_generic_selection_index (self, value));
-#line 66 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 66 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 			_tmp2_ = daf_core_selection_in_list_get_selection_index (self);
-#line 66 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 66 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 			_tmp3_ = _tmp2_;
-#line 66 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 66 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 			g_debug ("SelectionInList.vala:66: selection_index is Set to %d", _tmp3_);
-#line 67 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 67 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 			DAF_CORE_ABSTRACT_VALUE_HOLDER_CLASS (daf_core_selection_in_list_parent_class)->set_val (G_TYPE_CHECK_INSTANCE_CAST (self, DAF_CORE_TYPE_ABSTRACT_VALUE_HOLDER, DafCoreAbstractValueHolder), value);
 #line 1768 "SelectionInList.c"
 		}
@@ -1773,21 +1773,21 @@ daf_core_selection_in_list_set_selection (DafCoreSelectionInList* self,
 		{
 			gint _tmp4_;
 			gint _tmp5_;
-#line 63 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 63 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 			_tmp4_ = daf_core_selection_in_list_get_selection_index (self);
-#line 63 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 63 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 			_tmp5_ = _tmp4_;
-#line 63 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 63 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 			g_rec_mutex_unlock (&self->priv->__lock_DafCoreSelectionInListselection_index);
 #line 1780 "SelectionInList.c"
 		}
-#line 63 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 63 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		if (G_UNLIKELY (_inner_error_ != NULL)) {
-#line 63 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 63 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 			g_critical ("file %s: line %d: uncaught error: %s (%s, %d)", __FILE__, __LINE__, _inner_error_->message, g_quark_to_string (_inner_error_->domain), _inner_error_->code);
-#line 63 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 63 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 			g_clear_error (&_inner_error_);
-#line 63 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 63 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 			return;
 #line 1790 "SelectionInList.c"
 		}
@@ -1801,15 +1801,15 @@ daf_core_selection_in_list_get_has_selection (DafCoreSelectionInList* self)
 	gboolean result;
 	gint _tmp0_;
 	gint _tmp1_;
-#line 126 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 126 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_return_val_if_fail (self != NULL, FALSE);
-#line 126 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 126 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp0_ = daf_core_selection_in_list_get_selection_index (self);
-#line 126 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 126 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp1_ = _tmp0_;
-#line 126 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 126 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	result = _tmp1_ != DAF_CORE_SELECTION_IN_LIST_NO_SELECTION;
-#line 126 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 126 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	return result;
 #line 1812 "SelectionInList.c"
 }
@@ -1819,9 +1819,9 @@ static void
 daf_core_selection_in_list_set_has_selection (DafCoreSelectionInList* self,
                                               gboolean value)
 {
-#line 127 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 127 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_return_if_fail (self != NULL);
-#line 127 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 127 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_object_notify_by_pspec ((GObject *) self, daf_core_selection_in_list_properties[DAF_CORE_SELECTION_IN_LIST_HAS_SELECTION_PROPERTY]);
 #line 1824 "SelectionInList.c"
 }
@@ -1832,13 +1832,13 @@ daf_core_selection_in_list_get_size (DafCoreSelectionInList* self)
 {
 	gint result;
 	DafCoreIListModel* _tmp0_;
-#line 204 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 204 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_return_val_if_fail (self != NULL, 0);
-#line 204 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 204 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_tmp0_ = self->priv->list_model;
-#line 204 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 204 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	result = daf_core_selection_in_list_get_list_model_size (self, _tmp0_);
-#line 204 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 204 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	return result;
 #line 1841 "SelectionInList.c"
 }
@@ -1847,39 +1847,39 @@ daf_core_selection_in_list_get_size (DafCoreSelectionInList* self)
 static void
 daf_core_selection_in_list_class_init (DafCoreSelectionInListClass * klass)
 {
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	daf_core_selection_in_list_parent_class = g_type_class_peek_parent (klass);
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_type_class_add_private (klass, sizeof (DafCoreSelectionInListPrivate));
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	((DafCoreAbstractValueHolderClass *) klass)->get_val = (GValue* (*) (DafCoreAbstractValueHolder *)) daf_core_selection_in_list_real_get_val;
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	((DafCoreAbstractValueHolderClass *) klass)->set_val = (void (*) (DafCoreAbstractValueHolder *, GValue*)) daf_core_selection_in_list_real_set_val;
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	G_OBJECT_CLASS (klass)->get_property = _vala_daf_core_selection_in_list_get_property;
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	G_OBJECT_CLASS (klass)->set_property = _vala_daf_core_selection_in_list_set_property;
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	G_OBJECT_CLASS (klass)->finalize = daf_core_selection_in_list_finalize;
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_object_class_install_property (G_OBJECT_CLASS (klass), DAF_CORE_SELECTION_IN_LIST_G_TYPE, g_param_spec_gtype ("g-type", "type", "type", G_TYPE_NONE, G_PARAM_STATIC_STRINGS | G_PARAM_WRITABLE | G_PARAM_CONSTRUCT_ONLY));
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_object_class_install_property (G_OBJECT_CLASS (klass), DAF_CORE_SELECTION_IN_LIST_G_DUP_FUNC, g_param_spec_pointer ("g-dup-func", "dup func", "dup func", G_PARAM_STATIC_STRINGS | G_PARAM_WRITABLE | G_PARAM_CONSTRUCT_ONLY));
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_object_class_install_property (G_OBJECT_CLASS (klass), DAF_CORE_SELECTION_IN_LIST_G_DESTROY_FUNC, g_param_spec_pointer ("g-destroy-func", "destroy func", "destroy func", G_PARAM_STATIC_STRINGS | G_PARAM_WRITABLE | G_PARAM_CONSTRUCT_ONLY));
 #line 1868 "SelectionInList.c"
 	/** Properties */
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_object_class_install_property (G_OBJECT_CLASS (klass), DAF_CORE_SELECTION_IN_LIST_LIST_HOLDER_PROPERTY, daf_core_selection_in_list_properties[DAF_CORE_SELECTION_IN_LIST_LIST_HOLDER_PROPERTY] = g_param_spec_object ("list-holder", "list-holder", "list-holder", DAF_CORE_TYPE_IVALUE_MODEL, G_PARAM_STATIC_STRINGS | G_PARAM_READABLE | G_PARAM_WRITABLE));
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_object_class_install_property (G_OBJECT_CLASS (klass), DAF_CORE_SELECTION_IN_LIST_SELECTION_HOLDER_PROPERTY, daf_core_selection_in_list_properties[DAF_CORE_SELECTION_IN_LIST_SELECTION_HOLDER_PROPERTY] = g_param_spec_object ("selection-holder", "selection-holder", "selection-holder", DAF_CORE_TYPE_IVALUE_MODEL, G_PARAM_STATIC_STRINGS | G_PARAM_READABLE | G_PARAM_WRITABLE));
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_object_class_install_property (G_OBJECT_CLASS (klass), DAF_CORE_SELECTION_IN_LIST_SELECTION_INDEX_HOLDER_PROPERTY, daf_core_selection_in_list_properties[DAF_CORE_SELECTION_IN_LIST_SELECTION_INDEX_HOLDER_PROPERTY] = g_param_spec_object ("selection-index-holder", "selection-index-holder", "selection-index-holder", DAF_CORE_TYPE_IVALUE_MODEL, G_PARAM_STATIC_STRINGS | G_PARAM_READABLE | G_PARAM_WRITABLE));
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_object_class_install_property (G_OBJECT_CLASS (klass), DAF_CORE_SELECTION_IN_LIST_SELECTION_INDEX_PROPERTY, daf_core_selection_in_list_properties[DAF_CORE_SELECTION_IN_LIST_SELECTION_INDEX_PROPERTY] = g_param_spec_int ("selection-index", "selection-index", "selection-index", G_MININT, G_MAXINT, 0, G_PARAM_STATIC_STRINGS | G_PARAM_READABLE | G_PARAM_WRITABLE));
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_object_class_install_property (G_OBJECT_CLASS (klass), DAF_CORE_SELECTION_IN_LIST_HAS_SELECTION_PROPERTY, daf_core_selection_in_list_properties[DAF_CORE_SELECTION_IN_LIST_HAS_SELECTION_PROPERTY] = g_param_spec_boolean ("has-selection", "has-selection", "has-selection", FALSE, G_PARAM_STATIC_STRINGS | G_PARAM_READABLE));
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_object_class_install_property (G_OBJECT_CLASS (klass), DAF_CORE_SELECTION_IN_LIST_SIZE_PROPERTY, daf_core_selection_in_list_properties[DAF_CORE_SELECTION_IN_LIST_SIZE_PROPERTY] = g_param_spec_int ("size", "size", "size", G_MININT, G_MAXINT, 0, G_PARAM_STATIC_STRINGS | G_PARAM_READABLE));
 #line 1882 "SelectionInList.c"
 }
@@ -1888,27 +1888,27 @@ daf_core_selection_in_list_class_init (DafCoreSelectionInListClass * klass)
 static void
 daf_core_selection_in_list_daf_core_ilist_model_interface_init (DafCoreIListModelIface * iface)
 {
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	daf_core_selection_in_list_daf_core_ilist_model_parent_iface = g_type_interface_peek_parent (iface);
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	iface->index_of = (gint (*) (DafCoreIListModel *, gconstpointer)) daf_core_selection_in_list_real_index_of;
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	iface->get_at = (gpointer (*) (DafCoreIListModel *, gint)) daf_core_selection_in_list_real_get_at;
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	iface->set_at = (void (*) (DafCoreIListModel *, gint, gconstpointer)) daf_core_selection_in_list_real_set_at;
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	iface->add = (gboolean (*) (DafCoreIListModel *, gconstpointer)) daf_core_selection_in_list_real_add;
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	iface->add_all = (gboolean (*) (DafCoreIListModel *, GeeCollection*)) daf_core_selection_in_list_real_add_all;
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	iface->insert = (void (*) (DafCoreIListModel *, gint, gconstpointer)) daf_core_selection_in_list_real_insert;
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	iface->remove = (gboolean (*) (DafCoreIListModel *, gconstpointer)) daf_core_selection_in_list_real_remove;
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	iface->remove_at = (gpointer (*) (DafCoreIListModel *, gint)) daf_core_selection_in_list_real_remove_at;
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	iface->clear = (void (*) (DafCoreIListModel *)) daf_core_selection_in_list_real_clear;
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	iface->get_length = (gint (*) (DafCoreIListModel *)) daf_core_selection_in_list_real_get_length;
 #line 1911 "SelectionInList.c"
 }
@@ -1917,11 +1917,11 @@ daf_core_selection_in_list_daf_core_ilist_model_interface_init (DafCoreIListMode
 static void
 daf_core_selection_in_list_instance_init (DafCoreSelectionInList * self)
 {
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	self->priv = DAF_CORE_SELECTION_IN_LIST_GET_PRIVATE (self);
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	self->priv->_selection_index = DAF_CORE_SELECTION_IN_LIST_NO_SELECTION;
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_rec_mutex_init (&self->priv->__lock_DafCoreSelectionInListselection_index);
 #line 1924 "SelectionInList.c"
 }
@@ -1931,19 +1931,19 @@ static void
 daf_core_selection_in_list_finalize (GObject * obj)
 {
 	DafCoreSelectionInList * self;
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	self = G_TYPE_CHECK_INSTANCE_CAST (obj, DAF_CORE_TYPE_SELECTION_IN_LIST, DafCoreSelectionInList);
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_g_object_unref0 (self->priv->list_model);
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_g_object_unref0 (self->priv->_list_holder);
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_g_object_unref0 (self->priv->_selection_holder);
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	_g_object_unref0 (self->priv->_selection_index_holder);
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	g_rec_mutex_clear (&self->priv->__lock_DafCoreSelectionInListselection_index);
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	G_OBJECT_CLASS (daf_core_selection_in_list_parent_class)->finalize (obj);
 #line 1946 "SelectionInList.c"
 }
@@ -1973,49 +1973,49 @@ _vala_daf_core_selection_in_list_get_property (GObject * object,
 {
 	DafCoreSelectionInList * self;
 	self = G_TYPE_CHECK_INSTANCE_CAST (object, DAF_CORE_TYPE_SELECTION_IN_LIST, DafCoreSelectionInList);
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	switch (property_id) {
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		case DAF_CORE_SELECTION_IN_LIST_LIST_HOLDER_PROPERTY:
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		g_value_set_object (value, daf_core_selection_in_list_get_list_holder (self));
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		break;
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		case DAF_CORE_SELECTION_IN_LIST_SELECTION_HOLDER_PROPERTY:
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		g_value_set_object (value, daf_core_selection_in_list_get_selection_holder (self));
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		break;
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		case DAF_CORE_SELECTION_IN_LIST_SELECTION_INDEX_HOLDER_PROPERTY:
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		g_value_set_object (value, daf_core_selection_in_list_get_selection_index_holder (self));
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		break;
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		case DAF_CORE_SELECTION_IN_LIST_SELECTION_INDEX_PROPERTY:
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		g_value_set_int (value, daf_core_selection_in_list_get_selection_index (self));
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		break;
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		case DAF_CORE_SELECTION_IN_LIST_HAS_SELECTION_PROPERTY:
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		g_value_set_boolean (value, daf_core_selection_in_list_get_has_selection (self));
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		break;
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		case DAF_CORE_SELECTION_IN_LIST_SIZE_PROPERTY:
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		g_value_set_int (value, daf_core_selection_in_list_get_size (self));
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		break;
 #line 2012 "SelectionInList.c"
 		default:
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		G_OBJECT_WARN_INVALID_PROPERTY_ID (object, property_id, pspec);
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		break;
 #line 2018 "SelectionInList.c"
 	}
@@ -2030,61 +2030,61 @@ _vala_daf_core_selection_in_list_set_property (GObject * object,
 {
 	DafCoreSelectionInList * self;
 	self = G_TYPE_CHECK_INSTANCE_CAST (object, DAF_CORE_TYPE_SELECTION_IN_LIST, DafCoreSelectionInList);
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 	switch (property_id) {
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		case DAF_CORE_SELECTION_IN_LIST_LIST_HOLDER_PROPERTY:
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		daf_core_selection_in_list_set_list_holder (self, g_value_get_object (value));
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		break;
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		case DAF_CORE_SELECTION_IN_LIST_SELECTION_HOLDER_PROPERTY:
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		daf_core_selection_in_list_set_selection_holder (self, g_value_get_object (value));
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		break;
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		case DAF_CORE_SELECTION_IN_LIST_SELECTION_INDEX_HOLDER_PROPERTY:
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		daf_core_selection_in_list_set_selection_index_holder (self, g_value_get_object (value));
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		break;
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		case DAF_CORE_SELECTION_IN_LIST_SELECTION_INDEX_PROPERTY:
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		daf_core_selection_in_list_set_selection_index (self, g_value_get_int (value));
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		break;
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		case DAF_CORE_SELECTION_IN_LIST_HAS_SELECTION_PROPERTY:
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		daf_core_selection_in_list_set_has_selection (self, g_value_get_boolean (value));
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		break;
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		case DAF_CORE_SELECTION_IN_LIST_G_TYPE:
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		self->priv->g_type = g_value_get_gtype (value);
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		break;
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		case DAF_CORE_SELECTION_IN_LIST_G_DUP_FUNC:
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		self->priv->g_dup_func = g_value_get_pointer (value);
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		break;
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		case DAF_CORE_SELECTION_IN_LIST_G_DESTROY_FUNC:
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		self->priv->g_destroy_func = g_value_get_pointer (value);
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		break;
 #line 2081 "SelectionInList.c"
 		default:
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		G_OBJECT_WARN_INVALID_PROPERTY_ID (object, property_id, pspec);
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/SelectionInList.vala"
 		break;
 #line 2087 "SelectionInList.c"
 	}

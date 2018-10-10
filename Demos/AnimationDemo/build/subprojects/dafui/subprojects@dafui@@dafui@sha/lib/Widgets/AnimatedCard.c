@@ -141,26 +141,26 @@ daf_ui_widgets_animated_card_construct (GType object_type,
                                         GtkWidget* widget)
 {
 	DafUIWidgetsAnimatedCard * self = NULL;
-#line 39 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 39 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	g_return_val_if_fail (widget != NULL, NULL);
-#line 39 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 39 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	self = (DafUIWidgetsAnimatedCard*) g_object_new (object_type, NULL);
-#line 40 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 40 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	daf_ui_widgets_icard_set_widget ((DafUIWidgetsICard*) self, widget);
-#line 41 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 41 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	if (G_TYPE_CHECK_INSTANCE_TYPE (widget, DAF_UI_ANIMATION_TYPE_ANIMATABLE_ADAPTER)) {
 #line 153 "AnimatedCard.c"
 		gdouble _tmp0_;
 		gdouble _tmp1_;
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		_tmp0_ = daf_ui_animation_animatable_adapter_get_opacity (G_TYPE_CHECK_INSTANCE_TYPE (widget, DAF_UI_ANIMATION_TYPE_ANIMATABLE_ADAPTER) ? ((DafUIAnimationAnimatableAdapter*) widget) : NULL);
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		_tmp1_ = _tmp0_;
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		self->opacity = _tmp1_;
 #line 162 "AnimatedCard.c"
 	}
-#line 39 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 39 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	return self;
 #line 166 "AnimatedCard.c"
 }
@@ -169,7 +169,7 @@ daf_ui_widgets_animated_card_construct (GType object_type,
 DafUIWidgetsAnimatedCard*
 daf_ui_widgets_animated_card_new (GtkWidget* widget)
 {
-#line 39 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 39 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	return daf_ui_widgets_animated_card_construct (DAF_UI_WIDGETS_TYPE_ANIMATED_CARD, widget);
 #line 175 "AnimatedCard.c"
 }
@@ -181,13 +181,13 @@ daf_ui_widgets_animated_card_real_get_widget (DafUIWidgetsICard* base)
 	GtkWidget* result;
 	DafUIWidgetsAnimatedCard* self;
 	GtkWidget* _tmp0_;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	self = (DafUIWidgetsAnimatedCard*) base;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	_tmp0_ = self->priv->_widget;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	result = _tmp0_;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	return result;
 #line 193 "AnimatedCard.c"
 }
@@ -196,7 +196,7 @@ daf_ui_widgets_animated_card_real_get_widget (DafUIWidgetsICard* base)
 static gpointer
 _g_object_ref0 (gpointer self)
 {
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	return self ? g_object_ref (self) : NULL;
 #line 202 "AnimatedCard.c"
 }
@@ -207,19 +207,19 @@ daf_ui_widgets_animated_card_real_set_widget (DafUIWidgetsICard* base,
                                               GtkWidget* value)
 {
 	DafUIWidgetsAnimatedCard* self;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	self = (DafUIWidgetsAnimatedCard*) base;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	if (daf_ui_widgets_animated_card_real_get_widget (base) != value) {
 #line 215 "AnimatedCard.c"
 		GtkWidget* _tmp0_;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		_tmp0_ = _g_object_ref0 (value);
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		_g_object_unref0 (self->priv->_widget);
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		self->priv->_widget = _tmp0_;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		g_object_notify_by_pspec ((GObject *) self, daf_ui_widgets_animated_card_properties[DAF_UI_WIDGETS_ANIMATED_CARD_WIDGET_PROPERTY]);
 #line 225 "AnimatedCard.c"
 	}
@@ -232,13 +232,13 @@ daf_ui_widgets_animated_card_real_get_visible (DafUIWidgetsICard* base)
 	gboolean result;
 	DafUIWidgetsAnimatedCard* self;
 	gboolean _tmp0_;
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	self = (DafUIWidgetsAnimatedCard*) base;
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	_tmp0_ = self->priv->_visible;
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	result = _tmp0_;
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	return result;
 #line 244 "AnimatedCard.c"
 }
@@ -249,13 +249,13 @@ daf_ui_widgets_animated_card_real_set_visible (DafUIWidgetsICard* base,
                                                gboolean value)
 {
 	DafUIWidgetsAnimatedCard* self;
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	self = (DafUIWidgetsAnimatedCard*) base;
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	if (daf_ui_widgets_animated_card_real_get_visible (base) != value) {
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		self->priv->_visible = value;
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		g_object_notify_by_pspec ((GObject *) self, daf_ui_widgets_animated_card_properties[DAF_UI_WIDGETS_ANIMATED_CARD_VISIBLE_PROPERTY]);
 #line 261 "AnimatedCard.c"
 	}
@@ -268,13 +268,13 @@ daf_ui_widgets_animated_card_real_get_halign (DafUIWidgetsICard* base)
 	GtkAlign result;
 	DafUIWidgetsAnimatedCard* self;
 	GtkAlign _tmp0_;
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	self = (DafUIWidgetsAnimatedCard*) base;
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	_tmp0_ = self->priv->_halign;
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	result = _tmp0_;
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	return result;
 #line 280 "AnimatedCard.c"
 }
@@ -285,13 +285,13 @@ daf_ui_widgets_animated_card_real_set_halign (DafUIWidgetsICard* base,
                                               GtkAlign value)
 {
 	DafUIWidgetsAnimatedCard* self;
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	self = (DafUIWidgetsAnimatedCard*) base;
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	if (daf_ui_widgets_animated_card_real_get_halign (base) != value) {
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		self->priv->_halign = value;
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		g_object_notify_by_pspec ((GObject *) self, daf_ui_widgets_animated_card_properties[DAF_UI_WIDGETS_ANIMATED_CARD_HALIGN_PROPERTY]);
 #line 297 "AnimatedCard.c"
 	}
@@ -304,13 +304,13 @@ daf_ui_widgets_animated_card_real_get_valign (DafUIWidgetsICard* base)
 	GtkAlign result;
 	DafUIWidgetsAnimatedCard* self;
 	GtkAlign _tmp0_;
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	self = (DafUIWidgetsAnimatedCard*) base;
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	_tmp0_ = self->priv->_valign;
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	result = _tmp0_;
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	return result;
 #line 316 "AnimatedCard.c"
 }
@@ -321,13 +321,13 @@ daf_ui_widgets_animated_card_real_set_valign (DafUIWidgetsICard* base,
                                               GtkAlign value)
 {
 	DafUIWidgetsAnimatedCard* self;
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	self = (DafUIWidgetsAnimatedCard*) base;
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	if (daf_ui_widgets_animated_card_real_get_valign (base) != value) {
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		self->priv->_valign = value;
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		g_object_notify_by_pspec ((GObject *) self, daf_ui_widgets_animated_card_properties[DAF_UI_WIDGETS_ANIMATED_CARD_VALIGN_PROPERTY]);
 #line 333 "AnimatedCard.c"
 	}
@@ -340,13 +340,13 @@ daf_ui_widgets_animated_card_real_get_hexpand (DafUIWidgetsICard* base)
 	gboolean result;
 	DafUIWidgetsAnimatedCard* self;
 	gboolean _tmp0_;
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	self = (DafUIWidgetsAnimatedCard*) base;
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	_tmp0_ = self->priv->_hexpand;
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	result = _tmp0_;
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	return result;
 #line 352 "AnimatedCard.c"
 }
@@ -357,13 +357,13 @@ daf_ui_widgets_animated_card_real_set_hexpand (DafUIWidgetsICard* base,
                                                gboolean value)
 {
 	DafUIWidgetsAnimatedCard* self;
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	self = (DafUIWidgetsAnimatedCard*) base;
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	if (daf_ui_widgets_animated_card_real_get_hexpand (base) != value) {
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		self->priv->_hexpand = value;
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		g_object_notify_by_pspec ((GObject *) self, daf_ui_widgets_animated_card_properties[DAF_UI_WIDGETS_ANIMATED_CARD_HEXPAND_PROPERTY]);
 #line 369 "AnimatedCard.c"
 	}
@@ -376,13 +376,13 @@ daf_ui_widgets_animated_card_real_get_vexpand (DafUIWidgetsICard* base)
 	gboolean result;
 	DafUIWidgetsAnimatedCard* self;
 	gboolean _tmp0_;
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	self = (DafUIWidgetsAnimatedCard*) base;
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	_tmp0_ = self->priv->_vexpand;
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	result = _tmp0_;
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	return result;
 #line 388 "AnimatedCard.c"
 }
@@ -393,13 +393,13 @@ daf_ui_widgets_animated_card_real_set_vexpand (DafUIWidgetsICard* base,
                                                gboolean value)
 {
 	DafUIWidgetsAnimatedCard* self;
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	self = (DafUIWidgetsAnimatedCard*) base;
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	if (daf_ui_widgets_animated_card_real_get_vexpand (base) != value) {
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		self->priv->_vexpand = value;
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		g_object_notify_by_pspec ((GObject *) self, daf_ui_widgets_animated_card_properties[DAF_UI_WIDGETS_ANIMATED_CARD_VEXPAND_PROPERTY]);
 #line 405 "AnimatedCard.c"
 	}
@@ -411,13 +411,13 @@ daf_ui_widgets_animated_card_get_focus_child (DafUIWidgetsAnimatedCard* self)
 {
 	GtkWidget* result;
 	GtkWidget* _tmp0_;
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	_tmp0_ = self->priv->_focus_child;
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	result = _tmp0_;
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	return result;
 #line 423 "AnimatedCard.c"
 }
@@ -427,19 +427,19 @@ void
 daf_ui_widgets_animated_card_set_focus_child (DafUIWidgetsAnimatedCard* self,
                                               GtkWidget* value)
 {
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	g_return_if_fail (self != NULL);
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	if (daf_ui_widgets_animated_card_get_focus_child (self) != value) {
 #line 435 "AnimatedCard.c"
 		GtkWidget* _tmp0_;
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		_tmp0_ = _g_object_ref0 (value);
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		_g_object_unref0 (self->priv->_focus_child);
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		self->priv->_focus_child = _tmp0_;
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		g_object_notify_by_pspec ((GObject *) self, daf_ui_widgets_animated_card_properties[DAF_UI_WIDGETS_ANIMATED_CARD_FOCUS_CHILD_PROPERTY]);
 #line 445 "AnimatedCard.c"
 	}
@@ -449,29 +449,29 @@ daf_ui_widgets_animated_card_set_focus_child (DafUIWidgetsAnimatedCard* self,
 static void
 daf_ui_widgets_animated_card_class_init (DafUIWidgetsAnimatedCardClass * klass)
 {
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	daf_ui_widgets_animated_card_parent_class = g_type_class_peek_parent (klass);
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	g_type_class_add_private (klass, sizeof (DafUIWidgetsAnimatedCardPrivate));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	G_OBJECT_CLASS (klass)->get_property = _vala_daf_ui_widgets_animated_card_get_property;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	G_OBJECT_CLASS (klass)->set_property = _vala_daf_ui_widgets_animated_card_set_property;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	G_OBJECT_CLASS (klass)->finalize = daf_ui_widgets_animated_card_finalize;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	g_object_class_install_property (G_OBJECT_CLASS (klass), DAF_UI_WIDGETS_ANIMATED_CARD_WIDGET_PROPERTY, daf_ui_widgets_animated_card_properties[DAF_UI_WIDGETS_ANIMATED_CARD_WIDGET_PROPERTY] = g_param_spec_object ("widget", "widget", "widget", gtk_widget_get_type (), G_PARAM_STATIC_STRINGS | G_PARAM_READABLE | G_PARAM_WRITABLE));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	g_object_class_install_property (G_OBJECT_CLASS (klass), DAF_UI_WIDGETS_ANIMATED_CARD_VISIBLE_PROPERTY, daf_ui_widgets_animated_card_properties[DAF_UI_WIDGETS_ANIMATED_CARD_VISIBLE_PROPERTY] = g_param_spec_boolean ("visible", "visible", "visible", FALSE, G_PARAM_STATIC_STRINGS | G_PARAM_READABLE | G_PARAM_WRITABLE));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	g_object_class_install_property (G_OBJECT_CLASS (klass), DAF_UI_WIDGETS_ANIMATED_CARD_HALIGN_PROPERTY, daf_ui_widgets_animated_card_properties[DAF_UI_WIDGETS_ANIMATED_CARD_HALIGN_PROPERTY] = g_param_spec_enum ("halign", "halign", "halign", gtk_align_get_type (), GTK_ALIGN_START, G_PARAM_STATIC_STRINGS | G_PARAM_READABLE | G_PARAM_WRITABLE));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	g_object_class_install_property (G_OBJECT_CLASS (klass), DAF_UI_WIDGETS_ANIMATED_CARD_VALIGN_PROPERTY, daf_ui_widgets_animated_card_properties[DAF_UI_WIDGETS_ANIMATED_CARD_VALIGN_PROPERTY] = g_param_spec_enum ("valign", "valign", "valign", gtk_align_get_type (), GTK_ALIGN_START, G_PARAM_STATIC_STRINGS | G_PARAM_READABLE | G_PARAM_WRITABLE));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	g_object_class_install_property (G_OBJECT_CLASS (klass), DAF_UI_WIDGETS_ANIMATED_CARD_HEXPAND_PROPERTY, daf_ui_widgets_animated_card_properties[DAF_UI_WIDGETS_ANIMATED_CARD_HEXPAND_PROPERTY] = g_param_spec_boolean ("hexpand", "hexpand", "hexpand", TRUE, G_PARAM_STATIC_STRINGS | G_PARAM_READABLE | G_PARAM_WRITABLE));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	g_object_class_install_property (G_OBJECT_CLASS (klass), DAF_UI_WIDGETS_ANIMATED_CARD_VEXPAND_PROPERTY, daf_ui_widgets_animated_card_properties[DAF_UI_WIDGETS_ANIMATED_CARD_VEXPAND_PROPERTY] = g_param_spec_boolean ("vexpand", "vexpand", "vexpand", TRUE, G_PARAM_STATIC_STRINGS | G_PARAM_READABLE | G_PARAM_WRITABLE));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	g_object_class_install_property (G_OBJECT_CLASS (klass), DAF_UI_WIDGETS_ANIMATED_CARD_FOCUS_CHILD_PROPERTY, daf_ui_widgets_animated_card_properties[DAF_UI_WIDGETS_ANIMATED_CARD_FOCUS_CHILD_PROPERTY] = g_param_spec_object ("focus-child", "focus-child", "focus-child", gtk_widget_get_type (), G_PARAM_STATIC_STRINGS | G_PARAM_READABLE | G_PARAM_WRITABLE));
 #line 477 "AnimatedCard.c"
 }
@@ -480,31 +480,31 @@ daf_ui_widgets_animated_card_class_init (DafUIWidgetsAnimatedCardClass * klass)
 static void
 daf_ui_widgets_animated_card_daf_ui_widgets_icard_interface_init (DafUIWidgetsICardIface * iface)
 {
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	daf_ui_widgets_animated_card_daf_ui_widgets_icard_parent_iface = g_type_interface_peek_parent (iface);
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	iface->get_widget = daf_ui_widgets_animated_card_real_get_widget;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	iface->set_widget = daf_ui_widgets_animated_card_real_set_widget;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	iface->get_visible = daf_ui_widgets_animated_card_real_get_visible;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	iface->set_visible = daf_ui_widgets_animated_card_real_set_visible;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	iface->get_halign = daf_ui_widgets_animated_card_real_get_halign;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	iface->set_halign = daf_ui_widgets_animated_card_real_set_halign;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	iface->get_valign = daf_ui_widgets_animated_card_real_get_valign;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	iface->set_valign = daf_ui_widgets_animated_card_real_set_valign;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	iface->get_hexpand = daf_ui_widgets_animated_card_real_get_hexpand;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	iface->set_hexpand = daf_ui_widgets_animated_card_real_set_hexpand;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	iface->get_vexpand = daf_ui_widgets_animated_card_real_get_vexpand;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	iface->set_vexpand = daf_ui_widgets_animated_card_real_set_vexpand;
 #line 510 "AnimatedCard.c"
 }
@@ -513,31 +513,31 @@ daf_ui_widgets_animated_card_daf_ui_widgets_icard_interface_init (DafUIWidgetsIC
 static void
 daf_ui_widgets_animated_card_instance_init (DafUIWidgetsAnimatedCard * self)
 {
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	self->priv = DAF_UI_WIDGETS_ANIMATED_CARD_GET_PRIVATE (self);
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	self->priv->_widget = NULL;
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	self->priv->_visible = FALSE;
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	self->priv->_halign = GTK_ALIGN_START;
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	self->priv->_valign = GTK_ALIGN_START;
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	self->priv->_hexpand = TRUE;
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	self->priv->_vexpand = TRUE;
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	self->priv->_focus_child = NULL;
-#line 47 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 47 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	self->width_request = -1;
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	self->height_request = -1;
-#line 49 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 49 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	self->width = -1;
-#line 50 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 50 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	self->height = -1;
-#line 51 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 51 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	self->opacity = (gdouble) 1.f;
 #line 543 "AnimatedCard.c"
 }
@@ -547,13 +547,13 @@ static void
 daf_ui_widgets_animated_card_finalize (GObject * obj)
 {
 	DafUIWidgetsAnimatedCard * self;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	self = G_TYPE_CHECK_INSTANCE_CAST (obj, DAF_UI_WIDGETS_TYPE_ANIMATED_CARD, DafUIWidgetsAnimatedCard);
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	_g_object_unref0 (self->priv->_widget);
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	_g_object_unref0 (self->priv->_focus_child);
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	G_OBJECT_CLASS (daf_ui_widgets_animated_card_parent_class)->finalize (obj);
 #line 559 "AnimatedCard.c"
 }
@@ -583,55 +583,55 @@ _vala_daf_ui_widgets_animated_card_get_property (GObject * object,
 {
 	DafUIWidgetsAnimatedCard * self;
 	self = G_TYPE_CHECK_INSTANCE_CAST (object, DAF_UI_WIDGETS_TYPE_ANIMATED_CARD, DafUIWidgetsAnimatedCard);
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	switch (property_id) {
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		case DAF_UI_WIDGETS_ANIMATED_CARD_WIDGET_PROPERTY:
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		g_value_set_object (value, daf_ui_widgets_icard_get_widget ((DafUIWidgetsICard*) self));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		break;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		case DAF_UI_WIDGETS_ANIMATED_CARD_VISIBLE_PROPERTY:
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		g_value_set_boolean (value, daf_ui_widgets_icard_get_visible ((DafUIWidgetsICard*) self));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		break;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		case DAF_UI_WIDGETS_ANIMATED_CARD_HALIGN_PROPERTY:
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		g_value_set_enum (value, daf_ui_widgets_icard_get_halign ((DafUIWidgetsICard*) self));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		break;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		case DAF_UI_WIDGETS_ANIMATED_CARD_VALIGN_PROPERTY:
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		g_value_set_enum (value, daf_ui_widgets_icard_get_valign ((DafUIWidgetsICard*) self));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		break;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		case DAF_UI_WIDGETS_ANIMATED_CARD_HEXPAND_PROPERTY:
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		g_value_set_boolean (value, daf_ui_widgets_icard_get_hexpand ((DafUIWidgetsICard*) self));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		break;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		case DAF_UI_WIDGETS_ANIMATED_CARD_VEXPAND_PROPERTY:
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		g_value_set_boolean (value, daf_ui_widgets_icard_get_vexpand ((DafUIWidgetsICard*) self));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		break;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		case DAF_UI_WIDGETS_ANIMATED_CARD_FOCUS_CHILD_PROPERTY:
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		g_value_set_object (value, daf_ui_widgets_animated_card_get_focus_child (self));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		break;
 #line 631 "AnimatedCard.c"
 		default:
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		G_OBJECT_WARN_INVALID_PROPERTY_ID (object, property_id, pspec);
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		break;
 #line 637 "AnimatedCard.c"
 	}
@@ -646,55 +646,55 @@ _vala_daf_ui_widgets_animated_card_set_property (GObject * object,
 {
 	DafUIWidgetsAnimatedCard * self;
 	self = G_TYPE_CHECK_INSTANCE_CAST (object, DAF_UI_WIDGETS_TYPE_ANIMATED_CARD, DafUIWidgetsAnimatedCard);
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 	switch (property_id) {
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		case DAF_UI_WIDGETS_ANIMATED_CARD_WIDGET_PROPERTY:
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		daf_ui_widgets_icard_set_widget ((DafUIWidgetsICard*) self, g_value_get_object (value));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		break;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		case DAF_UI_WIDGETS_ANIMATED_CARD_VISIBLE_PROPERTY:
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		daf_ui_widgets_icard_set_visible ((DafUIWidgetsICard*) self, g_value_get_boolean (value));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		break;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		case DAF_UI_WIDGETS_ANIMATED_CARD_HALIGN_PROPERTY:
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		daf_ui_widgets_icard_set_halign ((DafUIWidgetsICard*) self, g_value_get_enum (value));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		break;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		case DAF_UI_WIDGETS_ANIMATED_CARD_VALIGN_PROPERTY:
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		daf_ui_widgets_icard_set_valign ((DafUIWidgetsICard*) self, g_value_get_enum (value));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		break;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		case DAF_UI_WIDGETS_ANIMATED_CARD_HEXPAND_PROPERTY:
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		daf_ui_widgets_icard_set_hexpand ((DafUIWidgetsICard*) self, g_value_get_boolean (value));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		break;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		case DAF_UI_WIDGETS_ANIMATED_CARD_VEXPAND_PROPERTY:
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		daf_ui_widgets_icard_set_vexpand ((DafUIWidgetsICard*) self, g_value_get_boolean (value));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		break;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		case DAF_UI_WIDGETS_ANIMATED_CARD_FOCUS_CHILD_PROPERTY:
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		daf_ui_widgets_animated_card_set_focus_child (self, g_value_get_object (value));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		break;
 #line 694 "AnimatedCard.c"
 		default:
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		G_OBJECT_WARN_INVALID_PROPERTY_ID (object, property_id, pspec);
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AnimatedCard.vala"
 		break;
 #line 700 "AnimatedCard.c"
 	}

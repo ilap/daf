@@ -102,11 +102,11 @@ DafAnimationTestAdaptOpacityDemo*
 daf_animation_test_adapt_opacity_demo_construct (GType object_type)
 {
 	DafAnimationTestAdaptOpacityDemo * self = NULL;
-#line 52 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 52 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	self = (DafAnimationTestAdaptOpacityDemo*) g_object_new (object_type, NULL);
-#line 53 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 53 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	daf_animation_test_adapt_opacity_demo_setup_widgets (self);
-#line 52 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 52 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	return self;
 #line 112 "AdaptOpacityDemo.c"
 }
@@ -115,7 +115,7 @@ daf_animation_test_adapt_opacity_demo_construct (GType object_type)
 DafAnimationTestAdaptOpacityDemo*
 daf_animation_test_adapt_opacity_demo_new (void)
 {
-#line 52 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 52 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	return daf_animation_test_adapt_opacity_demo_construct (DAF_ANIMATION_TEST_TYPE_ADAPT_OPACITY_DEMO);
 #line 121 "AdaptOpacityDemo.c"
 }
@@ -125,7 +125,7 @@ static void
 _daf_animation_test_adapt_opacity_demo_on_grow_completed_daf_ui_animation_time_line_completed (DafUIAnimationTimeLine* _sender,
                                                                                                gpointer self)
 {
-#line 85 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 85 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	daf_animation_test_adapt_opacity_demo_on_grow_completed ((DafAnimationTestAdaptOpacityDemo*) self, _sender);
 #line 131 "AdaptOpacityDemo.c"
 }
@@ -134,7 +134,7 @@ _daf_animation_test_adapt_opacity_demo_on_grow_completed_daf_ui_animation_time_l
 static gpointer
 _g_object_ref0 (gpointer self)
 {
-#line 90 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 90 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	return self ? g_object_ref (self) : NULL;
 #line 140 "AdaptOpacityDemo.c"
 }
@@ -151,35 +151,35 @@ __lambda9_ (DafAnimationTestAdaptOpacityDemo* self)
 	DafUIAnimationTimeLine* _tmp4_;
 	gboolean _tmp5_;
 	gboolean _tmp6_;
-#line 90 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 90 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp0_ = self->priv->fade_out;
-#line 90 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 90 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp1_ = daf_ui_animation_property_animator_get_timeline (_tmp0_);
-#line 90 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 90 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp2_ = _tmp1_;
-#line 90 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 90 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp3_ = _g_object_ref0 (_tmp2_);
-#line 90 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 90 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	tl2 = _tmp3_;
-#line 91 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 91 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp4_ = tl2;
-#line 91 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 91 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp5_ = daf_ui_animation_time_line_get_playing (_tmp4_);
-#line 91 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 91 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp6_ = _tmp5_;
-#line 91 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 91 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	if (!_tmp6_) {
 #line 173 "AdaptOpacityDemo.c"
 		DafUIAnimationTimeLine* _tmp7_;
-#line 92 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 92 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 		daf_animation_test_adapt_opacity_demo_get_allocated_size (self);
-#line 93 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 93 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 		_tmp7_ = tl2;
-#line 93 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 93 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 		daf_ui_animation_ianimatable_start ((DafUIAnimationIAnimatable*) _tmp7_);
 #line 181 "AdaptOpacityDemo.c"
 	}
-#line 88 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 88 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_g_object_unref0 (tl2);
 #line 185 "AdaptOpacityDemo.c"
 }
@@ -189,7 +189,7 @@ static void
 ___lambda9__gtk_button_clicked (GtkButton* _sender,
                                 gpointer self)
 {
-#line 88 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 88 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	__lambda9_ ((DafAnimationTestAdaptOpacityDemo*) self);
 #line 195 "AdaptOpacityDemo.c"
 }
@@ -199,7 +199,7 @@ static void
 _gtk_main_quit_gtk_widget_destroy (GtkWidget* _sender,
                                    gpointer self)
 {
-#line 116 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 116 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	gtk_main_quit ();
 #line 205 "AdaptOpacityDemo.c"
 }
@@ -254,201 +254,201 @@ daf_animation_test_adapt_opacity_demo_setup_widgets (DafAnimationTestAdaptOpacit
 	GtkWindow* _tmp39_;
 	GtkBox* _tmp40_;
 	GtkWindow* _tmp41_;
-#line 56 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 56 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	g_return_if_fail (self != NULL);
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp0_ = (GtkWindow*) gtk_window_new (GTK_WINDOW_TOPLEVEL);
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	g_object_ref_sink (_tmp0_);
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_g_object_unref0 (self->priv->window);
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	self->priv->window = _tmp0_;
-#line 59 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 59 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp1_ = self->priv->window;
-#line 59 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 59 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	gtk_window_set_resizable (_tmp1_, TRUE);
-#line 60 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 60 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp2_ = self->priv->window;
-#line 60 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 60 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	gtk_window_set_default_size (_tmp2_, 640, 480);
-#line 61 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 61 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp3_ = self->priv->window;
-#line 61 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 61 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	g_object_set (_tmp3_, "window-position", GTK_WIN_POS_CENTER_ON_PARENT, NULL);
-#line 64 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 64 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	gdk_color_parse ("red", &_tmp4_);
-#line 64 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 64 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	red = _tmp4_;
-#line 65 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 65 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp5_ = self->priv->window;
-#line 65 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 65 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp6_ = red;
-#line 65 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 65 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	gtk_widget_modify_bg ((GtkWidget*) _tmp5_, GTK_STATE_NORMAL, &_tmp6_);
-#line 67 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 67 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp7_ = self->priv->window;
-#line 67 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 67 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	gtk_widget_show_all ((GtkWidget*) _tmp7_);
-#line 69 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 69 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp8_ = (GtkBox*) gtk_box_new (GTK_ORIENTATION_VERTICAL, 10);
-#line 69 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 69 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	g_object_ref_sink (_tmp8_);
-#line 69 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 69 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_g_object_unref0 (self->priv->box1);
-#line 69 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 69 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	self->priv->box1 = _tmp8_;
-#line 70 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 70 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp9_ = (GtkBox*) gtk_box_new (GTK_ORIENTATION_VERTICAL, 10);
-#line 70 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 70 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	g_object_ref_sink (_tmp9_);
-#line 70 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 70 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	box2 = _tmp9_;
-#line 71 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 71 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp10_ = (GtkBox*) gtk_box_new (GTK_ORIENTATION_VERTICAL, 10);
-#line 71 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 71 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	g_object_ref_sink (_tmp10_);
-#line 71 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 71 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_g_object_unref0 (self->priv->container);
-#line 71 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 71 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	self->priv->container = _tmp10_;
-#line 72 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 72 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp11_ = self->priv->container;
-#line 72 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 72 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp12_ = daf_ui_animation_animatable_adapter_new ((GtkWidget*) _tmp11_);
-#line 72 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 72 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	g_object_ref_sink (_tmp12_);
-#line 72 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 72 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_g_object_unref0 (self->priv->adapt_opacity);
-#line 72 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 72 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	self->priv->adapt_opacity = _tmp12_;
-#line 76 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 76 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp13_ = daf_ui_animation_time_line_new_full (DAF_UI_ANIMATION_ANIMATION_MODE_EASE_IN_OUT_QUAD, (guint) 1500, (guint) 25);
-#line 76 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 76 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	tl = _tmp13_;
-#line 77 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 77 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp14_ = self->priv->adapt_opacity;
-#line 77 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 77 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp15_ = daf_ui_animation_property_animator_animate_with_timeline ((GObject*) _tmp14_, tl, "opacity", 0.1f, NULL);
-#line 77 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 77 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_g_object_unref0 (self->priv->fade_out);
-#line 77 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 77 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	self->priv->fade_out = _tmp15_;
-#line 78 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 78 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp16_ = self->priv->adapt_opacity;
-#line 78 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 78 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp17_ = daf_ui_animation_property_animator_animate_with_timeline ((GObject*) _tmp16_, tl, "width-request", 800, "height-request", 600, NULL);
-#line 78 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 78 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_g_object_unref0 (self->priv->anim_grow);
-#line 78 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 78 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	self->priv->anim_grow = _tmp17_;
-#line 83 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 83 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp18_ = self->priv->fade_out;
-#line 83 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 83 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	g_value_init (&_tmp19_, G_TYPE_DOUBLE);
-#line 83 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 83 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	g_value_set_double (&_tmp19_, 0.8);
-#line 83 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 83 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	daf_ui_animation_property_animator_set_keyframe (_tmp18_, 0.5, "opacity", &_tmp19_);
-#line 83 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 83 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	G_IS_VALUE (&_tmp19_) ? (g_value_unset (&_tmp19_), NULL) : NULL;
-#line 85 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 85 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	g_signal_connect_object (tl, "completed", (GCallback) _daf_animation_test_adapt_opacity_demo_on_grow_completed_daf_ui_animation_time_line_completed, self, 0);
-#line 87 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 87 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp20_ = (GtkButton*) gtk_button_new_with_label ("Click on me...");
-#line 87 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 87 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	g_object_ref_sink (_tmp20_);
-#line 87 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 87 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_g_object_unref0 (self->priv->button);
-#line 87 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 87 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	self->priv->button = _tmp20_;
-#line 88 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 88 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp21_ = self->priv->button;
-#line 88 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 88 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	g_signal_connect_object (_tmp21_, "clicked", (GCallback) ___lambda9__gtk_button_clicked, self, 0);
-#line 97 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 97 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp22_ = self->priv->button;
-#line 97 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 97 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	gtk_container_add ((GtkContainer*) box2, (GtkWidget*) _tmp22_);
-#line 98 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 98 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp23_ = self->priv->container;
-#line 98 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 98 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp24_ = self->priv->image1;
-#line 98 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 98 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	gtk_container_add ((GtkContainer*) _tmp23_, (GtkWidget*) _tmp24_);
-#line 99 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 99 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp25_ = self->priv->container;
-#line 99 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 99 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp26_ = (GtkButton*) gtk_button_new_with_label ("Click on me1...");
-#line 99 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 99 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	g_object_ref_sink (_tmp26_);
-#line 99 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 99 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp27_ = _tmp26_;
-#line 99 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 99 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	gtk_container_add ((GtkContainer*) _tmp25_, (GtkWidget*) _tmp27_);
-#line 99 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 99 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_g_object_unref0 (_tmp27_);
-#line 100 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 100 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp28_ = self->priv->container;
-#line 100 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 100 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp29_ = (GtkButton*) gtk_button_new_with_label ("Click on me2...");
-#line 100 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 100 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	g_object_ref_sink (_tmp29_);
-#line 100 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 100 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp30_ = _tmp29_;
-#line 100 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 100 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	gtk_container_add ((GtkContainer*) _tmp28_, (GtkWidget*) _tmp30_);
-#line 100 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 100 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_g_object_unref0 (_tmp30_);
-#line 101 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 101 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp31_ = self->priv->container;
-#line 101 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 101 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp32_ = (GtkButton*) gtk_button_new_with_label ("Click on me3...");
-#line 101 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 101 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	g_object_ref_sink (_tmp32_);
-#line 101 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 101 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp33_ = _tmp32_;
-#line 101 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 101 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	gtk_container_add ((GtkContainer*) _tmp31_, (GtkWidget*) _tmp33_);
-#line 101 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 101 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_g_object_unref0 (_tmp33_);
-#line 105 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 105 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp34_ = daf_ui_widgets_deck_layout_new ();
-#line 105 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 105 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	g_object_ref_sink (_tmp34_);
-#line 105 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 105 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	boxX = _tmp34_;
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp35_ = self->priv->adapt_opacity;
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	daf_ui_widgets_ideck_layout_add ((DafUIWidgetsIDeckLayout*) boxX, (GtkWidget*) _tmp35_);
-#line 109 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 109 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp36_ = self->priv->container;
-#line 109 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 109 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	daf_ui_widgets_ideck_layout_add ((DafUIWidgetsIDeckLayout*) boxX, (GtkWidget*) _tmp36_);
-#line 110 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 110 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp37_ = self->priv->box1;
-#line 110 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 110 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	gtk_container_add ((GtkContainer*) _tmp37_, (GtkWidget*) box2);
-#line 111 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 111 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp38_ = self->priv->box1;
-#line 111 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 111 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	gtk_container_add ((GtkContainer*) _tmp38_, (GtkWidget*) boxX);
-#line 113 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 113 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp39_ = self->priv->window;
-#line 113 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 113 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp40_ = self->priv->box1;
-#line 113 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 113 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	gtk_container_add ((GtkContainer*) _tmp39_, (GtkWidget*) _tmp40_);
-#line 116 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 116 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp41_ = self->priv->window;
-#line 116 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 116 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	g_signal_connect ((GtkWidget*) _tmp41_, "destroy", (GCallback) _gtk_main_quit_gtk_widget_destroy, NULL);
-#line 56 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 56 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_g_object_unref0 (boxX);
-#line 56 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 56 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_g_object_unref0 (tl);
-#line 56 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 56 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_g_object_unref0 (box2);
 #line 454 "AdaptOpacityDemo.c"
 }
@@ -465,35 +465,35 @@ daf_animation_test_adapt_opacity_demo_get_allocated_size (DafAnimationTestAdaptO
 	gint _tmp5_;
 	GtkWindow* _tmp6_;
 	GtkButton* _tmp7_;
-#line 120 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 120 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	g_return_if_fail (self != NULL);
-#line 122 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 122 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp0_ = self->priv->adapt_opacity;
-#line 122 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 122 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	self->priv->orig_w = gtk_widget_get_allocated_width ((GtkWidget*) _tmp0_);
-#line 123 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 123 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp1_ = self->priv->adapt_opacity;
-#line 123 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 123 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	self->priv->orig_h = gtk_widget_get_allocated_height ((GtkWidget*) _tmp1_);
-#line 124 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 124 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp2_ = self->priv->adapt_opacity;
-#line 124 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 124 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp3_ = self->priv->orig_w;
-#line 124 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 124 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	g_object_set ((GtkWidget*) _tmp2_, "width-request", _tmp3_, NULL);
-#line 125 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 125 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp4_ = self->priv->adapt_opacity;
-#line 125 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 125 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp5_ = self->priv->orig_h;
-#line 125 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 125 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	g_object_set ((GtkWidget*) _tmp4_, "height-request", _tmp5_, NULL);
-#line 128 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 128 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp6_ = self->priv->window;
-#line 128 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 128 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	gtk_window_set_resizable (_tmp6_, FALSE);
-#line 129 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 129 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp7_ = self->priv->button;
-#line 129 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 129 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	gtk_widget_set_sensitive ((GtkWidget*) _tmp7_, FALSE);
 #line 499 "AdaptOpacityDemo.c"
 }
@@ -503,7 +503,7 @@ static void
 _daf_animation_test_adapt_opacity_demo_on_shrink_completed_daf_ui_animation_time_line_completed (DafUIAnimationTimeLine* _sender,
                                                                                                  gpointer self)
 {
-#line 143 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 143 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	daf_animation_test_adapt_opacity_demo_on_shrink_completed ((DafAnimationTestAdaptOpacityDemo*) self);
 #line 509 "AdaptOpacityDemo.c"
 }
@@ -527,53 +527,53 @@ daf_animation_test_adapt_opacity_demo_on_grow_completed (DafAnimationTestAdaptOp
 	DafUIAnimationTimeLine* _tmp10_;
 	DafUIAnimationTimeLine* _tmp11_;
 	DafUIAnimationTimeLine* _tmp12_;
-#line 132 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 132 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	g_return_if_fail (self != NULL);
-#line 132 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 132 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	g_return_if_fail (object != NULL);
-#line 134 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 134 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	g_debug ("AdaptOpacityDemo.vala:134: On grow completed");
-#line 136 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 136 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp0_ = self->priv->adapt_opacity;
-#line 136 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 136 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp1_ = daf_ui_animation_property_animator_animate ((GObject*) _tmp0_, DAF_UI_ANIMATION_ANIMATION_MODE_EASE_IN_OUT_QUAD, 1500, "opacity", 1.f, NULL);
-#line 136 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 136 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_g_object_unref0 (self->priv->fade_in);
-#line 136 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 136 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	self->priv->fade_in = _tmp1_;
-#line 137 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 137 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp2_ = self->priv->adapt_opacity;
-#line 137 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 137 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp3_ = self->priv->fade_in;
-#line 137 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 137 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp4_ = daf_ui_animation_property_animator_get_timeline (_tmp3_);
-#line 137 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 137 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp5_ = _tmp4_;
-#line 137 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 137 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp6_ = self->priv->orig_w;
-#line 137 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 137 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp7_ = self->priv->orig_h;
-#line 137 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 137 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp8_ = daf_ui_animation_property_animator_animate_with_timeline ((GObject*) _tmp2_, _tmp5_, "width-request", _tmp6_, "height-request", _tmp7_, NULL);
-#line 137 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 137 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_g_object_unref0 (self->priv->anim_shrink);
-#line 137 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 137 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	self->priv->anim_shrink = _tmp8_;
-#line 142 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 142 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp9_ = self->priv->fade_in;
-#line 142 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 142 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp10_ = daf_ui_animation_property_animator_get_timeline (_tmp9_);
-#line 142 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 142 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp11_ = _tmp10_;
-#line 142 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 142 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp12_ = _g_object_ref0 (_tmp11_);
-#line 142 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 142 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	tl = _tmp12_;
-#line 143 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 143 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	g_signal_connect_object (tl, "completed", (GCallback) _daf_animation_test_adapt_opacity_demo_on_shrink_completed_daf_ui_animation_time_line_completed, self, 0);
-#line 144 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 144 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	daf_ui_animation_ianimatable_start ((DafUIAnimationIAnimatable*) tl);
-#line 132 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 132 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_g_object_unref0 (tl);
 #line 579 "AdaptOpacityDemo.c"
 }
@@ -586,25 +586,25 @@ daf_animation_test_adapt_opacity_demo_on_shrink_completed (DafAnimationTestAdapt
 	DafUIAnimationAnimatableAdapter* _tmp1_;
 	GtkWindow* _tmp2_;
 	GtkButton* _tmp3_;
-#line 147 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 147 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	g_return_if_fail (self != NULL);
-#line 148 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 148 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	g_debug ("AdaptOpacityDemo.vala:148: On shrink completed");
-#line 150 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 150 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp0_ = self->priv->adapt_opacity;
-#line 150 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 150 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	g_object_set ((GtkWidget*) _tmp0_, "width-request", -1, NULL);
-#line 151 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 151 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp1_ = self->priv->adapt_opacity;
-#line 151 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 151 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	g_object_set ((GtkWidget*) _tmp1_, "height-request", -1, NULL);
-#line 152 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 152 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp2_ = self->priv->window;
-#line 152 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 152 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	gtk_window_set_resizable (_tmp2_, TRUE);
-#line 153 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 153 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp3_ = self->priv->button;
-#line 153 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 153 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	gtk_widget_set_sensitive ((GtkWidget*) _tmp3_, TRUE);
 #line 610 "AdaptOpacityDemo.c"
 }
@@ -614,11 +614,11 @@ void
 daf_animation_test_adapt_opacity_demo_show (DafAnimationTestAdaptOpacityDemo* self)
 {
 	GtkWindow* _tmp0_;
-#line 157 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 157 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	g_return_if_fail (self != NULL);
-#line 158 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 158 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp0_ = self->priv->window;
-#line 158 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 158 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	gtk_widget_show_all ((GtkWidget*) _tmp0_);
 #line 624 "AdaptOpacityDemo.c"
 }
@@ -627,11 +627,11 @@ daf_animation_test_adapt_opacity_demo_show (DafAnimationTestAdaptOpacityDemo* se
 static void
 daf_animation_test_adapt_opacity_demo_class_init (DafAnimationTestAdaptOpacityDemoClass * klass)
 {
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	daf_animation_test_adapt_opacity_demo_parent_class = g_type_class_peek_parent (klass);
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	g_type_class_add_private (klass, sizeof (DafAnimationTestAdaptOpacityDemoPrivate));
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	G_OBJECT_CLASS (klass)->finalize = daf_animation_test_adapt_opacity_demo_finalize;
 #line 637 "AdaptOpacityDemo.c"
 }
@@ -641,13 +641,13 @@ static void
 daf_animation_test_adapt_opacity_demo_instance_init (DafAnimationTestAdaptOpacityDemo * self)
 {
 	GtkImage* _tmp0_;
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	self->priv = DAF_ANIMATION_TEST_ADAPT_OPACITY_DEMO_GET_PRIVATE (self);
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_tmp0_ = (GtkImage*) gtk_image_new_from_file ("/usr/share/icons/gnome/256x256/emotes/face-angel.png");
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	g_object_ref_sink (_tmp0_);
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	self->priv->image1 = _tmp0_;
 #line 653 "AdaptOpacityDemo.c"
 }
@@ -657,29 +657,29 @@ static void
 daf_animation_test_adapt_opacity_demo_finalize (GObject * obj)
 {
 	DafAnimationTestAdaptOpacityDemo * self;
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	self = G_TYPE_CHECK_INSTANCE_CAST (obj, DAF_ANIMATION_TEST_TYPE_ADAPT_OPACITY_DEMO, DafAnimationTestAdaptOpacityDemo);
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_g_object_unref0 (self->priv->window);
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_g_object_unref0 (self->priv->box1);
-#line 36 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 36 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_g_object_unref0 (self->priv->container);
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_g_object_unref0 (self->priv->image1);
-#line 39 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 39 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_g_object_unref0 (self->priv->fade_out);
-#line 40 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 40 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_g_object_unref0 (self->priv->fade_in);
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_g_object_unref0 (self->priv->anim_grow);
-#line 43 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 43 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_g_object_unref0 (self->priv->anim_shrink);
-#line 45 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 45 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_g_object_unref0 (self->priv->adapt_opacity);
-#line 47 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 47 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	_g_object_unref0 (self->priv->button);
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/src/View/AdaptOpacityDemo.vala"
 	G_OBJECT_CLASS (daf_animation_test_adapt_opacity_demo_parent_class)->finalize (obj);
 #line 685 "AdaptOpacityDemo.c"
 }

@@ -81,9 +81,9 @@ void daf_core_ivalue_model_get_model_value (DafCoreIValueModel* self,
 GValue*
 daf_core_ivalue_model_get_val (DafCoreIValueModel* self)
 {
-#line 39 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
+#line 39 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 39 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
+#line 39 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
 	return DAF_CORE_IVALUE_MODEL_GET_INTERFACE (self)->get_val (self);
 #line 89 "IValueModel.c"
 }
@@ -93,9 +93,9 @@ void
 daf_core_ivalue_model_set_val (DafCoreIValueModel* self,
                                GValue* new_value)
 {
-#line 40 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
+#line 40 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
 	g_return_if_fail (self != NULL);
-#line 40 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
+#line 40 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
 	DAF_CORE_IVALUE_MODEL_GET_INTERFACE (self)->set_val (self, new_value);
 #line 101 "IValueModel.c"
 }
@@ -104,7 +104,7 @@ daf_core_ivalue_model_set_val (DafCoreIValueModel* self,
 static GValue*
 _g_value_dup (GValue* self)
 {
-#line 52 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
+#line 52 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
 	return g_boxed_copy (G_TYPE_VALUE, self);
 #line 110 "IValueModel.c"
 }
@@ -113,7 +113,7 @@ _g_value_dup (GValue* self)
 static gpointer
 __g_value_dup0 (gpointer self)
 {
-#line 52 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
+#line 52 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
 	return self ? _g_value_dup (self) : NULL;
 #line 119 "IValueModel.c"
 }
@@ -122,9 +122,9 @@ __g_value_dup0 (gpointer self)
 static void
 _vala_GValue_free (GValue* self)
 {
-#line 52 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
+#line 52 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
 	g_value_unset (self);
-#line 52 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
+#line 52 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
 	g_free (self);
 #line 130 "IValueModel.c"
 }
@@ -139,74 +139,74 @@ daf_core_ivalue_model_real_do_set_val (DafCoreIValueModel* self,
 	GValue* old_value = NULL;
 	gboolean _tmp1_ = FALSE;
 	GValue* _tmp5_;
-#line 46 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
+#line 46 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
 	if ((*model_state) == NULL) {
-#line 46 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
+#line 46 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
 		_tmp0_ = new_value == NULL;
 #line 147 "IValueModel.c"
 	} else {
-#line 46 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
+#line 46 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
 		_tmp0_ = FALSE;
 #line 151 "IValueModel.c"
 	}
-#line 46 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
+#line 46 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
 	if (_tmp0_) {
-#line 47 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
+#line 47 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
 		return;
 #line 157 "IValueModel.c"
 	}
-#line 49 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
+#line 49 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
 	old_value = NULL;
-#line 51 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
+#line 51 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
 	if ((*model_state) != NULL) {
 #line 163 "IValueModel.c"
 		gchar* _tmp2_;
 		gchar* _tmp3_;
-#line 51 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
+#line 51 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
 		_tmp2_ = g_strdup_value_contents (*model_state);
-#line 51 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
+#line 51 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
 		_tmp3_ = _tmp2_;
-#line 51 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
+#line 51 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
 		_tmp1_ = g_strcmp0 (_tmp3_, "NULL") != 0;
-#line 51 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
+#line 51 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
 		_g_free0 (_tmp3_);
 #line 174 "IValueModel.c"
 	} else {
-#line 51 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
+#line 51 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
 		_tmp1_ = FALSE;
 #line 178 "IValueModel.c"
 	}
-#line 51 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
+#line 51 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
 	if (_tmp1_) {
 #line 182 "IValueModel.c"
 		GValue* _tmp4_;
-#line 52 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
+#line 52 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
 		_tmp4_ = __g_value_dup0 (*model_state);
-#line 52 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
+#line 52 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
 		__vala_GValue_free0 (old_value);
-#line 52 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
+#line 52 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
 		old_value = _tmp4_;
 #line 190 "IValueModel.c"
 	}
-#line 55 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
+#line 55 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
 	_tmp5_ = old_value;
-#line 55 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
+#line 55 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
 	g_signal_emit (self, daf_core_ivalue_model_signals[DAF_CORE_IVALUE_MODEL_BEFORE_VALUE_CHANGED_SIGNAL], 0, _tmp5_);
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
 	if (new_value != NULL) {
-#line 59 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
+#line 59 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
 		daf_core_ivalue_model_set_model_value (self, new_value);
 #line 200 "IValueModel.c"
 	} else {
-#line 62 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
+#line 62 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
 		__vala_GValue_free0 (*model_state);
-#line 62 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
+#line 62 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
 		*model_state = NULL;
-#line 63 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
+#line 63 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
 		g_object_notify ((GObject*) self, DAF_CORE_IVALUE_MODEL_PROP_NAME);
 #line 208 "IValueModel.c"
 	}
-#line 44 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
+#line 44 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
 	__vala_GValue_free0 (old_value);
 #line 212 "IValueModel.c"
 }
@@ -217,9 +217,9 @@ daf_core_ivalue_model_do_set_val (DafCoreIValueModel* self,
                                   GValue** model_state,
                                   GValue* new_value)
 {
-#line 44 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
+#line 44 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
 	g_return_if_fail (self != NULL);
-#line 44 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
+#line 44 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
 	DAF_CORE_IVALUE_MODEL_GET_INTERFACE (self)->do_set_val (self, model_state, new_value);
 #line 225 "IValueModel.c"
 }
@@ -228,9 +228,9 @@ daf_core_ivalue_model_do_set_val (DafCoreIValueModel* self,
 gboolean
 daf_core_ivalue_model_get_locked (DafCoreIValueModel* self)
 {
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
 	g_return_val_if_fail (self != NULL, FALSE);
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
 	return DAF_CORE_IVALUE_MODEL_GET_INTERFACE (self)->get_locked (self);
 #line 236 "IValueModel.c"
 }
@@ -240,9 +240,9 @@ void
 daf_core_ivalue_model_set_locked (DafCoreIValueModel* self,
                                   gboolean value)
 {
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
 	g_return_if_fail (self != NULL);
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
 	DAF_CORE_IVALUE_MODEL_GET_INTERFACE (self)->set_locked (self, value);
 #line 248 "IValueModel.c"
 }
@@ -252,9 +252,9 @@ void
 daf_core_ivalue_model_get_model_value (DafCoreIValueModel* self,
                                        GValue * result)
 {
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
 	g_return_if_fail (self != NULL);
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
 	DAF_CORE_IVALUE_MODEL_GET_INTERFACE (self)->get_model_value (self, result);
 #line 260 "IValueModel.c"
 }
@@ -264,9 +264,9 @@ void
 daf_core_ivalue_model_set_model_value (DafCoreIValueModel* self,
                                        GValue * value)
 {
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
 	g_return_if_fail (self != NULL);
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
 	DAF_CORE_IVALUE_MODEL_GET_INTERFACE (self)->set_model_value (self, value);
 #line 272 "IValueModel.c"
 }
@@ -275,13 +275,13 @@ daf_core_ivalue_model_set_model_value (DafCoreIValueModel* self,
 static void
 daf_core_ivalue_model_default_init (DafCoreIValueModelIface * iface)
 {
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
 	g_object_interface_install_property (iface, g_param_spec_boolean ("locked", "locked", "locked", FALSE, G_PARAM_STATIC_STRINGS | G_PARAM_READABLE | G_PARAM_WRITABLE));
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
 	g_object_interface_install_property (iface, g_param_spec_boxed ("model-value", "model-value", "model-value", G_TYPE_VALUE, G_PARAM_STATIC_STRINGS | G_PARAM_READABLE | G_PARAM_WRITABLE));
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
 	daf_core_ivalue_model_signals[DAF_CORE_IVALUE_MODEL_BEFORE_VALUE_CHANGED_SIGNAL] = g_signal_new ("before-value-changed", DAF_CORE_TYPE_IVALUE_MODEL, G_SIGNAL_RUN_LAST, 0, NULL, NULL, g_cclosure_marshal_VOID__POINTER, G_TYPE_NONE, 1, G_TYPE_POINTER);
-#line 23 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
+#line 23 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IValueModel.vala"
 	iface->do_set_val = daf_core_ivalue_model_real_do_set_val;
 #line 287 "IValueModel.c"
 }

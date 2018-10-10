@@ -66,9 +66,9 @@ daf_core_binding_ibind_model_on_model_notify (DafCoreBindingIBindModel* self,
                                               GObject* sender,
                                               GParamSpec* param_spec)
 {
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/IBindModel.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/IBindModel.vala"
 	g_return_if_fail (self != NULL);
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/IBindModel.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/IBindModel.vala"
 	DAF_CORE_BINDING_IBIND_MODEL_GET_INTERFACE (self)->on_model_notify (self, sender, param_spec);
 #line 74 "IBindModel.c"
 }
@@ -79,9 +79,9 @@ daf_core_binding_ibind_model_bind (DafCoreBindingIBindModel* self,
                                    DafCoreBindingIBindModel* bind_target,
                                    gboolean locked)
 {
-#line 30 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/IBindModel.vala"
+#line 30 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/IBindModel.vala"
 	g_return_if_fail (self != NULL);
-#line 30 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/IBindModel.vala"
+#line 30 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/IBindModel.vala"
 	DAF_CORE_BINDING_IBIND_MODEL_GET_INTERFACE (self)->bind (self, bind_target, locked);
 #line 87 "IBindModel.c"
 }
@@ -92,9 +92,9 @@ daf_core_binding_ibind_model_unbind (DafCoreBindingIBindModel* self,
                                      DafCoreBindingIBindModel* bind_target,
                                      gboolean locked)
 {
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/IBindModel.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/IBindModel.vala"
 	g_return_if_fail (self != NULL);
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/IBindModel.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/IBindModel.vala"
 	DAF_CORE_BINDING_IBIND_MODEL_GET_INTERFACE (self)->unbind (self, bind_target, locked);
 #line 100 "IBindModel.c"
 }
@@ -103,9 +103,9 @@ daf_core_binding_ibind_model_unbind (DafCoreBindingIBindModel* self,
 DafCoreIValueModel*
 daf_core_binding_ibind_model_get_model (DafCoreBindingIBindModel* self)
 {
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/IBindModel.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/IBindModel.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/IBindModel.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/IBindModel.vala"
 	return DAF_CORE_BINDING_IBIND_MODEL_GET_INTERFACE (self)->get_model (self);
 #line 111 "IBindModel.c"
 }
@@ -115,9 +115,9 @@ void
 daf_core_binding_ibind_model_set_model (DafCoreBindingIBindModel* self,
                                         DafCoreIValueModel* value)
 {
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/IBindModel.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/IBindModel.vala"
 	g_return_if_fail (self != NULL);
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/IBindModel.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/IBindModel.vala"
 	DAF_CORE_BINDING_IBIND_MODEL_GET_INTERFACE (self)->set_model (self, value);
 #line 123 "IBindModel.c"
 }
@@ -126,7 +126,7 @@ daf_core_binding_ibind_model_set_model (DafCoreBindingIBindModel* self,
 static void
 daf_core_binding_ibind_model_default_init (DafCoreBindingIBindModelIface * iface)
 {
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/IBindModel.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/IBindModel.vala"
 	g_object_interface_install_property (iface, g_param_spec_object ("model", "model", "model", DAF_CORE_TYPE_IVALUE_MODEL, G_PARAM_STATIC_STRINGS | G_PARAM_READABLE | G_PARAM_WRITABLE | G_PARAM_CONSTRUCT));
 #line 132 "IBindModel.c"
 }

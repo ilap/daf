@@ -237,7 +237,7 @@ static void _vala_daf_ui_widgets_abstract_deck_layout_set_property (GObject * ob
 static void
 _g_object_unref0_ (gpointer var)
 {
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	(var == NULL) ? NULL : (var = (g_object_unref (var), NULL));
 #line 243 "AbstractDeckLayout.c"
 }
@@ -246,7 +246,7 @@ _g_object_unref0_ (gpointer var)
 static inline void
 _g_list_free__g_object_unref0_ (GList* self)
 {
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	g_list_free_full (self, (GDestroyNotify) _g_object_unref0_);
 #line 252 "AbstractDeckLayout.c"
 }
@@ -257,13 +257,13 @@ daf_ui_widgets_abstract_deck_layout_construct (GType object_type)
 {
 	DafUIWidgetsAbstractDeckLayout * self = NULL;
 	GList* _tmp0_;
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp0_ = NULL;
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	self = (DafUIWidgetsAbstractDeckLayout*) daf_ui_widgets_abstract_deck_layout_construct_with_cards (object_type, _tmp0_);
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	(_tmp0_ == NULL) ? NULL : (_tmp0_ = (_g_list_free__g_object_unref0_ (_tmp0_), NULL));
-#line 47 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 47 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	return self;
 #line 269 "AbstractDeckLayout.c"
 }
@@ -274,13 +274,13 @@ daf_ui_widgets_abstract_deck_layout_construct_with_cards (GType object_type,
                                                           GList* cards)
 {
 	DafUIWidgetsAbstractDeckLayout * self = NULL;
-#line 51 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 51 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	self = (DafUIWidgetsAbstractDeckLayout*) g_object_new (object_type, NULL);
-#line 52 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 52 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	self->priv->cards = cards;
-#line 53 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 53 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	gtk_widget_set_has_window ((GtkWidget*) self, FALSE);
-#line 51 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 51 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	return self;
 #line 286 "AbstractDeckLayout.c"
 }
@@ -289,7 +289,7 @@ daf_ui_widgets_abstract_deck_layout_construct_with_cards (GType object_type,
 static gpointer
 _g_object_ref0 (gpointer self)
 {
-#line 69 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 69 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	return self ? g_object_ref (self) : NULL;
 #line 295 "AbstractDeckLayout.c"
 }
@@ -304,87 +304,87 @@ daf_ui_widgets_abstract_deck_layout_real_add (DafUIWidgetsIDeckLayout* base,
 	DafUIWidgetsICard* _tmp1_;
 	gboolean _tmp2_;
 	GError * _inner_error_ = NULL;
-#line 62 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 62 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	self = (DafUIWidgetsAbstractDeckLayout*) base;
-#line 62 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 62 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	g_return_if_fail (widget != NULL);
-#line 64 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 64 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp0_ = daf_ui_widgets_abstract_deck_layout_get_card_of_widget (self, widget);
-#line 64 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 64 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp1_ = _tmp0_;
-#line 64 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 64 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp2_ = _tmp1_ == NULL;
-#line 64 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 64 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_g_object_unref0 (_tmp1_);
-#line 64 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 64 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	if (_tmp2_) {
 #line 322 "AbstractDeckLayout.c"
 		DafUIWidgetsICard* card = NULL;
 		DafUIWidgetsICard* _tmp3_;
 		DafUIWidgetsICard* _tmp8_;
-#line 67 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 67 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp3_ = daf_ui_widgets_abstract_deck_layout_create_card (self, widget);
-#line 67 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 67 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		card = _tmp3_;
 #line 330 "AbstractDeckLayout.c"
 		{
 			GList* _tmp4_;
-#line 68 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 68 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 			_tmp4_ = self->priv->cards;
-#line 68 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 68 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 			g_rec_mutex_lock (&self->priv->__lock_cards);
 #line 337 "AbstractDeckLayout.c"
 			{
 				DafUIWidgetsICard* _tmp5_;
 				DafUIWidgetsICard* _tmp6_;
-#line 69 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 69 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 				_tmp5_ = card;
-#line 69 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 69 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 				_tmp6_ = _g_object_ref0 (_tmp5_);
-#line 69 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 69 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 				self->priv->cards = g_list_append (self->priv->cards, _tmp6_);
 #line 347 "AbstractDeckLayout.c"
 			}
 			__finally0:
 			{
 				GList* _tmp7_;
-#line 68 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 68 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 				_tmp7_ = self->priv->cards;
-#line 68 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 68 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 				g_rec_mutex_unlock (&self->priv->__lock_cards);
 #line 356 "AbstractDeckLayout.c"
 			}
-#line 68 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 68 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 			if (G_UNLIKELY (_inner_error_ != NULL)) {
-#line 68 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 68 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 				_g_object_unref0 (card);
-#line 68 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 68 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 				g_critical ("file %s: line %d: uncaught error: %s (%s, %d)", __FILE__, __LINE__, _inner_error_->message, g_quark_to_string (_inner_error_->domain), _inner_error_->code);
-#line 68 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 68 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 				g_clear_error (&_inner_error_);
-#line 68 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 68 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 				return;
 #line 368 "AbstractDeckLayout.c"
 			}
 		}
-#line 72 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 72 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp8_ = self->priv->_active_card;
-#line 72 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 72 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		if (_tmp8_ == NULL) {
 #line 375 "AbstractDeckLayout.c"
 			DafUIWidgetsICard* _tmp9_;
 			DafUIWidgetsICard* _tmp10_;
-#line 73 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 73 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 			_tmp9_ = card;
-#line 73 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 73 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 			daf_ui_widgets_icard_set_visible (_tmp9_, TRUE);
-#line 74 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 74 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 			_tmp10_ = card;
-#line 74 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 74 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 			daf_ui_widgets_abstract_deck_layout_set_active_card (self, _tmp10_);
 #line 386 "AbstractDeckLayout.c"
 		}
-#line 64 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 64 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_g_object_unref0 (card);
 #line 390 "AbstractDeckLayout.c"
 	} else {
@@ -410,108 +410,108 @@ daf_ui_widgets_abstract_deck_layout_real_remove (DafUIWidgetsIDeckLayout* base,
 	DafUIWidgetsICard* _tmp8_;
 	DafUIWidgetsICard* _tmp15_;
 	gboolean _tmp16_;
-#line 81 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 81 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	self = (DafUIWidgetsAbstractDeckLayout*) base;
-#line 81 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 81 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	g_return_if_fail (widget != NULL);
-#line 84 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 84 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp1_ = self->priv->_active_card;
-#line 84 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 84 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	if (_tmp1_ == NULL) {
-#line 84 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 84 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp0_ = TRUE;
 #line 424 "AbstractDeckLayout.c"
 	} else {
-#line 84 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 84 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp0_ = widget == NULL;
 #line 428 "AbstractDeckLayout.c"
 	}
-#line 84 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 84 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	if (_tmp0_) {
-#line 85 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 85 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		return;
 #line 434 "AbstractDeckLayout.c"
 	}
-#line 88 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 88 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp2_ = daf_ui_widgets_abstract_deck_layout_get_card_of_widget (self, widget);
-#line 88 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 88 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	card = _tmp2_;
-#line 90 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 90 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp3_ = card;
-#line 90 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 90 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	if (_tmp3_ == NULL) {
-#line 91 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 91 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_g_object_unref0 (card);
-#line 91 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 91 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		return;
 #line 448 "AbstractDeckLayout.c"
 	}
-#line 94 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 94 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp4_ = card;
-#line 94 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 94 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp5_ = daf_ui_widgets_icard_get_visible (_tmp4_);
-#line 94 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 94 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp6_ = _tmp5_;
-#line 94 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 94 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	was_visible = _tmp6_;
-#line 96 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 96 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp7_ = card;
-#line 96 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 96 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp8_ = self->priv->_active_card;
-#line 96 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 96 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	if (_tmp7_ == _tmp8_) {
 #line 464 "AbstractDeckLayout.c"
 		DafUIWidgetsICard* next_card = NULL;
 		DafUIWidgetsICard* _tmp9_;
 		DafUIWidgetsICard* _tmp10_;
 		DafUIWidgetsICard* _tmp11_;
-#line 98 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 98 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp9_ = self->priv->_active_card;
-#line 98 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 98 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp10_ = daf_ui_widgets_abstract_deck_layout_get_next_card (self, _tmp9_);
-#line 98 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 98 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		next_card = _tmp10_;
-#line 99 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 99 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp11_ = next_card;
-#line 99 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 99 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		if (_tmp11_ != NULL) {
 #line 479 "AbstractDeckLayout.c"
 			DafUIWidgetsICard* _tmp12_;
 			DafUIWidgetsICard* _tmp13_;
 			DafUIWidgetsICard* _tmp14_;
-#line 100 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 100 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 			_tmp12_ = self->priv->_active_card;
-#line 100 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 100 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 			_tmp13_ = next_card;
-#line 100 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 100 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 			daf_ui_widgets_abstract_deck_layout_clone_card (self, _tmp12_, _tmp13_);
-#line 101 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 101 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 			_tmp14_ = next_card;
-#line 101 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 101 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 			daf_ui_widgets_abstract_deck_layout_do_switch (self, _tmp14_, TRUE);
 #line 493 "AbstractDeckLayout.c"
 		} else {
-#line 104 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 104 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 			daf_ui_widgets_abstract_deck_layout_set_active_card (self, NULL);
 #line 497 "AbstractDeckLayout.c"
 		}
-#line 96 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 96 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_g_object_unref0 (next_card);
 #line 501 "AbstractDeckLayout.c"
 	}
-#line 108 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 108 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp15_ = card;
-#line 108 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 108 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	daf_ui_widgets_abstract_deck_layout_remove_card (self, _tmp15_);
-#line 110 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 110 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp16_ = was_visible;
-#line 110 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 110 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	if (_tmp16_) {
-#line 111 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 111 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		gtk_widget_queue_resize ((GtkWidget*) self);
 #line 513 "AbstractDeckLayout.c"
 	}
-#line 81 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 81 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_g_object_unref0 (card);
 #line 517 "AbstractDeckLayout.c"
 }
@@ -527,68 +527,68 @@ daf_ui_widgets_abstract_deck_layout_remove_card (DafUIWidgetsAbstractDeckLayout*
 	GtkWidget* _tmp2_;
 	GtkWidget* _tmp3_;
 	GError * _inner_error_ = NULL;
-#line 115 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 115 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	g_return_if_fail (self != NULL);
-#line 115 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 115 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	g_return_if_fail (card != NULL);
-#line 117 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 117 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp0_ = daf_ui_widgets_icard_get_widget (card);
-#line 117 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 117 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp1_ = _tmp0_;
-#line 117 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 117 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp2_ = _g_object_ref0 (_tmp1_);
-#line 117 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 117 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	widget = _tmp2_;
-#line 118 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 118 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp3_ = widget;
-#line 118 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 118 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	if (_tmp3_ != NULL) {
 #line 547 "AbstractDeckLayout.c"
 		GtkWidget* _tmp4_;
-#line 119 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 119 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp4_ = widget;
-#line 119 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 119 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		gtk_widget_unparent (_tmp4_);
 #line 553 "AbstractDeckLayout.c"
 	}
-#line 122 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 122 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	daf_ui_widgets_icard_set_widget (card, NULL);
 #line 557 "AbstractDeckLayout.c"
 	{
 		GList* _tmp5_;
-#line 123 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 123 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp5_ = self->priv->cards;
-#line 123 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 123 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		g_rec_mutex_lock (&self->priv->__lock_cards);
 #line 564 "AbstractDeckLayout.c"
 		{
-#line 124 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 124 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 			self->priv->cards = g_list_remove (self->priv->cards, card);
 #line 568 "AbstractDeckLayout.c"
 		}
 		__finally1:
 		{
 			GList* _tmp6_;
-#line 123 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 123 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 			_tmp6_ = self->priv->cards;
-#line 123 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 123 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 			g_rec_mutex_unlock (&self->priv->__lock_cards);
 #line 577 "AbstractDeckLayout.c"
 		}
-#line 123 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 123 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		if (G_UNLIKELY (_inner_error_ != NULL)) {
-#line 123 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 123 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 			_g_object_unref0 (widget);
-#line 123 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 123 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 			g_critical ("file %s: line %d: uncaught error: %s (%s, %d)", __FILE__, __LINE__, _inner_error_->message, g_quark_to_string (_inner_error_->domain), _inner_error_->code);
-#line 123 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 123 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 			g_clear_error (&_inner_error_);
-#line 123 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 123 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 			return;
 #line 589 "AbstractDeckLayout.c"
 		}
 	}
-#line 115 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 115 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_g_object_unref0 (widget);
 #line 594 "AbstractDeckLayout.c"
 }
@@ -618,73 +618,73 @@ daf_ui_widgets_abstract_deck_layout_clone_card (DafUIWidgetsAbstractDeckLayout* 
 	gint _tmp14_;
 	gint _tmp15_;
 	gdouble _tmp16_;
-#line 128 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 128 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	g_return_if_fail (self != NULL);
-#line 128 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 128 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	g_return_if_fail (from != NULL);
-#line 128 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 128 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	g_return_if_fail (to != NULL);
-#line 129 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 129 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp0_ = daf_ui_widgets_icard_get_visible (from);
-#line 129 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 129 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp1_ = _tmp0_;
-#line 129 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 129 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	daf_ui_widgets_icard_set_visible (to, _tmp1_);
-#line 131 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 131 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp2_ = daf_ui_widgets_icard_get_halign (from);
-#line 131 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 131 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp3_ = _tmp2_;
-#line 131 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 131 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	daf_ui_widgets_icard_set_halign (to, _tmp3_);
-#line 132 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 132 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp4_ = daf_ui_widgets_icard_get_valign (from);
-#line 132 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 132 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp5_ = _tmp4_;
-#line 132 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 132 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	daf_ui_widgets_icard_set_valign (to, _tmp5_);
-#line 134 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 134 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp6_ = daf_ui_widgets_icard_get_hexpand (from);
-#line 134 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 134 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp7_ = _tmp6_;
-#line 134 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 134 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	daf_ui_widgets_icard_set_hexpand (to, _tmp7_);
-#line 135 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 135 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp8_ = daf_ui_widgets_icard_get_vexpand (from);
-#line 135 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 135 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp9_ = _tmp8_;
-#line 135 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 135 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	daf_ui_widgets_icard_set_vexpand (to, _tmp9_);
-#line 137 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 137 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp10_ = _g_object_ref0 (G_TYPE_CHECK_INSTANCE_TYPE (to, DAF_UI_WIDGETS_TYPE_ANIMATED_CARD) ? ((DafUIWidgetsAnimatedCard*) to) : NULL);
-#line 137 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 137 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	to_card = _tmp10_;
-#line 138 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 138 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp11_ = _g_object_ref0 (G_TYPE_CHECK_INSTANCE_TYPE (from, DAF_UI_WIDGETS_TYPE_ANIMATED_CARD) ? ((DafUIWidgetsAnimatedCard*) from) : NULL);
-#line 138 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 138 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	from_card = _tmp11_;
-#line 140 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 140 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp12_ = from_card->width_request;
-#line 140 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 140 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	to_card->width_request = _tmp12_;
-#line 141 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 141 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp13_ = from_card->height_request;
-#line 141 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 141 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	to_card->height_request = _tmp13_;
-#line 143 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 143 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp14_ = from_card->height;
-#line 143 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 143 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	to_card->height = _tmp14_;
-#line 144 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 144 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp15_ = from_card->width;
-#line 144 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 144 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	to_card->width = _tmp15_;
-#line 145 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 145 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp16_ = from_card->opacity;
-#line 145 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 145 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	to_card->opacity = _tmp16_;
-#line 128 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 128 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_g_object_unref0 (from_card);
-#line 128 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 128 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_g_object_unref0 (to_card);
 #line 690 "AbstractDeckLayout.c"
 }
@@ -698,29 +698,29 @@ daf_ui_widgets_abstract_deck_layout_get_next_card (DafUIWidgetsAbstractDeckLayou
 	DafUIWidgetsICard* _result_ = NULL;
 	DafUIWidgetsICard* _tmp0_;
 	DafUIWidgetsICard* _tmp1_;
-#line 148 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 148 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 150 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 150 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp0_ = daf_ui_widgets_abstract_deck_layout_get_next (self, card, TRUE);
-#line 150 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 150 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_result_ = _tmp0_;
-#line 152 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 152 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp1_ = _result_;
-#line 152 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 152 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	if (_tmp1_ == NULL) {
 #line 712 "AbstractDeckLayout.c"
 		DafUIWidgetsICard* _tmp2_;
-#line 153 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 153 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp2_ = daf_ui_widgets_abstract_deck_layout_get_next (self, card, FALSE);
-#line 153 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 153 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_g_object_unref0 (_result_);
-#line 153 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 153 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_result_ = _tmp2_;
 #line 720 "AbstractDeckLayout.c"
 	}
-#line 156 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 156 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	result = _result_;
-#line 156 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 156 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	return result;
 #line 726 "AbstractDeckLayout.c"
 }
@@ -733,66 +733,66 @@ daf_ui_widgets_abstract_deck_layout_get_card_of_widget (DafUIWidgetsAbstractDeck
 	DafUIWidgetsICard* result = NULL;
 	DafUIWidgetsICard* _result_ = NULL;
 	GList* _tmp0_;
-#line 159 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 159 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 160 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 160 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_result_ = NULL;
-#line 162 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 162 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp0_ = self->priv->cards;
 #line 743 "AbstractDeckLayout.c"
 	{
 		GList* card_collection = NULL;
 		GList* card_it = NULL;
-#line 162 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 162 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		card_collection = _tmp0_;
-#line 162 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 162 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		for (card_it = card_collection; card_it != NULL; card_it = card_it->next) {
 #line 751 "AbstractDeckLayout.c"
 			DafUIWidgetsICard* _tmp1_;
 			DafUIWidgetsICard* card = NULL;
-#line 162 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 162 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 			_tmp1_ = _g_object_ref0 ((DafUIWidgetsICard*) card_it->data);
-#line 162 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 162 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 			card = _tmp1_;
 #line 758 "AbstractDeckLayout.c"
 			{
 				DafUIWidgetsICard* _tmp2_;
 				GtkWidget* _tmp3_;
 				GtkWidget* _tmp4_;
-#line 163 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 163 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 				_tmp2_ = card;
-#line 163 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 163 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 				_tmp3_ = daf_ui_widgets_icard_get_widget (_tmp2_);
-#line 163 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 163 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 				_tmp4_ = _tmp3_;
-#line 163 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 163 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 				if (_tmp4_ == widget) {
 #line 771 "AbstractDeckLayout.c"
 					DafUIWidgetsICard* _tmp5_;
 					DafUIWidgetsICard* _tmp6_;
-#line 164 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 164 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 					_tmp5_ = card;
-#line 164 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 164 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 					_tmp6_ = _g_object_ref0 (_tmp5_);
-#line 164 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 164 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 					_g_object_unref0 (_result_);
-#line 164 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 164 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 					_result_ = _tmp6_;
-#line 165 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 165 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 					_g_object_unref0 (card);
-#line 165 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 165 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 					break;
 #line 786 "AbstractDeckLayout.c"
 				}
-#line 162 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 162 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 				_g_object_unref0 (card);
 #line 790 "AbstractDeckLayout.c"
 			}
 		}
 	}
-#line 168 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 168 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	result = _result_;
-#line 168 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 168 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	return result;
 #line 798 "AbstractDeckLayout.c"
 }
@@ -807,107 +807,107 @@ daf_ui_widgets_abstract_deck_layout_get_next (DafUIWidgetsAbstractDeckLayout* se
 	DafUIWidgetsICard* _result_ = NULL;
 	GList* card_node = NULL;
 	GError * _inner_error_ = NULL;
-#line 171 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 171 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 172 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 172 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_result_ = NULL;
-#line 173 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 173 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	card_node = NULL;
 #line 817 "AbstractDeckLayout.c"
 	{
 		GList* _tmp0_;
-#line 175 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 175 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp0_ = self->priv->cards;
-#line 175 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 175 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		g_rec_mutex_lock (&self->priv->__lock_cards);
 #line 824 "AbstractDeckLayout.c"
 		{
 			gboolean _tmp1_ = FALSE;
 			gboolean _tmp2_ = FALSE;
-#line 176 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 176 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 			if (card != NULL) {
 #line 830 "AbstractDeckLayout.c"
 				GList* _tmp3_;
-#line 176 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 176 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 				_tmp3_ = self->priv->cards;
-#line 176 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 176 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 				_tmp2_ = _tmp3_ != NULL;
 #line 836 "AbstractDeckLayout.c"
 			} else {
-#line 176 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 176 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 				_tmp2_ = FALSE;
 #line 840 "AbstractDeckLayout.c"
 			}
-#line 176 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 176 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 			if (_tmp2_) {
 #line 844 "AbstractDeckLayout.c"
 				GList* _tmp4_;
 				GList* _tmp5_;
 				GList* _tmp6_;
-#line 176 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 176 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 				_tmp4_ = self->priv->cards;
-#line 176 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 176 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 				_tmp5_ = g_list_find (_tmp4_, card);
-#line 176 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 176 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 				card_node = _tmp5_;
-#line 176 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 176 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 				_tmp6_ = card_node;
-#line 176 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 176 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 				_tmp1_ = _tmp6_ != NULL;
 #line 858 "AbstractDeckLayout.c"
 			} else {
-#line 176 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 176 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 				_tmp1_ = FALSE;
 #line 862 "AbstractDeckLayout.c"
 			}
-#line 176 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 176 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 			if (_tmp1_) {
 #line 866 "AbstractDeckLayout.c"
 				GList* _tmp7_ = NULL;
 				GList* next = NULL;
 				GList* _tmp12_;
-#line 177 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 177 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 				if (is_next) {
 #line 872 "AbstractDeckLayout.c"
 					GList* _tmp8_;
 					GList* _tmp9_;
-#line 177 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 177 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 					_tmp8_ = card_node;
-#line 177 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 177 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 					_tmp9_ = _tmp8_->next;
-#line 177 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 177 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 					_tmp7_ = _tmp9_;
 #line 881 "AbstractDeckLayout.c"
 				} else {
 					GList* _tmp10_;
 					GList* _tmp11_;
-#line 177 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 177 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 					_tmp10_ = card_node;
-#line 177 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 177 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 					_tmp11_ = _tmp10_->prev;
-#line 177 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 177 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 					_tmp7_ = _tmp11_;
 #line 891 "AbstractDeckLayout.c"
 				}
-#line 177 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 177 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 				next = _tmp7_;
-#line 178 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 178 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 				_tmp12_ = next;
-#line 178 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 178 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 				if (_tmp12_ != NULL) {
 #line 899 "AbstractDeckLayout.c"
 					GList* _tmp13_;
 					gconstpointer _tmp14_;
 					DafUIWidgetsICard* _tmp15_;
-#line 179 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 179 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 					_tmp13_ = next;
-#line 179 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 179 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 					_tmp14_ = _tmp13_->data;
-#line 179 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 179 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 					_tmp15_ = _g_object_ref0 ((DafUIWidgetsICard*) _tmp14_);
-#line 179 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 179 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 					_g_object_unref0 (_result_);
-#line 179 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 179 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 					_result_ = _tmp15_;
 #line 913 "AbstractDeckLayout.c"
 				}
@@ -916,28 +916,28 @@ daf_ui_widgets_abstract_deck_layout_get_next (DafUIWidgetsAbstractDeckLayout* se
 		__finally2:
 		{
 			GList* _tmp16_;
-#line 175 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 175 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 			_tmp16_ = self->priv->cards;
-#line 175 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 175 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 			g_rec_mutex_unlock (&self->priv->__lock_cards);
 #line 924 "AbstractDeckLayout.c"
 		}
-#line 175 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 175 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		if (G_UNLIKELY (_inner_error_ != NULL)) {
-#line 175 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 175 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 			_g_object_unref0 (_result_);
-#line 175 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 175 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 			g_critical ("file %s: line %d: uncaught error: %s (%s, %d)", __FILE__, __LINE__, _inner_error_->message, g_quark_to_string (_inner_error_->domain), _inner_error_->code);
-#line 175 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 175 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 			g_clear_error (&_inner_error_);
-#line 175 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 175 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 			return NULL;
 #line 936 "AbstractDeckLayout.c"
 		}
 	}
-#line 183 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 183 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	result = _result_;
-#line 183 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 183 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	return result;
 #line 943 "AbstractDeckLayout.c"
 }
@@ -951,62 +951,62 @@ daf_ui_widgets_abstract_deck_layout_cards_are_valid (DafUIWidgetsAbstractDeckLay
 	gboolean _tmp0_ = FALSE;
 	gboolean _tmp1_ = FALSE;
 	gboolean _tmp2_ = FALSE;
-#line 186 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 186 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	g_return_val_if_fail (self != NULL, FALSE);
-#line 187 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 187 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	if (card != NULL) {
 #line 959 "AbstractDeckLayout.c"
 		GtkWidget* _tmp3_;
 		GtkWidget* _tmp4_;
-#line 187 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 187 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp3_ = daf_ui_widgets_icard_get_widget (card);
-#line 187 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 187 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp4_ = _tmp3_;
-#line 187 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 187 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp2_ = _tmp4_ != NULL;
 #line 968 "AbstractDeckLayout.c"
 	} else {
-#line 187 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 187 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp2_ = FALSE;
 #line 972 "AbstractDeckLayout.c"
 	}
-#line 187 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 187 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	if (_tmp2_) {
 #line 976 "AbstractDeckLayout.c"
 		DafUIWidgetsICard* _tmp5_;
-#line 187 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 187 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp5_ = self->priv->_active_card;
-#line 187 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 187 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp1_ = _tmp5_ != NULL;
 #line 982 "AbstractDeckLayout.c"
 	} else {
-#line 187 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 187 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp1_ = FALSE;
 #line 986 "AbstractDeckLayout.c"
 	}
-#line 187 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 187 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	if (_tmp1_) {
 #line 990 "AbstractDeckLayout.c"
 		DafUIWidgetsICard* _tmp6_;
 		GtkWidget* _tmp7_;
 		GtkWidget* _tmp8_;
-#line 187 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 187 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp6_ = self->priv->_active_card;
-#line 187 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 187 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp7_ = daf_ui_widgets_icard_get_widget (_tmp6_);
-#line 187 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 187 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp8_ = _tmp7_;
-#line 187 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 187 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp0_ = _tmp8_ != NULL;
 #line 1002 "AbstractDeckLayout.c"
 	} else {
-#line 187 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 187 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp0_ = FALSE;
 #line 1006 "AbstractDeckLayout.c"
 	}
-#line 187 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 187 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	result = _tmp0_;
-#line 187 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 187 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	return result;
 #line 1012 "AbstractDeckLayout.c"
 }
@@ -1020,27 +1020,27 @@ daf_ui_widgets_abstract_deck_layout_switch_next (DafUIWidgetsAbstractDeckLayout*
 	DafUIWidgetsICard* _tmp0_;
 	DafUIWidgetsICard* _tmp1_;
 	DafUIWidgetsICard* _tmp2_;
-#line 190 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 190 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	g_return_if_fail (self != NULL);
-#line 191 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 191 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp0_ = self->priv->_active_card;
-#line 191 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 191 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp1_ = daf_ui_widgets_abstract_deck_layout_get_next_card (self, _tmp0_);
-#line 191 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 191 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	next_card = _tmp1_;
-#line 192 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 192 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp2_ = next_card;
-#line 192 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 192 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	if (daf_ui_widgets_abstract_deck_layout_cards_are_valid (self, _tmp2_)) {
 #line 1036 "AbstractDeckLayout.c"
 		DafUIWidgetsICard* _tmp3_;
-#line 193 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 193 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp3_ = next_card;
-#line 193 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 193 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		daf_ui_widgets_abstract_deck_layout_do_switch (self, _tmp3_, quiet);
 #line 1042 "AbstractDeckLayout.c"
 	}
-#line 190 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 190 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_g_object_unref0 (next_card);
 #line 1046 "AbstractDeckLayout.c"
 }
@@ -1059,59 +1059,59 @@ daf_ui_widgets_abstract_deck_layout_real_switch_widget (DafUIWidgetsIDeckLayout*
 	DafUIWidgetsICard* _tmp1_;
 	gboolean _tmp2_;
 	GError * _inner_error_ = NULL;
-#line 197 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 197 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	self = (DafUIWidgetsAbstractDeckLayout*) base;
-#line 198 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 198 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	g_debug ("AbstractDeckLayout.vala:198: switch_widget");
-#line 200 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 200 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp0_ = daf_ui_widgets_abstract_deck_layout_get_card_of_widget (self, widget);
-#line 200 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 200 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	card = _tmp0_;
-#line 202 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 202 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp1_ = card;
-#line 202 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 202 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_result_ = _tmp1_ != NULL;
-#line 204 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 204 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp2_ = _result_;
-#line 204 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 204 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	if (_tmp2_) {
 #line 1079 "AbstractDeckLayout.c"
 		{
 			DafUIWidgetsICard* _tmp3_;
-#line 205 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 205 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 			_tmp3_ = self->priv->_active_card;
-#line 205 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 205 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 			g_rec_mutex_lock (&self->priv->__lock_DafUIWidgetsAbstractDeckLayoutactive_card);
 #line 1086 "AbstractDeckLayout.c"
 			{
 				gboolean _tmp4_ = FALSE;
 				DafUIWidgetsICard* _tmp5_;
-#line 207 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 207 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 				_tmp5_ = card;
-#line 207 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 207 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 				if (daf_ui_widgets_abstract_deck_layout_cards_are_valid (self, _tmp5_)) {
 #line 1094 "AbstractDeckLayout.c"
 					DafUIWidgetsICard* _tmp6_;
 					DafUIWidgetsICard* _tmp7_;
-#line 207 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 207 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 					_tmp6_ = self->priv->_active_card;
-#line 207 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 207 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 					_tmp7_ = card;
-#line 207 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 207 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 					_tmp4_ = _tmp6_ != _tmp7_;
 #line 1103 "AbstractDeckLayout.c"
 				} else {
-#line 207 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 207 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 					_tmp4_ = FALSE;
 #line 1107 "AbstractDeckLayout.c"
 				}
-#line 207 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 207 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 				if (_tmp4_) {
 #line 1111 "AbstractDeckLayout.c"
 					DafUIWidgetsICard* _tmp8_;
-#line 208 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 208 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 					_tmp8_ = card;
-#line 208 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 208 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 					_result_ = daf_ui_widgets_abstract_deck_layout_do_switch (self, _tmp8_, quiet);
 #line 1117 "AbstractDeckLayout.c"
 				}
@@ -1119,33 +1119,33 @@ daf_ui_widgets_abstract_deck_layout_real_switch_widget (DafUIWidgetsIDeckLayout*
 			__finally3:
 			{
 				DafUIWidgetsICard* _tmp9_;
-#line 205 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 205 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 				_tmp9_ = self->priv->_active_card;
-#line 205 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 205 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 				g_rec_mutex_unlock (&self->priv->__lock_DafUIWidgetsAbstractDeckLayoutactive_card);
 #line 1127 "AbstractDeckLayout.c"
 			}
-#line 205 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 205 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 			if (G_UNLIKELY (_inner_error_ != NULL)) {
 #line 1131 "AbstractDeckLayout.c"
 				gboolean _tmp10_ = FALSE;
-#line 205 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 205 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 				_g_object_unref0 (card);
-#line 205 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 205 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 				g_critical ("file %s: line %d: uncaught error: %s (%s, %d)", __FILE__, __LINE__, _inner_error_->message, g_quark_to_string (_inner_error_->domain), _inner_error_->code);
-#line 205 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 205 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 				g_clear_error (&_inner_error_);
-#line 205 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 205 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 				return _tmp10_;
 #line 1141 "AbstractDeckLayout.c"
 			}
 		}
 	}
-#line 212 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 212 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	result = _result_;
-#line 212 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 212 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_g_object_unref0 (card);
-#line 212 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 212 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	return result;
 #line 1151 "AbstractDeckLayout.c"
 }
@@ -1163,54 +1163,54 @@ daf_ui_widgets_abstract_deck_layout_real_forall_internal (GtkContainer* base,
 	GtkWidget* _tmp2_;
 	GtkWidget* _tmp3_;
 	GList* _tmp7_;
-#line 215 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 215 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	self = (DafUIWidgetsAbstractDeckLayout*) base;
-#line 217 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 217 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp0_ = self->priv->_active_card;
-#line 217 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 217 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	if (_tmp0_ == NULL) {
-#line 218 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 218 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		return;
 #line 1175 "AbstractDeckLayout.c"
 	}
-#line 221 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 221 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp1_ = self->priv->_active_card;
-#line 221 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 221 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp2_ = daf_ui_widgets_icard_get_widget (_tmp1_);
-#line 221 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 221 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp3_ = _tmp2_;
-#line 221 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 221 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	if (_tmp3_ != NULL) {
 #line 1185 "AbstractDeckLayout.c"
 		DafUIWidgetsICard* _tmp4_;
 		GtkWidget* _tmp5_;
 		GtkWidget* _tmp6_;
-#line 222 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 222 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp4_ = self->priv->_active_card;
-#line 222 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 222 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp5_ = daf_ui_widgets_icard_get_widget (_tmp4_);
-#line 222 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 222 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp6_ = _tmp5_;
-#line 222 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 222 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		callback (_tmp6_, callback_target);
 #line 1197 "AbstractDeckLayout.c"
 	}
-#line 225 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 225 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp7_ = self->priv->cards;
 #line 1201 "AbstractDeckLayout.c"
 	{
 		GList* card_collection = NULL;
 		GList* card_it = NULL;
-#line 225 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 225 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		card_collection = _tmp7_;
-#line 225 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 225 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		for (card_it = card_collection; card_it != NULL; card_it = card_it->next) {
 #line 1209 "AbstractDeckLayout.c"
 			DafUIWidgetsICard* _tmp8_;
 			DafUIWidgetsICard* card = NULL;
-#line 225 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 225 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 			_tmp8_ = _g_object_ref0 ((DafUIWidgetsICard*) card_it->data);
-#line 225 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 225 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 			card = _tmp8_;
 #line 1216 "AbstractDeckLayout.c"
 			{
@@ -1221,54 +1221,54 @@ daf_ui_widgets_abstract_deck_layout_real_forall_internal (GtkContainer* base,
 				GtkWidget* _tmp12_;
 				gboolean _tmp13_ = FALSE;
 				GtkWidget* _tmp14_;
-#line 226 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 226 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 				_tmp9_ = card;
-#line 226 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 226 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 				_tmp10_ = daf_ui_widgets_icard_get_widget (_tmp9_);
-#line 226 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 226 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 				_tmp11_ = _tmp10_;
-#line 226 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 226 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 				_tmp12_ = _g_object_ref0 (_tmp11_);
-#line 226 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 226 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 				widget = _tmp12_;
-#line 228 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 228 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 				_tmp14_ = widget;
-#line 228 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 228 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 				if (_tmp14_ != NULL) {
 #line 1239 "AbstractDeckLayout.c"
 					GtkWidget* _tmp15_;
 					DafUIWidgetsICard* _tmp16_;
 					GtkWidget* _tmp17_;
 					GtkWidget* _tmp18_;
-#line 228 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 228 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 					_tmp15_ = widget;
-#line 228 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 228 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 					_tmp16_ = self->priv->_active_card;
-#line 228 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 228 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 					_tmp17_ = daf_ui_widgets_icard_get_widget (_tmp16_);
-#line 228 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 228 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 					_tmp18_ = _tmp17_;
-#line 228 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 228 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 					_tmp13_ = _tmp15_ != _tmp18_;
 #line 1254 "AbstractDeckLayout.c"
 				} else {
-#line 228 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 228 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 					_tmp13_ = FALSE;
 #line 1258 "AbstractDeckLayout.c"
 				}
-#line 228 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 228 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 				if (_tmp13_) {
 #line 1262 "AbstractDeckLayout.c"
 					GtkWidget* _tmp19_;
-#line 229 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 229 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 					_tmp19_ = widget;
-#line 229 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 229 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 					callback (_tmp19_, callback_target);
 #line 1268 "AbstractDeckLayout.c"
 				}
-#line 225 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 225 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 				_g_object_unref0 (widget);
-#line 225 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 225 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 				_g_object_unref0 (card);
 #line 1274 "AbstractDeckLayout.c"
 			}
@@ -1283,9 +1283,9 @@ daf_ui_widgets_abstract_deck_layout_real_do_switch (DafUIWidgetsAbstractDeckLayo
                                                     gboolean quiet)
 {
 	gboolean _tmp0_ = FALSE;
-#line 235 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 235 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	g_critical ("Type `%s' does not implement abstract method `daf_ui_widgets_abstract_deck_layout_do_switch'", g_type_name (G_TYPE_FROM_INSTANCE (self)));
-#line 235 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 235 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	return _tmp0_;
 #line 1291 "AbstractDeckLayout.c"
 }
@@ -1296,9 +1296,9 @@ daf_ui_widgets_abstract_deck_layout_do_switch (DafUIWidgetsAbstractDeckLayout* s
                                                DafUIWidgetsICard* to_card,
                                                gboolean quiet)
 {
-#line 235 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 235 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	g_return_val_if_fail (self != NULL, FALSE);
-#line 235 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 235 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	return DAF_UI_WIDGETS_ABSTRACT_DECK_LAYOUT_GET_CLASS (self)->do_switch (self, to_card, quiet);
 #line 1304 "AbstractDeckLayout.c"
 }
@@ -1308,9 +1308,9 @@ static DafUIWidgetsICard*
 daf_ui_widgets_abstract_deck_layout_real_create_card (DafUIWidgetsAbstractDeckLayout* self,
                                                       GtkWidget* widget)
 {
-#line 236 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 236 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	g_critical ("Type `%s' does not implement abstract method `daf_ui_widgets_abstract_deck_layout_create_card'", g_type_name (G_TYPE_FROM_INSTANCE (self)));
-#line 236 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 236 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	return NULL;
 #line 1316 "AbstractDeckLayout.c"
 }
@@ -1320,9 +1320,9 @@ DafUIWidgetsICard*
 daf_ui_widgets_abstract_deck_layout_create_card (DafUIWidgetsAbstractDeckLayout* self,
                                                  GtkWidget* widget)
 {
-#line 236 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 236 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 236 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 236 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	return DAF_UI_WIDGETS_ABSTRACT_DECK_LAYOUT_GET_CLASS (self)->create_card (self, widget);
 #line 1328 "AbstractDeckLayout.c"
 }
@@ -1334,9 +1334,9 @@ daf_ui_widgets_abstract_deck_layout_real_compute_width (DafUIWidgetsAbstractDeck
                                                         gint* minimum,
                                                         gint* natural)
 {
-#line 238 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 238 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	g_critical ("Type `%s' does not implement abstract method `daf_ui_widgets_abstract_deck_layout_compute_width'", g_type_name (G_TYPE_FROM_INSTANCE (self)));
-#line 238 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 238 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	return;
 #line 1342 "AbstractDeckLayout.c"
 }
@@ -1348,9 +1348,9 @@ daf_ui_widgets_abstract_deck_layout_compute_width (DafUIWidgetsAbstractDeckLayou
                                                    gint* minimum,
                                                    gint* natural)
 {
-#line 238 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 238 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	g_return_if_fail (self != NULL);
-#line 238 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 238 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	DAF_UI_WIDGETS_ABSTRACT_DECK_LAYOUT_GET_CLASS (self)->compute_width (self, card, minimum, natural);
 #line 1356 "AbstractDeckLayout.c"
 }
@@ -1362,9 +1362,9 @@ daf_ui_widgets_abstract_deck_layout_real_compute_height (DafUIWidgetsAbstractDec
                                                          gint* minimum,
                                                          gint* natural)
 {
-#line 239 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 239 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	g_critical ("Type `%s' does not implement abstract method `daf_ui_widgets_abstract_deck_layout_compute_height'", g_type_name (G_TYPE_FROM_INSTANCE (self)));
-#line 239 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 239 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	return;
 #line 1370 "AbstractDeckLayout.c"
 }
@@ -1376,9 +1376,9 @@ daf_ui_widgets_abstract_deck_layout_compute_height (DafUIWidgetsAbstractDeckLayo
                                                     gint* minimum,
                                                     gint* natural)
 {
-#line 239 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 239 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	g_return_if_fail (self != NULL);
-#line 239 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 239 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	DAF_UI_WIDGETS_ABSTRACT_DECK_LAYOUT_GET_CLASS (self)->compute_height (self, card, minimum, natural);
 #line 1384 "AbstractDeckLayout.c"
 }
@@ -1391,26 +1391,26 @@ daf_ui_widgets_abstract_deck_layout_real_draw (GtkWidget* base,
 	DafUIWidgetsAbstractDeckLayout * self;
 	gboolean result = FALSE;
 	GList* _tmp0_;
-#line 242 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 242 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	self = (DafUIWidgetsAbstractDeckLayout*) base;
-#line 242 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 242 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	g_return_val_if_fail (cr != NULL, FALSE);
-#line 244 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 244 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp0_ = self->priv->cards;
 #line 1401 "AbstractDeckLayout.c"
 	{
 		GList* card_collection = NULL;
 		GList* card_it = NULL;
-#line 244 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 244 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		card_collection = _tmp0_;
-#line 244 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 244 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		for (card_it = card_collection; card_it != NULL; card_it = card_it->next) {
 #line 1409 "AbstractDeckLayout.c"
 			DafUIWidgetsICard* _tmp1_;
 			DafUIWidgetsICard* card = NULL;
-#line 244 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 244 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 			_tmp1_ = _g_object_ref0 ((DafUIWidgetsICard*) card_it->data);
-#line 244 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 244 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 			card = _tmp1_;
 #line 1416 "AbstractDeckLayout.c"
 			{
@@ -1418,57 +1418,57 @@ daf_ui_widgets_abstract_deck_layout_real_draw (GtkWidget* base,
 				DafUIWidgetsICard* _tmp3_;
 				gboolean _tmp4_;
 				gboolean _tmp5_;
-#line 245 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 245 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 				_tmp3_ = card;
-#line 245 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 245 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 				_tmp4_ = daf_ui_widgets_icard_get_visible (_tmp3_);
-#line 245 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 245 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 				_tmp5_ = _tmp4_;
-#line 245 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 245 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 				if (_tmp5_) {
 #line 1430 "AbstractDeckLayout.c"
 					DafUIWidgetsICard* _tmp6_;
 					GtkWidget* _tmp7_;
 					GtkWidget* _tmp8_;
-#line 245 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 245 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 					_tmp6_ = card;
-#line 245 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 245 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 					_tmp7_ = daf_ui_widgets_icard_get_widget (_tmp6_);
-#line 245 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 245 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 					_tmp8_ = _tmp7_;
-#line 245 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 245 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 					_tmp2_ = _tmp8_ != NULL;
 #line 1442 "AbstractDeckLayout.c"
 				} else {
-#line 245 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 245 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 					_tmp2_ = FALSE;
 #line 1446 "AbstractDeckLayout.c"
 				}
-#line 245 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 245 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 				if (_tmp2_) {
 #line 1450 "AbstractDeckLayout.c"
 					DafUIWidgetsICard* _tmp9_;
 					GtkWidget* _tmp10_;
 					GtkWidget* _tmp11_;
-#line 246 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 246 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 					_tmp9_ = card;
-#line 246 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 246 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 					_tmp10_ = daf_ui_widgets_icard_get_widget (_tmp9_);
-#line 246 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 246 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 					_tmp11_ = _tmp10_;
-#line 246 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 246 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 					gtk_container_propagate_draw ((GtkContainer*) self, _tmp11_, cr);
 #line 1462 "AbstractDeckLayout.c"
 				}
-#line 244 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 244 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 				_g_object_unref0 (card);
 #line 1466 "AbstractDeckLayout.c"
 			}
 		}
 	}
-#line 249 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 249 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	result = FALSE;
-#line 249 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 249 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	return result;
 #line 1474 "AbstractDeckLayout.c"
 }
@@ -1485,31 +1485,31 @@ daf_ui_widgets_abstract_deck_layout_real_get_preferred_width (GtkWidget* base,
 	gboolean _tmp0_ = FALSE;
 	gboolean _tmp1_ = FALSE;
 	DafUIWidgetsICard* _tmp2_;
-#line 252 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 252 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	self = (DafUIWidgetsAbstractDeckLayout*) base;
-#line 254 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 254 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp2_ = self->priv->_active_card;
-#line 254 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 254 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	if (_tmp2_ != NULL) {
 #line 1495 "AbstractDeckLayout.c"
 		DafUIWidgetsICard* _tmp3_;
 		GtkWidget* _tmp4_;
 		GtkWidget* _tmp5_;
-#line 254 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 254 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp3_ = self->priv->_active_card;
-#line 254 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 254 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp4_ = daf_ui_widgets_icard_get_widget (_tmp3_);
-#line 254 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 254 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp5_ = _tmp4_;
-#line 254 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 254 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp1_ = _tmp5_ != NULL;
 #line 1507 "AbstractDeckLayout.c"
 	} else {
-#line 254 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 254 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp1_ = FALSE;
 #line 1511 "AbstractDeckLayout.c"
 	}
-#line 254 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 254 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	if (_tmp1_) {
 #line 1515 "AbstractDeckLayout.c"
 		DafUIWidgetsICard* _tmp6_;
@@ -1517,55 +1517,55 @@ daf_ui_widgets_abstract_deck_layout_real_get_preferred_width (GtkWidget* base,
 		GtkWidget* _tmp8_;
 		gboolean _tmp9_;
 		gboolean _tmp10_;
-#line 254 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 254 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp6_ = self->priv->_active_card;
-#line 254 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 254 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp7_ = daf_ui_widgets_icard_get_widget (_tmp6_);
-#line 254 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 254 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp8_ = _tmp7_;
-#line 254 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 254 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp9_ = gtk_widget_get_visible (_tmp8_);
-#line 254 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 254 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp10_ = _tmp9_;
-#line 254 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 254 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp0_ = _tmp10_;
 #line 1533 "AbstractDeckLayout.c"
 	} else {
-#line 254 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 254 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp0_ = FALSE;
 #line 1537 "AbstractDeckLayout.c"
 	}
-#line 254 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 254 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	if (_tmp0_) {
 #line 1541 "AbstractDeckLayout.c"
 		DafUIWidgetsICard* _tmp11_;
 		gint _tmp12_ = 0;
 		gint _tmp13_ = 0;
-#line 256 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 256 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp11_ = self->priv->_active_card;
-#line 256 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 256 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		daf_ui_widgets_abstract_deck_layout_compute_width (self, _tmp11_, &_tmp12_, &_tmp13_);
-#line 256 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 256 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_vala_minimum = _tmp12_;
-#line 256 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 256 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_vala_natural = _tmp13_;
 #line 1553 "AbstractDeckLayout.c"
 	} else {
-#line 259 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 259 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_vala_minimum = 5;
-#line 260 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 260 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_vala_natural = 5;
 #line 1559 "AbstractDeckLayout.c"
 	}
-#line 252 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 252 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	if (minimum) {
-#line 252 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 252 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		*minimum = _vala_minimum;
 #line 1565 "AbstractDeckLayout.c"
 	}
-#line 252 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 252 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	if (natural) {
-#line 252 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 252 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		*natural = _vala_natural;
 #line 1571 "AbstractDeckLayout.c"
 	}
@@ -1583,31 +1583,31 @@ daf_ui_widgets_abstract_deck_layout_real_get_preferred_height (GtkWidget* base,
 	gboolean _tmp0_ = FALSE;
 	gboolean _tmp1_ = FALSE;
 	DafUIWidgetsICard* _tmp2_;
-#line 264 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 264 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	self = (DafUIWidgetsAbstractDeckLayout*) base;
-#line 266 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 266 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp2_ = self->priv->_active_card;
-#line 266 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 266 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	if (_tmp2_ != NULL) {
 #line 1593 "AbstractDeckLayout.c"
 		DafUIWidgetsICard* _tmp3_;
 		GtkWidget* _tmp4_;
 		GtkWidget* _tmp5_;
-#line 266 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 266 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp3_ = self->priv->_active_card;
-#line 266 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 266 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp4_ = daf_ui_widgets_icard_get_widget (_tmp3_);
-#line 266 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 266 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp5_ = _tmp4_;
-#line 266 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 266 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp1_ = _tmp5_ != NULL;
 #line 1605 "AbstractDeckLayout.c"
 	} else {
-#line 266 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 266 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp1_ = FALSE;
 #line 1609 "AbstractDeckLayout.c"
 	}
-#line 266 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 266 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	if (_tmp1_) {
 #line 1613 "AbstractDeckLayout.c"
 		DafUIWidgetsICard* _tmp6_;
@@ -1615,55 +1615,55 @@ daf_ui_widgets_abstract_deck_layout_real_get_preferred_height (GtkWidget* base,
 		GtkWidget* _tmp8_;
 		gboolean _tmp9_;
 		gboolean _tmp10_;
-#line 266 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 266 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp6_ = self->priv->_active_card;
-#line 266 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 266 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp7_ = daf_ui_widgets_icard_get_widget (_tmp6_);
-#line 266 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 266 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp8_ = _tmp7_;
-#line 266 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 266 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp9_ = gtk_widget_get_visible (_tmp8_);
-#line 266 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 266 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp10_ = _tmp9_;
-#line 266 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 266 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp0_ = _tmp10_;
 #line 1631 "AbstractDeckLayout.c"
 	} else {
-#line 266 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 266 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp0_ = FALSE;
 #line 1635 "AbstractDeckLayout.c"
 	}
-#line 266 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 266 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	if (_tmp0_) {
 #line 1639 "AbstractDeckLayout.c"
 		DafUIWidgetsICard* _tmp11_;
 		gint _tmp12_ = 0;
 		gint _tmp13_ = 0;
-#line 267 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 267 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp11_ = self->priv->_active_card;
-#line 267 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 267 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		daf_ui_widgets_abstract_deck_layout_compute_height (self, _tmp11_, &_tmp12_, &_tmp13_);
-#line 267 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 267 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_vala_minimum = _tmp12_;
-#line 267 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 267 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_vala_natural = _tmp13_;
 #line 1651 "AbstractDeckLayout.c"
 	} else {
-#line 270 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 270 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_vala_minimum = 5;
-#line 271 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 271 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_vala_natural = 5;
 #line 1657 "AbstractDeckLayout.c"
 	}
-#line 264 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 264 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	if (minimum) {
-#line 264 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 264 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		*minimum = _vala_minimum;
 #line 1663 "AbstractDeckLayout.c"
 	}
-#line 264 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 264 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	if (natural) {
-#line 264 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 264 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		*natural = _vala_natural;
 #line 1669 "AbstractDeckLayout.c"
 	}
@@ -1693,77 +1693,77 @@ daf_ui_widgets_abstract_deck_layout_real_size_allocate (GtkWidget* base,
 	gint _tmp13_;
 	gboolean _tmp14_ = FALSE;
 	DafUIWidgetsICard* _tmp15_;
-#line 275 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 275 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	self = (DafUIWidgetsAbstractDeckLayout*) base;
-#line 275 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 275 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	g_return_if_fail (alloc != NULL);
-#line 277 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 277 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp0_ = *alloc;
-#line 277 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 277 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	gtk_widget_set_allocation ((GtkWidget*) self, &_tmp0_);
-#line 278 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 278 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp1_ = *alloc;
-#line 278 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 278 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	daf_ui_widgets_abstract_deck_layout_print_alloc (self, (GtkWidget*) self, &_tmp1_);
-#line 280 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 280 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	border_width = (gint) gtk_container_get_border_width ((GtkContainer*) self);
-#line 282 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 282 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	memset (&child_alloc, 0, sizeof (GtkAllocation));
-#line 284 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 284 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp2_ = *alloc;
-#line 284 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 284 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp3_ = _tmp2_.x;
-#line 284 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 284 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp4_ = border_width;
-#line 284 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 284 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	child_alloc.x = _tmp3_ + _tmp4_;
-#line 285 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 285 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp5_ = *alloc;
-#line 285 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 285 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp6_ = _tmp5_.y;
-#line 285 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 285 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp7_ = border_width;
-#line 285 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 285 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	child_alloc.y = _tmp6_ + _tmp7_;
-#line 286 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 286 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp8_ = *alloc;
-#line 286 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 286 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp9_ = _tmp8_.width;
-#line 286 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 286 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp10_ = border_width;
-#line 286 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 286 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	child_alloc.width = MAX (1, _tmp9_ - (2 * _tmp10_));
-#line 287 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 287 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp11_ = *alloc;
-#line 287 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 287 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp12_ = _tmp11_.height;
-#line 287 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 287 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp13_ = border_width;
-#line 287 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 287 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	child_alloc.height = MAX (1, _tmp12_ - (2 * _tmp13_));
-#line 289 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 289 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp15_ = self->priv->_active_card;
-#line 289 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 289 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	if (_tmp15_ != NULL) {
 #line 1749 "AbstractDeckLayout.c"
 		DafUIWidgetsICard* _tmp16_;
 		GtkWidget* _tmp17_;
 		GtkWidget* _tmp18_;
-#line 289 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 289 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp16_ = self->priv->_active_card;
-#line 289 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 289 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp17_ = daf_ui_widgets_icard_get_widget (_tmp16_);
-#line 289 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 289 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp18_ = _tmp17_;
-#line 289 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 289 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp14_ = _tmp18_ != NULL;
 #line 1761 "AbstractDeckLayout.c"
 	} else {
-#line 289 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 289 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp14_ = FALSE;
 #line 1765 "AbstractDeckLayout.c"
 	}
-#line 289 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 289 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	if (_tmp14_) {
 #line 1769 "AbstractDeckLayout.c"
 		DafUIWidgetsICard* _tmp19_;
@@ -1774,25 +1774,25 @@ daf_ui_widgets_abstract_deck_layout_real_size_allocate (GtkWidget* base,
 		GtkWidget* _tmp24_;
 		GtkWidget* _tmp25_;
 		GtkAllocation _tmp26_;
-#line 290 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 290 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp19_ = self->priv->_active_card;
-#line 290 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 290 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp20_ = daf_ui_widgets_icard_get_widget (_tmp19_);
-#line 290 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 290 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp21_ = _tmp20_;
-#line 290 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 290 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp22_ = child_alloc;
-#line 290 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 290 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		daf_ui_widgets_abstract_deck_layout_print_alloc (self, _tmp21_, &_tmp22_);
-#line 291 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 291 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp23_ = self->priv->_active_card;
-#line 291 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 291 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp24_ = daf_ui_widgets_icard_get_widget (_tmp23_);
-#line 291 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 291 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp25_ = _tmp24_;
-#line 291 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 291 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp26_ = child_alloc;
-#line 291 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 291 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		gtk_widget_size_allocate (_tmp25_, &_tmp26_);
 #line 1798 "AbstractDeckLayout.c"
 	}
@@ -1814,33 +1814,33 @@ daf_ui_widgets_abstract_deck_layout_print_alloc (DafUIWidgetsAbstractDeckLayout*
 	gint _tmp7_;
 	GtkAllocation _tmp8_;
 	gint _tmp9_;
-#line 295 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 295 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	g_return_if_fail (self != NULL);
-#line 295 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 295 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	g_return_if_fail (w != NULL);
-#line 295 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 295 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	g_return_if_fail (a != NULL);
-#line 296 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 296 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp0_ = gtk_widget_get_name (w);
-#line 296 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 296 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp1_ = _tmp0_;
-#line 296 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 296 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp2_ = *a;
-#line 296 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 296 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp3_ = _tmp2_.x;
-#line 296 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 296 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp4_ = *a;
-#line 296 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 296 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp5_ = _tmp4_.y;
-#line 296 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 296 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp6_ = *a;
-#line 296 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 296 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp7_ = _tmp6_.width;
-#line 296 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 296 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp8_ = *a;
-#line 296 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 296 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp9_ = _tmp8_.height;
-#line 296 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 296 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	g_debug ("AbstractDeckLayout.vala:296: %s: x: %d, y: %d, w: %d, h: %d", _tmp1_, _tmp3_, _tmp5_, _tmp7_, _tmp9_);
 #line 1846 "AbstractDeckLayout.c"
 }
@@ -1851,13 +1851,13 @@ daf_ui_widgets_abstract_deck_layout_get_size (DafUIWidgetsAbstractDeckLayout* se
 {
 	guint result;
 	GList* _tmp0_;
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	g_return_val_if_fail (self != NULL, 0U);
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp0_ = self->priv->cards;
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	result = g_list_length (_tmp0_);
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	return result;
 #line 1863 "AbstractDeckLayout.c"
 }
@@ -1868,31 +1868,31 @@ daf_ui_widgets_abstract_deck_layout_get_active_widget (DafUIWidgetsAbstractDeckL
 {
 	GtkWidget* result;
 	DafUIWidgetsICard* _tmp0_;
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp0_ = self->priv->_active_card;
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	if (_tmp0_ != NULL) {
 #line 1878 "AbstractDeckLayout.c"
 		DafUIWidgetsICard* _tmp1_;
 		GtkWidget* _tmp2_;
 		GtkWidget* _tmp3_;
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp1_ = self->priv->_active_card;
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp2_ = daf_ui_widgets_icard_get_widget (_tmp1_);
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp3_ = _tmp2_;
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		result = _tmp3_;
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		return result;
 #line 1892 "AbstractDeckLayout.c"
 	} else {
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		result = NULL;
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		return result;
 #line 1898 "AbstractDeckLayout.c"
 	}
@@ -1903,9 +1903,9 @@ static void
 daf_ui_widgets_abstract_deck_layout_set_active_widget (DafUIWidgetsAbstractDeckLayout* self,
                                                        GtkWidget* value)
 {
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	g_return_if_fail (self != NULL);
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	g_object_notify_by_pspec ((GObject *) self, daf_ui_widgets_abstract_deck_layout_properties[DAF_UI_WIDGETS_ABSTRACT_DECK_LAYOUT_ACTIVE_WIDGET_PROPERTY]);
 #line 1911 "AbstractDeckLayout.c"
 }
@@ -1916,13 +1916,13 @@ daf_ui_widgets_abstract_deck_layout_get_active_card (DafUIWidgetsAbstractDeckLay
 {
 	DafUIWidgetsICard* result;
 	DafUIWidgetsICard* _tmp0_;
-#line 43 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 43 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 43 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 43 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_tmp0_ = self->priv->_active_card;
-#line 43 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 43 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	result = _tmp0_;
-#line 43 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 43 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	return result;
 #line 1928 "AbstractDeckLayout.c"
 }
@@ -1932,19 +1932,19 @@ void
 daf_ui_widgets_abstract_deck_layout_set_active_card (DafUIWidgetsAbstractDeckLayout* self,
                                                      DafUIWidgetsICard* value)
 {
-#line 43 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 43 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	g_return_if_fail (self != NULL);
-#line 43 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 43 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	if (daf_ui_widgets_abstract_deck_layout_get_active_card (self) != value) {
 #line 1940 "AbstractDeckLayout.c"
 		DafUIWidgetsICard* _tmp0_;
-#line 43 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 43 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_tmp0_ = _g_object_ref0 (value);
-#line 43 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 43 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		_g_object_unref0 (self->priv->_active_card);
-#line 43 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 43 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		self->priv->_active_card = _tmp0_;
-#line 43 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 43 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		g_object_notify_by_pspec ((GObject *) self, daf_ui_widgets_abstract_deck_layout_properties[DAF_UI_WIDGETS_ABSTRACT_DECK_LAYOUT_ACTIVE_CARD_PROPERTY]);
 #line 1950 "AbstractDeckLayout.c"
 	}
@@ -1954,43 +1954,43 @@ daf_ui_widgets_abstract_deck_layout_set_active_card (DafUIWidgetsAbstractDeckLay
 static void
 daf_ui_widgets_abstract_deck_layout_class_init (DafUIWidgetsAbstractDeckLayoutClass * klass)
 {
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	daf_ui_widgets_abstract_deck_layout_parent_class = g_type_class_peek_parent (klass);
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	g_type_class_add_private (klass, sizeof (DafUIWidgetsAbstractDeckLayoutPrivate));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	((GtkContainerClass *) klass)->add = (void (*) (GtkContainer *, GtkWidget*)) daf_ui_widgets_abstract_deck_layout_real_add;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	((GtkContainerClass *) klass)->remove = (void (*) (GtkContainer *, GtkWidget*)) daf_ui_widgets_abstract_deck_layout_real_remove;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	((GtkContainerClass *) klass)->forall = (void (*) (GtkContainer *, gboolean, GtkCallback, gpointer)) daf_ui_widgets_abstract_deck_layout_real_forall_internal;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	((DafUIWidgetsAbstractDeckLayoutClass *) klass)->do_switch = (gboolean (*) (DafUIWidgetsAbstractDeckLayout *, DafUIWidgetsICard*, gboolean)) daf_ui_widgets_abstract_deck_layout_real_do_switch;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	((DafUIWidgetsAbstractDeckLayoutClass *) klass)->create_card = (DafUIWidgetsICard* (*) (DafUIWidgetsAbstractDeckLayout *, GtkWidget*)) daf_ui_widgets_abstract_deck_layout_real_create_card;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	((DafUIWidgetsAbstractDeckLayoutClass *) klass)->compute_width = (void (*) (DafUIWidgetsAbstractDeckLayout *, DafUIWidgetsICard*, gint*, gint*)) daf_ui_widgets_abstract_deck_layout_real_compute_width;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	((DafUIWidgetsAbstractDeckLayoutClass *) klass)->compute_height = (void (*) (DafUIWidgetsAbstractDeckLayout *, DafUIWidgetsICard*, gint*, gint*)) daf_ui_widgets_abstract_deck_layout_real_compute_height;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	((GtkWidgetClass *) klass)->draw = (gboolean (*) (GtkWidget *, cairo_t*)) daf_ui_widgets_abstract_deck_layout_real_draw;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	((GtkWidgetClass *) klass)->get_preferred_width = (void (*) (GtkWidget *, gint*, gint*)) daf_ui_widgets_abstract_deck_layout_real_get_preferred_width;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	((GtkWidgetClass *) klass)->get_preferred_height = (void (*) (GtkWidget *, gint*, gint*)) daf_ui_widgets_abstract_deck_layout_real_get_preferred_height;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	((GtkWidgetClass *) klass)->size_allocate = (void (*) (GtkWidget *, GtkAllocation*)) daf_ui_widgets_abstract_deck_layout_real_size_allocate;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	G_OBJECT_CLASS (klass)->get_property = _vala_daf_ui_widgets_abstract_deck_layout_get_property;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	G_OBJECT_CLASS (klass)->set_property = _vala_daf_ui_widgets_abstract_deck_layout_set_property;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	G_OBJECT_CLASS (klass)->finalize = daf_ui_widgets_abstract_deck_layout_finalize;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	g_object_class_install_property (G_OBJECT_CLASS (klass), DAF_UI_WIDGETS_ABSTRACT_DECK_LAYOUT_SIZE_PROPERTY, daf_ui_widgets_abstract_deck_layout_properties[DAF_UI_WIDGETS_ABSTRACT_DECK_LAYOUT_SIZE_PROPERTY] = g_param_spec_uint ("size", "size", "size", 0, G_MAXUINT, 0U, G_PARAM_STATIC_STRINGS | G_PARAM_READABLE));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	g_object_class_install_property (G_OBJECT_CLASS (klass), DAF_UI_WIDGETS_ABSTRACT_DECK_LAYOUT_ACTIVE_WIDGET_PROPERTY, daf_ui_widgets_abstract_deck_layout_properties[DAF_UI_WIDGETS_ABSTRACT_DECK_LAYOUT_ACTIVE_WIDGET_PROPERTY] = g_param_spec_object ("active-widget", "active-widget", "active-widget", gtk_widget_get_type (), G_PARAM_STATIC_STRINGS | G_PARAM_READABLE));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	g_object_class_install_property (G_OBJECT_CLASS (klass), DAF_UI_WIDGETS_ABSTRACT_DECK_LAYOUT_ACTIVE_CARD_PROPERTY, daf_ui_widgets_abstract_deck_layout_properties[DAF_UI_WIDGETS_ABSTRACT_DECK_LAYOUT_ACTIVE_CARD_PROPERTY] = g_param_spec_object ("active-card", "active-card", "active-card", DAF_UI_WIDGETS_TYPE_ICARD, G_PARAM_STATIC_STRINGS | G_PARAM_READABLE | G_PARAM_WRITABLE));
 #line 1996 "AbstractDeckLayout.c"
 }
@@ -1999,17 +1999,17 @@ daf_ui_widgets_abstract_deck_layout_class_init (DafUIWidgetsAbstractDeckLayoutCl
 static void
 daf_ui_widgets_abstract_deck_layout_daf_ui_widgets_ideck_layout_interface_init (DafUIWidgetsIDeckLayoutIface * iface)
 {
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	daf_ui_widgets_abstract_deck_layout_daf_ui_widgets_ideck_layout_parent_iface = g_type_interface_peek_parent (iface);
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	iface->add = (void (*) (DafUIWidgetsIDeckLayout *, GtkWidget*)) daf_ui_widgets_abstract_deck_layout_real_add;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	iface->remove = (void (*) (DafUIWidgetsIDeckLayout *, GtkWidget*)) daf_ui_widgets_abstract_deck_layout_real_remove;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	iface->switch_widget = (gboolean (*) (DafUIWidgetsIDeckLayout *, GtkWidget*, gboolean)) daf_ui_widgets_abstract_deck_layout_real_switch_widget;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	iface->do_switch = (gboolean (*) (DafUIWidgetsIDeckLayout *, DafUIWidgetsICard*, gboolean)) daf_ui_widgets_abstract_deck_layout_do_switch;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	iface->create_card = (DafUIWidgetsICard* (*) (DafUIWidgetsIDeckLayout *, GtkWidget*)) daf_ui_widgets_abstract_deck_layout_create_card;
 #line 2015 "AbstractDeckLayout.c"
 }
@@ -2018,15 +2018,15 @@ daf_ui_widgets_abstract_deck_layout_daf_ui_widgets_ideck_layout_interface_init (
 static void
 daf_ui_widgets_abstract_deck_layout_instance_init (DafUIWidgetsAbstractDeckLayout * self)
 {
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	self->priv = DAF_UI_WIDGETS_ABSTRACT_DECK_LAYOUT_GET_PRIVATE (self);
-#line 43 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 43 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	self->priv->_active_card = NULL;
-#line 45 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 45 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	g_rec_mutex_init (&self->priv->__lock_cards);
-#line 45 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 45 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	self->priv->cards = NULL;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	g_rec_mutex_init (&self->priv->__lock_DafUIWidgetsAbstractDeckLayoutactive_card);
 #line 2032 "AbstractDeckLayout.c"
 }
@@ -2036,15 +2036,15 @@ static void
 daf_ui_widgets_abstract_deck_layout_finalize (GObject * obj)
 {
 	DafUIWidgetsAbstractDeckLayout * self;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	self = G_TYPE_CHECK_INSTANCE_CAST (obj, DAF_UI_WIDGETS_TYPE_ABSTRACT_DECK_LAYOUT, DafUIWidgetsAbstractDeckLayout);
-#line 43 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 43 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	_g_object_unref0 (self->priv->_active_card);
-#line 45 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 45 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	g_rec_mutex_clear (&self->priv->__lock_cards);
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	g_rec_mutex_clear (&self->priv->__lock_DafUIWidgetsAbstractDeckLayoutactive_card);
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	G_OBJECT_CLASS (daf_ui_widgets_abstract_deck_layout_parent_class)->finalize (obj);
 #line 2050 "AbstractDeckLayout.c"
 }
@@ -2074,31 +2074,31 @@ _vala_daf_ui_widgets_abstract_deck_layout_get_property (GObject * object,
 {
 	DafUIWidgetsAbstractDeckLayout * self;
 	self = G_TYPE_CHECK_INSTANCE_CAST (object, DAF_UI_WIDGETS_TYPE_ABSTRACT_DECK_LAYOUT, DafUIWidgetsAbstractDeckLayout);
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	switch (property_id) {
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		case DAF_UI_WIDGETS_ABSTRACT_DECK_LAYOUT_SIZE_PROPERTY:
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		g_value_set_uint (value, daf_ui_widgets_abstract_deck_layout_get_size (self));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		break;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		case DAF_UI_WIDGETS_ABSTRACT_DECK_LAYOUT_ACTIVE_WIDGET_PROPERTY:
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		g_value_set_object (value, daf_ui_widgets_abstract_deck_layout_get_active_widget (self));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		break;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		case DAF_UI_WIDGETS_ABSTRACT_DECK_LAYOUT_ACTIVE_CARD_PROPERTY:
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		g_value_set_object (value, daf_ui_widgets_abstract_deck_layout_get_active_card (self));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		break;
 #line 2098 "AbstractDeckLayout.c"
 		default:
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		G_OBJECT_WARN_INVALID_PROPERTY_ID (object, property_id, pspec);
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		break;
 #line 2104 "AbstractDeckLayout.c"
 	}
@@ -2113,25 +2113,25 @@ _vala_daf_ui_widgets_abstract_deck_layout_set_property (GObject * object,
 {
 	DafUIWidgetsAbstractDeckLayout * self;
 	self = G_TYPE_CHECK_INSTANCE_CAST (object, DAF_UI_WIDGETS_TYPE_ABSTRACT_DECK_LAYOUT, DafUIWidgetsAbstractDeckLayout);
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 	switch (property_id) {
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		case DAF_UI_WIDGETS_ABSTRACT_DECK_LAYOUT_ACTIVE_WIDGET_PROPERTY:
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		daf_ui_widgets_abstract_deck_layout_set_active_widget (self, g_value_get_object (value));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		break;
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		case DAF_UI_WIDGETS_ABSTRACT_DECK_LAYOUT_ACTIVE_CARD_PROPERTY:
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		daf_ui_widgets_abstract_deck_layout_set_active_card (self, g_value_get_object (value));
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		break;
 #line 2131 "AbstractDeckLayout.c"
 		default:
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		G_OBJECT_WARN_INVALID_PROPERTY_ID (object, property_id, pspec);
-#line 26 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
+#line 26 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/lib/Widgets/AbstractDeckLayout.vala"
 		break;
 #line 2137 "AbstractDeckLayout.c"
 	}

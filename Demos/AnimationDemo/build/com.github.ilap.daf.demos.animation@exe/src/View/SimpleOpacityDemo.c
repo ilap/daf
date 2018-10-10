@@ -90,11 +90,11 @@ DafAnimationTestSimpleOpacityDemo*
 daf_animation_test_simple_opacity_demo_construct (GType object_type)
 {
 	DafAnimationTestSimpleOpacityDemo * self = NULL;
-#line 44 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 44 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	self = (DafAnimationTestSimpleOpacityDemo*) g_object_new (object_type, NULL);
-#line 45 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 45 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	daf_animation_test_simple_opacity_demo_setup_widgets (self);
-#line 44 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 44 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	return self;
 #line 100 "SimpleOpacityDemo.c"
 }
@@ -103,7 +103,7 @@ daf_animation_test_simple_opacity_demo_construct (GType object_type)
 DafAnimationTestSimpleOpacityDemo*
 daf_animation_test_simple_opacity_demo_new (void)
 {
-#line 44 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 44 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	return daf_animation_test_simple_opacity_demo_construct (DAF_ANIMATION_TEST_TYPE_SIMPLE_OPACITY_DEMO);
 #line 109 "SimpleOpacityDemo.c"
 }
@@ -112,7 +112,7 @@ daf_animation_test_simple_opacity_demo_new (void)
 static gpointer
 _g_object_ref0 (gpointer self)
 {
-#line 86 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 86 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	return self ? g_object_ref (self) : NULL;
 #line 118 "SimpleOpacityDemo.c"
 }
@@ -129,46 +129,46 @@ __lambda19_ (DafAnimationTestSimpleOpacityDemo* self)
 	DafUIAnimationTimeLine* _tmp4_;
 	gboolean _tmp5_;
 	gboolean _tmp6_;
-#line 86 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 86 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	_tmp0_ = self->priv->fade_in_out;
-#line 86 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 86 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	_tmp1_ = daf_ui_animation_property_animator_get_timeline (_tmp0_);
-#line 86 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 86 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	_tmp2_ = _tmp1_;
-#line 86 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 86 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	_tmp3_ = _g_object_ref0 (_tmp2_);
-#line 86 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 86 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	tl = _tmp3_;
-#line 87 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 87 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	_tmp4_ = tl;
-#line 87 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 87 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	_tmp5_ = daf_ui_animation_time_line_get_playing (_tmp4_);
-#line 87 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 87 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	_tmp6_ = _tmp5_;
-#line 87 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 87 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	if (!_tmp6_) {
 #line 151 "SimpleOpacityDemo.c"
 		GtkButton* _tmp7_;
 		GtkButton* _tmp8_;
 		GtkWindow* _tmp9_;
 		DafUIAnimationTimeLine* _tmp10_;
-#line 90 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 90 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 		_tmp7_ = self->priv->button1;
-#line 90 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 90 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 		_tmp8_ = self->priv->button1;
-#line 90 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 90 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 		g_object_set ((GtkWidget*) _tmp7_, "width-request", gtk_widget_get_allocated_width ((GtkWidget*) _tmp8_), NULL);
-#line 91 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 91 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 		_tmp9_ = self->priv->window;
-#line 91 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 91 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 		gtk_window_set_resizable (_tmp9_, FALSE);
-#line 92 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 92 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 		_tmp10_ = tl;
-#line 92 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 92 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 		daf_ui_animation_ianimatable_start ((DafUIAnimationIAnimatable*) _tmp10_);
 #line 170 "SimpleOpacityDemo.c"
 	}
-#line 84 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 84 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	_g_object_unref0 (tl);
 #line 174 "SimpleOpacityDemo.c"
 }
@@ -178,7 +178,7 @@ static void
 ___lambda19__gtk_button_clicked (GtkButton* _sender,
                                  gpointer self)
 {
-#line 84 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 84 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	__lambda19_ ((DafAnimationTestSimpleOpacityDemo*) self);
 #line 184 "SimpleOpacityDemo.c"
 }
@@ -188,7 +188,7 @@ static void
 _gtk_main_quit_gtk_widget_destroy (GtkWidget* _sender,
                                    gpointer self)
 {
-#line 96 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 96 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	gtk_main_quit ();
 #line 194 "SimpleOpacityDemo.c"
 }
@@ -224,125 +224,125 @@ daf_animation_test_simple_opacity_demo_setup_widgets (DafAnimationTestSimpleOpac
 	GValue _tmp21_ = {0};
 	GtkButton* _tmp22_;
 	GtkWindow* _tmp23_;
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	g_return_if_fail (self != NULL);
-#line 50 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 50 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	_tmp0_ = (GtkWindow*) gtk_window_new (GTK_WINDOW_TOPLEVEL);
-#line 50 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 50 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	g_object_ref_sink (_tmp0_);
-#line 50 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 50 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	_g_object_unref0 (self->priv->window);
-#line 50 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 50 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	self->priv->window = _tmp0_;
-#line 51 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 51 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	_tmp1_ = self->priv->window;
-#line 51 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 51 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	gtk_window_set_resizable (_tmp1_, TRUE);
-#line 52 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 52 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	_tmp2_ = self->priv->window;
-#line 52 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 52 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	gtk_window_set_default_size (_tmp2_, 300, 300);
-#line 53 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 53 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	_tmp3_ = self->priv->window;
-#line 53 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 53 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	g_object_set (_tmp3_, "window-position", GTK_WIN_POS_CENTER_ON_PARENT, NULL);
-#line 56 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 56 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	gdk_color_parse ("red", &_tmp4_);
-#line 56 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 56 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	red = _tmp4_;
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	_tmp5_ = self->priv->window;
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	_tmp6_ = red;
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	gtk_widget_modify_bg ((GtkWidget*) _tmp5_, GTK_STATE_NORMAL, &_tmp6_);
-#line 59 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 59 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	_tmp7_ = self->priv->window;
-#line 59 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 59 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	gtk_widget_show_all ((GtkWidget*) _tmp7_);
-#line 63 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 63 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	_tmp8_ = (GtkButton*) gtk_button_new_with_label ("Click on me...");
-#line 63 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 63 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	g_object_ref_sink (_tmp8_);
-#line 63 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 63 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	_g_object_unref0 (self->priv->button);
-#line 63 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 63 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	self->priv->button = _tmp8_;
-#line 64 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 64 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	_tmp9_ = (GtkBox*) gtk_box_new (GTK_ORIENTATION_VERTICAL, 10);
-#line 64 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 64 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	g_object_ref_sink (_tmp9_);
-#line 64 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 64 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	box = _tmp9_;
-#line 65 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 65 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	_tmp10_ = self->priv->image;
-#line 65 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 65 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	gtk_container_add ((GtkContainer*) box, (GtkWidget*) _tmp10_);
-#line 66 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 66 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	_tmp11_ = (GtkButton*) gtk_button_new_with_label ("Alma");
-#line 66 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 66 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	g_object_ref_sink (_tmp11_);
-#line 66 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 66 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	_g_object_unref0 (self->priv->button1);
-#line 66 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 66 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	self->priv->button1 = _tmp11_;
-#line 70 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 70 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	_tmp12_ = (GtkBox*) gtk_box_new (GTK_ORIENTATION_VERTICAL, 10);
-#line 70 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 70 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	g_object_ref_sink (_tmp12_);
-#line 70 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 70 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	grid = _tmp12_;
-#line 73 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 73 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	_tmp13_ = self->priv->button;
-#line 73 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 73 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	gtk_container_add ((GtkContainer*) grid, (GtkWidget*) _tmp13_);
-#line 74 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 74 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	_tmp14_ = self->priv->button1;
-#line 74 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 74 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	gtk_container_add ((GtkContainer*) grid, (GtkWidget*) _tmp14_);
-#line 76 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 76 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	_tmp15_ = self->priv->window;
-#line 76 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 76 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	gtk_container_add ((GtkContainer*) _tmp15_, (GtkWidget*) grid);
-#line 79 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 79 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	_tmp16_ = self->priv->button1;
-#line 79 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 79 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	_tmp17_ = daf_ui_animation_property_animator_animate ((GObject*) _tmp16_, DAF_UI_ANIMATION_ANIMATION_MODE_LINEAR, 1000, "width-request", 600, NULL);
-#line 79 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 79 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	_g_object_unref0 (self->priv->fade_in_out);
-#line 79 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 79 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	self->priv->fade_in_out = _tmp17_;
-#line 81 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 81 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	_tmp18_ = self->priv->fade_in_out;
-#line 81 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 81 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	g_value_init (&_tmp19_, G_TYPE_INT);
-#line 81 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 81 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	g_value_set_int (&_tmp19_, 100);
-#line 81 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 81 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	daf_ui_animation_property_animator_set_keyframe (_tmp18_, 0.3, "width-request", &_tmp19_);
-#line 81 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 81 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	G_IS_VALUE (&_tmp19_) ? (g_value_unset (&_tmp19_), NULL) : NULL;
-#line 82 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 82 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	_tmp20_ = self->priv->fade_in_out;
-#line 82 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 82 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	g_value_init (&_tmp21_, G_TYPE_INT);
-#line 82 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 82 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	g_value_set_int (&_tmp21_, 800);
-#line 82 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 82 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	daf_ui_animation_property_animator_set_keyframe (_tmp20_, 0.6, "width-request", &_tmp21_);
-#line 82 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 82 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	G_IS_VALUE (&_tmp21_) ? (g_value_unset (&_tmp21_), NULL) : NULL;
-#line 84 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 84 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	_tmp22_ = self->priv->button;
-#line 84 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 84 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	g_signal_connect_object (_tmp22_, "clicked", (GCallback) ___lambda19__gtk_button_clicked, self, 0);
-#line 96 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 96 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	_tmp23_ = self->priv->window;
-#line 96 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 96 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	g_signal_connect ((GtkWidget*) _tmp23_, "destroy", (GCallback) _gtk_main_quit_gtk_widget_destroy, NULL);
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	_g_object_unref0 (grid);
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	_g_object_unref0 (box);
 #line 348 "SimpleOpacityDemo.c"
 }
@@ -352,11 +352,11 @@ void
 daf_animation_test_simple_opacity_demo_show (DafAnimationTestSimpleOpacityDemo* self)
 {
 	GtkWindow* _tmp0_;
-#line 100 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 100 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	g_return_if_fail (self != NULL);
-#line 101 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 101 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	_tmp0_ = self->priv->window;
-#line 101 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 101 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	gtk_widget_show_all ((GtkWidget*) _tmp0_);
 #line 362 "SimpleOpacityDemo.c"
 }
@@ -365,11 +365,11 @@ daf_animation_test_simple_opacity_demo_show (DafAnimationTestSimpleOpacityDemo* 
 static void
 daf_animation_test_simple_opacity_demo_class_init (DafAnimationTestSimpleOpacityDemoClass * klass)
 {
-#line 30 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 30 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	daf_animation_test_simple_opacity_demo_parent_class = g_type_class_peek_parent (klass);
-#line 30 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 30 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	g_type_class_add_private (klass, sizeof (DafAnimationTestSimpleOpacityDemoPrivate));
-#line 30 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 30 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	G_OBJECT_CLASS (klass)->finalize = daf_animation_test_simple_opacity_demo_finalize;
 #line 375 "SimpleOpacityDemo.c"
 }
@@ -379,13 +379,13 @@ static void
 daf_animation_test_simple_opacity_demo_instance_init (DafAnimationTestSimpleOpacityDemo * self)
 {
 	GtkImage* _tmp0_;
-#line 30 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 30 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	self->priv = DAF_ANIMATION_TEST_SIMPLE_OPACITY_DEMO_GET_PRIVATE (self);
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	_tmp0_ = (GtkImage*) gtk_image_new_from_file ("/usr/share/icons/gnome/256x256/emotes/face-angel.png");
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	g_object_ref_sink (_tmp0_);
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	self->priv->image = _tmp0_;
 #line 391 "SimpleOpacityDemo.c"
 }
@@ -395,25 +395,25 @@ static void
 daf_animation_test_simple_opacity_demo_finalize (GObject * obj)
 {
 	DafAnimationTestSimpleOpacityDemo * self;
-#line 30 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 30 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	self = G_TYPE_CHECK_INSTANCE_CAST (obj, DAF_ANIMATION_TEST_TYPE_SIMPLE_OPACITY_DEMO, DafAnimationTestSimpleOpacityDemo);
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	_g_object_unref0 (self->priv->window);
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	_g_object_unref0 (self->priv->box1);
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	_g_object_unref0 (self->priv->container);
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	_g_object_unref0 (self->priv->image);
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	_g_object_unref0 (self->priv->fade_in_out);
-#line 39 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 39 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	_g_object_unref0 (self->priv->adapt_opacity);
-#line 41 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 41 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	_g_object_unref0 (self->priv->button);
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	_g_object_unref0 (self->priv->button1);
-#line 30 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
+#line 30 "/data/Projects/DaF/Demos/AnimationDemo/src/View/SimpleOpacityDemo.vala"
 	G_OBJECT_CLASS (daf_animation_test_simple_opacity_demo_parent_class)->finalize (obj);
 #line 419 "SimpleOpacityDemo.c"
 }

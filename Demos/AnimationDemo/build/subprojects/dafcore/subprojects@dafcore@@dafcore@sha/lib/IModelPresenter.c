@@ -53,9 +53,9 @@ DafCoreIValueModel*
 daf_core_imodel_presenter_get_value_model (DafCoreIModelPresenter* self,
                                            const gchar* path)
 {
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IModelPresenter.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IModelPresenter.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 24 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/IModelPresenter.vala"
+#line 24 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/IModelPresenter.vala"
 	return DAF_CORE_IMODEL_PRESENTER_GET_INTERFACE (self)->get_value_model (self, path);
 #line 61 "IModelPresenter.c"
 }

@@ -60,21 +60,21 @@ daf_animation_test_main (gchar** args,
 	gint result = 0;
 	DafAnimationTestAnimatedDeckLayoutDemo* view = NULL;
 	DafAnimationTestAnimatedDeckLayoutDemo* _tmp0_;
-#line 30 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/Main.vala"
+#line 30 "/data/Projects/DaF/Demos/AnimationDemo/src/Main.vala"
 	gtk_init (&args_length1, &args);
-#line 43 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/Main.vala"
+#line 43 "/data/Projects/DaF/Demos/AnimationDemo/src/Main.vala"
 	_tmp0_ = daf_animation_test_animated_deck_layout_demo_new ();
-#line 43 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/Main.vala"
+#line 43 "/data/Projects/DaF/Demos/AnimationDemo/src/Main.vala"
 	view = _tmp0_;
-#line 44 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/Main.vala"
+#line 44 "/data/Projects/DaF/Demos/AnimationDemo/src/Main.vala"
 	daf_animation_test_animated_deck_layout_demo_show (view);
-#line 46 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/Main.vala"
+#line 46 "/data/Projects/DaF/Demos/AnimationDemo/src/Main.vala"
 	gtk_main ();
-#line 47 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/Main.vala"
+#line 47 "/data/Projects/DaF/Demos/AnimationDemo/src/Main.vala"
 	result = 0;
-#line 47 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/Main.vala"
+#line 47 "/data/Projects/DaF/Demos/AnimationDemo/src/Main.vala"
 	_g_object_unref0 (view);
-#line 47 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/Main.vala"
+#line 47 "/data/Projects/DaF/Demos/AnimationDemo/src/Main.vala"
 	return result;
 #line 80 "Main.c"
 }
@@ -84,7 +84,7 @@ int
 main (int argc,
       char ** argv)
 {
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/src/Main.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/src/Main.vala"
 	return daf_animation_test_main (argv, argc);
 #line 90 "Main.c"
 }

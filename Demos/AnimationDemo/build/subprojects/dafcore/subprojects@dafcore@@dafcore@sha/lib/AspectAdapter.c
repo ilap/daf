@@ -228,7 +228,7 @@ _daf_core_aspect_adapter_value_changed_g_object_notify (GObject* _sender,
                                                         GParamSpec* pspec,
                                                         gpointer self)
 {
-#line 72 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 72 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	daf_core_aspect_adapter_value_changed ((DafCoreAspectAdapter*) self, _sender, pspec);
 #line 234 "AspectAdapter.c"
 }
@@ -239,7 +239,7 @@ _daf_core_aspect_adapter_before_model_changed_daf_core_ivalue_model_before_value
                                                                                           GValue* old_value,
                                                                                           gpointer self)
 {
-#line 77 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 77 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	daf_core_aspect_adapter_before_model_changed ((DafCoreAspectAdapter*) self, old_value);
 #line 245 "AspectAdapter.c"
 }
@@ -250,7 +250,7 @@ _daf_core_aspect_adapter_model_changed_g_object_notify (GObject* _sender,
                                                         GParamSpec* pspec,
                                                         gpointer self)
 {
-#line 78 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 78 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	daf_core_aspect_adapter_model_changed ((DafCoreAspectAdapter*) self, _sender, pspec);
 #line 256 "AspectAdapter.c"
 }
@@ -272,67 +272,67 @@ daf_core_aspect_adapter_construct (GType object_type,
 	DafCoreIValueModel* _tmp8_;
 	DafCoreIValueModel* _tmp9_;
 	gchar* _tmp10_;
-#line 59 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 59 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	g_return_val_if_fail (property_name != NULL, NULL);
-#line 59 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 59 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	self = (DafCoreAspectAdapter*) daf_core_abstract_value_holder_construct (object_type);
-#line 61 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 61 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	daf_core_aspect_adapter_set_property_name (self, property_name);
-#line 62 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 62 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	self->priv->observe_domain_changes = observe_domain_changes;
-#line 64 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 64 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	if (G_TYPE_CHECK_INSTANCE_TYPE (value_model, DAF_CORE_TYPE_IVALUE_MODEL)) {
-#line 65 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 65 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		daf_core_imodel_holder_set_value_model ((DafCoreIModelHolder*) self, G_TYPE_CHECK_INSTANCE_TYPE (value_model, DAF_CORE_TYPE_IVALUE_MODEL) ? ((DafCoreIValueModel*) value_model) : NULL);
 #line 288 "AspectAdapter.c"
 	} else {
 		DafCoreValueHolder* _tmp0_;
 		DafCoreValueHolder* _tmp1_;
-#line 67 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 67 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_tmp0_ = daf_core_value_holder_new (NULL);
-#line 67 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 67 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_tmp1_ = _tmp0_;
-#line 67 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 67 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		daf_core_imodel_holder_set_value_model ((DafCoreIModelHolder*) self, (DafCoreIValueModel*) _tmp1_);
-#line 67 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 67 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_g_object_unref0 (_tmp1_);
-#line 68 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 68 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		daf_core_imodel_holder_set_model ((DafCoreIModelHolder*) self, value_model);
 #line 302 "AspectAdapter.c"
 	}
-#line 72 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 72 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_tmp2_ = g_strconcat ("notify::", DAF_CORE_IMODEL_HOLDER_PROP_NAME, NULL);
-#line 72 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 72 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_tmp3_ = g_signal_connect_object ((GObject*) self, _tmp2_, (GCallback) _daf_core_aspect_adapter_value_changed_g_object_notify, self, 0);
-#line 72 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 72 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	self->priv->value_changed_id = _tmp3_;
-#line 72 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 72 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_g_free0 (_tmp2_);
-#line 75 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 75 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_tmp4_ = daf_core_imodel_holder_get_model ((DafCoreIModelHolder*) self);
-#line 75 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 75 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_tmp5_ = _tmp4_;
-#line 75 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 75 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	daf_core_aspect_adapter_do_setup_signals (self, _tmp5_, TRUE);
-#line 75 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 75 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_g_object_unref0 (_tmp5_);
-#line 77 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 77 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_tmp6_ = daf_core_imodel_holder_get_value_model ((DafCoreIModelHolder*) self);
-#line 77 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 77 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_tmp7_ = _tmp6_;
-#line 77 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 77 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	g_signal_connect_object (_tmp7_, "before-value-changed", (GCallback) _daf_core_aspect_adapter_before_model_changed_daf_core_ivalue_model_before_value_changed, self, 0);
-#line 78 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 78 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_tmp8_ = daf_core_imodel_holder_get_value_model ((DafCoreIModelHolder*) self);
-#line 78 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 78 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_tmp9_ = _tmp8_;
-#line 78 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 78 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_tmp10_ = g_strconcat ("notify::", DAF_CORE_IMODEL_HOLDER_PROP_NAME, NULL);
-#line 78 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 78 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	g_signal_connect_object ((GObject*) _tmp9_, _tmp10_, (GCallback) _daf_core_aspect_adapter_model_changed_g_object_notify, self, 0);
-#line 78 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 78 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_g_free0 (_tmp10_);
-#line 59 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 59 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	return self;
 #line 338 "AspectAdapter.c"
 }
@@ -343,7 +343,7 @@ daf_core_aspect_adapter_new (GObject* value_model,
                              const gchar* property_name,
                              gboolean observe_domain_changes)
 {
-#line 59 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 59 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	return daf_core_aspect_adapter_construct (DAF_CORE_TYPE_ASPECT_ADAPTER, value_model, property_name, observe_domain_changes);
 #line 349 "AspectAdapter.c"
 }
@@ -355,9 +355,9 @@ daf_core_aspect_adapter_new (GObject* value_model,
 static void
 _vala_GValue_free (GValue* self)
 {
-#line 92 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 92 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	g_value_unset (self);
-#line 92 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 92 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	g_free (self);
 #line 363 "AspectAdapter.c"
 }
@@ -372,34 +372,34 @@ daf_core_aspect_adapter_real_get_val (DafCoreAbstractValueHolder* base)
 	GObject* _tmp0_;
 	GValue* _result_ = NULL;
 	GObject* _tmp1_;
-#line 84 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 84 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	self = (DafCoreAspectAdapter*) base;
-#line 86 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 86 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_tmp0_ = daf_core_imodel_holder_get_model ((DafCoreIModelHolder*) self);
-#line 86 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 86 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	model = _tmp0_;
-#line 87 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 87 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_result_ = NULL;
-#line 89 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 89 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_tmp1_ = model;
-#line 89 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 89 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	if (_tmp1_ != NULL) {
 #line 388 "AspectAdapter.c"
 		GObject* _tmp2_;
-#line 91 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 91 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_tmp2_ = model;
-#line 91 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 91 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		if (G_TYPE_CHECK_INSTANCE_TYPE (_tmp2_, DAF_CORE_TYPE_IVALUE_MODEL)) {
 #line 394 "AspectAdapter.c"
 			GObject* _tmp3_;
 			GValue* _tmp4_;
-#line 92 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 92 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 			_tmp3_ = model;
-#line 92 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 92 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 			_tmp4_ = daf_core_ivalue_model_get_val (G_TYPE_CHECK_INSTANCE_TYPE (_tmp3_, DAF_CORE_TYPE_IVALUE_MODEL) ? ((DafCoreIValueModel*) _tmp3_) : NULL);
-#line 92 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 92 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 			__vala_GValue_free0 (_result_);
-#line 92 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 92 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 			_result_ = _tmp4_;
 #line 405 "AspectAdapter.c"
 		} else {
@@ -407,26 +407,26 @@ daf_core_aspect_adapter_real_get_val (DafCoreAbstractValueHolder* base)
 			const gchar* _tmp6_;
 			const gchar* _tmp7_;
 			GValue* _tmp8_;
-#line 94 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 94 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 			_tmp5_ = model;
-#line 94 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 94 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 			_tmp6_ = daf_core_aspect_adapter_get_property_name (self);
-#line 94 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 94 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 			_tmp7_ = _tmp6_;
-#line 94 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 94 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 			_tmp8_ = daf_core_aspect_adapter_read_property (self, G_TYPE_CHECK_INSTANCE_CAST (_tmp5_, G_TYPE_OBJECT, GObject), _tmp7_);
-#line 94 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 94 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 			__vala_GValue_free0 (_result_);
-#line 94 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 94 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 			_result_ = _tmp8_;
 #line 423 "AspectAdapter.c"
 		}
 	}
-#line 97 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 97 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	result = _result_;
-#line 97 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 97 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_g_object_unref0 (model);
-#line 97 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 97 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	return result;
 #line 432 "AspectAdapter.c"
 }
@@ -443,49 +443,49 @@ daf_core_aspect_adapter_real_set_val (DafCoreAbstractValueHolder* base,
 	GObject* model = NULL;
 	GObject* _tmp0_;
 	GObject* _tmp1_;
-#line 103 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 103 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	self = (DafCoreAspectAdapter*) base;
-#line 104 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 104 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_tmp0_ = daf_core_imodel_holder_get_model ((DafCoreIModelHolder*) self);
-#line 104 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 104 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	model = _tmp0_;
-#line 105 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 105 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_tmp1_ = model;
-#line 105 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 105 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	if (_tmp1_ != NULL) {
 #line 457 "AspectAdapter.c"
 		GObject* _tmp2_;
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_tmp2_ = model;
-#line 107 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 107 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		if (G_TYPE_CHECK_INSTANCE_TYPE (_tmp2_, DAF_CORE_TYPE_IVALUE_MODEL)) {
 #line 463 "AspectAdapter.c"
 			GObject* _tmp3_;
-#line 108 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 108 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 			_tmp3_ = model;
-#line 108 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 108 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 			daf_core_ivalue_model_set_val (G_TYPE_CHECK_INSTANCE_TYPE (_tmp3_, DAF_CORE_TYPE_IVALUE_MODEL) ? ((DafCoreIValueModel*) _tmp3_) : NULL, new_value);
 #line 469 "AspectAdapter.c"
 		} else {
 			GObject* _tmp4_;
 			const gchar* _tmp5_;
 			const gchar* _tmp6_;
-#line 110 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 110 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 			_tmp4_ = model;
-#line 110 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 110 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 			_tmp5_ = daf_core_aspect_adapter_get_property_name (self);
-#line 110 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 110 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 			_tmp6_ = _tmp5_;
-#line 110 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 110 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 			daf_core_aspect_adapter_write_property (self, _tmp4_, _tmp6_, new_value);
 #line 482 "AspectAdapter.c"
 		}
 	} else {
-#line 114 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 114 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		DAF_CORE_ABSTRACT_VALUE_HOLDER_CLASS (daf_core_aspect_adapter_parent_class)->set_val (G_TYPE_CHECK_INSTANCE_CAST (self, DAF_CORE_TYPE_ABSTRACT_VALUE_HOLDER, DafCoreAbstractValueHolder), NULL);
 #line 487 "AspectAdapter.c"
 	}
-#line 103 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 103 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_g_object_unref0 (model);
 #line 491 "AspectAdapter.c"
 }
@@ -506,25 +506,25 @@ daf_core_aspect_adapter_real_get_model (DafCoreIModelHolder* base)
 	GValue* _tmp3_;
 	GObject* _tmp4_;
 	GObject* _tmp5_;
-#line 122 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 122 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	self = (DafCoreAspectAdapter*) base;
-#line 123 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 123 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_tmp0_ = daf_core_imodel_holder_get_value_model ((DafCoreIModelHolder*) self);
-#line 123 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 123 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_tmp1_ = _tmp0_;
-#line 123 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 123 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_tmp2_ = daf_core_ivalue_model_get_val (_tmp1_);
-#line 123 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 123 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_tmp3_ = _tmp2_;
-#line 123 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 123 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_tmp4_ = daf_core_aspect_adapter_get_object_model (self, _tmp3_);
-#line 123 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 123 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_tmp5_ = _tmp4_;
-#line 123 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 123 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	__vala_GValue_free0 (_tmp3_);
-#line 123 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 123 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	result = _tmp5_;
-#line 123 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 123 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	return result;
 #line 530 "AspectAdapter.c"
 }
@@ -533,7 +533,7 @@ daf_core_aspect_adapter_real_get_model (DafCoreIModelHolder* base)
 static gpointer
 _g_object_ref0 (gpointer self)
 {
-#line 129 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 129 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	return self ? g_object_ref (self) : NULL;
 #line 539 "AspectAdapter.c"
 }
@@ -545,25 +545,25 @@ daf_core_aspect_adapter_get_object_model (DafCoreAspectAdapter* self,
 {
 	GObject* result = NULL;
 	GObject* _result_ = NULL;
-#line 126 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 126 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 127 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 127 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_result_ = NULL;
-#line 128 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 128 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	if (model != NULL) {
 #line 555 "AspectAdapter.c"
 		GObject* _tmp0_;
-#line 129 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 129 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_tmp0_ = _g_object_ref0 (g_value_get_object (model));
-#line 129 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 129 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_g_object_unref0 (_result_);
-#line 129 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 129 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_result_ = _tmp0_;
 #line 563 "AspectAdapter.c"
 	}
-#line 131 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 131 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	result = _result_;
-#line 131 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 131 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	return result;
 #line 569 "AspectAdapter.c"
 }
@@ -572,7 +572,7 @@ daf_core_aspect_adapter_get_object_model (DafCoreAspectAdapter* self,
 static GValue*
 _g_value_dup (GValue* self)
 {
-#line 139 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 139 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	return g_boxed_copy (G_TYPE_VALUE, self);
 #line 578 "AspectAdapter.c"
 }
@@ -581,7 +581,7 @@ _g_value_dup (GValue* self)
 static gpointer
 __g_value_dup0 (gpointer self)
 {
-#line 139 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 139 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	return self ? _g_value_dup (self) : NULL;
 #line 587 "AspectAdapter.c"
 }
@@ -593,11 +593,11 @@ daf_core_aspect_adapter_set_object_model (DafCoreAspectAdapter* self,
 {
 	GValue* result = NULL;
 	GValue* _result_ = NULL;
-#line 134 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 134 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 135 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 135 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_result_ = NULL;
-#line 136 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 136 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	if (model != NULL) {
 #line 603 "AspectAdapter.c"
 		GValue v = {0};
@@ -606,35 +606,35 @@ daf_core_aspect_adapter_set_object_model (DafCoreAspectAdapter* self,
 		GValue _tmp2_;
 		GValue _tmp3_;
 		GValue* _tmp4_;
-#line 137 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 137 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		g_value_init (&_tmp0_, G_TYPE_OBJECT);
-#line 137 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 137 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		v = _tmp0_;
-#line 138 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 138 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		g_value_init (&_tmp1_, G_TYPE_OBJECT);
-#line 138 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 138 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		g_value_set_object (&_tmp1_, model);
-#line 138 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 138 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		G_IS_VALUE (&v) ? (g_value_unset (&v), NULL) : NULL;
-#line 138 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 138 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		v = _tmp1_;
-#line 139 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 139 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_tmp2_ = v;
-#line 139 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 139 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_tmp3_ = (GValue) _tmp2_;
-#line 139 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 139 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_tmp4_ = __g_value_dup0 (&_tmp3_);
-#line 139 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 139 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		__vala_GValue_free0 (_result_);
-#line 139 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 139 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_result_ = _tmp4_;
-#line 136 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 136 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		G_IS_VALUE (&v) ? (g_value_unset (&v), NULL) : NULL;
 #line 634 "AspectAdapter.c"
 	}
-#line 141 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 141 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	result = _result_;
-#line 141 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 141 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	return result;
 #line 640 "AspectAdapter.c"
 }
@@ -649,19 +649,19 @@ daf_core_aspect_adapter_real_set_model (DafCoreIModelHolder* base,
 	DafCoreIValueModel* _tmp1_;
 	GValue* _tmp2_;
 	GValue* _tmp3_;
-#line 144 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 144 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	self = (DafCoreAspectAdapter*) base;
-#line 145 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 145 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_tmp0_ = daf_core_imodel_holder_get_value_model ((DafCoreIModelHolder*) self);
-#line 145 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 145 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_tmp1_ = _tmp0_;
-#line 145 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 145 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_tmp2_ = daf_core_aspect_adapter_set_object_model (self, new_model);
-#line 145 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 145 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_tmp3_ = _tmp2_;
-#line 145 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 145 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	daf_core_ivalue_model_set_val (_tmp1_, _tmp3_);
-#line 145 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 145 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	__vala_GValue_free0 (_tmp3_);
 #line 667 "AspectAdapter.c"
 }
@@ -673,15 +673,15 @@ daf_core_aspect_adapter_before_model_changed (DafCoreAspectAdapter* self,
 {
 	GObject* _tmp0_;
 	GObject* _tmp1_;
-#line 149 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 149 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	g_return_if_fail (self != NULL);
-#line 150 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 150 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_tmp0_ = daf_core_aspect_adapter_get_object_model (self, old_model);
-#line 150 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 150 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_tmp1_ = _tmp0_;
-#line 150 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 150 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	daf_core_aspect_adapter_do_setup_signals (self, _tmp1_, FALSE);
-#line 150 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 150 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_g_object_unref0 (_tmp1_);
 #line 687 "AspectAdapter.c"
 }
@@ -694,50 +694,50 @@ daf_core_aspect_adapter_value_changed (DafCoreAspectAdapter* self,
 {
 	gboolean _tmp0_ = FALSE;
 	gboolean _tmp1_;
-#line 153 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 153 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	g_return_if_fail (self != NULL);
-#line 153 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 153 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	g_return_if_fail (sender != NULL);
-#line 153 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 153 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	g_return_if_fail (param_spec != NULL);
-#line 154 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 154 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_tmp1_ = self->priv->observe_domain_changes;
-#line 154 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 154 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	if (_tmp1_) {
 #line 708 "AspectAdapter.c"
 		gulong _tmp2_;
-#line 154 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 154 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_tmp2_ = self->priv->value_changed_id;
-#line 154 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 154 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_tmp0_ = _tmp2_ != ((gulong) 0L);
 #line 714 "AspectAdapter.c"
 	} else {
-#line 154 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 154 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_tmp0_ = FALSE;
 #line 718 "AspectAdapter.c"
 	}
-#line 154 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 154 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	if (_tmp0_) {
 #line 722 "AspectAdapter.c"
 		gulong _tmp3_;
 		GValue* _tmp4_;
 		GValue* _tmp5_;
 		gulong _tmp6_;
-#line 157 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 157 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_tmp3_ = self->priv->value_changed_id;
-#line 157 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 157 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		g_signal_handler_block ((void*) self, _tmp3_);
-#line 158 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 158 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_tmp4_ = daf_core_abstract_value_holder_get_val ((DafCoreAbstractValueHolder*) self);
-#line 158 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 158 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_tmp5_ = _tmp4_;
-#line 158 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 158 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		DAF_CORE_ABSTRACT_VALUE_HOLDER_CLASS (daf_core_aspect_adapter_parent_class)->set_val (G_TYPE_CHECK_INSTANCE_CAST (self, DAF_CORE_TYPE_ABSTRACT_VALUE_HOLDER, DafCoreAbstractValueHolder), _tmp5_);
-#line 158 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 158 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		__vala_GValue_free0 (_tmp5_);
-#line 159 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 159 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_tmp6_ = self->priv->value_changed_id;
-#line 159 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 159 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		g_signal_handler_unblock ((void*) self, _tmp6_);
 #line 743 "AspectAdapter.c"
 	}
@@ -755,29 +755,29 @@ daf_core_aspect_adapter_model_changed (DafCoreAspectAdapter* self,
 	GValue* _tmp3_;
 	GObject* _tmp4_;
 	GObject* _tmp5_;
-#line 163 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 163 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	g_return_if_fail (self != NULL);
-#line 163 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 163 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	g_return_if_fail (sender != NULL);
-#line 163 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 163 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	g_return_if_fail (param_spec != NULL);
-#line 164 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 164 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_tmp0_ = daf_core_imodel_holder_get_value_model ((DafCoreIModelHolder*) self);
-#line 164 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 164 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_tmp1_ = _tmp0_;
-#line 164 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 164 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_tmp2_ = daf_core_ivalue_model_get_val (_tmp1_);
-#line 164 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 164 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_tmp3_ = _tmp2_;
-#line 164 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 164 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_tmp4_ = daf_core_aspect_adapter_get_object_model (self, _tmp3_);
-#line 164 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 164 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_tmp5_ = _tmp4_;
-#line 164 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 164 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	daf_core_aspect_adapter_do_set_model (self, _tmp5_);
-#line 164 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 164 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_g_object_unref0 (_tmp5_);
-#line 164 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 164 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	__vala_GValue_free0 (_tmp3_);
 #line 783 "AspectAdapter.c"
 }
@@ -788,13 +788,13 @@ daf_core_aspect_adapter_domain_property_changed (DafCoreAspectAdapter* self,
                                                  GObject* sender,
                                                  GParamSpec* param_spec)
 {
-#line 167 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 167 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	g_return_if_fail (self != NULL);
-#line 167 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 167 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	g_return_if_fail (sender != NULL);
-#line 167 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 167 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	g_return_if_fail (param_spec != NULL);
-#line 168 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 168 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	g_object_notify ((GObject*) self, DAF_CORE_IMODEL_HOLDER_PROP_NAME);
 #line 800 "AspectAdapter.c"
 }
@@ -808,50 +808,50 @@ daf_core_aspect_adapter_do_set_model (DafCoreAspectAdapter* self,
 	GObject* _tmp0_;
 	gboolean _tmp1_ = FALSE;
 	GObject* _tmp2_;
-#line 172 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 172 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	g_return_if_fail (self != NULL);
-#line 174 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 174 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_tmp0_ = daf_core_imodel_holder_get_model ((DafCoreIModelHolder*) self);
-#line 174 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 174 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	old_model = _tmp0_;
-#line 176 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 176 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_tmp2_ = old_model;
-#line 176 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 176 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	if (_tmp2_ != NULL) {
-#line 176 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 176 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_tmp1_ = new_model != NULL;
 #line 824 "AspectAdapter.c"
 	} else {
-#line 176 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 176 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_tmp1_ = FALSE;
 #line 828 "AspectAdapter.c"
 	}
-#line 176 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 176 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	if (_tmp1_) {
 #line 832 "AspectAdapter.c"
 		GObject* _tmp3_;
-#line 177 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 177 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_tmp3_ = old_model;
-#line 177 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 177 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_vala_assert (G_TYPE_FROM_INSTANCE (_tmp3_) == G_TYPE_FROM_INSTANCE (new_model), "old_model.get_type () == new_model.get_type ()");
 #line 838 "AspectAdapter.c"
 	}
-#line 180 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 180 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	if (new_model != NULL) {
 #line 842 "AspectAdapter.c"
 		const gchar* _tmp4_;
 		const gchar* _tmp5_;
-#line 181 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 181 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_tmp4_ = daf_core_aspect_adapter_get_property_name (self);
-#line 181 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 181 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_tmp5_ = _tmp4_;
-#line 181 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 181 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_vala_assert (daf_core_aspect_adapter_check_property_compatibility (self, new_model, _tmp5_), "check_property_compatibility (new_model, property_name)");
-#line 182 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 182 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		daf_core_aspect_adapter_do_setup_signals (self, new_model, TRUE);
 #line 853 "AspectAdapter.c"
 	}
-#line 172 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 172 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_g_object_unref0 (old_model);
 #line 857 "AspectAdapter.c"
 }
@@ -862,7 +862,7 @@ _daf_core_aspect_adapter_domain_property_changed_g_object_notify (GObject* _send
                                                                   GParamSpec* pspec,
                                                                   gpointer self)
 {
-#line 189 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 189 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	daf_core_aspect_adapter_domain_property_changed ((DafCoreAspectAdapter*) self, _sender, pspec);
 #line 868 "AspectAdapter.c"
 }
@@ -873,25 +873,25 @@ daf_core_aspect_adapter_do_setup_signals (DafCoreAspectAdapter* self,
                                           GObject* model,
                                           gboolean connect)
 {
-#line 186 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 186 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	g_return_if_fail (self != NULL);
-#line 187 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 187 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	if (model != NULL) {
-#line 188 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 188 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		if (connect) {
 #line 883 "AspectAdapter.c"
 			const gchar* _tmp0_;
 			const gchar* _tmp1_;
 			gchar* _tmp2_;
-#line 189 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 189 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 			_tmp0_ = daf_core_aspect_adapter_get_property_name (self);
-#line 189 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 189 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 			_tmp1_ = _tmp0_;
-#line 189 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 189 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 			_tmp2_ = g_strconcat ("notify::", _tmp1_, NULL);
-#line 189 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 189 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 			g_signal_connect_object (model, _tmp2_, (GCallback) _daf_core_aspect_adapter_domain_property_changed_g_object_notify, self, 0);
-#line 189 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 189 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 			_g_free0 (_tmp2_);
 #line 897 "AspectAdapter.c"
 		} else {
@@ -900,17 +900,17 @@ daf_core_aspect_adapter_do_setup_signals (DafCoreAspectAdapter* self,
 			gchar* _tmp5_;
 			guint _tmp6_;
 			GQuark _tmp7_;
-#line 191 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 191 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 			_tmp3_ = daf_core_aspect_adapter_get_property_name (self);
-#line 191 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 191 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 			_tmp4_ = _tmp3_;
-#line 191 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 191 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 			_tmp5_ = g_strconcat ("notify::", _tmp4_, NULL);
-#line 191 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 191 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 			g_signal_parse_name (_tmp5_, G_TYPE_OBJECT, &_tmp6_, &_tmp7_, TRUE);
-#line 191 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 191 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 			g_signal_handlers_disconnect_matched (model, G_SIGNAL_MATCH_ID | G_SIGNAL_MATCH_DETAIL | G_SIGNAL_MATCH_FUNC | G_SIGNAL_MATCH_DATA, _tmp6_, _tmp7_, NULL, (GCallback) _daf_core_aspect_adapter_domain_property_changed_g_object_notify, self);
-#line 191 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 191 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 			_g_free0 (_tmp5_);
 #line 916 "AspectAdapter.c"
 		}
@@ -921,7 +921,7 @@ daf_core_aspect_adapter_do_setup_signals (DafCoreAspectAdapter* self,
 static gpointer
 _g_param_spec_ref0 (gpointer self)
 {
-#line 205 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 205 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	return self ? g_param_spec_ref (self) : NULL;
 #line 927 "AspectAdapter.c"
 }
@@ -931,11 +931,11 @@ static GType*
 _g_type_dup (GType* self)
 {
 	GType* dup;
-#line 211 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 211 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	dup = g_new0 (GType, 1);
-#line 211 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 211 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	memcpy (dup, self, sizeof (GType));
-#line 211 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 211 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	return dup;
 #line 941 "AspectAdapter.c"
 }
@@ -944,7 +944,7 @@ _g_type_dup (GType* self)
 static gpointer
 __g_type_dup0 (gpointer self)
 {
-#line 211 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 211 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	return self ? _g_type_dup (self) : NULL;
 #line 950 "AspectAdapter.c"
 }
@@ -969,41 +969,41 @@ daf_core_aspect_adapter_read_property (DafCoreAspectAdapter* self,
 	gchar* _tmp14_;
 	gchar* _tmp15_;
 	gboolean _tmp16_;
-#line 196 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 196 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 196 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 196 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	g_return_val_if_fail (property_name != NULL, NULL);
-#line 197 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 197 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	if (object == NULL) {
-#line 201 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 201 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		result = NULL;
-#line 201 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 201 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		return result;
 #line 983 "AspectAdapter.c"
 	}
-#line 205 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 205 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_tmp0_ = G_OBJECT_GET_CLASS (object);
-#line 205 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 205 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_tmp1_ = g_object_class_find_property (_tmp0_, property_name);
-#line 205 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 205 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_tmp2_ = _g_param_spec_ref0 (_tmp1_);
-#line 205 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 205 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	param_spec = _tmp2_;
-#line 206 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 206 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_tmp3_ = param_spec;
-#line 206 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 206 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_vala_assert (_tmp3_ != NULL, "param_spec != null");
-#line 208 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 208 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_tmp4_ = param_spec;
-#line 208 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 208 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_tmp5_ = _tmp4_->value_type;
-#line 208 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 208 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	g_value_init (&_tmp6_, _tmp5_);
-#line 208 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 208 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	model_value = _tmp6_;
-#line 209 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 209 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_tmp7_ = self->priv->model_type;
-#line 209 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 209 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	if (_tmp7_ == NULL) {
 #line 1009 "AspectAdapter.c"
 		GParamSpec* _tmp8_;
@@ -1012,70 +1012,70 @@ daf_core_aspect_adapter_read_property (DafCoreAspectAdapter* self,
 		GParamSpec* _tmp11_;
 		GType _tmp12_;
 		GType* _tmp13_;
-#line 210 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 210 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_tmp8_ = param_spec;
-#line 210 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 210 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_tmp9_ = _tmp8_->value_type;
-#line 210 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 210 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_tmp10_ = g_type_name (_tmp9_);
-#line 210 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 210 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		g_debug ("AspectAdapter.vala:210: model_type is set to: %s", _tmp10_);
-#line 211 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 211 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_tmp11_ = param_spec;
-#line 211 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 211 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_tmp12_ = _tmp11_->value_type;
-#line 211 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 211 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_tmp13_ = __g_type_dup0 (&_tmp12_);
-#line 211 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 211 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_g_free0 (self->priv->model_type);
-#line 211 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 211 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		self->priv->model_type = _tmp13_;
 #line 1034 "AspectAdapter.c"
 	}
-#line 214 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 214 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	g_object_get_property (object, property_name, &model_value);
-#line 216 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 216 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_tmp14_ = g_strdup_value_contents (&model_value);
-#line 216 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 216 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_tmp15_ = _tmp14_;
-#line 216 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 216 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_tmp16_ = g_strcmp0 (_tmp15_, "NULL") == 0;
-#line 216 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 216 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_g_free0 (_tmp15_);
-#line 216 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 216 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	if (_tmp16_) {
-#line 217 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 217 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		result = NULL;
-#line 217 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 217 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		G_IS_VALUE (&model_value) ? (g_value_unset (&model_value), NULL) : NULL;
-#line 217 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 217 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_g_param_spec_unref0 (param_spec);
-#line 217 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 217 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		return result;
 #line 1056 "AspectAdapter.c"
 	} else {
 		GValue _tmp17_;
 		GValue* _tmp18_;
 		GValue* _tmp19_;
-#line 219 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 219 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_tmp17_ = model_value;
-#line 219 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 219 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_tmp18_ = __g_value_dup0 (&_tmp17_);
-#line 219 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 219 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_tmp19_ = _tmp18_;
-#line 219 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 219 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		G_IS_VALUE (&_tmp17_) ? (g_value_unset (&_tmp17_), NULL) : NULL;
-#line 219 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 219 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		result = _tmp19_;
-#line 219 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 219 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_g_param_spec_unref0 (param_spec);
-#line 219 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 219 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		return result;
 #line 1075 "AspectAdapter.c"
 	}
-#line 196 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 196 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	G_IS_VALUE (&model_value) ? (g_value_unset (&model_value), NULL) : NULL;
-#line 196 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 196 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_g_param_spec_unref0 (param_spec);
 #line 1081 "AspectAdapter.c"
 }
@@ -1087,13 +1087,13 @@ daf_core_aspect_adapter_write_property (DafCoreAspectAdapter* self,
                                         const gchar* property_name,
                                         GValue* new_value)
 {
-#line 223 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 223 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	g_return_if_fail (self != NULL);
-#line 223 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 223 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	g_return_if_fail (model != NULL);
-#line 223 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 223 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	g_return_if_fail (property_name != NULL);
-#line 225 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 225 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	if (new_value == NULL) {
 #line 1099 "AspectAdapter.c"
 		GParamSpec* param_spec = NULL;
@@ -1103,23 +1103,23 @@ daf_core_aspect_adapter_write_property (DafCoreAspectAdapter* self,
 		GParamSpec* _tmp3_;
 		GParamSpec* _tmp4_;
 		GType _tmp5_;
-#line 227 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 227 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_tmp0_ = G_OBJECT_GET_CLASS (model);
-#line 227 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 227 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_tmp1_ = g_object_class_find_property (_tmp0_, property_name);
-#line 227 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 227 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_tmp2_ = _g_param_spec_ref0 (_tmp1_);
-#line 227 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 227 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		param_spec = _tmp2_;
-#line 228 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 228 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_tmp3_ = param_spec;
-#line 228 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 228 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_vala_assert (_tmp3_ != NULL, "param_spec != null");
-#line 231 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 231 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_tmp4_ = param_spec;
-#line 231 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 231 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_tmp5_ = _tmp4_->value_type;
-#line 231 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 231 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		if (_tmp5_ != G_TYPE_VALUE) {
 #line 1125 "AspectAdapter.c"
 			GValue val = {0};
@@ -1131,55 +1131,55 @@ daf_core_aspect_adapter_write_property (DafCoreAspectAdapter* self,
 			GParamSpec* _tmp10_;
 			GType _tmp11_;
 			GValue _tmp12_;
-#line 232 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 232 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 			g_value_init (&_tmp6_, G_TYPE_STRING);
-#line 232 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 232 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 			g_value_set_string (&_tmp6_, "");
-#line 232 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 232 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 			val = _tmp6_;
-#line 233 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 233 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 			_tmp7_ = param_spec;
-#line 233 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 233 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 			_tmp8_ = _tmp7_->value_type;
-#line 233 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 233 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 			g_value_init (&_tmp9_, _tmp8_);
-#line 233 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 233 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 			model_value = _tmp9_;
-#line 234 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 234 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 			_tmp10_ = param_spec;
-#line 234 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 234 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 			_tmp11_ = _tmp10_->value_type;
-#line 234 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 234 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 			if (g_value_type_transformable (G_VALUE_TYPE (&val), _tmp11_)) {
-#line 235 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 235 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 				g_value_transform (&val, &model_value);
 #line 1157 "AspectAdapter.c"
 			}
-#line 237 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 237 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 			_tmp12_ = model_value;
-#line 237 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 237 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 			g_object_set_property (model, property_name, &_tmp12_);
-#line 231 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 231 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 			G_IS_VALUE (&model_value) ? (g_value_unset (&model_value), NULL) : NULL;
-#line 231 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 231 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 			G_IS_VALUE (&val) ? (g_value_unset (&val), NULL) : NULL;
 #line 1167 "AspectAdapter.c"
 		} else {
 			GValue _tmp13_;
-#line 240 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 240 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 			_tmp13_ = *new_value;
-#line 240 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 240 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 			g_object_set_property (model, property_name, &_tmp13_);
 #line 1174 "AspectAdapter.c"
 		}
-#line 225 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 225 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_g_param_spec_unref0 (param_spec);
 #line 1178 "AspectAdapter.c"
 	} else {
 		GValue _tmp14_;
-#line 244 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 244 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_tmp14_ = *new_value;
-#line 244 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 244 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		g_object_set_property (model, property_name, &_tmp14_);
 #line 1185 "AspectAdapter.c"
 	}
@@ -1196,25 +1196,25 @@ daf_core_aspect_adapter_check_property_compatibility (DafCoreAspectAdapter* self
 	GObjectClass* _tmp0_;
 	GParamSpec* _tmp1_;
 	GParamSpec* _tmp2_;
-#line 248 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 248 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	g_return_val_if_fail (self != NULL, FALSE);
-#line 248 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 248 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	g_return_val_if_fail (domain_model != NULL, FALSE);
-#line 248 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 248 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	g_return_val_if_fail (property_name != NULL, FALSE);
-#line 249 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 249 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_tmp0_ = G_OBJECT_GET_CLASS (domain_model);
-#line 249 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 249 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_tmp1_ = g_object_class_find_property (_tmp0_, property_name);
-#line 249 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 249 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_tmp2_ = _g_param_spec_ref0 (_tmp1_);
-#line 249 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 249 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	param_spec = _tmp2_;
-#line 250 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 250 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	result = param_spec != NULL;
-#line 250 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 250 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_g_param_spec_unref0 (param_spec);
-#line 250 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 250 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	return result;
 #line 1220 "AspectAdapter.c"
 }
@@ -1226,13 +1226,13 @@ daf_core_aspect_adapter_real_get_value_model (DafCoreIModelHolder* base)
 	DafCoreIValueModel* result;
 	DafCoreAspectAdapter* self;
 	DafCoreIValueModel* _tmp0_;
-#line 44 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 44 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	self = (DafCoreAspectAdapter*) base;
-#line 44 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 44 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_tmp0_ = self->priv->_value_model;
-#line 44 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 44 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	result = _tmp0_;
-#line 44 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 44 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	return result;
 #line 1238 "AspectAdapter.c"
 }
@@ -1243,19 +1243,19 @@ daf_core_aspect_adapter_real_set_value_model (DafCoreIModelHolder* base,
                                               DafCoreIValueModel* value)
 {
 	DafCoreAspectAdapter* self;
-#line 44 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 44 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	self = (DafCoreAspectAdapter*) base;
-#line 44 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 44 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	if (daf_core_aspect_adapter_real_get_value_model (base) != value) {
 #line 1251 "AspectAdapter.c"
 		DafCoreIValueModel* _tmp0_;
-#line 44 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 44 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_tmp0_ = _g_object_ref0 (value);
-#line 44 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 44 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_g_object_unref0 (self->priv->_value_model);
-#line 44 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 44 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		self->priv->_value_model = _tmp0_;
-#line 44 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 44 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		g_object_notify_by_pspec ((GObject *) self, daf_core_aspect_adapter_properties[DAF_CORE_ASPECT_ADAPTER_VALUE_MODEL_PROPERTY]);
 #line 1261 "AspectAdapter.c"
 	}
@@ -1267,13 +1267,13 @@ daf_core_aspect_adapter_get_property_name (DafCoreAspectAdapter* self)
 {
 	const gchar* result;
 	const gchar* _tmp0_;
-#line 50 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 50 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 51 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 51 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_tmp0_ = self->priv->_property_name;
-#line 51 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 51 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	result = _tmp0_;
-#line 51 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 51 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	return result;
 #line 1279 "AspectAdapter.c"
 }
@@ -1284,15 +1284,15 @@ _thread_safe_regex_init (GRegex** re,
                          const gchar * pattern,
                          GRegexMatchFlags match_options)
 {
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	if (g_once_init_enter ((volatile gsize*) re)) {
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		GRegex* val = g_regex_new (pattern, match_options, 0, NULL);
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		g_once_init_leave ((volatile gsize*) re, (gsize) val);
 #line 1294 "AspectAdapter.c"
 	}
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	return *re;
 #line 1298 "AspectAdapter.c"
 }
@@ -1303,41 +1303,41 @@ daf_core_aspect_adapter_set_property_name (DafCoreAspectAdapter* self,
                                            const gchar* value)
 {
 	GError * _inner_error_ = NULL;
-#line 52 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 52 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	g_return_if_fail (self != NULL);
-#line 53 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 53 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	if (value != NULL) {
 #line 1311 "AspectAdapter.c"
 		gchar* _tmp0_ = NULL;
 		gchar* _tmp1_;
 		gchar* _tmp2_;
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_tmp1_ = g_regex_replace (_thread_safe_regex_init (&_tmp_regex_0, "_", 0), value, (gssize) -1, 0, "-", 0, &_inner_error_);
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_tmp0_ = _tmp1_;
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		if (G_UNLIKELY (_inner_error_ != NULL)) {
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 			g_critical ("file %s: line %d: uncaught error: %s (%s, %d)", __FILE__, __LINE__, _inner_error_->message, g_quark_to_string (_inner_error_->domain), _inner_error_->code);
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 			g_clear_error (&_inner_error_);
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 			return;
 #line 1327 "AspectAdapter.c"
 		}
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_tmp2_ = _tmp0_;
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_tmp0_ = NULL;
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_g_free0 (self->priv->_property_name);
-#line 54 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 54 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		self->priv->_property_name = _tmp2_;
-#line 53 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 53 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		_g_free0 (_tmp0_);
 #line 1339 "AspectAdapter.c"
 	}
-#line 52 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 52 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	g_object_notify_by_pspec ((GObject *) self, daf_core_aspect_adapter_properties[DAF_CORE_ASPECT_ADAPTER_PROPERTY_NAME_PROPERTY]);
 #line 1343 "AspectAdapter.c"
 }
@@ -1346,23 +1346,23 @@ daf_core_aspect_adapter_set_property_name (DafCoreAspectAdapter* self,
 static void
 daf_core_aspect_adapter_class_init (DafCoreAspectAdapterClass * klass)
 {
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	daf_core_aspect_adapter_parent_class = g_type_class_peek_parent (klass);
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	g_type_class_add_private (klass, sizeof (DafCoreAspectAdapterPrivate));
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	((DafCoreAbstractValueHolderClass *) klass)->get_val = (GValue* (*) (DafCoreAbstractValueHolder *)) daf_core_aspect_adapter_real_get_val;
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	((DafCoreAbstractValueHolderClass *) klass)->set_val = (void (*) (DafCoreAbstractValueHolder *, GValue*)) daf_core_aspect_adapter_real_set_val;
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	G_OBJECT_CLASS (klass)->get_property = _vala_daf_core_aspect_adapter_get_property;
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	G_OBJECT_CLASS (klass)->set_property = _vala_daf_core_aspect_adapter_set_property;
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	G_OBJECT_CLASS (klass)->finalize = daf_core_aspect_adapter_finalize;
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	g_object_class_install_property (G_OBJECT_CLASS (klass), DAF_CORE_ASPECT_ADAPTER_VALUE_MODEL_PROPERTY, daf_core_aspect_adapter_properties[DAF_CORE_ASPECT_ADAPTER_VALUE_MODEL_PROPERTY] = g_param_spec_object ("value-model", "value-model", "value-model", DAF_CORE_TYPE_IVALUE_MODEL, G_PARAM_STATIC_STRINGS | G_PARAM_READABLE | G_PARAM_WRITABLE));
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	g_object_class_install_property (G_OBJECT_CLASS (klass), DAF_CORE_ASPECT_ADAPTER_PROPERTY_NAME_PROPERTY, daf_core_aspect_adapter_properties[DAF_CORE_ASPECT_ADAPTER_PROPERTY_NAME_PROPERTY] = g_param_spec_string ("property-name", "property-name", "property-name", NULL, G_PARAM_STATIC_STRINGS | G_PARAM_READABLE));
 #line 1368 "AspectAdapter.c"
 }
@@ -1371,15 +1371,15 @@ daf_core_aspect_adapter_class_init (DafCoreAspectAdapterClass * klass)
 static void
 daf_core_aspect_adapter_daf_core_imodel_holder_interface_init (DafCoreIModelHolderIface * iface)
 {
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	daf_core_aspect_adapter_daf_core_imodel_holder_parent_iface = g_type_interface_peek_parent (iface);
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	iface->get_model = (GObject* (*) (DafCoreIModelHolder *)) daf_core_aspect_adapter_real_get_model;
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	iface->set_model = (void (*) (DafCoreIModelHolder *, GObject*)) daf_core_aspect_adapter_real_set_model;
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	iface->get_value_model = daf_core_aspect_adapter_real_get_value_model;
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	iface->set_value_model = daf_core_aspect_adapter_real_set_value_model;
 #line 1385 "AspectAdapter.c"
 }
@@ -1388,13 +1388,13 @@ daf_core_aspect_adapter_daf_core_imodel_holder_interface_init (DafCoreIModelHold
 static void
 daf_core_aspect_adapter_instance_init (DafCoreAspectAdapter * self)
 {
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	self->priv = DAF_CORE_ASPECT_ADAPTER_GET_PRIVATE (self);
-#line 39 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 39 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	self->priv->value_changed_id = (gulong) 0L;
-#line 40 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 40 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	self->priv->domain_changed_id = (gulong) 0L;
-#line 46 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 46 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	self->priv->observe_domain_changes = FALSE;
 #line 1400 "AspectAdapter.c"
 }
@@ -1404,15 +1404,15 @@ static void
 daf_core_aspect_adapter_finalize (GObject * obj)
 {
 	DafCoreAspectAdapter * self;
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	self = G_TYPE_CHECK_INSTANCE_CAST (obj, DAF_CORE_TYPE_ASPECT_ADAPTER, DafCoreAspectAdapter);
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_g_free0 (self->priv->model_type);
-#line 44 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 44 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_g_object_unref0 (self->priv->_value_model);
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	_g_free0 (self->priv->_property_name);
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	G_OBJECT_CLASS (daf_core_aspect_adapter_parent_class)->finalize (obj);
 #line 1418 "AspectAdapter.c"
 }
@@ -1457,25 +1457,25 @@ _vala_daf_core_aspect_adapter_get_property (GObject * object,
 {
 	DafCoreAspectAdapter * self;
 	self = G_TYPE_CHECK_INSTANCE_CAST (object, DAF_CORE_TYPE_ASPECT_ADAPTER, DafCoreAspectAdapter);
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	switch (property_id) {
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		case DAF_CORE_ASPECT_ADAPTER_VALUE_MODEL_PROPERTY:
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		g_value_set_object (value, daf_core_imodel_holder_get_value_model ((DafCoreIModelHolder*) self));
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		break;
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		case DAF_CORE_ASPECT_ADAPTER_PROPERTY_NAME_PROPERTY:
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		g_value_set_string (value, daf_core_aspect_adapter_get_property_name (self));
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		break;
 #line 1475 "AspectAdapter.c"
 		default:
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		G_OBJECT_WARN_INVALID_PROPERTY_ID (object, property_id, pspec);
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		break;
 #line 1481 "AspectAdapter.c"
 	}
@@ -1490,25 +1490,25 @@ _vala_daf_core_aspect_adapter_set_property (GObject * object,
 {
 	DafCoreAspectAdapter * self;
 	self = G_TYPE_CHECK_INSTANCE_CAST (object, DAF_CORE_TYPE_ASPECT_ADAPTER, DafCoreAspectAdapter);
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 	switch (property_id) {
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		case DAF_CORE_ASPECT_ADAPTER_VALUE_MODEL_PROPERTY:
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		daf_core_imodel_holder_set_value_model ((DafCoreIModelHolder*) self, g_value_get_object (value));
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		break;
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		case DAF_CORE_ASPECT_ADAPTER_PROPERTY_NAME_PROPERTY:
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		daf_core_aspect_adapter_set_property_name (self, g_value_get_string (value));
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		break;
 #line 1508 "AspectAdapter.c"
 		default:
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		G_OBJECT_WARN_INVALID_PROPERTY_ID (object, property_id, pspec);
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/AspectAdapter.vala"
 		break;
 #line 1514 "AspectAdapter.c"
 	}

@@ -129,7 +129,7 @@ static void daf_ui_test_selection_in_list_test_finalize (GObject * obj);
 static void
 _daf_ui_test_selection_in_list_test_empty_selection_list_test_daf_unit_test_abstract_test_case_test_method (gpointer self)
 {
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	daf_ui_test_selection_in_list_test_empty_selection_list_test ((DafUITestSelectionInListTest*) self);
 #line 135 "SelectionInListTest.c"
 }
@@ -138,7 +138,7 @@ _daf_ui_test_selection_in_list_test_empty_selection_list_test_daf_unit_test_abst
 static void
 _daf_ui_test_selection_in_list_test_empty_selection_list_with_model_presenter_test_daf_unit_test_abstract_test_case_test_method (gpointer self)
 {
-#line 36 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 36 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	daf_ui_test_selection_in_list_test_empty_selection_list_with_model_presenter_test ((DafUITestSelectionInListTest*) self);
 #line 144 "SelectionInListTest.c"
 }
@@ -147,7 +147,7 @@ _daf_ui_test_selection_in_list_test_empty_selection_list_with_model_presenter_te
 static void
 _daf_ui_test_selection_in_list_test_selection_list_with_model_presenter_test_daf_unit_test_abstract_test_case_test_method (gpointer self)
 {
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	daf_ui_test_selection_in_list_test_selection_list_with_model_presenter_test ((DafUITestSelectionInListTest*) self);
 #line 153 "SelectionInListTest.c"
 }
@@ -157,15 +157,15 @@ DafUITestSelectionInListTest*
 daf_ui_test_selection_in_list_test_construct (GType object_type)
 {
 	DafUITestSelectionInListTest * self = NULL;
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	self = (DafUITestSelectionInListTest*) daf_unit_test_abstract_test_case_construct (object_type, "SelectionInListTest");
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	daf_unit_test_abstract_test_case_add_test ((DafUnitTestAbstractTestCase*) self, "empty_selection_list_test", _daf_ui_test_selection_in_list_test_empty_selection_list_test_daf_unit_test_abstract_test_case_test_method, self);
-#line 36 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 36 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	daf_unit_test_abstract_test_case_add_test ((DafUnitTestAbstractTestCase*) self, "empty_selection_list_with_model_presenter_test", _daf_ui_test_selection_in_list_test_empty_selection_list_with_model_presenter_test_daf_unit_test_abstract_test_case_test_method, self);
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	daf_unit_test_abstract_test_case_add_test ((DafUnitTestAbstractTestCase*) self, "selection_list_with_model_presenter_test", _daf_ui_test_selection_in_list_test_selection_list_with_model_presenter_test_daf_unit_test_abstract_test_case_test_method, self);
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	return self;
 #line 171 "SelectionInListTest.c"
 }
@@ -174,7 +174,7 @@ daf_ui_test_selection_in_list_test_construct (GType object_type)
 DafUITestSelectionInListTest*
 daf_ui_test_selection_in_list_test_new (void)
 {
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	return daf_ui_test_selection_in_list_test_construct (DAF_UI_TEST_TYPE_SELECTION_IN_LIST_TEST);
 #line 180 "SelectionInListTest.c"
 }
@@ -184,7 +184,7 @@ static void
 daf_ui_test_selection_in_list_test_real_set_up (DafUnitTestAbstractTestCase* base)
 {
 	DafUITestSelectionInListTest * self;
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	self = (DafUITestSelectionInListTest*) base;
 #line 190 "SelectionInListTest.c"
 }
@@ -194,7 +194,7 @@ static void
 daf_ui_test_selection_in_list_test_real_tear_down (DafUnitTestAbstractTestCase* base)
 {
 	DafUITestSelectionInListTest * self;
-#line 45 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 45 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	self = (DafUITestSelectionInListTest*) base;
 #line 200 "SelectionInListTest.c"
 }
@@ -203,7 +203,7 @@ daf_ui_test_selection_in_list_test_real_tear_down (DafUnitTestAbstractTestCase* 
 static void
 __lambda4_ (DafUITestSelectionInListTest* self)
 {
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	g_debug ("SelectionInListTest.vala:58: Value has.changed");
 #line 209 "SelectionInListTest.c"
 }
@@ -214,7 +214,7 @@ ___lambda4__g_object_notify (GObject* _sender,
                              GParamSpec* pspec,
                              gpointer self)
 {
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	__lambda4_ ((DafUITestSelectionInListTest*) self);
 #line 220 "SelectionInListTest.c"
 }
@@ -223,9 +223,9 @@ ___lambda4__g_object_notify (GObject* _sender,
 static void
 _vala_GValue_free (GValue* self)
 {
-#line 67 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 67 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	g_value_unset (self);
-#line 67 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 67 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	g_free (self);
 #line 231 "SelectionInListTest.c"
 }
@@ -252,77 +252,77 @@ daf_ui_test_selection_in_list_test_empty_selection_list_test (DafUITestSelection
 	gpointer _tmp11_;
 	GValue* _tmp12_ = NULL;
 	GValue* _tmp13_;
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	g_return_if_fail (self != NULL);
-#line 49 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 49 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_tmp0_ = daf_ui_test_model_person_new ("Felix", "Van der Gullen");
-#line 49 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 49 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	person_a = _tmp0_;
-#line 50 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 50 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_tmp1_ = daf_ui_test_model_person_new ("Ignaz", "rebitsch-Lincoln");
-#line 50 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 50 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	person_b = _tmp1_;
-#line 52 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 52 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_tmp2_ = daf_core_array_list_model_new (DAF_UI_TEST_MODEL_TYPE_PERSON, (GBoxedCopyFunc) g_object_ref, (GDestroyNotify) g_object_unref);
-#line 52 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 52 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_g_object_unref0 (self->priv->array_list);
-#line 52 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 52 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	self->priv->array_list = (DafCoreIListModel*) _tmp2_;
-#line 55 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 55 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_tmp3_ = self->priv->array_list;
-#line 55 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 55 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_tmp4_ = daf_core_selection_in_list_new_with_list_model (DAF_UI_TEST_MODEL_TYPE_PERSON, (GBoxedCopyFunc) g_object_ref, (GDestroyNotify) g_object_unref, _tmp3_);
-#line 55 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 55 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	selection = _tmp4_;
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	g_debug ("SelectionInListTest.vala:57: Back off...");
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_tmp5_ = g_strconcat ("notify::", DAF_CORE_IVALUE_MODEL_PROP_NAME, NULL);
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	g_signal_connect_object ((GObject*) selection, _tmp5_, (GCallback) ___lambda4__g_object_notify, self, 0);
-#line 58 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 58 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_g_free0 (_tmp5_);
-#line 61 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 61 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_tmp6_ = daf_ui_test_selection_in_list_test_isnot_null_converter_new ((DafCoreIValueModel*) selection);
-#line 61 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 61 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	has_selection = _tmp6_;
-#line 63 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 63 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_tmp7_ = daf_core_abstract_value_holder_get_val ((DafCoreAbstractValueHolder*) has_selection);
-#line 63 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 63 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_vala_assert (!g_value_get_boolean (_tmp7_), "!(bool) has_selection.get_val ()");
-#line 65 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 65 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_tmp8_ = self->priv->array_list;
-#line 65 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 65 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	daf_core_ilist_model_add (_tmp8_, person_a);
-#line 66 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 66 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_tmp9_ = self->priv->array_list;
-#line 66 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 66 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	daf_core_ilist_model_add (_tmp9_, person_b);
-#line 67 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 67 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_tmp10_ = self->priv->array_list;
-#line 67 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 67 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_tmp11_ = daf_core_ilist_model_get_at (_tmp10_, 0);
-#line 67 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 67 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_tmp12_ = g_new0 (GValue, 1);
-#line 67 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 67 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	g_value_init (_tmp12_, DAF_UI_TEST_MODEL_TYPE_PERSON);
-#line 67 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 67 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	g_value_take_object (_tmp12_, (DafUITestModelPerson*) _tmp11_);
-#line 67 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 67 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	daf_core_abstract_value_holder_set_val ((DafCoreAbstractValueHolder*) selection, _tmp12_);
-#line 67 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 67 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	__vala_GValue_free0 (_tmp12_);
-#line 68 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 68 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_tmp13_ = daf_core_abstract_value_holder_get_val ((DafCoreAbstractValueHolder*) has_selection);
-#line 68 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 68 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_vala_assert (g_value_get_boolean (_tmp13_), "(bool) has_selection.get_val ()");
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_g_object_unref0 (has_selection);
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_g_object_unref0 (selection);
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_g_object_unref0 (person_b);
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_g_object_unref0 (person_a);
 #line 328 "SelectionInListTest.c"
 }
@@ -331,7 +331,7 @@ daf_ui_test_selection_in_list_test_empty_selection_list_test (DafUITestSelection
 static void
 __lambda5_ (DafUITestSelectionInListTest* self)
 {
-#line 84 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 84 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	g_debug ("SelectionInListTest.vala:84: Value has.changed");
 #line 337 "SelectionInListTest.c"
 }
@@ -342,7 +342,7 @@ ___lambda5__g_object_notify (GObject* _sender,
                              GParamSpec* pspec,
                              gpointer self)
 {
-#line 84 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 84 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	__lambda5_ ((DafUITestSelectionInListTest*) self);
 #line 348 "SelectionInListTest.c"
 }
@@ -369,67 +369,67 @@ daf_ui_test_selection_in_list_test_empty_selection_list_with_model_presenter_tes
 	DafCoreIValueModel* _tmp8_;
 	GValue* _tmp9_;
 	GValue* _tmp10_;
-#line 72 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 72 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	g_return_if_fail (self != NULL);
-#line 74 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 74 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_tmp0_ = daf_ui_test_model_person_new ("Felix", "Van der Gullen");
-#line 74 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 74 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	person_a = _tmp0_;
-#line 75 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 75 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_tmp1_ = daf_ui_test_model_person_new ("Ignaz", "rebitsch-Lincoln");
-#line 75 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 75 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	person_b = _tmp1_;
-#line 77 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 77 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_tmp2_ = daf_core_array_list_model_new (DAF_UI_TEST_MODEL_TYPE_PERSON, (GBoxedCopyFunc) g_object_ref, (GDestroyNotify) g_object_unref);
-#line 77 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 77 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	array_list = _tmp2_;
-#line 81 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 81 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_tmp3_ = daf_core_selection_in_list_new_with_list_model (DAF_UI_TEST_MODEL_TYPE_PERSON, (GBoxedCopyFunc) g_object_ref, (GDestroyNotify) g_object_unref, (DafCoreIListModel*) array_list);
-#line 81 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 81 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	selection = _tmp3_;
-#line 84 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 84 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_tmp4_ = g_strconcat ("notify::", DAF_CORE_IVALUE_MODEL_PROP_NAME, NULL);
-#line 84 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 84 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	g_signal_connect_object ((GObject*) selection, _tmp4_, (GCallback) ___lambda5__g_object_notify, self, 0);
-#line 84 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 84 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_g_free0 (_tmp4_);
-#line 86 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 86 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_tmp5_ = daf_ui_test_selection_in_list_test_isnot_null_converter_new ((DafCoreIValueModel*) selection);
-#line 86 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 86 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	has_selection = _tmp5_;
-#line 88 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 88 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_tmp6_ = daf_core_abstract_value_holder_get_val ((DafCoreAbstractValueHolder*) has_selection);
-#line 88 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 88 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_vala_assert (!g_value_get_boolean (_tmp6_), "!(bool)has_selection.get_val ()");
-#line 96 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 96 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_tmp7_ = daf_core_model_presenter_new ((GObject*) selection, FALSE);
-#line 96 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 96 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	presenter = _tmp7_;
-#line 98 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 98 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_tmp8_ = daf_core_imodel_presenter_get_value_model ((DafCoreIModelPresenter*) presenter, "first_name");
-#line 98 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 98 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	first_name = _tmp8_;
-#line 99 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 99 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_tmp9_ = daf_core_ivalue_model_get_val (first_name);
-#line 99 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 99 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_tmp10_ = _tmp9_;
-#line 99 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 99 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_vala_assert (_tmp10_ == NULL, "first_name.get_val () == null");
-#line 99 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 99 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	__vala_GValue_free0 (_tmp10_);
-#line 72 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 72 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_g_object_unref0 (first_name);
-#line 72 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 72 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_g_object_unref0 (presenter);
-#line 72 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 72 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_g_object_unref0 (has_selection);
-#line 72 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 72 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_g_object_unref0 (selection);
-#line 72 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 72 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_g_object_unref0 (array_list);
-#line 72 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 72 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_g_object_unref0 (person_b);
-#line 72 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 72 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_g_object_unref0 (person_a);
 #line 435 "SelectionInListTest.c"
 }
@@ -446,35 +446,35 @@ daf_ui_test_selection_in_list_test_selection_list_with_model_presenter_test (Daf
 	DafCoreArrayListModel* _tmp2_;
 	DafCoreSelectionInList* selection = NULL;
 	DafCoreSelectionInList* _tmp3_;
-#line 116 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 116 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	g_return_if_fail (self != NULL);
-#line 118 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 118 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_tmp0_ = daf_ui_test_model_person_new ("Felix", "Van der Gullen");
-#line 118 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 118 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	person_a = _tmp0_;
-#line 119 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 119 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_tmp1_ = daf_ui_test_model_person_new ("Ignaz", "rebitsch-Lincoln");
-#line 119 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 119 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	person_b = _tmp1_;
-#line 121 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 121 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_tmp2_ = daf_core_array_list_model_new (DAF_UI_TEST_MODEL_TYPE_PERSON, (GBoxedCopyFunc) g_object_ref, (GDestroyNotify) g_object_unref);
-#line 121 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 121 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	array_list = _tmp2_;
-#line 122 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 122 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	daf_core_ilist_model_add ((DafCoreIListModel*) array_list, person_a);
-#line 123 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 123 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	daf_core_ilist_model_add ((DafCoreIListModel*) array_list, person_b);
-#line 125 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 125 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_tmp3_ = daf_core_selection_in_list_new_with_list_model (DAF_UI_TEST_MODEL_TYPE_PERSON, (GBoxedCopyFunc) g_object_ref, (GDestroyNotify) g_object_unref, (DafCoreIListModel*) array_list);
-#line 125 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 125 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	selection = _tmp3_;
-#line 116 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 116 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_g_object_unref0 (selection);
-#line 116 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 116 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_g_object_unref0 (array_list);
-#line 116 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 116 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_g_object_unref0 (person_b);
-#line 116 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 116 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_g_object_unref0 (person_a);
 #line 480 "SelectionInListTest.c"
 }
@@ -483,9 +483,9 @@ daf_ui_test_selection_in_list_test_selection_list_with_model_presenter_test (Daf
 void
 daf_ui_test_selection_in_list_test_test (DafUITestSelectionInListTest* self)
 {
-#line 164 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 164 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	g_return_if_fail (self != NULL);
-#line 165 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 165 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	g_message ("SelectionInListTest.vala:165: Alma");
 #line 491 "SelectionInListTest.c"
 }
@@ -496,11 +496,11 @@ daf_ui_test_selection_in_list_test_isnot_null_converter_construct (GType object_
                                                                    DafCoreIValueModel* value_model)
 {
 	DafUITestSelectionInListTestIsNotNullConverter * self = NULL;
-#line 151 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 151 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	g_return_val_if_fail (value_model != NULL, NULL);
-#line 152 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 152 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	self = (DafUITestSelectionInListTestIsNotNullConverter*) daf_core_abstract_type_converter_construct (object_type, value_model);
-#line 151 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 151 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	return self;
 #line 506 "SelectionInListTest.c"
 }
@@ -509,7 +509,7 @@ daf_ui_test_selection_in_list_test_isnot_null_converter_construct (GType object_
 DafUITestSelectionInListTestIsNotNullConverter*
 daf_ui_test_selection_in_list_test_isnot_null_converter_new (DafCoreIValueModel* value_model)
 {
-#line 151 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 151 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	return daf_ui_test_selection_in_list_test_isnot_null_converter_construct (DAF_UI_TEST_SELECTION_IN_LIST_TEST_TYPE_ISNOT_NULL_CONVERTER, value_model);
 #line 515 "SelectionInListTest.c"
 }
@@ -522,15 +522,15 @@ daf_ui_test_selection_in_list_test_isnot_null_converter_real_convert_from_model 
 {
 	DafUITestSelectionInListTestIsNotNullConverter * self;
 	GValue _tmp0_ = {0};
-#line 155 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 155 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	self = (DafUITestSelectionInListTestIsNotNullConverter*) base;
-#line 156 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 156 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	g_value_init (&_tmp0_, G_TYPE_BOOLEAN);
-#line 156 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 156 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	g_value_set_boolean (&_tmp0_, (gboolean) (model_value != NULL));
-#line 156 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 156 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	*result = _tmp0_;
-#line 156 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 156 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	return;
 #line 536 "SelectionInListTest.c"
 }
@@ -543,19 +543,19 @@ daf_ui_test_selection_in_list_test_isnot_null_converter_real_set_val (DafCoreAbs
 	DafUITestSelectionInListTestIsNotNullConverter * self;
 	DafCoreIValueModel* _tmp0_;
 	GValue* _tmp1_ = NULL;
-#line 159 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 159 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	self = (DafUITestSelectionInListTestIsNotNullConverter*) base;
-#line 160 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 160 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_tmp0_ = ((DafCoreAbstractTypeConverter*) self)->model;
-#line 160 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 160 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_tmp1_ = g_new0 (GValue, 1);
-#line 160 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 160 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	g_value_init (_tmp1_, G_TYPE_BOOLEAN);
-#line 160 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 160 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	g_value_set_boolean (_tmp1_, new_value == NULL);
-#line 160 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 160 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	daf_core_ivalue_model_set_val (_tmp0_, _tmp1_);
-#line 160 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 160 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	__vala_GValue_free0 (_tmp1_);
 #line 561 "SelectionInListTest.c"
 }
@@ -564,11 +564,11 @@ daf_ui_test_selection_in_list_test_isnot_null_converter_real_set_val (DafCoreAbs
 static void
 daf_ui_test_selection_in_list_test_isnot_null_converter_class_init (DafUITestSelectionInListTestIsNotNullConverterClass * klass)
 {
-#line 149 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 149 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	daf_ui_test_selection_in_list_test_isnot_null_converter_parent_class = g_type_class_peek_parent (klass);
-#line 149 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 149 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	((DafCoreAbstractTypeConverterClass *) klass)->convert_from_model = (void (*) (DafCoreAbstractTypeConverter *, GValue*, GValue*)) daf_ui_test_selection_in_list_test_isnot_null_converter_real_convert_from_model;
-#line 149 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 149 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	((DafCoreAbstractValueHolderClass *) klass)->set_val = (void (*) (DafCoreAbstractValueHolder *, GValue*)) daf_ui_test_selection_in_list_test_isnot_null_converter_real_set_val;
 #line 574 "SelectionInListTest.c"
 }
@@ -597,15 +597,15 @@ daf_ui_test_selection_in_list_test_isnot_null_converter_get_type (void)
 static void
 daf_ui_test_selection_in_list_test_class_init (DafUITestSelectionInListTestClass * klass)
 {
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	daf_ui_test_selection_in_list_test_parent_class = g_type_class_peek_parent (klass);
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	g_type_class_add_private (klass, sizeof (DafUITestSelectionInListTestPrivate));
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	((DafUnitTestAbstractTestCaseClass *) klass)->set_up = (void (*) (DafUnitTestAbstractTestCase *)) daf_ui_test_selection_in_list_test_real_set_up;
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	((DafUnitTestAbstractTestCaseClass *) klass)->tear_down = (void (*) (DafUnitTestAbstractTestCase *)) daf_ui_test_selection_in_list_test_real_tear_down;
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	G_OBJECT_CLASS (klass)->finalize = daf_ui_test_selection_in_list_test_finalize;
 #line 611 "SelectionInListTest.c"
 }
@@ -614,7 +614,7 @@ daf_ui_test_selection_in_list_test_class_init (DafUITestSelectionInListTestClass
 static void
 daf_ui_test_selection_in_list_test_instance_init (DafUITestSelectionInListTest * self)
 {
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	self->priv = DAF_UI_TEST_SELECTION_IN_LIST_TEST_GET_PRIVATE (self);
 #line 620 "SelectionInListTest.c"
 }
@@ -624,11 +624,11 @@ static void
 daf_ui_test_selection_in_list_test_finalize (GObject * obj)
 {
 	DafUITestSelectionInListTest * self;
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	self = G_TYPE_CHECK_INSTANCE_CAST (obj, DAF_UI_TEST_TYPE_SELECTION_IN_LIST_TEST, DafUITestSelectionInListTest);
-#line 30 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 30 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	_g_object_unref0 (self->priv->array_list);
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafui/test/SelectionInListTest.vala"
 	G_OBJECT_CLASS (daf_ui_test_selection_in_list_test_parent_class)->finalize (obj);
 #line 634 "SelectionInListTest.c"
 }

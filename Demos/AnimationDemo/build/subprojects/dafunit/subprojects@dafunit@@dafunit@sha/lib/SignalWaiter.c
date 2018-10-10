@@ -176,31 +176,31 @@ daf_unit_test_signal_waiter_construct (GType object_type,
                                        GDestroyNotify predicate_target_destroy_notify)
 {
 	DafUnitTestSignalWaiter* self = NULL;
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	self = (DafUnitTestSignalWaiter*) g_type_create_instance (object_type);
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	(self->predicate_target_destroy_notify == NULL) ? NULL : (self->predicate_target_destroy_notify (self->predicate_target), NULL);
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	self->predicate = NULL;
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	self->predicate_target = NULL;
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	self->predicate_target_destroy_notify = NULL;
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	self->predicate = predicate;
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	self->predicate_target = predicate_target;
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	self->predicate_target_destroy_notify = NULL;
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	(predicate_target_destroy_notify == NULL) ? NULL : (predicate_target_destroy_notify (predicate_target), NULL);
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	predicate = NULL;
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	predicate_target = NULL;
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	predicate_target_destroy_notify = NULL;
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	return self;
 #line 206 "SignalWaiter.c"
 }
@@ -211,7 +211,7 @@ daf_unit_test_signal_waiter_new (DafUnitTestPredicate predicate,
                                  gpointer predicate_target,
                                  GDestroyNotify predicate_target_destroy_notify)
 {
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	return daf_unit_test_signal_waiter_construct (DAF_UNIT_TEST_TYPE_SIGNAL_WAITER, predicate, predicate_target, predicate_target_destroy_notify);
 #line 217 "SignalWaiter.c"
 }
@@ -223,27 +223,27 @@ daf_unit_test_signal_waiter_callback (DafUnitTestSignalWaiter* self)
 	gint result = 0;
 	DafUnitTestPredicate _tmp0_;
 	void* _tmp0__target;
-#line 36 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 36 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	g_return_val_if_fail (self != NULL, 0);
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_tmp0_ = self->predicate;
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_tmp0__target = self->predicate_target;
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	if (_tmp0_ (_tmp0__target)) {
 #line 235 "SignalWaiter.c"
 		GMainLoop* _tmp1_;
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		self->succeeded = TRUE;
-#line 39 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 39 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		_tmp1_ = self->loop;
-#line 39 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 39 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		g_main_loop_quit (_tmp1_);
 #line 243 "SignalWaiter.c"
 	}
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	result = 0;
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	return result;
 #line 249 "SignalWaiter.c"
 }
@@ -254,15 +254,15 @@ daf_unit_test_signal_waiter_abort (DafUnitTestSignalWaiter* self)
 {
 	gboolean result = FALSE;
 	GMainLoop* _tmp0_;
-#line 45 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 45 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	g_return_val_if_fail (self != NULL, FALSE);
-#line 46 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 46 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_tmp0_ = self->loop;
-#line 46 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 46 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	g_main_loop_quit (_tmp0_);
-#line 47 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 47 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	result = FALSE;
-#line 47 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 47 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	return result;
 #line 268 "SignalWaiter.c"
 }
@@ -271,7 +271,7 @@ daf_unit_test_signal_waiter_abort (DafUnitTestSignalWaiter* self)
 static void
 daf_unit_test_value_signal_waiter_init (GValue* value)
 {
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	value->data[0].v_pointer = NULL;
 #line 277 "SignalWaiter.c"
 }
@@ -280,9 +280,9 @@ daf_unit_test_value_signal_waiter_init (GValue* value)
 static void
 daf_unit_test_value_signal_waiter_free_value (GValue* value)
 {
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	if (value->data[0].v_pointer) {
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		daf_unit_test_signal_waiter_unref (value->data[0].v_pointer);
 #line 288 "SignalWaiter.c"
 	}
@@ -293,13 +293,13 @@ static void
 daf_unit_test_value_signal_waiter_copy_value (const GValue* src_value,
                                               GValue* dest_value)
 {
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	if (src_value->data[0].v_pointer) {
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		dest_value->data[0].v_pointer = daf_unit_test_signal_waiter_ref (src_value->data[0].v_pointer);
 #line 301 "SignalWaiter.c"
 	} else {
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		dest_value->data[0].v_pointer = NULL;
 #line 305 "SignalWaiter.c"
 	}
@@ -309,7 +309,7 @@ daf_unit_test_value_signal_waiter_copy_value (const GValue* src_value,
 static gpointer
 daf_unit_test_value_signal_waiter_peek_pointer (const GValue* value)
 {
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	return value->data[0].v_pointer;
 #line 315 "SignalWaiter.c"
 }
@@ -321,30 +321,30 @@ daf_unit_test_value_signal_waiter_collect_value (GValue* value,
                                                  GTypeCValue* collect_values,
                                                  guint collect_flags)
 {
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	if (collect_values[0].v_pointer) {
 #line 327 "SignalWaiter.c"
 		DafUnitTestSignalWaiter * object;
 		object = collect_values[0].v_pointer;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		if (object->parent_instance.g_class == NULL) {
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 			return g_strconcat ("invalid unclassed object pointer for value type `", G_VALUE_TYPE_NAME (value), "'", NULL);
 #line 334 "SignalWaiter.c"
 		} else if (!g_value_type_compatible (G_TYPE_FROM_INSTANCE (object), G_VALUE_TYPE (value))) {
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 			return g_strconcat ("invalid object type `", g_type_name (G_TYPE_FROM_INSTANCE (object)), "' for value type `", G_VALUE_TYPE_NAME (value), "'", NULL);
 #line 338 "SignalWaiter.c"
 		}
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		value->data[0].v_pointer = daf_unit_test_signal_waiter_ref (object);
 #line 342 "SignalWaiter.c"
 	} else {
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		value->data[0].v_pointer = NULL;
 #line 346 "SignalWaiter.c"
 	}
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	return NULL;
 #line 350 "SignalWaiter.c"
 }
@@ -358,27 +358,27 @@ daf_unit_test_value_signal_waiter_lcopy_value (const GValue* value,
 {
 	DafUnitTestSignalWaiter ** object_p;
 	object_p = collect_values[0].v_pointer;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	if (!object_p) {
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		return g_strdup_printf ("value location for `%s' passed as NULL", G_VALUE_TYPE_NAME (value));
 #line 366 "SignalWaiter.c"
 	}
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	if (!value->data[0].v_pointer) {
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		*object_p = NULL;
 #line 372 "SignalWaiter.c"
 	} else if (collect_flags & G_VALUE_NOCOPY_CONTENTS) {
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		*object_p = value->data[0].v_pointer;
 #line 376 "SignalWaiter.c"
 	} else {
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		*object_p = daf_unit_test_signal_waiter_ref (value->data[0].v_pointer);
 #line 380 "SignalWaiter.c"
 	}
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	return NULL;
 #line 384 "SignalWaiter.c"
 }
@@ -392,13 +392,13 @@ daf_unit_test_param_spec_signal_waiter (const gchar* name,
                                         GParamFlags flags)
 {
 	DafUnitTestParamSpecSignalWaiter* spec;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	g_return_val_if_fail (g_type_is_a (object_type, DAF_UNIT_TEST_TYPE_SIGNAL_WAITER), NULL);
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	spec = g_param_spec_internal (G_TYPE_PARAM_OBJECT, name, nick, blurb, flags);
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	G_PARAM_SPEC (spec)->value_type = object_type;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	return G_PARAM_SPEC (spec);
 #line 404 "SignalWaiter.c"
 }
@@ -407,9 +407,9 @@ daf_unit_test_param_spec_signal_waiter (const gchar* name,
 gpointer
 daf_unit_test_value_get_signal_waiter (const GValue* value)
 {
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	g_return_val_if_fail (G_TYPE_CHECK_VALUE_TYPE (value, DAF_UNIT_TEST_TYPE_SIGNAL_WAITER), NULL);
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	return value->data[0].v_pointer;
 #line 415 "SignalWaiter.c"
 }
@@ -420,29 +420,29 @@ daf_unit_test_value_set_signal_waiter (GValue* value,
                                        gpointer v_object)
 {
 	DafUnitTestSignalWaiter * old;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	g_return_if_fail (G_TYPE_CHECK_VALUE_TYPE (value, DAF_UNIT_TEST_TYPE_SIGNAL_WAITER));
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	old = value->data[0].v_pointer;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	if (v_object) {
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		g_return_if_fail (G_TYPE_CHECK_INSTANCE_TYPE (v_object, DAF_UNIT_TEST_TYPE_SIGNAL_WAITER));
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		g_return_if_fail (g_value_type_compatible (G_TYPE_FROM_INSTANCE (v_object), G_VALUE_TYPE (value)));
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		value->data[0].v_pointer = v_object;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		daf_unit_test_signal_waiter_ref (value->data[0].v_pointer);
 #line 438 "SignalWaiter.c"
 	} else {
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		value->data[0].v_pointer = NULL;
 #line 442 "SignalWaiter.c"
 	}
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	if (old) {
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		daf_unit_test_signal_waiter_unref (old);
 #line 448 "SignalWaiter.c"
 	}
@@ -454,27 +454,27 @@ daf_unit_test_value_take_signal_waiter (GValue* value,
                                         gpointer v_object)
 {
 	DafUnitTestSignalWaiter * old;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	g_return_if_fail (G_TYPE_CHECK_VALUE_TYPE (value, DAF_UNIT_TEST_TYPE_SIGNAL_WAITER));
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	old = value->data[0].v_pointer;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	if (v_object) {
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		g_return_if_fail (G_TYPE_CHECK_INSTANCE_TYPE (v_object, DAF_UNIT_TEST_TYPE_SIGNAL_WAITER));
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		g_return_if_fail (g_value_type_compatible (G_TYPE_FROM_INSTANCE (v_object), G_VALUE_TYPE (value)));
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		value->data[0].v_pointer = v_object;
 #line 470 "SignalWaiter.c"
 	} else {
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		value->data[0].v_pointer = NULL;
 #line 474 "SignalWaiter.c"
 	}
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	if (old) {
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		daf_unit_test_signal_waiter_unref (old);
 #line 480 "SignalWaiter.c"
 	}
@@ -484,9 +484,9 @@ daf_unit_test_value_take_signal_waiter (GValue* value,
 static void
 daf_unit_test_signal_waiter_class_init (DafUnitTestSignalWaiterClass * klass)
 {
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	daf_unit_test_signal_waiter_parent_class = g_type_class_peek_parent (klass);
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	((DafUnitTestSignalWaiterClass *) klass)->finalize = daf_unit_test_signal_waiter_finalize;
 #line 492 "SignalWaiter.c"
 }
@@ -497,15 +497,15 @@ daf_unit_test_signal_waiter_instance_init (DafUnitTestSignalWaiter * self)
 {
 	GMainContext* _tmp0_;
 	GMainLoop* _tmp1_;
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_tmp0_ = g_main_context_default ();
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_tmp1_ = g_main_loop_new (_tmp0_, TRUE);
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	self->loop = _tmp1_;
-#line 29 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 29 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	self->succeeded = FALSE;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	self->ref_count = 1;
 #line 511 "SignalWaiter.c"
 }
@@ -515,19 +515,19 @@ static void
 daf_unit_test_signal_waiter_finalize (DafUnitTestSignalWaiter * obj)
 {
 	DafUnitTestSignalWaiter * self;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	self = G_TYPE_CHECK_INSTANCE_CAST (obj, DAF_UNIT_TEST_TYPE_SIGNAL_WAITER, DafUnitTestSignalWaiter);
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	g_signal_handlers_destroy (self);
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_g_main_loop_unref0 (self->loop);
-#line 30 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 30 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	(self->predicate_target_destroy_notify == NULL) ? NULL : (self->predicate_target_destroy_notify (self->predicate_target), NULL);
-#line 30 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 30 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	self->predicate = NULL;
-#line 30 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 30 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	self->predicate_target = NULL;
-#line 30 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 30 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	self->predicate_target_destroy_notify = NULL;
 #line 533 "SignalWaiter.c"
 }
@@ -554,9 +554,9 @@ daf_unit_test_signal_waiter_ref (gpointer instance)
 {
 	DafUnitTestSignalWaiter * self;
 	self = instance;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	g_atomic_int_inc (&self->ref_count);
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	return instance;
 #line 562 "SignalWaiter.c"
 }
@@ -567,11 +567,11 @@ daf_unit_test_signal_waiter_unref (gpointer instance)
 {
 	DafUnitTestSignalWaiter * self;
 	self = instance;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	if (g_atomic_int_dec_and_test (&self->ref_count)) {
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		DAF_UNIT_TEST_SIGNAL_WAITER_GET_CLASS (self)->finalize (self);
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		g_type_free_instance ((GTypeInstance *) self);
 #line 577 "SignalWaiter.c"
 	}
@@ -606,7 +606,7 @@ _daf_unit_test_signal_waiter_abort_gsource_func (gpointer self)
 {
 	gboolean result;
 	result = daf_unit_test_signal_waiter_abort ((DafUnitTestSignalWaiter*) self);
-#line 87 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 87 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	return result;
 #line 612 "SignalWaiter.c"
 }
@@ -636,70 +636,70 @@ daf_unit_test_wait_for_condition (gint timeout,
 	guint _tmp9_;
 	DafUnitTestSignalWaiter* _tmp10_;
 	gboolean _tmp11_;
-#line 74 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 74 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	g_return_val_if_fail (emitter != NULL, FALSE);
-#line 74 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 74 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	g_return_val_if_fail (signame != NULL, FALSE);
-#line 79 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 79 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_tmp0_ = daf_unit_test_signal_waiter_new (predicate, predicate_target, NULL);
-#line 79 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 79 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	waiter = _tmp0_;
-#line 81 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 81 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_tmp1_ = waiter;
-#line 81 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 81 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	sh = g_signal_connect_swapped (emitter, signame, (GCallback) daf_unit_test_signal_waiter_callback, _tmp1_);
-#line 83 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 83 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	block (block_target);
-#line 85 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 85 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_tmp2_ = waiter;
-#line 85 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 85 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	daf_unit_test_signal_waiter_callback (_tmp2_);
-#line 87 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 87 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_tmp3_ = waiter;
-#line 87 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 87 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	t1 = g_timeout_add_full (G_PRIORITY_DEFAULT, (guint) timeout, _daf_unit_test_signal_waiter_abort_gsource_func, daf_unit_test_signal_waiter_ref (_tmp3_), daf_unit_test_signal_waiter_unref);
-#line 89 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 89 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_tmp4_ = waiter;
-#line 89 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 89 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_tmp5_ = _tmp4_->loop;
-#line 89 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 89 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	if (g_main_loop_is_running (_tmp5_)) {
 #line 668 "SignalWaiter.c"
 		DafUnitTestSignalWaiter* _tmp6_;
 		GMainLoop* _tmp7_;
-#line 90 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 90 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		_tmp6_ = waiter;
-#line 90 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 90 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		_tmp7_ = _tmp6_->loop;
-#line 90 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 90 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		g_main_loop_run (_tmp7_);
 #line 677 "SignalWaiter.c"
 	}
-#line 92 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 92 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_tmp8_ = sh;
-#line 92 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 92 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	g_signal_handler_disconnect (emitter, _tmp8_);
-#line 94 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 94 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_tmp9_ = t1;
-#line 94 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 94 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	g_source_remove (_tmp9_);
-#line 96 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 96 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_tmp10_ = waiter;
-#line 96 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 96 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_tmp11_ = _tmp10_->succeeded;
-#line 96 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 96 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	result = _tmp11_;
-#line 96 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 96 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_daf_unit_test_signal_waiter_unref0 (waiter);
-#line 96 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 96 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	(predicate_target_destroy_notify == NULL) ? NULL : (predicate_target_destroy_notify (predicate_target), NULL);
-#line 96 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 96 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	predicate = NULL;
-#line 96 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 96 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	predicate_target = NULL;
-#line 96 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 96 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	predicate_target_destroy_notify = NULL;
-#line 96 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 96 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	return result;
 #line 705 "SignalWaiter.c"
 }
@@ -727,9 +727,9 @@ daf_unit_test_wait_for_condition (gint timeout,
 static Block1Data*
 block1_data_ref (Block1Data* _data1_)
 {
-#line 118 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 118 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	g_atomic_int_inc (&_data1_->_ref_count_);
-#line 118 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 118 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	return _data1_;
 #line 735 "SignalWaiter.c"
 }
@@ -740,9 +740,9 @@ block1_data_unref (void * _userdata_)
 {
 	Block1Data* _data1_;
 	_data1_ = (Block1Data*) _userdata_;
-#line 118 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 118 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	if (g_atomic_int_dec_and_test (&_data1_->_ref_count_)) {
-#line 118 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 118 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		g_slice_free (Block1Data, _data1_);
 #line 748 "SignalWaiter.c"
 	}
@@ -753,19 +753,19 @@ static gboolean
 __lambda4_ (Block1Data* _data1_)
 {
 	gboolean result = FALSE;
-#line 122 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 122 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	if (_data1_->condition) {
-#line 123 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 123 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		result = TRUE;
-#line 123 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 123 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		return result;
 #line 763 "SignalWaiter.c"
 	}
-#line 124 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 124 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_data1_->condition = TRUE;
-#line 125 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 125 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	result = FALSE;
-#line 125 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 125 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	return result;
 #line 771 "SignalWaiter.c"
 }
@@ -776,7 +776,7 @@ ___lambda4__daf_unit_test_predicate (gpointer self)
 {
 	gboolean result;
 	result = __lambda4_ (self);
-#line 121 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 121 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	return result;
 #line 782 "SignalWaiter.c"
 }
@@ -791,23 +791,23 @@ daf_unit_test_wait_for_signal (gint timeout,
 {
 	gboolean result = FALSE;
 	Block1Data* _data1_;
-#line 118 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 118 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	g_return_val_if_fail (emitter != NULL, FALSE);
-#line 118 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 118 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	g_return_val_if_fail (signame != NULL, FALSE);
-#line 118 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 118 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_data1_ = g_slice_new0 (Block1Data);
-#line 118 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 118 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_data1_->_ref_count_ = 1;
-#line 120 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 120 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_data1_->condition = FALSE;
-#line 121 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 121 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	result = daf_unit_test_wait_for_condition (timeout, emitter, signame, ___lambda4__daf_unit_test_predicate, block1_data_ref (_data1_), block1_data_unref, block, block_target);
-#line 121 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 121 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	block1_data_unref (_data1_);
-#line 121 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 121 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_data1_ = NULL;
-#line 121 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 121 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	return result;
 #line 813 "SignalWaiter.c"
 }
@@ -842,9 +842,9 @@ daf_unit_test_wait_for_signal (gint timeout,
 static Block2Data*
 block2_data_ref (Block2Data* _data2_)
 {
-#line 155 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 155 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	g_atomic_int_inc (&_data2_->_ref_count_);
-#line 155 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 155 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	return _data2_;
 #line 850 "SignalWaiter.c"
 }
@@ -855,13 +855,13 @@ block2_data_unref (void * _userdata_)
 {
 	Block2Data* _data2_;
 	_data2_ = (Block2Data*) _userdata_;
-#line 155 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 155 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	if (g_atomic_int_dec_and_test (&_data2_->_ref_count_)) {
-#line 155 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 155 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		_g_object_unref0 (_data2_->_result_);
-#line 155 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 155 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		_g_main_loop_unref0 (_data2_->loop);
-#line 155 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 155 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		g_slice_free (Block2Data, _data2_);
 #line 867 "SignalWaiter.c"
 	}
@@ -871,7 +871,7 @@ block2_data_unref (void * _userdata_)
 static gpointer
 _g_object_ref0 (gpointer self)
 {
-#line 160 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 160 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	return self ? g_object_ref (self) : NULL;
 #line 877 "SignalWaiter.c"
 }
@@ -884,17 +884,17 @@ __lambda5_ (Block2Data* _data2_,
 {
 	GAsyncResult* _tmp0_;
 	GMainLoop* _tmp1_;
-#line 160 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 160 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	g_return_if_fail (r != NULL);
-#line 160 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 160 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_tmp0_ = _g_object_ref0 (r);
-#line 160 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 160 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_g_object_unref0 (_data2_->_result_);
-#line 160 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 160 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_data2_->_result_ = _tmp0_;
-#line 160 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 160 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_tmp1_ = _data2_->loop;
-#line 160 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 160 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	g_main_loop_quit (_tmp1_);
 #line 900 "SignalWaiter.c"
 }
@@ -905,7 +905,7 @@ ___lambda5__gasync_ready_callback (GObject* source_object,
                                    GAsyncResult* res,
                                    gpointer self)
 {
-#line 160 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 160 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	__lambda5_ (self, source_object, res);
 #line 911 "SignalWaiter.c"
 }
@@ -916,13 +916,13 @@ __lambda6_ (Block2Data* _data2_)
 {
 	gboolean result = FALSE;
 	GMainLoop* _tmp0_;
-#line 162 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 162 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_tmp0_ = _data2_->loop;
-#line 162 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 162 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	g_main_loop_quit (_tmp0_);
-#line 162 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 162 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	result = FALSE;
-#line 162 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 162 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	return result;
 #line 928 "SignalWaiter.c"
 }
@@ -933,7 +933,7 @@ ___lambda6__gsource_func (gpointer self)
 {
 	gboolean result;
 	result = __lambda6_ (self);
-#line 162 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 162 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	return result;
 #line 939 "SignalWaiter.c"
 }
@@ -957,77 +957,77 @@ daf_unit_test_wait_for_async (gint timeout,
 	GAsyncResult* _tmp5_;
 	GAsyncResult* _tmp6_;
 	GError * _inner_error_ = NULL;
-#line 155 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 155 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_data2_ = g_slice_new0 (Block2Data);
-#line 155 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 155 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_data2_->_ref_count_ = 1;
-#line 157 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 157 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_tmp0_ = g_main_context_default ();
-#line 157 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 157 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_tmp1_ = g_main_loop_new (_tmp0_, TRUE);
-#line 157 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 157 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_data2_->loop = _tmp1_;
-#line 158 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 158 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_data2_->_result_ = NULL;
-#line 160 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 160 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	async_function (___lambda5__gasync_ready_callback, _data2_, async_function_target);
-#line 162 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 162 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	t1 = g_timeout_add_full (G_PRIORITY_DEFAULT, (guint) timeout, ___lambda6__gsource_func, block2_data_ref (_data2_), block2_data_unref);
-#line 164 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 164 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_tmp2_ = _data2_->loop;
-#line 164 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 164 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	if (g_main_loop_is_running (_tmp2_)) {
 #line 981 "SignalWaiter.c"
 		GMainLoop* _tmp3_;
-#line 165 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 165 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		_tmp3_ = _data2_->loop;
-#line 165 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 165 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		g_main_loop_run (_tmp3_);
 #line 987 "SignalWaiter.c"
 	}
-#line 167 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 167 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_tmp4_ = t1;
-#line 167 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 167 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	g_source_remove (_tmp4_);
-#line 169 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 169 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_tmp5_ = _data2_->_result_;
-#line 169 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 169 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	if (_tmp5_ == NULL) {
-#line 170 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 170 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		result = FALSE;
-#line 170 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 170 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		block2_data_unref (_data2_);
-#line 170 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 170 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		_data2_ = NULL;
-#line 170 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 170 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		return result;
 #line 1005 "SignalWaiter.c"
 	}
-#line 171 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 171 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_tmp6_ = _data2_->_result_;
-#line 171 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 171 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	async_finish (_tmp6_, async_finish_target, &_inner_error_);
-#line 171 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 171 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	if (G_UNLIKELY (_inner_error_ != NULL)) {
 #line 1013 "SignalWaiter.c"
 		gboolean _tmp7_ = FALSE;
-#line 171 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 171 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		g_propagate_error (error, _inner_error_);
-#line 171 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 171 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		block2_data_unref (_data2_);
-#line 171 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 171 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		_data2_ = NULL;
-#line 171 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 171 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		return _tmp7_;
 #line 1023 "SignalWaiter.c"
 	}
-#line 172 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 172 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	result = TRUE;
-#line 172 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 172 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	block2_data_unref (_data2_);
-#line 172 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 172 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_data2_ = NULL;
-#line 172 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 172 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	return result;
 #line 1033 "SignalWaiter.c"
 }
@@ -1067,9 +1067,9 @@ daf_unit_test_wait_for_async (gint timeout,
 static Block3Data*
 block3_data_ref (Block3Data* _data3_)
 {
-#line 206 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 206 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	g_atomic_int_inc (&_data3_->_ref_count_);
-#line 206 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 206 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	return _data3_;
 #line 1075 "SignalWaiter.c"
 }
@@ -1080,15 +1080,15 @@ block3_data_unref (void * _userdata_)
 {
 	Block3Data* _data3_;
 	_data3_ = (Block3Data*) _userdata_;
-#line 206 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 206 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	if (g_atomic_int_dec_and_test (&_data3_->_ref_count_)) {
-#line 206 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 206 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		_g_object_unref0 (_data3_->cancel);
-#line 206 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 206 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		_g_object_unref0 (_data3_->_result_);
-#line 206 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 206 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		_g_main_loop_unref0 (_data3_->loop);
-#line 206 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 206 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		g_slice_free (Block3Data, _data3_);
 #line 1094 "SignalWaiter.c"
 	}
@@ -1102,17 +1102,17 @@ __lambda7_ (Block3Data* _data3_,
 {
 	GAsyncResult* _tmp0_;
 	GMainLoop* _tmp1_;
-#line 214 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 214 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	g_return_if_fail (r != NULL);
-#line 214 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 214 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_tmp0_ = _g_object_ref0 (r);
-#line 214 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 214 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_g_object_unref0 (_data3_->_result_);
-#line 214 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 214 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_data3_->_result_ = _tmp0_;
-#line 214 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 214 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_tmp1_ = _data3_->loop;
-#line 214 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 214 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	g_main_loop_quit (_tmp1_);
 #line 1118 "SignalWaiter.c"
 }
@@ -1123,7 +1123,7 @@ ___lambda7__gasync_ready_callback (GObject* source_object,
                                    GAsyncResult* res,
                                    gpointer self)
 {
-#line 214 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 214 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	__lambda7_ (self, source_object, res);
 #line 1129 "SignalWaiter.c"
 }
@@ -1134,13 +1134,13 @@ __lambda8_ (Block3Data* _data3_)
 {
 	gboolean result = FALSE;
 	GCancellable* _tmp0_;
-#line 216 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 216 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_tmp0_ = _data3_->cancel;
-#line 216 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 216 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	g_cancellable_cancel (_tmp0_);
-#line 216 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 216 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	result = FALSE;
-#line 216 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 216 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	return result;
 #line 1146 "SignalWaiter.c"
 }
@@ -1151,7 +1151,7 @@ ___lambda8__gsource_func (gpointer self)
 {
 	gboolean result;
 	result = __lambda8_ (self);
-#line 216 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 216 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	return result;
 #line 1157 "SignalWaiter.c"
 }
@@ -1162,13 +1162,13 @@ __lambda9_ (Block3Data* _data3_)
 {
 	gboolean result = FALSE;
 	GMainLoop* _tmp0_;
-#line 217 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 217 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_tmp0_ = _data3_->loop;
-#line 217 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 217 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	g_main_loop_quit (_tmp0_);
-#line 217 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 217 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	result = FALSE;
-#line 217 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 217 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	return result;
 #line 1174 "SignalWaiter.c"
 }
@@ -1179,7 +1179,7 @@ ___lambda9__gsource_func (gpointer self)
 {
 	gboolean result;
 	result = __lambda9_ (self);
-#line 217 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 217 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	return result;
 #line 1185 "SignalWaiter.c"
 }
@@ -1208,103 +1208,103 @@ daf_unit_test_wait_for_cancellable_async (gint timeout,
 	GCancellable* _tmp9_;
 	GAsyncResult* _tmp10_;
 	GError * _inner_error_ = NULL;
-#line 206 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 206 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_data3_ = g_slice_new0 (Block3Data);
-#line 206 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 206 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_data3_->_ref_count_ = 1;
-#line 210 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 210 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_tmp0_ = g_main_context_default ();
-#line 210 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 210 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_tmp1_ = g_main_loop_new (_tmp0_, TRUE);
-#line 210 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 210 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_data3_->loop = _tmp1_;
-#line 211 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 211 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_data3_->_result_ = NULL;
-#line 212 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 212 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_tmp2_ = g_cancellable_new ();
-#line 212 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 212 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_data3_->cancel = _tmp2_;
-#line 214 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 214 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_tmp3_ = _data3_->cancel;
-#line 214 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 214 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	async_function (_tmp3_, ___lambda7__gasync_ready_callback, _data3_, async_function_target);
-#line 216 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 216 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	t1 = g_timeout_add_full (G_PRIORITY_DEFAULT, (guint) timeout, ___lambda8__gsource_func, block3_data_ref (_data3_), block3_data_unref);
-#line 217 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 217 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	t2 = g_timeout_add_full (G_PRIORITY_DEFAULT, (guint) (2 * timeout), ___lambda9__gsource_func, block3_data_ref (_data3_), block3_data_unref);
-#line 219 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 219 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_tmp4_ = _data3_->loop;
-#line 219 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 219 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	if (g_main_loop_is_running (_tmp4_)) {
 #line 1240 "SignalWaiter.c"
 		GMainLoop* _tmp5_;
-#line 220 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 220 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		_tmp5_ = _data3_->loop;
-#line 220 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 220 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		g_main_loop_run (_tmp5_);
 #line 1246 "SignalWaiter.c"
 	}
-#line 222 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 222 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_tmp6_ = t1;
-#line 222 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 222 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	g_source_remove (_tmp6_);
-#line 223 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 223 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_tmp7_ = t2;
-#line 223 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 223 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	g_source_remove (_tmp7_);
-#line 225 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 225 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_tmp8_ = _data3_->_result_;
-#line 225 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 225 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	if (_tmp8_ == NULL) {
-#line 226 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 226 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		result = FALSE;
-#line 226 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 226 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		block3_data_unref (_data3_);
-#line 226 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 226 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		_data3_ = NULL;
-#line 226 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 226 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		return result;
 #line 1268 "SignalWaiter.c"
 	}
-#line 227 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 227 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_tmp9_ = _data3_->cancel;
-#line 227 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 227 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	if (g_cancellable_is_cancelled (_tmp9_)) {
-#line 228 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 228 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		result = FALSE;
-#line 228 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 228 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		block3_data_unref (_data3_);
-#line 228 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 228 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		_data3_ = NULL;
-#line 228 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 228 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		return result;
 #line 1282 "SignalWaiter.c"
 	}
-#line 229 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 229 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_tmp10_ = _data3_->_result_;
-#line 229 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 229 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	async_finish (_tmp10_, async_finish_target, &_inner_error_);
-#line 229 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 229 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	if (G_UNLIKELY (_inner_error_ != NULL)) {
 #line 1290 "SignalWaiter.c"
 		gboolean _tmp11_ = FALSE;
-#line 229 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 229 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		g_propagate_error (error, _inner_error_);
-#line 229 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 229 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		block3_data_unref (_data3_);
-#line 229 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 229 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		_data3_ = NULL;
-#line 229 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 229 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 		return _tmp11_;
 #line 1300 "SignalWaiter.c"
 	}
-#line 230 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 230 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	result = TRUE;
-#line 230 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 230 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	block3_data_unref (_data3_);
-#line 230 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 230 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	_data3_ = NULL;
-#line 230 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
+#line 230 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/SignalWaiter.vala"
 	return result;
 #line 1310 "SignalWaiter.c"
 }

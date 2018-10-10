@@ -107,7 +107,7 @@ static void _vala_daf_core_binding_abstract_acyclic_graph_set_property (GObject 
 static void
 _g_object_unref0_ (gpointer var)
 {
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 	(var == NULL) ? NULL : (var = (g_object_unref (var), NULL));
 #line 113 "AbstractAcyclicGraph.c"
 }
@@ -116,7 +116,7 @@ _g_object_unref0_ (gpointer var)
 static inline void
 _g_list_free__g_object_unref0_ (GList* self)
 {
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 	g_list_free_full (self, (GDestroyNotify) _g_object_unref0_);
 #line 122 "AbstractAcyclicGraph.c"
 }
@@ -131,31 +131,31 @@ daf_core_binding_abstract_acyclic_graph_real_resolve (DafCoreBindingIDirectedAcy
 	GList* _tmp0_;
 	GList* _tmp1_;
 	GError * _inner_error_ = NULL;
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 	self = (DafCoreBindingAbstractAcyclicGraph*) base;
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 	g_return_if_fail (node != NULL);
-#line 40 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 40 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 	_tmp0_ = self->resolved;
-#line 40 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 40 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 	_tmp1_ = self->unresolved;
-#line 40 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 40 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 	daf_core_binding_idirected_acyclic_graph_resolve_dependency ((DafCoreBindingIDirectedAcyclicGraph*) self, node, _tmp0_, _tmp1_, &_inner_error_);
-#line 40 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 40 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 	if (G_UNLIKELY (_inner_error_ != NULL)) {
-#line 40 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 40 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 		if (_inner_error_->domain == DAF_CORE_BINDING_DEPENDENCY_GRAPH_ERROR) {
-#line 40 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 40 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 			g_propagate_error (error, _inner_error_);
-#line 40 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 40 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 			return;
 #line 153 "AbstractAcyclicGraph.c"
 		} else {
-#line 40 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 40 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 			g_critical ("file %s: line %d: uncaught error: %s (%s, %d)", __FILE__, __LINE__, _inner_error_->message, g_quark_to_string (_inner_error_->domain), _inner_error_->code);
-#line 40 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 40 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 			g_clear_error (&_inner_error_);
-#line 40 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 40 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 			return;
 #line 161 "AbstractAcyclicGraph.c"
 		}
@@ -167,9 +167,9 @@ DafCoreBindingAbstractAcyclicGraph*
 daf_core_binding_abstract_acyclic_graph_construct (GType object_type)
 {
 	DafCoreBindingAbstractAcyclicGraph * self = NULL;
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 	self = (DafCoreBindingAbstractAcyclicGraph*) g_object_new (object_type, NULL);
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 	return self;
 #line 175 "AbstractAcyclicGraph.c"
 }
@@ -181,13 +181,13 @@ daf_core_binding_abstract_acyclic_graph_real_get_edges (DafCoreBindingIDirectedA
 	GList* result;
 	DafCoreBindingAbstractAcyclicGraph* self;
 	GList* _tmp0_;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 	self = (DafCoreBindingAbstractAcyclicGraph*) base;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 	_tmp0_ = self->priv->_edges;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 	result = _tmp0_;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 	return result;
 #line 193 "AbstractAcyclicGraph.c"
 }
@@ -198,13 +198,13 @@ daf_core_binding_abstract_acyclic_graph_real_set_edges (DafCoreBindingIDirectedA
                                                         GList* value)
 {
 	DafCoreBindingAbstractAcyclicGraph* self;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 	self = (DafCoreBindingAbstractAcyclicGraph*) base;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 	if (daf_core_binding_abstract_acyclic_graph_real_get_edges (base) != value) {
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 		self->priv->_edges = value;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 		g_object_notify_by_pspec ((GObject *) self, daf_core_binding_abstract_acyclic_graph_properties[DAF_CORE_BINDING_ABSTRACT_ACYCLIC_GRAPH_EDGES_PROPERTY]);
 #line 210 "AbstractAcyclicGraph.c"
 	}
@@ -217,13 +217,13 @@ daf_core_binding_abstract_acyclic_graph_real_get_name (DafCoreBindingIDirectedAc
 	const gchar* result;
 	DafCoreBindingAbstractAcyclicGraph* self;
 	const gchar* _tmp0_;
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 	self = (DafCoreBindingAbstractAcyclicGraph*) base;
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 	_tmp0_ = self->priv->_name;
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 	result = _tmp0_;
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 	return result;
 #line 229 "AbstractAcyclicGraph.c"
 }
@@ -234,19 +234,19 @@ daf_core_binding_abstract_acyclic_graph_real_set_name (DafCoreBindingIDirectedAc
                                                        const gchar* value)
 {
 	DafCoreBindingAbstractAcyclicGraph* self;
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 	self = (DafCoreBindingAbstractAcyclicGraph*) base;
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 	if (g_strcmp0 (value, daf_core_binding_abstract_acyclic_graph_real_get_name (base)) != 0) {
 #line 242 "AbstractAcyclicGraph.c"
 		gchar* _tmp0_;
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 		_tmp0_ = g_strdup (value);
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 		_g_free0 (self->priv->_name);
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 		self->priv->_name = _tmp0_;
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 		g_object_notify_by_pspec ((GObject *) self, daf_core_binding_abstract_acyclic_graph_properties[DAF_CORE_BINDING_ABSTRACT_ACYCLIC_GRAPH_NAME_PROPERTY]);
 #line 252 "AbstractAcyclicGraph.c"
 	}
@@ -262,19 +262,19 @@ daf_core_binding_abstract_acyclic_graph_constructor (GType type,
 	GObjectClass * parent_class;
 	DafCoreBindingAbstractAcyclicGraph * self;
 	GList* _tmp0_;
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 	parent_class = G_OBJECT_CLASS (daf_core_binding_abstract_acyclic_graph_parent_class);
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 	obj = parent_class->constructor (type, n_construct_properties, construct_properties);
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 	self = G_TYPE_CHECK_INSTANCE_CAST (obj, DAF_CORE_BINDING_TYPE_ABSTRACT_ACYCLIC_GRAPH, DafCoreBindingAbstractAcyclicGraph);
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 	_tmp0_ = NULL;
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 	daf_core_binding_idirected_acyclic_graph_set_edges ((DafCoreBindingIDirectedAcyclicGraph*) self, _tmp0_);
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 	(_tmp0_ == NULL) ? NULL : (_tmp0_ = (_g_list_free__g_object_unref0_ (_tmp0_), NULL));
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 	return obj;
 #line 280 "AbstractAcyclicGraph.c"
 }
@@ -283,21 +283,21 @@ daf_core_binding_abstract_acyclic_graph_constructor (GType type,
 static void
 daf_core_binding_abstract_acyclic_graph_class_init (DafCoreBindingAbstractAcyclicGraphClass * klass)
 {
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 	daf_core_binding_abstract_acyclic_graph_parent_class = g_type_class_peek_parent (klass);
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 	g_type_class_add_private (klass, sizeof (DafCoreBindingAbstractAcyclicGraphPrivate));
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 	G_OBJECT_CLASS (klass)->get_property = _vala_daf_core_binding_abstract_acyclic_graph_get_property;
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 	G_OBJECT_CLASS (klass)->set_property = _vala_daf_core_binding_abstract_acyclic_graph_set_property;
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 	G_OBJECT_CLASS (klass)->constructor = daf_core_binding_abstract_acyclic_graph_constructor;
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 	G_OBJECT_CLASS (klass)->finalize = daf_core_binding_abstract_acyclic_graph_finalize;
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 	g_object_class_install_property (G_OBJECT_CLASS (klass), DAF_CORE_BINDING_ABSTRACT_ACYCLIC_GRAPH_EDGES_PROPERTY, daf_core_binding_abstract_acyclic_graph_properties[DAF_CORE_BINDING_ABSTRACT_ACYCLIC_GRAPH_EDGES_PROPERTY] = g_param_spec_pointer ("edges", "edges", "edges", G_PARAM_STATIC_STRINGS | G_PARAM_READABLE | G_PARAM_WRITABLE | G_PARAM_CONSTRUCT));
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 	g_object_class_install_property (G_OBJECT_CLASS (klass), DAF_CORE_BINDING_ABSTRACT_ACYCLIC_GRAPH_NAME_PROPERTY, daf_core_binding_abstract_acyclic_graph_properties[DAF_CORE_BINDING_ABSTRACT_ACYCLIC_GRAPH_NAME_PROPERTY] = g_param_spec_string ("name", "name", "name", NULL, G_PARAM_STATIC_STRINGS | G_PARAM_READABLE | G_PARAM_WRITABLE));
 #line 303 "AbstractAcyclicGraph.c"
 }
@@ -306,17 +306,17 @@ daf_core_binding_abstract_acyclic_graph_class_init (DafCoreBindingAbstractAcycli
 static void
 daf_core_binding_abstract_acyclic_graph_daf_core_binding_idirected_acyclic_graph_interface_init (DafCoreBindingIDirectedAcyclicGraphIface * iface)
 {
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 	daf_core_binding_abstract_acyclic_graph_daf_core_binding_idirected_acyclic_graph_parent_iface = g_type_interface_peek_parent (iface);
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 	iface->resolve = (void (*) (DafCoreBindingIDirectedAcyclicGraph *, DafCoreBindingIDirectedAcyclicGraph*, GError**)) daf_core_binding_abstract_acyclic_graph_real_resolve;
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 	iface->get_edges = daf_core_binding_abstract_acyclic_graph_real_get_edges;
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 	iface->set_edges = daf_core_binding_abstract_acyclic_graph_real_set_edges;
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 	iface->get_name = daf_core_binding_abstract_acyclic_graph_real_get_name;
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 	iface->set_name = daf_core_binding_abstract_acyclic_graph_real_set_name;
 #line 322 "AbstractAcyclicGraph.c"
 }
@@ -325,11 +325,11 @@ daf_core_binding_abstract_acyclic_graph_daf_core_binding_idirected_acyclic_graph
 static void
 daf_core_binding_abstract_acyclic_graph_instance_init (DafCoreBindingAbstractAcyclicGraph * self)
 {
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 	self->priv = DAF_CORE_BINDING_ABSTRACT_ACYCLIC_GRAPH_GET_PRIVATE (self);
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 	self->resolved = NULL;
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 	self->unresolved = NULL;
 #line 335 "AbstractAcyclicGraph.c"
 }
@@ -339,15 +339,15 @@ static void
 daf_core_binding_abstract_acyclic_graph_finalize (GObject * obj)
 {
 	DafCoreBindingAbstractAcyclicGraph * self;
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 	self = G_TYPE_CHECK_INSTANCE_CAST (obj, DAF_CORE_BINDING_TYPE_ABSTRACT_ACYCLIC_GRAPH, DafCoreBindingAbstractAcyclicGraph);
-#line 28 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 28 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 	_g_free0 (self->priv->_name);
-#line 31 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 31 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 	(self->resolved == NULL) ? NULL : (self->resolved = (_g_list_free__g_object_unref0_ (self->resolved), NULL));
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 	(self->unresolved == NULL) ? NULL : (self->unresolved = (_g_list_free__g_object_unref0_ (self->unresolved), NULL));
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 	G_OBJECT_CLASS (daf_core_binding_abstract_acyclic_graph_parent_class)->finalize (obj);
 #line 353 "AbstractAcyclicGraph.c"
 }
@@ -377,25 +377,25 @@ _vala_daf_core_binding_abstract_acyclic_graph_get_property (GObject * object,
 {
 	DafCoreBindingAbstractAcyclicGraph * self;
 	self = G_TYPE_CHECK_INSTANCE_CAST (object, DAF_CORE_BINDING_TYPE_ABSTRACT_ACYCLIC_GRAPH, DafCoreBindingAbstractAcyclicGraph);
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 	switch (property_id) {
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 		case DAF_CORE_BINDING_ABSTRACT_ACYCLIC_GRAPH_EDGES_PROPERTY:
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 		g_value_set_pointer (value, daf_core_binding_idirected_acyclic_graph_get_edges ((DafCoreBindingIDirectedAcyclicGraph*) self));
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 		break;
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 		case DAF_CORE_BINDING_ABSTRACT_ACYCLIC_GRAPH_NAME_PROPERTY:
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 		g_value_set_string (value, daf_core_binding_idirected_acyclic_graph_get_name ((DafCoreBindingIDirectedAcyclicGraph*) self));
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 		break;
 #line 395 "AbstractAcyclicGraph.c"
 		default:
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 		G_OBJECT_WARN_INVALID_PROPERTY_ID (object, property_id, pspec);
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 		break;
 #line 401 "AbstractAcyclicGraph.c"
 	}
@@ -410,25 +410,25 @@ _vala_daf_core_binding_abstract_acyclic_graph_set_property (GObject * object,
 {
 	DafCoreBindingAbstractAcyclicGraph * self;
 	self = G_TYPE_CHECK_INSTANCE_CAST (object, DAF_CORE_BINDING_TYPE_ABSTRACT_ACYCLIC_GRAPH, DafCoreBindingAbstractAcyclicGraph);
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 	switch (property_id) {
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 		case DAF_CORE_BINDING_ABSTRACT_ACYCLIC_GRAPH_EDGES_PROPERTY:
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 		daf_core_binding_idirected_acyclic_graph_set_edges ((DafCoreBindingIDirectedAcyclicGraph*) self, g_value_get_pointer (value));
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 		break;
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 		case DAF_CORE_BINDING_ABSTRACT_ACYCLIC_GRAPH_NAME_PROPERTY:
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 		daf_core_binding_idirected_acyclic_graph_set_name ((DafCoreBindingIDirectedAcyclicGraph*) self, g_value_get_string (value));
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 		break;
 #line 428 "AbstractAcyclicGraph.c"
 		default:
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 		G_OBJECT_WARN_INVALID_PROPERTY_ID (object, property_id, pspec);
-#line 25 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
+#line 25 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafcore/lib/Binding/AbstractAcyclicGraph.vala"
 		break;
 #line 434 "AbstractAcyclicGraph.c"
 	}

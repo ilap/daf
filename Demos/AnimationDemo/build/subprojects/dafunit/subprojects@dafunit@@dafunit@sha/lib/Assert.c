@@ -172,137 +172,137 @@ daf_unit_test_assert_typed_value_to_string (GType t_type,
 	gchar* _tmp0_;
 	GType value_type = 0UL;
 	GType _tmp1_;
-#line 30 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 30 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 	_tmp0_ = g_strdup ("");
-#line 30 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 30 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 	_result_ = _tmp0_;
-#line 32 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 32 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 	value_type = t_type;
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 	_tmp1_ = value_type;
-#line 33 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 33 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 	if (G_TYPE_IS_VALUE_TYPE (_tmp1_)) {
 #line 186 "Assert.c"
 		GType _tmp2_;
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		_tmp2_ = value_type;
-#line 34 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 34 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		if (g_type_is_a (_tmp2_, G_TYPE_STRING)) {
 #line 192 "Assert.c"
 			const gchar* _tmp3_;
 			gchar* _tmp4_;
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 			_tmp3_ = string_to_string ((const gchar*) value);
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 			_tmp4_ = g_strdup (_tmp3_);
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 			_g_free0 (_result_);
-#line 35 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 35 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 			_result_ = _tmp4_;
 #line 203 "Assert.c"
 		} else {
 			GType _tmp5_;
-#line 36 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 36 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 			_tmp5_ = value_type;
-#line 36 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 36 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 			if (g_type_is_a (_tmp5_, G_TYPE_INT)) {
 #line 210 "Assert.c"
 				gchar* _tmp6_;
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 				_tmp6_ = g_strdup_printf ("%i", (gint32) value);
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 				_g_free0 (_result_);
-#line 37 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 37 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 				_result_ = _tmp6_;
 #line 218 "Assert.c"
 			} else {
 				GType _tmp7_;
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 				_tmp7_ = value_type;
-#line 38 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 38 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 				if (g_type_is_a (_tmp7_, G_TYPE_UINT)) {
 #line 225 "Assert.c"
 					gchar* _tmp8_;
-#line 39 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 39 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 					_tmp8_ = g_strdup_printf ("%u", (guint32) value);
-#line 39 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 39 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 					_g_free0 (_result_);
-#line 39 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 39 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 					_result_ = _tmp8_;
 #line 233 "Assert.c"
 				} else {
 					GType _tmp9_;
-#line 40 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 40 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 					_tmp9_ = value_type;
-#line 40 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 40 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 					if (g_type_is_a (_tmp9_, G_TYPE_INT)) {
 #line 240 "Assert.c"
 						gchar* _tmp10_;
-#line 41 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 41 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 						_tmp10_ = g_strdup_printf ("%" G_GINT16_FORMAT, (gint16) value);
-#line 41 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 41 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 						_g_free0 (_result_);
-#line 41 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 41 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 						_result_ = _tmp10_;
 #line 248 "Assert.c"
 					} else {
 						GType _tmp11_;
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 						_tmp11_ = value_type;
-#line 42 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 42 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 						if (g_type_is_a (_tmp11_, G_TYPE_UINT)) {
 #line 255 "Assert.c"
 							gchar* _tmp12_;
-#line 43 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 43 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 							_tmp12_ = g_strdup_printf ("%hu", (guint16) value);
-#line 43 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 43 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 							_g_free0 (_result_);
-#line 43 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 43 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 							_result_ = _tmp12_;
 #line 263 "Assert.c"
 						} else {
 							GType _tmp13_;
-#line 44 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 44 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 							_tmp13_ = value_type;
-#line 44 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 44 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 							if (g_type_is_a (_tmp13_, G_TYPE_CHAR)) {
 #line 270 "Assert.c"
 								gchar* _tmp14_;
-#line 45 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 45 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 								_tmp14_ = g_strdup_printf ("%hhi", (gint8) value);
-#line 45 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 45 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 								_g_free0 (_result_);
-#line 45 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 45 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 								_result_ = _tmp14_;
 #line 278 "Assert.c"
 							} else {
 								GType _tmp15_;
-#line 46 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 46 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 								_tmp15_ = value_type;
-#line 46 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 46 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 								if (g_type_is_a (_tmp15_, G_TYPE_UCHAR)) {
 #line 285 "Assert.c"
 									gchar* _tmp16_;
-#line 47 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 47 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 									_tmp16_ = g_strdup_printf ("%hhu", (guint8) value);
-#line 47 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 47 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 									_g_free0 (_result_);
-#line 47 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 47 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 									_result_ = _tmp16_;
 #line 293 "Assert.c"
 								} else {
 									GType _tmp17_;
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 									_tmp17_ = value_type;
-#line 48 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 48 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 									if (g_type_is_a (_tmp17_, G_TYPE_BOOLEAN)) {
 #line 300 "Assert.c"
 										gchar* _tmp18_;
-#line 49 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 49 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 										_tmp18_ = bool_to_string ((gboolean) value);
-#line 49 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 49 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 										_g_free0 (_result_);
-#line 49 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 49 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 										_result_ = _tmp18_;
 #line 308 "Assert.c"
 									}
@@ -314,9 +314,9 @@ daf_unit_test_assert_typed_value_to_string (GType t_type,
 			}
 		}
 	}
-#line 52 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 52 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 	result = _result_;
-#line 52 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 52 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 	return result;
 #line 322 "Assert.c"
 }
@@ -335,71 +335,71 @@ daf_unit_test_assert_throw_unexpected_value (const gchar* info,
 	GError* _tmp8_;
 	GError* _tmp9_;
 	GError * _inner_error_ = NULL;
-#line 55 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 55 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 	g_return_if_fail (info != NULL);
-#line 55 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 55 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 	g_return_if_fail (debug != NULL);
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 	_tmp1_ = strlen (debug);
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 	_tmp2_ = _tmp1_;
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 	if (_tmp2_ > 0) {
 #line 349 "Assert.c"
 		const gchar* _tmp3_;
 		gchar* _tmp4_;
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		_tmp3_ = string_to_string (debug);
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		_tmp4_ = g_strconcat (" : ", _tmp3_, NULL);
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		_g_free0 (_tmp0_);
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		_tmp0_ = _tmp4_;
 #line 360 "Assert.c"
 	} else {
 		gchar* _tmp5_;
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		_tmp5_ = g_strdup ("");
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		_g_free0 (_tmp0_);
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		_tmp0_ = _tmp5_;
 #line 369 "Assert.c"
 	}
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 	_tmp6_ = g_strconcat (info, _tmp0_, NULL);
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 	_tmp7_ = _tmp6_;
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 	_tmp8_ = g_error_new_literal (DAF_UNIT_TEST_ASSERT_ERROR, DAF_UNIT_TEST_ASSERT_ERROR_UNEXPECTED_VALUE, _tmp7_);
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 	_tmp9_ = _tmp8_;
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 	_g_free0 (_tmp7_);
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 	_inner_error_ = _tmp9_;
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 	if (_inner_error_->domain == DAF_UNIT_TEST_ASSERT_ERROR) {
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		g_propagate_error (error, _inner_error_);
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		_g_free0 (_tmp0_);
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		return;
 #line 391 "Assert.c"
 	} else {
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		_g_free0 (_tmp0_);
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		g_critical ("file %s: line %d: uncaught error: %s (%s, %d)", __FILE__, __LINE__, _inner_error_->message, g_quark_to_string (_inner_error_->domain), _inner_error_->code);
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		g_clear_error (&_inner_error_);
-#line 57 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 57 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		return;
 #line 401 "Assert.c"
 	}
-#line 55 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 55 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 	_g_free0 (_tmp0_);
 #line 405 "Assert.c"
 }
@@ -423,9 +423,9 @@ daf_unit_test_assert_are_equal (GType t_type,
                                 GError** error)
 {
 	GError * _inner_error_ = NULL;
-#line 68 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 68 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 	g_return_if_fail (debug != NULL);
-#line 69 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 69 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 	if (expected != actual) {
 #line 431 "Assert.c"
 		gchar* msg = NULL;
@@ -441,64 +441,64 @@ daf_unit_test_assert_are_equal (GType t_type,
 		const gchar* _tmp9_;
 		gchar* _tmp10_;
 		gchar* _tmp11_;
-#line 70 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 70 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		_tmp0_ = daf_unit_test_assert_typed_value_to_string (t_type, (GBoxedCopyFunc) t_dup_func, (GDestroyNotify) t_destroy_func, expected);
-#line 70 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 70 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		_tmp1_ = _tmp0_;
-#line 70 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 70 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		_tmp2_ = string_to_string (_tmp1_);
-#line 70 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 70 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		_tmp3_ = daf_unit_test_assert_typed_value_to_string (t_type, (GBoxedCopyFunc) t_dup_func, (GDestroyNotify) t_destroy_func, actual);
-#line 70 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 70 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		_tmp4_ = _tmp3_;
-#line 70 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 70 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		_tmp5_ = string_to_string (_tmp4_);
-#line 70 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 70 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		_tmp6_ = g_strconcat (_tmp2_, " != ", _tmp5_, NULL);
-#line 70 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 70 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		_tmp7_ = _tmp6_;
-#line 70 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 70 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		_g_free0 (_tmp4_);
-#line 70 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 70 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		_g_free0 (_tmp1_);
-#line 70 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 70 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		msg = _tmp7_;
-#line 71 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 71 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		_tmp8_ = msg;
-#line 71 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 71 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		_tmp9_ = string_to_string (_tmp8_);
-#line 71 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 71 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		_tmp10_ = g_strconcat ("Actual value is not the same as the expected one: ", _tmp9_, NULL);
-#line 71 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 71 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		_tmp11_ = _tmp10_;
-#line 71 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 71 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		daf_unit_test_assert_throw_unexpected_value (_tmp11_, debug, &_inner_error_);
-#line 71 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 71 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		_g_free0 (_tmp11_);
-#line 71 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 71 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		if (G_UNLIKELY (_inner_error_ != NULL)) {
-#line 71 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 71 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 			if (_inner_error_->domain == DAF_UNIT_TEST_ASSERT_ERROR) {
-#line 71 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 71 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 				g_propagate_error (error, _inner_error_);
-#line 71 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 71 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 				_g_free0 (msg);
-#line 71 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 71 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 				return;
 #line 489 "Assert.c"
 			} else {
-#line 71 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 71 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 				_g_free0 (msg);
-#line 71 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 71 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 				g_critical ("file %s: line %d: uncaught error: %s (%s, %d)", __FILE__, __LINE__, _inner_error_->message, g_quark_to_string (_inner_error_->domain), _inner_error_->code);
-#line 71 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 71 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 				g_clear_error (&_inner_error_);
-#line 71 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 71 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 				return;
 #line 499 "Assert.c"
 			}
 		}
-#line 69 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 69 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		_g_free0 (msg);
 #line 504 "Assert.c"
 	}
@@ -523,9 +523,9 @@ daf_unit_test_assert_are_not_equal (GType t_type,
                                     GError** error)
 {
 	GError * _inner_error_ = NULL;
-#line 83 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 83 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 	g_return_if_fail (debug != NULL);
-#line 85 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 85 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 	if (not_expected == actual) {
 #line 531 "Assert.c"
 		gchar* msg = NULL;
@@ -534,46 +534,46 @@ daf_unit_test_assert_are_not_equal (GType t_type,
 		const gchar* _tmp2_;
 		gchar* _tmp3_;
 		gchar* _tmp4_;
-#line 87 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 87 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		_tmp0_ = g_strdup ("$(typed_value_to_string(expected)) == $(typed_value_to_string(actual))");
-#line 87 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 87 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		msg = _tmp0_;
-#line 88 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 88 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		_tmp1_ = msg;
-#line 88 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 88 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		_tmp2_ = string_to_string (_tmp1_);
-#line 88 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 88 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		_tmp3_ = g_strconcat ("Actual value is the same as the not expected one: ", _tmp2_, NULL);
-#line 88 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 88 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		_tmp4_ = _tmp3_;
-#line 88 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 88 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		daf_unit_test_assert_throw_unexpected_value (_tmp4_, debug, &_inner_error_);
-#line 88 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 88 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		_g_free0 (_tmp4_);
-#line 88 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 88 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		if (G_UNLIKELY (_inner_error_ != NULL)) {
-#line 88 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 88 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 			if (_inner_error_->domain == DAF_UNIT_TEST_ASSERT_ERROR) {
-#line 88 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 88 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 				g_propagate_error (error, _inner_error_);
-#line 88 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 88 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 				_g_free0 (msg);
-#line 88 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 88 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 				return;
 #line 564 "Assert.c"
 			} else {
-#line 88 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 88 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 				_g_free0 (msg);
-#line 88 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 88 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 				g_critical ("file %s: line %d: uncaught error: %s (%s, %d)", __FILE__, __LINE__, _inner_error_->message, g_quark_to_string (_inner_error_->domain), _inner_error_->code);
-#line 88 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 88 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 				g_clear_error (&_inner_error_);
-#line 88 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 88 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 				return;
 #line 574 "Assert.c"
 			}
 		}
-#line 85 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 85 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		_g_free0 (msg);
 #line 579 "Assert.c"
 	}
@@ -592,27 +592,27 @@ daf_unit_test_assert_is_true (gboolean actual,
                               GError** error)
 {
 	GError * _inner_error_ = NULL;
-#line 98 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 98 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 	g_return_if_fail (debug != NULL);
-#line 100 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 100 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 	if (!actual) {
-#line 101 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 101 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		daf_unit_test_assert_throw_unexpected_value ("Supplied value is not true", debug, &_inner_error_);
-#line 101 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 101 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		if (G_UNLIKELY (_inner_error_ != NULL)) {
-#line 101 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 101 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 			if (_inner_error_->domain == DAF_UNIT_TEST_ASSERT_ERROR) {
-#line 101 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 101 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 				g_propagate_error (error, _inner_error_);
-#line 101 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 101 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 				return;
 #line 610 "Assert.c"
 			} else {
-#line 101 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 101 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 				g_critical ("file %s: line %d: uncaught error: %s (%s, %d)", __FILE__, __LINE__, _inner_error_->message, g_quark_to_string (_inner_error_->domain), _inner_error_->code);
-#line 101 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 101 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 				g_clear_error (&_inner_error_);
-#line 101 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 101 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 				return;
 #line 618 "Assert.c"
 			}
@@ -633,27 +633,27 @@ daf_unit_test_assert_is_false (gboolean actual,
                                GError** error)
 {
 	GError * _inner_error_ = NULL;
-#line 110 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 110 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 	g_return_if_fail (debug != NULL);
-#line 112 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 112 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 	if (actual) {
-#line 113 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 113 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		daf_unit_test_assert_throw_unexpected_value ("Supplied value is not false", debug, &_inner_error_);
-#line 113 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 113 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		if (G_UNLIKELY (_inner_error_ != NULL)) {
-#line 113 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 113 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 			if (_inner_error_->domain == DAF_UNIT_TEST_ASSERT_ERROR) {
-#line 113 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 113 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 				g_propagate_error (error, _inner_error_);
-#line 113 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 113 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 				return;
 #line 651 "Assert.c"
 			} else {
-#line 113 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 113 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 				g_critical ("file %s: line %d: uncaught error: %s (%s, %d)", __FILE__, __LINE__, _inner_error_->message, g_quark_to_string (_inner_error_->domain), _inner_error_->code);
-#line 113 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 113 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 				g_clear_error (&_inner_error_);
-#line 113 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 113 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 				return;
 #line 659 "Assert.c"
 			}
@@ -673,25 +673,25 @@ daf_unit_test_assert_fail (const gchar* debug,
 {
 	GError* _tmp0_;
 	GError * _inner_error_ = NULL;
-#line 121 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 121 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 	g_return_if_fail (debug != NULL);
-#line 123 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 123 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 	_tmp0_ = g_error_new_literal (DAF_UNIT_TEST_ASSERT_ERROR, DAF_UNIT_TEST_ASSERT_ERROR_UNEXPECTED_STATE, debug);
-#line 123 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 123 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 	_inner_error_ = _tmp0_;
-#line 123 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 123 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 	if (_inner_error_->domain == DAF_UNIT_TEST_ASSERT_ERROR) {
-#line 123 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 123 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		g_propagate_error (error, _inner_error_);
-#line 123 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 123 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		return;
 #line 689 "Assert.c"
 	} else {
-#line 123 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 123 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		g_critical ("file %s: line %d: uncaught error: %s (%s, %d)", __FILE__, __LINE__, _inner_error_->message, g_quark_to_string (_inner_error_->domain), _inner_error_->code);
-#line 123 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 123 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		g_clear_error (&_inner_error_);
-#line 123 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 123 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		return;
 #line 697 "Assert.c"
 	}
@@ -719,25 +719,25 @@ daf_unit_test_assert_should_throw_async (DafUnitTestAsyncBegin fbegin,
 {
 	GError* _tmp7_;
 	GError * _inner_error_ = NULL;
-#line 136 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 136 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 	g_return_if_fail (domain != NULL);
-#line 136 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 136 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 	g_return_if_fail (debug != NULL);
 #line 727 "Assert.c"
 	{
 		gboolean _tmp0_ = FALSE;
-#line 140 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 140 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		_tmp0_ = daf_unit_test_wait_for_async (200, fbegin, fbegin_target, ffinish, ffinish_target, &_inner_error_);
-#line 140 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 140 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		if (G_UNLIKELY (_inner_error_ != NULL)) {
 #line 734 "Assert.c"
 			goto __catch1_g_error;
 		}
-#line 140 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 140 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		if (!_tmp0_) {
-#line 141 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 141 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 			daf_unit_test_assert_throw_unexpected_value ("Execution of async method didn't returns the expected value", debug, &_inner_error_);
-#line 141 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 141 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 			if (G_UNLIKELY (_inner_error_ != NULL)) {
 #line 743 "Assert.c"
 				goto __catch1_g_error;
@@ -751,83 +751,83 @@ daf_unit_test_assert_should_throw_async (DafUnitTestAsyncBegin fbegin,
 		GError* _tmp1_;
 		GQuark _tmp2_;
 		const gchar* _tmp3_;
-#line 138 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 138 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		err = _inner_error_;
-#line 138 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 138 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		_inner_error_ = NULL;
-#line 145 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 145 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		_tmp1_ = err;
-#line 145 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 145 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		_tmp2_ = _tmp1_->domain;
-#line 145 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 145 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		_tmp3_ = g_quark_to_string (_tmp2_);
-#line 145 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 145 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		if (g_strcmp0 (_tmp3_, domain) != 0) {
 #line 767 "Assert.c"
 			const gchar* _tmp4_;
 			gchar* _tmp5_;
 			gchar* _tmp6_;
-#line 146 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 146 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 			_tmp4_ = string_to_string (domain);
-#line 146 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 146 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 			_tmp5_ = g_strconcat ("Didn't receive the expected exception of type ", _tmp4_, NULL);
-#line 146 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 146 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 			_tmp6_ = _tmp5_;
-#line 146 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 146 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 			daf_unit_test_assert_throw_unexpected_value (_tmp6_, debug, &_inner_error_);
-#line 146 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 146 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 			_g_free0 (_tmp6_);
-#line 146 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 146 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 			if (G_UNLIKELY (_inner_error_ != NULL)) {
-#line 146 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 146 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 				_g_error_free0 (err);
 #line 785 "Assert.c"
 				goto __finally1;
 			}
 		}
-#line 147 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 147 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		_g_error_free0 (err);
-#line 147 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 147 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		return;
 #line 793 "Assert.c"
 	}
 	__finally1:
-#line 138 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 138 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 	if (G_UNLIKELY (_inner_error_ != NULL)) {
-#line 138 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 138 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		if (_inner_error_->domain == DAF_UNIT_TEST_ASSERT_ERROR) {
-#line 138 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 138 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 			g_propagate_error (error, _inner_error_);
-#line 138 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 138 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 			return;
 #line 804 "Assert.c"
 		} else {
-#line 138 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 138 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 			g_critical ("file %s: line %d: uncaught error: %s (%s, %d)", __FILE__, __LINE__, _inner_error_->message, g_quark_to_string (_inner_error_->domain), _inner_error_->code);
-#line 138 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 138 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 			g_clear_error (&_inner_error_);
-#line 138 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 138 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 			return;
 #line 812 "Assert.c"
 		}
 	}
-#line 150 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 150 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 	_tmp7_ = g_error_new_literal (DAF_UNIT_TEST_ASSERT_ERROR, DAF_UNIT_TEST_ASSERT_ERROR_UNEXPECTED_STATE, "Function didn't throw expected exception");
-#line 150 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 150 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 	_inner_error_ = _tmp7_;
-#line 150 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 150 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 	if (_inner_error_->domain == DAF_UNIT_TEST_ASSERT_ERROR) {
-#line 150 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 150 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		g_propagate_error (error, _inner_error_);
-#line 150 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 150 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		return;
 #line 825 "Assert.c"
 	} else {
-#line 150 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 150 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		g_critical ("file %s: line %d: uncaught error: %s (%s, %d)", __FILE__, __LINE__, _inner_error_->message, g_quark_to_string (_inner_error_->domain), _inner_error_->code);
-#line 150 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 150 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		g_clear_error (&_inner_error_);
-#line 150 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 150 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 		return;
 #line 833 "Assert.c"
 	}
@@ -838,9 +838,9 @@ DafUnitTestAssert*
 daf_unit_test_assert_construct (GType object_type)
 {
 	DafUnitTestAssert * self = NULL;
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 	self = (DafUnitTestAssert*) g_object_new (object_type, NULL);
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 	return self;
 #line 846 "Assert.c"
 }
@@ -849,7 +849,7 @@ daf_unit_test_assert_construct (GType object_type)
 DafUnitTestAssert*
 daf_unit_test_assert_new (void)
 {
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 	return daf_unit_test_assert_construct (DAF_UNIT_TEST_TYPE_ASSERT);
 #line 855 "Assert.c"
 }
@@ -858,7 +858,7 @@ daf_unit_test_assert_new (void)
 static void
 daf_unit_test_assert_class_init (DafUnitTestAssertClass * klass)
 {
-#line 27 "/home/ilap/Projects/daf/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
+#line 27 "/data/Projects/DaF/Demos/AnimationDemo/subprojects/dafunit/lib/Assert.vala"
 	daf_unit_test_assert_parent_class = g_type_class_peek_parent (klass);
 #line 864 "Assert.c"
 }
