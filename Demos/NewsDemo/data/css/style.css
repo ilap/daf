@@ -19,3 +19,19 @@
 
 @define-color colorPrimary #546A79;
 @define-color textColorPrimary #ECF0F1;
+
+
+.h1 {
+    font-weight: 900;
+    letter-spacing: -0.06em;
+    font-stretch: ultra-condensed;
+    font-size: 54pt;
+}
+
+.h2 {
+    font-weight: 900;
+    letter-spacing: -0.06em;
+    font-stretch: normal;
+    color: #DA3458;
+    font-size: 54pt;
+}

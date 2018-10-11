@@ -65,16 +65,23 @@ public class Granite.Demo : Gtk.Application {
         headerbar.show_close_button = true;
         headerbar.pack_end (exit_mode);
         headerbar.pack_end (heart_mode);
+
         var css_provider = new Gtk.CssProvider ();
         css_provider.load_from_resource ("/css/style.css");
+        Gtk.StyleContext.add_provider_for_screen (
+            Gdk.Screen.get_default (),
+            css_provider,
+            Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION
+        );
 
-        //Granite.Widgets.Utils.set_color_primary (window, {0.34, 0.38, 0.49, 0.5});
+        window.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
+        window.get_style_context ().add_class ("rounded");
 
         window.add (main_stack);
-        window.set_default_size (900, 600);
-        window.set_size_request (750, 500);
+        window.set_default_size (800, 600);
+        window.set_size_request (700, 500);
         window.set_titlebar (headerbar);
-        window.title = "Granite Demo";
+        window.title = "News";
         window.show_all ();
 
         add_window (window);

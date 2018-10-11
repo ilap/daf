@@ -29,12 +29,56 @@
 
 public class SplashView : Gtk.Grid {
     construct {
-        var header1 = new Gtk.Label ("\"h1\" Style Class");
-        header1.margin_top = 12;
-        header1.margin_start = 24;
-        header1.margin_end = 24;
+        var header1 = new Gtk.Label ("Welcome to");
+        header1.halign = Gtk.Align.CENTER;
         header1.get_style_context ().add_class (Granite.STYLE_CLASS_H1_LABEL);
 
-        this.add(header1);
+        var header2 = new Gtk.Label ("Apple News");
+        header2.halign = Gtk.Align.CENTER;
+        header2.get_style_context ().add_class (Granite.STYLE_CLASS_H2_LABEL);
+
+        var header3 = new Gtk.Label ("The best stories the sources you love,\n" +
+        "selected just for you.");
+        header3.halign = Gtk.Align.CENTER;
+        header3.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
+
+        var header4 = new Gtk.Label ("Siri suggest stories, channels and " +
+        "channels based on Safari and app usage.\n" +
+        "You can change this in News Preferences.");
+        header4.halign = Gtk.Align.CENTER;
+        header4.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
+
+        var header5 = new Gtk.Label ("Your locations is sent to Apple to " +
+        "provide you with geographicaly relevant ads and Stocks. " +
+        "You can change this in News Preferences.");
+        header5.halign = Gtk.Align.CENTER;
+        header5.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
+
+        var header6 = new Gtk.Label ("About Apple News & Privacy...");
+        header6.halign = Gtk.Align.CENTER;
+        header6.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
+
+
+
+        this.expand = true;
+        this.margin = 0;
+        this.orientation = Gtk.Orientation.VERTICAL;
+        this.valign = Gtk.Align.CENTER;
+        this.halign = Gtk.Align.CENTER;
+
+
+        var content = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
+        this.add(content);
+        //content.add (header1);
+       // content.add (header2);
+        //content.add (header3);
+
+        //this.add (content);
+        content.add(header1);
+        content.add(header2);
+        content.add(header3);
+        content.add(header4);
+        content.add(header5);
+        content.add(header6);
     }
 }
