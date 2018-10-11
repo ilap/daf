@@ -1,28 +1,20 @@
-sources = files(
-    'configs/Constants.vala',
-    'configs/Properties.vala',
-    'configs/Settings.vala',
-    
-    'controllers/AppController.vala',
+app_sources = [
+  'NewsDemo.vala',
+  'Views/SplashView.vala',
+]
 
-    'enums/AppEnum.vala',
+app_deps = [
+  dependency('gio-2.0', version: '>= 2.50'),
+  dependency('gtk+-3.0', version: '>= 3.22'),
+  dependency('gee-0.8', version: '>= 0.8'),
+  dependency('dafui', version: '>= 0.1'),
+  dependency('dafcore', version: '>= 0.1'),
+  dependency('granite', version: '>= 0.29.1'),
+]
 
-    'models/AppModel.vala',
-
-    'objects/AppObject.vala',
-
-    'utils/FileUtil.vala',
-    'utils/StringUtil.vala',
-    'utils/TimeUtil.vala',
-    'utils/URLUtil.vala',
-    'utils/WidgetUtil.vala',
-    
-    'views/AppView.vala',
-
-    'widgets/DialogPreferences.vala',
-    'widgets/HeaderBar.vala',
-
-    'Application.vala',
-    'Main.vala',
-    'Window.vala'
+executable('com.github.ilap.daf.demos.news',
+  [app_sources, app_resources],
+  vala_args: '--target-glib=2.50',
+  dependencies: app_deps,
+  install: true,
 )

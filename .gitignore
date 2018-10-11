@@ -1,7 +1,3 @@
-build/*
-debian/build/*
-debian/com.github.robertsanseries.template-for-vala-apps.debhelper.log
-debian/com.github.robertsanseries.template-for-vala-apps.substvars
-debian/com.github.robertsanseries.template-for-vala-apps/
-debian/debhelper-build-stamp
-debian/files
+**/build/
+*~
+.buildconfig

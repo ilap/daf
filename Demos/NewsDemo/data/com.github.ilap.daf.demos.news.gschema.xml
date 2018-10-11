@@ -1,18 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schemalist>
-
-	<schema id="com.github.ilap.daf.demos.news" path="/com.github.ilap.daf.demos.news/">
-		<key name="window-x" type="i">
-			<default>-1</default>
-			<summary>Most recent x position of Ciano</summary>
-			<description>Most recent x position of Ciano</description>
-		</key>
-	
-		<key name="window-y" type="i">
-			<default>-1</default>
-			<summary>Most recent y position of Ciano</summary>
-			<description>Most recent y position of Ciano</description>
-		</key>
+<schemalist gettext-domain="newsdemo">
+	<schema id="com.github.ilap.daf.demos.news" path="/com/github/ilap/daf/demos/news/">
 	</schema>
-
 </schemalist>

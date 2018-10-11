@@ -1,0 +1,9 @@
+[default]
+name=Default
+runtime=host
+config-opts=
+run-opts=
+prefix=/home/ilap/.cache/gnome-builder/install/NewsDemo/host
+app-id=
+postbuild=
+prebuild=

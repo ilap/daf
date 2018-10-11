@@ -1,1 +1,6 @@
-src/configs/Properties.vala
+data/org.gnome.Newsdemo.desktop.in
+data/org.gnome.Newsdemo.appdata.xml.in
+data/org.gnome.Newsdemo.gschema.xml
+src/window.ui
+src/main.vala
+src/window.vala
