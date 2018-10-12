@@ -39,8 +39,8 @@ public class Granite.Demo : Gtk.Application {
         var splash_view = new SplashView ();
         // TODO: var main_view = new MainView ();
 
-        var main_stack = new Gtk.Stack ();
-        main_stack.add_titled (splash_view, "splash", "SplashView");
+        //var main_stack = new Gtk.Stack ();
+        //main_stack.add_titled (splash_view, "splash", "SplashView");
         //TODO: main_stack.add_titled (main_view, "main", "MainView");
 
         var gtk_settings = Gtk.Settings.get_default ();
@@ -77,9 +77,9 @@ public class Granite.Demo : Gtk.Application {
         window.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
         window.get_style_context ().add_class ("rounded");
 
-        window.add (main_stack);
+        window.add (splash_view);
         window.set_default_size (800, 600);
-        window.set_size_request (700, 500);
+        window.set_size_request (800, 600);
         window.set_titlebar (headerbar);
         window.title = "News";
         window.show_all ();

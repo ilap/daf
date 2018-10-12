@@ -27,8 +27,25 @@
  * authorization.
  */
 
-public class SplashView : Gtk.Grid {
+public class SplashView : Gtk.Stack {
     construct {
+	    //# Widget tree
+	    var paned = new Gtk.Paned (Gtk.Orientation.VERTICAL);
+	    paned.set_position (300);
+
+	    var top_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
+	    top_box.halign = Gtk.Align.CENTER;
+        top_box.valign = Gtk.Align.CENTER;
+
+        var bottom_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
+	    bottom_box.halign = Gtk.Align.CENTER;
+        bottom_box.valign = Gtk.Align.CENTER;
+
+	    var bottom_stack = new Gtk.Stack ();
+	    var spinner = new Gtk.Spinner ();
+	    var action_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
+
+
         var header1 = new Gtk.Label ("Welcome to");
         header1.halign = Gtk.Align.CENTER;
         header1.get_style_context ().add_class (Granite.STYLE_CLASS_H1_LABEL);
@@ -60,13 +77,41 @@ public class SplashView : Gtk.Grid {
 
 
 
-        this.expand = true;
-        this.margin = 0;
-        this.orientation = Gtk.Orientation.VERTICAL;
-        this.valign = Gtk.Align.CENTER;
-        this.halign = Gtk.Align.CENTER;
+        //#############################################
+
+        //column_spacing = 12;
+        //row_spacing = 6;
+        //orientation = Gtk.Orientation.VERTICAL;
+        halign = Gtk.Align.FILL;
+        valign = Gtk.Align.FILL;
 
 
+	    paned.pack1 (top_box, true, false);
+        top_box.pack_start (new Gtk.Image(), false, false, 0);
+        top_box.pack_start (header1, false, false, 0);
+        top_box.pack_start (header2, false, false, 0);
+        top_box.pack_start (header3, false, false, 0);
+
+	    paned.pack2 (bottom_stack, true, false);
+        bottom_box.pack_start (header4, false, false, 0);
+        bottom_box.pack_start (header5, false, false, 0);
+        bottom_box.pack_start (header6, false, false, 0);
+        bottom_box.pack_start (new Gtk.Button.with_label ("Continue"), false, false, 0);
+
+	    bottom_stack.add_named (spinner, "spinner");
+	    bottom_stack.add_named (bottom_box, "bottom_box");
+
+        bottom_stack.visible_child_name  = "bottom_box";
+        spinner.start();
+
+
+
+	    add_named (paned, "paned");
+	    add_named (new Gtk.Button(), "dummy");
+        visible_child_name = "paned";
+
+        //#############################################
+/*
         var content = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
         this.add(content);
         //content.add (header1);
@@ -79,6 +124,6 @@ public class SplashView : Gtk.Grid {
         content.add(header3);
         content.add(header4);
         content.add(header5);
-        content.add(header6);
+        content.add(header6);*/
     }
 }
