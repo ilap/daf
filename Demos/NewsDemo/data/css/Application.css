@@ -1,0 +1,54 @@
+/*
+You can type here any CSS rule recognised by GTK+.
+You can temporarily disable this custom CSS by clicking on the “Pause” button above.
+
+Changes are applied instantly and globally, for the whole application.
+*/
+
+@define-color colorPrimary #546A79;
+@define-color textColorPrimary #ECF0F1;
+
+
+.h1 {
+    font-weight: 900;
+    letter-spacing: -0.08em;
+    /*font-stretch: ultra-condensed;*/
+    font-size: 36pt;
+    color: #000;
+}
+
+
+.h2 {
+    font-weight: 900;
+    letter-spacing: -0.08em;
+    font-stretch: normal;
+    color: #FA4666;
+    font-size: 34pt;
+}
+
+.h3 {
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    font-size: 9pt;
+}
+
+.h4 {
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    font-size: 6pt;
+}
+
+.button.flat, button.flat {
+    background-color: alpha (#FA4666 , 1.0);
+    color: #FFFFFF;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    font-weight: bold;
+}
+
+paned.vertical > separator {
+    background-image: none;
+    border-image-width: 0px;
+}

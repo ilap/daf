@@ -41,8 +41,8 @@ if compile_schemas.found()
 endif
 
 app_resources = gnome.compile_resources('app-resources',
-  'app.gresource.xml',
-  source_dir: ['../src', 'data'],
+  'Application.gresource.xml',
+  source_dir: ['../src', 'data', 'images'],
   c_name: 'app'
 )
 
@@ -55,13 +55,13 @@ foreach i : icon_sizes
     )
 endforeach
 
-install_data(
-    join_paths('images', meson.project_name() + '.svg'),
-    install_dir: join_paths(get_option('datadir'), 'com.github.ilap.daf.demos.news', 'images')
-)
+#install_data(
+#    join_paths('images', meson.project_name() + '.svg'),
+#    install_dir: join_paths(get_option('datadir'), 'com.github.ilap.daf.demos.news', 'images')
+#)
 
-install_data(
-    join_paths('images', meson.project_name() + '.png'),
-    install_dir: join_paths(get_option('datadir'), 'pixmaps')
-)
+#install_data(
+#    join_paths('images', meson.project_name() + '.png'),
+#    install_dir: join_paths(get_option('datadir'), 'pixmaps')
+#)
 

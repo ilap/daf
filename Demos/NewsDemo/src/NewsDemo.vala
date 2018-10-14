@@ -37,19 +37,6 @@ public class Granite.Demo : Gtk.Application {
         var window = new Gtk.Window ();
 
         var splash_view = new SplashView ();
-        // TODO: var main_view = new MainView ();
-
-        //var main_stack = new Gtk.Stack ();
-        //main_stack.add_titled (splash_view, "splash", "SplashView");
-        //TODO: main_stack.add_titled (main_view, "main", "MainView");
-
-        var gtk_settings = Gtk.Settings.get_default ();
-
-        var mode_switch = new Granite.ModeSwitch.from_icon_name ("display-brightness-symbolic", "weather-clear-night-symbolic");
-        mode_switch.primary_icon_tooltip_text = ("Light background");
-        mode_switch.secondary_icon_tooltip_text = ("Dark background");
-        mode_switch.valign = Gtk.Align.CENTER;
-        mode_switch.bind_property ("active", gtk_settings, "gtk_application_prefer_dark_theme");
 
         var exit_mode = new Granite.Widgets.ModeButton ();
         exit_mode.append_icon ("pane-hide-symbolic", Gtk.IconSize.BUTTON);
@@ -67,7 +54,7 @@ public class Granite.Demo : Gtk.Application {
         headerbar.pack_end (heart_mode);
 
         var css_provider = new Gtk.CssProvider ();
-        css_provider.load_from_resource ("/css/style.css");
+        css_provider.load_from_resource ("/com/github/ilap/daf/demos/news/css/Application.css");
         Gtk.StyleContext.add_provider_for_screen (
             Gdk.Screen.get_default (),
             css_provider,
@@ -78,8 +65,7 @@ public class Granite.Demo : Gtk.Application {
         window.get_style_context ().add_class ("rounded");
 
         window.add (splash_view);
-        window.set_default_size (800, 600);
-        window.set_size_request (800, 600);
+        window.set_default_size (600, 425);
         window.set_titlebar (headerbar);
         window.title = "News";
         window.show_all ();
