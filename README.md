@@ -2,7 +2,8 @@
 
 A set of "Design Driven Development" helper modules for Linux based distributions (e.g. Ubuntu).
 
-It was orignally uploaded into [Canonical's Launchpad](https://launchpad.net/dafproject) in 2013.
+It was orignally uploaded into [Canonical's Launchpad](https://launchpad.net/dafproject) in 2013 and
+was explained in my [blogspot](http://ilapstech.blogspot.com/2013/04/advanced-programming-in-vala-dafs.html).
 
 ## Description
 
